@@ -1,0 +1,92 @@
+COMMAND: /usr/bin/time -l python3 /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/sec11_gammaK_ideal.py
+WALL:         8.99 real         8.79 user         0.08 sys
+PEAK MEMORY:            166084608  maximum resident set size
+----- time -l full output -----
+        8.99 real         8.79 user         0.08 sys
+           166084608  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11267  page reclaims
+                  63  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 150  voluntary context switches
+                3841  involuntary context switches
+        143083682805  instructions retired
+         29019275415  cycles elapsed
+           159531440  peak memory footprint
+----- script output -----
+Q_k(m) table:
+  m=3: [2, 6, 20, 70, 252]
+  m=5: [4, 36, 400, 4900, 63504]
+  m=7: [6, 90, 1860, 44730, 1172556]
+  m=9: [8, 168, 5120, 190120, 7939008]
+
+(D) factorisation psi_J = psi_{J'} * prod g_i (exact over Z):
+  (m,d,s)=(3,2,0): True
+  (m,d,s)=(3,2,1): True
+  (m,d,s)=(3,3,1): True
+  (m,d,s)=(5,2,0): True
+  (m,d,s)=(5,2,1): True
+  (m,d,s)=(5,3,2): True
+  (m,d,s)=(9,2,1): True
+
+(C) pair factor dim (t_b-1)phi(t_a t_b) in F_p[t_a,t_b]/(t^m-1), expected m-1:
+  m=3 p=3: dim=2 (m-1=2)
+  m=5 p=5: dim=4 (m-1=4)
+  m=7 p=7: dim=6 (m-1=6)
+  m=9 p=3: dim=8 (m-1=8)
+  m=15 p=3: dim=14 (m-1=14)
+  m=15 p=5: dim=14 (m-1=14)
+
+(A) |Gamma_K| for K=J(s,d) by Definition 1.3 vs Q_s(m)(m-1)^{d-s}:
+  (m,d,s)=(3,0,0): |K|=1 |Gamma_K|=2 predicted=2 OK [0.0s]
+  (m,d,s)=(3,1,0): |K|=1 |Gamma_K|=4 predicted=4 OK [0.0s]
+  (m,d,s)=(3,1,1): |K|=3 |Gamma_K|=6 predicted=6 OK [0.0s]
+  (m,d,s)=(3,2,0): |K|=1 |Gamma_K|=8 predicted=8 OK [0.0s]
+  (m,d,s)=(3,2,1): |K|=3 |Gamma_K|=12 predicted=12 OK [0.0s]
+  (m,d,s)=(3,2,2): |K|=15 |Gamma_K|=20 predicted=20 OK [0.0s]
+  (m,d,s)=(3,3,0): |K|=1 |Gamma_K|=16 predicted=16 OK [0.0s]
+  (m,d,s)=(3,3,1): |K|=3 |Gamma_K|=24 predicted=24 OK [0.0s]
+  (m,d,s)=(3,3,2): |K|=15 |Gamma_K|=40 predicted=40 OK [0.0s]
+  (m,d,s)=(3,3,3): |K|=105 |Gamma_K|=70 predicted=70 OK [0.0s]
+  (m,d,s)=(5,0,0): |K|=1 |Gamma_K|=4 predicted=4 OK [0.0s]
+  (m,d,s)=(5,1,0): |K|=1 |Gamma_K|=16 predicted=16 OK [0.0s]
+  (m,d,s)=(5,1,1): |K|=3 |Gamma_K|=36 predicted=36 OK [0.0s]
+  (m,d,s)=(5,2,0): |K|=1 |Gamma_K|=64 predicted=64 OK [0.0s]
+  (m,d,s)=(5,2,1): |K|=3 |Gamma_K|=144 predicted=144 OK [0.0s]
+  (m,d,s)=(5,2,2): |K|=15 |Gamma_K|=400 predicted=400 OK [0.0s]
+  (m,d,s)=(5,3,0): |K|=1 |Gamma_K|=256 predicted=256 OK [0.0s]
+  (m,d,s)=(5,3,1): |K|=3 |Gamma_K|=576 predicted=576 OK [0.0s]
+  (m,d,s)=(5,3,2): |K|=15 |Gamma_K|=1600 predicted=1600 OK [0.0s]
+  (m,d,s)=(5,3,3): |K|=105 |Gamma_K|=4900 predicted=4900 OK [0.2s]
+  (m,d,s)=(7,0,0): |K|=1 |Gamma_K|=6 predicted=6 OK [0.0s]
+  (m,d,s)=(7,1,0): |K|=1 |Gamma_K|=36 predicted=36 OK [0.0s]
+  (m,d,s)=(7,1,1): |K|=3 |Gamma_K|=90 predicted=90 OK [0.0s]
+  (m,d,s)=(7,2,0): |K|=1 |Gamma_K|=216 predicted=216 OK [0.0s]
+  (m,d,s)=(7,2,1): |K|=3 |Gamma_K|=540 predicted=540 OK [0.0s]
+  (m,d,s)=(7,2,2): |K|=15 |Gamma_K|=1860 predicted=1860 OK [0.0s]
+
+(B) literal ideal dimension dim_{F_p}(psi_J : J in K) vs |Gamma_K| (equality <=> torsion free):
+  (m,d,s)=(3,1,0) p=3: |K|=1 dim=4 |Gamma_K|=4 quotient=23 OK [0.0s]
+  (m,d,s)=(3,1,1) p=3: |K|=3 dim=6 |Gamma_K|=6 quotient=21 OK [0.0s]
+  (m,d,s)=(3,2,0) p=3: |K|=1 dim=8 |Gamma_K|=8 quotient=235 OK [0.0s]
+  (m,d,s)=(3,2,1) p=3: |K|=3 dim=12 |Gamma_K|=12 quotient=231 OK [0.0s]
+  (m,d,s)=(3,2,2) p=3: |K|=15 dim=20 |Gamma_K|=20 quotient=223 OK [0.0s]
+  (m,d,s)=(3,3,0) p=3: |K|=1 dim=16 |Gamma_K|=16 quotient=2171 OK [0.2s]
+  (m,d,s)=(3,3,1) p=3: |K|=3 dim=24 |Gamma_K|=24 quotient=2163 OK [0.7s]
+  (m,d,s)=(3,3,2) p=3: |K|=15 dim=40 |Gamma_K|=40 quotient=2147 OK [4.2s]
+  (m,d,s)=(5,1,0) p=5: |K|=1 dim=16 |Gamma_K|=16 quotient=109 OK [0.0s]
+  (m,d,s)=(5,1,1) p=5: |K|=3 dim=36 |Gamma_K|=36 quotient=89 OK [0.0s]
+  (m,d,s)=(9,1,0) p=3: |K|=1 dim=64 |Gamma_K|=64 quotient=665 OK [0.0s]
+  (m,d,s)=(9,1,1) p=3: |K|=3 dim=168 |Gamma_K|=168 quotient=561 OK [0.2s]
+  (m,d,s)=(7,1,1) p=7: |K|=3 dim=90 |Gamma_K|=90 quotient=253 OK [0.0s]
+  (m,d,s)=(5,2,0) p=5: |K|=1 dim=64 |Gamma_K|=64 quotient=3061 OK [0.6s]
+  (m,d,s)=(5,2,1) p=5: |K|=3 dim=144 |Gamma_K|=144 quotient=2981 OK [2.6s]
+
+total wall 8.9s

@@ -1,0 +1,44 @@
+=== RUN ===
+command: python3 downset_bip_roots.py --bal 1 3 --char0
+cwd: /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts
+date: Fri Sep 25 14:01:40 CEST 2026
+exit status: 0
+wall time (/usr/bin/time -l, real): 0.40 s
+peak memory (maximum resident set size): 61505536 bytes = 58 MB
+=== PREDICTION (written before the run) ===
+prediction command: python3 downset_bip_roots.py --bal 1 3 --char0 --predict
+I^bal_1 at q = 3 (p = 3), ring R_{[1],[1]} of dimension 9, date 2026-09-25 14:01:40
+degrees 0..4, n_d = [1, 2, 3, 2, 1]
+N_bal(1,3) by direct enumeration of 9 points = 3   [0.0s]; paper's closed form sum (a!/prod c_i!)^2 = 3 (claim)
+PREDICTION: dim_F I^bal_1 = 3 (Thm C says >= 3; Cor 7.8 says =)
+ESTIMATE: 1 generators of degree 2; matmul 9.50e+00 flops + elimination 2.85e+01 ops -> raw model ~0 s, calibrated ~0 s (x0.10) (+ enumeration of 9 points, + char-0 sympy ranks if --char0); memory ~0 MB (per-degree peak of row block + basis) + 0 MB tables/generators + 60 MB baseline
+=== OUTPUT ===
+I^bal_1 at q = 3 (p = 3), ring R_{[1],[1]} of dimension 9, date 2026-09-25 14:01:40
+degrees 0..4, n_d = [1, 2, 3, 2, 1]
+N_bal(1,3) by direct enumeration of 9 points = 3   [0.0s]; paper's closed form sum (a!/prod c_i!)^2 = 3 (claim)
+1 generators, built in 0.0s; degrees [2]
+dim_{F_3} I^bal_1 = 3   (per degree: [0, 0, 1, 1, 1])   [0.0s]
+RESULT I^bal_1 q=3: dim = 3, N = 3 -> dim = N (Theorem C holds with equality here, as Cor. 7.8 claims)
+dim_Q I^bal_1 (exact, sympy over QQ) = 4   (per degree: [0, 0, 1, 2, 1])   [0.3s]
+dim_{F_10007} I^bal_1 (proxy for char 0) = 4   (per degree: [0, 0, 1, 2, 1])   [0.0s]
+CHAR0 I^bal_1 q=3: dim_Q = 4, dim_F10007 = 4, dim_F3 = 3, N = 3
+total 0.3s
+=== /usr/bin/time -l (raw) ===
+        0.40 real         0.23 user         0.05 sys
+            61505536  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6006  page reclaims
+                 396  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 684  voluntary context switches
+                 342  involuntary context switches
+          2821797264  instructions retired
+           975517904  cycles elapsed
+            50250064  peak memory footprint

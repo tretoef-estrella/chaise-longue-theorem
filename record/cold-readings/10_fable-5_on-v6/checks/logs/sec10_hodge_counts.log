@@ -1,0 +1,84 @@
+COMMAND: (cd /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks && /usr/bin/time -l python3 scripts/sec10_hodge_counts.py)
+EXIT CODE: 0
+PREDICTION: < 15 s wall, < 60 MB peak (see script docstring)
+WALL TIME (real, s): 1.06
+PEAK MEMORY (maximum resident set size, bytes): 114606080
+---- time -l full output ----
+        1.06 real         1.00 user         0.04 sys
+           114606080  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10130  page reclaims
+                  72  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 169  voluntary context switches
+                 249  involuntary context switches
+         16856946897  instructions retired
+          3422861412  cycles elapsed
+           108069248  peak memory footprint
+---- script output ----
+=== Remark 10.3 / mandated cells ===
+(k,m)=(1,9) N=4: |A|=456 (formula 456) |B|=216 |D|=168 Q_k(m)=168 |B|-Q=48 pair_not_hodge=0 [0.0s] paper says 48: OK 
+(k,m)=(2,9) N=6: |A|=29128 (formula 29128) |B|=8000 |D|=5120 Q_k(m)=5120 |B|-Q=2880 pair_not_hodge=0 [0.0s] paper says 2880: OK 
+(k,m)=(3,9) N=8: |A|=1864136 (formula 1864136) |B|=343000 |D|=190120 Q_k(m)=190120 |B|-Q=152880 pair_not_hodge=0 [0.0s] paper says 152880: OK 
+(k,m)=(4,9) N=10: |A|=119304648 (formula 119304648) |B|=16003008 |D|=7939008 Q_k(m)=7939008 |B|-Q=8064000 pair_not_hodge=0 [0.0s] paper says 8064000: OK Lemma 10.4 k=4
+(k,m)=(1,27) N=4: |A|=16926 (formula 16926) |B|=2142 |D|=1950 Q_k(m)=1950 |B|-Q=192 pair_not_hodge=0 [0.0s] paper says 192: OK 
+(k,m)=(1,15) N=4: |A|=2562 (formula 2562) |B|=834 |D|=546 Q_k(m)=546 |B|-Q=288 pair_not_hodge=0 [0.0s] paper says 288: OK 
+(k,m)=(1,21) N=4: |A|=7620 (formula 7620) |B|=1572 |D|=1140 Q_k(m)=1140 |B|-Q=432 pair_not_hodge=0 [0.0s] paper says 432: OK 
+(k,m)=(1,45) N=4: |A|=83292 (formula 83292) |B|=6204 |D|=5676 Q_k(m)=5676 |B|-Q=528 pair_not_hodge=0 [0.1s] paper says 528: OK 
+(k,m)=(2,15) N=6: |A|=501970 (formula 501970) |B|=78260 |D|=32900 Q_k(m)=32900 |B|-Q=45360 pair_not_hodge=0 [0.0s] paper says 45360: OK 
+(k,m)=(1,25) N=4: |A|=13272 (formula 13272) |B|=1656 |D|=1656 Q_k(m)=1656 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(1,35) N=4: |A|=38182 (formula 38182) |B|=3366 |D|=3366 Q_k(m)=3366 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+
+=== Prime cells (§12: |B| = Q_k(m)) ===
+(k,m)=(1,3) N=4: |A|=6 (formula 6) |B|=6 |D|=6 Q_k(m)=6 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(1,5) N=4: |A|=52 (formula 52) |B|=36 |D|=36 Q_k(m)=36 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(1,7) N=4: |A|=186 (formula 186) |B|=90 |D|=90 Q_k(m)=90 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(2,3) N=6: |A|=22 (formula 22) |B|=20 |D|=20 Q_k(m)=20 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(2,5) N=6: |A|=820 (formula 820) |B|=400 |D|=400 Q_k(m)=400 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(2,7) N=6: |A|=6666 (formula 6666) |B|=1860 |D|=1860 Q_k(m)=1860 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(2,11) N=6: |A|=90910 (formula 90910) |B|=10900 |D|=10900 Q_k(m)=10900 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(3,3) N=8: |A|=86 (formula 86) |B|=70 |D|=70 Q_k(m)=70 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(3,5) N=8: |A|=13108 (formula 13108) |B|=4900 |D|=4900 Q_k(m)=4900 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(4,3) N=10: |A|=342 (formula 342) |B|=252 |D|=252 Q_k(m)=252 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(3,7) N=8: |A|=239946 (formula 239946) |B|=44730 |D|=44730 Q_k(m)=44730 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(3,11) N=8: |A|=9090910 (formula 9090910) |B|=551950 |D|=551950 Q_k(m)=551950 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+(k,m)=(2,13) N=6: |A|=229692 (formula 229692) |B|=19920 |D|=19920 Q_k(m)=19920 |B|-Q=0 pair_not_hodge=0 [0.0s] paper says 0: OK 
+
+=== Lemma 10.4 (m = 9) ===
+  delta(1) = (-7, -5, -1)
+  delta(2) = (-5, -1, 7)
+  delta(3) = (-3, 3, -3)
+  delta(4) = (-1, 7, 5)
+  delta(5) = (1, -7, -5)
+  delta(6) = (3, -3, 3)
+  delta(7) = (5, 1, -7)
+  delta(8) = (7, 5, 1)
+  paper: delta(1)=(-7,-5,-1) delta(2)=(-5,-1,7) delta(4)=(-1,7,5) delta(3)=(-3,3,-3): True
+  delta(-a) = -delta(a) for all a: True
+  no zero coordinate: True
+  sign map is a bijection onto {+-1}^3: True
+  det M = 81  (paper: 81)
+  delta(a) = M s(a) for all a: True
+  k=1: C(4,2)^3 = 216, Q_k(9) = 168, difference = 48
+  k=2: C(6,3)^3 = 8000, Q_k(9) = 5120, difference = 2880
+  k=3: C(8,4)^3 = 343000, Q_k(9) = 190120, difference = 152880
+  k=4: C(10,5)^3 = 16003008, Q_k(9) = 7939008, difference = 8064000
+  k=5: C(12,6)^3 = 788889024, Q_k(9) = 357713664, difference = 431175360
+  brute force k=1: #Hodge (ordered) = 216, #balanced = 216, pointwise equal: True
+  brute force k=2: #Hodge (ordered) = 8000, #balanced = 8000, pointwise equal: True
+
+=== (H4) numerics: B_{1,chi} for odd characters of odd primes p < 200 ===
+  odd characters counted: 2090 (paper: 2090); with B_1,chi != 0: 2090; min |B_1,chi| = 0.3333
+  p=3: B_{1,Legendre} = -0.3333333333333333
+
+=== conversions of Aoki's condition (odd m <= 999, k <= 12) ===
+  all four formulations agree for odd m: True
+
+TOTAL TIME 1.0s

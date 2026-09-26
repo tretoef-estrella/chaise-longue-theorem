@@ -1,0 +1,50 @@
+COMMAND: (cd /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks && /usr/bin/time -l python3 scripts/sec10_hodge_counts_large.py)
+EXIT CODE: 0
+PREDICTION: < 30 s wall, < 100 MB peak (see script docstring)
+WALL TIME (real, s): 7.05
+PEAK MEMORY (maximum resident set size, bytes): 96370688
+---- time -l full output ----
+        7.05 real         6.82 user         0.11 sys
+            96370688  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               35560  page reclaims
+                 213  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 163  voluntary context switches
+                4269  involuntary context switches
+        117012887564  instructions retired
+         22519655026  cycles elapsed
+            90538368  peak memory footprint
+---- script output ----
+=== k = 1, ordered enumeration (independent of the multiset method) ===
+(k,m)=(1,9) N=4: |A|=456 (formula 456) |B|=216 |D|=168 Q=168 |B|-Q=48 pair_not_hodge=0 paper says 48: OK  [0.0s]
+(k,m)=(1,15) N=4: |A|=2562 (formula 2562) |B|=834 |D|=546 Q=546 |B|-Q=288 pair_not_hodge=0 paper says 288: OK  [0.0s]
+(k,m)=(1,27) N=4: |A|=16926 (formula 16926) |B|=2142 |D|=1950 Q=1950 |B|-Q=192 pair_not_hodge=0 paper says 192: OK  [0.0s]
+(k,m)=(1,45) N=4: |A|=83292 (formula 83292) |B|=6204 |D|=5676 Q=5676 |B|-Q=528 pair_not_hodge=0 paper says 528: OK  [0.0s]
+(k,m)=(1,25) N=4: |A|=13272 (formula 13272) |B|=1656 |D|=1656 Q=1656 |B|-Q=0 pair_not_hodge=0 paper says 0: OK  [0.1s]
+(k,m)=(1,35) N=4: |A|=38182 (formula 38182) |B|=3366 |D|=3366 Q=3366 |B|-Q=0 pair_not_hodge=0 paper says 0: OK  [0.1s]
+(k,m)=(1,49) N=4: |A|=108336 (formula 108336) |B|=6768 |D|=6768 Q=6768 |B|-Q=0 pair_not_hodge=0 paper says 0: OK  [0.1s]
+(k,m)=(1,55) N=4: |A|=154602 (formula 154602) |B|=8586 |D|=8586 Q=8586 |B|-Q=0 pair_not_hodge=0 paper says 0: OK  [0.2s]
+(k,m)=(1,77) N=4: |A|=433276 (formula 433276) |B|=17100 |D|=17100 Q=17100 |B|-Q=0 pair_not_hodge=0 paper says 0: OK  [0.6s]
+(k,m)=(1,81) N=4: |A|=505680 (formula 505680) |B|=19584 |D|=18960 Q=18960 |B|-Q=624 pair_not_hodge=0 paper says 624: OK  [1.1s]
+(k,m)=(1,121) N=4: |A|=1713720 (formula 1713720) |B|=42840 |D|=42840 Q=42840 |B|-Q=0 pair_not_hodge=0 paper says 0: OK  [3.7s]
+
+=== k = 2, multiset enumeration ===
+(k,m)=(2,25) N=6: |A|=7644120 (formula 7644120) |B|=185280 |D|=182400 Q=182400 |B|-Q=2880 pair_not_hodge=0 paper says 2880: OK  [4.1s]
+(k,m)=(2,35) N=6: |A|=44137270 (formula 44137270) |B|=543220 |D|=538900 Q=538900 |B|-Q=4320 pair_not_hodge=0 paper says 4320: OK  [6.9s]
+
+=== even m, k = 1: 1 + |B| vs classical Picard numbers (code sanity, not a claim of the paper) ===
+  m=4: |A|=21, |B|=19, 1+|B|=20 (remembered rho = 20: OK)
+  m=6: |A|=105, |B|=85, 1+|B|=86 (remembered rho = 86: OK)
+  m=8: |A|=301, |B|=175, 1+|B|=176 (remembered rho = 176: OK)
+  m=10: |A|=657, |B|=361, 1+|B|=362 
+  m=12: |A|=1221, |B|=643, 1+|B|=644 
+
+TOTAL TIME 6.9s

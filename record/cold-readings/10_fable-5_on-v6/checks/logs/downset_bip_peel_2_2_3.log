@@ -1,0 +1,68 @@
+=== RUN ===
+command: python3 downset_bip_peel.py --cell 2 2 3
+cwd: /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts
+date: Fri Sep 25 14:00:53 CEST 2026
+exit status: 0
+wall time (/usr/bin/time -l, real): 0.15 s
+peak memory (maximum resident set size): 24428544 bytes = 23 MB
+=== PREDICTION (written before the run) ===
+Prediction (Proposition 7.5 and the definitions around it, from the paper's statements):
+  P3: V_{Lambda_i} subset of W_{q-1-i}(V_Lambda) for EVERY down-set Lambda and every i = 0..q-1  -> 0 violations
+  lowered slice W_{q-2-i}: NOT contained for at least one (Lambda, i) (section 7.5: "the slice cannot be lowered")
+  P1 (fibre depends only on the tail's shape, = F_Lambda(mu)): 0 violations;  P2 (every Lambda_i is a down-set): 0 violations
+  Lemma 7.1(iii) dim V = sum_j rank W_j(V) and (iv) |Z_Lambda| = sum_i |Z_{Lambda_i}|: 0 violations
+Estimate: rings of dimension 27 / 81, at most 5 / 7 down-sets, dense linear algebra on <= 81 columns: < 5 s, < 80 MB.
+=== OUTPUT ===
+peeling control at (alpha,beta,q) = (2,2,3), p = 3, w = x_1, date 2026-09-25 14:00:53
+BPar(alpha,beta): ()|() (1)|(1) (2)|(2) (2)|(1,1) (1,1)|(2)
+BPar(alpha-1,beta): ()|(1) (1)|(2) (1)|(1,1)
+7 down-sets
+  # 0 Lambda={} |Z|=0 dimV=0 slices rank(W_j)=[0, 0, 0] sum=0 | layers |Z_{L_i}|=[0, 0, 0] sum=0
+       i=0: |L_i|=0 dimV_{L_i}=0 W_2 rank=0 P3:OK lower(W_1):contained
+       i=1: |L_i|=0 dimV_{L_i}=0 W_1 rank=0 P3:OK lower(W_0):contained
+       i=2: |L_i|=0 dimV_{L_i}=0 W_0 rank=0 P3:OK lower(W_-1):contained
+  # 1 Lambda={()|()} |Z|=15 dimV=15 slices rank(W_j)=[0, 0, 15] sum=15 | layers |Z_{L_i}|=[15, 0, 0] sum=15
+       i=0: |L_i|=1 dimV_{L_i}=15 W_2 rank=15 P3:OK lower(W_1):not-contained
+       i=1: |L_i|=0 dimV_{L_i}=0 W_1 rank=0 P3:OK lower(W_0):contained
+       i=2: |L_i|=0 dimV_{L_i}=0 W_0 rank=0 P3:OK lower(W_-1):contained
+  # 2 Lambda={()|() (1)|(1)} |Z|=63 dimV=63 slices rank(W_j)=[15, 21, 27] sum=63 | layers |Z_{L_i}|=[27, 21, 15] sum=63
+       i=0: |L_i|=3 dimV_{L_i}=27 W_2 rank=27 P3:OK lower(W_1):not-contained
+       i=1: |L_i|=2 dimV_{L_i}=21 W_1 rank=21 P3:OK lower(W_0):not-contained
+       i=2: |L_i|=1 dimV_{L_i}=15 W_0 rank=15 P3:OK lower(W_-1):not-contained
+  # 3 Lambda={()|() (1)|(1) (2)|(1,1)} |Z|=69 dimV=69 slices rank(W_j)=[21, 21, 27] sum=69 | layers |Z_{L_i}|=[27, 21, 21] sum=69
+       i=0: |L_i|=3 dimV_{L_i}=27 W_2 rank=27 P3:OK lower(W_1):not-contained
+       i=1: |L_i|=2 dimV_{L_i}=21 W_1 rank=21 P3:OK lower(W_0):contained
+       i=2: |L_i|=2 dimV_{L_i}=21 W_0 rank=21 P3:OK lower(W_-1):not-contained
+  # 4 Lambda={()|() (1)|(1) (1,1)|(2)} |Z|=69 dimV=69 slices rank(W_j)=[15, 27, 27] sum=69 | layers |Z_{L_i}|=[27, 27, 15] sum=69
+       i=0: |L_i|=3 dimV_{L_i}=27 W_2 rank=27 P3:OK lower(W_1):contained
+       i=1: |L_i|=3 dimV_{L_i}=27 W_1 rank=27 P3:OK lower(W_0):not-contained
+       i=2: |L_i|=1 dimV_{L_i}=15 W_0 rank=15 P3:OK lower(W_-1):not-contained
+  # 5 Lambda={()|() (1)|(1) (2)|(1,1) (1,1)|(2)} |Z|=75 dimV=75 slices rank(W_j)=[21, 27, 27] sum=75 | layers |Z_{L_i}|=[27, 27, 21] sum=75
+       i=0: |L_i|=3 dimV_{L_i}=27 W_2 rank=27 P3:OK lower(W_1):contained
+       i=1: |L_i|=3 dimV_{L_i}=27 W_1 rank=27 P3:OK lower(W_0):not-contained
+       i=2: |L_i|=2 dimV_{L_i}=21 W_0 rank=21 P3:OK lower(W_-1):not-contained
+  # 6 Lambda={()|() (1)|(1) (2)|(2) (2)|(1,1) (1,1)|(2)} |Z|=81 dimV=81 slices rank(W_j)=[27, 27, 27] sum=81 | layers |Z_{L_i}|=[27, 27, 27] sum=81
+       i=0: |L_i|=3 dimV_{L_i}=27 W_2 rank=27 P3:OK lower(W_1):contained
+       i=1: |L_i|=3 dimV_{L_i}=27 W_1 rank=27 P3:OK lower(W_0):contained
+       i=2: |L_i|=3 dimV_{L_i}=27 W_0 rank=27 P3:OK lower(W_-1):not-contained
+
+SUMMARY cell=(2,2,3): P1 violations=0, P2 violations=0, P3 (V_{L_i} in W_{q-1-i}) violations=0, lowered slice W_{q-2-i}: contained in 10 cases, NOT contained in 11 cases, Lemma7.1(iii/iv) violations=0, 0.1s
+=== /usr/bin/time -l (raw) ===
+        0.15 real         0.14 user         0.01 sys
+            24428544  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2704  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  21  involuntary context switches
+          1884147678  instructions retired
+           528427595  cycles elapsed
+            17908000  peak memory footprint

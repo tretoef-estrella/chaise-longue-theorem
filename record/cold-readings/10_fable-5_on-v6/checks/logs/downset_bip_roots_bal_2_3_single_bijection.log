@@ -1,0 +1,42 @@
+=== RUN ===
+command: python3 downset_bip_roots.py --bal 2 3 --single-bijection
+cwd: /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts
+date: Fri Sep 25 14:00:52 CEST 2026
+exit status: 0
+wall time (/usr/bin/time -l, real): 0.06 s
+peak memory (maximum resident set size): 23314432 bytes = 22 MB
+=== PREDICTION (written before the run) ===
+prediction command: python3 downset_bip_roots.py --bal 2 3 --single-bijection --predict
+I^bal_2 at q = 3 (p = 3), ring R_{[2],[2]} of dimension 81, date 2026-09-25 14:00:52
+degrees 0..8, n_d = [1, 4, 10, 16, 19, 16, 10, 4, 1]
+N_bal(2,3) by direct enumeration of 81 points = 15   [0.0s]; paper's closed form sum (a!/prod c_i!)^2 = 15 (claim)
+PREDICTION: dim_F I^bal_2 = 15 (Thm C says >= 15; Cor 7.8 says =) -- negative control: expected < N
+ESTIMATE: 1 generators of degree 4; matmul 1.32e+03 flops + elimination 3.97e+03 ops -> raw model ~0 s, calibrated ~0 s (x0.10) (+ enumeration of 81 points, + char-0 sympy ranks if --char0); memory ~0 MB (per-degree peak of row block + basis) + 0 MB tables/generators + 60 MB baseline
+=== OUTPUT ===
+I^bal_2 at q = 3 (p = 3), ring R_{[2],[2]} of dimension 81, date 2026-09-25 14:00:52
+degrees 0..8, n_d = [1, 4, 10, 16, 19, 16, 10, 4, 1]
+N_bal(2,3) by direct enumeration of 81 points = 15   [0.0s]; paper's closed form sum (a!/prod c_i!)^2 = 15 (claim)
+NEGATIVE CONTROL: only the first generator (sigma = identity) is used
+1 generators, built in 0.0s; degrees [4]
+dim_{F_3} I^bal_2 = 9   (per degree: [0, 0, 0, 0, 1, 2, 3, 2, 1])   [0.0s]
+RESULT I^bal_2 q=3: dim = 9, N = 15 -> *** dim < N: CONTRADICTS THEOREM C ***
+total 0.0s
+=== /usr/bin/time -l (raw) ===
+        0.06 real         0.04 user         0.01 sys
+            23314432  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2636  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  21  involuntary context switches
+           592994622  instructions retired
+           206104701  cycles elapsed
+            16859424  peak memory footprint

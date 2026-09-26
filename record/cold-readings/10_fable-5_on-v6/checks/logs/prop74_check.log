@@ -1,0 +1,62 @@
+# command: /usr/bin/time -l python3 scripts/prop74_check.py
+# prediction: 0 failures of (P1), the chain, (P2) and (7.1) at every cell (the paper's §12.4 claims 0 failures; my cells are different/larger). est < 5 min, < 200 MB
+# run date: Fri Sep 25 13:32:57 CEST 2026
+== (P1) fibre rule, brute force over all tails ==
+  (alpha,beta,q)=(2,1,3): 9 tails, 0 failures
+  (alpha,beta,q)=(2,2,3): 27 tails, 0 failures
+  (alpha,beta,q)=(3,2,3): 81 tails, 0 failures
+  (alpha,beta,q)=(2,1,5): 25 tails, 0 failures
+  (alpha,beta,q)=(2,2,5): 125 tails, 0 failures
+  (alpha,beta,q)=(3,2,5): 625 tails, 0 failures
+  (alpha,beta,q)=(2,2,7): 343 tails, 0 failures
+  (alpha,beta,q)=(2,1,9): 81 tails, 0 failures
+  (alpha,beta,q)=(3,1,9): 729 tails, 0 failures
+  (alpha,beta,q)=(2,2,9): 729 tails, 0 failures
+== (Chain) Lemma 7.3 and (P2) Proposition 7.4 over all comparable pairs ==
+  (alpha,beta,q)=(4,4,3): |BPar(alpha-1,beta)|=10, chain failures 0, comparable pairs 40, P2 failures 0  [0.1s]
+  (alpha,beta,q)=(5,3,3): |BPar(alpha-1,beta)|=10, chain failures 0, comparable pairs 40, P2 failures 0  [0.1s]
+  (alpha,beta,q)=(6,6,3): |BPar(alpha-1,beta)|=21, chain failures 0, comparable pairs 178, P2 failures 0  [0.1s]
+  (alpha,beta,q)=(7,5,3): |BPar(alpha-1,beta)|=21, chain failures 0, comparable pairs 178, P2 failures 0  [0.2s]
+  (alpha,beta,q)=(4,4,5): |BPar(alpha-1,beta)|=21, chain failures 0, comparable pairs 157, P2 failures 0  [0.2s]
+  (alpha,beta,q)=(5,4,5): |BPar(alpha-1,beta)|=31, chain failures 0, comparable pairs 333, P2 failures 0  [0.2s]
+  (alpha,beta,q)=(6,5,5): |BPar(alpha-1,beta)|=54, chain failures 0, comparable pairs 1002, P2 failures 0  [0.3s]
+  (alpha,beta,q)=(4,4,7): |BPar(alpha-1,beta)|=24, chain failures 0, comparable pairs 203, P2 failures 0  [0.3s]
+  (alpha,beta,q)=(5,5,7): |BPar(alpha-1,beta)|=56, chain failures 0, comparable pairs 998, P2 failures 0  [0.5s]
+  (alpha,beta,q)=(3,3,9): |BPar(alpha-1,beta)|=9, chain failures 0, comparable pairs 31, P2 failures 0  [0.5s]
+  (alpha,beta,q)=(5,5,9): |BPar(alpha-1,beta)|=59, chain failures 0, comparable pairs 1105, P2 failures 0  [0.6s]
+  (alpha,beta,q)=(6,4,9): |BPar(alpha-1,beta)|=59, chain failures 0, comparable pairs 1105, P2 failures 0  [0.8s]
+  (alpha,beta,q)=(4,4,11): |BPar(alpha-1,beta)|=24, chain failures 0, comparable pairs 203, P2 failures 0  [0.8s]
+  (alpha,beta,q)=(8,7,5): |BPar(alpha-1,beta)|=152, chain failures 0, comparable pairs 7214, P2 failures 0  [2.1s]
+  (alpha,beta,q)=(7,7,3): |BPar(alpha-1,beta)|=28, chain failures 0, comparable pairs 315, P2 failures 0  [2.2s]
+  (alpha,beta,q)=(9,8,3): |BPar(alpha-1,beta)|=41, chain failures 0, comparable pairs 668, P2 failures 0  [2.4s]
+  (alpha,beta,q)=(4,3,27): |BPar(alpha-1,beta)|=15, chain failures 0, comparable pairs 84, P2 failures 0  [2.4s]
+== (7.1) coverage formula over all down-sets (small cells) ==
+  (alpha,beta,q)=(2,1,3): 4 down-sets, failures 0  [2.4s]
+  (alpha,beta,q)=(2,2,3): 7 down-sets, failures 0  [2.4s]
+  (alpha,beta,q)=(3,2,3): 8 down-sets, failures 0  [2.4s]
+  (alpha,beta,q)=(3,3,3): 11 down-sets, failures 0  [2.4s]
+  (alpha,beta,q)=(2,1,5): 4 down-sets, failures 0  [2.4s]
+  (alpha,beta,q)=(2,2,5): 8 down-sets, failures 0  [2.4s]
+  (alpha,beta,q)=(3,2,5): 15 down-sets, failures 0  [2.4s]
+  (alpha,beta,q)=(2,2,7): 8 down-sets, failures 0  [2.4s]
+  (alpha,beta,q)=(3,1,9): 7 down-sets, failures 0  [2.4s]
+  (alpha,beta,q)=(2,2,9): 8 down-sets, failures 0  [2.4s]
+DONE
+        2.42 real         2.39 user         0.01 sys
+            10928128  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1603  page reclaims
+                  50  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  26  voluntary context switches
+                 455  involuntary context switches
+         34356367369  instructions retired
+          7935315162  cycles elapsed
+             7127328  peak memory footprint

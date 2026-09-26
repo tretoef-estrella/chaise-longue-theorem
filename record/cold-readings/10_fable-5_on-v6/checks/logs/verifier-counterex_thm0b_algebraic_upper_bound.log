@@ -1,0 +1,65 @@
+COMMAND: /usr/bin/time -l python3 /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/verifier-counterex_thm0b_algebraic_upper_bound.py
+WALL TIME:         0.99 real         0.76 user         0.08 sys
+PEAK MEMORY (maximum resident set size, bytes):            125517824  maximum resident set size
+----
+==============================================================================
+PART A: Theorem 0(b) as a pure point count (Appendix B Step 6 / DS Claim 4.3)
+==============================================================================
+(k,m)=(1,3): #matchings=3, |Gamma_J| (Def 1.3, enumerated)=6, Q_k(m) formula=6
+   support sizes of psi_J on mu_m^3 (DFT) = [4, 4, 4]; by Step-6(b) criterion = [4, 4, 4]
+   union of supports = 6  (should be |Gamma_J|=6)
+   common zeros = rank_Z A_J = dim_C(A_J (x) C) = 21  (m^(n+1) - |Gamma| = 21)
+(k,m)=(2,3): #matchings=15, |Gamma_J| (Def 1.3, enumerated)=20, Q_k(m) formula=20
+   support sizes of psi_J on mu_m^5 (DFT) = [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8]; by Step-6(b) criterion = [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+   union of supports = 20  (should be |Gamma_J|=20)
+   common zeros = rank_Z A_J = dim_C(A_J (x) C) = 223  (m^(n+1) - |Gamma| = 223)
+(k,m)=(1,15): #matchings=3, |Gamma_J| (Def 1.3, enumerated)=546, Q_k(m) formula=546
+   support sizes of psi_J on mu_m^3 (DFT) = [196, 196, 196]; by Step-6(b) criterion = [196, 196, 196]
+   union of supports = 546  (should be |Gamma_J|=546)
+   common zeros = rank_Z A_J = dim_C(A_J (x) C) = 2829  (m^(n+1) - |Gamma| = 2829)
+  -> so dim_{F_p}(A_J (x) F_p) = rank + c_p >= m^(n+1) - |Gamma_J| for every p: this is the whole content
+     of the inequality of Prop 2.1, and dim_F I <= |Gamma_J| (6.1). No Pham cycle, no [DS, Thm 2.2].
+
+==============================================================================
+PART B: exact ranks of the ideal (psi_J) in Q[G] and F_3[G]
+==============================================================================
+(k,m)=(1,3): ring dim 27; rank_Q(psi_J) = 6 (exact sympy if dim<=30, else float SVD), rank_{F_10007} = 6, rank_{F_3} = 6, |Gamma_J| = 6
+   dim_{F_3} A_J(x)F_3 = 21 >= rank_Z A_J = 21: inequality of Prop 2.1 (algebraic); equality here = no 3-torsion.
+(k,m)=(2,3): ring dim 243; rank_Q(psi_J) = 20 (exact sympy if dim<=30, else float SVD), rank_{F_10007} = 20, rank_{F_3} = 20, |Gamma_J| = 20
+   dim_{F_3} A_J(x)F_3 = 223 >= rank_Z A_J = 223: inequality of Prop 2.1 (algebraic); equality here = no 3-torsion.
+
+==============================================================================
+PART C: Corollary 7.8 at q=3, direct linear algebra
+==============================================================================
+I^bal_1 at q=3: dim_{F_3} = 3, dim_Q = 4, target N = 3
+I^bal_2 at q=3: dim_{F_3} = 15, dim_Q = 24, target N = 15
+I^ph_1 at q=3: dim_{F_3} = 15, dim_Q = 18, target N = 15
+
+==============================================================================
+PART D: (k,m)=(1,15) over GF(81) ⊃ mu_5: the colour splitting, block by block
+==============================================================================
+GF(81) = F_3[w]/( w**4 + w - 1 )
+zeta (primitive 5th root) = 20 ; mu_5 = [1, 20, 26, 47, 59]
+colourings: 125; compatible: 61; mismatches dim vs Lemma-6.8 count: 0
+sum_c dim pi_c(I) = dim_F I = 546;  Lemma 6.8 sum = 546;  |Gamma_J| = Q_1(15) = 546
+block of the Cor 7.8 colouring c=(zeta, zeta^-1, 1) [c_0=1]: dim = 6, N_1(c)=2, N_zeta=[3, 1], product=6
+   -> the pair block is I^bal_1 with dim 3 = N_bal(1,3) = 3: Corollary 7.8 at (a,q)=(1,3), obtained from (6.1) with zero topology.
+elapsed 0.6 s
+        0.99 real         0.76 user         0.08 sys
+           125517824  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9893  page reclaims
+                 512  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 975  voluntary context switches
+                1811  involuntary context switches
+         10714700608  instructions retired
+          2757990295  cycles elapsed
+           113721776  peak memory footprint

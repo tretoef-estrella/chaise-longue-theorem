@@ -1,0 +1,27 @@
+# command: python3 scripts/literal_k1.py 33 11 reduced
+# prediction: dim ideal = Q_1(33) = 2976, quotient 32961; est. < 5 min, < 900 MB
+# cap: 1150 MB RSS (polled every 0.5 s) and 600 s wall; run date: Fri Sep 25 13:25:43 CEST 2026
+m=33 p=11 k=1 mode=reduced: ring dim 35937, predicted dim ideal = Q_1(m) = 2976, quotient 32961
+  after J=[(0, 1), (2, 3)]: dim so far 1024  (3.6s)
+  after J=[(0, 2), (1, 3)]: dim so far 2016  (10.7s)
+  after J=[(0, 3), (1, 2)]: dim so far 2976  (21.2s)
+RESULT m=33 p=11: dim (psi_J) F_p[G] = 2976; quotient dim = 32961; predicted 2976 / 32961; AGREES  [21.2s]
+       21.30 real        20.69 user         0.48 sys
+           747077632  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              198888  page reclaims
+                  46  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 169  voluntary context switches
+                3190  involuntary context switches
+        330499891659  instructions retired
+         71820327386  cycles elapsed
+           802178128  peak memory footprint
+# watchdog: max polled RSS = 679168 KB; wall = 21 s; completed

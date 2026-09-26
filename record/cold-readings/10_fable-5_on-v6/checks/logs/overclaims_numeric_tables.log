@@ -1,0 +1,155 @@
+# command: /usr/bin/time -l python3 /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/overclaims_numeric_tables.py
+# date: Fri Sep 25 13:39:06 CEST 2026
+# wall time:        11.29 real        10.91 user         0.10 sys
+# peak memory:             54050816  maximum resident set size
+# exit=0
+# ---- stdout ----
+== Q_k(q) table (§3, lines 215-224) ==
+[OK ] Q_k(3) k=1..5: got [6, 20, 70, 252, 924], expected [6, 20, 70, 252, 924]
+[OK ] Q_k(5) k=1..5: got [36, 400, 4900, 63504, 853776], expected [36, 400, 4900, 63504, 853776]
+[OK ] Q_k(7) k=1..5: got [90, 1860, 44730, 1172556, 32496156], expected [90, 1860, 44730, 1172556, 32496156]
+[OK ] Q_k(9) k=1..5: got [168, 5120, 190120, 7939008, 357713664], expected [168, 5120, 190120, 7939008, 357713664]
+[OK ] Q_k(11) k=1..5: got [270, 10900, 551950, 32232060, 2070891900], expected [270, 10900, 551950, 32232060, 2070891900]
+[OK ] Q_k(13) k=1..5: got [396, 19920, 1281420, 96807312, 8175770064], expected [396, 19920, 1281420, 96807312, 8175770064]
+[OK ] Q_k(25) k=1..5: got [1656, 182400, 26926200, 4890642624, 1038711332736], expected [1656, 182400, 26926200, 4890642624, 1038711332736]
+[OK ] Q_k(27) k=1..5: got [1950, 234260, 37849630, 7550855676, 1767675505596], expected [1950, 234260, 37849630, 7550855676, 1767675505596]
+== closed forms ==
+[OK ] Q_0(q)=q-1, q=3..15: got [2, 4, 6, 8, 10, 12, 14], expected [2, 4, 6, 8, 10, 12, 14]
+[OK ] Q_1(q)=3(q-1)(q-2), q=3..31: got [6, 36, 90, 168, 270, 396, 546, 720, 918, 1140, 1386, 1656, 1950, 2268, 2610], expected [6, 36, 90, 168, 270, 396, 546, 720, 918, 1140, 1386, 1656, 1950, 2268, 2610]
+[OK ] Q_k(3)=C(2k+2,k+1), k=0..8: got [2, 6, 20, 70, 252, 924, 3432, 12870, 48620], expected [2, 6, 20, 70, 252, 924, 3432, 12870, 48620]
+[OK ] Q_2(q) polynomial (line 213), q=3..41: got [20, 400, 1860, 5120, 10900, 19920, 32900, 50560, 73620, 102800, 138820, 182400, 234260, 295120, 365700, 446720, 538900, 642960, 759620, 889600], expected [20, 400, 1860, 5120, 10900, 19920, 32900, 50560, 73620, 102800, 138820, 182400, 234260, 295120, 365700, 446720, 538900, 642960, 759620, 889600]
+[OK ] Q_3(q) polynomial (line 213), q=3..41: got [70, 4900, 44730, 190120, 551950, 1281420, 2570050, 4649680, 7792470, 12310900, 18557770, 26926200, 37849630, 51801820, 69296850, 90889120, 117173350, 148784580, 186398170, 230729800], expected [70, 4900, 44730, 190120, 551950, 1281420, 2570050, 4649680, 7792470, 12310900, 18557770, 26926200, 37849630, 51801820, 69296850, 90889120, 117173350, 148784580, 186398170, 230729800]
+[OK ] Q_2(15)=32900 (§12.3): got 32900, expected 32900
+[OK ] Q_2(21)=102800 (§12.3): got 102800, expected 102800
+[OK ] Q_1(125)=45756 (§12.1): got 45756, expected 45756
+[OK ] Q_1(49)=6768 (§12.1): got 6768, expected 6768
+[OK ] Q_6(3)=3432 (§12.1): got 3432, expected 3432
+[OK ] Q_3(9)=190120 (§12.1): got 190120, expected 190120
+[OK ] Q_2(25)=182400 (§12.1): got 182400, expected 182400
+[OK ] q^{2k+1}-Q_k(q) literal quotients (§12.1): got [21, 223, 2117, 89, 2725, 253, 1124], expected [21, 223, 2117, 89, 2725, 253, 1124]
+   (§1.3 cells claimed verified in [Rep] but absent from §12.1 table): Q_2(17) = 50560  Q_2(19) = 73620  Q_4(5) = 63504
+   §2.2: Q_1(q)=4!*(h/4+h(h-1)/2): True
+== brute-force cross-checks of Q ==
+[OK ] Q_brute(1,3): got 6, expected 6
+[OK ] Q_brute(1,5): got 36, expected 36
+[OK ] Q_brute(1,7): got 90, expected 90
+[OK ] Q_brute(1,9): got 168, expected 168
+[OK ] Q_brute(2,3): got 20, expected 20
+[OK ] Q_brute(2,5): got 400, expected 400
+[OK ] Q_brute(3,3): got 70, expected 70
+[OK ] Q_brute(2,7): got 1860, expected 1860
+[OK ] |Gamma'|(1,3) (Lemma 3.1): got 6, expected 6
+[OK ] |Gamma'|(1,5) (Lemma 3.1): got 36, expected 36
+[OK ] |Gamma'|(1,9) (Lemma 3.1): got 168, expected 168
+[OK ] |Gamma'|(2,3) (Lemma 3.1): got 20, expected 20
+[OK ] |Gamma'|(2,5) (Lemma 3.1): got 400, expected 400
+[OK ] |Gamma'|(3,3) (Lemma 3.1): got 70, expected 70
+== [DS, Definition 1.3] enumerations ==
+[OK ] |Gamma_J|(1,3) = Q_k(m): got 6, expected 6
+[OK ] |Gamma_J|(1,5) = Q_k(m): got 36, expected 36
+[OK ] |Gamma_J|(1,9) = Q_k(m): got 168, expected 168
+[OK ] |Gamma_J|(1,15) = Q_k(m): got 546, expected 546
+[OK ] |Gamma_J|(2,3) = Q_k(m): got 20, expected 20
+[OK ] |Gamma_J|(2,5) = Q_k(m): got 400, expected 400
+[OK ] |Gamma_J|(2,9): got 5120, expected 5120
+[OK ] Fact 9.2: |K| = 13: got 13, expected 13
+[OK ] Fact 9.2: |Gamma_K| (k=2,q=9, 13 matchings): got 4736, expected 4736
+== N_bal / N_ph (line 576, §12.4) ==
+[OK ] N_bal(a,3), a=1..5: got [3, 15, 93, 639, 4653], expected [3, 15, 93, 639, 4653]
+[OK ] N_bal(2,q), q=3,5,7,9,11: got [15, 45, 91, 153, 231], expected [15, 45, 91, 153, 231]
+[OK ] N_bal(5,3)=N_ph(4,3)=4653 (§12.4): got (4653, 4653), expected (4653, 4653)
+[OK ] N_bal(4,5)=7885 (§12.4): got 7885, expected 7885
+[OK ] N_ph(2,13)=N_bal(3,13)=11713 (§12.4): got 11713, expected 11713
+[OK ] N_bal brute (2,3),(3,3),(2,5): got [15, 93, 45], expected [15, 93, 45]
+[OK ] N_ph brute = N_bal(a+1) at (1,3),(2,3),(1,5): got [15, 93, 45], expected [15, 93, 45]
+[OK ] N_bal(0,q)=1, N_ph(0,q)=q: got (1, 7), expected (1, 7)
+== Hodge characters: Lemma 10.4 / Remark 10.3 (independent enumeration) ==
+[OK ] Lemma 10.4 arithmetic C(2k+2,k+1)^3-Q_k(9), k=1..4: got [48, 2880, 152880, 8064000], expected [48, 2880, 152880, 8064000]
+[OK ] |B|(1,9): got 216, expected 216
+[OK ] |D|(1,9) = Q_k(m) (Lemma 10.1(ii)): got 168, expected 168
+      (k,m)=(1,9): |B|-Q_k(m) = 48
+[OK ] |B|(2,9): got 8000, expected 8000
+[OK ] |D|(2,9) = Q_k(m) (Lemma 10.1(ii)): got 5120, expected 5120
+      (k,m)=(2,9): |B|-Q_k(m) = 2880
+[OK ] |D|(1,15) = Q_k(m) (Lemma 10.1(ii)): got 546, expected 546
+      (k,m)=(1,15): |B|-Q_k(m) = 288
+[OK ] |D|(1,21) = Q_k(m) (Lemma 10.1(ii)): got 1140, expected 1140
+      (k,m)=(1,21): |B|-Q_k(m) = 432
+[OK ] |D|(1,25) = Q_k(m) (Lemma 10.1(ii)): got 1656, expected 1656
+      (k,m)=(1,25): |B|-Q_k(m) = 0
+[OK ] |D|(1,35) = Q_k(m) (Lemma 10.1(ii)): got 3366, expected 3366
+      (k,m)=(1,35): |B|-Q_k(m) = 0
+[OK ] |D|(1,3) = Q_k(m) (Lemma 10.1(ii)): got 6, expected 6
+      (k,m)=(1,3): |B|-Q_k(m) = 0
+[OK ] |D|(1,5) = Q_k(m) (Lemma 10.1(ii)): got 36, expected 36
+      (k,m)=(1,5): |B|-Q_k(m) = 0
+[OK ] |D|(1,7) = Q_k(m) (Lemma 10.1(ii)): got 90, expected 90
+      (k,m)=(1,7): |B|-Q_k(m) = 0
+[OK ] Remark 10.3: |B|-Q at (1,15),(1,21) = 288, 432: got [288, 432], expected [288, 432]
+[OK ] Remark 10.3: |B|-Q at (1,25),(1,35) = 0,0: got [0, 0], expected [0, 0]
+== §1.3 cells and the gcd conditions ==
+[OK ] cell (2,49): every prime factor >= 2k+3=7: got True, expected True
+[OK ] cell (2,77): every prime factor >= 2k+3=7: got True, expected True
+[OK ] cell (3,121): every prime factor >= 2k+3=9: got True, expected True
+[OK ] cell (3,143): every prime factor >= 2k+3=9: got True, expected True
+      cell (2,15) is NOT a cell of H(i) (prime factors [3, 5], need >= 7): True
+      cell (2,21) is NOT a cell of H(i) (prime factors [3, 7], need >= 7): True
+      cell (2,25) is NOT a cell of H(i) (prime factors [5], need >= 7): True
+      cell (2,35) is NOT a cell of H(i) (prime factors [5, 7], need >= 7): True
+      cell (1,9) is NOT a cell of H(i) (prime factors [3], need >= 5): True
+      cell (1,15) is NOT a cell of H(i) (prime factors [3, 5], need >= 5): True
+[OK ] odd m: (all p>=2k+3) <=> gcd(m,(n+2)!)=1 <=> gcd(m,(n+1)!)=1, k<=6, m<3000: got True, expected True
+== §12.3 colouring counts ==
+[OK ] compatible colourings k=1: (m=15,p=3,r=5),(15,5,r=3),(21,7,r=3): got [61, 19, 19], expected [61, 19, 19]
+[OK ] compatible colourings k=2: (15,3,r=5),(15,5,r=3),(21,3,r=7),(21,7,r=3): got [1001, 141, 3301, 141], expected [1001, 141, 3301, 141]
+[OK ] total colourings r^{2k+1}: 5^5,3^5,7^5: got [3125, 243, 16807], expected [3125, 243, 16807]
+== Theorem 4.1 / Remark 4.2 / §12.1 graded rows ==
+[OK ] Thm 4.1 ranks k=1: got [2, 3, 1], expected [2, 3, 1]
+[OK ] Rem 4.2 ballot k=1: got [2, 3, 1], expected [2, 3, 1]
+[OK ] sum = Q_k(3), k=1: got 6, expected 6
+[OK ] Thm 4.1 ranks k=2: got [5, 9, 5, 1], expected [5, 9, 5, 1]
+[OK ] Rem 4.2 ballot k=2: got [5, 9, 5, 1], expected [5, 9, 5, 1]
+[OK ] sum = Q_k(3), k=2: got 20, expected 20
+[OK ] Thm 4.1 ranks k=3: got [14, 28, 20, 7, 1], expected [14, 28, 20, 7, 1]
+[OK ] Rem 4.2 ballot k=3: got [14, 28, 20, 7, 1], expected [14, 28, 20, 7, 1]
+[OK ] sum = Q_k(3), k=3: got 70, expected 70
+[OK ] Thm 4.1 ranks k=4: got [42, 90, 75, 35, 9, 1], expected [42, 90, 75, 35, 9, 1]
+[OK ] Rem 4.2 ballot k=4: got [42, 90, 75, 35, 9, 1], expected [42, 90, 75, 35, 9, 1]
+[OK ] sum = Q_k(3), k=4: got 252, expected 252
+[OK ] Thm 4.1 ranks k=5: got [132, 297, 275, 154, 54, 11, 1], expected [132, 297, 275, 154, 54, 11, 1]
+[OK ] Rem 4.2 ballot k=5: got [132, 297, 275, 154, 54, 11, 1], expected [132, 297, 275, 154, 54, 11, 1]
+[OK ] sum = Q_k(3), k=5: got 924, expected 924
+[OK ] Thm 4.1 ranks k=6: got [429, 1001, 1001, 637, 273, 77, 13, 1], expected [429, 1001, 1001, 637, 273, 77, 13, 1]
+[OK ] Rem 4.2 ballot k=6: got [429, 1001, 1001, 637, 273, 77, 13, 1], expected [429, 1001, 1001, 637, 273, 77, 13, 1]
+[OK ] sum = Q_k(3), k=6: got 3432, expected 3432
+[OK ] §12.1 (1,9) row: 15 entries (degrees 7..21), sum 168: got (15, 168), expected (15, 168)
+[OK ] §12.1 (2,9) row: 22 entries (degrees 14..35), sum 5120: got (22, 5120), expected (22, 5120)
+[OK ] §12.1 (1,27) row as read: 51 entries (degrees 25..75), sum 1950: got (51, 1950), expected (51, 1950)
+== Remark 10.2 internal consistency ==
+[OK ] Remark 10.2 p=7: |disc| exponent: got 48, expected 48
+[OK ] Remark 10.2 p=11: |disc| exponent: got 192, expected 192
+[OK ] Remark 10.2 p=13: |disc| exponent: got 300, expected 300
+[OK ] Remark 10.2 p=5: 10+2 = 3*(5-3)^2: got 12, expected 12
+[OK ] Remark 7.9(2): dim_Q((x-z)^2) in Q[x,z]/(x^3,z^3): got 4, expected 4
+[OK ] Remark 7.9(2): dim_F3 = N_bal(1,3) = 3: got 3, expected 3
+
+DONE in 11.21s; failures: 0
+# ---- stderr (time -l) ----
+       11.29 real        10.91 user         0.10 sys
+            54050816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6031  page reclaims
+                 423  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 883  voluntary context switches
+                2412  involuntary context switches
+        175203228596  instructions retired
+         34974273536  cycles elapsed
+            46203216  peak memory footprint

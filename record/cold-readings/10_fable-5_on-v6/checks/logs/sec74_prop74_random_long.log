@@ -1,0 +1,47 @@
+COMMAND: /usr/bin/time -l python3 /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/sec74_prop74_random_long.py
+PREDICTION (before run): 0 failures on 88000 random comparable pairs of long uneven partitions at q=3,5,9 (sizes up to 30) and on the 10 hand-built AR/MR pairs; < 20 s wall, < 60 MB peak
+NOTE: two earlier runs (same seed, identical random-part results, 0 failures) had some hand-built pairs mis-set in different cells (referee's own arithmetic) and skipped; this run corrects them.
+DATE: Fri Sep 25 13:24:49 CEST 2026
+WALL TIME: 4.09 s
+PEAK MEMORY (maximum resident set size): 10797056 bytes
+-----
+q=3 a=alpha-1=20 beta=20: 15000 random comparable pairs (strict 10960), fails=0, cases={'AA': 16222, 'AM': 1395, 'AR': 84, 'MA': 878, 'MM': 6146, 'MR': 883, 'RA': 152, 'RM': 2070, 'RR': 17170} [0.5s]
+q=3 a=alpha-1=30 beta=12: 10000 random comparable pairs (strict 7271), fails=0, cases={'AA': 11996, 'AM': 432, 'AR': 34, 'MA': 291, 'MM': 4076, 'MR': 720, 'RA': 127, 'RM': 1670, 'RR': 10654} [0.3s]
+q=3 a=alpha-1=12 beta=30: 10000 random comparable pairs (strict 7325), fails=0, cases={'AA': 10162, 'AM': 1090, 'AR': 89, 'MA': 584, 'MM': 3509, 'MR': 246, 'RA': 80, 'RM': 753, 'RR': 13487} [0.3s]
+q=9 a=alpha-1=20 beta=20: 15000 random comparable pairs (strict 12816), fails=0, cases={'AA': 29911, 'AM': 5725, 'AR': 41, 'MA': 1765, 'MM': 50017, 'MR': 1781, 'RA': 77, 'RM': 7921, 'RR': 37762} [0.9s]
+q=9 a=alpha-1=30 beta=15: 10000 random comparable pairs (strict 8669), fails=0, cases={'AA': 25644, 'AM': 2010, 'AR': 10, 'MA': 1154, 'MM': 31697, 'MR': 1153, 'RA': 71, 'RM': 5632, 'RR': 22629} [0.6s]
+q=9 a=alpha-1=15 beta=30: 10000 random comparable pairs (strict 8734), fails=0, cases={'AA': 18375, 'AM': 4169, 'AR': 59, 'MA': 1086, 'MM': 26459, 'MR': 1063, 'RA': 47, 'RM': 3264, 'RR': 35478} [0.6s]
+q=9 a=alpha-1=26 beta=26: 10000 random comparable pairs (strict 8587), fails=0, cases={'AA': 21220, 'AM': 3239, 'AR': 34, 'MA': 1196, 'MM': 31254, 'MR': 1102, 'RA': 44, 'RM': 4763, 'RR': 27148} [0.6s]
+q=5 a=alpha-1=24 beta=20: 8000 random comparable pairs (strict 6649), fails=0, cases={'AA': 12275, 'AM': 1581, 'AR': 46, 'MA': 584, 'MM': 9285, 'MR': 723, 'RA': 71, 'RM': 2454, 'RR': 12981} [0.3s]
+--- hand-built pairs ---
+  q=3 ((1, 1), ()) <= ((4,), (1, 1)): p1:MR:ok p2:AR:ok p3:AA:ok
+  q=3 ((5,), (1, 1)) <= ((6,), (3,)): p1:RR:ok p2:RM:ok p3:AA:ok
+  q=3 ((2, 2), ()) <= ((7,), (2, 1)): p1:MR:ok p2:AR:ok p3:AA:ok
+  q=3 ((4, 4), ()) <= ((11,), (2, 1)): p1:MR:ok p2:AR:ok p3:AA:ok
+  q=9 ((1, 1, 1, 1, 1), ()) <= ((10,), (1, 1, 1, 1, 1)): p1:MR:ok p2:MR:ok p3:MR:ok p4:MR:ok p5:AR:ok p6:AM:ok p7:AM:ok p8:AM:ok p9:AA:ok
+  q=9 ((3, 3, 3, 3, 3, 3), (1,)) <= ((10, 6, 5), (1, 1, 1, 1)): p1:RR:ok p2:MR:ok p3:MR:ok p4:AR:ok p5:AM:ok p6:AM:ok p7:AA:ok p8:AA:ok p9:AA:ok
+  q=9 ((2, 2, 2, 2, 2, 2, 2), (1, 1)) <= ((9, 7, 6), (5, 3, 1, 1)): p1:RR:ok p2:RR:ok p3:AR:ok p4:AR:ok p5:AM:ok p6:AM:ok p7:AA:ok p8:AA:ok p9:AA:ok
+  q=9 ((5, 5, 5, 5, 5, 1), (2, 2, 1)) <= ((13, 12, 11), (5, 3, 3, 3, 1)): p1:RR:ok p2:RR:ok p3:RR:ok p4:AR:ok p5:AR:ok p6:AM:ok p7:AA:ok p8:AA:ok p9:AA:ok
+  q=9 ((1, 1, 1, 1, 1, 1, 1, 1), ()) <= ((16,), (1, 1, 1, 1, 1, 1, 1, 1)): p1:MR:ok p2:AR:ok p3:AR:ok p4:AR:ok p5:AR:ok p6:AR:ok p7:AR:ok p8:AR:ok p9:AA:ok
+  q=9 ((6, 6, 4, 4, 4, 4), (1,)) <= ((13, 9, 7, 3), (1, 1, 1, 1, 1)): p1:RR:ok p2:MR:ok p3:MR:ok p4:AR:ok p5:AR:ok p6:AA:ok p7:AA:ok p8:AA:ok p9:AA:ok
+TOTAL random pairs = 88000 (strict 71011); case tallies = {'AA': 145805, 'AM': 19641, 'AR': 397, 'MA': 7538, 'MM': 162443, 'MR': 7671, 'RA': 669, 'RM': 28527, 'RR': 177309}
+TOTAL FAILURES = 0  wall = 4.1s
+----- full /usr/bin/time -l output -----
+        4.09 real         4.05 user         0.03 sys
+            10797056  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1675  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 304  involuntary context switches
+         63385043079  instructions retired
+         13997186397  cycles elapsed
+             6799624  peak memory footprint

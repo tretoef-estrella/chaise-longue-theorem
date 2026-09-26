@@ -1,0 +1,41 @@
+=== RUN ===
+command: python3 downset_bip_roots.py --bal 2 19
+cwd: /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts
+date: Fri Sep 25 14:00:51 CEST 2026
+exit status: 0
+wall time (/usr/bin/time -l, real): 204.72 s
+peak memory (maximum resident set size): 53084160 bytes = 50 MB
+=== PREDICTION (written before the run) ===
+prediction command: python3 downset_bip_roots.py --bal 2 19 --predict
+I^bal_2 at q = 19 (p = 19), ring R_{[2],[2]} of dimension 130321, date 2026-09-25 13:54:02
+degrees 0..72, n_d = [1, 4, 10, 20, 35, 56, 84, 120, 165, 220, 286, 364, 455, 560, 680, 816, 969, 1140, 1330, 1536, 1755, 1984, 2220, 2460, 2701, 2940, 3174, 3400, 3615, 3816, 4000, 4164, 4305, 4420, 4506, 4560, 4579, 4560, 4506, 4420, 4305, 4164, 4000, 3816, 3615, 3400, 3174, 2940, 2701, 2460, 2220, 1984, 1755, 1536, 1330, 1140, 969, 816, 680, 560, 455, 364, 286, 220, 165, 120, 84, 56, 35, 20, 10, 4, 1]
+N_bal(2,19) by direct enumeration of 130321 points = 703   [0.0s]; paper's closed form sum (a!/prod c_i!)^2 = 703 (claim)
+PREDICTION: dim_F I^bal_2 = 703 (Thm C says >= 703; Cor 7.8 says =)
+ESTIMATE: 2 generators of degree 36; matmul 4.17e+10 flops + elimination 2.76e+10 ops -> raw model ~146 s, calibrated ~15 s (x0.10) (+ enumeration of 130321 points, + char-0 sympy ranks if --char0); memory ~26 MB (per-degree peak of row block + basis) + 15 MB tables/generators + 60 MB baseline
+=== OUTPUT ===
+I^bal_2 at q = 19 (p = 19), ring R_{[2],[2]} of dimension 130321, date 2026-09-25 13:57:26
+degrees 0..72, n_d = [1, 4, 10, 20, 35, 56, 84, 120, 165, 220, 286, 364, 455, 560, 680, 816, 969, 1140, 1330, 1536, 1755, 1984, 2220, 2460, 2701, 2940, 3174, 3400, 3615, 3816, 4000, 4164, 4305, 4420, 4506, 4560, 4579, 4560, 4506, 4420, 4305, 4164, 4000, 3816, 3615, 3400, 3174, 2940, 2701, 2460, 2220, 1984, 1755, 1536, 1330, 1140, 969, 816, 680, 560, 455, 364, 286, 220, 165, 120, 84, 56, 35, 20, 10, 4, 1]
+N_bal(2,19) by direct enumeration of 130321 points = 703   [0.0s]; paper's closed form sum (a!/prod c_i!)^2 = 703 (claim)
+2 generators, built in 0.1s; degrees [36]
+dim_{F_19} I^bal_2 = 703   (per degree: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 37, 35, 33, 31, 29, 27, 25, 23, 21, 19, 17, 15, 13, 11, 9, 7, 5, 3, 1])   [0.1s]
+RESULT I^bal_2 q=19: dim = 703, N = 703 -> dim = N (Theorem C holds with equality here, as Cor. 7.8 claims)
+total 204.6s
+=== /usr/bin/time -l (raw) ===
+      204.72 real       203.61 user         0.92 sys
+            53084160  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7171  page reclaims
+                  46  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 201  voluntary context switches
+                4911  involuntary context switches
+       3312405346740  instructions retired
+        694659173241  cycles elapsed
+            48316728  peak memory footprint

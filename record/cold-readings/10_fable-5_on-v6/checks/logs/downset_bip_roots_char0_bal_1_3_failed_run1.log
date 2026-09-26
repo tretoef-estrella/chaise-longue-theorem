@@ -1,0 +1,48 @@
+=== RUN ===
+command: python3 downset_bip_roots.py --bal 1 3 --char0
+cwd: /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts
+date: Fri Sep 25 14:00:52 CEST 2026
+exit status: 1
+wall time (/usr/bin/time -l, real): 0.37 s
+peak memory (maximum resident set size): 60899328 bytes = 58 MB
+=== PREDICTION (written before the run) ===
+prediction command: python3 downset_bip_roots.py --bal 1 3 --char0 --predict
+I^bal_1 at q = 3 (p = 3), ring R_{[1],[1]} of dimension 9, date 2026-09-25 14:00:52
+degrees 0..4, n_d = [1, 2, 3, 2, 1]
+N_bal(1,3) by direct enumeration of 9 points = 3   [0.0s]; paper's closed form sum (a!/prod c_i!)^2 = 3 (claim)
+PREDICTION: dim_F I^bal_1 = 3 (Thm C says >= 3; Cor 7.8 says =)
+ESTIMATE: 1 generators of degree 2; matmul 9.50e+00 flops + elimination 2.85e+01 ops -> raw model ~0 s, calibrated ~0 s (x0.10) (+ enumeration of 9 points, + char-0 sympy ranks if --char0); memory ~0 MB (per-degree peak of row block + basis) + 0 MB tables/generators + 60 MB baseline
+=== OUTPUT ===
+I^bal_1 at q = 3 (p = 3), ring R_{[1],[1]} of dimension 9, date 2026-09-25 14:00:52
+degrees 0..4, n_d = [1, 2, 3, 2, 1]
+N_bal(1,3) by direct enumeration of 9 points = 3   [0.0s]; paper's closed form sum (a!/prod c_i!)^2 = 3 (claim)
+1 generators, built in 0.0s; degrees [2]
+dim_{F_3} I^bal_1 = 3   (per degree: [0, 0, 1, 1, 1])   [0.0s]
+RESULT I^bal_1 q=3: dim = 3, N = 3 -> dim = N (Theorem C holds with equality here, as Cor. 7.8 claims)
+=== /usr/bin/time -l (raw) ===
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/downset_bip_roots.py", line 148, in <module>
+    main()
+  File "/Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/downset_bip_roots.py", line 138, in main
+    d0, dims0 = char0_dims(ring, gens, log=(print if args.verbose else None))
+  File "/Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/downset_bip_roots.py", line 42, in char0_dims
+    rows.append(_mono_times(ring, g, e, d))
+NameError: name '_mono_times' is not defined
+        0.37 real         0.19 user         0.05 sys
+            60899328  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5967  page reclaims
+                 395  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 689  voluntary context switches
+                 312  involuntary context switches
+          2401391964  instructions retired
+           859666459  cycles elapsed
+            49791312  peak memory footprint

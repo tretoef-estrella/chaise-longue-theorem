@@ -1,0 +1,69 @@
+COMMAND: /usr/bin/time -l python3 /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/ref6a_colour_split_m21_k1.py
+WALL TIME:         0.65 real         0.59 user         0.02 sys
+PEAK MEMORY:             66174976  maximum resident set size
+NOTE: two earlier runs of earlier revisions of this script (int64 row buffers; then int16 working copy) peaked at 281444352 and 162021376 bytes RSS with identical numerical output; the elimination was then made in-place on int8 and rerun; this log is the final rerun.
+----- time -l full output -----
+        0.65 real         0.59 user         0.02 sys
+            66174976  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5049  page reclaims
+                 160  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 155  voluntary context switches
+                 172  involuntary context switches
+          9230997027  instructions retired
+          2143970200  cycles elapsed
+            59638096  peak memory footprint
+----- script output -----
+== (B) Lemma 6.3: #compatible J == (|C_1|-1)!! * prod |C_zeta|!  (product set) ==
+  k=1 r=3: mismatches=0, compatible colourings=19
+  k=1 r=5: mismatches=0, compatible colourings=61
+  k=2 r=3: mismatches=0, compatible colourings=141
+  k=2 r=5: mismatches=0, compatible colourings=1001
+  k=3 r=3: mismatches=0, compatible colourings=1107
+
+== (D) brute force |Gamma_J| at m=21, k=1: 1140  (Q_1(21) = 1140) ==
+
+== (A),(C): per colouring c=(c_1,c_2,c_3): direct dim pi_c(I) vs block product vs |Gamma_c| ==
+  c=(1, 1, 1) c0=1 |C_1|=4 |C_2|=0 |C_4|=0 #compJ=3 direct=90 blocks=[([0, 1, 2, 3], 90), ([], 1)] prod=90 |Gamma_c|=90
+  c=(1, 1, 2) c0=4 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([1, 2], 6), ([3, 0], 7)] prod=42 |Gamma_c|=42
+  c=(1, 1, 4) c0=2 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([1, 2], 6), ([0, 3], 7)] prod=42 |Gamma_c|=42
+  c=(1, 2, 1) c0=4 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([1, 3], 6), ([2, 0], 7)] prod=42 |Gamma_c|=42
+  c=(1, 2, 2) c0=2 |C_1|=1 |C_2|=3 |C_4|=0 #compJ=0 direct=0 blocks=[] prod=0 |Gamma_c|=0
+  c=(1, 2, 4) c0=1 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([0, 1], 6), ([2, 3], 7)] prod=42 |Gamma_c|=42
+  c=(1, 4, 1) c0=2 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([1, 3], 6), ([0, 2], 7)] prod=42 |Gamma_c|=42
+  c=(1, 4, 2) c0=1 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([0, 1], 6), ([3, 2], 7)] prod=42 |Gamma_c|=42
+  c=(1, 4, 4) c0=4 |C_1|=1 |C_2|=0 |C_4|=3 #compJ=0 direct=0 blocks=[] prod=0 |Gamma_c|=0
+  c=(2, 1, 1) c0=4 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([2, 3], 6), ([1, 0], 7)] prod=42 |Gamma_c|=42
+  c=(2, 1, 2) c0=2 |C_1|=1 |C_2|=3 |C_4|=0 #compJ=0 direct=0 blocks=[] prod=0 |Gamma_c|=0
+  c=(2, 1, 4) c0=1 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([0, 2], 6), ([1, 3], 7)] prod=42 |Gamma_c|=42
+  c=(2, 2, 1) c0=2 |C_1|=1 |C_2|=3 |C_4|=0 #compJ=0 direct=0 blocks=[] prod=0 |Gamma_c|=0
+  c=(2, 2, 2) c0=1 |C_1|=1 |C_2|=3 |C_4|=0 #compJ=0 direct=0 blocks=[] prod=0 |Gamma_c|=0
+  c=(2, 2, 4) c0=4 |C_1|=0 |C_2|=2 |C_4|=2 #compJ=2 direct=91 blocks=[([], 1), ([1, 2, 0, 3], 91)] prod=91 |Gamma_c|=91
+  c=(2, 4, 1) c0=1 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([0, 3], 6), ([1, 2], 7)] prod=42 |Gamma_c|=42
+  c=(2, 4, 2) c0=4 |C_1|=0 |C_2|=2 |C_4|=2 #compJ=2 direct=91 blocks=[([], 1), ([1, 3, 0, 2], 91)] prod=91 |Gamma_c|=91
+  c=(2, 4, 4) c0=2 |C_1|=0 |C_2|=2 |C_4|=2 #compJ=2 direct=91 blocks=[([], 1), ([0, 1, 2, 3], 91)] prod=91 |Gamma_c|=91
+  c=(4, 1, 1) c0=2 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([2, 3], 6), ([0, 1], 7)] prod=42 |Gamma_c|=42
+  c=(4, 1, 2) c0=1 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([0, 2], 6), ([3, 1], 7)] prod=42 |Gamma_c|=42
+  c=(4, 1, 4) c0=4 |C_1|=1 |C_2|=0 |C_4|=3 #compJ=0 direct=0 blocks=[] prod=0 |Gamma_c|=0
+  c=(4, 2, 1) c0=1 |C_1|=2 |C_2|=1 |C_4|=1 #compJ=1 direct=42 blocks=[([0, 3], 6), ([2, 1], 7)] prod=42 |Gamma_c|=42
+  c=(4, 2, 2) c0=4 |C_1|=0 |C_2|=2 |C_4|=2 #compJ=2 direct=91 blocks=[([], 1), ([2, 3, 0, 1], 91)] prod=91 |Gamma_c|=91
+  c=(4, 2, 4) c0=2 |C_1|=0 |C_2|=2 |C_4|=2 #compJ=2 direct=91 blocks=[([], 1), ([0, 2, 1, 3], 91)] prod=91 |Gamma_c|=91
+  c=(4, 4, 1) c0=4 |C_1|=1 |C_2|=0 |C_4|=3 #compJ=0 direct=0 blocks=[] prod=0 |Gamma_c|=0
+  c=(4, 4, 2) c0=2 |C_1|=0 |C_2|=2 |C_4|=2 #compJ=2 direct=91 blocks=[([], 1), ([0, 3, 1, 2], 91)] prod=91 |Gamma_c|=91
+  c=(4, 4, 4) c0=1 |C_1|=1 |C_2|=0 |C_4|=3 #compJ=0 direct=0 blocks=[] prod=0 |Gamma_c|=0
+  sum_c direct dim pi_c(I) = 1140; sum_c block products = 1140; |Gamma_J| = 1140
+  failures: (A)=0 (C)=0 (D)=0   [0.3s]
+
+== (E) extra block checks at q=7 ==
+  dim I^bal_2 (q=7) = 91  (N_bal(2,7) = 91)
+  dim (g_P : P) for |C_1|=4, 0 not in C_1, q=7 = 90  (expected 90)
+
+DONE

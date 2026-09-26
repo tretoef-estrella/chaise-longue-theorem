@@ -1,0 +1,27 @@
+CMD: /usr/bin/time -l python3 checks/scripts/repairW_deformation_subfamily.py
+WALL: 1.39s
+PEAK_RSS_BYTES: 61538304
+---
+(a) all f_i squarefree => no common zero of the partials except 0 => W smooth : OK
+(a') f_2 with a double root => (0:0:0:0:1:1) is a singular point of W : OK
+(b) span(mixed line of X(2), root point of random squarefree f_2) lies in W in U_1 : OK
+(c) no diagonal-form mixed line on f_0 + f_1 = 0 once f_0 is perturbed (eps != 0) : OK
+elapsed 1.07s
+        1.39 real         1.25 user         0.05 sys
+            61538304  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5982  page reclaims
+                 136  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 594  voluntary context switches
+                 399  involuntary context switches
+         15358229236  instructions retired
+          4157977178  cycles elapsed
+            50970960  peak memory footprint

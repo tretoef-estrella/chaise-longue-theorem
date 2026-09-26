@@ -1,0 +1,110 @@
+COMMAND: /usr/bin/time -l python3 /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/sec64_65_symbolic_and_counts.py
+EXIT: 0
+WALL TIME (s): 1.27
+PEAK MEMORY (maximum resident set size, bytes): 57163776
+-----
+[OK] Lemma 6.7(i): (1+eps)^{-1} - 1 == -eps(1+eps)^{-1}
+[OK] Lemma 6.7(ii): t_i t_l - 1 == (x - z)(1+z)^{-1}
+[OK] Lemma 6.7 defs: x = zeta^{-1} t_i - 1, z = (zeta t_l)^{-1} - 1 recover x,z
+[OK] Lemma 2.3(ii): y_j + y_k == (t_j+t_k)(t_j t_k)^{-1}(t_j t_k - 1)
+[OK] D formula q=3: (b^(q-1)-a^(q-1))/(a+b) == D, remainder 0
+[OK] Lemma 2.4(i) q=3 p=3: (a+b)^(q-1) b == -a b D(a,b) mod (b^q)
+[OK] D formula q=5: (b^(q-1)-a^(q-1))/(a+b) == D, remainder 0
+[OK] Lemma 2.4(i) q=5 p=5: (a+b)^(q-1) b == -a b D(a,b) mod (b^q)
+[OK] D formula q=7: (b^(q-1)-a^(q-1))/(a+b) == D, remainder 0
+[OK] Lemma 2.4(i) q=7 p=7: (a+b)^(q-1) b == -a b D(a,b) mod (b^q)
+[OK] D formula q=9: (b^(q-1)-a^(q-1))/(a+b) == D, remainder 0
+[OK] Lemma 2.4(i) q=9 p=3: (a+b)^(q-1) b == -a b D(a,b) mod (b^q)
+[OK] D formula q=25: (b^(q-1)-a^(q-1))/(a+b) == D, remainder 0
+[OK] Lemma 2.4(i) q=25 p=5: (a+b)^(q-1) b == -a b D(a,b) mod (b^q)
+[OK] D formula q=27: (b^(q-1)-a^(q-1))/(a+b) == D, remainder 0
+[OK] Lemma 2.4(i) q=27 p=3: (a+b)^(q-1) b == -a b D(a,b) mod (b^q)
+[OK] N_1 q=3 |C_1|=0 (0 not in C_1): 1 == Q_-1(q)=1
+[OK] N_1 q=3 |C_1|=1 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=3 |C_1|=2 (0 not in C_1): 2 == Q_0(q)=2
+[OK] N_1 q=3 |C_1|=2 (0 in C_1):     2 == Q_0(q)=2
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] N_1 q=3 |C_1|=3 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=3 |C_1|=4 (0 not in C_1): 6 == Q_1(q)=6
+[OK] N_1 q=3 |C_1|=4 (0 in C_1):     6 == Q_1(q)=6
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] N_1 q=3 |C_1|=5 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=3 |C_1|=6 (0 not in C_1): 20 == Q_2(q)=20
+[OK] N_1 q=3 |C_1|=6 (0 in C_1):     20 == Q_2(q)=20
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] N_1 q=5 |C_1|=0 (0 not in C_1): 1 == Q_-1(q)=1
+[OK] N_1 q=5 |C_1|=1 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=5 |C_1|=2 (0 not in C_1): 4 == Q_0(q)=4
+[OK] N_1 q=5 |C_1|=2 (0 in C_1):     4 == Q_0(q)=4
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] N_1 q=5 |C_1|=3 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=5 |C_1|=4 (0 not in C_1): 36 == Q_1(q)=36
+[OK] N_1 q=5 |C_1|=4 (0 in C_1):     36 == Q_1(q)=36
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] N_1 q=5 |C_1|=5 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=5 |C_1|=6 (0 not in C_1): 400 == Q_2(q)=400
+[OK] N_1 q=5 |C_1|=6 (0 in C_1):     400 == Q_2(q)=400
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] N_1 q=7 |C_1|=0 (0 not in C_1): 1 == Q_-1(q)=1
+[OK] N_1 q=7 |C_1|=1 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=7 |C_1|=2 (0 not in C_1): 6 == Q_0(q)=6
+[OK] N_1 q=7 |C_1|=2 (0 in C_1):     6 == Q_0(q)=6
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] N_1 q=7 |C_1|=3 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=7 |C_1|=4 (0 not in C_1): 90 == Q_1(q)=90
+[OK] N_1 q=7 |C_1|=4 (0 in C_1):     90 == Q_1(q)=90
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] N_1 q=7 |C_1|=5 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=7 |C_1|=6 (0 not in C_1): 1860 == Q_2(q)=1860
+[OK] N_1 q=7 |C_1|=6 (0 in C_1):     1860 == Q_2(q)=1860
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] N_1 q=9 |C_1|=0 (0 not in C_1): 1 == Q_-1(q)=1
+[OK] N_1 q=9 |C_1|=1 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=9 |C_1|=2 (0 not in C_1): 8 == Q_0(q)=8
+[OK] N_1 q=9 |C_1|=2 (0 in C_1):     8 == Q_0(q)=8
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] N_1 q=9 |C_1|=3 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=9 |C_1|=4 (0 not in C_1): 168 == Q_1(q)=168
+[OK] N_1 q=9 |C_1|=4 (0 in C_1):     168 == Q_1(q)=168
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] N_1 q=9 |C_1|=5 odd: both counts 0 (got 0, 0)
+[OK] N_1 q=9 |C_1|=6 (0 not in C_1): 5120 == Q_2(q)=5120
+[OK] N_1 q=9 |C_1|=6 (0 in C_1):     5120 == Q_2(q)=5120
+[OK]    parenthetical: no closed tuple with w_0 = 1 when |C_1| even (found 0)
+[OK] Q_k(3) k=1..3 == paper's table [6, 20, 70]
+[OK] Q_0(3) == q-1
+[OK] Q_k(5) k=1..3 == paper's table [36, 400, 4900]
+[OK] Q_0(5) == q-1
+[OK] Q_k(7) k=1..3 == paper's table [90, 1860, 44730]
+[OK] Q_0(7) == q-1
+[OK] Q_k(9) k=1..3 == paper's table [168, 5120, 190120]
+[OK] Q_0(9) == q-1
+[OK] Q_k(11) k=1..3 == paper's table [270, 10900, 551950]
+[OK] Q_0(11) == q-1
+[OK] Q_k(13) k=1..3 == paper's table [396, 19920, 1281420]
+[OK] Q_0(13) == q-1
+[OK] Q_k(25) k=1..3 == paper's table [1656, 182400, 26926200]
+[OK] Q_0(25) == q-1
+[OK] Q_k(27) k=1..3 == paper's table [1950, 234260, 37849630]
+[OK] Q_0(27) == q-1
+
+ALL OK: True   elapsed 0.9s
+----- time -l stderr -----
+        1.27 real         1.06 user         0.07 sys
+            57163776  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5404  page reclaims
+                 448  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 901  voluntary context switches
+                 440  involuntary context switches
+         16768668520  instructions retired
+          3854679103  cycles elapsed
+            47972688  peak memory footprint

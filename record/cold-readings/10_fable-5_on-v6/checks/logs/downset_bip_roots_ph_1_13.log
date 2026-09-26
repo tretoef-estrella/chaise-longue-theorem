@@ -1,0 +1,41 @@
+=== RUN ===
+command: python3 downset_bip_roots.py --ph 1 13
+cwd: /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts
+date: Fri Sep 25 14:00:51 CEST 2026
+exit status: 0
+wall time (/usr/bin/time -l, real): 0.07 s
+peak memory (maximum resident set size): 24264704 bytes = 23 MB
+=== PREDICTION (written before the run) ===
+prediction command: python3 downset_bip_roots.py --ph 1 13 --predict
+I^ph_1 at q = 13 (p = 13), ring R_{[2],[1]} of dimension 2197, date 2026-09-25 14:00:51
+degrees 0..36, n_d = [1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 102, 111, 118, 123, 126, 127, 126, 123, 118, 111, 102, 91, 78, 66, 55, 45, 36, 28, 21, 15, 10, 6, 3, 1]
+N_ph(1,13) by direct enumeration of 2197 points = 325   [0.0s]; N_bal(2,13) direct = 325
+PREDICTION: dim_F I^ph_1 = 325 (Thm C says >= 325; Cor 7.8 says =)
+ESTIMATE: 2 generators of degree 12; matmul 6.52e+06 flops + elimination 1.87e+07 ops -> raw model ~0 s, calibrated ~0 s (x0.10) (+ enumeration of 2197 points, + char-0 sympy ranks if --char0); memory ~0 MB (per-degree peak of row block + basis) + 0 MB tables/generators + 60 MB baseline
+=== OUTPUT ===
+I^ph_1 at q = 13 (p = 13), ring R_{[2],[1]} of dimension 2197, date 2026-09-25 14:00:51
+degrees 0..36, n_d = [1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 102, 111, 118, 123, 126, 127, 126, 123, 118, 111, 102, 91, 78, 66, 55, 45, 36, 28, 21, 15, 10, 6, 3, 1]
+N_ph(1,13) by direct enumeration of 2197 points = 325   [0.0s]; N_bal(2,13) direct = 325
+2 generators, built in 0.0s; degrees [12]
+dim_{F_13} I^ph_1 = 325   (per degree: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 25, 23, 21, 19, 17, 15, 13, 11, 9, 7, 5, 3, 1])   [0.0s]
+RESULT I^ph_1 q=13: dim = 325, N = 325 -> dim = N (Theorem C holds with equality here, as Cor. 7.8 claims)
+total 0.0s
+=== /usr/bin/time -l (raw) ===
+        0.07 real         0.06 user         0.01 sys
+            24264704  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2694  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  21  involuntary context switches
+           852515327  instructions retired
+           258818085  cycles elapsed
+            17760544  peak memory footprint

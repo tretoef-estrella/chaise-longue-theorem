@@ -1,0 +1,131 @@
+COMMAND: /usr/bin/time -l python3 /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/sec74_prop74_bruteforce.py
+PREDICTION (before run): sweep 1000-3000 comparable ordered pairs, 0 failures in all checks; AR absent at q=7 in the sweep, present at q=3,5 and in the extra cells; < 40 s wall, < 60 MB peak
+DATE: Fri Sep 25 13:21:49 CEST 2026
+-----
+WALL TIME: 4.52 s
+PEAK MEMORY (maximum resident set size): 10846208 bytes
+-----
+=== C0 ===
+[C0] section-5.5 identities: 22619 instances on all partitions of size <= 12, failures = 0
+=== C1 (chain + membership) and C2 (Prop. 7.4, every comparable ordered pair, every p) ===
+[sweep] q=3 alpha=1 beta=0: |BPar_q(alpha-1,beta)|=   1  options=    3 (C1 fails 0)  comparable ordered pairs=     1 (strict      0)  Prop7.4 fails=0  aux fails=0  cases={'MM': 3}  [0.00s]
+[sweep] q=3 alpha=1 beta=1: |BPar_q(alpha-1,beta)|=   1  options=    3 (C1 fails 0)  comparable ordered pairs=     1 (strict      0)  Prop7.4 fails=0  aux fails=0  cases={'MM': 2, 'RR': 1}  [0.00s]
+[sweep] q=3 alpha=1 beta=2: |BPar_q(alpha-1,beta)|=   2  options=    6 (C1 fails 0)  comparable ordered pairs=     3 (strict      1)  Prop7.4 fails=0  aux fails=0  cases={'MM': 4, 'RM': 1, 'RR': 4}  [0.00s]
+[sweep] q=3 alpha=1 beta=3: |BPar_q(alpha-1,beta)|=   3  options=    9 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'MM': 4, 'RM': 4, 'RR': 10}  [0.00s]
+[sweep] q=3 alpha=1 beta=4: |BPar_q(alpha-1,beta)|=   4  options=   12 (C1 fails 0)  comparable ordered pairs=    10 (strict      6)  Prop7.4 fails=0  aux fails=0  cases={'MM': 7, 'RM': 6, 'RR': 17}  [0.00s]
+[sweep] q=3 alpha=2 beta=0: |BPar_q(alpha-1,beta)|=   1  options=    3 (C1 fails 0)  comparable ordered pairs=     1 (strict      0)  Prop7.4 fails=0  aux fails=0  cases={'AA': 1, 'MM': 2}  [0.00s]
+[sweep] q=3 alpha=2 beta=1: |BPar_q(alpha-1,beta)|=   2  options=    6 (C1 fails 0)  comparable ordered pairs=     3 (strict      1)  Prop7.4 fails=0  aux fails=0  cases={'AA': 1, 'MA': 1, 'MM': 5, 'MR': 1, 'RR': 1}  [0.00s]
+[sweep] q=3 alpha=2 beta=2: |BPar_q(alpha-1,beta)|=   3  options=    9 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'AA': 3, 'MA': 2, 'MM': 4, 'MR': 1, 'RM': 1, 'RR': 7}  [0.00s]
+[sweep] q=3 alpha=2 beta=3: |BPar_q(alpha-1,beta)|=   4  options=   12 (C1 fails 0)  comparable ordered pairs=    10 (strict      6)  Prop7.4 fails=0  aux fails=0  cases={'AA': 3, 'MA': 4, 'MM': 6, 'MR': 1, 'RM': 3, 'RR': 13}  [0.00s]
+[sweep] q=3 alpha=2 beta=4: |BPar_q(alpha-1,beta)|=   6  options=   18 (C1 fails 0)  comparable ordered pairs=    20 (strict     14)  Prop7.4 fails=0  aux fails=0  cases={'AA': 6, 'MA': 5, 'MM': 6, 'MR': 1, 'RA': 3, 'RM': 8, 'RR': 31}  [0.00s]
+[sweep] q=3 alpha=3 beta=0: |BPar_q(alpha-1,beta)|=   2  options=    6 (C1 fails 0)  comparable ordered pairs=     3 (strict      1)  Prop7.4 fails=0  aux fails=0  cases={'AA': 4, 'AM': 1, 'MM': 4}  [0.00s]
+[sweep] q=3 alpha=3 beta=1: |BPar_q(alpha-1,beta)|=   3  options=    9 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'AA': 7, 'AM': 1, 'MA': 1, 'MM': 4, 'MR': 2, 'RR': 3}  [0.00s]
+[sweep] q=3 alpha=3 beta=2: |BPar_q(alpha-1,beta)|=   5  options=   15 (C1 fails 0)  comparable ordered pairs=    14 (strict      9)  Prop7.4 fails=0  aux fails=0  cases={'AA': 10, 'AM': 1, 'MA': 6, 'MM': 8, 'MR': 6, 'RM': 1, 'RR': 10}  [0.00s]
+[sweep] q=3 alpha=3 beta=3: |BPar_q(alpha-1,beta)|=   6  options=   18 (C1 fails 0)  comparable ordered pairs=    20 (strict     14)  Prop7.4 fails=0  aux fails=0  cases={'AA': 15, 'AM': 1, 'MA': 7, 'MM': 7, 'MR': 3, 'RA': 1, 'RM': 3, 'RR': 23}  [0.00s]
+[sweep] q=3 alpha=3 beta=4: |BPar_q(alpha-1,beta)|=   8  options=   24 (C1 fails 0)  comparable ordered pairs=    33 (strict     25)  Prop7.4 fails=0  aux fails=0  cases={'AA': 19, 'AM': 1, 'MA': 14, 'MM': 9, 'MR': 4, 'RA': 2, 'RM': 7, 'RR': 43}  [0.00s]
+[sweep] q=3 alpha=4 beta=0: |BPar_q(alpha-1,beta)|=   3  options=    9 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'AA': 10, 'AM': 4, 'MM': 4}  [0.00s]
+[sweep] q=3 alpha=4 beta=1: |BPar_q(alpha-1,beta)|=   4  options=   12 (C1 fails 0)  comparable ordered pairs=    10 (strict      6)  Prop7.4 fails=0  aux fails=0  cases={'AA': 13, 'AM': 3, 'MA': 1, 'MM': 6, 'MR': 4, 'RR': 3}  [0.00s]
+[sweep] q=3 alpha=4 beta=2: |BPar_q(alpha-1,beta)|=   6  options=   18 (C1 fails 0)  comparable ordered pairs=    20 (strict     14)  Prop7.4 fails=0  aux fails=0  cases={'AA': 23, 'AM': 3, 'AR': 1, 'MA': 3, 'MM': 7, 'MR': 7, 'RM': 1, 'RR': 15}  [0.00s]
+[sweep] q=3 alpha=4 beta=3: |BPar_q(alpha-1,beta)|=   8  options=   24 (C1 fails 0)  comparable ordered pairs=    34 (strict     26)  Prop7.4 fails=0  aux fails=0  cases={'AA': 29, 'AM': 3, 'AR': 1, 'MA': 12, 'MM': 12, 'MR': 12, 'RA': 1, 'RM': 3, 'RR': 29}  [0.00s]
+[sweep] q=3 alpha=4 beta=4: |BPar_q(alpha-1,beta)|=  10  options=   30 (C1 fails 0)  comparable ordered pairs=    50 (strict     40)  Prop7.4 fails=0  aux fails=0  cases={'AA': 43, 'AM': 3, 'AR': 1, 'MA': 14, 'MM': 11, 'MR': 8, 'RA': 3, 'RM': 7, 'RR': 60}  [0.00s]
+[sweep] q=5 alpha=1 beta=0: |BPar_q(alpha-1,beta)|=   1  options=    5 (C1 fails 0)  comparable ordered pairs=     1 (strict      0)  Prop7.4 fails=0  aux fails=0  cases={'MM': 5}  [0.00s]
+[sweep] q=5 alpha=1 beta=1: |BPar_q(alpha-1,beta)|=   1  options=    5 (C1 fails 0)  comparable ordered pairs=     1 (strict      0)  Prop7.4 fails=0  aux fails=0  cases={'MM': 4, 'RR': 1}  [0.00s]
+[sweep] q=5 alpha=1 beta=2: |BPar_q(alpha-1,beta)|=   2  options=   10 (C1 fails 0)  comparable ordered pairs=     3 (strict      1)  Prop7.4 fails=0  aux fails=0  cases={'MM': 10, 'RM': 1, 'RR': 4}  [0.00s]
+[sweep] q=5 alpha=1 beta=3: |BPar_q(alpha-1,beta)|=   3  options=   15 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'MM': 16, 'RM': 4, 'RR': 10}  [0.00s]
+[sweep] q=5 alpha=1 beta=4: |BPar_q(alpha-1,beta)|=   5  options=   25 (C1 fails 0)  comparable ordered pairs=    15 (strict     10)  Prop7.4 fails=0  aux fails=0  cases={'MM': 32, 'RM': 14, 'RR': 29}  [0.00s]
+[sweep] q=5 alpha=2 beta=0: |BPar_q(alpha-1,beta)|=   1  options=    5 (C1 fails 0)  comparable ordered pairs=     1 (strict      0)  Prop7.4 fails=0  aux fails=0  cases={'AA': 1, 'MM': 4}  [0.00s]
+[sweep] q=5 alpha=2 beta=1: |BPar_q(alpha-1,beta)|=   2  options=   10 (C1 fails 0)  comparable ordered pairs=     3 (strict      1)  Prop7.4 fails=0  aux fails=0  cases={'AA': 1, 'MA': 1, 'MM': 11, 'MR': 1, 'RR': 1}  [0.00s]
+[sweep] q=5 alpha=2 beta=2: |BPar_q(alpha-1,beta)|=   3  options=   15 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'AA': 3, 'MA': 2, 'MM': 16, 'MR': 1, 'RM': 1, 'RR': 7}  [0.00s]
+[sweep] q=5 alpha=2 beta=3: |BPar_q(alpha-1,beta)|=   5  options=   25 (C1 fails 0)  comparable ordered pairs=    14 (strict      9)  Prop7.4 fails=0  aux fails=0  cases={'AA': 6, 'MA': 5, 'MM': 30, 'MR': 2, 'RM': 6, 'RR': 21}  [0.00s]
+[sweep] q=5 alpha=2 beta=4: |BPar_q(alpha-1,beta)|=   8  options=   40 (C1 fails 0)  comparable ordered pairs=    32 (strict     24)  Prop7.4 fails=0  aux fails=0  cases={'AA': 15, 'MA': 11, 'MM': 49, 'MR': 3, 'RM': 23, 'RR': 59}  [0.00s]
+[sweep] q=5 alpha=3 beta=0: |BPar_q(alpha-1,beta)|=   2  options=   10 (C1 fails 0)  comparable ordered pairs=     3 (strict      1)  Prop7.4 fails=0  aux fails=0  cases={'AA': 4, 'AM': 1, 'MM': 10}  [0.00s]
+[sweep] q=5 alpha=3 beta=1: |BPar_q(alpha-1,beta)|=   3  options=   15 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'AA': 7, 'AM': 1, 'MA': 1, 'MM': 16, 'MR': 2, 'RR': 3}  [0.00s]
+[sweep] q=5 alpha=3 beta=2: |BPar_q(alpha-1,beta)|=   6  options=   30 (C1 fails 0)  comparable ordered pairs=    20 (strict     14)  Prop7.4 fails=0  aux fails=0  cases={'AA': 17, 'AM': 3, 'MA': 9, 'MM': 42, 'MR': 9, 'RM': 3, 'RR': 17}  [0.00s]
+[sweep] q=5 alpha=3 beta=3: |BPar_q(alpha-1,beta)|=   9  options=   45 (C1 fails 0)  comparable ordered pairs=    40 (strict     31)  Prop7.4 fails=0  aux fails=0  cases={'AA': 37, 'AM': 6, 'MA': 16, 'MM': 58, 'MR': 11, 'RM': 15, 'RR': 57}  [0.00s]
+[sweep] q=5 alpha=3 beta=4: |BPar_q(alpha-1,beta)|=  14  options=   70 (C1 fails 0)  comparable ordered pairs=    87 (strict     73)  Prop7.4 fails=0  aux fails=0  cases={'AA': 72, 'AM': 10, 'MA': 40, 'MM': 105, 'MR': 19, 'RM': 44, 'RR': 145}  [0.00s]
+[sweep] q=5 alpha=4 beta=0: |BPar_q(alpha-1,beta)|=   3  options=   15 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'AA': 10, 'AM': 4, 'MM': 16}  [0.00s]
+[sweep] q=5 alpha=4 beta=1: |BPar_q(alpha-1,beta)|=   5  options=   25 (C1 fails 0)  comparable ordered pairs=    14 (strict      9)  Prop7.4 fails=0  aux fails=0  cases={'AA': 21, 'AM': 6, 'MA': 2, 'MM': 30, 'MR': 5, 'RR': 6}  [0.00s]
+[sweep] q=5 alpha=4 beta=2: |BPar_q(alpha-1,beta)|=   9  options=   45 (C1 fails 0)  comparable ordered pairs=    40 (strict     31)  Prop7.4 fails=0  aux fails=0  cases={'AA': 57, 'AM': 15, 'MA': 11, 'MM': 58, 'MR': 16, 'RM': 6, 'RR': 37}  [0.00s]
+[sweep] q=5 alpha=4 beta=3: |BPar_q(alpha-1,beta)|=  14  options=   70 (C1 fails 0)  comparable ordered pairs=    87 (strict     73)  Prop7.4 fails=0  aux fails=0  cases={'AA': 100, 'AM': 23, 'MA': 40, 'MM': 109, 'MR': 40, 'RM': 23, 'RR': 100}  [0.00s]
+[sweep] q=5 alpha=4 beta=4: |BPar_q(alpha-1,beta)|=  21  options=  105 (C1 fails 0)  comparable ordered pairs=   178 (strict    157)  Prop7.4 fails=0  aux fails=0  cases={'AA': 209, 'AM': 44, 'AR': 1, 'MA': 73, 'MM': 163, 'MR': 48, 'RA': 3, 'RM': 72, 'RR': 277}  [0.00s]
+[sweep] q=7 alpha=1 beta=0: |BPar_q(alpha-1,beta)|=   1  options=    7 (C1 fails 0)  comparable ordered pairs=     1 (strict      0)  Prop7.4 fails=0  aux fails=0  cases={'MM': 7}  [0.00s]
+[sweep] q=7 alpha=1 beta=1: |BPar_q(alpha-1,beta)|=   1  options=    7 (C1 fails 0)  comparable ordered pairs=     1 (strict      0)  Prop7.4 fails=0  aux fails=0  cases={'MM': 6, 'RR': 1}  [0.00s]
+[sweep] q=7 alpha=1 beta=2: |BPar_q(alpha-1,beta)|=   2  options=   14 (C1 fails 0)  comparable ordered pairs=     3 (strict      1)  Prop7.4 fails=0  aux fails=0  cases={'MM': 16, 'RM': 1, 'RR': 4}  [0.00s]
+[sweep] q=7 alpha=1 beta=3: |BPar_q(alpha-1,beta)|=   3  options=   21 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'MM': 28, 'RM': 4, 'RR': 10}  [0.00s]
+[sweep] q=7 alpha=1 beta=4: |BPar_q(alpha-1,beta)|=   5  options=   35 (C1 fails 0)  comparable ordered pairs=    15 (strict     10)  Prop7.4 fails=0  aux fails=0  cases={'MM': 62, 'RM': 14, 'RR': 29}  [0.00s]
+[sweep] q=7 alpha=2 beta=0: |BPar_q(alpha-1,beta)|=   1  options=    7 (C1 fails 0)  comparable ordered pairs=     1 (strict      0)  Prop7.4 fails=0  aux fails=0  cases={'AA': 1, 'MM': 6}  [0.00s]
+[sweep] q=7 alpha=2 beta=1: |BPar_q(alpha-1,beta)|=   2  options=   14 (C1 fails 0)  comparable ordered pairs=     3 (strict      1)  Prop7.4 fails=0  aux fails=0  cases={'AA': 1, 'MA': 1, 'MM': 17, 'MR': 1, 'RR': 1}  [0.00s]
+[sweep] q=7 alpha=2 beta=2: |BPar_q(alpha-1,beta)|=   3  options=   21 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'AA': 3, 'MA': 2, 'MM': 28, 'MR': 1, 'RM': 1, 'RR': 7}  [0.00s]
+[sweep] q=7 alpha=2 beta=3: |BPar_q(alpha-1,beta)|=   5  options=   35 (C1 fails 0)  comparable ordered pairs=    14 (strict      9)  Prop7.4 fails=0  aux fails=0  cases={'AA': 6, 'MA': 5, 'MM': 58, 'MR': 2, 'RM': 6, 'RR': 21}  [0.00s]
+[sweep] q=7 alpha=2 beta=4: |BPar_q(alpha-1,beta)|=   8  options=   56 (C1 fails 0)  comparable ordered pairs=    32 (strict     24)  Prop7.4 fails=0  aux fails=0  cases={'AA': 15, 'MA': 11, 'MM': 113, 'MR': 3, 'RM': 23, 'RR': 59}  [0.00s]
+[sweep] q=7 alpha=3 beta=0: |BPar_q(alpha-1,beta)|=   2  options=   14 (C1 fails 0)  comparable ordered pairs=     3 (strict      1)  Prop7.4 fails=0  aux fails=0  cases={'AA': 4, 'AM': 1, 'MM': 16}  [0.00s]
+[sweep] q=7 alpha=3 beta=1: |BPar_q(alpha-1,beta)|=   3  options=   21 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'AA': 7, 'AM': 1, 'MA': 1, 'MM': 28, 'MR': 2, 'RR': 3}  [0.00s]
+[sweep] q=7 alpha=3 beta=2: |BPar_q(alpha-1,beta)|=   6  options=   42 (C1 fails 0)  comparable ordered pairs=    20 (strict     14)  Prop7.4 fails=0  aux fails=0  cases={'AA': 17, 'AM': 3, 'MA': 9, 'MM': 82, 'MR': 9, 'RM': 3, 'RR': 17}  [0.00s]
+[sweep] q=7 alpha=3 beta=3: |BPar_q(alpha-1,beta)|=   9  options=   63 (C1 fails 0)  comparable ordered pairs=    40 (strict     31)  Prop7.4 fails=0  aux fails=0  cases={'AA': 37, 'AM': 6, 'MA': 16, 'MM': 138, 'MR': 11, 'RM': 15, 'RR': 57}  [0.00s]
+[sweep] q=7 alpha=3 beta=4: |BPar_q(alpha-1,beta)|=  15  options=  105 (C1 fails 0)  comparable ordered pairs=    99 (strict     84)  Prop7.4 fails=0  aux fails=0  cases={'AA': 88, 'AM': 15, 'MA': 43, 'MM': 291, 'MR': 22, 'RM': 60, 'RR': 174}  [0.00s]
+[sweep] q=7 alpha=4 beta=0: |BPar_q(alpha-1,beta)|=   3  options=   21 (C1 fails 0)  comparable ordered pairs=     6 (strict      3)  Prop7.4 fails=0  aux fails=0  cases={'AA': 10, 'AM': 4, 'MM': 28}  [0.00s]
+[sweep] q=7 alpha=4 beta=1: |BPar_q(alpha-1,beta)|=   5  options=   35 (C1 fails 0)  comparable ordered pairs=    14 (strict      9)  Prop7.4 fails=0  aux fails=0  cases={'AA': 21, 'AM': 6, 'MA': 2, 'MM': 58, 'MR': 5, 'RR': 6}  [0.00s]
+[sweep] q=7 alpha=4 beta=2: |BPar_q(alpha-1,beta)|=   9  options=   63 (C1 fails 0)  comparable ordered pairs=    40 (strict     31)  Prop7.4 fails=0  aux fails=0  cases={'AA': 57, 'AM': 15, 'MA': 11, 'MM': 138, 'MR': 16, 'RM': 6, 'RR': 37}  [0.00s]
+[sweep] q=7 alpha=4 beta=3: |BPar_q(alpha-1,beta)|=  15  options=  105 (C1 fails 0)  comparable ordered pairs=    99 (strict     84)  Prop7.4 fails=0  aux fails=0  cases={'AA': 121, 'AM': 32, 'MA': 46, 'MM': 295, 'MR': 46, 'RM': 32, 'RR': 121}  [0.00s]
+[sweep] q=7 alpha=4 beta=4: |BPar_q(alpha-1,beta)|=  24  options=  168 (C1 fails 0)  comparable ordered pairs=   227 (strict    203)  Prop7.4 fails=0  aux fails=0  cases={'AA': 291, 'AM': 77, 'MA': 95, 'MM': 546, 'MR': 68, 'RM': 127, 'RR': 385}  [0.00s]
+[extra] q=7 alpha=5 beta=5: |BPar_q(alpha-1,beta)|=  56  options=  392 (C1 fails 0)  comparable ordered pairs=  1054 (strict    998)  Prop7.4 fails=0  aux fails=0  cases={'AA': 1630, 'AM': 471, 'AR': 3, 'MA': 421, 'MM': 1830, 'MR': 340, 'RA': 5, 'RM': 667, 'RR': 2011}  [0.02s]
+[extra] q=7 alpha=6 beta=6: |BPar_q(alpha-1,beta)|= 116  options=  812 (C1 fails 0)  comparable ordered pairs=  4058 (strict   3942)  Prop7.4 fails=0  aux fails=0  cases={'AA': 7103, 'AM': 2017, 'AR': 33, 'MA': 1626, 'MM': 5344, 'MR': 1274, 'RA': 77, 'RM': 2603, 'RR': 8329}  [0.07s]
+[extra] q=9 alpha=6 beta=6: |BPar_q(alpha-1,beta)|= 133  options= 1197 (C1 fails 0)  comparable ordered pairs=  5182 (strict   5049)  Prop7.4 fails=0  aux fails=0  cases={'AA': 9760, 'AM': 3331, 'AR': 5, 'MA': 2082, 'MM': 14006, 'MR': 1657, 'RA': 9, 'RM': 4357, 'RR': 11431}  [0.11s]
+[extra] q=9 alpha=7 beta=7: |BPar_q(alpha-1,beta)|= 280  options= 2520 (C1 fails 0)  comparable ordered pairs= 20654 (strict  20374)  Prop7.4 fails=0  aux fails=0  cases={'AA': 43401, 'AM': 14944, 'AR': 77, 'MA': 7953, 'MM': 44844, 'MR': 6914, 'RA': 129, 'RM': 17943, 'RR': 49681}  [0.44s]
+[extra] q=9 alpha=9 beta=8: |BPar_q(alpha-1,beta)|= 757  options= 6813 (C1 fails 0)  comparable ordered pairs=135220 (strict 134463)  Prop7.4 fails=0  aux fails=0  cases={'AA': 337150, 'AM': 109444, 'AR': 2270, 'MA': 49732, 'MM': 219788, 'MR': 49732, 'RA': 2270, 'RM': 109444, 'RR': 337150}  [2.99s]
+[extra] q=3 alpha=9 beta=9: |BPar_q(alpha-1,beta)|=  45  options=  135 (C1 fails 0)  comparable ordered pairs=   848 (strict    803)  Prop7.4 fails=0  aux fails=0  cases={'AA': 933, 'AM': 50, 'AR': 75, 'MA': 124, 'MM': 46, 'MR': 90, 'RA': 108, 'RM': 70, 'RR': 1048}  [0.01s]
+[extra] q=3 alpha=12 beta=10: |BPar_q(alpha-1,beta)|=  66  options=  198 (C1 fails 0)  comparable ordered pairs=  1773 (strict   1707)  Prop7.4 fails=0  aux fails=0  cases={'AA': 2208, 'AM': 125, 'AR': 247, 'MA': 165, 'MM': 67, 'MR': 215, 'RA': 185, 'RM': 95, 'RR': 2012}  [0.02s]
+[extra] q=9 alpha=5 beta=9: |BPar_q(alpha-1,beta)|= 245  options= 2205 (C1 fails 0)  comparable ordered pairs= 16679 (strict  16434)  Prop7.4 fails=0  aux fails=0  cases={'AA': 24676, 'AM': 6964, 'AR': 13, 'MA': 7947, 'MM': 36987, 'MR': 3589, 'RA': 263, 'RM': 20231, 'RR': 49441}  [0.34s]
+TOTAL comparable ordered pairs = 186924 (strict 184905); Prop 7.4 failures = 0; auxiliary-claim failures = 0
+TOTAL case tallies over all (pair, p): {'AA': 428287, 'AM': 137640, 'AR': 2727, 'MA': 70573, 'MM': 325772, 'MR': 64204, 'RA': 3059, 'RM': 155959, 'RR': 463079}
+=== C3 ((P1) by brute force on tails) ===
+  q=3 alpha=1 beta=1: tails=     3 (P1) fails=0  [0.00s]
+  q=3 alpha=2 beta=2: tails=    27 (P1) fails=0  [0.00s]
+  q=3 alpha=3 beta=3: tails=   243 (P1) fails=0  [0.00s]
+  q=3 alpha=4 beta=4: tails=  2187 (P1) fails=0  [0.03s]
+  q=3 alpha=3 beta=4: tails=   729 (P1) fails=0  [0.01s]
+  q=5 alpha=1 beta=1: tails=     5 (P1) fails=0  [0.00s]
+  q=5 alpha=2 beta=2: tails=   125 (P1) fails=0  [0.00s]
+  q=5 alpha=3 beta=2: tails=   625 (P1) fails=0  [0.01s]
+  q=5 alpha=2 beta=3: tails=   625 (P1) fails=0  [0.01s]
+  q=5 alpha=3 beta=3: tails=  3125 (P1) fails=0  [0.07s]
+  q=7 alpha=2 beta=2: tails=   343 (P1) fails=0  [0.01s]
+  q=7 alpha=3 beta=2: tails=  2401 (P1) fails=0  [0.07s]
+  q=7 alpha=2 beta=3: tails=  2401 (P1) fails=0  [0.07s]
+=== C4 (every down-set Lambda of BPar_q(alpha,beta): F order-reversing, Lambda_i down-sets, (7.1)) ===
+  q=3 alpha=1 beta=1: |BPar_q(alpha,beta)|=  2 down-sets=    3  fails=0  (7.1)-fails=0  [0.00s]
+  q=3 alpha=2 beta=1: |BPar_q(alpha,beta)|=  3 down-sets=    4  fails=0  (7.1)-fails=0  [0.00s]
+  q=3 alpha=2 beta=2: |BPar_q(alpha,beta)|=  5 down-sets=    7  fails=0  (7.1)-fails=0  [0.00s]
+  q=3 alpha=3 beta=2: |BPar_q(alpha,beta)|=  6 down-sets=    8  fails=0  (7.1)-fails=0  [0.00s]
+  q=3 alpha=3 beta=3: |BPar_q(alpha,beta)|=  8 down-sets=   11  fails=0  (7.1)-fails=0  [0.00s]
+  q=3 alpha=4 beta=3: |BPar_q(alpha,beta)|= 10 down-sets=   16  fails=0  (7.1)-fails=0  [0.00s]
+  q=3 alpha=4 beta=4: |BPar_q(alpha,beta)|= 13 down-sets=   25  fails=0  (7.1)-fails=0  [0.02s]
+  q=5 alpha=1 beta=1: |BPar_q(alpha,beta)|=  2 down-sets=    3  fails=0  (7.1)-fails=0  [0.00s]
+  q=5 alpha=2 beta=1: |BPar_q(alpha,beta)|=  3 down-sets=    4  fails=0  (7.1)-fails=0  [0.00s]
+  q=5 alpha=2 beta=2: |BPar_q(alpha,beta)|=  6 down-sets=    8  fails=0  (7.1)-fails=0  [0.00s]
+  q=5 alpha=3 beta=2: |BPar_q(alpha,beta)|=  9 down-sets=   15  fails=0  (7.1)-fails=0  [0.00s]
+  q=5 alpha=3 beta=3: |BPar_q(alpha,beta)|= 14 down-sets=   38  fails=0  (7.1)-fails=0  [0.03s]
+  q=7 alpha=2 beta=2: |BPar_q(alpha,beta)|=  6 down-sets=    8  fails=0  (7.1)-fails=0  [0.00s]
+  q=7 alpha=3 beta=2: |BPar_q(alpha,beta)|=  9 down-sets=   15  fails=0  (7.1)-fails=0  [0.00s]
+  q=7 alpha=3 beta=3: |BPar_q(alpha,beta)|= 15 down-sets=   43  fails=0  (7.1)-fails=0  [0.04s]
+  q=9 alpha=3 beta=3: |BPar_q(alpha,beta)|= 15 down-sets=   43  fails=0  (7.1)-fails=0  [0.04s]
+=== GRAND TOTAL FAILURES = 0   wall = 4.47s ===
+----- full /usr/bin/time -l output -----
+        4.52 real         4.40 user         0.04 sys
+            10846208  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2392  page reclaims
+                  57  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  71  voluntary context switches
+                3755  involuntary context switches
+         69295812128  instructions retired
+         14311375889  cycles elapsed
+             8716552  peak memory footprint

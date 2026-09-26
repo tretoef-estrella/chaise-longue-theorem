@@ -1,0 +1,27 @@
+# command: python3 scripts/fact92_yform.py
+# prediction: full family 5120 = Q_2(9); subfamily K (13 matchings) 4730 < |Γ_K| = 4736 (Fact 9.2); est < 5 min, < 400 MB
+# cap: 1150 MB RSS (polled every 0.5 s) and 600 s wall; run date: Fri Sep 25 13:41:41 CEST 2026
+prediction: full family 5120 (= Q_2(9)); K: 4730 < |Γ_K| = 4736
+|Γ_K| (enumerated) = 4736   [0.1s]
+dim (D_J : J ∈ K) C = 4730   [130.8s]
+dim (D_J : J ∈ 𝒥) C = 5120   [269.7s]
+RESULT: full 5120 (paper 5120), K 4730 (paper 4730), |Γ_K| 4736 (paper 4736): AGREES
+      269.82 real       267.18 user         2.15 sys
+           661487616  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              803181  page reclaims
+                  82  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 244  voluntary context switches
+               20556  involuntary context switches
+       4769809533200  instructions retired
+        894898892130  cycles elapsed
+           664470344  peak memory footprint
+# watchdog: max polled RSS = 635824 KB; wall = 270 s; completed

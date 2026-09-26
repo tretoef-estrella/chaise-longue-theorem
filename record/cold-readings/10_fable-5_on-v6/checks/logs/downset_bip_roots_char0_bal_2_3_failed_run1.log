@@ -1,0 +1,48 @@
+=== RUN ===
+command: python3 downset_bip_roots.py --bal 2 3 --char0
+cwd: /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts
+date: Fri Sep 25 14:00:52 CEST 2026
+exit status: 1
+wall time (/usr/bin/time -l, real): 0.23 s
+peak memory (maximum resident set size): 60833792 bytes = 58 MB
+=== PREDICTION (written before the run) ===
+prediction command: python3 downset_bip_roots.py --bal 2 3 --char0 --predict
+I^bal_2 at q = 3 (p = 3), ring R_{[2],[2]} of dimension 81, date 2026-09-25 14:00:52
+degrees 0..8, n_d = [1, 4, 10, 16, 19, 16, 10, 4, 1]
+N_bal(2,3) by direct enumeration of 81 points = 15   [0.0s]; paper's closed form sum (a!/prod c_i!)^2 = 15 (claim)
+PREDICTION: dim_F I^bal_2 = 15 (Thm C says >= 15; Cor 7.8 says =)
+ESTIMATE: 2 generators of degree 4; matmul 2.55e+03 flops + elimination 7.65e+03 ops -> raw model ~0 s, calibrated ~0 s (x0.10) (+ enumeration of 81 points, + char-0 sympy ranks if --char0); memory ~0 MB (per-degree peak of row block + basis) + 0 MB tables/generators + 60 MB baseline
+=== OUTPUT ===
+I^bal_2 at q = 3 (p = 3), ring R_{[2],[2]} of dimension 81, date 2026-09-25 14:00:52
+degrees 0..8, n_d = [1, 4, 10, 16, 19, 16, 10, 4, 1]
+N_bal(2,3) by direct enumeration of 81 points = 15   [0.0s]; paper's closed form sum (a!/prod c_i!)^2 = 15 (claim)
+2 generators, built in 0.0s; degrees [4]
+dim_{F_3} I^bal_2 = 15   (per degree: [0, 0, 0, 0, 2, 4, 5, 3, 1])   [0.0s]
+RESULT I^bal_2 q=3: dim = 15, N = 15 -> dim = N (Theorem C holds with equality here, as Cor. 7.8 claims)
+=== /usr/bin/time -l (raw) ===
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/downset_bip_roots.py", line 148, in <module>
+    main()
+  File "/Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/downset_bip_roots.py", line 138, in main
+    d0, dims0 = char0_dims(ring, gens, log=(print if args.verbose else None))
+  File "/Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/downset_bip_roots.py", line 42, in char0_dims
+    rows.append(_mono_times(ring, g, e, d))
+NameError: name '_mono_times' is not defined
+        0.23 real         0.19 user         0.03 sys
+            60833792  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6342  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  31  involuntary context switches
+          2254760379  instructions retired
+           791399282  cycles elapsed
+            49725776  peak memory footprint

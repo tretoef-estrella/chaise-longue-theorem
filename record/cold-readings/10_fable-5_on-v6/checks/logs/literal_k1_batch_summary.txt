@@ -1,0 +1,14 @@
+RESULT m=15 p=3: dim (psi_J) F_p[G] = 546; quotient dim = 2829; predicted 546 / 2829; AGREES  [0.6s]|            83492864  maximum resident set size|# watchdog: max polled RSS = 59456 KB; wall = 0 s; completed|
+RESULT m=15 p=5: dim (psi_J) F_p[G] = 546; quotient dim = 2829; predicted 546 / 2829; AGREES  [0.6s]|            82132992  maximum resident set size|# watchdog: max polled RSS = 58112 KB; wall = 0 s; completed|
+RESULT m=21 p=3: dim (psi_J) F_p[G] = 1140; quotient dim = 8121; predicted 1140 / 8121; AGREES  [4.8s]|           447512576  maximum resident set size|# watchdog: max polled RSS = 429632 KB; wall = 4 s; completed|
+RESULT m=21 p=7: dim (psi_J) F_p[G] = 1140; quotient dim = 8121; predicted 1140 / 8121; AGREES  [4.8s]|           459456512  maximum resident set size|# watchdog: max polled RSS = 448640 KB; wall = 5 s; completed|
+RESULT m=15 p=3: dim (psi_J) F_p[G] = 546; quotient dim = 2829; predicted 546 / 2829; AGREES  [0.2s]|            71172096  maximum resident set size|# watchdog: max polled RSS = 0 KB; wall = 0 s; completed|
+RESULT m=15 p=5: dim (psi_J) F_p[G] = 546; quotient dim = 2829; predicted 546 / 2829; AGREES  [0.2s]|            71254016  maximum resident set size|# watchdog: max polled RSS = 0 KB; wall = 0 s; completed|
+RESULT m=21 p=7: dim (psi_J) F_p[G] = 1140; quotient dim = 8121; predicted 1140 / 8121; AGREES  [1.1s]|           374702080  maximum resident set size|# watchdog: max polled RSS = 333968 KB; wall = 1 s; completed|
+RESULT m=33 p=3: dim (psi_J) F_p[G] = 2976; quotient dim = 32961; predicted 2976 / 32961; AGREES  [20.8s]|           954810368  maximum resident set size|# watchdog: max polled RSS = 890336 KB; wall = 21 s; completed|
+RESULT m=33 p=11: dim (psi_J) F_p[G] = 2976; quotient dim = 32961; predicted 2976 / 32961; AGREES  [21.2s]|           747077632  maximum resident set size|# watchdog: max polled RSS = 679168 KB; wall = 21 s; completed|
+RESULT m=35 p=5: dim (psi_J) F_p[G] = 3366; quotient dim = 39509; predicted 3366 / 39509; AGREES  [30.8s]|           922566656  maximum resident set size|# watchdog: max polled RSS = 827296 KB; wall = 31 s; completed|
+RESULT m=35 p=7: dim (psi_J) F_p[G] = 3366; quotient dim = 39509; predicted 3366 / 39509; AGREES  [31.4s]|           877297664  maximum resident set size|# watchdog: max polled RSS = 803088 KB; wall = 32 s; completed|
+RESULT m=39 p=3: dim (psi_J) F_p[G] = 4218; quotient dim = 55101; predicted 4218 / 55101; AGREES  [64.2s]|          1077886976  maximum resident set size|# watchdog: max polled RSS = 1052272 KB; wall = 64 s; completed|
+RESULT m=39 p=13: dim (psi_J) F_p[G] = 4218; quotient dim = 55101; predicted 4218 / 55101; AGREES  [64.9s]|          1027342336  maximum resident set size|# watchdog: max polled RSS = 951280 KB; wall = 66 s; completed|
+BATCH_DONE

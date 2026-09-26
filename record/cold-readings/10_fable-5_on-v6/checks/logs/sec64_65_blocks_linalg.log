@@ -1,0 +1,74 @@
+COMMAND: /usr/bin/time -l python3 /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/sec64_65_blocks_linalg.py
+EXIT: 0
+WALL TIME (s): 2.25
+PEAK MEMORY (maximum resident set size, bytes): 134299648
+-----
+=== (A) colour-1 block, 0 not in C_1, direct in t-variables (Lemma 6.6, second bullet) ===
+[OK] (A) q=3 |C_1|=2, 0 not in C_1: dim I_c1 = 2, expected N_1 = Q_0(3) = 2 [0.0s]
+[OK] (A) q=3 |C_1|=4, 0 not in C_1: dim I_c1 = 6, expected N_1 = Q_1(3) = 6 [0.0s]
+[OK] (A) q=3 |C_1|=6, 0 not in C_1: dim I_c1 = 20, expected N_1 = Q_2(3) = 20 [0.1s]
+[OK] (A) q=5 |C_1|=2, 0 not in C_1: dim I_c1 = 4, expected N_1 = Q_0(5) = 4 [0.0s]
+[OK] (A) q=5 |C_1|=4, 0 not in C_1: dim I_c1 = 36, expected N_1 = Q_1(5) = 36 [0.0s]
+[OK] (A) q=7 |C_1|=2, 0 not in C_1: dim I_c1 = 6, expected N_1 = Q_0(7) = 6 [0.0s]
+[OK] (A) q=9 |C_1|=2, 0 not in C_1: dim I_c1 = 8, expected N_1 = Q_0(9) = 8 [0.0s]
+   skip (q,n)=(7,4): too big
+=== (B) colour-1 block, 0 in C_1 = {0,1..n}, n odd, direct in t-variables (Lemma 6.6, first bullet) ===
+[OK] (B) q=3 C_1={0..1} (|C_1|=2): dim I_c1 = 2, expected N_1 = Q_0(3) = 2 [0.0s]
+[OK] (B) q=3 C_1={0..3} (|C_1|=4): dim I_c1 = 6, expected N_1 = Q_1(3) = 6 [0.0s]
+[OK] (B) q=3 C_1={0..5} (|C_1|=6): dim I_c1 = 20, expected N_1 = Q_2(3) = 20 [0.0s]
+[OK] (B) q=5 C_1={0..1} (|C_1|=2): dim I_c1 = 4, expected N_1 = Q_0(5) = 4 [0.0s]
+[OK] (B) q=5 C_1={0..3} (|C_1|=4): dim I_c1 = 36, expected N_1 = Q_1(5) = 36 [0.0s]
+[OK] (B) q=7 C_1={0..1} (|C_1|=2): dim I_c1 = 6, expected N_1 = Q_0(7) = 6 [0.0s]
+[OK] (B) q=7 C_1={0..3} (|C_1|=4): dim I_c1 = 90, expected N_1 = Q_1(7) = 90 [0.0s]
+[OK] (B) q=9 C_1={0..1} (|C_1|=2): dim I_c1 = 8, expected N_1 = Q_0(9) = 8 [0.0s]
+[OK] (B) q=9 C_1={0..3} (|C_1|=4): dim I_c1 = 168, expected N_1 = Q_1(9) = 168 [0.0s]
+=== (C) y-form: dim V_{emptyset} (m even) / dim V_{(1)} (m odd), graded, box q-1 ===
+[OK] (C) q=3 m=2 V_{emptyset} = (D_P): dim = 2, expected |Z| = 2 [0.0s]
+[OK] (C) q=3 m=3 V_{(1)} = (D_J): dim = 6, expected |Z| = 6 [0.0s]
+[OK] (C) q=3 m=4 V_{emptyset} = (D_P): dim = 6, expected |Z| = 6 [0.0s]
+[OK] (C) q=3 m=5 V_{(1)} = (D_J): dim = 20, expected |Z| = 20 [0.0s]
+[OK] (C) q=3 m=6 V_{emptyset} = (D_P): dim = 20, expected |Z| = 20 [0.0s]
+[OK] (C) q=3 m=7 V_{(1)} = (D_J): dim = 70, expected |Z| = 70 [0.1s]
+[OK] (C) q=3 m=8 V_{emptyset} = (D_P): dim = 70, expected |Z| = 70 [0.1s]
+[OK] (C) q=5 m=2 V_{emptyset} = (D_P): dim = 4, expected |Z| = 4 [0.0s]
+[OK] (C) q=5 m=3 V_{(1)} = (D_J): dim = 36, expected |Z| = 36 [0.0s]
+[OK] (C) q=5 m=4 V_{emptyset} = (D_P): dim = 36, expected |Z| = 36 [0.0s]
+[OK] (C) q=5 m=5 V_{(1)} = (D_J): dim = 400, expected |Z| = 400 [0.1s]
+[OK] (C) q=7 m=2 V_{emptyset} = (D_P): dim = 6, expected |Z| = 6 [0.0s]
+[OK] (C) q=7 m=3 V_{(1)} = (D_J): dim = 90, expected |Z| = 90 [0.0s]
+[OK] (C) q=7 m=4 V_{emptyset} = (D_P): dim = 90, expected |Z| = 90 [0.0s]
+[OK] (C) q=9 m=2 V_{emptyset} = (D_P): dim = 8, expected |Z| = 8 [0.0s]
+[OK] (C) q=9 m=3 V_{(1)} = (D_J): dim = 168, expected |Z| = 168 [0.0s]
+[OK] (C) q=9 m=4 V_{emptyset} = (D_P): dim = 168, expected |Z| = 168 [0.1s]
+[OK] (C) q=5 m=6 V_{emptyset} = (D_P): dim = 400, expected |Z| = 400 [0.3s]
+=== (D) pair blocks, Lemma 6.7(iii), direct in t-variables over F_p containing mu_r ===
+[OK] (D) p=7 r=3 zeta=2: balanced a=1: dim I_c,zeta (t-form) = 7, dim I^bal_1 (x,z-form) = 7, N_bal(1,7) = 7 [0.0s]
+[OK] (D) p=7: phantom 0 in B (alpha,beta)=(2,1): dim I_c,zeta (t-form) = 91, dim I^ph_1 (x,z-form) = 91, N_ph(1,7) = N_bal(2,7) = 91 [0.0s]
+[OK] (D) p=7: phantom 0 in A (alpha,beta)=(1,2): dim I_c,zeta (t-form) = 91, dim ((x_1-z_2)^(q-1),(x_1-z_1)^(q-1)) = 91, N_ph(1,7) = 91 [0.0s]
+[OK] (D) p=11 r=5 zeta=3: balanced a=1: dim I_c,zeta (t-form) = 11, dim I^bal_1 (x,z-form) = 11, N_bal(1,11) = 11 [0.0s]
+[OK] (D) p=11: phantom 0 in B (alpha,beta)=(2,1): dim I_c,zeta (t-form) = 231, dim I^ph_1 (x,z-form) = 231, N_ph(1,11) = N_bal(2,11) = 231 [0.2s]
+[OK] (D) p=11: phantom 0 in A (alpha,beta)=(1,2): dim I_c,zeta (t-form) = 231, dim ((x_1-z_2)^(q-1),(x_1-z_1)^(q-1)) = 231, N_ph(1,11) = 231 [0.1s]
+[OK] (D) p=13 r=3 zeta=3: balanced a=1: dim I_c,zeta (t-form) = 13, dim I^bal_1 (x,z-form) = 13, N_bal(1,13) = 13 [0.0s]
+[OK] (D) p=13: phantom 0 in B (alpha,beta)=(2,1): dim I_c,zeta (t-form) = 325, dim I^ph_1 (x,z-form) = 325, N_ph(1,13) = N_bal(2,13) = 325 [0.6s]
+[OK] (D) p=13: phantom 0 in A (alpha,beta)=(1,2): dim I_c,zeta (t-form) = 325, dim ((x_1-z_2)^(q-1),(x_1-z_1)^(q-1)) = 325, N_ph(1,13) = 325 [0.4s]
+
+ALL OK: True   elapsed 2.1s
+----- time -l stderr -----
+        2.25 real         2.08 user         0.05 sys
+           134299648  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11918  page reclaims
+                  69  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 152  voluntary context switches
+                 872  involuntary context switches
+         28807197202  instructions retired
+          6973176126  cycles elapsed
+           150061464  peak memory footprint

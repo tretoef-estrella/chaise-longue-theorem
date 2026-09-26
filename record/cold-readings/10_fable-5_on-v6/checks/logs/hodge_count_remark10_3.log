@@ -1,0 +1,44 @@
+# command: /usr/bin/time -l python3 scripts/hodge_count.py 1 9 2 9 3 9 4 9 1 27 1 81 1 15 1 21 1 45 2 25 2 35 2 15 1 25 1 35 1 49 1 55 1 77 1 121 2 3 2 5 2 7 3 7 2 13
+# prediction (paper, Remark 10.3 / Lemma 10.4 / §12.2): |B|-Q = 48, 2880, 152880, 8064000 (m=9, k=1..4; |B| = 216, 8000, 343000, 16003008); 192 (1,27); 624 (1,81); 288 (1,15); 432 (1,21); 528 (1,45); 2880 (2,25); 4320 (2,35); 45360 (2,15); 0 at (1,25),(1,35),(1,49),(1,55),(1,77),(1,121) and at prime cells; |D| = Q_k(m) always. est < 5 min, < 100 MB
+# run date: Fri Sep 25 13:27:17 CEST 2026
+(k,m)=(1,9): |A|=456 |B|=216 |D|=168 Q_k(m)=168 |B|-Q=48  [|D|==Q: True]  Lemma 10.4 predicts |B| = C(4,2)^3 = 216
+(k,m)=(2,9): |A|=29128 |B|=8000 |D|=5120 Q_k(m)=5120 |B|-Q=2880  [|D|==Q: True]  Lemma 10.4 predicts |B| = C(6,3)^3 = 8000
+(k,m)=(3,9): |A|=1864136 |B|=343000 |D|=190120 Q_k(m)=190120 |B|-Q=152880  [|D|==Q: True]  Lemma 10.4 predicts |B| = C(8,4)^3 = 343000
+(k,m)=(4,9): |A|=119304648 |B|=16003008 |D|=7939008 Q_k(m)=7939008 |B|-Q=8064000  [|D|==Q: True]  Lemma 10.4 predicts |B| = C(10,5)^3 = 16003008
+(k,m)=(1,27): |A|=16926 |B|=2142 |D|=1950 Q_k(m)=1950 |B|-Q=192  [|D|==Q: True]
+(k,m)=(1,81): |A|=505680 |B|=19584 |D|=18960 Q_k(m)=18960 |B|-Q=624  [|D|==Q: True]
+(k,m)=(1,15): |A|=2562 |B|=834 |D|=546 Q_k(m)=546 |B|-Q=288  [|D|==Q: True]
+(k,m)=(1,21): |A|=7620 |B|=1572 |D|=1140 Q_k(m)=1140 |B|-Q=432  [|D|==Q: True]
+(k,m)=(1,45): |A|=83292 |B|=6204 |D|=5676 Q_k(m)=5676 |B|-Q=528  [|D|==Q: True]
+(k,m)=(2,25): |A|=7644120 |B|=185280 |D|=182400 Q_k(m)=182400 |B|-Q=2880  [|D|==Q: True]
+(k,m)=(2,35): |A|=44137270 |B|=543220 |D|=538900 Q_k(m)=538900 |B|-Q=4320  [|D|==Q: True]
+(k,m)=(2,15): |A|=501970 |B|=78260 |D|=32900 Q_k(m)=32900 |B|-Q=45360  [|D|==Q: True]
+(k,m)=(1,25): |A|=13272 |B|=1656 |D|=1656 Q_k(m)=1656 |B|-Q=0  [|D|==Q: True]
+(k,m)=(1,35): |A|=38182 |B|=3366 |D|=3366 Q_k(m)=3366 |B|-Q=0  [|D|==Q: True]
+(k,m)=(1,49): |A|=108336 |B|=6768 |D|=6768 Q_k(m)=6768 |B|-Q=0  [|D|==Q: True]
+(k,m)=(1,55): |A|=154602 |B|=8586 |D|=8586 Q_k(m)=8586 |B|-Q=0  [|D|==Q: True]
+(k,m)=(1,77): |A|=433276 |B|=17100 |D|=17100 Q_k(m)=17100 |B|-Q=0  [|D|==Q: True]
+(k,m)=(1,121): |A|=1713720 |B|=42840 |D|=42840 Q_k(m)=42840 |B|-Q=0  [|D|==Q: True]
+(k,m)=(2,3): |A|=22 |B|=20 |D|=20 Q_k(m)=20 |B|-Q=0  [|D|==Q: True]
+(k,m)=(2,5): |A|=820 |B|=400 |D|=400 Q_k(m)=400 |B|-Q=0  [|D|==Q: True]
+(k,m)=(2,7): |A|=6666 |B|=1860 |D|=1860 Q_k(m)=1860 |B|-Q=0  [|D|==Q: True]
+(k,m)=(3,7): |A|=239946 |B|=44730 |D|=44730 Q_k(m)=44730 |B|-Q=0  [|D|==Q: True]
+(k,m)=(2,13): |A|=229692 |B|=19920 |D|=19920 Q_k(m)=19920 |B|-Q=0  [|D|==Q: True]
+        2.60 real         2.58 user         0.02 sys
+            10584064  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1704  page reclaims
+                  50  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   5  voluntary context switches
+                 739  involuntary context switches
+         43736290435  instructions retired
+          8529088503  cycles elapsed
+             6537480  peak memory footprint

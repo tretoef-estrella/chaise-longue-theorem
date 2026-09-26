@@ -1,0 +1,129 @@
+COMMAND: /usr/bin/time -l python3 /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/sec66_lemma68_check.py
+EXIT CODE: 0
+WALL TIME (time -l):         5.93 real         5.18 user         0.22 sys
+PEAK MEMORY (time -l):            136167424  maximum resident set size
+-----
+=== (1) numerical examples after Lemma 7.2 (paper line 576) ===
+N_bal(a,3), a=1..5, closed form: [3, 15, 93, 639, 4653]
+OK   N_bal(a,3) = 3,15,93,639,4653 (closed form)
+N_bal(a,3), a=1..4, brute force: [3, 15, 93, 639]
+OK   N_bal(a,3) a=1..4 (brute force)
+N_bal(2,q), q=3,5,7,9,11, closed form: [15, 45, 91, 153, 231]
+OK   N_bal(2,q) = 15,45,91,153,231 (closed form)
+OK   N_bal(2,q) (brute force)
+OK   N_bal(0,q)=1, N_ph(0,q)=q (used in Cor. 7.8)
+=== (2) Lemma 7.2(iii): N_ph(a,q) = N_bal(a+1,q) ===
+OK   N_ph(0,3) = 3 = N_bal(1,3) = 3
+OK   N_ph(1,3) = 15 = N_bal(2,3) = 15
+OK   N_ph(2,3) = 93 = N_bal(3,3) = 93
+OK   N_ph(3,3) = 639 = N_bal(4,3) = 639
+OK   N_ph(0,5) = 5 = N_bal(1,5) = 5
+OK   N_ph(1,5) = 45 = N_bal(2,5) = 45
+OK   N_ph(2,5) = 545 = N_bal(3,5) = 545
+OK   N_ph(1,7) = 91 = N_bal(2,7) = 91
+OK   N_ph(2,7) = 1645 = N_bal(3,7) = 1645
+OK   N_ph(1,9) = 153 = N_bal(2,9) = 153
+=== (3)+(4) Lemma 6.8 by brute force from [DS, Def 1.3] ===
+OK   (m,n,p)=(15,2,3): |Gamma_J| = 546 = Q_1(15) = 546  [DS Def 1.3 literal, 0.0s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(15,2,3): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (61 compatible colourings of 125)
+OK   (m,n,p)=(15,2,3): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(15,2,3): sum over compatible colourings = 546 = |Gamma_J| = 546  (Lemma 6.8)
+   [0.0s]
+OK   (m,n,p)=(15,2,5): |Gamma_J| = 546 = Q_1(15) = 546  [DS Def 1.3 literal, 0.0s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(15,2,5): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (19 compatible colourings of 27)
+OK   (m,n,p)=(15,2,5): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(15,2,5): sum over compatible colourings = 546 = |Gamma_J| = 546  (Lemma 6.8)
+   [0.0s]
+OK   (m,n,p)=(21,2,3): |Gamma_J| = 1140 = Q_1(21) = 1140  [DS Def 1.3 literal, 0.0s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(21,2,3): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (127 compatible colourings of 343)
+OK   (m,n,p)=(21,2,3): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(21,2,3): sum over compatible colourings = 1140 = |Gamma_J| = 1140  (Lemma 6.8)
+   [0.0s]
+OK   (m,n,p)=(21,2,7): |Gamma_J| = 1140 = Q_1(21) = 1140  [DS Def 1.3 literal, 0.0s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(21,2,7): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (19 compatible colourings of 27)
+OK   (m,n,p)=(21,2,7): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(21,2,7): sum over compatible colourings = 1140 = |Gamma_J| = 1140  (Lemma 6.8)
+   [0.0s]
+OK   (m,n,p)=(45,2,3): |Gamma_J| = 5676 = Q_1(45) = 5676  [DS Def 1.3 literal, 0.0s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(45,2,3): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (61 compatible colourings of 125)
+OK   (m,n,p)=(45,2,3): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(45,2,3): sum over compatible colourings = 5676 = |Gamma_J| = 5676  (Lemma 6.8)
+   [0.1s]
+OK   (m,n,p)=(45,2,5): |Gamma_J| = 5676 = Q_1(45) = 5676  [DS Def 1.3 literal, 0.0s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(45,2,5): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (217 compatible colourings of 729)
+OK   (m,n,p)=(45,2,5): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(45,2,5): sum over compatible colourings = 5676 = |Gamma_J| = 5676  (Lemma 6.8)
+   [0.1s]
+OK   (m,n,p)=(105,2,3): |Gamma_J| = 32136 = Q_1(105) = 32136  [DS Def 1.3 literal, 0.0s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(105,2,3): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (3571 compatible colourings of 42875)
+OK   (m,n,p)=(105,2,3): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(105,2,3): sum over compatible colourings = 32136 = |Gamma_J| = 32136  (Lemma 6.8)
+   [0.8s]
+OK   (m,n,p)=(105,2,5): |Gamma_J| = 32136 = Q_1(105) = 32136  [DS Def 1.3 literal, 0.0s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(105,2,5): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (1261 compatible colourings of 9261)
+OK   (m,n,p)=(105,2,5): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(105,2,5): sum over compatible colourings = 32136 = |Gamma_J| = 32136  (Lemma 6.8)
+   [0.3s]
+OK   (m,n,p)=(105,2,7): |Gamma_J| = 32136 = Q_1(105) = 32136  [DS Def 1.3 literal, 0.0s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(105,2,7): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (631 compatible colourings of 3375)
+OK   (m,n,p)=(105,2,7): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(105,2,7): sum over compatible colourings = 32136 = |Gamma_J| = 32136  (Lemma 6.8)
+   [0.4s]
+OK   (m,n,p)=(15,4,3): |Gamma_J| = 32900 = Q_2(15) = 32900  [DS Def 1.3 literal, 0.1s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(15,4,3): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (1001 compatible colourings of 3125)
+OK   (m,n,p)=(15,4,3): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(15,4,3): sum over compatible colourings = 32900 = |Gamma_J| = 32900  (Lemma 6.8)
+   [0.3s]
+OK   (m,n,p)=(15,4,5): |Gamma_J| = 32900 = Q_2(15) = 32900  [DS Def 1.3 literal, 0.1s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(15,4,5): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (141 compatible colourings of 243)
+OK   (m,n,p)=(15,4,5): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(15,4,5): sum over compatible colourings = 32900 = |Gamma_J| = 32900  (Lemma 6.8)
+   [0.5s]
+OK   (m,n,p)=(21,4,3): |Gamma_J| = 102800 = Q_2(21) = 102800  [DS Def 1.3 literal, 0.6s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(21,4,3): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (3301 compatible colourings of 16807)
+OK   (m,n,p)=(21,4,3): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(21,4,3): sum over compatible colourings = 102800 = |Gamma_J| = 102800  (Lemma 6.8)
+   [1.3s]
+OK   (m,n,p)=(21,4,7): |Gamma_J| = 102800 = Q_2(21) = 102800  [DS Def 1.3 literal, 0.3s]
+OK   CRT split is injective (sizes add up)
+OK   (m,n,p)=(21,4,7): every compatible colouring: |Gamma ∩ c| = product of brute-force block counts AND assembled set == Gamma ∩ c  (141 compatible colourings of 243)
+OK   (m,n,p)=(21,4,7): closed forms N_1=Q_{k'-1}(q), N_bal multinomial, N_ph=N_bal(a+1) agree with brute-force block counts
+OK   (m,n,p)=(21,4,7): sum over compatible colourings = 102800 = |Gamma_J| = 102800  (Lemma 6.8)
+   [1.9s]
+=== Corollary 7.8 colourings: block data ===
+OK   Cor 7.8 balanced colouring a=1: c_0 = 1 (residue 0)
+OK   Cor 7.8 phantom colouring a=1: c_0 = zeta^-1 (residue 4 = -1 mod 5)
+OK   Cor 7.8 balanced colouring a=2: c_0 = 1 (residue 0)
+OK   Cor 7.8 phantom colouring a=2: c_0 = zeta^-1 (residue 4 = -1 mod 5)
+TOTAL FAILURES: 0   wall 5.8s
+----- full time -l output -----
+        5.93 real         5.18 user         0.22 sys
+           136167424  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               32706  page reclaims
+                  31  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  18  voluntary context switches
+               20470  involuntary context switches
+         73557981766  instructions retired
+         16978378904  cycles elapsed
+           147669448  peak memory footprint
