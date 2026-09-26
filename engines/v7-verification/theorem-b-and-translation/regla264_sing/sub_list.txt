@@ -1,0 +1,9 @@
+d GAM q=3 k=2 |K|=15 Gamma=20  q^(2k+1)-Gamma=223 PTS 141
+d0 GAM q=3 k=2 |K|=14 Gamma=20  q^(2k+1)-Gamma=223 PTS 141
+d0_1 GAM q=3 k=2 |K|=13 Gamma=20  q^(2k+1)-Gamma=223 PTS 139
+d0_5 GAM q=3 k=2 |K|=13 Gamma=20  q^(2k+1)-Gamma=223 PTS 141
+d0_1_2 GAM q=3 k=2 |K|=12 Gamma=20  q^(2k+1)-Gamma=223 PTS 133
+d0_3_7 GAM q=3 k=2 |K|=12 Gamma=20  q^(2k+1)-Gamma=223 PTS 139
+d1_4_9_12 GAM q=3 k=2 |K|=11 Gamma=20  q^(2k+1)-Gamma=223 PTS 131
+d2_5_8_11_14 GAM q=3 k=2 |K|=10 Gamma=20  q^(2k+1)-Gamma=223 PTS 129
+d0_1_2_3_4_5_6 GAM q=3 k=2 |K|=8 Gamma=20  q^(2k+1)-Gamma=223 PTS 113
