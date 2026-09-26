@@ -1,0 +1,3 @@
+(k,q)=(1,9): dim S/J1=24 dim S/grI(V1)=24  grI(V1) ⊆ J1? true  equal? true
+(k,q)=(2,9): dim S/J1=855 dim S/grI(V1)=855  grI(V1) ⊆ J1? true  equal? true
+FIN-OK

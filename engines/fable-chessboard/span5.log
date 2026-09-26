@@ -1,0 +1,33 @@
+n=5 q=9 |W|=855 d=11  tau-kind=none : dims F_{d-2}=436, +known=496, +tau=496
+   s_jl+tau_jl                                                            in span? True
+   s_jl                                                                   in span? False
+   u^(q-1)y_l^(q-1)e_{n-3}(P)                                             in span? False
+   y_l^(q-2)Pi_P                                                          in span? False
+   u^(q-1)y_l^(q-2)Pi_P                                                   in span? False
+   u^(q-1)e_{n-3}(P)                                                      in span? False
+   y_l^(q-1)e_{n-3}(P)                                                    in span? False
+   s_lj                                                                   in span? False
+   y_l^(q-2)Pi_P+u^(q-1)e_{n-3}(P)                                        in span? False
+   (O') rhs: -y_l^(q-2)Pi_P-u^(q-1)e_{n-3}(P)+u^(q-1)y_l^(q-1)e_{n-3}(P)  in span? False
+n=5 q=9 |W|=855 d=11  tau-kind=jl : dims F_{d-2}=436, +known=496, +tau=497
+   s_jl+tau_jl                                                            in span? True
+   s_jl                                                                   in span? True
+   u^(q-1)y_l^(q-1)e_{n-3}(P)                                             in span? False
+   y_l^(q-2)Pi_P                                                          in span? False
+   u^(q-1)y_l^(q-2)Pi_P                                                   in span? False
+   u^(q-1)e_{n-3}(P)                                                      in span? False
+   y_l^(q-1)e_{n-3}(P)                                                    in span? False
+   s_lj                                                                   in span? True
+   y_l^(q-2)Pi_P+u^(q-1)e_{n-3}(P)                                        in span? False
+   (O') rhs: -y_l^(q-2)Pi_P-u^(q-1)e_{n-3}(P)+u^(q-1)y_l^(q-1)e_{n-3}(P)  in span? False
+n=5 q=9 |W|=855 d=11  tau-kind=all : dims F_{d-2}=436, +known=496, +tau=501
+   s_jl+tau_jl                                                            in span? True
+   s_jl                                                                   in span? True
+   u^(q-1)y_l^(q-1)e_{n-3}(P)                                             in span? False
+   y_l^(q-2)Pi_P                                                          in span? False
+   u^(q-1)y_l^(q-2)Pi_P                                                   in span? False
+   u^(q-1)e_{n-3}(P)                                                      in span? False
+   y_l^(q-1)e_{n-3}(P)                                                    in span? False
+   s_lj                                                                   in span? True
+   y_l^(q-2)Pi_P+u^(q-1)e_{n-3}(P)                                        in span? False
+   (O') rhs: -y_l^(q-2)Pi_P-u^(q-1)e_{n-3}(P)+u^(q-1)y_l^(q-1)e_{n-3}(P)  in span? False

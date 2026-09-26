@@ -1,0 +1,8 @@
+IZ saturado? true  dim=1  degree=12
+radical: {y_1^2*y_2+y_1*y_2^2, y_0*y_1*y_2, y_0^2*y_2+y_0*y_2^2, y_0^2*y_1+y_0*y_1^2}  degree radical=6
+componentes: 6 ; {({y_2, y_1},1), ({y_2, y_0},1), ({y_2, y_0+y_1},1), ({y_1, y_0},1), ({y_1, y_0+y_2},1), ({y_1+y_2, y_0},1)}
+primarias: {({y_1+y_2, y_2^2},2), ({y_0+y_2, y_2^2},2), ({y_0+y_1, y_2^2},2), ({y_0+y_1, y_1^2},2), ({y_0+y_2, y_1^2},2), ({y_1+y_2, y_0^2},2)}
+q=3: g in IZ + caja? true
+q=9: g in IZ + caja? true
+q=27: g in IZ + caja? true
+FIN-OK

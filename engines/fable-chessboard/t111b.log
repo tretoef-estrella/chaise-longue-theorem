@@ -1,0 +1,37 @@
+number of degree-9 mingens: 10
+--- reduced mod base, then x_1 eliminated: #terms 0
+    exponent patterns (sorted): Tally{}
+--- reduced mod base, then x_1 eliminated: #terms 1
+    exponent patterns (sorted): Tally{{6, 3, 0, 0} => 1}
+--- reduced mod base, then x_1 eliminated: #terms 5
+    exponent patterns (sorted): Tally{{6, 2, 1, 0} => 2}
+                                      {7, 1, 1, 0} => 1
+                                      {7, 2, 0, 0} => 2
+--- reduced mod base, then x_1 eliminated: #terms 7
+    exponent patterns (sorted): Tally{{6, 1, 1, 1} => 1}
+                                      {7, 1, 1, 0} => 3
+                                      {8, 1, 0, 0} => 3
+--- reduced mod base, then x_1 eliminated: #terms 0
+    exponent patterns (sorted): Tally{}
+--- reduced mod base, then x_1 eliminated: #terms 5
+    exponent patterns (sorted): Tally{{6, 2, 1, 0} => 2}
+                                      {7, 1, 1, 0} => 1
+                                      {7, 2, 0, 0} => 2
+--- reduced mod base, then x_1 eliminated: #terms 7
+    exponent patterns (sorted): Tally{{6, 1, 1, 1} => 1}
+                                      {7, 1, 1, 0} => 3
+                                      {8, 1, 0, 0} => 3
+--- reduced mod base, then x_1 eliminated: #terms 0
+    exponent patterns (sorted): Tally{}
+--- reduced mod base, then x_1 eliminated: #terms 7
+    exponent patterns (sorted): Tally{{6, 1, 1, 1} => 1}
+                                      {7, 1, 1, 0} => 3
+                                      {8, 1, 0, 0} => 3
+--- reduced mod base, then x_1 eliminated: #terms 0
+    exponent patterns (sorted): Tally{}
+x_1^7 * (degree 2): in row: dim 7 ; in base: dim 7 ; new: 0
+x_1^6 * (degree 3): in row: dim 24 ; in base: dim 21 ; new: 3
+x_1^5 * (degree 4): in row: dim 54 ; in base: dim 51 ; new: 3
+x_1^4 * (degree 5): in row: dim 107 ; in base: dim 104 ; new: 3
+FIN-OK
+EXIT 0 after 3s

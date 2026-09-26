@@ -1,0 +1,11 @@
+SK FAIL m=5 gens=[(0, (4,)), (1, (3,))] i=0 types-not-produced=[(2, ())]
+SK FAIL m=5 gens=[(0, (4,)), (1, (3,))] i=1 types-not-produced=[(2, ())]
+SK FAIL m=5 gens=[(0, (4,)), (1, (3,))] i=2 types-not-produced=[(2, ())]
+SK FAIL m=5 gens=[(0, (4,)), (1, (3,))] i=3 types-not-produced=[(2, ())]
+SK FAIL m=5 gens=[(0, (4,)), (1, (3,))] i=4 types-not-produced=[(2, ())]
+KEY-sat FAIL m=6 gens=[(1, (4,))] i=77 missing=[((1, 1), (1, 1), (1, 0))]
+KEY-sat FAIL m=6 gens=[(1, (4,))] i=78 missing=[((1, 1), (1, 1), (1, 0))]
+KEY-sat FAIL m=5 gens=[(1, (3,))] i=78 missing=[((1, 1), (1, 1))]
+KEY-sat FAIL m=5 gens=[(1, (3,))] i=79 missing=[((1, 1), (1, 1))]
+q=81 trials=150 tests=11410 KEY-sat failures=4 SK failures=1170
+VIGIA-FIN-OK exit=0 pico_kb=4288 t=0s

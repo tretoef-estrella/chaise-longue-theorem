@@ -1,0 +1,4 @@
+q=81 trials=300 tests=23340 KEY-sat failures=0 SK failures=0
+q=81 trials=150 tests=11757 KEY-sat failures=0 SK failures=0
+q=27 trials=200 tests=4961 KEY-sat failures=0 SK failures=0
+VIGIA-FIN-OK exit=0 pico_kb=13408 t=0s

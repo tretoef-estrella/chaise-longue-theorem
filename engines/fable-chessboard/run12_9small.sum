@@ -1,0 +1,81 @@
+== 1,1 n=4 q=9 |W|=84
+RESULT q=9 mu=(1, 1) n=4 f=2: vdim(unifK) = 84  vdim(tops) = 84  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 24 / 24  y_a^(q-2) D: 12 / 12  in tops ; vdim(K+S2) = 84  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=1216 t=0s
+== 1,1 n=5 q=9 |W|=380
+RESULT q=9 mu=(1, 1) n=5 f=3: vdim(unifK) = 380  vdim(tops) = 380  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 60 / 60  y_a^(q-2) D: 60 / 60  in tops ; vdim(K+S2) = 380  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=4976 t=0s
+== 1,1 n=6 q=9 |W|=3930
+RESULT q=9 mu=(1, 1) n=6 f=4: vdim(unifK) = 3930  vdim(tops) = 3930  K<=tops: 1  sec: 1
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 120 / 120  y_a^(q-2) D: 180 / 180  in tops ; vdim(K+S2) = 3930  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=7920 t=1s
+== 2,1 n=4 q=9 |W|=12
+RESULT q=9 mu=(2, 1) n=4 f=1: vdim(unifK) = 12  vdim(tops) = 12  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 24 / 24  y_a^(q-2) D: 12 / 12  in tops ; vdim(K+S2) = 12  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=4864 t=0s
+== 2,1 n=5 q=9 |W|=200
+RESULT q=9 mu=(2, 1) n=5 f=2: vdim(unifK) = 200  vdim(tops) = 200  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 60 / 60  y_a^(q-2) D: 60 / 60  in tops ; vdim(K+S2) = 200  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=4928 t=0s
+== 2,1 n=6 q=9 |W|=1080
+RESULT q=9 mu=(2, 1) n=6 f=3: vdim(unifK) = 1080  vdim(tops) = 1080  K<=tops: 1  sec: 1
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 120 / 120  y_a^(q-2) D: 180 / 180  in tops ; vdim(K+S2) = 1080  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=8080 t=1s
+== 3,1 n=5 q=9 |W|=20
+RESULT q=9 mu=(3, 1) n=5 f=1: vdim(unifK) = 20  vdim(tops) = 20  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 60 / 60  y_a^(q-2) D: 60 / 60  in tops ; vdim(K+S2) = 20  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=4592 t=0s
+== 3,1 n=6 q=9 |W|=390
+RESULT q=9 mu=(3, 1) n=6 f=2: vdim(unifK) = 390  vdim(tops) = 390  K<=tops: 1  sec: 1
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 120 / 120  y_a^(q-2) D: 180 / 180  in tops ; vdim(K+S2) = 390  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=7104 t=1s
+== 4,1 n=6 q=9 |W|=30
+RESULT q=9 mu=(4, 1) n=6 f=1: vdim(unifK) = 30  vdim(tops) = 30  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 120 / 120  y_a^(q-2) D: 180 / 180  in tops ; vdim(K+S2) = 30  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=6176 t=0s
+== 2,2 n=5 q=9 |W|=30
+RESULT q=9 mu=(2, 2) n=5 f=1: vdim(unifK) = 30  vdim(tops) = 30  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 60 / 60  y_a^(q-2) D: 60 / 60  in tops ; vdim(K+S2) = 30  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=4592 t=0s
+== 2,2 n=6 q=9 |W|=570
+RESULT q=9 mu=(2, 2) n=6 f=2: vdim(unifK) = 570  vdim(tops) = 570  K<=tops: 1  sec: 1
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 120 / 120  y_a^(q-2) D: 180 / 180  in tops ; vdim(K+S2) = 570  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=7792 t=0s
+== 3,2 n=6 q=9 |W|=60
+RESULT q=9 mu=(3, 2) n=6 f=1: vdim(unifK) = 60  vdim(tops) = 60  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 120 / 120  y_a^(q-2) D: 180 / 180  in tops ; vdim(K+S2) = 60  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=6176 t=0s
+== 3,3 n=6 q=9 |W|=20
+RESULT q=9 mu=(3, 3) n=6 f=0: vdim(unifK) = 20  vdim(tops) = 20  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 120 / 120  y_a^(q-2) D: 180 / 180  in tops ; vdim(K+S2) = 20  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=4624 t=0s
+== 1,1,1 n=5 q=9 |W|=360
+RESULT q=9 mu=(1, 1, 1) n=5 f=2: vdim(unifK) = 360  vdim(tops) = 360  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+VIGIA-FIN-OK exit=0 pico_kb=4960 t=0s
+== 1,1,1 n=6 q=9 |W|=1920
+RESULT q=9 mu=(1, 1, 1) n=6 f=3: vdim(unifK) = 1920  vdim(tops) = 1920  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+VIGIA-FIN-OK exit=0 pico_kb=6416 t=0s
+== 2,1,1 n=6 q=9 |W|=1020
+RESULT q=9 mu=(2, 1, 1) n=6 f=2: vdim(unifK) = 1020  vdim(tops) = 1020  K<=tops: 1  sec: 1
+  NEW beyond K: 0  degrees: 
+VIGIA-FIN-OK exit=0 pico_kb=7344 t=0s
+== 1,1,1,1 n=6 q=9 |W|=1800
+RESULT q=9 mu=(1, 1, 1, 1) n=6 f=2: vdim(unifK) = 1800  vdim(tops) = 1800  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+VIGIA-FIN-OK exit=0 pico_kb=6560 t=0s

@@ -1,0 +1,18 @@
+IMPAR (k,q,a)=(1,3,0) r'_a=1 |fibra|=1 igual:true
+IMPAR (k,q,a)=(1,3,1) r'_a=1 |fibra|=1 igual:true
+IMPAR (k,q,a)=(1,3,2) r'_a=0 |fibra|=0 igual:true
+IMPAR (k,q,a)=(2,3,0) r'_a=7 |fibra|=7 igual:true
+IMPAR (k,q,a)=(2,3,1) r'_a=6 |fibra|=6 igual:true
+IMPAR (k,q,a)=(2,3,2) r'_a=3 |fibra|=3 igual:true
+IMPAR (k,q,a)=(1,9,0) r'_a=1 |fibra|=1 igual:true
+IMPAR (k,q,a)=(1,9,1) r'_a=1 |fibra|=1 igual:true
+IMPAR (k,q,a)=(1,9,2) r'_a=0 |fibra|=0 igual:true
+IMPAR (k,q,a)=(1,9,8) r'_a=0 |fibra|=0 igual:true
+IMPAR (k,q,a)=(2,9,0) r'_a=25 |fibra|=25 igual:true
+IMPAR (k,q,a)=(2,9,1) r'_a=24 |fibra|=24 igual:true
+IMPAR (k,q,a)=(2,9,2) r'_a=6 |fibra|=6 igual:true
+IMPAR (k,q,a)=(2,9,8) r'_a=3 |fibra|=3 igual:true
+IMPAR (k,q,a)=(3,3,0) r'_a=51 |fibra|=51 igual:true
+IMPAR (k,q,a)=(3,3,1) r'_a=45 |fibra|=45 igual:true
+IMPAR (k,q,a)=(3,3,2) r'_a=30 |fibra|=30 igual:true
+FIN-OK

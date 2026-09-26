@@ -1,0 +1,57 @@
+=== K_{1, 1, 1}(5): colength 360
+  row 0 type {1, 1}: colength 84 vs fibre 84  guess colength 84  guess subset row? true  equal? true
+  row 1 type {1, 1}: colength 84 vs fibre 84  guess colength 84  guess subset row? true  equal? true
+  row 2 type {1, 1}: colength 84 vs fibre 84  guess colength 84  guess subset row? true  equal? true
+  row 3 type {1, 1, 1}: colength 24 vs fibre 24  guess colength 24  guess subset row? true  equal? true
+  row 4 type {1, 1, 1, 1}: colength 24 vs fibre 24  guess colength 24  guess subset row? true  equal? true
+  row 5 type {1, 1, 1, 1}: colength 24 vs fibre 24  guess colength 24  guess subset row? true  equal? true
+  row 6 type {2, 1, 1}: colength 12 vs fibre 12  guess colength 12  guess subset row? true  equal? true
+  row 7 type {2, 1, 1}: colength 12 vs fibre 12  guess colength 12  guess subset row? true  equal? true
+  row 8 type {2, 1, 1}: colength 12 vs fibre 12  guess colength 12  guess subset row? true  equal? true
+  sum 360 = colength? true
+=== K_{2, 2}(5): colength 30
+  row 0 type {2, 1}: colength 12 vs fibre 12  guess colength 12  guess subset row? true  equal? true
+  row 1 type {2, 1}: colength 12 vs fibre 12  guess colength 12  guess subset row? true  equal? true
+  row 2 type {2, 2}: colength 6 vs fibre 6  guess colength 6  guess subset row? true  equal? true
+  row 3 type {2, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 4 type {2, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 5 type {2, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 6 type {2, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 7 type {3, 2}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 8 type {3, 2}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  sum 30 = colength? true
+=== K_{2, 1, 1}(5): colength 60
+  row 0 type {1, 1, 1}: colength 24 vs fibre 24  guess colength 24  guess subset row? true  equal? true
+  row 1 type {2, 1}: colength 12 vs fibre 12  guess colength 12  guess subset row? true  equal? true
+  row 2 type {2, 1}: colength 12 vs fibre 12  guess colength 12  guess subset row? true  equal? true
+  row 3 type {2, 1, 1}: colength 12 vs fibre 12  guess colength 12  guess subset row? true  equal? true
+  row 4 type {2, 1, 1, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 5 type {2, 1, 1, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 6 type {2, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 7 type {2, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 8 type {3, 1, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  sum 60 = colength? true
+=== K_{3, 2}(5): colength 10
+  row 0 type {2, 2}: colength 6 vs fibre 6  guess colength 6  guess subset row? true  equal? true
+  row 1 type {3, 1}: colength 4 vs fibre 4  guess colength 4  guess subset row? true  equal? true
+  row 2 type {3, 2}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 3 type {3, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 4 type {3, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 5 type {3, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 6 type {3, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 7 type {3, 3}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 8 type {4, 2}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  sum 10 = colength? true
+=== K_{3, 1, 1}(5): colength 20
+  row 0 type {2, 1, 1}: colength 12 vs fibre 12  guess colength 12  guess subset row? true  equal? true
+  row 1 type {3, 1}: colength 4 vs fibre 4  guess colength 4  guess subset row? true  equal? true
+  row 2 type {3, 1}: colength 4 vs fibre 4  guess colength 4  guess subset row? true  equal? true
+  row 3 type {3, 1, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 4 type {3, 1, 1, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 5 type {3, 1, 1, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 6 type {3, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 7 type {3, 2, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  row 8 type {4, 1, 1}: colength 0 vs fibre 0  guess colength 0  guess subset row? true  equal? true
+  sum 20 = colength? true
+FIN-OK
+EXIT 0 after 1s

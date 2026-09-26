@@ -1,0 +1,30 @@
+gb K_(1,1)(7)+(z^4): 125 s
+base colength 2100  fibre |W_(1,1,1)(6)| = 1920
+x_1^7 * (degree 3): in row: dim 32 ; in base: dim 32 ; new: 0
+x_1^6 * (degree 4): in row: dim 86 ; in base: dim 82 ; new: 4
+                    4
+    new: x_1^6 * ( x  )
+                    2
+                     4
+    new: x_1^6 * ( -x  )
+                     2
+                      4    3      3      2        3      2        2        3      2        2        2
+    new: x_1^6 * ( - x  - x x  - x x  - x x x  - x x  - x x x  - x x x  - x x  - x x x  - x x x  - x x x  )
+                      2    2 3    2 4    2 3 4    2 5    2 3 5    2 4 5    2 6    2 3 6    2 4 6    2 5 6
+                    4    3      3      2        3      2        2        3      2        2        2
+    new: x_1^6 * ( x  + x x  + x x  + x x x  + x x  + x x x  + x x x  + x x  + x x x  + x x x  + x x x  )
+                    2    2 3    2 4    2 3 4    2 5    2 3 5    2 4 5    2 6    2 3 6    2 4 6    2 5 6
+x_1^5 * (degree 5): in row: dim 190 ; in base: dim 186 ; new: 4
+                      5    4      4      4      4
+    new: x_1^5 * ( - x  - x x  - x x  - x x  - x x  )
+                      2    2 3    2 4    2 5    2 6
+                    5    4      4      4      4
+    new: x_1^5 * ( x  + x x  + x x  + x x  + x x  )
+                    2    2 3    2 4    2 5    2 6
+                    5    4      3 2    4      2 2      3 2    2   2    4      2 2      2 2      3 2    2   2    2   2    4      2 2      2 2      2 2      3 2    2   2    2   2    2   2
+    new: x_1^5 * ( x  - x x  + x x  - x x  + x x x  + x x  + x x x  - x x  + x x x  + x x x  + x x  + x x x  + x x x  - x x  + x x x  + x x x  + x x x  + x x  + x x x  + x x x  + x x x  )
+                    2    2 3    2 3    2 4    2 3 4    2 4    2 3 4    2 5    2 3 5    2 4 5    2 5    2 3 5    2 4 5    2 6    2 3 6    2 4 6    2 5 6    2 6    2 3 6    2 4 6    2 5 6
+                      5    4      3 2    4      2 2      3 2    2   2    4      2 2      2 2      3 2    2   2    2   2    4      2 2      2 2      2 2      3 2    2   2    2   2    2   2
+    new: x_1^5 * ( - x  + x x  - x x  + x x  - x x x  - x x  - x x x  + x x  - x x x  - x x x  - x x  - x x x  - x x x  + x x  - x x x  - x x x  - x x x  - x x  - x x x  - x x x  - x x x  )
+                      2    2 3    2 3    2 4    2 3 4    2 4    2 3 4    2 5    2 3 5    2 4 5    2 5    2 3 5    2 4 5    2 6    2 3 6    2 4 6    2 5 6    2 6    2 3 6    2 4 6    2 5 6
+EXIT 1 after 131s

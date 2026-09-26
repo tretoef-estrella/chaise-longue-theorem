@@ -1,0 +1,15 @@
+q=9  w*fE3^h in I5: true   w*fE5^h in I5: true   w*fE4^h in I5: true
+   P - G0 == w*t + w^2*s: true
+q=27  w*fE3^h in I5: true   w*fE5^h in I5: true   w*fE4^h in I5: true
+   P - G0 == w*t + w^2*s: true
+q-free certificate of z^2 x0^2:
+               2
+   (e1'^2) * (z )
+   (z^3) * (x2 + x3 - z)
+   (z e2') * (x2 + x3)
+   (cubic_0) * (-z)
+   (x2^3 z) * (1)
+   (x3^3 z) * (1)
+   ([7]_23) * (1)
+check: true
+EXIT 0 after 1s

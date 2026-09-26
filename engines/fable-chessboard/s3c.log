@@ -1,0 +1,7 @@
+ROWS q=9 parent=(1, 1) n+1=7  rows checked 9, generators NOT in their row: 0  (38.1s)
+ROWS q=9 parent=(2, 1) n+1=7  rows checked 9, generators NOT in their row: 0  (35.4s)
+ROWS q=9 parent=(2, 2) n+1=7  rows checked 9, generators NOT in their row: 0  (32.2s)
+ROWS q=9 parent=(3, 2) n+1=7  rows checked 9, generators NOT in their row: 0  (26.8s)
+ROWS q=9 parent=(2, 2, 1) n+1=7  rows checked 9, generators NOT in their row: 0  (29.5s)
+CELLS 5  BAD 0
+VIGIA-FIN-OK exit=0 pico_kb=20672 t=162s

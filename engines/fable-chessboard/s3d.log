@@ -1,0 +1,10 @@
+NC n=5 r=2 mu=(2,) q=9  certificate == z^(l+1) Gamma^(|mu|+1): True (#target 5)
+NC n=6 r=1 mu=(3,) q=9  certificate == z^(l+1) Gamma^(|mu|+1): True (#target 15)
+NC n=6 r=2 mu=(2, 1) q=9  certificate == z^(l+1) Gamma^(|mu|+1): True (#target 12)
+NC n=7 r=2 mu=(2, 2) q=9  certificate == z^(l+1) Gamma^(|mu|+1): True (#target 28)
+NC n=7 r=2 mu=(3, 1) q=9  certificate == z^(l+1) Gamma^(|mu|+1): True (#target 28)
+NC n=7 r=1 mu=(2, 1, 1) q=9  certificate == z^(l+1) Gamma^(|mu|+1): True (#target 31)
+NC n=5 r=2 mu=(2,) q=27  certificate == z^(l+1) Gamma^(|mu|+1): True (#target 5)
+NC n=5 r=2 mu=(2, 1) q=27  certificate == z^(l+1) Gamma^(|mu|+1): True (#target 7)
+FIN-OK NC
+VIGIA-FIN-OK exit=0 pico_kb=648816 t=84s

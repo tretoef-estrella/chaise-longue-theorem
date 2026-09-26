@@ -1,0 +1,3 @@
+(2,27): dim S/J1 = 9765
+(2,27): dim S/grI(V1) = 9765  grI(V1) ⊆ J1? true  equal? true
+FIN-OK

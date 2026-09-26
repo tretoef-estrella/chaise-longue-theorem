@@ -1,0 +1,12 @@
+A2 n=4 r=2 l=2 q=9  descent exact: True  multiplier lemma: True  (#terms 2)
+A2 n=5 r=2 l=2 q=9  descent exact: True  multiplier lemma: True  (#terms 3)
+A2 n=6 r=2 l=3 q=9  descent exact: True  multiplier lemma: True  (#terms 8)
+A2 n=6 r=3 l=3 q=9  descent exact: True  multiplier lemma: True  (#terms 6)
+A2 n=7 r=2 l=3 q=9  descent exact: True  multiplier lemma: True  (#terms 12)
+A2 n=8 r=2 l=3 q=9  descent exact: True  multiplier lemma: True  (#terms 17)
+A2 n=8 r=2 l=4 q=9  descent exact: True  multiplier lemma: True  (#terms 32)
+A2 n=4 r=2 l=2 q=27  descent exact: True  multiplier lemma: True  (#terms 2)
+A2 n=5 r=2 l=3 q=27  descent exact: True  multiplier lemma: True  (#terms 5)
+A2 n=6 r=2 l=3 q=27  descent exact: True  multiplier lemma: True  (#terms 8)
+FIN-OK A2
+VIGIA-FIN-OK exit=0 pico_kb=565584 t=173s

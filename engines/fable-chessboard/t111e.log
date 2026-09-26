@@ -1,0 +1,5 @@
+base colength at q=27: 1470
+base + y_j^(q-3) y_l^3 : 1440
+base + y_j^(q-3) y_l^9 : 1470
+FIN-OK
+EXIT 0 after 18s

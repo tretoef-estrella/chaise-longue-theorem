@@ -1,0 +1,20 @@
+colength row3 = 360  base 390  base+famJ 390  famJ subset row: true
+quadrics Q with x_1^(q-2) Q in row3: dim 7 of 15
+        2           2                  2                         2
+   Q = x  - x x  + x  - x x  - x x  + x  - x x  - x x  - x x  + x
+        2    2 3    3    2 4    3 4    4    2 5    3 5    4 5    5
+          2           2                  2                         2
+   Q = - x  + x x  - x  + x x  + x x  - x  + x x  + x x  + x x  - x
+          2    2 3    3    2 4    3 4    4    2 5    3 5    4 5    5
+   Q = 0
+   Q = 0
+   Q = - x x  - x x  - x x  - x x  - x x  - x x
+          2 3    2 4    3 4    2 5    3 5    4 5
+   Q = x x  + x x  + x x  + x x  + x x  + x x
+        2 3    2 4    3 4    2 5    3 5    4 5
+        2           2                  2                         2
+   Q = x  + x x  + x  + x x  + x x  + x  + x x  + x x  + x x  + x
+        2    2 3    3    2 4    3 4    4    2 5    3 5    4 5    5
+base + symmetrized famQ: colength 390  == row3 ? false
+FIN-OK
+EXIT 0 after 3s

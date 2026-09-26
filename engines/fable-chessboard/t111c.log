@@ -1,0 +1,13 @@
+y1^(q-3) y2^3 : in row3 true ; in base false
+y1^(q-3) e3(y-1) : in row3 true ; in base true
+y1^(q-3) e3(y) : in row3 true ; in base true
+y1^(q-3) e3(y-{1,2}) : in row3 false ; in base false
+y1^(q-3) y2^2 y3 : in row3 false ; in base false
+y1^(q-3) y2 y3 y4 : in row3 false ; in base false
+y1^(q-3) y2^2 (y2+y3) : in row3 false ; in base false
+y1^(q-2) y2^2 : in row3 false ; in base false
+y1^(q-3) p3(y-1) : in row3 true ; in base true
+base + (y_j^(q-3) y_l^3): colength 360 == row3 (360)? true
+y1^(q-3) y2^3 in K_(1,1)(5)? false
+FIN-OK
+EXIT 0 after 2s

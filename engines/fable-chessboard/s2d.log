@@ -1,0 +1,8 @@
+LAW q=9 mu=(1,) n=7  vdim=37947  |W|=37947  EQUAL  (5.2s)
+LAW q=9 mu=(2,) n=7  vdim=13496  |W|=13496  EQUAL  (6.0s)
+LAW q=9 mu=(1, 1) n=7  vdim=22302  |W|=22302  EQUAL  (6.2s)
+LAW q=9 mu=(3,) n=7  vdim=5201  |W|=5201  EQUAL  (2.2s)
+LAW q=9 mu=(2, 1) n=7  vdim=12390  |W|=12390  EQUAL  (5.5s)
+LAW q=9 mu=(1, 1, 1) n=7  vdim=20370  |W|=20370  EQUAL  (5.4s)
+CELLS 6  BAD 0
+VIGIA-FIN-OK exit=0 pico_kb=20224 t=30s

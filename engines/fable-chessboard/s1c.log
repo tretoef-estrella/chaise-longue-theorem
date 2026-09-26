@@ -1,0 +1,12 @@
+A3 n=4 r=2 l=1 q=9  certificate == z^(l+1) Gamma^(l+1): True  (#target 2, #C 6)
+A3 n=5 r=2 l=1 q=9  certificate == z^(l+1) Gamma^(l+1): True  (#target 3, #C 8)
+A3 n=5 r=2 l=2 q=9  certificate == z^(l+1) Gamma^(l+1): True  (#target 5, #C 16)
+A3 n=6 r=2 l=2 q=9  certificate == z^(l+1) Gamma^(l+1): True  (#target 8, #C 24)
+A3 n=6 r=3 l=2 q=9  certificate == z^(l+1) Gamma^(l+1): True  (#target 6, #C 18)
+A3 n=7 r=2 l=2 q=9  certificate == z^(l+1) Gamma^(l+1): True  (#target 12, #C 34)
+A3 n=8 r=2 l=2 q=9  certificate == z^(l+1) Gamma^(l+1): True  (#target 17, #C 46)
+A3 n=7 r=2 l=3 q=9  certificate == z^(l+1) Gamma^(l+1): True  (#target 20, #C 64)
+A3 n=4 r=2 l=2 q=27  certificate == z^(l+1) Gamma^(l+1): True  (#target 3, #C 10)
+A3 n=5 r=2 l=2 q=27  certificate == z^(l+1) Gamma^(l+1): True  (#target 5, #C 16)
+FIN-OK A3
+VIGIA-FIN-OK exit=0 pico_kb=639648 t=147s

@@ -1,0 +1,5 @@
+== 3,2 n=7 q=9 |W|=1295
+RESULT q=9 mu=(3, 2) n=7 f=2: vdim(unifK) = 1295  vdim(tops) = 1295  K<=tops: 1  sec: 45
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 210 / 210  y_a^(q-2) D: 420 / 420  in tops ; vdim(K+S2) = 1295  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+VIGIA-FIN-OK exit=0 pico_kb=37744 t=46s

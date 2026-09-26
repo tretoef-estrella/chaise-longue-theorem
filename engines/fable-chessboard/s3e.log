@@ -1,0 +1,16 @@
+RAISE n=5 r=0 w=1 mu=(1, 1) q=9  certificate: True (row i* = q-2, #target 1)
+RAISE n=5 r=1 w=1 mu=(1, 1) q=9  certificate: True (row i* = q-2, #target 1)
+RAISE n=6 r=1 w=1 mu=(1, 1) q=9  certificate: True (row i* = q-2, #target 1)
+RAISE n=6 r=1 w=1 mu=(2, 1) q=9  certificate: True (row i* = q-2, #target 4)
+RAISE n=6 r=1 w=1 mu=(2, 2) q=9  certificate: True (row i* = q-2, #target 7)
+RAISE n=6 r=1 w=2 mu=(2, 2) q=9  certificate: True (row i* = q-2, #target 1)
+RAISE n=6 r=0 w=2 mu=(3, 1) q=9  certificate: True (row i* = q-1, #target 4)
+RAISE n=6 r=1 w=2 mu=(3, 1) q=9  certificate: True (row i* = q-1, #target 3)
+RAISE n=7 r=1 w=1 mu=(2, 1, 1) q=9  certificate: True (row i* = q-3, #target 5)
+RAISE n=7 r=2 w=1 mu=(1, 1) q=9  certificate: True (row i* = q-2, #target 1)
+RAISE n=6 r=1 w=1 mu=(3, 2) q=9  certificate: True (row i* = q-2, #target 8)
+RAISE n=5 r=1 w=1 mu=(1, 1) q=27  certificate: True (row i* = q-2, #target 1)
+RAISE n=5 r=1 w=1 mu=(2, 2) q=27  certificate: True (row i* = q-2, #target 4)
+RAISE n=5 r=0 w=2 mu=(3, 1) q=27  certificate: True (row i* = q-1, #target 3)
+FIN-OK raise
+VIGIA-FIN-OK exit=0 pico_kb=113984 t=16s

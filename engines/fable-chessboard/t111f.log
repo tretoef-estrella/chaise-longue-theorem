@@ -1,0 +1,15 @@
+n=5: y1^(q-3) p_3(y-2) in K5? true ; in base? false
+n=6: base colength 2100 ; base + y_j^(q-3) y_l^4 : 1920 (fibre 1920)
+n=6: base + y_j^(q-3) y_l^3 : 1470 ; base + y_j^(q-3) p_4(y-l): 1920
+row 0 type {1, 1}: colength 380 vs fibre 380 ; guess colength 380 subset? true equal? true
+row 1 type {1, 1}: colength 380 vs fibre 380 ; guess colength 380 subset? true equal? true
+row 2 type {1, 1}: colength 380 vs fibre 380 ; guess colength 380 subset? true equal? true
+row 3 type {1, 1, 1}: colength 360 vs fibre 360 ; guess colength 360 subset? true equal? true
+row 4 type {1, 1, 1, 1}: colength 120 vs fibre 120 ; guess colength 120 subset? true equal? true
+row 5 type {1, 1, 1, 1}: colength 120 vs fibre 120 ; guess colength 120 subset? true equal? true
+row 6 type {2, 1, 1}: colength 60 vs fibre 60 ; guess colength 60 subset? true equal? true
+row 7 type {2, 1, 1}: colength 60 vs fibre 60 ; guess colength 60 subset? true equal? true
+row 8 type {2, 1, 1}: colength 60 vs fibre 60 ; guess colength 60 subset? true equal? true
+sum 1920 = colength K6? true
+FIN-OK
+EXIT 0 after 5s

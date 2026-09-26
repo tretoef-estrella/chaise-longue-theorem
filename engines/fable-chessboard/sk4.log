@@ -1,0 +1,8 @@
+CLOSURE FAIL m=7 gens=[(2, ())] i=4 t=(0, (6,)) t-2=(1, (4,))
+CLOSURE FAIL m=7 gens=[(2, ())] i=5 t=(0, (6,)) t-2=(1, (4,))
+CLOSURE FAIL m=7 gens=[(2, ())] i=6 t=(0, (6,)) t-2=(1, (4,))
+CLOSURE FAIL m=7 gens=[(2, ())] i=7 t=(0, (6,)) t-2=(1, (4,))
+CLOSURE FAIL m=7 gens=[(3, ()), (2, (2,))] i=4 t=(0, (6,)) t-2=(1, (4,))
+q=9 trials=300 tests=2333 KEY-sat failures=0 SK failures=0 closure failures=24
+q=9 trials=100 tests=771 KEY-sat failures=0 SK failures=0 closure failures=0
+VIGIA-FIN-OK exit=0 pico_kb=11728 t=0s

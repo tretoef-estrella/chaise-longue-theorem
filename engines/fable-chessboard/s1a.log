@@ -1,0 +1,15 @@
+moves n=4 r=1 w=0 q=9 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True, 'Anti': True}
+moves n=5 r=2 w=0 q=9 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True, 'Anti': True}
+moves n=6 r=2 w=0 q=9 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True, 'Anti': True}
+moves n=6 r=1 w=1 q=9 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True}
+moves n=6 r=1 w=2 q=9 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True}
+moves n=7 r=1 w=2 q=9 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True}
+moves n=7 r=2 w=0 q=9 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True, 'Anti': True}
+moves n=5 r=0 w=2 q=9 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True}
+moves n=6 r=0 w=3 q=9 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True}
+moves n=4 r=1 w=1 q=27 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True}
+moves n=5 r=1 w=1 q=27 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True}
+moves n=4 r=2 w=0 q=27 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True, 'Anti': True}
+moves n=4 r=0 w=2 q=27 {'MP': True, 'MB': True, 'MA': True, 'Z': True, 'closed': True}
+FIN-OK moves
+VIGIA-FIN-OK exit=0 pico_kb=703728 t=145s

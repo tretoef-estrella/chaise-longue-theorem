@@ -1,0 +1,2 @@
+NEWCLASS/VZ row2 (1,)(8) <- (1,1)(7) G_2  m=5  heavy=[1, 2] : targets outside J(m): 10 of 10  (std %d s) 16
+VIGIA-FIN-OK exit=0 pico_kb=19328 t=16s
