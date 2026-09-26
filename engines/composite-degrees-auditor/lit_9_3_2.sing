@@ -1,0 +1,27 @@
+ring r = 3,(t1,t2,t3,t4,t5),dp;
+option(redSB);
+proc phi(poly u) { poly s=0; int i; for(i=0;i<9;i++){ s=s+u^i; } return(s); }
+ideal I = t1^9-1,
+t2^9-1,
+t3^9-1,
+t4^9-1,
+t5^9-1,
+(t1-1)*(t3-1)*(t5-1)*phi(t2*t3)*phi(t4*t5),
+(t1-1)*(t4-1)*(t5-1)*phi(t2*t4)*phi(t3*t5),
+(t1-1)*(t5-1)*(t4-1)*phi(t2*t5)*phi(t3*t4),
+(t2-1)*(t3-1)*(t5-1)*phi(t1*t3)*phi(t4*t5),
+(t2-1)*(t4-1)*(t5-1)*phi(t1*t4)*phi(t3*t5),
+(t2-1)*(t5-1)*(t4-1)*phi(t1*t5)*phi(t3*t4),
+(t3-1)*(t2-1)*(t5-1)*phi(t1*t2)*phi(t4*t5),
+(t3-1)*(t4-1)*(t5-1)*phi(t1*t4)*phi(t2*t5),
+(t3-1)*(t5-1)*(t4-1)*phi(t1*t5)*phi(t2*t4),
+(t4-1)*(t2-1)*(t5-1)*phi(t1*t2)*phi(t3*t5),
+(t4-1)*(t3-1)*(t5-1)*phi(t1*t3)*phi(t2*t5),
+(t4-1)*(t5-1)*(t3-1)*phi(t1*t5)*phi(t2*t3),
+(t5-1)*(t2-1)*(t4-1)*phi(t1*t2)*phi(t3*t4),
+(t5-1)*(t3-1)*(t4-1)*phi(t1*t3)*phi(t2*t4),
+(t5-1)*(t4-1)*(t3-1)*phi(t1*t4)*phi(t2*t3);
+int v = vdim(std(I));
+print("m=9 p=3 k=2 drop=[] quotient="+string(v)+" dim_ideal="+string(9^5-v));
+kill r;
+quit;

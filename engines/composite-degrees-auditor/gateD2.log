@@ -1,0 +1,7 @@
+D (4, 4, 3, 3) downsets,measured,fails(dim<Z),equalities= (25, 25, 0, 25)
+D (5, 4, 3, 3) downsets,measured,fails(dim<Z),equalities= (31, 31, 0, 31)
+D (3, 3, 5, 5) downsets,measured,fails(dim<Z),equalities= (38, 38, 0, 38)
+D (3, 2, 9, 3) downsets,measured,fails(dim<Z),equalities= (15, 15, 0, 15)
+D (2, 2, 7, 7) downsets,measured,fails(dim<Z),equalities= (8, 8, 0, 8)
+D (2, 2, 25, 5) downsets,measured,fails(dim<Z),equalities= (8, 8, 0, 8)
+VIGIA-FIN-OK exit=0 pico_kb=199632 t=12s

@@ -1,0 +1,10 @@
+balanced a=4 q=5 char=5: dim ideal=7885
+// ** redefining v (int v=vdim(std(I));) bip2.sing:8
+balanced a=2 q=25 char=5: dim ideal=1225
+// ** redefining v (int v=vdim(std(I));) bip2.sing:13
+balanced a=2 q=27 char=3: dim ideal=1431
+// ** redefining v (int v=vdim(std(I));) bip2.sing:18
+phantom a=2 q=13 char=13: dim ideal=11713
+// ** redefining v (int v=vdim(std(I));) bip2.sing:23
+balanced a=3 q=9 char=3: dim ideal=3681
+VIGIA-FIN-OK exit=0 pico_kb=8752 t=0s

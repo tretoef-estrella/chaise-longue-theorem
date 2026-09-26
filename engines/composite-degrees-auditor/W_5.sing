@@ -1,0 +1,15 @@
+ring r = 5,(t1,t2,t3,t4,t5),dp;
+option(redSB);
+proc phi(poly u) { poly s=0; int i; for(i=0;i<5;i++){ s=s+u^i; } return(s); }
+ideal I = t1^5-1,
+t2^5-1,
+t3^5-1,
+t4^5-1,
+t5^5-1,
+(t1-1)*(t3-1)*(t5-1)*phi(t2*t3)*phi(t4*t5),
+(t2-1)*(t3-1)*(t5-1)*phi(t1*t3)*phi(t4*t5),
+(t3-1)*(t2-1)*(t5-1)*phi(t1*t2)*phi(t4*t5);
+int v = vdim(std(I));
+print("m=5 p=5 k=2 drop=[1, 2, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14] quotient="+string(v)+" dim_ideal="+string(5^5-v));
+kill r;
+quit;

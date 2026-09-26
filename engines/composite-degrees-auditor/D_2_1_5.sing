@@ -1,0 +1,10 @@
+ring r = 5,(x1,x2,z1),dp;
+ideal I0=x1^5,x2^5,z1^5,0;
+print("D0 Z=0 dim="+string(125-vdim(std(I0))));
+ideal I1=x1^5,x2^5,z1^5,(x1-z1)^4*1,(x2-z1)^4*1;
+print("D1 Z=45 dim="+string(125-vdim(std(I1))));
+ideal I2=x1^5,x2^5,z1^5,(x1-z1)^4*1,(x2-z1)^4*1,(x2-x1)*1;
+print("D2 Z=105 dim="+string(125-vdim(std(I2))));
+ideal I3=x1^5,x2^5,z1^5,1*1*1,1*1*1,(x1-z1)^4*1,(x2-z1)^4*1,(x2-x1)*1;
+print("D3 Z=125 dim="+string(125-vdim(std(I3))));
+quit;

@@ -1,0 +1,18 @@
+ring R = (81,a),(u1,u2,u3,u4,u5),dp;
+ideal box = u1^3,u2^3,u3^3,u4^3,u5^3; box=std(box);
+number w = a^(16);
+if(w^5!=1){ ERROR("bad root"); }
+int s; for(s=1;s<5;s++){ if(w^s==1){ ERROR("not primitive"); } }
+proc phiL(poly U, ideal bx) { poly S=0; poly P=1; int i; for(i=0;i<15;i++){ S=S+P; P=reduce(P*U,bx); } return(reduce(S,bx)); }
+bigint total=0; int ncomp=0; int idx; int j; list c; int e0; poly t0;
+for(idx=0; idx<3125; idx++) {
+  int rest=idx; list ex; for(j=1;j<=5;j++){ ex=insert(ex, rest mod 5, size(ex)); rest = rest div 5; }
+  list cc; int sum=0; for(j=1;j<=5;j++){ cc=insert(cc, w^(ex[j]), size(cc)); sum=sum+ex[j]; }
+  ideal T; for(j=1;j<=5;j++){ T[j]=var(j)+cc[j]; }
+  ideal G = box, reduce((T[1]-1)*(T[3]-1)*(T[5]-1)*phiL(reduce(T[2]*T[3],box),box)*phiL(reduce(T[4]*T[5],box),box),box), reduce((T[1]-1)*(T[4]-1)*(T[5]-1)*phiL(reduce(T[2]*T[4],box),box)*phiL(reduce(T[3]*T[5],box),box),box), reduce((T[1]-1)*(T[5]-1)*(T[4]-1)*phiL(reduce(T[2]*T[5],box),box)*phiL(reduce(T[3]*T[4],box),box),box), reduce((T[2]-1)*(T[3]-1)*(T[5]-1)*phiL(reduce(T[1]*T[3],box),box)*phiL(reduce(T[4]*T[5],box),box),box), reduce((T[2]-1)*(T[4]-1)*(T[5]-1)*phiL(reduce(T[1]*T[4],box),box)*phiL(reduce(T[3]*T[5],box),box),box), reduce((T[2]-1)*(T[5]-1)*(T[4]-1)*phiL(reduce(T[1]*T[5],box),box)*phiL(reduce(T[3]*T[4],box),box),box), reduce((T[3]-1)*(T[2]-1)*(T[5]-1)*phiL(reduce(T[1]*T[2],box),box)*phiL(reduce(T[4]*T[5],box),box),box), reduce((T[3]-1)*(T[4]-1)*(T[5]-1)*phiL(reduce(T[1]*T[4],box),box)*phiL(reduce(T[2]*T[5],box),box),box), reduce((T[3]-1)*(T[5]-1)*(T[4]-1)*phiL(reduce(T[1]*T[5],box),box)*phiL(reduce(T[2]*T[4],box),box),box), reduce((T[4]-1)*(T[2]-1)*(T[5]-1)*phiL(reduce(T[1]*T[2],box),box)*phiL(reduce(T[3]*T[5],box),box),box), reduce((T[4]-1)*(T[3]-1)*(T[5]-1)*phiL(reduce(T[1]*T[3],box),box)*phiL(reduce(T[2]*T[5],box),box),box), reduce((T[4]-1)*(T[5]-1)*(T[3]-1)*phiL(reduce(T[1]*T[5],box),box)*phiL(reduce(T[2]*T[3],box),box),box), reduce((T[5]-1)*(T[2]-1)*(T[4]-1)*phiL(reduce(T[1]*T[2],box),box)*phiL(reduce(T[3]*T[4],box),box),box), reduce((T[5]-1)*(T[3]-1)*(T[4]-1)*phiL(reduce(T[1]*T[3],box),box)*phiL(reduce(T[2]*T[4],box),box),box), reduce((T[5]-1)*(T[4]-1)*(T[3]-1)*phiL(reduce(T[1]*T[4],box),box)*phiL(reduce(T[2]*T[3],box),box),box);
+  int v = vdim(std(G)); int d = 243 - v;
+  if(d>0){ ncomp++; } total = total + d;
+  kill rest, ex, cc, sum, T, G, v, d;
+}
+print("m=15 p=3 q=3 r=5 k=2 field=81: colourings with nonzero image="+string(ncomp)+" sum dim="+string(total));
+quit;

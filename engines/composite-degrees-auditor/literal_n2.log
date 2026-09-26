@@ -1,0 +1,15 @@
+m=15 p=3 quotient=2829 dim_ideal=546 expected_Q=546
+m=15 p=5 quotient=2829 dim_ideal=546 expected_Q=546
+m=21 p=3 quotient=8121 dim_ideal=1140 expected_Q=1140
+m=21 p=7 quotient=8121 dim_ideal=1140 expected_Q=1140
+m=33 p=3 quotient=32961 dim_ideal=2976 expected_Q=2976
+m=33 p=11 quotient=32961 dim_ideal=2976 expected_Q=2976
+m=35 p=5 quotient=39509 dim_ideal=3366 expected_Q=3366
+m=35 p=7 quotient=39509 dim_ideal=3366 expected_Q=3366
+m=39 p=3 quotient=55101 dim_ideal=4218 expected_Q=4218
+m=39 p=13 quotient=55101 dim_ideal=4218 expected_Q=4218
+m=45 p=3 quotient=85449 dim_ideal=5676 expected_Q=5676
+m=45 p=5 quotient=85449 dim_ideal=5676 expected_Q=5676
+m=55 p=5 quotient=157789 dim_ideal=8586 expected_Q=8586
+m=55 p=11 quotient=157789 dim_ideal=8586 expected_Q=8586
+VIGIA-FIN-OK exit=0 pico_kb=8256 t=0s
