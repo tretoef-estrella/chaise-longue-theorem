@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper as below. The surname is Amichis Luengo (two surnames, in this order)."
+title: "The Chaise Longue Theorem — working record"
+type: dataset
+authors:
+  - family-names: "Amichis Luengo"
+    given-names: "Rafael"
+    email: "tretoef@gmail.com"
+    affiliation: "Independent researcher, Madrid, Spain"
+repository-code: "https://github.com/tretoef-estrella/chaise-longue-theorem"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: 2026-09-25
+keywords:
+  - Degtyarev–Shimada conjecture
+  - Fermat varieties
+  - integral Hodge conjecture
+  - algebraic cycles
+  - commutative algebra
+preferred-citation:
+  type: generic
+  title: "The Chaise Longue Theorem: Conjecture 1.2 of Degtyarev–Shimada for the Fermat varieties of every odd degree in every even dimension, and the integral Hodge conjecture for those whose degree is prime or prime to (n+2)!"
+  authors:
+    - family-names: "Amichis Luengo"
+      given-names: "Rafael"
+  year: 2026
+  month: 9
+  publisher:
+    name: "Zenodo"
+  doi: "10.5281/zenodo.22961150"
+  url: "https://doi.org/10.5281/zenodo.22961150"
+  notes: "Preprint, version v7 (version DOI 10.5281/zenodo.22961151). Not yet refereed."
