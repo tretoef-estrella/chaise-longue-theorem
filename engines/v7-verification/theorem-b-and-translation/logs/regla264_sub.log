@@ -1,0 +1,28 @@
+== d
+LIT q=3 k=2 |K|=15 vdim=223
+EXT q=3 k=2 |K|=15 A=141 B=141
+== d0
+LIT q=3 k=2 |K|=14 vdim=223
+EXT q=3 k=2 |K|=14 A=141 B=140
+== d0_1
+LIT q=3 k=2 |K|=13 vdim=223
+EXT q=3 k=2 |K|=13 A=139 B=138
+== d0_5
+LIT q=3 k=2 |K|=13 vdim=223
+EXT q=3 k=2 |K|=13 A=141 B=139
+== d0_1_2
+LIT q=3 k=2 |K|=12 vdim=223
+EXT q=3 k=2 |K|=12 A=133 B=133
+== d0_3_7
+LIT q=3 k=2 |K|=12 vdim=223
+EXT q=3 k=2 |K|=12 A=139 B=136
+== d1_4_9_12
+LIT q=3 k=2 |K|=11 vdim=223
+EXT q=3 k=2 |K|=11 A=131 B=131
+== d2_5_8_11_14
+LIT q=3 k=2 |K|=10 vdim=223
+EXT q=3 k=2 |K|=10 A=129 B=128
+== d0_1_2_3_4_5_6
+LIT q=3 k=2 |K|=8 vdim=223
+EXT q=3 k=2 |K|=8 A=114 B=113
+VIGIA-FIN-OK exit=0 pico_kb=2240 t=0s

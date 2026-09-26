@@ -1,0 +1,21 @@
+q=9 m=3 |Par_m|=4 downsets=5 P1fail=0 P2fail=0 P3fail=0
+[] dimV= 0 |Z|= 0 OK EQ
+[(1,)] dimV= 168 |Z|= 168 OK EQ
+[(1,), (1, 1, 1)] dimV= 360 |Z|= 360 OK EQ
+[(1,), (1, 1, 1), (2, 1)] dimV= 504 |Z|= 504 OK EQ
+[(1,), (1, 1, 1), (2, 1), (3,)] dimV= 512 |Z|= 512 OK EQ
+q=9 m=3 downsets=5 fails(dim<|Z|)=0 t=0.0s
+VIGIA-FIN-OK exit=0 pico_kb=256 t=0s
+q=9 m=4 |Par_m|=8 downsets=10 P1fail=0 P2fail=0 P3fail=0
+[] dimV= 0 |Z|= 0 OK EQ
+[()] dimV= 168 |Z|= 168 OK EQ
+[(), (1, 1)] dimV= 1896 |Z|= 1896 OK EQ
+[(), (1, 1), (1, 1, 1, 1)] dimV= 2280 |Z|= 2280 OK EQ
+[(), (1, 1), (2,)] dimV= 2216 |Z|= 2216 OK EQ
+[(), (1, 1), (1, 1, 1, 1), (2,)] dimV= 2600 |Z|= 2600 OK EQ
+[(), (1, 1), (1, 1, 1, 1), (2,), (2, 1, 1)] dimV= 3752 |Z|= 3752 OK EQ
+[(), (1, 1), (1, 1, 1, 1), (2,), (2, 1, 1), (2, 2)] dimV= 3896 |Z|= 3896 OK EQ
+[(), (1, 1), (1, 1, 1, 1), (2,), (2, 1, 1), (2, 2), (3, 1)] dimV= 4088 |Z|= 4088 OK EQ
+[(), (1, 1), (1, 1, 1, 1), (2,), (2, 1, 1), (2, 2), (3, 1), (4,)] dimV= 4096 |Z|= 4096 OK EQ
+q=9 m=4 downsets=10 fails(dim<|Z|)=0 t=14.8s
+VIGIA-FIN-OK exit=0 pico_kb=88416 t=15s

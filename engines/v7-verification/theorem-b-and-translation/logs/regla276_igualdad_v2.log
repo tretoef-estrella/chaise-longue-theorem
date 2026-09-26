@@ -1,0 +1,17 @@
+G1 evaluation (q, failures): [(5, 0), (7, 0), (9, 0)]
+G2 support q=5 m=3: tests=192 forward-failures=0 self-pattern-failures=0
+G2 support q=5 m=4: tests=1536 forward-failures=0 self-pattern-failures=0
+G2 support q=7 m=3: tests=864 forward-failures=0 self-pattern-failures=0
+G2 support q=9 m=3: tests=2048 forward-failures=0 self-pattern-failures=0
+G2 support q=9 m=4: tests=32768 forward-failures=0 self-pattern-failures=0
+G3 q=5 p=5 m=3 [in the theorem]: down-sets=4 all equal=True  [(0, 0, 0), (1, 36, 36), (2, 60, 60), (3, 64, 64)]
+G3 q=5 p=5 m=4 [in the theorem]: down-sets=7 all equal=True  [(0, 0, 0), (1, 36, 36), (2, 132, 132), (3, 196, 196), (4, 220, 220), (5, 252, 252), (6, 256, 256)]
+G3 q=5 p=7 m=4 [in the theorem]: down-sets=7 all equal=True  [(0, 0, 0), (1, 36, 36), (2, 132, 132), (3, 196, 196), (4, 220, 220), (5, 252, 252), (6, 256, 256)]
+G3 q=5 p=3 m=4 [in the theorem]: down-sets=7 all equal=True  [(0, 0, 0), (1, 36, 36), (2, 132, 132), (3, 196, 196), (4, 220, 220), (5, 252, 252), (6, 256, 256)]
+G3 q=7 p=7 m=3 [in the theorem]: down-sets=5 all equal=True  [(0, 0, 0), (1, 90, 90), (2, 138, 138), (3, 210, 210), (4, 216, 216)]
+G3 q=7 p=5 m=3 [in the theorem]: down-sets=5 all equal=True  [(0, 0, 0), (1, 90, 90), (2, 138, 138), (3, 210, 210), (4, 216, 216)]
+G3 q=7 p=7 m=4 [in the theorem]: down-sets=8 all equal=True  [(0, 0, 0), (1, 90, 90), (2, 666, 666), (3, 834, 834), (4, 1122, 1122), (5, 1194, 1194), (6, 1290, 1290), (7, 1296, 1296)]
+G3 q=7 p=3 m=3 [CONTROL (p | q-1, outside the theorem)]: down-sets=5 all equal=True  [(0, 0, 0), (1, 90, 90), (2, 138, 138), (3, 210, 210), (4, 216, 216)]
+G3 q=7 p=3 m=4 [CONTROL (p | q-1, outside the theorem)]: down-sets=8 all equal=True  [(0, 0, 0), (1, 90, 90), (2, 666, 666), (3, 834, 834), (4, 1122, 1122), (5, 1194, 1194), (6, 1290, 1290), (7, 1296, 1296)]
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=45200 t=45s

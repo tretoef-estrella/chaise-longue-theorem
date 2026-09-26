@@ -1,0 +1,6 @@
+d GAM q=9 k=2 |K|=15 Gamma=5120  q^(2k+1)-Gamma=53929 PTSQ q=9 k=2 |K|=15 P=7761
+d0 GAM q=9 k=2 |K|=14 Gamma=4928  q^(2k+1)-Gamma=54121 PTSQ q=9 k=2 |K|=14 P=7425
+d0_1 GAM q=9 k=2 |K|=13 Gamma=4688  q^(2k+1)-Gamma=54361 PTSQ q=9 k=2 |K|=13 P=7033
+d0_5 GAM q=9 k=2 |K|=13 Gamma=4736  q^(2k+1)-Gamma=54313 PTSQ q=9 k=2 |K|=13 P=7089
+d0_1_2_3_4_5_6 GAM q=9 k=2 |K|=8 Gamma=3248  q^(2k+1)-Gamma=55801 PTSQ q=9 k=2 |K|=8 P=4769
+d1_4_9_12 GAM q=9 k=2 |K|=11 Gamma=4160  q^(2k+1)-Gamma=54889 PTSQ q=9 k=2 |K|=11 P=6185

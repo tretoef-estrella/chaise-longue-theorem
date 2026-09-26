@@ -1,0 +1,8 @@
+option(redSB);
+ring R=3,(x(1..4)),dp;
+ideal I=x(1)^9,x(2)^9,x(3)^9,x(4)^9;
+I=I+(x(1)+x(2)+x(3)+x(4));
+I=I+(x(1)*x(2)*x(3)+x(1)*x(2)*x(4)+x(1)*x(3)*x(4)+x(2)*x(3)*x(4));
+I=std(I);
+print("mu=() n=4 q=9 vdim=" + string(vdim(I)) + " W=217 ngens=2");
+quit;

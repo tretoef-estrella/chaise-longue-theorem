@@ -1,0 +1,5 @@
+q=3 |mu|<=30 partitions=31 chain_bad=0 pairs=225 P2_bad=0
+q=9 |mu|<=14 partitions=241 chain_bad=0 pairs=12076 P2_bad=0
+q=27 |mu|<=12 partitions=272 chain_bad=0 pairs=14308 P2_bad=0
+q=81 |mu|<=11 partitions=195 chain_bad=0 pairs=7461 P2_bad=0
+VIGIA-FIN-OK exit=0 pico_kb=8832 t=3s

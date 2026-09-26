@@ -1,0 +1,2 @@
+SUMFORM k=4 q=3 ranks=[42, 90, 75, 35, 9, 1] total=252 Q=252 DS-HOLDS
+VIGIA-FIN-OK exit=0 pico_kb=240 t=0s

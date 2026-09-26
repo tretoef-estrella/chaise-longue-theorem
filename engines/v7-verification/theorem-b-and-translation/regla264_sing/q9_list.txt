@@ -1,0 +1,7 @@
+q3k1d GAM q=3 k=1 |K|=3 Gamma=6  q^(2k+1)-Gamma=21
+q3k2d GAM q=3 k=2 |K|=15 Gamma=20  q^(2k+1)-Gamma=223
+q9k1d GAM q=9 k=1 |K|=3 Gamma=168  q^(2k+1)-Gamma=561
+q9k1d0 GAM q=9 k=1 |K|=2 Gamma=120  q^(2k+1)-Gamma=609
+q9k1d0_1 GAM q=9 k=1 |K|=1 Gamma=64  q^(2k+1)-Gamma=665
+q3k2d0 GAM q=3 k=2 |K|=14 Gamma=20  q^(2k+1)-Gamma=223
+q3k2d0_1_2_3_4_5_6 GAM q=3 k=2 |K|=8 Gamma=20  q^(2k+1)-Gamma=223

@@ -1,0 +1,2 @@
+ESTIMATE regla265 full family: (3,3) 2187-dim, (4,3) 19683-dim 945 gens, (1,27) 19683-dim, (5,3) 177147-dim 10395 gens deg 16 (may hit cap); total <10 min, cap 1.2 GB
+ESTIMATE regla265 zero-pattern test: 9 scripts, largest q=9 k=2 bone 5 vars box 9 + 16 small punctured; <3 min, <400 MB

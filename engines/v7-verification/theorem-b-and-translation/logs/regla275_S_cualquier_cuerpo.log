@@ -1,0 +1,9 @@
+k=1 p=3 q=5: dim(D_J)C = 36   Q_k(q) = 36   OK
+k=1 p=5 q=3: dim(D_J)C = 6   Q_k(q) = 6   OK
+k=2 p=5 q=3: dim(D_J)C = 20   Q_k(q) = 20   OK
+k=1 p=3 q=7: dim(D_J)C = 90   Q_k(q) = 90   OK
+k=2 p=3 q=5: dim(D_J)C = 400   Q_k(q) = 400   OK
+k=1 p=7 q=3: dim(D_J)C = 6   Q_k(q) = 6   OK
+k=1 p=5 q=9: dim(D_J)C = 168   Q_k(q) = 168   OK
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=27856 t=0s

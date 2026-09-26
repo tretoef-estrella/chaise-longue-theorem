@@ -1,0 +1,8 @@
+q=5 p=2 m=3  (p | q-1: True)  down-sets=4  all equal=True
+q=5 p=2 m=4  (p | q-1: True)  down-sets=7  all equal=True
+q=7 p=2 m=3  (p | q-1: True)  down-sets=5  all equal=True
+q=7 p=3 m=3  (p | q-1: True)  down-sets=5  all equal=True
+q=7 p=2 m=4  (p | q-1: True)  down-sets=8  all equal=True
+q=9 p=2 m=3  (p | q-1: True)  down-sets=5  all equal=True
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=34544 t=24s

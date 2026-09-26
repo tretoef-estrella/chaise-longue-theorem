@@ -1,0 +1,5 @@
+q=5 m=3  graded dims of V equal in all chars: True  [0, 0, 0, 3, 6, 8, 9, 6, 3, 1]  total=36
+q=7 m=3  graded dims of V equal in all chars: True  [0, 0, 0, 0, 0, 3, 6, 9, 12, 14, 15, 12, 9, 6, 3, 1]  total=90
+q=5 m=5  graded dims of V equal in all chars: True  [0, 0, 0, 0, 0, 0, 14, 40, 66, 85, 81, 59, 34, 15, 5, 1]  total=400
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=25104 t=3s

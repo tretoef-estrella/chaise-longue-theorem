@@ -1,0 +1,7 @@
+LIT q=3 k=1 |K|=3 vdim=21
+YCO q=3 k=1 |K|=3 vdim=21
+LIT q=3 k=2 |K|=15 vdim=223
+YCO q=3 k=2 |K|=15 vdim=223
+LIT q=9 k=1 |K|=3 vdim=561
+YCO q=9 k=1 |K|=3 vdim=561
+VIGIA-FIN-OK exit=0 pico_kb=5536 t=0s

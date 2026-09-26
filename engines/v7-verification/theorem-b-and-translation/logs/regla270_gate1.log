@@ -1,0 +1,8 @@
+q=81 m=4 |Par_m|=8 downsets=10 P1fail=0 P2fail=0 P3fail=0
+VIGIA-FIN-OK exit=0 pico_kb=1840 t=0s
+q=243 m=6 |Par_m|=19 downsets=39 P1fail=0 P2fail=0 P3fail=0
+VIGIA-FIN-OK exit=0 pico_kb=10848 t=0s
+q=9 m=6 |Par_m|=17 downsets=29 P1fail=27 P2fail=61 P3fail=0
+VIGIA-FIN-OK exit=0 pico_kb=320 t=0s
+q=9 m=7 |Par_m|=21 downsets=43 P1fail=0 P2fail=0 P3fail=604
+VIGIA-FIN-OK exit=0 pico_kb=240 t=0s

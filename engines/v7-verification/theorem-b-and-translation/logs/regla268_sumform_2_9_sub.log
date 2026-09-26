@@ -1,0 +1,3 @@
+SUBFAMILY drop=[0, 5] (Q below is the FULL-family count)
+SUMFORM k=2 q=9 ranks=[13, 39, 78, 130, 195, 273, 352, 423, 468, 487, 480, 447, 391, 317, 239, 168, 110, 65, 34, 15, 5, 1] total=4730 Q=5120 DIFFERS
+VIGIA-FIN-OK exit=0 pico_kb=455744 t=3s

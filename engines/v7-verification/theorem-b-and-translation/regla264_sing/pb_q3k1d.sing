@@ -1,0 +1,10 @@
+option(redSB);
+ring R=3,(y(1..3)),dp;
+ideal bx=y(1)^2,y(2)^2,y(3)^2;
+ideal G=1; ideal IJ;
+IJ=y(2)+y(3); G=intersect(G,IJ+bx);
+IJ=y(1)+y(3); G=intersect(G,IJ+bx);
+IJ=y(1)+y(2); G=intersect(G,IJ+bx);
+G=std(G);
+print("PBONE q=3 k=1 |K|=3 r=2 vdim=" + string(vdim(G)));
+quit;

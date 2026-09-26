@@ -1,0 +1,15 @@
+q 3 k 3 |K| 105 dropped []
+graded ranks [14, 28, 20, 7, 1]
+dim (D_J:J in K)C = 70
+|Gamma_K| = 70
+VIGIA-FIN-OK exit=0 pico_kb=21792 t=0s
+q 9 k 2 |K| 15 dropped []
+graded ranks [15, 45, 90, 150, 224, 310, 395, 470, 515, 530, 516, 475, 411, 329, 245, 170, 110, 65, 34, 15, 5, 1]
+dim (D_J:J in K)C = 5120
+|Gamma_K| = 5120
+VIGIA-FIN-OK exit=0 pico_kb=160752 t=10s
+q 9 k 2 |K| 13 dropped [((0, 1), (2, 3), (4, 5)), ((0, 2), (1, 5), (3, 4))]
+graded ranks [13, 39, 78, 130, 195, 273, 352, 423, 468, 487, 480, 447, 391, 317, 239, 168, 110, 65, 34, 15, 5, 1]
+dim (D_J:J in K)C = 4730
+|Gamma_K| = 4736
+VIGIA-FIN-OK exit=0 pico_kb=141632 t=7s

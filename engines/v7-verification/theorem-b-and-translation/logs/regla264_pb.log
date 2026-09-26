@@ -1,0 +1,29 @@
+== q3k1d
+PBONE q=3 k=1 |K|=3 r=2 vdim=6
+LIT q=3 k=1 |K|=3 vdim=21
+EXT q=3 k=1 |K|=3 A=19 B=19
+== q3k2d
+PBONE q=3 k=2 |K|=15 r=2 vdim=20
+LIT q=3 k=2 |K|=15 vdim=223
+EXT q=3 k=2 |K|=15 A=141 B=141
+== q9k1d
+PBONE q=9 k=1 |K|=3 r=8 vdim=168
+LIT q=9 k=1 |K|=3 vdim=561
+EXT q=9 k=1 |K|=3 A=217 B=217
+== q9k1d0
+PBONE q=9 k=1 |K|=2 r=8 vdim=120
+LIT q=9 k=1 |K|=2 vdim=609
+EXT q=9 k=1 |K|=2 A=153 B=153
+== q9k1d0_1
+PBONE q=9 k=1 |K|=1 r=8 vdim=64
+LIT q=9 k=1 |K|=1 vdim=665
+EXT q=9 k=1 |K|=1 A=81 B=81
+== q3k2d0
+PBONE q=3 k=2 |K|=14 r=2 vdim=20
+LIT q=3 k=2 |K|=14 vdim=223
+EXT q=3 k=2 |K|=14 A=141 B=140
+== q3k2d0_1_2_3_4_5_6
+PBONE q=3 k=2 |K|=8 r=2 vdim=20
+LIT q=3 k=2 |K|=8 vdim=223
+EXT q=3 k=2 |K|=8 A=114 B=113
+VIGIA-FIN-OK exit=0 pico_kb=2240 t=0s

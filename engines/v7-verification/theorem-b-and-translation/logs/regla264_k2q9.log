@@ -1,0 +1,19 @@
+== d
+PBONE q=9 k=2 |K|=15 r=8 vdim=5120
+EXT q=9 k=2 |K|=15 A=7761 B=7761
+== d0
+PBONE q=9 k=2 |K|=14 r=8 vdim=4928
+EXT q=9 k=2 |K|=14 A=7425 B=7424
+== d0_1
+PBONE q=9 k=2 |K|=13 r=8 vdim=4688
+EXT q=9 k=2 |K|=13 A=7033 B=7032
+== d0_5
+PBONE q=9 k=2 |K|=13 r=8 vdim=4730
+EXT q=9 k=2 |K|=13 A=7089 B=7081
+== d0_1_2_3_4_5_6
+PBONE q=9 k=2 |K|=8 r=8 vdim=3248
+EXT q=9 k=2 |K|=8 A=4770 B=4769
+== d1_4_9_12
+PBONE q=9 k=2 |K|=11 r=8 vdim=4160
+EXT q=9 k=2 |K|=11 A=6185 B=6185
+VIGIA-FIN-OK exit=0 pico_kb=7504 t=0s
