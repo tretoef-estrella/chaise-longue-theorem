@@ -1,0 +1,27 @@
+rows.m2:7:56:(3):[301]: error: recursion limit of 300 exceeded
+rows.m2:14:17:(3):[7]: --back trace--
+rows.m2:44:33:(3):[6]: --back trace--
+/private/tmp/macaulay2-20260630-44927-c8kzx6/M2-release-1.26.06/M2/Macaulay2/m2/startup.m2.in:80:23:(0):[6]: --back trace--
+/opt/homebrew/Cellar/macaulay2/1.26.06_1/share/Macaulay2/Core/Core.m2:131:28:(1):[5]: --back trace--
+/opt/homebrew/Cellar/macaulay2/1.26.06_1/share/Macaulay2/Core/Core.m2:127:13:(1):[3]: --back trace--
+/opt/homebrew/Cellar/macaulay2/1.26.06_1/share/Macaulay2/Core/Core.m2:138:29:(1):[2]: --back trace--
+/private/tmp/macaulay2-20260630-44927-c8kzx6/M2-release-1.26.06/M2/Macaulay2/m2/startup.m2.in:547:66:(0):[1]: --back trace--
+/private/tmp/macaulay2-20260630-44927-c8kzx6/M2-release-1.26.06/M2/Macaulay2/m2/startup.m2.in:635:41:(2): --back trace--
+       21.97 real        49.47 user         1.00 sys
+           275759104  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               40470  page reclaims
+                 220  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 397  voluntary context switches
+               94164  involuntary context switches
+        381093198156  instructions retired
+        148443587647  cycles elapsed
+           261096096  peak memory footprint

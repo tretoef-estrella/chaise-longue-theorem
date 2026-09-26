@@ -1,0 +1,12 @@
+gate m=5 r=2 q=9: Odd_M == c x_A^(q-1) e_(|P|-1)(P) mod box+lower layers: True
+gate m=5 r=2 q=27: Odd_M == c x_A^(q-1) e_(|P|-1)(P) mod box+lower layers: True
+gate m=5 r=2 q=81: Odd_M == c x_A^(q-1) e_(|P|-1)(P) mod box+lower layers: True
+gate m=6 r=2 q=9: Odd_M == c x_A^(q-1) e_(|P|-1)(P) mod box+lower layers: True
+gate m=6 r=2 q=27: Odd_M == c x_A^(q-1) e_(|P|-1)(P) mod box+lower layers: True
+gate m=7 r=2 q=9: Odd_M == c x_A^(q-1) e_(|P|-1)(P) mod box+lower layers: True
+gate m=7 r=3 q=9: Odd_M == c x_A^(q-1) e_(|P|-1)(P) mod box+lower layers: True
+gate m=7 r=3 q=27: Odd_M == c x_A^(q-1) e_(|P|-1)(P) mod box+lower layers: True
+gate m=8 r=3 q=9: Odd_M == c x_A^(q-1) e_(|P|-1)(P) mod box+lower layers: True
+gate m=6 r=3 q=9: Odd_M == c x_A^(q-1) e_(|P|-1)(P) mod box+lower layers: True
+gate m=9 r=4 q=9: Odd_M == c x_A^(q-1) e_(|P|-1)(P) mod box+lower layers: True
+VIGIA-FIN-OK exit=0 pico_kb=493248 t=89s

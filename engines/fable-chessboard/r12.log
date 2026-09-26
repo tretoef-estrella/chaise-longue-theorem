@@ -1,0 +1,4 @@
+(2,2) n+1=6, row 2 : I_(2,2,1)(5)+box inside rows of Q_(2,2)(6)+box alone? true
+(2,2) n+1=6, row 3 : I_(2,2,1)(5)+box inside rows of Q_(2,2)(6)+box alone? true
+FIN-OK
+EXIT 0 after 1s

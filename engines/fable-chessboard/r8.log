@@ -1,0 +1,5 @@
+q=9 n=5 L=2 (child f=3) : N_1(n) gens not in Known: 30 of 160 [.161606s]
+q=9 n=6 L=2 (child f=4) : N_1(n) gens not in Known: 60 of 497 [96.9956s]
+q=9 n=6 L=3 (child f=3) : N_1(n) gens not in Known: 60 of 497 [122.744s]
+WATCHDOG-KILLED at 570s
+pgrep: no M2 process remains

@@ -1,0 +1,10 @@
+(a) Tanisaki row lemma: 260/260 (lambda |- N, N = 2..7, all a < l(lambda), F_3 and QQ) ; top power exact: 86/86
+(b) (G1) cell q=9 (n+1,m)=(5,1) : C in K true ; z^2 s in K+(z^3) true
+(b) (G1) cell q=9 (n+1,m)=(6,1) : C in K true ; z^2 s in K+(z^3) true
+(b) (G1) cell q=9 (n+1,m)=(6,2) : C in K true ; z^2 s in K+(z^3) true
+(b) (G1) cell q=9 (n+1,m)=(6,3) : C in K true ; z^2 s in K+(z^3) true
+(b) (G1) cell q=9 (n+1,m)=(7,2) : C in K true ; z^2 s in K+(z^3) true
+(b) (G1) cell q=9 (n+1,m)=(7,3) : C in K true ; z^2 s in K+(z^3) true
+(b) (G1) cell q=27 (n+1,m)=(5,1) : C in K true ; z^2 s in K+(z^3) true
+WATCHDOG-KILLED at 570s
+pgrep: no M2 process remains

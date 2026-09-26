@@ -1,0 +1,25 @@
+(a) identities (I),(II), n = 2..7, M = n-1..n+9 (66 cases): true
+    control M = n-2: (I) holds? false (must be false)
+q=9 (1^1) n+1=4 c=1 : split exact true ; S = families mod box true ; z^l X in K true ; z^(l+1) X' in K+(z^(l+2)) & C in K true
+q=9 (1^1) n+1=5 c=2 : split exact true ; S = families mod box true ; z^l X in K true ; z^(l+1) X' in K+(z^(l+2)) & C in K true
+q=9 (1^1) n+1=6 c=3 : split exact true ; S = families mod box true ; z^l X in K true ; z^(l+1) X' in K+(z^(l+2)) & C in K true
+q=9 (1^1) n+1=7 c=4 : split exact true ; S = families mod box true ; z^l X in K skipped ; z^(l+1) X' in K+(z^(l+2)) & C in K skipped
+q=9 (1^2) n+1=5 c=1 : split exact true ; S = families mod box true ; z^l X in K true ; z^(l+1) X' in K+(z^(l+2)) & C in K true
+q=9 (1^2) n+1=6 c=2 : split exact true ; S = families mod box true ; z^l X in K true ; z^(l+1) X' in K+(z^(l+2)) & C in K true
+q=9 (1^2) n+1=7 c=3 : split exact true ; S = families mod box true ; z^l X in K skipped ; z^(l+1) X' in K+(z^(l+2)) & C in K skipped
+q=9 (1^3) n+1=6 c=1 : split exact true ; S = families mod box true ; z^l X in K true ; z^(l+1) X' in K+(z^(l+2)) & C in K true
+q=9 (1^3) n+1=7 c=2 : split exact true ; S = families mod box true ; z^l X in K skipped ; z^(l+1) X' in K+(z^(l+2)) & C in K skipped
+q=27 (1^1) n+1=4 c=1 : split exact true ; S = families mod box true ; z^l X in K true ; z^(l+1) X' in K+(z^(l+2)) & C in K true
+q=27 (1^1) n+1=5 c=2 : split exact true ; S = families mod box true ; z^l X in K true ; z^(l+1) X' in K+(z^(l+2)) & C in K true
+q=27 (1^1) n+1=6 c=3 : split exact true ; S = families mod box true ; z^l X in K skipped ; z^(l+1) X' in K+(z^(l+2)) & C in K skipped
+q=27 (1^2) n+1=5 c=1 : split exact true ; S = families mod box true ; z^l X in K true ; z^(l+1) X' in K+(z^(l+2)) & C in K true
+q=27 (1^2) n+1=6 c=2 : split exact true ; S = families mod box true ; z^l X in K skipped ; z^(l+1) X' in K+(z^(l+2)) & C in K skipped
+q=27 (1^3) n+1=6 c=1 : split exact true ; S = families mod box true ; z^l X in K skipped ; z^(l+1) X' in K+(z^(l+2)) & C in K skipped
+q=81 (1^1) n+1=4 c=1 : split exact true ; S = families mod box true ; z^l X in K true ; z^(l+1) X' in K+(z^(l+2)) & C in K true
+q=81 (1^1) n+1=5 c=2 : split exact true ; S = families mod box true ; z^l X in K skipped ; z^(l+1) X' in K+(z^(l+2)) & C in K skipped
+q=81 (1^2) n+1=5 c=1 : split exact true ; S = families mod box true ; z^l X in K skipped ; z^(l+1) X' in K+(z^(l+2)) & C in K skipped
+q=243 (1^1) n+1=4 c=1 : split exact true ; S = families mod box true ; z^l X in K skipped ; z^(l+1) X' in K+(z^(l+2)) & C in K skipped
+q=243 (1^2) n+1=5 c=1 : split exact true ; S = families mod box true ; z^l X in K skipped ; z^(l+1) X' in K+(z^(l+2)) & C in K skipped
+q=243 (1^3) n+1=6 c=1 : split exact true ; S = families mod box true ; z^l X in K skipped ; z^(l+1) X' in K+(z^(l+2)) & C in K skipped
+FIN-OK
+EXIT 0 after 110s

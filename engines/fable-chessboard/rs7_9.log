@@ -1,0 +1,4 @@
+// ** S1 is no standard basis
+// ** S1 is no standard basis
+(2,1)(7) q=9: z^(q-2) phi^(2)_jl in K+(z^(q-1)): 1 ; control z^(q-3) phi: 0 ; secs 2
+VIGIA-FIN-OK exit=0 pico_kb=6480 t=1s

@@ -1,0 +1,8 @@
+(2,9): y_0^2 y_1^(q-1) e_{2k-3}(others) in K'_k? true
+   (control) y_0^2 y_1^(q-1) y_2^(2k-3) in K'_k? true
+(2,27): y_0^2 y_1^(q-1) e_{2k-3}(others) in K'_k? true
+   (control) y_0^2 y_1^(q-1) y_2^(2k-3) in K'_k? true
+(3,9): y_0^2 y_1^(q-1) e_{2k-3}(others) in K'_k? true
+   (control) y_0^2 y_1^(q-1) y_2^(2k-3) in K'_k? false
+FIN-OK
+exit=0

@@ -1,0 +1,3 @@
+ROW0 of (1,1) at n=7, q=9: vdim = 4266  sec 0
+  child (1) at 6 generators missing from the row: 0 of 174  ; missing layer by |A| = 1,2,3: 0 0 0
+VIGIA-FIN-OK exit=0 pico_kb=5424 t=0s

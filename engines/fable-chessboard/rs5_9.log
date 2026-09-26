@@ -1,0 +1,6 @@
+// ** S1 is no standard basis
+// ** S2 is no standard basis
+// ** S3 is no standard basis
+// ** S2 is no standard basis
+q=9 T1 z^(q-2)phi in K+(z^(q-1)): 1 ; T2 low in K+z^(q-2)Kc+(z^(q-1)): 1 ; T3 low in K+(z^(q-2)): 1 ; T1b z^(q-2)phi in K+z^(q-2)Kc+(z^(q-1)) [same as T1]: 1 ; secs 5
+VIGIA-FIN-OK exit=0 pico_kb=7040 t=5s

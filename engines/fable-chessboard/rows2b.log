@@ -1,0 +1,104 @@
+=== rows of K_(1,1)(6) at q = 9
+colength K_(m,1)(n+1) = 3930  (fibre 3930)
+row 0 type {1}: colength 855 vs fibre 855 ; base subset row? true ; base colength 855  == base
+row 1 type {1}: colength 855 vs fibre 855 ; base subset row? true ; base colength 855  == base
+row 2 type {1, 1}: colength 380 vs fibre 380 ; base subset row? true ; base colength 390
+    families inside the row: {C0, D0, E0, C1, D1, E1, C2, D2, E2, A3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {A3} : colength 380  == row
+row 3 type {1, 1, 1}: colength 360 vs fibre 360 ; base subset row? true ; base colength 390
+    families inside the row: {C0, D0, E0, C1, D1, E1, C2, D2, E2, A3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {A3} : colength 380  != row
+    remaining mingens: 6 degrees Tally{9 => 6}
+row 4 type {1, 1, 1}: colength 360 vs fibre 360 ; base subset row? true ; base colength 390
+    families inside the row: {C0, D0, E0, C1, D1, E1, C2, D2, E2, A3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {A3} : colength 380  != row
+    remaining mingens: 6 degrees Tally{9 => 6}
+row 5 type {1, 1, 1}: colength 360 vs fibre 360 ; base subset row? true ; base colength 390
+    families inside the row: {C0, D0, E0, C1, D1, E1, C2, D2, E2, A3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {A3} : colength 380  != row
+    remaining mingens: 6 degrees Tally{9 => 6}
+row 6 type {1, 1, 1}: colength 360 vs fibre 360 ; base subset row? true ; base colength 390
+    families inside the row: {C0, D0, E0, C1, D1, E1, C2, D2, E2, A3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {A3} : colength 380  != row
+    remaining mingens: 6 degrees Tally{9 => 6}
+row 7 type {2, 1}: colength 200 vs fibre 200 ; base subset row? true ; base colength 210
+    families inside the row: {C0, D0, E0, C1, D1, E1, A2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {A2} : colength 200  == row
+row 8 type {2, 1}: colength 200 vs fibre 200 ; base subset row? true ; base colength 210
+    families inside the row: {C0, D0, E0, C1, D1, E1, A2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {A2} : colength 200  == row
+sum of row colengths 3930 = colength K? true
+=== rows of K_(2,1)(6) at q = 9
+colength K_(m,1)(n+1) = 1080  (fibre 1080)
+row 0 type {1, 1}: colength 380 vs fibre 380 ; base subset row? true ; base colength 390
+    families inside the row: {C0, D0, E0, C1, D1, E1, C2, D2, E2, A3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {A3} : colength 380  == row
+row 1 type {2}: colength 210 vs fibre 210 ; base subset row? true ; base colength 210  == base
+row 2 type {2, 1}: colength 200 vs fibre 200 ; base subset row? true ; base colength 210
+    families inside the row: {C0, D0, E0, C1, D1, E1, A2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {A2} : colength 200  == row
+row 3 type {2, 1, 1}: colength 60 vs fibre 60 ; base subset row? true ; base colength 60  == base
+row 4 type {2, 1, 1}: colength 60 vs fibre 60 ; base subset row? true ; base colength 60  == base
+row 5 type {2, 1, 1}: colength 60 vs fibre 60 ; base subset row? true ; base colength 60  == base
+row 6 type {2, 1, 1}: colength 60 vs fibre 60 ; base subset row? true ; base colength 60  == base
+row 7 type {2, 2}: colength 30 vs fibre 30 ; base subset row? false ; base colength 20
+    families inside the row: {A0, B0, C0, D0, E0, A1, B1, C1, D1, E1, A2, B2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {} : colength 20  != row
+    remaining mingens: 0 degrees Tally{}
+row 8 type {3, 1}: colength 20 vs fibre 20 ; base subset row? true ; base colength 20  == base
+sum of row colengths 1080 = colength K? true
+=== rows of K_(3,1)(6) at q = 9
+colength K_(m,1)(n+1) = 390  (fibre 390)
+row 0 type {2, 1}: colength 200 vs fibre 200 ; base subset row? true ; base colength 210
+    families inside the row: {C0, D0, E0, C1, D1, E1, A2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {A2} : colength 200  == row
+row 1 type {3}: colength 75 vs fibre 75 ; base subset row? true ; base colength 75  == base
+row 2 type {3, 1}: colength 20 vs fibre 20 ; base subset row? true ; base colength 20  == base
+row 3 type {3, 1, 1}: colength 20 vs fibre 20 ; base subset row? true ; base colength 20  == base
+row 4 type {3, 1, 1}: colength 20 vs fibre 20 ; base subset row? true ; base colength 20  == base
+row 5 type {3, 1, 1}: colength 20 vs fibre 20 ; base subset row? true ; base colength 20  == base
+row 6 type {3, 1, 1}: colength 20 vs fibre 20 ; base subset row? true ; base colength 20  == base
+row 7 type {3, 2}: colength 10 vs fibre 10 ; base subset row? false ; base colength 5
+    families inside the row: {A0, B0, C0, D0, E0, A1, B1, C1, D1, E1, A2, B2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {} : colength 5  != row
+    remaining mingens: 0 degrees Tally{}
+row 8 type {4, 1}: colength 5 vs fibre 5 ; base subset row? true ; base colength 5  == base
+sum of row colengths 390 = colength K? true
+=== rows of K_(4,1)(6) at q = 9
+colength K_(m,1)(n+1) = 30  (fibre 30)
+row 0 type {3, 1}: colength 20 vs fibre 20 ; base subset row? true ; base colength 20  == base
+row 1 type {4}: colength 5 vs fibre 5 ; base subset row? true ; base colength 5  == base
+row 2 type {4, 1}: colength 5 vs fibre 5 ; base subset row? true ; base colength 5  == base
+row 3 type {4, 1, 1}: colength 0 vs fibre 0 ; base subset row? true ; base colength 5
+    families inside the row: {A0, B0, C0, D0, E0, A1, B1, C1, D1, E1, A2, B2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {} : colength 5  != row
+    remaining mingens: 1 degrees Tally{0 => 1}
+      deg 0 : 1
+row 4 type {4, 1, 1}: colength 0 vs fibre 0 ; base subset row? true ; base colength 5
+    families inside the row: {A0, B0, C0, D0, E0, A1, B1, C1, D1, E1, A2, B2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {} : colength 5  != row
+    remaining mingens: 1 degrees Tally{0 => 1}
+      deg 0 : 1
+row 5 type {4, 1, 1}: colength 0 vs fibre 0 ; base subset row? true ; base colength 5
+    families inside the row: {A0, B0, C0, D0, E0, A1, B1, C1, D1, E1, A2, B2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {} : colength 5  != row
+    remaining mingens: 1 degrees Tally{0 => 1}
+      deg 0 : 1
+row 6 type {4, 1, 1}: colength 0 vs fibre 0 ; base subset row? true ; base colength 5
+    families inside the row: {A0, B0, C0, D0, E0, A1, B1, C1, D1, E1, A2, B2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {} : colength 5  != row
+    remaining mingens: 1 degrees Tally{0 => 1}
+      deg 0 : 1
+row 7 type {5, 1}: colength 0 vs fibre 0 ; base subset row? true ; base colength 1
+    families inside the row: {A0, B0, C0, D0, E0, A1, B1, C1, D1, E1, A2, B2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {} : colength 1  != row
+    remaining mingens: 1 degrees Tally{0 => 1}
+      deg 0 : 1
+row 8 type {4, 2}: colength 0 vs fibre 0 ; base subset row? true ; base colength 1
+    families inside the row: {A0, B0, C0, D0, E0, A1, B1, C1, D1, E1, A2, B2, C2, D2, E2, A3, B3, C3, D3, E3, A4, B4, C4, D4, E4}
+    greedy base + {} : colength 1  != row
+    remaining mingens: 1 degrees Tally{0 => 1}
+      deg 0 : 1
+sum of row colengths 30 = colength K? true
+FIN-OK
+EXIT 0 after 21s

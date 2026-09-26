@@ -1,0 +1,12 @@
+q=9 (1^1) n+1=5 raise child {2} n=4 : child gens not in Known: 0 of 73
+   whole child in row q-ell of the parent (membership): true ; bad gens in row q-ell: {}
+q=9 (1^2) n+1=5 raise child {2, 1} n=4 : child gens not in Known: 0 of 74
+   whole child in row q-ell of the parent (membership): true ; bad gens in row q-ell: {}
+q=9 (1^2) n+1=6 raise child {2, 1} n=5 : child gens not in Known: 0 of 194
+   whole child in row q-ell of the parent (membership): true ; bad gens in row q-ell: {}
+q=9 (1^3) n+1=6 raise child {2, 1, 1} n=5 : child gens not in Known: 0 of 195
+   whole child in row q-ell of the parent (membership): true ; bad gens in row q-ell: {}
+q=27 (1^2) n+1=5 raise child {2, 1} n=4 : child gens not in Known: 0 of 74
+   whole child in row q-ell of the parent (membership): true ; bad gens in row q-ell: {}
+FIN-OK
+EXIT 0 after 261s

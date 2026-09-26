@@ -1,0 +1,10 @@
+parent (2,1)(6), q=9: Psi == z^(q-2) phi^(2)_jl mod Mon+box+(z^(q-1)): False ; target monomials outside Mon: True ; |Omega| = 20
+parent (2,1)(7), q=9: Psi == z^(q-2) phi^(2)_jl mod Mon+box+(z^(q-1)): True ; target monomials outside Mon: True ; |Omega| = 32
+parent (2,1)(8), q=9: Psi == z^(q-2) phi^(2)_jl mod Mon+box+(z^(q-1)): False ; target monomials outside Mon: True ; |Omega| = 49
+parent (2,1)(9), q=9: Psi == z^(q-2) phi^(2)_jl mod Mon+box+(z^(q-1)): True ; target monomials outside Mon: True ; |Omega| = 72
+parent (2,1)(6), q=27: Psi == z^(q-2) phi^(2)_jl mod Mon+box+(z^(q-1)): False ; target monomials outside Mon: True ; |Omega| = 20
+parent (2,1)(7), q=27: Psi == z^(q-2) phi^(2)_jl mod Mon+box+(z^(q-1)): True ; target monomials outside Mon: True ; |Omega| = 32
+parent (2,1)(8), q=27: Psi == z^(q-2) phi^(2)_jl mod Mon+box+(z^(q-1)): False ; target monomials outside Mon: True ; |Omega| = 49
+parent (2,1)(6), q=81: Psi == z^(q-2) phi^(2)_jl mod Mon+box+(z^(q-1)): False ; target monomials outside Mon: True ; |Omega| = 20
+parent (2,1)(7), q=81: Psi == z^(q-2) phi^(2)_jl mod Mon+box+(z^(q-1)): True ; target monomials outside Mon: True ; |Omega| = 32
+VIGIA-FIN-OK exit=0 pico_kb=25776 t=0s

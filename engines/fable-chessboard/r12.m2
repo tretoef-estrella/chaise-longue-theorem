@@ -1,0 +1,10 @@
+load "m11lib.m2";
+clTan = (vs, lam) -> ( N := #vs; lc := clConj(lam, N); dk := k -> sum take(reverse lc, k); L := {};
+  for k from 1 to N do for Ss in subsets(N, k) do ( xs := apply(Ss, i -> vs#i); for r from max(1, k - dk(k) + 1) to k do L = append(L, clE(xs, r)));
+  L);
+q = 9; S = ZZ/3[y_1..y_5, z, MonomialOrder=>GRevLex]; ys = toList(y_1..y_5); vs = ys | {z};
+Kq = ideal(clQ(vs, {2,2}) | apply(vs, v -> v^q));
+for a in {2,3} do ( G := gb(Kq + ideal(z^(a+1)));
+  ch := clTan(ys, {2,2,1}) | apply(ys, v -> v^q);
+  << "(2,2) n+1=6, row " << a << " : I_(2,2,1)(5)+box inside rows of Q_(2,2)(6)+box alone? " << all(ch, g -> (z^a * g) % G == 0) << endl);
+<< "FIN-OK" << endl;

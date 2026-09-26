@@ -1,0 +1,24 @@
+q=9 n=4 child {2} : layer N_1 redundant in Q+box+F? true ; redundant in Q+box+F+N_0? true
+   ansatz (multipliers in a,b1,b2 only) solvable? true (12 unknowns)
+      1 * ((0,1),{0, 0, 0})
+      1 * ((0,2),{0, 0, 0})
+q=9 n=5 child {2} : layer N_1 redundant in Q+box+F? false ; redundant in Q+box+F+N_0? false
+   ansatz (multipliers in a,b1,b2 only) solvable? false (20 unknowns)
+q=9 n=5 child {2, 1} : layer N_1 redundant in Q+box+F? true ; redundant in Q+box+F+N_0? true
+   ansatz (multipliers in a,b1,b2 only) solvable? true (60 unknowns)
+      1 * ((0,1),{1, 0, 0})
+      -1 * ((0,1),{0, 0, 1})
+      1 * ((0,2),{1, 0, 0})
+      -1 * ((0,2),{0, 1, 0})
+q=9 n=6 child {2, 1} : layer N_1 redundant in Q+box+F? false ; redundant in Q+box+F+N_0? false
+   ansatz (multipliers in a,b1,b2 only) solvable? false (90 unknowns)
+q=9 n=6 child {2, 1, 1} : layer N_1 redundant in Q+box+F? true ; redundant in Q+box+F+N_0? true
+   ansatz (multipliers in a,b1,b2 only) solvable? true (180 unknowns)
+      1 * ((0,1),{2, 0, 0})
+      -1 * ((0,1),{1, 0, 1})
+      1 * ((0,1),{0, 0, 2})
+      1 * ((0,2),{2, 0, 0})
+      -1 * ((0,2),{1, 1, 0})
+      1 * ((0,2),{0, 2, 0})
+WATCHDOG-KILLED at 570s
+pgrep: no M2 process remains

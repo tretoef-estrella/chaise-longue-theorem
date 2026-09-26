@@ -1,0 +1,12 @@
+kind 2 (n=4) : parent {1, 1} n+1=4 -> child {2, 1} n=3 f_c=0 : I_lambda_c in proved pieces? true (0 missing)
+kind 2 (n=5) : parent {1, 1} n+1=5 -> child {2, 1} n=4 f_c=1 : I_lambda_c in proved pieces? true (0 missing)
+kind 4 (n=5) : parent {2, 1} n+1=5 -> child {2, 2} n=4 f_c=0 : I_lambda_c in proved pieces? true (0 missing)
+kind 4 (n=6) : parent {2, 1} n+1=6 -> child {2, 2} n=5 f_c=1 : I_lambda_c in proved pieces? true (0 missing)
+kind 7 (n=6) : parent {3, 1} n+1=6 -> child {3, 2} n=5 f_c=0 : I_lambda_c in proved pieces? true (0 missing)
+kind 12 (n=6) : parent {2, 2} n+1=6 -> child {3, 2} n=5 f_c=0 : I_lambda_c in proved pieces? true (0 missing)
+kind 16 (n=5) : parent {1, 1, 1} n+1=5 -> child {2, 1, 1} n=4 f_c=0 : I_lambda_c in proved pieces? true (0 missing)
+kind 16 (n=6) : parent {1, 1, 1} n+1=6 -> child {2, 1, 1} n=5 f_c=1 : I_lambda_c in proved pieces? true (0 missing)
+kind 21 (n=6) : parent {2, 1, 1} n+1=6 -> child {2, 2, 1} n=5 f_c=0 : I_lambda_c in proved pieces? true (0 missing)
+kind 26 (n=6) : parent {1, 1, 1, 1} n+1=6 -> child {2, 1, 1, 1} n=5 f_c=0 : I_lambda_c in proved pieces? true (0 missing)
+FIN-OK
+EXIT 0 after 1s

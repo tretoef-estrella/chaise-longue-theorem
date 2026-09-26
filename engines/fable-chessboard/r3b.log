@@ -1,0 +1,35 @@
+=== q=9 (1^2) n+1=5
+   squarefree support 1 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 2 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 3 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 4 : z^l*m in K+(z^(l+2)) true ; z^(l-1)*m in K+(z^l+1)?? true
+   a*b^(q-1)*x_T |T|=c-1 (A={b},|B|=l) : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   b^(q-1)*x_T |T|=c (A={b}, |B|=l-1) : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   a^2 b^(q-1)*x_T |T|=c-1 : z^l*m in K+(z^(l+2)) true ; z^(l-1)*m in K+(z^l+1)?? false
+=== q=9 (1^2) n+1=6
+   squarefree support 2 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 3 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 4 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 5 : z^l*m in K+(z^(l+2)) true ; z^(l-1)*m in K+(z^l+1)?? true
+   a*b^(q-1)*x_T |T|=c-1 (A={b},|B|=l) : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   b^(q-1)*x_T |T|=c (A={b}, |B|=l-1) : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   a^2 b^(q-1)*x_T |T|=c-1 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+=== q=9 (1^3) n+1=6
+   squarefree support 1 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 2 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 3 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 4 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 5 : z^l*m in K+(z^(l+2)) true ; z^(l-1)*m in K+(z^l+1)?? true
+   a*b^(q-1)*x_T |T|=c-1 (A={b},|B|=l) : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   b^(q-1)*x_T |T|=c (A={b}, |B|=l-1) : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   a^2 b^(q-1)*x_T |T|=c-1 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+=== q=27 (1^2) n+1=5
+   squarefree support 1 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 2 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 3 : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   squarefree support 4 : z^l*m in K+(z^(l+2)) true ; z^(l-1)*m in K+(z^l+1)?? true
+   a*b^(q-1)*x_T |T|=c-1 (A={b},|B|=l) : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   b^(q-1)*x_T |T|=c (A={b}, |B|=l-1) : z^l*m in K+(z^(l+2)) false ; z^(l-1)*m in K+(z^l+1)?? false
+   a^2 b^(q-1)*x_T |T|=c-1 : z^l*m in K+(z^(l+2)) true ; z^(l-1)*m in K+(z^l+1)?? false
+FIN-OK
+EXIT 0 after 2s

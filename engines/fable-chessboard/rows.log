@@ -1,0 +1,7 @@
+dim S5/K2 = 855
+v=-1: |W_v| = 217, colength grI = 217, row a=0 colength = 217, grI(W_v) subset row? true, equal? true
+v=0: |W_v| = 88, colength grI = 88, row a=1 colength = 88, grI(W_v) subset row? true, equal? true
+v=generic(w): |W_v| = 84, colength grI = 84, row a=2 colength = 84, grI(W_v) subset row? true, equal? true
+v=+1: |W_v| = 46, colength grI = 46, row a=8 colength = 46, grI(W_v) subset row? true, equal? true
+rows a=2..q-2 all equal to row 2? true
+dim S4/K'2 = 88

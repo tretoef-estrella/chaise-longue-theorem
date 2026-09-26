@@ -1,0 +1,37 @@
+r=1 n=3 (f=1) v=|R|=1: rank W_{r-1,r}(v) over F_3 = 1 of 1 columns -> floor-1 layer REACHED
+r=1 n=4 (f=2) v=|R|=2: rank W_{r-1,r}(v) over F_3 = 1 of 2 columns -> floor-1 layer NOT reached
+r=1 n=5 (f=3) v=|R|=3: rank W_{r-1,r}(v) over F_3 = 1 of 3 columns -> floor-1 layer NOT reached
+r=1 n=6 (f=4) v=|R|=4: rank W_{r-1,r}(v) over F_3 = 1 of 4 columns -> floor-1 layer NOT reached
+r=1 n=7 (f=5) v=|R|=5: rank W_{r-1,r}(v) over F_3 = 1 of 5 columns -> floor-1 layer NOT reached
+r=1 n=8 (f=6) v=|R|=6: rank W_{r-1,r}(v) over F_3 = 1 of 6 columns -> floor-1 layer NOT reached
+r=2 n=5 (f=3) v=|R|=2: rank W_{r-1,r}(v) over F_3 = 1 of 1 columns -> floor-2 layer REACHED
+r=2 n=6 (f=4) v=|R|=3: rank W_{r-1,r}(v) over F_3 = 3 of 3 columns -> floor-2 layer REACHED
+r=2 n=7 (f=5) v=|R|=4: rank W_{r-1,r}(v) over F_3 = 4 of 6 columns -> floor-2 layer NOT reached
+r=2 n=8 (f=6) v=|R|=5: rank W_{r-1,r}(v) over F_3 = 5 of 10 columns -> floor-2 layer NOT reached
+r=2 n=9 (f=7) v=|R|=6: rank W_{r-1,r}(v) over F_3 = 6 of 15 columns -> floor-2 layer NOT reached
+r=2 n=10 (f=8) v=|R|=7: rank W_{r-1,r}(v) over F_3 = 7 of 21 columns -> floor-2 layer NOT reached
+r=3 n=7 (f=5) v=|R|=3: rank W_{r-1,r}(v) over F_3 = 1 of 1 columns -> floor-3 layer REACHED
+r=3 n=8 (f=6) v=|R|=4: rank W_{r-1,r}(v) over F_3 = 4 of 4 columns -> floor-3 layer REACHED
+r=3 n=9 (f=7) v=|R|=5: rank W_{r-1,r}(v) over F_3 = 9 of 10 columns -> floor-3 layer NOT reached
+r=3 n=10 (f=8) v=|R|=6: rank W_{r-1,r}(v) over F_3 = 14 of 20 columns -> floor-3 layer NOT reached
+r=3 n=11 (f=9) v=|R|=7: rank W_{r-1,r}(v) over F_3 = 20 of 35 columns -> floor-3 layer NOT reached
+r=3 n=12 (f=10) v=|R|=8: rank W_{r-1,r}(v) over F_3 = 27 of 56 columns -> floor-3 layer NOT reached
+r=4 n=9 (f=7) v=|R|=4: rank W_{r-1,r}(v) over F_3 = 1 of 1 columns -> floor-4 layer REACHED
+r=4 n=10 (f=8) v=|R|=5: rank W_{r-1,r}(v) over F_3 = 5 of 5 columns -> floor-4 layer REACHED
+r=4 n=11 (f=9) v=|R|=6: rank W_{r-1,r}(v) over F_3 = 14 of 15 columns -> floor-4 layer NOT reached
+r=4 n=12 (f=10) v=|R|=7: rank W_{r-1,r}(v) over F_3 = 29 of 35 columns -> floor-4 layer NOT reached
+r=4 n=13 (f=11) v=|R|=8: rank W_{r-1,r}(v) over F_3 = 49 of 70 columns -> floor-4 layer NOT reached
+r=4 n=14 (f=12) v=|R|=9: rank W_{r-1,r}(v) over F_3 = 76 of 126 columns -> floor-4 layer NOT reached
+r=5 n=11 (f=9) v=|R|=5: rank W_{r-1,r}(v) over F_3 = 1 of 1 columns -> floor-5 layer REACHED
+r=5 n=12 (f=10) v=|R|=6: rank W_{r-1,r}(v) over F_3 = 6 of 6 columns -> floor-5 layer REACHED
+r=5 n=13 (f=11) v=|R|=7: rank W_{r-1,r}(v) over F_3 = 20 of 21 columns -> floor-5 layer NOT reached
+r=5 n=14 (f=12) v=|R|=8: rank W_{r-1,r}(v) over F_3 = 49 of 56 columns -> floor-5 layer NOT reached
+r=5 n=15 (f=13) v=|R|=9: rank W_{r-1,r}(v) over F_3 = 99 of 126 columns -> floor-5 layer NOT reached
+r=5 n=16 (f=14) v=|R|=10: rank W_{r-1,r}(v) over F_3 = 175 of 252 columns -> floor-5 layer NOT reached
+r=6 n=13 (f=11) v=|R|=6: rank W_{r-1,r}(v) over F_3 = 1 of 1 columns -> floor-6 layer REACHED
+r=6 n=14 (f=12) v=|R|=7: rank W_{r-1,r}(v) over F_3 = 7 of 7 columns -> floor-6 layer REACHED
+r=6 n=15 (f=13) v=|R|=8: rank W_{r-1,r}(v) over F_3 = 27 of 28 columns -> floor-6 layer NOT reached
+r=6 n=16 (f=14) v=|R|=9: rank W_{r-1,r}(v) over F_3 = 76 of 84 columns -> floor-6 layer NOT reached
+r=6 n=17 (f=15) v=|R|=10: rank W_{r-1,r}(v) over F_3 = 175 of 210 columns -> floor-6 layer NOT reached
+r=6 n=18 (f=16) v=|R|=11: rank W_{r-1,r}(v) over F_3 = 351 of 462 columns -> floor-6 layer NOT reached
+VIGIA-FIN-OK exit=0 pico_kb=19840 t=1s

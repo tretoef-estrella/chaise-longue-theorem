@@ -1,0 +1,6 @@
+dim S4/K'2 = 88
+odd v=-1: |W'_v| = 25, colength grI = 25, row a=0 colength = 25, grI(W'_v) subset row? true, equal? true
+odd v=0: |W'_v| = 24, colength grI = 24, row a=1 colength = 24, grI(W'_v) subset row? true, equal? true
+odd v=generic(w): |W'_v| = 6, colength grI = 6, row a=2 colength = 6, grI(W'_v) subset row? true, equal? true
+odd v=+1: |W'_v| = 3, colength grI = 3, row a=8 colength = 3, grI(W'_v) subset row? true, equal? true
+FIN-OK

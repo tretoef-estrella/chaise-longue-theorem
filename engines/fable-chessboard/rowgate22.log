@@ -1,0 +1,11 @@
+gb K_(2,1)(7) + (z^(q-1)): 115 s
+  (2,2) base Q+box+N_1 : generators with z^7 g NOT in K + (z^8): 0 of 34
+  (2,2) base + y_j^(q-2) e_2(y-l) : generators with z^7 g NOT in K + (z^8): 0 of 23
+  (2,2) base + y_j^(q-2) y_l^2 : generators with z^7 g NOT in K + (z^8): 0 of 23
+  (2,2) base + y_j^(q-2) p_2(y-l) : generators with z^7 g NOT in K + (z^8): 0 of 23
+  (2,2) base + y_j^(q-2) e_2(y-j-l) : generators with z^7 g NOT in K + (z^8): 24 of 37
+  (2,2) base + y_j^(q-2) y_l e_1(y-j-l) : generators with z^7 g NOT in K + (z^8): 24 of 37
+  (2,2) base + y_j^(q-3) y_l^3 : generators with z^7 g NOT in K + (z^8): 0 of 23
+  (2,2) base + N_2 : generators with z^7 g NOT in K + (z^8): 32 of 47
+FIN-OK
+EXIT 0 after 115s

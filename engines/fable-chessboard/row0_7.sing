@@ -1,0 +1,680 @@
+ring r = (9,a), (x(1..6)), dp;
+proc elv(list vl, int k) { if (k < 0) {return(0);} if (k == 0) {return(1);} if (k > size(vl)) {return(0);}
+  list w = delete(vl, size(vl)); return(elv(w, k) + vl[size(vl)] * elv(w, k-1)); }
+int t0 = timer; ideal K;
+K = K, elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 1);
+K = K, elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 3);
+K = K, elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 6);
+K = K, 0;
+K = K, x(1)^9;
+K = K, x(2)^9;
+K = K, x(3)^9;
+K = K, x(4)^9;
+K = K, x(5)^9;
+K = K, x(6)^9;
+K = K, x(1)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 5);
+K = K, x(1)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 5);
+K = K, x(1)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 5);
+K = K, x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 5);
+K = K, x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 5);
+K = K, x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, x(2)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, x(2)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 5);
+K = K, x(2)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 5);
+K = K, x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 5);
+K = K, x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 5);
+K = K, x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, x(3)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, x(3)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 5);
+K = K, x(3)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 5);
+K = K, x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 5);
+K = K, x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 5);
+K = K, x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, x(4)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, x(4)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 5);
+K = K, x(4)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 5);
+K = K, x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 5);
+K = K, x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 5);
+K = K, x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, x(5)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, x(5)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 5);
+K = K, x(5)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 5);
+K = K, x(5)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 5);
+K = K, x(5)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 5);
+K = K, x(5)^7 * elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, x(6)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, x(6)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 5);
+K = K, x(6)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 5);
+K = K, x(6)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 5);
+K = K, x(6)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 5);
+K = K, x(6)^7 * elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 5);
+K = K, x(2)^2 * x(1)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(1)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(1)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(1)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(1)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(1)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(4)^2 * x(1)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(3)^7 * x(1)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(5)^7 * x(1)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(6)^7 * x(1)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(2)^2 * x(1)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(5)^2 * x(1)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(3)^7 * x(1)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(4)^7 * x(1)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(6)^7 * x(1)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(2)^2 * x(1)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(6)^2 * x(1)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(3)^7 * x(1)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(4)^7 * x(1)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(5)^7 * x(1)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(2)^2 * x(1)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^7 * x(1)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(1)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(1)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(1)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(1)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(4)^2 * x(1)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(2)^7 * x(1)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(5)^7 * x(1)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(6)^7 * x(1)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(3)^2 * x(1)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(5)^2 * x(1)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(2)^7 * x(1)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(4)^7 * x(1)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(6)^7 * x(1)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(3)^2 * x(1)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(6)^2 * x(1)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(2)^7 * x(1)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(4)^7 * x(1)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(5)^7 * x(1)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(3)^2 * x(1)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(2)^7 * x(1)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(1)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(1)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(1)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(4)^2 * x(1)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(5)^2 * x(1)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(2)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(3)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(6)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(4)^2 * x(1)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(6)^2 * x(1)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(2)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(3)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(5)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(4)^2 * x(1)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(2)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(3)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(5)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(6)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(5)^2 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(6)^2 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(2)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(3)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(4)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(5)^2 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(2)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(3)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(4)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(6)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(6)^2 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(2)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(3)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(4)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(5)^7 * x(1)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^2 * x(2)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(2)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(2)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(2)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(2)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(1)^2 * x(2)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(4)^2 * x(2)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(3)^7 * x(2)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(5)^7 * x(2)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(6)^7 * x(2)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(1)^2 * x(2)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(5)^2 * x(2)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(3)^7 * x(2)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(4)^7 * x(2)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(6)^7 * x(2)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(1)^2 * x(2)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(6)^2 * x(2)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(3)^7 * x(2)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(4)^7 * x(2)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(5)^7 * x(2)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^2 * x(2)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^7 * x(2)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(2)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(2)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(2)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(2)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(4)^2 * x(2)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(1)^7 * x(2)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(5)^7 * x(2)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(6)^7 * x(2)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(3)^2 * x(2)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(5)^2 * x(2)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(1)^7 * x(2)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(4)^7 * x(2)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(6)^7 * x(2)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(3)^2 * x(2)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(6)^2 * x(2)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(1)^7 * x(2)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(4)^7 * x(2)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(5)^7 * x(2)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(3)^2 * x(2)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(1)^7 * x(2)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(2)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(2)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(2)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(4)^2 * x(2)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(5)^2 * x(2)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(1)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(3)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(6)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(4)^2 * x(2)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(6)^2 * x(2)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(1)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(3)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(5)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(4)^2 * x(2)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(1)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(3)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(5)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(6)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(5)^2 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(6)^2 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(1)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(3)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(4)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(5)^2 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(1)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(3)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(4)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(6)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(6)^2 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(3)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(4)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(5)^7 * x(2)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^2 * x(3)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(3)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(3)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(3)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(3)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(1)^2 * x(3)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(4)^2 * x(3)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(2)^7 * x(3)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(5)^7 * x(3)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(6)^7 * x(3)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(1)^2 * x(3)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(5)^2 * x(3)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(2)^7 * x(3)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(4)^7 * x(3)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(6)^7 * x(3)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(1)^2 * x(3)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(6)^2 * x(3)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(2)^7 * x(3)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(4)^7 * x(3)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(5)^7 * x(3)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^2 * x(3)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^7 * x(3)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(3)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(3)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(3)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(3)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(4)^2 * x(3)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(1)^7 * x(3)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(5)^7 * x(3)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(6)^7 * x(3)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(2)^2 * x(3)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(5)^2 * x(3)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(1)^7 * x(3)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(4)^7 * x(3)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(6)^7 * x(3)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(2)^2 * x(3)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(6)^2 * x(3)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(1)^7 * x(3)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(4)^7 * x(3)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(5)^7 * x(3)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(2)^2 * x(3)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(1)^7 * x(3)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(3)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(3)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(3)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^2 * x(3)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(5)^2 * x(3)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(1)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(2)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(6)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(4)^2 * x(3)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(6)^2 * x(3)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(1)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(2)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(5)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(4)^2 * x(3)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(1)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(2)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(5)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(6)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(5)^2 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(6)^2 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(1)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(2)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(4)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(5)^2 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(1)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(2)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(4)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(6)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(6)^2 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(2)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(4)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(5)^7 * x(3)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^2 * x(4)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(4)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^7 * x(4)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(4)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(4)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(1)^2 * x(4)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(4)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(2)^7 * x(4)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(4)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(4)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(1)^2 * x(4)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(5)^2 * x(4)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(2)^7 * x(4)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(3)^7 * x(4)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(6)^7 * x(4)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(1)^2 * x(4)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(6)^2 * x(4)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(2)^7 * x(4)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(3)^7 * x(4)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(5)^7 * x(4)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^2 * x(4)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^7 * x(4)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^7 * x(4)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(4)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(4)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(4)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(4)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(1)^7 * x(4)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(4)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(4)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(4)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(5)^2 * x(4)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(1)^7 * x(4)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(3)^7 * x(4)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(6)^7 * x(4)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(2)^2 * x(4)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(6)^2 * x(4)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(1)^7 * x(4)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(3)^7 * x(4)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(5)^7 * x(4)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(2)^2 * x(4)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(1)^7 * x(4)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^7 * x(4)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(4)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(4)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(4)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(5)^2 * x(4)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(1)^7 * x(4)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(2)^7 * x(4)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(6)^7 * x(4)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(3)^2 * x(4)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(6)^2 * x(4)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(1)^7 * x(4)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(2)^7 * x(4)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(5)^7 * x(4)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(3)^2 * x(4)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(1)^7 * x(4)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(2)^7 * x(4)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(4)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(4)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(5)^2 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(6)^2 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(1)^7 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(2)^7 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(3)^7 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4)), 4);
+K = K, x(5)^2 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(1)^7 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(2)^7 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(3)^7 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(6)^7 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(6)^2 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^7 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(2)^7 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(3)^7 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(5)^7 * x(4)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^2 * x(5)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(5)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^7 * x(5)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(5)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(5)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(1)^2 * x(5)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(5)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(2)^7 * x(5)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(5)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(5)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(1)^2 * x(5)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(4)^2 * x(5)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(2)^7 * x(5)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(3)^7 * x(5)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(6)^7 * x(5)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(1)^2 * x(5)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(6)^2 * x(5)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(2)^7 * x(5)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(3)^7 * x(5)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(4)^7 * x(5)^7 * elv(list(x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^2 * x(5)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^7 * x(5)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^7 * x(5)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(5)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(5)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(5)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(5)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(1)^7 * x(5)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(5)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(5)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(5)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(4)^2 * x(5)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(1)^7 * x(5)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(3)^7 * x(5)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(6)^7 * x(5)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(2)^2 * x(5)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(6)^2 * x(5)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(1)^7 * x(5)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(3)^7 * x(5)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(4)^7 * x(5)^7 * elv(list(x(1), x(3), x(4), x(5)), 4);
+K = K, x(2)^2 * x(5)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(1)^7 * x(5)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^7 * x(5)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(5)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(5)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(5)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(4)^2 * x(5)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(1)^7 * x(5)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(2)^7 * x(5)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(6)^7 * x(5)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(3)^2 * x(5)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(6)^2 * x(5)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(1)^7 * x(5)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(2)^7 * x(5)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(4)^7 * x(5)^7 * elv(list(x(1), x(2), x(4), x(5)), 4);
+K = K, x(3)^2 * x(5)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(1)^7 * x(5)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(2)^7 * x(5)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(5)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(6)^7 * x(5)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(4)^2 * x(5)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(6)^2 * x(5)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(1)^7 * x(5)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(2)^7 * x(5)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(3)^7 * x(5)^7 * elv(list(x(1), x(2), x(3), x(5)), 4);
+K = K, x(4)^2 * x(5)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(1)^7 * x(5)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(2)^7 * x(5)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(3)^7 * x(5)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(6)^7 * x(5)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(6)^2 * x(5)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^7 * x(5)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(2)^7 * x(5)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(3)^7 * x(5)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(4)^7 * x(5)^7 * elv(list(x(1), x(2), x(3), x(4), x(5)), 4);
+K = K, x(1)^2 * x(6)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(6)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^7 * x(6)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(6)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(6)^7 * elv(list(x(3), x(4), x(5), x(6)), 4);
+K = K, x(1)^2 * x(6)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(6)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(2)^7 * x(6)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(6)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(6)^7 * elv(list(x(2), x(4), x(5), x(6)), 4);
+K = K, x(1)^2 * x(6)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(4)^2 * x(6)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(2)^7 * x(6)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(3)^7 * x(6)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(5)^7 * x(6)^7 * elv(list(x(2), x(3), x(5), x(6)), 4);
+K = K, x(1)^2 * x(6)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(5)^2 * x(6)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(2)^7 * x(6)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(3)^7 * x(6)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(4)^7 * x(6)^7 * elv(list(x(2), x(3), x(4), x(6)), 4);
+K = K, x(1)^2 * x(6)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^7 * x(6)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^7 * x(6)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(6)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(6)^7 * elv(list(x(2), x(3), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(6)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(6)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(1)^7 * x(6)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(6)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(6)^7 * elv(list(x(1), x(4), x(5), x(6)), 4);
+K = K, x(2)^2 * x(6)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(4)^2 * x(6)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(1)^7 * x(6)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(3)^7 * x(6)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(5)^7 * x(6)^7 * elv(list(x(1), x(3), x(5), x(6)), 4);
+K = K, x(2)^2 * x(6)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(5)^2 * x(6)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(1)^7 * x(6)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(3)^7 * x(6)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(4)^7 * x(6)^7 * elv(list(x(1), x(3), x(4), x(6)), 4);
+K = K, x(2)^2 * x(6)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(1)^7 * x(6)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^7 * x(6)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(6)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(6)^7 * elv(list(x(1), x(3), x(4), x(5), x(6)), 4);
+K = K, x(3)^2 * x(6)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(4)^2 * x(6)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(1)^7 * x(6)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(2)^7 * x(6)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(5)^7 * x(6)^7 * elv(list(x(1), x(2), x(5), x(6)), 4);
+K = K, x(3)^2 * x(6)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(5)^2 * x(6)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(1)^7 * x(6)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(2)^7 * x(6)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(4)^7 * x(6)^7 * elv(list(x(1), x(2), x(4), x(6)), 4);
+K = K, x(3)^2 * x(6)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(1)^7 * x(6)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(2)^7 * x(6)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(4)^7 * x(6)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(5)^7 * x(6)^7 * elv(list(x(1), x(2), x(4), x(5), x(6)), 4);
+K = K, x(4)^2 * x(6)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(5)^2 * x(6)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(1)^7 * x(6)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(2)^7 * x(6)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(3)^7 * x(6)^7 * elv(list(x(1), x(2), x(3), x(6)), 4);
+K = K, x(4)^2 * x(6)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(1)^7 * x(6)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(2)^7 * x(6)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(3)^7 * x(6)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(5)^7 * x(6)^7 * elv(list(x(1), x(2), x(3), x(5), x(6)), 4);
+K = K, x(5)^2 * x(6)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(1)^7 * x(6)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(2)^7 * x(6)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(3)^7 * x(6)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = K, x(4)^7 * x(6)^7 * elv(list(x(1), x(2), x(3), x(4), x(6)), 4);
+K = simplify(K, 2); ideal SK = std(K);
+"ROW0 of (1,1) at n=7, q=9: vdim =", vdim(SK), " sec", timer - t0;
+int bad = 0; int tot = 0; list badA = list(0,0,0,0,0);
+tot++; if (reduce(elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 1), SK) != 0) { bad++; "  missing e_1"; }
+tot++; if (reduce(elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 3), SK) != 0) { bad++; "  missing e_3"; }
+tot++; if (reduce(elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 5), SK) != 0) { bad++; "  missing e_5"; }
+tot++; if (reduce(elv(list(x(1), x(2), x(3), x(4), x(5), x(6)), 6), SK) != 0) { bad++; "  missing e_6"; }
+tot++; if (reduce(x(1)^8*x(3)*x(4)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(1)^8*x(2)*x(4)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(1)^8*x(2)*x(3)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(1)^8*x(2)*x(3)*x(4)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(1)^8*x(2)*x(3)*x(4)*x(5), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(2)^8*x(3)*x(4)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(2)^8*x(1)*x(4)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(2)^8*x(1)*x(3)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(2)^8*x(1)*x(3)*x(4)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(2)^8*x(1)*x(3)*x(4)*x(5), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(3)^8*x(2)*x(4)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(3)^8*x(1)*x(4)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(3)^8*x(1)*x(2)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(3)^8*x(1)*x(2)*x(4)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(3)^8*x(1)*x(2)*x(4)*x(5), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(4)^8*x(2)*x(3)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(4)^8*x(1)*x(3)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(4)^8*x(1)*x(2)*x(5)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(4)^8*x(1)*x(2)*x(3)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(4)^8*x(1)*x(2)*x(3)*x(5), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(5)^8*x(2)*x(3)*x(4)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(5)^8*x(1)*x(3)*x(4)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(5)^8*x(1)*x(2)*x(4)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(5)^8*x(1)*x(2)*x(3)*x(6), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(5)^8*x(1)*x(2)*x(3)*x(4), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(6)^8*x(2)*x(3)*x(4)*x(5), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(6)^8*x(1)*x(3)*x(4)*x(5), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(6)^8*x(1)*x(2)*x(4)*x(5), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(6)^8*x(1)*x(2)*x(3)*x(5), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(6)^8*x(1)*x(2)*x(3)*x(4), SK) != 0) { bad++; badA[1] = badA[1] + 1; }
+tot++; if (reduce(x(1)^8*x(2)^8*x(5)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(2)^8*x(4)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(2)^8*x(4)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(2)^8*x(3)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(2)^8*x(3)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(2)^8*x(3)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(3)^8*x(5)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(3)^8*x(4)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(3)^8*x(4)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(3)^8*x(2)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(3)^8*x(2)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(3)^8*x(2)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(4)^8*x(5)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(4)^8*x(3)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(4)^8*x(3)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(4)^8*x(2)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(4)^8*x(2)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(4)^8*x(2)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(5)^8*x(4)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(5)^8*x(3)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(5)^8*x(3)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(5)^8*x(2)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(5)^8*x(2)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(5)^8*x(2)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(6)^8*x(4)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(6)^8*x(3)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(6)^8*x(3)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(6)^8*x(2)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(6)^8*x(2)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(6)^8*x(2)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(3)^8*x(5)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(3)^8*x(4)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(3)^8*x(4)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(3)^8*x(1)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(3)^8*x(1)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(3)^8*x(1)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(4)^8*x(5)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(4)^8*x(3)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(4)^8*x(3)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(4)^8*x(1)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(4)^8*x(1)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(4)^8*x(1)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(5)^8*x(4)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(5)^8*x(3)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(5)^8*x(3)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(5)^8*x(1)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(5)^8*x(1)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(5)^8*x(1)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(6)^8*x(4)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(6)^8*x(3)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(6)^8*x(3)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(6)^8*x(1)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(6)^8*x(1)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(2)^8*x(6)^8*x(1)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(4)^8*x(5)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(4)^8*x(2)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(4)^8*x(2)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(4)^8*x(1)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(4)^8*x(1)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(4)^8*x(1)*x(2), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(5)^8*x(4)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(5)^8*x(2)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(5)^8*x(2)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(5)^8*x(1)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(5)^8*x(1)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(5)^8*x(1)*x(2), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(6)^8*x(4)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(6)^8*x(2)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(6)^8*x(2)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(6)^8*x(1)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(6)^8*x(1)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(3)^8*x(6)^8*x(1)*x(2), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(5)^8*x(3)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(5)^8*x(2)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(5)^8*x(2)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(5)^8*x(1)*x(6), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(5)^8*x(1)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(5)^8*x(1)*x(2), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(6)^8*x(3)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(6)^8*x(2)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(6)^8*x(2)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(6)^8*x(1)*x(5), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(6)^8*x(1)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(4)^8*x(6)^8*x(1)*x(2), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(5)^8*x(6)^8*x(3)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(5)^8*x(6)^8*x(2)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(5)^8*x(6)^8*x(2)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(5)^8*x(6)^8*x(1)*x(4), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(5)^8*x(6)^8*x(1)*x(3), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(5)^8*x(6)^8*x(1)*x(2), SK) != 0) { bad++; badA[2] = badA[2] + 1; }
+tot++; if (reduce(x(1)^8*x(2)^8*x(3)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(1)^8*x(2)^8*x(4)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(1)^8*x(2)^8*x(5)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(1)^8*x(2)^8*x(6)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(1)^8*x(3)^8*x(4)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(1)^8*x(3)^8*x(5)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(1)^8*x(3)^8*x(6)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(1)^8*x(4)^8*x(5)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(1)^8*x(4)^8*x(6)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(1)^8*x(5)^8*x(6)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(2)^8*x(3)^8*x(4)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(2)^8*x(3)^8*x(5)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(2)^8*x(3)^8*x(6)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(2)^8*x(4)^8*x(5)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(2)^8*x(4)^8*x(6)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(2)^8*x(5)^8*x(6)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(3)^8*x(4)^8*x(5)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(3)^8*x(4)^8*x(6)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(3)^8*x(5)^8*x(6)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(4)^8*x(5)^8*x(6)^8, SK) != 0) { bad++; badA[3] = badA[3] + 1; }
+tot++; if (reduce(x(1)^8 * elv(list(x(3), x(4), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(1)^8 * elv(list(x(2), x(4), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(1)^8 * elv(list(x(2), x(3), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(1)^8 * elv(list(x(2), x(3), x(4), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(1)^8 * elv(list(x(2), x(3), x(4), x(5)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(2)^8 * elv(list(x(3), x(4), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(2)^8 * elv(list(x(1), x(4), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(2)^8 * elv(list(x(1), x(3), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(2)^8 * elv(list(x(1), x(3), x(4), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(2)^8 * elv(list(x(1), x(3), x(4), x(5)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(3)^8 * elv(list(x(2), x(4), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(3)^8 * elv(list(x(1), x(4), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(3)^8 * elv(list(x(1), x(2), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(3)^8 * elv(list(x(1), x(2), x(4), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(3)^8 * elv(list(x(1), x(2), x(4), x(5)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(4)^8 * elv(list(x(2), x(3), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(4)^8 * elv(list(x(1), x(3), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(4)^8 * elv(list(x(1), x(2), x(5), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(4)^8 * elv(list(x(1), x(2), x(3), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(4)^8 * elv(list(x(1), x(2), x(3), x(5)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(5)^8 * elv(list(x(2), x(3), x(4), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(5)^8 * elv(list(x(1), x(3), x(4), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(5)^8 * elv(list(x(1), x(2), x(4), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(5)^8 * elv(list(x(1), x(2), x(3), x(6)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(5)^8 * elv(list(x(1), x(2), x(3), x(4)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(6)^8 * elv(list(x(2), x(3), x(4), x(5)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(6)^8 * elv(list(x(1), x(3), x(4), x(5)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(6)^8 * elv(list(x(1), x(2), x(4), x(5)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(6)^8 * elv(list(x(1), x(2), x(3), x(5)), 4), SK) != 0) { bad++; }
+tot++; if (reduce(x(6)^8 * elv(list(x(1), x(2), x(3), x(4)), 4), SK) != 0) { bad++; }
+"  child (1) at 6 generators missing from the row:", bad, "of", tot, " ; missing layer by |A| = 1,2,3:", badA[1], badA[2], badA[3];
+quit;
