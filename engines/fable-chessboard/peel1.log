@@ -1,0 +1,7 @@
+PEEL k=1 q=9 |Gamma'|=168 nodes=6 KEY-failures=0 strict-inclusions=0
+PEEL k=2 q=9 |Gamma'|=5120 nodes=14 KEY-failures=2 strict-inclusions=2
+  FAIL m=4 P=[(1, (2,)), (2, ())] i=1 P_i=[(1, ())] missing=32
+  FAIL m=4 P=[(1, (2,)), (2, ())] i=2 P_i=[(1, ())] missing=32
+PEEL k=2 q=3 |Gamma'|=20 nodes=10 KEY-failures=0 strict-inclusions=0
+PEEL k=3 q=3 |Gamma'|=70 nodes=16 KEY-failures=0 strict-inclusions=0
+VIGIA-FIN-OK exit=0 pico_kb=2176 t=0s

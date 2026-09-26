@@ -1,0 +1,3 @@
+// ** SK is no standard basis
+row0 (1,1)(9) with F2, q=9: floor-3 layer (x1x2x3)^(q-1)x7x8 in K|z=0: 1 ; secs 63
+VIGIA-FIN-OK exit=0 pico_kb=18288 t=62s

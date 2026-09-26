@@ -1,0 +1,5 @@
+PEEL k=1 q=9 |Gamma'|=168 nodes=6 KEY-failures=0 strict-inclusions=0
+PEEL k=2 q=9 |Gamma'|=5120 nodes=13 KEY-failures=0 strict-inclusions=0
+PEEL k=4 q=3 |Gamma'|=252 nodes=20 KEY-failures=0 strict-inclusions=0
+PEEL k=3 q=9 |Gamma'|=190120 nodes=26 KEY-failures=0 strict-inclusions=0
+VIGIA-FIN-OK exit=0 pico_kb=12944 t=0s

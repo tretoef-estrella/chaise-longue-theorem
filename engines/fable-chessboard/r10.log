@@ -1,0 +1,22 @@
+q=9 mu={2, 1} n+1=5 (child NC f=0) : {VZ true, NC true, LOW1 true, RAISEq-1 true, GB[VZ true, NC true, LOW1 true, RAISEq-1 true]}
+q=9 mu={2, 1} n+1=6 (child NC f=1) : {VZ true, NC true, LOW1 true, RAISEq-1 true, GB[VZ true, NC true, LOW1 true, RAISEq-1 true]}
+q=9 mu={2, 1} n+1=7 (child NC f=2) : {VZ true, NC true, LOW1 true, RAISEq-1 true}
+q=9 mu={3, 1} n+1=6 (child NC f=0) : {VZ true, NC true, LOW1 true, RAISEq-1 true, GB[VZ true, NC true, LOW1 true, RAISEq-1 true]}
+q=9 mu={3, 1} n+1=7 (child NC f=1) : {VZ true, NC true, LOW1 true, RAISEq-1 true}
+q=9 mu={4, 1} n+1=7 (child NC f=0) : {VZ true, NC true, LOW1 true, RAISEq-1 true}
+q=9 mu={2, 1, 1} n+1=6 (child NC f=0) : {VZ true, NC true, LOW1 true, RAISEq-1 true, GB[VZ true, NC true, LOW1 true, RAISEq-1 true]}
+q=9 mu={2, 1, 1} n+1=7 (child NC f=1) : {VZ true, NC true, LOW1 true, RAISEq-1 true}
+q=9 mu={3, 1, 1} n+1=7 (child NC f=0) : {VZ true, NC true, LOW1 true, RAISEq-1 true}
+q=9 mu={2, 1, 1, 1} n+1=7 (child NC f=0) : {VZ true, LOW1 true, RAISEq-1 true}
+q=9 mu={2} n+1=4 (child NC f=0) : {VZ true, NC true, RAISEq-1 true, GB[VZ true, NC true, LOW1 -, RAISEq-1 true]}
+q=9 mu={2} n+1=5 (child NC f=1) : {VZ true, NC true, RAISEq-1 true, GB[VZ true, NC true, LOW1 -, RAISEq-1 true]}
+q=9 mu={2} n+1=6 (child NC f=2) : {VZ true, NC true, RAISEq-1 true, GB[VZ true, NC true, LOW1 -, RAISEq-1 true]}
+q=9 mu={2} n+1=7 (child NC f=3) : {VZ true, NC true, RAISEq-1 true}
+q=9 mu={3} n+1=5 (child NC f=0) : {VZ true, NC true, RAISEq-1 true, GB[VZ true, NC true, LOW1 -, RAISEq-1 true]}
+q=9 mu={3} n+1=6 (child NC f=1) : {VZ true, NC true, RAISEq-1 true, GB[VZ true, NC true, LOW1 -, RAISEq-1 true]}
+q=9 mu={3} n+1=7 (child NC f=2) : {VZ true, NC true, RAISEq-1 true}
+q=27 mu={2, 1} n+1=5 (child NC f=0) : {VZ true, NC true, LOW1 true, RAISEq-1 true}
+q=27 mu={2} n+1=5 (child NC f=1) : {VZ true, NC true, RAISEq-1 true}
+q=27 mu={3} n+1=5 (child NC f=0) : {VZ true, NC true, RAISEq-1 true}
+FIN-OK
+EXIT 0 after 108s

@@ -1,0 +1,71 @@
+=== K_(1,1)(5), row 3, child Tanisaki lambda = {1, 1, 1, 1} in n = 4
+  e_1(S), |S|=4 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_2(S), |S|=4 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_3(S), |S|=4 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+=== K_(2,1)(6), row 7, child Tanisaki lambda = {2, 2, 1} in n = 5
+  e_3(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_1(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_2(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_3(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_4(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_5(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+=== K_(1,1)(6), row 3, child Tanisaki lambda = {1, 1, 1, 1, 1} in n = 5
+  e_1(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  !! e_2(S), |S|=5 NOT in K + (z^4)
+  e_3(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_4(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_5(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+=== K_(2,1)(6), row 3, child Tanisaki lambda = {2, 1, 1, 1} in n = 5
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_1(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_2(S), |S|=5 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_4(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_5(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+=== K_(3,1)(6), row 7, child Tanisaki lambda = {3, 2} in n = 5
+  e_3(S), |S|=3 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=3 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=3 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=3 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=3 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=3 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=3 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=3 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=3 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=3 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_2(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_2(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_2(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_2(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_2(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_3(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_4(S), |S|=4 : q-free certificate (Q only)? false ; Q + box? false ; full K? true
+  e_1(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_2(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_3(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_4(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+  e_5(S), |S|=5 : q-free certificate (Q only)? true ; Q + box? true ; full K? true
+FIN-OK
+EXIT 0 after 2s

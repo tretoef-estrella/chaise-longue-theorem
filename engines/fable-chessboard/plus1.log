@@ -1,0 +1,7 @@
+(k,q)=(2,9) even Q_k   colength = 46
+(k,q)=(2,9) odd  Q'_k  colength = 3
+(k,q)=(2,27) even Q_k   colength = 154
+(k,q)=(2,27) odd  Q'_k  colength = 3
+(k,q)=(3,9) even Q_k   colength = 2340
+(k,q)=(3,9) odd  Q'_k  colength = 210
+EXIT 0 after 1s

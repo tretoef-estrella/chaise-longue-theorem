@@ -1,0 +1,3 @@
+// ** SK is no standard basis
+row0 (1,1)(6) q=27: (x1x2)^(q-1) x_C (absent 3,4) in K|z=0: 1 ; secs 0
+VIGIA-FIN-OK exit=0 pico_kb=4512 t=0s

@@ -1,0 +1,11 @@
+PATDIM m=3 q=9 P=[(0, (3,)), (1, ())] dim V=360 |Z|=360 EQUAL
+PATDIM m=3 q=9 P=[(0, (2,)), (1, ())] dim V=504 |Z|=504 EQUAL
+PATDIM m=4 q=9 P=[(1, (2,)), (2, ())] dim V=1896 |Z|=1896 EQUAL
+PATDIM m=4 q=9 P=[(0, (4,)), (1, (2,)), (2, ())] dim V=2280 |Z|=2280 EQUAL
+PATDIM m=4 q=9 P=[(0, (2, 2)), (1, ())] dim V=3896 |Z|=3896 EQUAL
+PATDIM m=4 q=9 P=[(0, (3,)), (1, ())] dim V=3752 |Z|=3752 EQUAL
+PATDIM m=3 q=27 P=[(0, (3,)), (1, ())] dim V=15678 |Z|=15678 EQUAL
+PATDIM m=4 q=9 P=[(1, ())] dim V=2216 |Z|=2216 EQUAL
+PATDIM m=4 q=9 P=[(2, ())] dim V=168 |Z|=168 EQUAL
+PATDIM m=5 q=9 P=[(2, ())] dim V=5120 |Z|=5120 EQUAL
+VIGIA-FIN-OK exit=0 pico_kb=208736 t=9s

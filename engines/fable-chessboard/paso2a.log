@@ -1,0 +1,9 @@
+impar gen k=2: e1^2 (y1-y2)^2 in (P3,e1e3,e1^3)? true   e1^2 y2^3 in? true   e1^2 y1^2 in? false
+   dim Y/((L : e1^2) + (e1)) = 6  (f'_gen(2)=6)
+n=5 q=9: xC(xA^(q-1) + xB^(q-1)) in J0? true ; xC(xA^(q-1) - xB^(q-1)) in J0? false ; xC xA^(q-1) in J0? false
+     (nivel n+1) xC(xA^(q-1) + xB^(q-1)) in J1? true ; xC xA^(q-1) in J1? true
+n=5 q=27: xC(xA^(q-1) + xB^(q-1)) in J0? true ; xC(xA^(q-1) - xB^(q-1)) in J0? false ; xC xA^(q-1) in J0? false
+     (nivel n+1) xC(xA^(q-1) + xB^(q-1)) in J1? true ; xC xA^(q-1) in J1? true
+n=7 q=3: xC(xA^(q-1) + xB^(q-1)) in J0? true ; xC(xA^(q-1) - xB^(q-1)) in J0? false ; xC xA^(q-1) in J0? false
+     (nivel n+1) xC(xA^(q-1) + xB^(q-1)) in J1? true ; xC xA^(q-1) in J1? true
+FIN-OK

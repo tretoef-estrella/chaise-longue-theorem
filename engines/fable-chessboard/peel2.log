@@ -1,0 +1,13 @@
+PEEL k=1 q=9 |Gamma'|=168 nodes=6 KEY-failures=0 strict-inclusions=0
+PEEL k=2 q=9 |Gamma'|=5120 nodes=14 KEY-failures=1 strict-inclusions=1
+  FAIL m=4 P=[(1, (2,)), (2, ())] i=1 P_i=[(1, ())] missing=32
+PEEL k=3 q=3 |Gamma'|=70 nodes=16 KEY-failures=0 strict-inclusions=0
+PEEL k=4 q=3 |Gamma'|=252 nodes=23 KEY-failures=0 strict-inclusions=0
+PEEL k=3 q=9 |Gamma'|=190120 nodes=33 KEY-failures=6 strict-inclusions=6
+  FAIL m=4 P=[(0, (2, 2)), (1, ()), (1, (2,)), (2, ())] i=7 P_i=[(1, ())] missing=32
+  FAIL m=5 P=[(1, (2,)), (2, ())] i=3 P_i=[(1, ()), (1, (2,)), (2, ())] missing=16
+  FAIL m=4 P=[(1, (2,)), (2, ())] i=1 P_i=[(1, ())] missing=32
+  FAIL m=5 P=[(1, (3,)), (2, ())] i=1 P_i=[(1, (2,)), (2, ())] missing=16
+  FAIL m=5 P=[(1, (3,)), (2, ())] i=2 P_i=[(1, (2,)), (2, ())] missing=16
+  FAIL m=6 P=[(2, (2,)), (3, ())] i=1 P_i=[(2, ())] missing=128
+VIGIA-FIN-OK exit=0 pico_kb=12800 t=0s

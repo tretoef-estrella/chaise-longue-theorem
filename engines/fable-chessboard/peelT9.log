@@ -1,0 +1,7 @@
+PEELT k=2 q=9 |Z_root|=5120 Q=5120 Z=Q nodes=13 KEY-failures=0 strict=0
+PEELT k=3 q=27 |Z_root|=37849630 Q=37849630 Z=Q nodes=26 KEY-failures=0 strict=0
+PEELT k=4 q=81 |Z_root|=2729174676480 Q=2729174676480 Z=Q nodes=49 KEY-failures=0 strict=0
+PEELT k=5 q=9 |Z_root|=357713664 Q=357713664 Z=Q nodes=97 KEY-failures=0 strict=0
+PEELT k=6 q=243 |Z_root|=6020398182374418177192 Q=6020398182374418177192 Z=Q nodes=189 KEY-failures=0 strict=0
+PEELT k=9 q=9 |Z_root|=2225741588095168 Q=2225741588095168 Z=Q nodes=2404 KEY-failures=0 strict=0
+VIGIA-FIN-OK exit=0 pico_kb=105952 t=8s

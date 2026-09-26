@@ -1,0 +1,54 @@
+ring r = (27,w), (x(1..5)), dp;
+proc elv(list vl, int k) { if (k < 0) {return(0);} if (k == 0) {return(1);} if (k > size(vl)) {return(0);}
+  list u = delete(vl, size(vl)); return(elv(u, k) + vl[size(vl)] * elv(u, k-1)); }
+ideal J0 = elv(list(x(1), x(2), x(3), x(4), x(5)),1), elv(list(x(1), x(2), x(3), x(4), x(5)),3), elv(list(x(1), x(2), x(3), x(4), x(5)),4), elv(list(x(1), x(2), x(3), x(4), x(5)),5), x(1)^27, x(2)^27, x(3)^27, x(4)^27, x(5)^27, x(2)*x(3)*x(4)*x(5), x(1)*x(3)*x(4)*x(5), x(1)*x(2)*x(4)*x(5), x(1)*x(2)*x(3)*x(5), x(1)*x(2)*x(3)*x(4); ideal SJ0 = std(J0);
+ideal J = J0, elv(list(x(1), x(2), x(3), x(4)),4), elv(list(x(1), x(2), x(3), x(5)),4), elv(list(x(1), x(2), x(4), x(5)),4), elv(list(x(1), x(3), x(4), x(5)),4), elv(list(x(2), x(3), x(4), x(5)),4), (x(1)^25*elv(list(x(3), x(4), x(5)),2)+x(1)^26*elv(list(x(3), x(4), x(5)),1)), (x(1)^25*elv(list(x(2), x(4), x(5)),2)+x(1)^26*elv(list(x(2), x(4), x(5)),1)), (x(1)^25*elv(list(x(2), x(3), x(5)),2)+x(1)^26*elv(list(x(2), x(3), x(5)),1)), (x(1)^25*elv(list(x(2), x(3), x(4)),2)+x(1)^26*elv(list(x(2), x(3), x(4)),1)), (x(2)^25*elv(list(x(3), x(4), x(5)),2)+x(2)^26*elv(list(x(3), x(4), x(5)),1)), (x(2)^25*elv(list(x(1), x(4), x(5)),2)+x(2)^26*elv(list(x(1), x(4), x(5)),1)), (x(2)^25*elv(list(x(1), x(3), x(5)),2)+x(2)^26*elv(list(x(1), x(3), x(5)),1)), (x(2)^25*elv(list(x(1), x(3), x(4)),2)+x(2)^26*elv(list(x(1), x(3), x(4)),1)), (x(3)^25*elv(list(x(2), x(4), x(5)),2)+x(3)^26*elv(list(x(2), x(4), x(5)),1)), (x(3)^25*elv(list(x(1), x(4), x(5)),2)+x(3)^26*elv(list(x(1), x(4), x(5)),1)), (x(3)^25*elv(list(x(1), x(2), x(5)),2)+x(3)^26*elv(list(x(1), x(2), x(5)),1)), (x(3)^25*elv(list(x(1), x(2), x(4)),2)+x(3)^26*elv(list(x(1), x(2), x(4)),1)), (x(4)^25*elv(list(x(2), x(3), x(5)),2)+x(4)^26*elv(list(x(2), x(3), x(5)),1)), (x(4)^25*elv(list(x(1), x(3), x(5)),2)+x(4)^26*elv(list(x(1), x(3), x(5)),1)), (x(4)^25*elv(list(x(1), x(2), x(5)),2)+x(4)^26*elv(list(x(1), x(2), x(5)),1)), (x(4)^25*elv(list(x(1), x(2), x(3)),2)+x(4)^26*elv(list(x(1), x(2), x(3)),1)), (x(5)^25*elv(list(x(2), x(3), x(4)),2)+x(5)^26*elv(list(x(2), x(3), x(4)),1)), (x(5)^25*elv(list(x(1), x(3), x(4)),2)+x(5)^26*elv(list(x(1), x(3), x(4)),1)), (x(5)^25*elv(list(x(1), x(2), x(4)),2)+x(5)^26*elv(list(x(1), x(2), x(4)),1)), (x(5)^25*elv(list(x(1), x(2), x(3)),2)+x(5)^26*elv(list(x(1), x(2), x(3)),1)); ideal SJ = std(J);
+poly dI = x(1)^26*x(4)*x(5) - (((x(1))^0*(-x(3))^1+(x(1))^1*(-x(3))^0)*(x(1)^25*elv(list(x(3), x(4), x(5)),2)+x(1)^26*elv(list(x(3), x(4), x(5)),1)) + ((x(1))^0*(-x(2))^1+(x(1))^1*(-x(2))^0)*(x(1)^25*elv(list(x(2), x(4), x(5)),2)+x(1)^26*elv(list(x(2), x(4), x(5)),1))); "L=3 q=27 n=5: (I11) identity mod J0:", reduce(dI, SJ0) == 0, "  mod J0+Tan+F:", reduce(dI, SJ) == 0;
+int tot = 0; int bad = 0;
+tot++; if (reduce(x(2)*x(3)*x(4)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)*x(3)*x(4)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)*x(2)*x(4)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)*x(2)*x(3)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)*x(2)*x(3)*x(4), SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)^26*x(4)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)^26*x(3)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)^26*x(3)*x(4), SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)^26*x(2)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)^26*x(2)*x(4), SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)^26*x(2)*x(3), SJ) != 0) { bad++; }
+tot++; if (reduce(x(2)^26*x(4)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(2)^26*x(3)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(2)^26*x(3)*x(4), SJ) != 0) { bad++; }
+tot++; if (reduce(x(2)^26*x(1)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(2)^26*x(1)*x(4), SJ) != 0) { bad++; }
+tot++; if (reduce(x(2)^26*x(1)*x(3), SJ) != 0) { bad++; }
+tot++; if (reduce(x(3)^26*x(4)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(3)^26*x(2)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(3)^26*x(2)*x(4), SJ) != 0) { bad++; }
+tot++; if (reduce(x(3)^26*x(1)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(3)^26*x(1)*x(4), SJ) != 0) { bad++; }
+tot++; if (reduce(x(3)^26*x(1)*x(2), SJ) != 0) { bad++; }
+tot++; if (reduce(x(4)^26*x(3)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(4)^26*x(2)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(4)^26*x(2)*x(3), SJ) != 0) { bad++; }
+tot++; if (reduce(x(4)^26*x(1)*x(5), SJ) != 0) { bad++; }
+tot++; if (reduce(x(4)^26*x(1)*x(3), SJ) != 0) { bad++; }
+tot++; if (reduce(x(4)^26*x(1)*x(2), SJ) != 0) { bad++; }
+tot++; if (reduce(x(5)^26*x(3)*x(4), SJ) != 0) { bad++; }
+tot++; if (reduce(x(5)^26*x(2)*x(4), SJ) != 0) { bad++; }
+tot++; if (reduce(x(5)^26*x(2)*x(3), SJ) != 0) { bad++; }
+tot++; if (reduce(x(5)^26*x(1)*x(4), SJ) != 0) { bad++; }
+tot++; if (reduce(x(5)^26*x(1)*x(3), SJ) != 0) { bad++; }
+tot++; if (reduce(x(5)^26*x(1)*x(2), SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)^26*x(2)^26, SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)^26*x(3)^26, SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)^26*x(4)^26, SJ) != 0) { bad++; }
+tot++; if (reduce(x(1)^26*x(5)^26, SJ) != 0) { bad++; }
+tot++; if (reduce(x(2)^26*x(3)^26, SJ) != 0) { bad++; }
+tot++; if (reduce(x(2)^26*x(4)^26, SJ) != 0) { bad++; }
+tot++; if (reduce(x(2)^26*x(5)^26, SJ) != 0) { bad++; }
+tot++; if (reduce(x(3)^26*x(4)^26, SJ) != 0) { bad++; }
+tot++; if (reduce(x(3)^26*x(5)^26, SJ) != 0) { bad++; }
+tot++; if (reduce(x(4)^26*x(5)^26, SJ) != 0) { bad++; }
+"   layer N_1 generators (|B| = |A|+1) outside Q+box+F:", bad, "of", tot;
+quit;

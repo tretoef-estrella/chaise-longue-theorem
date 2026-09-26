@@ -1,0 +1,8 @@
+(2,9): all proved elements z^2 x_j^(q-2) e_{2k-2}(x') in K_k+(z^3)? true
+   proved elements in L? true; colength L = 88, colength L + proved = 88
+(2,27): all proved elements z^2 x_j^(q-2) e_{2k-2}(x') in K_k+(z^3)? true
+   proved elements in L? true; colength L = 304, colength L + proved = 304
+(3,9): all proved elements z^2 x_j^(q-2) e_{2k-2}(x') in K_k+(z^3)? true
+   proved elements in L? true; colength L = 4266, colength L + proved = 4266
+FIN-OK
+exit=0

@@ -1,0 +1,10 @@
+|W|= 380
+F2 = (ab)^7 e_{f-1}(y-cd)  deg 16        fdeg = 11  (IN gr I)   [1.5s]
+phi_ab = a^7 e_f(y-b) deg 10             fdeg = 0  (IN gr I)   [1.5s]
+D_a;cd = a^7 e_{f-1}(y-cd) deg 9         fdeg = 0  (IN gr I)   [1.5s]
+c*D deg 10                               fdeg = 0  (IN gr I)   [1.5s]
+u_a*b^7 x_C deg 16                       fdeg = 0  (IN gr I)   [1.5s]
+u_a*xi(b) deg 16                         fdeg = 0  (IN gr I)   [1.5s]
+u_a u_b e_{|C|-1}(C) deg 16              fdeg = 0  (IN gr I)   [1.5s]
+a^8 x_{y-ab} (N0,|A|=1) deg 11           fdeg = 0  (IN gr I)   [1.5s]
+VIGIA-FIN-OK exit=0 pico_kb=22608 t=1s

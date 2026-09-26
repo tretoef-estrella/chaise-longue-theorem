@@ -1,0 +1,27 @@
+|W|= 380
+columns 162
+phi_ab in span (lift exists in ansatz): True  rank 53  [0.3s]
+    1 TARGET
+    7 u^0 b^0 e3(P)
+    8 u^0 b^1 e0(P)
+    1 u^0 b^1 e1(P)
+    5 u^0 b^1 e2(P)
+    1 u^0 b^2 e0(P)
+    5 u^0 b^2 e1(P)
+    8 u^0 b^2 e3(P)
+    5 u^0 b^3 e0(P)
+    8 u^0 b^3 e2(P)
+    1 u^0 b^3 e3(P)
+    8 u^0 b^4 e1(P)
+    1 u^0 b^4 e2(P)
+    5 u^0 b^4 e3(P)
+    8 u^0 b^5 e0(P)
+    1 u^0 b^5 e1(P)
+    5 u^0 b^5 e2(P)
+    1 u^0 b^6 e0(P)
+    5 u^0 b^6 e1(P)
+    8 u^0 b^6 e3(P)
+    5 u^0 b^7 e0(P)
+    8 u^0 b^7 e2(P)
+    8 u^0 b^8 e1(P)
+VIGIA-FIN-OK exit=0 pico_kb=21200 t=0s

@@ -1,0 +1,9 @@
+q=9: T in e2*D + (r1 r2) + box? false
+   T in e2*D + box (d' = 0)? false
+   T in (e2, r1 r2) + box? true
+   gens D (degrees): {9, 9, 9, 9, 15, 15, 15, 15, 15, 15}
+q=27: T in e2*D + (r1 r2) + box? false
+   T in e2*D + box (d' = 0)? false
+   T in (e2, r1 r2) + box? true
+   gens D (degrees): {27, 27, 27, 27, 51, 51, 51, 51, 51, 51}
+FIN-OK

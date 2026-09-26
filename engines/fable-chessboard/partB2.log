@@ -1,0 +1,41 @@
+=== K_(1,1)(5), row 3, child lambda = {1, 1, 1, 1}
+  1 x  |S|=4 e_1  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=4 e_2  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=4 e_3  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=4 e_4  N-layer:true family:true full:true engine-type:true
+=== K_(2,1)(6), row 7, child lambda = {2, 2, 1}
+  1 x  |S|=5 e_1  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_2  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_3  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_4  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_5  N-layer:true family:true full:true engine-type:true
+  5 x  |S|=4 e_3  N-layer:false family:true full:true engine-type:true
+  5 x  |S|=4 e_4  N-layer:true family:true full:true engine-type:true
+=== K_(2,1)(6), row 3, child lambda = {2, 1, 1, 1}
+  1 x  |S|=5 e_5  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_1  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_3  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_2  N-layer:true family:false full:true engine-type:true
+  1 x  |S|=5 e_4  N-layer:true family:true full:true engine-type:true
+  5 x  |S|=4 e_4  N-layer:true family:false full:true engine-type:true
+=== K_(3,1)(6), row 7, child lambda = {3, 2}
+  10 x  |S|=3 e_3  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_1  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_2  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_3  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_4  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_5  N-layer:true family:true full:true engine-type:true
+  5 x  |S|=4 e_2  N-layer:false family:true full:true engine-type:true
+  5 x  |S|=4 e_3  N-layer:true family:true full:true engine-type:true
+  5 x  |S|=4 e_4  N-layer:true family:true full:true engine-type:true
+=== K_(3,1)(6), row 3, child lambda = {3, 1, 1}
+  1 x  |S|=5 e_1  N-layer:true family:true full:true engine-type:true
+  5 x  |S|=4 e_3  N-layer:true family:false full:true engine-type:true
+  1 x  |S|=5 e_3  N-layer:true family:true full:true engine-type:true
+  1 x  |S|=5 e_4  N-layer:true family:true full:true engine-type:true
+  5 x  |S|=4 e_4  N-layer:true family:false full:true engine-type:true
+  1 x  |S|=5 e_5  N-layer:true family:true full:true engine-type:true
+  10 x  |S|=3 e_3  N-layer:true family:false full:true engine-type:true
+  1 x  |S|=5 e_2  N-layer:true family:false full:true engine-type:true
+FIN-OK
+EXIT 0 after 3s

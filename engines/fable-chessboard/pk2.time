@@ -1,0 +1,20 @@
+pk2.m2:22:16:(3):[6]: warning: local declaration of g0 shields variable with same name
+pk2.m2:22:62:(3):[6]: warning: local declaration of g1 shields variable with same name
+       16.86 real        18.89 user         0.28 sys
+           350552064  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               27493  page reclaims
+                 618  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 436  voluntary context switches
+                8461  involuntary context switches
+        137435469405  instructions retired
+         64563368189  cycles elapsed
+           336790224  peak memory footprint
