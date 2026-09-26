@@ -1,0 +1,11 @@
+gb of K3+(z^3) ...
+done gb
+z^2 x0 x1^2 x2^(q-2) in K3+(z^3)? false
+z^2 x1^2 x2^(q-2)  (pure G-a shape) in K3+(z^3)? false
+z^2 x0 x3 x1^2 x2^(q-2) in K3+(z^3)? false
+z^2 x0 x1^3 x2^(q-3) in K3+(z^3)? false
+z^2 x0 x1^2 x2^(q-2) x3^(q-1) in K3+(z^3)? true
+z^2 x0 x1 x2^(q-1)  (M'-type, should be in) in K3+(z^3)? false
+z*e6 (should be in) in K3+(z^3)? true
+FIN-OK
+exit=0

@@ -1,0 +1,6 @@
+q=9: colength R2 = 84 (12(q-2) = 84), colength L = 88, colength L + guess = 84, L + guess == R2? true
+   L + G-a elements == R2? true
+q=27: colength R2 = 300 (12(q-2) = 300), colength L = 304, colength L + guess = 300, L + guess == R2? true
+   L + G-a elements == R2? true
+FIN-OK
+exit=0

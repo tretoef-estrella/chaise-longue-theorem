@@ -1,0 +1,9 @@
+n=4 q=9 a=2: r_a=2 dim S/Qgen=2 Qgen==R? true Qgen⊇R? true R⊇Qgen? true
+n=6 q=9 a=2: r_a=84 dim S/Qgen=84 Qgen==R? true Qgen⊇R? true R⊇Qgen? true
+n=6 q=27 a=2: r_a=300 dim S/Qgen=300 Qgen==R? true Qgen⊇R? true R⊇Qgen? true
+n=6 q=9 a=3: r_a=84 dim S/Qgen=84 Qgen==R? true Qgen⊇R? true R⊇Qgen? true
+n=5 q=9 a=2: r_a=6 dim S/Qgen=3 Qgen==R? false Qgen⊇R? true R⊇Qgen? false
+n=7 q=9 a=2: r_a=380 dim S/Qgen=215 Qgen==R? false Qgen⊇R? true R⊇Qgen? false
+k=2 impar q=9: candidato da dim=3 (f'_{+1}=3); y0y1 in? true
+k=2 impar q=27: candidato da dim=3 (f'_{+1}=3); y0y1 in? true
+FIN-OK

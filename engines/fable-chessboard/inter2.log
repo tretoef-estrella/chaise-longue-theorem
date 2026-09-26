@@ -1,0 +1,7 @@
+(2,27) par: r=154 dim S/Q=154 Q==R? true | cand (e_odd, sqfree 2k-1, caja): dim=157 C==R? false
+(2,9) par: cand dim=49 C==R? false
+(3,3) par: r=90 cand dim=126 C==R? false C⊆R? true
+impar n=5 q=9: r'=3 subfila1(par)=3 igual? true
+impar n=5 q=27: r'=3 subfila1(par)=3 igual? true
+impar n=7 q=3: r'=30 subfila1(par)=30 igual? true
+FIN-OK

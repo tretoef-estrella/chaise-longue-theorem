@@ -1,0 +1,22 @@
+q=9 |S|=1: deg_y1 f = 7 (expected 7), top = +-Delta(S): True
+q=9 |S|=2: deg_y1 f = 6 (expected 6), top = +-Delta(S): True
+q=9 |S|=3: deg_y1 f = 5 (expected 5), top = +-Delta(S): True
+q=9 |S|=4: deg_y1 f = 4 (expected 4), top = +-Delta(S): True
+q=9 |S|=5: deg_y1 f = 3 (expected 3), top = +-Delta(S): True
+q=9 L3 |B0|=0: deg 0, top = +-Delta(B0): True
+q=9 L3 |B0|=1: deg 1, top = +-Delta(B0): True
+q=9 L3 |B0|=2: deg 2, top = +-Delta(B0): True
+q=9 L3 |B0|=3: deg 3, top = +-Delta(B0): True
+q=9 L3 |B0|=4: deg 4, top = +-Delta(B0): True
+q=27 |S|=1: deg_y1 f = 25 (expected 25), top = +-Delta(S): True
+q=27 |S|=2: deg_y1 f = 24 (expected 24), top = +-Delta(S): True
+q=27 |S|=3: deg_y1 f = 23 (expected 23), top = +-Delta(S): True
+q=27 |S|=4: deg_y1 f = 22 (expected 22), top = +-Delta(S): True
+q=27 |S|=5: deg_y1 f = 21 (expected 21), top = +-Delta(S): True
+q=27 L3 |B0|=0: deg 0, top = +-Delta(B0): True
+q=27 L3 |B0|=1: deg 1, top = +-Delta(B0): True
+q=27 L3 |B0|=2: deg 2, top = +-Delta(B0): True
+q=27 L3 |B0|=3: deg 3, top = +-Delta(B0): True
+q=27 L3 |B0|=4: deg 4, top = +-Delta(B0): True
+ALL IDENTITIES OK
+VIGIA-FIN-OK exit=0 pico_kb=240 t=0s

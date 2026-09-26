@@ -1,0 +1,14 @@
+q=9: z^2 x1^(q-2) e_2(x0,x1,x2)   [guess, k=2] in K2+(z^3)? true
+q=9: z^2 x0 x2 x1^(q-2) in K2+(z^3)? false
+q=9: z^2 (x0+x2) x1^(q-1) in K2+(z^3)? false
+q=9: z^2 x0^2 x1^(q-2)   [G-a] in K2+(z^3)? true
+q=9: z^2 x1^(q-2) e_2(x0,x2,x3)  [j outside] in K2+(z^3)? true
+q=9: z^2 x1^(q-2) h_2(x0,x2) in K2+(z^3)? false
+q=27: z^2 x1^(q-2) e_2(x0,x1,x2)   [guess, k=2] in K2+(z^3)? true
+q=27: z^2 x0 x2 x1^(q-2) in K2+(z^3)? false
+q=27: z^2 (x0+x2) x1^(q-1) in K2+(z^3)? false
+q=27: z^2 x0^2 x1^(q-2)   [G-a] in K2+(z^3)? true
+q=27: z^2 x1^(q-2) e_2(x0,x2,x3)  [j outside] in K2+(z^3)? true
+q=27: z^2 x1^(q-2) h_2(x0,x2) in K2+(z^3)? false
+FIN-OK
+exit=0

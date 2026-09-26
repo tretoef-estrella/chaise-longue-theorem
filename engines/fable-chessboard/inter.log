@@ -1,0 +1,14 @@
+n=4 q=9 (m=2)  r_{q-1}=1  dim S/Q=1  Q==R? true  Q⊇R? true  R⊇Q? true
+n=6 q=3 (m=4)  r_{q-1}=10  dim S/Q=10  Q==R? true  Q⊇R? true  R⊇Q? true
+n=6 q=9 (m=4)  r_{q-1}=46  dim S/Q=46  Q==R? true  Q⊇R? true  R⊇Q? true
+n=8 q=3 (m=6)  r_{q-1}=90  dim S/Q=90  Q==R? true  Q⊇R? true  R⊇Q? true
+n=5 q=9 (m=3)  r_{q-1}=3  dim S/Q=1  Q==R? false  Q⊇R? true  R⊇Q? false
+n=7 q=3 (m=5)  r_{q-1}=30  dim S/Q=21  Q==R? false  Q⊇R? true  R⊇Q? false
+n=7 q=9 (m=5)  r_{q-1}=210  dim S/Q=81  Q==R? false  Q⊇R? true  R⊇Q? false
+GB de G_4({1,1}), q=9: 11 elementos, grados {1, 3, 3, 3, 3, 9, 9, 9, 9, 9, 9}
+   y_0+y_1+y_2+y_3-1
+   y_2^2*y_3+y_2*y_3^2+y_2^2-y_2*y_3+y_3^2+y_2+y_3
+   y_1*y_2*y_3+y_1*y_2+y_1*y_3+y_2*y_3+y_1+y_2+y_3+1
+   y_1^2*y_3+y_1*y_3^2+y_1^2-y_1*y_3+y_3^2+y_1+y_3
+   y_1^2*y_2+y_1*y_2^2+y_1^2-y_1*y_2+y_2^2+y_1+y_2
+FIN-OK

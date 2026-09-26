@@ -1,0 +1,6 @@
+colength row 2 = 3930
+guess elements: 30, all in R2? true
+colength of L + guess = 3930  (row 2 = 3930, |W_gen| = 3930); equal to R2? true
+j-outside elements in R2? true; colength of L + guess + guess2 = 3930
+FIN-OK
+exit=0
