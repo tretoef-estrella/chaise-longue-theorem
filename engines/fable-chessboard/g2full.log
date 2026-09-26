@@ -1,0 +1,9 @@
+r=2 n=4 q=9: z^1-part in N_0(n+1): True; z^2-part == 2^(r+1)(-1)^n G_r: True; sizes z1=2 z2=2; z^0 terms 0
+r=2 n=5 q=9: z^1-part in N_0(n+1): True; z^2-part == 2^(r+1)(-1)^n G_r: True; sizes z1=2 z2=3; z^0 terms 0
+r=2 n=6 q=9: z^1-part in N_0(n+1): True; z^2-part == 2^(r+1)(-1)^n G_r: True; sizes z1=2 z2=4; z^0 terms 0
+r=1 n=5 q=9: z^1-part in N_0(n+1): True; z^2-part == 2^(r+1)(-1)^n G_r: True; sizes z1=2 z2=4; z^0 terms 0
+r=3 n=6 q=9: z^1-part in N_0(n+1): True; z^2-part == 2^(r+1)(-1)^n G_r: True; sizes z1=2 z2=3; z^0 terms 0
+r=2 n=4 q=27: z^1-part in N_0(n+1): True; z^2-part == 2^(r+1)(-1)^n G_r: True; sizes z1=2 z2=2; z^0 terms 0
+r=2 n=5 q=27: z^1-part in N_0(n+1): True; z^2-part == 2^(r+1)(-1)^n G_r: True; sizes z1=2 z2=3; z^0 terms 0
+CELLS 7 FAILED 0
+VIGIA-FIN-OK exit=0 pico_kb=66048 t=5s

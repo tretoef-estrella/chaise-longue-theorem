@@ -1,0 +1,95 @@
+=== low generators (x0 eliminated), degree : polynomial
+1 : 0
+
+      2
+2 : x1
+
+     3
+3 : z
+
+         2                2          2        2                2                             2          2        2        2                2                             2                                        2          2        2        2        2               2                          2                                    2                                              2        2       2       2       2       2
+3 : x1*x2  - x1*x2*x3 + x2 x3 + x1*x3  + x2*x3  - x1*x2*x4 + x2 x4 - x1*x3*x4 - x2*x3*x4 + x3 x4 + x1*x4  + x2*x4  + x3*x4  - x1*x2*x5 + x2 x5 - x1*x3*x5 - x2*x3*x5 + x3 x5 - x1*x4*x5 - x2*x4*x5 - x3*x4*x5 + x4 x5 + x1*x5  + x2*x5  + x3*x5  + x4*x5  - x1*x2*z + x2 z - x1*x3*z - x2*x3*z + x3 z - x1*x4*z - x2*x4*z - x3*x4*z + x4 z - x1*x5*z - x2*x5*z - x3*x5*z - x4*x5*z + x5 z + x1*z  + x2*z  + x3*z  + x4*z  + x5*z
+
+                      2               2               2                      2               2                         2                            2               2            2               2            2            2              2     2    2        2 2             2     2    2             2     2    2        2 2        2 2             2     2    2             2     2    2             2     2    2        2 2        2 2        2 2
+5 : x1*x2*x3*x4*z + x2 x3*x4*z + x2*x3 x4*z + x2*x3*x4 z + x1*x2*x3*x5*z + x2 x3*x5*z + x2*x3 x5*z + x1*x2*x4*x5*z + x2 x4*x5*z + x1*x3*x4*x5*z + x3 x4*x5*z + x2*x4 x5*z + x3*x4 x5*z + x2*x3*x5 z + x2*x4*x5 z + x3*x4*x5 z + x1*x2*x3*z  + x2 x3*z  + x2*x3 z  + x1*x2*x4*z  + x2 x4*z  + x1*x3*x4*z  + x3 x4*z  + x2*x4 z  + x3*x4 z  + x1*x2*x5*z  + x2 x5*z  + x1*x3*x5*z  + x3 x5*z  + x1*x4*x5*z  + x4 x5*z  + x2*x5 z  + x3*x5 z  + x4*x5 z
+
+               2     2     2        2  2           3     2  3           3           3     2  3        4        4        4                      2                2                2       2  2             2             2       2  2          3       4                2     2     2        2  2              2     2     2              2              2     2     2        2  2        2  2        2  2     3  2           3     2  3           3           3     2  3           3     2  3        4        4        4        4           2      2  2            2      2  2         3      4                      2                                            2               2         3               2      2  2            2      2  2            2         3         3      4              2     2    2        2 2             2        2 2        2 2        2 2     3 2             2             2             2             2     2    2        2 2        2 2        2 2        2 2     3 2
+5 : x1*x2*x3*x4  + x2 x3*x4  + x2*x3 x4  + x1*x2*x4  + x2 x4  + x1*x3*x4  - x2*x3*x4  + x3 x4  + x1*x4  + x2*x4  + x3*x4  - x1*x2*x3*x4*x5 - x2 x3*x4*x5 - x2*x3 x4*x5 - x1*x2*x4 x5 - x2 x4 x5 - x1*x3*x4 x5 - x2*x3*x4 x5 - x3 x4 x5 - x1*x4 x5 + x4 x5 + x1*x2*x3*x5  + x2 x3*x5  + x2*x3 x5  - x1*x2*x4*x5  - x2 x4*x5  - x1*x3*x4*x5  - x2*x3*x4*x5  - x3 x4*x5  - x1*x4 x5  + x2*x4 x5  + x3*x4 x5  - x4 x5  + x1*x2*x5  + x2 x5  + x1*x3*x5  - x2*x3*x5  + x3 x5  - x1*x4*x5  - x4 x5  + x1*x5  + x2*x5  + x3*x5  + x4*x5  - x1*x2*x4 z - x2 x4 z - x1*x3*x4 z - x3 x4 z - x1*x4 z + x4 z - x1*x2*x4*x5*z - x2 x4*x5*z - x1*x3*x4*x5*z + x2*x3*x4*x5*z - x3 x4*x5*z + x1*x4 x5*z + x4 x5*z - x1*x2*x5 z - x2 x5 z - x1*x3*x5 z - x3 x5 z + x1*x4*x5 z - x1*x5 z + x4*x5 z + x5 z - x1*x2*x3*z  - x2 x3*z  - x2*x3 z  - x2*x3*x4*z  - x1*x4 z  - x2*x4 z  - x3*x4 z  - x4 z  - x2*x3*x5*z  - x1*x4*x5*z  - x2*x4*x5*z  - x3*x4*x5*z  + x4 x5*z  - x1*x5 z  - x2*x5 z  - x3*x5 z  + x4*x5 z  - x5 z
+
+            2 2     2  2 2           2 2           2 2     2  2 2           2 2           2 2           2 2     2  2 2        3 2        3 2        3 2        3 2
+6 : x1*x2*x5 z  + x2 x5 z  + x1*x3*x5 z  + x2*x3*x5 z  + x3 x5 z  + x1*x4*x5 z  + x2*x4*x5 z  + x3*x4*x5 z  + x4 x5 z  + x1*x5 z  + x2*x5 z  + x3*x5 z  + x4*x5 z
+
+            2 2     2  2 2           2 2           2 2     2  2 2        3 2        3 2        3 2        2    2        2    2        2    2     3    2     2  2 2
+6 : x1*x2*x4 z  + x2 x4 z  + x1*x3*x4 z  + x2*x3*x4 z  + x3 x4 z  + x1*x4 z  + x2*x4 z  + x3*x4 z  + x1*x4 x5*z  + x2*x4 x5*z  + x3*x4 x5*z  + x4 x5*z  + x4 x5 z
+
+         2    2           2 2        2    2                2     2       2        2    2        2    2           2 2           2 2           2 2
+6 : x1*x3 x4*z  + x1*x3*x4 z  + x1*x3 x5*z  - x1*x3*x4*x5*z  + x3 x4*x5*z  + x1*x4 x5*z  + x3*x4 x5*z  + x1*x3*x5 z  + x1*x4*x5 z  + x3*x4*x5 z
+
+      2       2        2    2           2 2     2       2        2    2     2       2                2     2       2        2    2        2    2           2 2           2 2           2 2
+6 : x2 x3*x4*z  + x2*x3 x4*z  + x2*x3*x4 z  + x2 x3*x5*z  + x2*x3 x5*z  + x2 x4*x5*z  - x2*x3*x4*x5*z  + x3 x4*x5*z  + x2*x4 x5*z  + x3*x4 x5*z  + x2*x3*x5 z  + x2*x4*x5 z  + x3*x4*x5 z
+
+            3      2  3            3            3      2  3            3            3            3      2  3         4         4         4         4         3 2        3 2        3 2        3 2     4 2
+6 : x1*x2*x5 z + x2 x5 z + x1*x3*x5 z + x2*x3*x5 z + x3 x5 z + x1*x4*x5 z + x2*x4*x5 z + x3*x4*x5 z + x4 x5 z + x1*x5 z + x2*x5 z + x3*x5 z + x4*x5 z + x1*x5 z  + x2*x5 z  + x3*x5 z  + x4*x5 z  + x5 z
+
+            2         2  2               2               2         2  2            3            3            3                  2      2     2               2               2      2     2         2  2         2  2         2  2      3  2            3            3            3      2  3                 2     2       2                2                2     2       2        2    2        2    2        2    2     3    2           2 2           2 2           2 2     2  2 2        3 2
+6 : x1*x2*x4 x5*z + x2 x4 x5*z + x1*x3*x4 x5*z + x2*x3*x4 x5*z + x3 x4 x5*z + x1*x4 x5*z + x2*x4 x5*z + x3*x4 x5*z + x1*x2*x4*x5 z + x2 x4*x5 z + x1*x3*x4*x5 z + x2*x3*x4*x5 z + x3 x4*x5 z - x1*x4 x5 z - x2*x4 x5 z - x3*x4 x5 z + x4 x5 z + x1*x4*x5 z + x2*x4*x5 z + x3*x4*x5 z + x4 x5 z + x1*x2*x4*x5*z  + x2 x4*x5*z  + x1*x3*x4*x5*z  + x2*x3*x4*x5*z  + x3 x4*x5*z  - x1*x4 x5*z  - x2*x4 x5*z  - x3*x4 x5*z  + x4 x5*z  - x1*x4*x5 z  - x2*x4*x5 z  - x3*x4*x5 z  - x4 x5 z  + x4*x5 z
+
+         2                  2                  2                 2
+6 : x1*x3 x4*x5*z + x1*x3*x4 x5*z + x1*x3*x4*x5 z + x1*x3*x4*x5*z
+
+      2                  2                  2                  2                 2
+6 : x2 x3*x4*x5*z + x2*x3 x4*x5*z + x2*x3*x4 x5*z + x2*x3*x4*x5 z + x2*x3*x4*x5*z
+
+=== same, modulo x1^2
+1 : 0
+
+2 : 0
+
+     3
+3 : z
+
+         2                2          2        2                2                             2          2        2        2                2                             2                                        2          2        2        2        2               2                          2                                    2                                              2        2       2       2       2       2
+3 : x1*x2  - x1*x2*x3 + x2 x3 + x1*x3  + x2*x3  - x1*x2*x4 + x2 x4 - x1*x3*x4 - x2*x3*x4 + x3 x4 + x1*x4  + x2*x4  + x3*x4  - x1*x2*x5 + x2 x5 - x1*x3*x5 - x2*x3*x5 + x3 x5 - x1*x4*x5 - x2*x4*x5 - x3*x4*x5 + x4 x5 + x1*x5  + x2*x5  + x3*x5  + x4*x5  - x1*x2*z + x2 z - x1*x3*z - x2*x3*z + x3 z - x1*x4*z - x2*x4*z - x3*x4*z + x4 z - x1*x5*z - x2*x5*z - x3*x5*z - x4*x5*z + x5 z + x1*z  + x2*z  + x3*z  + x4*z  + x5*z
+
+                      2               2               2                      2               2                         2                            2               2            2               2            2            2              2     2    2        2 2             2     2    2             2     2    2        2 2        2 2             2     2    2             2     2    2             2     2    2        2 2        2 2        2 2
+5 : x1*x2*x3*x4*z + x2 x3*x4*z + x2*x3 x4*z + x2*x3*x4 z + x1*x2*x3*x5*z + x2 x3*x5*z + x2*x3 x5*z + x1*x2*x4*x5*z + x2 x4*x5*z + x1*x3*x4*x5*z + x3 x4*x5*z + x2*x4 x5*z + x3*x4 x5*z + x2*x3*x5 z + x2*x4*x5 z + x3*x4*x5 z + x1*x2*x3*z  + x2 x3*z  + x2*x3 z  + x1*x2*x4*z  + x2 x4*z  + x1*x3*x4*z  + x3 x4*z  + x2*x4 z  + x3*x4 z  + x1*x2*x5*z  + x2 x5*z  + x1*x3*x5*z  + x3 x5*z  + x1*x4*x5*z  + x4 x5*z  + x2*x5 z  + x3*x5 z  + x4*x5 z
+
+               2     2     2        2  2           3     2  3           3           3     2  3        4        4        4                      2                2                2       2  2             2             2       2  2          3       4                2     2     2        2  2              2     2     2              2              2     2     2        2  2        2  2        2  2     3  2           3     2  3           3           3     2  3           3     2  3        4        4        4        4           2      2  2            2      2  2         3      4                      2                                            2               2         3               2      2  2            2      2  2            2         3         3      4              2     2    2        2 2             2        2 2        2 2        2 2     3 2             2             2             2             2     2    2        2 2        2 2        2 2        2 2     3 2
+5 : x1*x2*x3*x4  + x2 x3*x4  + x2*x3 x4  + x1*x2*x4  + x2 x4  + x1*x3*x4  - x2*x3*x4  + x3 x4  + x1*x4  + x2*x4  + x3*x4  - x1*x2*x3*x4*x5 - x2 x3*x4*x5 - x2*x3 x4*x5 - x1*x2*x4 x5 - x2 x4 x5 - x1*x3*x4 x5 - x2*x3*x4 x5 - x3 x4 x5 - x1*x4 x5 + x4 x5 + x1*x2*x3*x5  + x2 x3*x5  + x2*x3 x5  - x1*x2*x4*x5  - x2 x4*x5  - x1*x3*x4*x5  - x2*x3*x4*x5  - x3 x4*x5  - x1*x4 x5  + x2*x4 x5  + x3*x4 x5  - x4 x5  + x1*x2*x5  + x2 x5  + x1*x3*x5  - x2*x3*x5  + x3 x5  - x1*x4*x5  - x4 x5  + x1*x5  + x2*x5  + x3*x5  + x4*x5  - x1*x2*x4 z - x2 x4 z - x1*x3*x4 z - x3 x4 z - x1*x4 z + x4 z - x1*x2*x4*x5*z - x2 x4*x5*z - x1*x3*x4*x5*z + x2*x3*x4*x5*z - x3 x4*x5*z + x1*x4 x5*z + x4 x5*z - x1*x2*x5 z - x2 x5 z - x1*x3*x5 z - x3 x5 z + x1*x4*x5 z - x1*x5 z + x4*x5 z + x5 z - x1*x2*x3*z  - x2 x3*z  - x2*x3 z  - x2*x3*x4*z  - x1*x4 z  - x2*x4 z  - x3*x4 z  - x4 z  - x2*x3*x5*z  - x1*x4*x5*z  - x2*x4*x5*z  - x3*x4*x5*z  + x4 x5*z  - x1*x5 z  - x2*x5 z  - x3*x5 z  + x4*x5 z  - x5 z
+
+            2 2     2  2 2           2 2           2 2     2  2 2           2 2           2 2           2 2     2  2 2        3 2        3 2        3 2        3 2
+6 : x1*x2*x5 z  + x2 x5 z  + x1*x3*x5 z  + x2*x3*x5 z  + x3 x5 z  + x1*x4*x5 z  + x2*x4*x5 z  + x3*x4*x5 z  + x4 x5 z  + x1*x5 z  + x2*x5 z  + x3*x5 z  + x4*x5 z
+
+            2 2     2  2 2           2 2           2 2     2  2 2        3 2        3 2        3 2        2    2        2    2        2    2     3    2     2  2 2
+6 : x1*x2*x4 z  + x2 x4 z  + x1*x3*x4 z  + x2*x3*x4 z  + x3 x4 z  + x1*x4 z  + x2*x4 z  + x3*x4 z  + x1*x4 x5*z  + x2*x4 x5*z  + x3*x4 x5*z  + x4 x5*z  + x4 x5 z
+
+         2    2           2 2        2    2                2     2       2        2    2        2    2           2 2           2 2           2 2
+6 : x1*x3 x4*z  + x1*x3*x4 z  + x1*x3 x5*z  - x1*x3*x4*x5*z  + x3 x4*x5*z  + x1*x4 x5*z  + x3*x4 x5*z  + x1*x3*x5 z  + x1*x4*x5 z  + x3*x4*x5 z
+
+      2       2        2    2           2 2     2       2        2    2     2       2                2     2       2        2    2        2    2           2 2           2 2           2 2
+6 : x2 x3*x4*z  + x2*x3 x4*z  + x2*x3*x4 z  + x2 x3*x5*z  + x2*x3 x5*z  + x2 x4*x5*z  - x2*x3*x4*x5*z  + x3 x4*x5*z  + x2*x4 x5*z  + x3*x4 x5*z  + x2*x3*x5 z  + x2*x4*x5 z  + x3*x4*x5 z
+
+            3      2  3            3            3      2  3            3            3            3      2  3         4         4         4         4         3 2        3 2        3 2        3 2     4 2
+6 : x1*x2*x5 z + x2 x5 z + x1*x3*x5 z + x2*x3*x5 z + x3 x5 z + x1*x4*x5 z + x2*x4*x5 z + x3*x4*x5 z + x4 x5 z + x1*x5 z + x2*x5 z + x3*x5 z + x4*x5 z + x1*x5 z  + x2*x5 z  + x3*x5 z  + x4*x5 z  + x5 z
+
+            2         2  2               2               2         2  2            3            3            3                  2      2     2               2               2      2     2         2  2         2  2         2  2      3  2            3            3            3      2  3                 2     2       2                2                2     2       2        2    2        2    2        2    2     3    2           2 2           2 2           2 2     2  2 2        3 2
+6 : x1*x2*x4 x5*z + x2 x4 x5*z + x1*x3*x4 x5*z + x2*x3*x4 x5*z + x3 x4 x5*z + x1*x4 x5*z + x2*x4 x5*z + x3*x4 x5*z + x1*x2*x4*x5 z + x2 x4*x5 z + x1*x3*x4*x5 z + x2*x3*x4*x5 z + x3 x4*x5 z - x1*x4 x5 z - x2*x4 x5 z - x3*x4 x5 z + x4 x5 z + x1*x4*x5 z + x2*x4*x5 z + x3*x4*x5 z + x4 x5 z + x1*x2*x4*x5*z  + x2 x4*x5*z  + x1*x3*x4*x5*z  + x2*x3*x4*x5*z  + x3 x4*x5*z  - x1*x4 x5*z  - x2*x4 x5*z  - x3*x4 x5*z  + x4 x5*z  - x1*x4*x5 z  - x2*x4*x5 z  - x3*x4*x5 z  - x4 x5 z  + x4*x5 z
+
+         2                  2                  2                 2
+6 : x1*x3 x4*x5*z + x1*x3*x4 x5*z + x1*x3*x4*x5 z + x1*x3*x4*x5*z
+
+      2                  2                  2                  2                 2
+6 : x2 x3*x4*x5*z + x2*x3 x4*x5*z + x2*x3*x4 x5*z + x2*x3*x4*x5 z + x2*x3*x4*x5*z
+
+=== certificate: target = sum coeff_i * gen_i ; check true
+                    2    2        2 2     2    2     2    2        2 2        2 2     2    2     2    2     2    2        2 2        2 2        2 2     2    2     2    2     2    2     2    2        2 2        2 2        2 2        2 2          3          3          3          3          3          3          3          3          3          3
+gen deg 1 : coeff x1 x2*z  + x1*x2 z  + x1 x3*z  + x2 x3*z  + x1*x3 z  + x2*x3 z  + x1 x4*z  + x2 x4*z  + x3 x4*z  + x1*x4 z  + x2*x4 z  + x3*x4 z  + x1 x5*z  + x2 x5*z  + x3 x5*z  + x4 x5*z  + x1*x5 z  + x2*x5 z  + x3*x5 z  + x4*x5 z  + x1*x2*z  - x1*x3*z  - x2*x3*z  - x1*x4*z  - x2*x4*z  - x3*x4*z  - x1*x5*z  - x2*x5*z  - x3*x5*z  - x4*x5*z
+                         2          2          2          2          2          2          2          2          2          2       3       3       3       3    4
+gen deg 2 : coeff x1*x2*z  + x1*x3*z  + x2*x3*z  + x1*x4*z  + x2*x4*z  + x3*x4*z  + x1*x5*z  + x2*x5*z  + x3*x5*z  + x4*x5*z  + x2*z  - x3*z  - x4*z  - x5*z  + z
+                      3     2       2          2     3     2       2                  2          2        2     3     2       2                  2                             2          2        2        2     3               2                2                2                2        2       2       2       2       2
+gen deg 3 : coeff - x2  - x1 x3 - x2 x3 - x2*x3  - x3  - x1 x4 - x2 x4 + x2*x3*x4 - x3 x4 - x2*x4  - x3*x4  - x4  - x1 x5 - x2 x5 + x2*x3*x5 - x3 x5 + x2*x4*x5 + x3*x4*x5 - x4 x5 - x2*x5  - x3*x5  - x4*x5  - x5  - x1*x2*z + x2 z - x1*x3*z + x3 z - x1*x4*z + x4 z - x1*x5*z + x5 z - x1*z  - x2*z  - x3*z  - x4*z  - x5*z
+                        2       2       2       2       2    3
+gen deg 3 : coeff - x1*z  + x2*z  + x3*z  + x4*z  + x5*z  + z
+gen deg 5 : coeff -z
+gen deg 6 : coeff -1
+EXIT 0 after 75s

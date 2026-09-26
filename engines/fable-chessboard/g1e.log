@@ -1,0 +1,8 @@
+cell (7,1): gb of K_(m)(7)+(z^3) in 72 s
+   colength of the guess K_(m,1)(6) = 3930  fibre 3930
+   generators of the guess with z^2*g NOT in K+(z^3): 0 of 19
+cell (7,2): gb of K_(m)(7)+(z^3) in 26 s
+   colength of the guess K_(m,1)(6) = 1080  fibre 1080
+   generators of the guess with z^2*g NOT in K+(z^3): 0 of 39
+FIN-OK
+EXIT 0 after 101s

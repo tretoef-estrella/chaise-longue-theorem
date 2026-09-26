@@ -1,0 +1,4 @@
+q=9 |W_v|=84 monomials<=q-1: 495 rank E = 78  y0^2 y1^(q-2) of degree <= q-1 on W_v? true
+   functions of degree <= q-1 span dim 78 of |W_v| = 84
+WATCHDOG-KILLED
+exit=143

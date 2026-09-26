@@ -1,0 +1,4 @@
+(k,q)=(2,9)  z*t_l + z^2*s0 in I^(2k+1)+(z^3): true ; z^2*s0 alone: false ; z*t_l alone: false
+(k,q)=(2,27)  z*t_l + z^2*s0 in I^(2k+1)+(z^3): true ; z^2*s0 alone: false ; z*t_l alone: false
+(k,q)=(3,9)  z*t_l + z^2*s0 in I^(2k+1)+(z^3): true ; z^2*s0 alone: false ; z*t_l alone: false
+EXIT 0 after 1s

@@ -1,0 +1,39 @@
+=== cell (n+1,m) = (7,3) q = 9
+colength R2 = 390   colength K_(m)(n) = 410   (colon 1 s)
+Klow subset R2: true
+mingens of R2 not in Klow: 10  degrees: Tally{9 => 10}
+guess A: e_{2i}, n-m <= 2i <= n-1, in R2: {true}
+guess B: family y_j^(q-2) e_2(y minus y_l) subset R2: true
+Klow + evens + fam: colength 390  == R2 ? true
+=== cell (n+1,m) = (7,4) q = 9
+colength R2 = 30   colength K_(m)(n) = 111   (colon 0 s)
+Klow subset R2: true
+mingens of R2 not in Klow: 5  degrees: Tally{2 => 1}
+                                             3 => 4
+                            2           2                  2                         2                                2
+   deg 2 (x_1 eliminated): x  + x x  + x  + x x  + x x  + x  + x x  + x x  + x x  + x  + x x  + x x  + x x  + x x  + x
+                            2    2 3    3    2 4    3 4    4    2 5    3 5    4 5    5    2 6    3 6    4 6    5 6    6
+                            3
+   deg 3 (x_1 eliminated): x
+                            6
+                            3
+   deg 3 (x_1 eliminated): x
+                            5
+                            3
+   deg 3 (x_1 eliminated): x
+                            4
+                            3
+   deg 3 (x_1 eliminated): x
+                            3
+guess A: e_{2i}, n-m <= 2i <= n-1, in R2: {true, true}
+guess B: family y_j^(q-2) e_1(y minus y_l) subset R2: true
+Klow + evens + fam: colength 30  == R2 ? true
+=== cell (n+1,m) = (7,5) q = 9
+colength R2 = 6   colength K_(m)(n) = 6   (colon 0 s)
+Klow subset R2: true
+mingens of R2 not in Klow: 0  degrees: Tally{}
+guess A: e_{2i}, n-m <= 2i <= n-1, in R2: {true, true}
+guess B: family y_j^(q-2) e_0(y minus y_l) subset R2: true
+Klow + evens + fam: colength 6  == R2 ? true
+FIN-OK
+EXIT 0 after 3s

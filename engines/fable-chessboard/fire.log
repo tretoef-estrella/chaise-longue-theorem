@@ -1,0 +1,18 @@
+=== K_(1,1)(5), row 3 (type (1,1,1) in n=4), q=9
+colength K = 380
+row 3 colength 24 ; t in row 3? true
+FULL: z^3 t in K + (z^4)? true   ENGINE-TYPE: z^2 t in (I:z) + (M:z) + (z^3)? true
+   engine with (M:z) = (N_0 : z) only: false
+   engine with (M:z) = (N_0 + e_n, e_(n+1)) : z : true
+   engine with (M:z) = (N_0 + F_1) : z : true
+   engine-type row: colength 24 (fibre (1,1,1) at n=4: 24) ; equals row 3? true
+=== K_(1,1)(6), row 3 (type (1,1,1) in n=5), q=9
+colength K = 3930
+row 3 colength 360 ; t in row 3? true
+FULL: z^3 t in K + (z^4)? true   ENGINE-TYPE: z^2 t in (I:z) + (M:z) + (z^3)? true
+   engine with (M:z) = (N_0 : z) only: false
+   engine with (M:z) = (N_0 + e_n, e_(n+1)) : z : false
+   engine with (M:z) = (N_0 + F_1) : z : false
+   engine-type row: colength 360 (fibre (1,1,1) at n=5: 360) ; equals row 3? true
+FIN-OK
+EXIT 0 after 3s

@@ -1,0 +1,9 @@
+r=1 n=3 q=81  Top,Shadow,Odd closed forms: (True, True, True)  Shadow-Odd = 2^(r+1)(-1)^n G_r: True  sizes (2, 4, 4)
+r=1 n=4 q=81  Top,Shadow,Odd closed forms: (True, True, True)  Shadow-Odd = 2^(r+1)(-1)^n G_r: True  sizes (2, 4, 4)
+r=1 n=5 q=81  Top,Shadow,Odd closed forms: (True, True, True)  Shadow-Odd = 2^(r+1)(-1)^n G_r: True  sizes (2, 4, 4)
+r=1 n=6 q=81  Top,Shadow,Odd closed forms: (True, True, True)  Shadow-Odd = 2^(r+1)(-1)^n G_r: True  sizes (2, 4, 4)
+r=2 n=4 q=81  Top,Shadow,Odd closed forms: (True, True, True)  Shadow-Odd = 2^(r+1)(-1)^n G_r: True  sizes (2, 4, 4)
+r=2 n=5 q=81  Top,Shadow,Odd closed forms: (True, True, True)  Shadow-Odd = 2^(r+1)(-1)^n G_r: True  sizes (2, 6, 6)
+r=2 n=6 q=81  Top,Shadow,Odd closed forms: (True, True, True)  Shadow-Odd = 2^(r+1)(-1)^n G_r: True  sizes (2, 6, 6)
+CELLS 7 FAILED 0
+VIGIA-FIN-OK exit=0 pico_kb=639184 t=54s

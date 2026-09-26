@@ -1,0 +1,20 @@
+q=9: full? true | no e1^3? false | no P3? false | no P5? false | no t's? false | no box? false
+   drop t{0, 1}: true   drop t{0, 2}: true   drop t{1, 2}: true   drop t{0, 3}: true   drop t{1, 3}: true   drop t{2, 3}: true
+   P3 [99 terms, deg {8}]: ...
+   P5 [52 terms, deg {6}]: ...
+   x1^q [5 terms, deg {2}]: x_0*x_1+x_1^2+x_2^2-x_2*x_3+x_3^2
+   x2^q [8 terms, deg {2}]: -x_0*x_1+x_0*x_2-x_1*x_2+x_2^2+x_0*x_3-x_1*x_3+x_2*x_3-x_3^2
+   x3^q [8 terms, deg {2}]: -x_0*x_1+x_0*x_2-x_1*x_2-x_2^2+x_0*x_3-x_1*x_3+x_2*x_3+x_3^2
+   e1 t{2, 3} [1 terms, deg {0}]: 1
+   e1^3 [67 terms, deg {8}]: ...
+q=27: full? true | no e1^3? false | no P3? false | no P5? false | no t's? false | no box? false
+   drop t{0, 1}: true   drop t{0, 2}: true   drop t{1, 2}: true   drop t{0, 3}: true   drop t{1, 3}: true   drop t{2, 3}: true
+   P3 [1124 terms, deg {26}]: ...
+   P5 [924 terms, deg {24}]: ...
+   x1^q [7 terms, deg {2}]: -x_0*x_2-x_1*x_2-x_2^2-x_0*x_3-x_1*x_3+x_2*x_3-x_3^2
+   x2^q [9 terms, deg {2}]: -x_0^2-x_0*x_1+x_0*x_2-x_1*x_2-x_2^2+x_0*x_3-x_1*x_3+x_2*x_3-x_3^2
+   x3^q [9 terms, deg {2}]: -x_0^2-x_0*x_1+x_0*x_2-x_1*x_2-x_2^2+x_0*x_3-x_1*x_3+x_2*x_3-x_3^2
+   e1 t{0, 2} [1 terms, deg {0}]: 1
+   e1 t{0, 3} [1 terms, deg {0}]: 1
+   e1^3 [824 terms, deg {26}]: ...
+FIN-OK

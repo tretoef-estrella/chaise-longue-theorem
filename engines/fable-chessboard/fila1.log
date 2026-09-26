@@ -1,0 +1,106 @@
+PAR (k,q)=(1,9) r_{q-1}=1  #mingens=2 degs={1, 1}
+   x_1
+   x_0
+PAR (k,q)=(2,9) r_{q-1}=46  #mingens=11 degs={1, 3, 3, 3, 3, 9, 9, 9, 9, 9, 9}
+   x_0+x_1+x_2+x_3
+   x_2^2*x_3+x_2*x_3^2
+   x_1*x_2*x_3
+   x_1^2*x_3+x_1*x_3^2
+   x_1^2*x_2+x_1*x_2^2
+   [deg 9] lead x_3^9  #terms 1
+   [deg 9] lead x_2*x_3^8  #terms 1
+   [deg 9] lead x_1*x_3^8  #terms 1
+   [deg 9] lead x_2^9  #terms 1
+   [deg 9] lead x_1*x_2^8  #terms 1
+   [deg 9] lead x_1^9  #terms 1
+PAR (k,q)=(2,27) r_{q-1}=154  #mingens=11 degs={1, 3, 3, 3, 3, 27, 27, 27, 27, 27, 27}
+   x_0+x_1+x_2+x_3
+   x_2^2*x_3+x_2*x_3^2
+   x_1*x_2*x_3
+   x_1^2*x_3+x_1*x_3^2
+   x_1^2*x_2+x_1*x_2^2
+   [deg 27] lead x_3^27  #terms 1
+   [deg 27] lead x_2*x_3^26  #terms 1
+   [deg 27] lead x_1*x_3^26  #terms 1
+   [deg 27] lead x_2^27  #terms 1
+   [deg 27] lead x_1*x_2^26  #terms 1
+   [deg 27] lead x_1^27  #terms 1
+PAR (k,q)=(3,3) r_{q-1}=90  #mingens=43 degs={1, 3, 3, 3, 3, 3, 3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5}
+   x_0+x_1+x_2+x_3+x_4+x_5
+   [deg 3] lead x_5^3  #terms 1
+   [deg 3] lead x_4^3  #terms 1
+   [deg 3] lead x_3^3  #terms 1
+   [deg 3] lead x_2^3  #terms 1
+   [deg 3] lead x_1^2*x_2  #terms 30
+   [deg 3] lead x_1^3  #terms 1
+   [deg 5] lead x_3*x_4^2*x_5^2  #terms 1
+   [deg 5] lead x_2*x_4^2*x_5^2  #terms 1
+   [deg 5] lead x_1*x_4^2*x_5^2  #terms 1
+   [deg 5] lead x_3^2*x_4*x_5^2  #terms 1
+   [deg 5] lead x_2*x_3*x_4*x_5^2  #terms 1
+   [deg 5] lead x_1*x_3*x_4*x_5^2  #terms 1
+   [deg 5] lead x_2^2*x_4*x_5^2  #terms 1
+   [deg 5] lead x_1*x_2*x_4*x_5^2  #terms 1
+   [deg 5] lead x_1^2*x_4*x_5^2  #terms 1
+   [deg 5] lead x_2*x_3^2*x_5^2  #terms 1
+   [deg 5] lead x_1*x_3^2*x_5^2  #terms 1
+   [deg 5] lead x_2^2*x_3*x_5^2  #terms 1
+   [deg 5] lead x_1*x_2*x_3*x_5^2  #terms 1
+   [deg 5] lead x_1^2*x_3*x_5^2  #terms 1
+   [deg 5] lead x_1*x_2^2*x_5^2  #terms 1
+   [deg 5] lead x_3^2*x_4^2*x_5  #terms 1
+   [deg 5] lead x_2*x_3*x_4^2*x_5  #terms 1
+   [deg 5] lead x_1*x_3*x_4^2*x_5  #terms 1
+   [deg 5] lead x_2^2*x_4^2*x_5  #terms 1
+   [deg 5] lead x_1*x_2*x_4^2*x_5  #terms 1
+   [deg 5] lead x_1^2*x_4^2*x_5  #terms 1
+   [deg 5] lead x_2*x_3^2*x_4*x_5  #terms 1
+   [deg 5] lead x_1*x_3^2*x_4*x_5  #terms 1
+   [deg 5] lead x_2^2*x_3*x_4*x_5  #terms 1
+   [deg 5] lead x_1*x_2*x_3*x_4*x_5  #terms 1
+   [deg 5] lead x_1^2*x_3*x_4*x_5  #terms 1
+   [deg 5] lead x_1*x_2^2*x_4*x_5  #terms 1
+   [deg 5] lead x_2^2*x_3^2*x_5  #terms 1
+   [deg 5] lead x_1*x_2*x_3^2*x_5  #terms 1
+   [deg 5] lead x_1^2*x_3^2*x_5  #terms 1
+   [deg 5] lead x_2*x_3^2*x_4^2  #terms 1
+   [deg 5] lead x_1*x_3^2*x_4^2  #terms 1
+   [deg 5] lead x_2^2*x_3*x_4^2  #terms 1
+   [deg 5] lead x_1*x_2*x_3*x_4^2  #terms 1
+   [deg 5] lead x_1^2*x_3*x_4^2  #terms 1
+   [deg 5] lead x_1*x_2^2*x_4^2  #terms 1
+IMPAR (k,q)=(1,9) r'_{q-1}=0  #mingens=1 degs={0}
+   1
+IMPAR (k,q)=(2,9) r'_{q-1}=3  #mingens=4 degs={1, 2, 2, 2}
+   x_0+x_1+x_2
+   x_2^2
+   x_1*x_2
+   x_1^2
+IMPAR (k,q)=(2,27) r'_{q-1}=3  #mingens=4 degs={1, 2, 2, 2}
+   x_0+x_1+x_2
+   x_2^2
+   x_1*x_2
+   x_1^2
+IMPAR (k,q)=(3,3) r'_{q-1}=30  #mingens=21 degs={1, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4}
+   x_0+x_1+x_2+x_3+x_4
+   [deg 3] lead x_4^3  #terms 1
+   [deg 3] lead x_3^3  #terms 1
+   [deg 3] lead x_2^3  #terms 1
+   [deg 3] lead x_1^2*x_2  #terms 16
+   [deg 3] lead x_1^3  #terms 1
+   [deg 4] lead x_3^2*x_4^2  #terms 1
+   [deg 4] lead x_2*x_3*x_4^2  #terms 1
+   [deg 4] lead x_1*x_3*x_4^2  #terms 1
+   [deg 4] lead x_2^2*x_4^2  #terms 1
+   [deg 4] lead x_1*x_2*x_4^2  #terms 1
+   [deg 4] lead x_1^2*x_4^2  #terms 1
+   [deg 4] lead x_2*x_3^2*x_4  #terms 1
+   [deg 4] lead x_1*x_3^2*x_4  #terms 1
+   [deg 4] lead x_2^2*x_3*x_4  #terms 1
+   [deg 4] lead x_1*x_2*x_3*x_4  #terms 1
+   [deg 4] lead x_1^2*x_3*x_4  #terms 1
+   [deg 4] lead x_1*x_2^2*x_4  #terms 1
+   [deg 4] lead x_2^2*x_3^2  #terms 1
+   [deg 4] lead x_1*x_2*x_3^2  #terms 1
+   [deg 4] lead x_1^2*x_3^2  #terms 1
+FIN-OK

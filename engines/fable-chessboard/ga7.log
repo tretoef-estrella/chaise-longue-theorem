@@ -1,0 +1,20 @@
+K3 built, numgens 404
+(G-a_3) at q=9: true
+colon mingens degrees: Tally{1 => 1  }
+                             2 => 1
+                             3 => 2
+                             5 => 2
+                             6 => 8
+                             9 => 4
+                             11 => 17
+                             12 => 5
+target/x1^(q-2) in colon: true   in the low-degree (<=8) part alone: true
+number of low generators, and x1-free ones: 14 3
+   x0 + x1 + x2 + x3 + x4 + x5 + z
+     2
+   x1
+    3
+   z
+        2                2          2        2                2                             2          2        2        2                2                             2                                        2          2        2        2        2               2                          2                                    2                                              2        2       2       2       2       2
+   x1*x2  - x1*x2*x3 + x2 x3 + x1*x3  + x2*x3  - x1*x2*x4 + x2 x4 - x1*x3*x4 - x2*x3*x4 + x3 x4 + x1*x4  + x2*x4  + x3*x4  - x1*x2*x5 + x2 x5 - x1*x3*x5 - x2*x3*x5 + x3 x5 - x1*x4*x5 - x2*x4*x5 - x3*x4*x5 + x4 x5 + x1*x5  + x2*x5  + x3*x5  + x4*x5  - x1*x2*z + x2 z - x1*x3*z - x2*x3*z + x3 z - x1*x4*z - x2*x4*z - x3*x4*z + x4 z - x1*x5*z - x2*x5*z - x3*x5*z - x4*x5*z + x5 z + x1*z  + x2*z  + x3*z  + x4*z  + x5*z
+EXIT 0 after 71s

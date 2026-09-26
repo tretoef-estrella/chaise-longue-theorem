@@ -1,0 +1,7 @@
+q=9: NOT a scalar combination of t's mod (P3,e4,box,e1^(q-1))
+   in (P3,e4,box,e1^(q-1)) + (t's) as ideal? false
+   G-a direct: e1^2 x0^2 x1^(q-2) in (P3,P5,box, e1 t's, e1^3)? true
+q=27: NOT a scalar combination of t's mod (P3,e4,box,e1^(q-1))
+   in (P3,e4,box,e1^(q-1)) + (t's) as ideal? false
+   G-a direct: e1^2 x0^2 x1^(q-2) in (P3,P5,box, e1 t's, e1^3)? true
+FIN-OK

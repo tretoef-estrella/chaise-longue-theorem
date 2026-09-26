@@ -1,0 +1,4 @@
+(k,q)=(2,9)  z'*tau' + z'^2*s'0 in I^(2k)+(z'^3): true ; z'^2*s'0 alone: false ; z'*tau' alone: false
+(k,q)=(2,27)  z'*tau' + z'^2*s'0 in I^(2k)+(z'^3): true ; z'^2*s'0 alone: false ; z'*tau' alone: false
+(k,q)=(3,9)  z'*tau' + z'^2*s'0 in I^(2k)+(z'^3): true ; z'^2*s'0 alone: false ; z'*tau' alone: false
+EXIT 0 after 1s

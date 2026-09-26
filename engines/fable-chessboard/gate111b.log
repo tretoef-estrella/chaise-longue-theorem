@@ -1,0 +1,4 @@
+base Q+box+N_0 : 23450 in 424 s
+  + y_j^(q-3) p_5(y-l) : 15491  in 35 s
+WATCHDOG-KILLED at 570s
+80165 /bin/zsh -c source /Users/rafa/.claude/shell-snapshots/snapshot-zsh-1790094140253-3v4wlc.sh 2>/dev/null || true && setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL 2>/dev/null || true && { \builtin unalias -- 'unsetenv'; \builtin unset -f -- 'unsetenv'; } >/dev/null 2>&1 || true && eval 'until grep -qE "FIN-OK|WATCHDOG|^EXIT" rowgate22.log 2>/dev/null && grep -qE "FIN-OK|WATCHDOG|^EXIT" gate111b.log 2>/dev/null; do sleep 5; done; echo "--- rowgate22:"; cat rowgate22.log; grep -E "maximum resident|real" rowgate22.log.time; echo "--- gate111b:"; cat gate111b.log; grep -E "maximum resident|real" gate111b.log.time; pgrep -fl M2-binary || echo "no M2 running"' < /dev/null && pwd -P >| /tmp/claude-e142-cwd
