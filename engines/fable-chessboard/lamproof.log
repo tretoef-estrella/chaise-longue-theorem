@@ -1,0 +1,9 @@
+q=3 MMAX=12 trials=300 shapes=1086  failures {'P2': 0, 'P3': 0, 'seg': 0}
+q=9 MMAX=12 trials=300 shapes=6293  failures {'P2': 0, 'P3': 0, 'seg': 0}
+q=27 MMAX=12 trials=200 shapes=6356  failures {'P2': 0, 'P3': 0, 'seg': 0}
+q=81 MMAX=11 trials=100 shapes=2370  failures {'P2': 0, 'P3': 0, 'seg': 0}
+q=243 MMAX=10 trials=60 shapes=1002  failures {'P2': 0, 'P3': 0, 'seg': 0}
+q=9 size<=12: comparable same-parity pairs=5107  position-wise failures=0
+q=27 size<=12: comparable same-parity pairs=14308  position-wise failures=0
+q=3 size<=14: comparable same-parity pairs=49  position-wise failures=0
+VIGIA-FIN-OK exit=0 pico_kb=11808 t=37s

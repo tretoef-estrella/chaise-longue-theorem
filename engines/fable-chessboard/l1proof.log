@@ -1,0 +1,9 @@
+q=3  deg gamma0=0 deg gamma1=2  T-U divisible by e4: true  (I) holds mod box_q: true  (II) holds mod box_{q-1}: true
+   (star): LHS == e4*gamma0 exactly: true
+q=9  deg gamma0=12 deg gamma1=14  T-U divisible by e4: true  (I) holds mod box_q: true  (II) holds mod box_{q-1}: true
+   (star): LHS == e4*gamma0 exactly: true
+q=27  deg gamma0=48 deg gamma1=50  T-U divisible by e4: true  (I) holds mod box_q: true  (II) holds mod box_{q-1}: true
+   (star): LHS == e4*gamma0 exactly: true
+q=81  deg gamma0=156 deg gamma1=158  T-U divisible by e4: true  (I) holds mod box_q: true  (II) holds mod box_{q-1}: true
+   (star): LHS == e4*gamma0 exactly: true
+EXIT 0 after 8s

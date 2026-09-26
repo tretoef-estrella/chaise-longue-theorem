@@ -1,0 +1,157 @@
+visited cells: 71 (all with |μ| <= min(n,10-n): True); non-leaf parents: 40; leaves: 31
+| # | parent | n | type | rows | child (n−1) | casilla of parent | status | proof source |
+|---|---|---|---|---|---|---|---|---|
+| 1 | ∅ | 2 | value-0 | row 0 | ∅ | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 2 | ∅ | 2 | new-class | rows 1..q-1 | (1) | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 3 | ∅ | 3 | value-0 | row 0 | ∅ | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 4 | ∅ | 3 | new-class | rows 1..q-1 | (1) | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 5 | ∅ | 4 | value-0 | row 0 | ∅ | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 6 | ∅ | 4 | new-class | rows 1..q-1 | (1) | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 7 | ∅ | 5 | value-0 | row 0 | ∅ | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 8 | ∅ | 5 | new-class | rows 1..q-1 | (1) | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 9 | ∅ | 6 | value-0 | row 0 | ∅ | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 10 | ∅ | 6 | new-class | rows 1..q-1 | (1) | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 11 | ∅ | 7 | value-0 | row 0 | ∅ | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 12 | ∅ | 7 | new-class | rows 1..q-1 | (1) | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 13 | ∅ | 8 | value-0 | row 0 | ∅ | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 14 | ∅ | 8 | new-class | rows 1..q-1 | (1) | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 15 | ∅ | 9 | value-0 | row 0 | ∅ | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 16 | ∅ | 9 | new-class | rows 1..q-1 | (1) | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 17 | ∅ | 10 | value-0 | row 0 | ∅ | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 18 | ∅ | 10 | new-class | rows 1..q-1 | (1) | unif | **PROVED** | I^(n) casilla theorems (INFORME_10 §4.1) |
+| 19 | (1) | 3 | lower | row 0 | ∅ | unif | **PROVED** | INFORME_10 §3.2 |
+| 20 | (1) | 3 | value-0 | row 1 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 21 | (1) | 3 | new-class | rows 2..q-2 | (1,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 22 | (1) | 3 | raise | row q-1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 23 | (1) | 4 | lower | row 0 | ∅ | unif | **PROVED** | INFORME_10 §3.2 |
+| 24 | (1) | 4 | value-0 | row 1 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 25 | (1) | 4 | new-class | rows 2..q-2 | (1,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 26 | (1) | 4 | raise | row q-1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 27 | (1) | 5 | lower | row 0 | ∅ | unif | **PROVED** | INFORME_10 §3.2 |
+| 28 | (1) | 5 | value-0 | row 1 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 29 | (1) | 5 | new-class | rows 2..q-2 | (1,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 30 | (1) | 5 | raise | row q-1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 31 | (1) | 6 | lower | row 0 | ∅ | unif | **PROVED** | INFORME_10 §3.2 |
+| 32 | (1) | 6 | value-0 | row 1 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 33 | (1) | 6 | new-class | rows 2..q-2 | (1,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 34 | (1) | 6 | raise | row q-1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 35 | (1) | 7 | lower | row 0 | ∅ | unif | **PROVED** | INFORME_10 §3.2 |
+| 36 | (1) | 7 | value-0 | row 1 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 37 | (1) | 7 | new-class | rows 2..q-2 | (1,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 38 | (1) | 7 | raise | row q-1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 39 | (1) | 8 | lower | row 0 | ∅ | unif | **PROVED** | INFORME_10 §3.2 |
+| 40 | (1) | 8 | value-0 | row 1 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 41 | (1) | 8 | new-class | rows 2..q-2 | (1,1) | unif | **PROVED** | uniform part: INFORME_10 Thm 2.1/§2.3; F2 of the corrected child (1,1)(7): **Thm T, this report §2.1 (open #3)** |
+| 42 | (1) | 8 | raise | row q-1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 43 | (1) | 9 | lower | row 0 | ∅ | unif | **PROVED** | INFORME_10 §3.2 |
+| 44 | (1) | 9 | value-0 | row 1 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 45 | (1) | 9 | new-class | rows 2..q-2 | (1,1) | unif | **PROVED** | uniform part: INFORME_10 Thm 2.1/§2.3; F2 of the corrected child (1,1)(8): **Thm T, this report §2.1 (open #4)** |
+| 46 | (1) | 9 | raise | row q-1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 47 | (2) | 4 | lower | row 0 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 48 | (2) | 4 | value-0 | row 1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 49 | (2) | 4 | new-class | rows 2..q-2 | (2,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 50 | (2) | 4 | raise | row q-1 | (3) | unif | **PROVED** | INFORME_10 §3.2 |
+| 51 | (2) | 5 | lower | row 0 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 52 | (2) | 5 | value-0 | row 1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 53 | (2) | 5 | new-class | rows 2..q-2 | (2,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 54 | (2) | 5 | raise | row q-1 | (3) | unif | **PROVED** | INFORME_10 §3.2 |
+| 55 | (2) | 6 | lower | row 0 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 56 | (2) | 6 | value-0 | row 1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 57 | (2) | 6 | new-class | rows 2..q-2 | (2,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 58 | (2) | 6 | raise | row q-1 | (3) | unif | **PROVED** | INFORME_10 §3.2 |
+| 59 | (2) | 7 | lower | row 0 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 60 | (2) | 7 | value-0 | row 1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 61 | (2) | 7 | new-class | rows 2..q-2 | (2,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 62 | (2) | 7 | raise | row q-1 | (3) | unif | **PROVED** | INFORME_10 §3.2 |
+| 63 | (2) | 8 | lower | row 0 | (1) | unif | **PROVED** | INFORME_10 §3.2 |
+| 64 | (2) | 8 | value-0 | row 1 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 65 | (2) | 8 | new-class | rows 2..q-2 | (2,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 66 | (2) | 8 | raise | row q-1 | (3) | unif | **PROVED** | INFORME_10 §3.2 |
+| 67 | (3) | 5 | lower | row 0 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 68 | (3) | 5 | value-0 | row 1 | (3) | unif | **PROVED** | INFORME_10 §3.2 |
+| 69 | (3) | 5 | new-class | rows 2..q-2 | (3,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 70 | (3) | 5 | raise | row q-1 | (4) | unif | **PROVED** | INFORME_10 §3.2 |
+| 71 | (3) | 6 | lower | row 0 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 72 | (3) | 6 | value-0 | row 1 | (3) | unif | **PROVED** | INFORME_10 §3.2 |
+| 73 | (3) | 6 | new-class | rows 2..q-2 | (3,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 74 | (3) | 6 | raise | row q-1 | (4) | unif | **PROVED** | INFORME_10 §3.2 |
+| 75 | (3) | 7 | lower | row 0 | (2) | unif | **PROVED** | INFORME_10 §3.2 |
+| 76 | (3) | 7 | value-0 | row 1 | (3) | unif | **PROVED** | INFORME_10 §3.2 |
+| 77 | (3) | 7 | new-class | rows 2..q-2 | (3,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 78 | (3) | 7 | raise | row q-1 | (4) | unif | **PROVED** | INFORME_10 §3.2 |
+| 79 | (4) | 6 | lower | row 0 | (3) | unif | **PROVED** | INFORME_10 §3.2 |
+| 80 | (4) | 6 | value-0 | row 1 | (4) | unif | **PROVED** | INFORME_10 §3.2 |
+| 81 | (4) | 6 | new-class | rows 2..q-2 | (4,1) | unif | **PROVED** | INFORME_10 Thm 2.1 + §2.3 (row 2), rows increase |
+| 82 | (4) | 6 | raise | row q-1 | (5) | unif | **PROVED** | INFORME_10 §3.2 |
+| 83 | (1,1) | 4 | lower | rows 0, 1 | (1) | unif | **PROVED** | Q/Tanisaki/family: INFORME_11 Thm C; layer (#A = 1 only): φ at z=0 (INFORME_12 §4.4); row 1: rows increase (INFORME_12 §4.4) |
+| 84 | (1,1) | 4 | value-0 | row 2 | (1,1) | unif | **PROVED** | INFORME_11 Thm A |
+| 85 | (1,1) | 4 | new-class | rows 3..q-3 | (1,1,1) | unif | **PROVED** | INFORME_11 Thm B (ℓ = 2) |
+| 86 | (1,1) | 4 | raise | rows q-2, q-1 | (2,1) | unif | **PROVED** | leaf child: INFORME_11 §4.2 |
+| 87 | (1,1) | 5 | lower | rows 0, 1 | (1) | unif | **PROVED** | Q/Tanisaki/family: INFORME_11 Thm C; #A = 1 layer: φ at z=0 (INFORME_12 §2.3); #A = 2: Lemma M (INFORME_12 §4.2) and Thm Z (this report §3.1); row 1: rows increase (INFORME_12 §4.4) |
+| 88 | (1,1) | 5 | value-0 | row 2 | (1,1) | unif | **PROVED** | INFORME_11 Thm A |
+| 89 | (1,1) | 5 | new-class | rows 3..q-3 | (1,1,1) | unif | **PROVED** | INFORME_11 Thm B (ℓ = 2) |
+| 90 | (1,1) | 5 | raise | rows q-2, q-1 | (2,1) | unif | **PROVED** | leaf child: INFORME_11 §4.2 |
+| 91 | (1,1) | 6 | lower | rows 0, 1 | (1) | unif | **PROVED** | Q/Tanisaki/family: INFORME_11 Thm C; #A = 1 layer: φ at z=0 (INFORME_12 §2.3); #A = 2: **Thm Z, this report §3.1 (open #1)**; row 1: rows increase (INFORME_12 §4.4) |
+| 92 | (1,1) | 6 | value-0 | row 2 | (1,1) | unif | **PROVED** | INFORME_11 Thm A |
+| 93 | (1,1) | 6 | new-class | rows 3..q-3 | (1,1,1) | unif | **PROVED** | INFORME_11 Thm B (ℓ = 2) |
+| 94 | (1,1) | 6 | raise | rows q-2, q-1 | (2,1) | unif | **PROVED** | INFORME_11 §3.4 pieces + f = 2 lemma (INFORME_12 Thm B') |
+| 95 | (1,1) | 7 | lower | rows 0, 1 | (1) | unif+F2 | **PROVED** | Q/Tanisaki/family: INFORME_11 Thm C; #A = 1 layer: φ at z=0 (INFORME_12 §2.3); #A = 2: F2 at z=0 (INFORME_12 §2.3); #A = 3: Lemma M (INFORME_12 §4.2); row 1: rows increase (INFORME_12 §4.4) |
+| 96 | (1,1) | 7 | value-0 | row 2 | (1,1) | unif+F2 | **PROVED** | INFORME_11 Thm A |
+| 97 | (1,1) | 7 | new-class | rows 3..q-3 | (1,1,1) | unif+F2 | **PROVED** | INFORME_11 Thm B (ℓ = 2) |
+| 98 | (1,1) | 7 | raise | rows q-2, q-1 | (2,1) | unif+F2 | **PROVED** | INFORME_11 §3.4 pieces; #A' = 1: raise identity of F2; #A' = 2: Lemma M (INFORME_12 §4.2) |
+| 99 | (1,1) | 8 | lower | rows 0, 1 | (1) | unif+F2 | **PROVED** | Q/Tanisaki/family: INFORME_11 Thm C; #A = 1 layer: φ at z=0 (INFORME_12 §2.3); #A = 2: F2 at z=0 (INFORME_12 §2.3); #A = 3: **Thm Z, this report §3.1 (open #2)**; row 1: rows increase (INFORME_12 §4.4) |
+| 100 | (1,1) | 8 | value-0 | row 2 | (1,1) | unif+F2 | **PROVED** | uniform child: INFORME_11 Thm A; F2(7): Lemma M (INFORME_12 §4.2) |
+| 101 | (1,1) | 8 | new-class | rows 3..q-3 | (1,1,1) | unif+F2 | **PROVED** | INFORME_11 Thm B (ℓ = 2) |
+| 102 | (1,1) | 8 | raise | rows q-2, q-1 | (2,1) | unif+F2 | **PROVED** | INFORME_11 §3.4 pieces; #A' = 1: raise identity of F2; #A' = 2, 3: Lemma M (INFORME_12 §4.2) |
+| 103 | (2,1) | 5 | lower | row 0 | (1,1) | unif | **PROVED** | INFORME_10 §4.1 (rows 0, 1 of (m,1), §3.3.6); INFORME_11 Thm C / Thm E |
+| 104 | (2,1) | 5 | lower | row 1 | (2) | unif | **PROVED** | INFORME_10 §4.1 (rows 0, 1 of (m,1), §3.3.6); INFORME_11 Thm C / Thm E |
+| 105 | (2,1) | 5 | value-0 | row 2 | (2,1) | unif | **PROVED** | INFORME_10 §4.1 (row 2 of (m,1)); INFORME_11 Thm E (VZ) |
+| 106 | (2,1) | 5 | new-class | rows 3..q-3 | (2,1,1) | unif | **PROVED** | INFORME_11 Thm E (NC) |
+| 107 | (2,1) | 5 | raise | row q-2 | (2,2) | unif | **PROVED** | leaf child: INFORME_11 §4.2, R11 (q-free; one check at q = 9) |
+| 108 | (2,1) | 5 | raise | row q-1 | (3,1) | unif | **PROVED** | INFORME_11 Thm E (large raise) |
+| 109 | (2,1) | 6 | lower | row 0 | (1,1) | unif | **PROVED** | INFORME_10 §4.1 (rows 0, 1 of (m,1), §3.3.6); INFORME_11 Thm C / Thm E |
+| 110 | (2,1) | 6 | lower | row 1 | (2) | unif | **PROVED** | INFORME_10 §4.1 (rows 0, 1 of (m,1), §3.3.6); INFORME_11 Thm C / Thm E |
+| 111 | (2,1) | 6 | value-0 | row 2 | (2,1) | unif | **PROVED** | INFORME_10 §4.1 (row 2 of (m,1)); INFORME_11 Thm E (VZ) |
+| 112 | (2,1) | 6 | new-class | rows 3..q-3 | (2,1,1) | unif | **PROVED** | INFORME_11 Thm E (NC) |
+| 113 | (2,1) | 6 | raise | row q-2 | (2,2) | unif | **PROVED** | leaf child: INFORME_11 §4.2, R11 (q-free; one check at q = 9) |
+| 114 | (2,1) | 6 | raise | row q-1 | (3,1) | unif | **PROVED** | INFORME_11 Thm E (large raise) |
+| 115 | (2,1) | 7 | lower | row 0 | (1,1) | unif | **PROVED** | INFORME_10 §4.1 (rows 0, 1 of (m,1), §3.3.6); INFORME_11 Thm C / Thm E |
+| 116 | (2,1) | 7 | lower | row 1 | (2) | unif | **PROVED** | INFORME_10 §4.1 (rows 0, 1 of (m,1), §3.3.6); INFORME_11 Thm C / Thm E |
+| 117 | (2,1) | 7 | value-0 | row 2 | (2,1) | unif | **PROVED** | INFORME_10 §4.1 (row 2 of (m,1)); INFORME_11 Thm E (VZ) |
+| 118 | (2,1) | 7 | new-class | rows 3..q-3 | (2,1,1) | unif | **PROVED** | INFORME_11 Thm E (NC) |
+| 119 | (2,1) | 7 | raise | row q-2 | (2,2) | unif | **PROVED** | Q, box, N_1(6): Lemma M (INFORME_12 §4.2); family φ^(2): **Thm R, this report §3.3 (open #5)** |
+| 120 | (2,1) | 7 | raise | row q-1 | (3,1) | unif | **PROVED** | INFORME_11 Thm E (large raise) |
+| 121 | (2,2) | 6 | lower | rows 0, 1 | (2,1) | unif | **PROVED** | INFORME_11 Thm C (Q, Tanisaki, family) + f = 2 lemma for the layer N_1(5) (INFORME_12 Thm B') |
+| 122 | (2,2) | 6 | value-0 | row 2 | (2,2) | unif | **PROVED** | leaf child: INFORME_11 R12 (Thm D + Q) |
+| 123 | (2,2) | 6 | new-class | rows 3..q-3 | (2,2,1) | unif | **PROVED** | leaf child: INFORME_11 R12 (Thm D + Q) |
+| 124 | (2,2) | 6 | raise | rows q-2, q-1 | (3,2) | unif | **PROVED** | leaf child: INFORME_11 §4.2, R11 (q-free; one check at q = 9) |
+| 125 | (3,1) | 6 | lower | row 0 | (2,1) | unif | **PROVED** | INFORME_10 §4.1 (rows 0, 1 of (m,1), §3.3.6); INFORME_11 Thm C / Thm E |
+| 126 | (3,1) | 6 | lower | row 1 | (3) | unif | **PROVED** | INFORME_10 §4.1 (rows 0, 1 of (m,1), §3.3.6); INFORME_11 Thm C / Thm E |
+| 127 | (3,1) | 6 | value-0 | row 2 | (3,1) | unif | **PROVED** | INFORME_10 §4.1 (row 2 of (m,1)); INFORME_11 Thm E (VZ) |
+| 128 | (3,1) | 6 | new-class | rows 3..q-3 | (3,1,1) | unif | **PROVED** | INFORME_11 Thm E (NC) |
+| 129 | (3,1) | 6 | raise | row q-2 | (3,2) | unif | **PROVED** | leaf child: INFORME_11 §4.2, R11 (q-free; one check at q = 9) |
+| 130 | (3,1) | 6 | raise | row q-1 | (4,1) | unif | **PROVED** | INFORME_11 Thm E (large raise) |
+| 131 | (1,1,1) | 5 | lower | rows 0, 1, 2 | (1,1) | unif | **PROVED** | INFORME_11 Thm C |
+| 132 | (1,1,1) | 5 | value-0 | row 3 | (1,1,1) | unif | **PROVED** | INFORME_11 Thm A |
+| 133 | (1,1,1) | 5 | new-class | rows 4..q-4 | (1,1,1,1) | unif | **PROVED** | INFORME_11 Thm B (ℓ = 3) |
+| 134 | (1,1,1) | 5 | raise | rows q-3, q-2, q-1 | (2,1,1) | unif | **PROVED** | leaf child: INFORME_11 §4.2, R11 (q-free; one check at q = 9) |
+| 135 | (1,1,1) | 6 | lower | rows 0, 1, 2 | (1,1) | unif | **PROVED** | INFORME_11 Thm C |
+| 136 | (1,1,1) | 6 | value-0 | row 3 | (1,1,1) | unif | **PROVED** | INFORME_11 Thm A |
+| 137 | (1,1,1) | 6 | new-class | rows 4..q-4 | (1,1,1,1) | unif | **PROVED** | INFORME_11 Thm B (ℓ = 3) |
+| 138 | (1,1,1) | 6 | raise | rows q-3, q-2, q-1 | (2,1,1) | unif | **PROVED** | leaf child: INFORME_11 §4.2, R11 (q-free; one check at q = 9) |
+| 139 | (1,1,1) | 7 | lower | rows 0, 1, 2 | (1,1) | unif | **PROVED** | INFORME_11 Thm C |
+| 140 | (1,1,1) | 7 | value-0 | row 3 | (1,1,1) | unif | **PROVED** | INFORME_11 Thm A |
+| 141 | (1,1,1) | 7 | new-class | rows 4..q-4 | (1,1,1,1) | unif | **PROVED** | INFORME_11 Thm B (ℓ = 3) |
+| 142 | (1,1,1) | 7 | raise | rows q-3, q-2, q-1 | (2,1,1) | unif | **PROVED** | INFORME_11 §3.4 pieces + f = 2 lemma (INFORME_12 Thm B') |
+| 143 | (2,1,1) | 6 | lower | row 0 | (1,1,1) | unif | **PROVED** | INFORME_11 Thm C |
+| 144 | (2,1,1) | 6 | lower | rows 1, 2 | (2,1) | unif | **PROVED** | INFORME_11 Thm E (lower) |
+| 145 | (2,1,1) | 6 | value-0 | row 3 | (2,1,1) | unif | **PROVED** | INFORME_11 Thm E (VZ) |
+| 146 | (2,1,1) | 6 | new-class | rows 4..q-4 | (2,1,1,1) | unif | **PROVED** | INFORME_11 Thm E (NC) |
+| 147 | (2,1,1) | 6 | raise | rows q-3, q-2 | (2,2,1) | unif | **PROVED** | leaf child: INFORME_11 §4.2, R11 (q-free; one check at q = 9) |
+| 148 | (2,1,1) | 6 | raise | row q-1 | (3,1,1) | unif | **PROVED** | INFORME_11 Thm E (large raise) |
+| 149 | (1,1,1,1) | 6 | lower | rows 0, 1, 2, 3 | (1,1,1) | unif | **PROVED** | INFORME_11 Thm C |
+| 150 | (1,1,1,1) | 6 | value-0 | row 4 | (1,1,1,1) | unif | **PROVED** | INFORME_11 Thm A |
+| 151 | (1,1,1,1) | 6 | new-class | rows 5..q-5 | (1,1,1,1,1) | unif | **PROVED** | INFORME_11 Thm B (ℓ = 4) |
+| 152 | (1,1,1,1) | 6 | raise | rows q-4, q-3, q-2, q-1 | (2,1,1,1) | unif | **PROVED** | leaf child: INFORME_11 §4.2, R11 (q-free; one check at q = 9) |
+| 153 | every leaf (f ≤ 1): ∅(0), ∅(1), (1)(1), (1)(2), (1,1)(2), (1,1)(3), (1,1,1)(3), (1,1,1)(4), (1,1,1,1)(4), (1,1,1,1)(5), (1,1,1,1,1)(5), (2)(2), (2)(3), (2,1)(3), (2,1)(4), (2,1,1)(4), (2,1,1)(5), (2,1,1,1)(5), (2,2)(4), (2,2)(5), (2,2,1)(5), (3)(3), (3)(4), (3,1)(4), (3,1)(5), (3,1,1)(5), (3,2)(5), (4)(4), (4)(5), (4,1)(5), (5)(5) | | lower / value-0 / top power | all | | I_λ + box | **PROVED** | INFORME_11 Thm D, §4.1 |
+LINES 153 ; PROVED 153 ; OPEN 0

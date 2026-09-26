@@ -1,0 +1,14 @@
+q=3 kernel mingens: 9  degrees(N2-row): Tally{({4}, {2}) => 9}
+  pi2(Ker) == fam + ann(e1,e3)? true   fam+ann subset pi2(Ker)? true
+  T in pi2(Ker) + (e4)? true
+  T in fam + ann(e1,e3) + (e4)? true
+  T in ann(e1,e3) + (e4)? false   T in fam+(e4)? false
+  hilbert (2q-2): pi2(Ker) 10  fam+ann 10  ann13 16  fam 13
+q=9 kernel mingens: 9  degrees(N2-row): Tally{({10}, {8}) => 6 }
+                                              ({16}, {14}) => 3
+  pi2(Ker) == fam + ann(e1,e3)? true   fam+ann subset pi2(Ker)? true
+  T in pi2(Ker) + (e4)? true
+  T in fam + ann(e1,e3) + (e4)? true
+  T in ann(e1,e3) + (e4)? false   T in fam+(e4)? false
+  hilbert (2q-2): pi2(Ker) 319  fam+ann 319  ann13 486  fam 322
+EXIT 0 after 1s

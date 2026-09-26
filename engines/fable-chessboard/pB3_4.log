@@ -1,0 +1,23 @@
+L=4 m=1: (a ap)^(m+ell-1) x_C in Q + a,ap-families + a,ap-box: 1
+// ** redefining J ((m+ell-1) x_C in Q + a,ap-families + a,ap-box:", reduce((a*ap)^4*c1, SJ) == 0;) pB3_4.sing:6
+// ** redefining SJ (return(1);) pB3_4.sing:6
+L=4 m=2: (a ap)^(m+ell-1) x_C in Q + a,ap-families + a,ap-box: 1
+// ** redefining J ((m+ell-1) x_C in Q + a,ap-families + a,ap-box:", reduce((a*ap)^5*c1, SJ) == 0;) pB3_4.sing:7
+// ** redefining SJ (return(1);) pB3_4.sing:7
+L=4 m=3: (a ap)^(m+ell-1) x_C in Q + a,ap-families + a,ap-box: 1
+// ** redefining J ((m+ell-1) x_C in Q + a,ap-families + a,ap-box:", reduce((a*ap)^6*c1, SJ) == 0;) pB3_4.sing:8
+// ** redefining SJ (return(1);) pB3_4.sing:8
+L=4 m=4: (a ap)^(m+ell-1) x_C in Q + a,ap-families + a,ap-box: 1
+// ** redefining J ((m+ell-1) x_C in Q + a,ap-families + a,ap-box:", reduce((a*ap)^7*c1, SJ) == 0;) pB3_4.sing:9
+// ** redefining SJ (return(1);) pB3_4.sing:9
+L=4 m=5: (a ap)^(m+ell-1) x_C in Q + a,ap-families + a,ap-box: 1
+// ** redefining J ((m+ell-1) x_C in Q + a,ap-families + a,ap-box:", reduce((a*ap)^8*c1, SJ) == 0;) pB3_4.sing:10
+// ** redefining SJ (return(1);) pB3_4.sing:10
+L=4 m=6: (a ap)^(m+ell-1) x_C in Q + a,ap-families + a,ap-box: 1
+// ** redefining J ((m+ell-1) x_C in Q + a,ap-families + a,ap-box:", reduce((a*ap)^9*c1, SJ) == 0;) pB3_4.sing:11
+// ** redefining SJ (return(1);) pB3_4.sing:11
+L=4 m=7: (a ap)^(m+ell-1) x_C in Q + a,ap-families + a,ap-box: 1
+// ** redefining J (m+ell-1) x_C in Q + a,ap-families + a,ap-box:", reduce((a*ap)^10*c1, SJ) == 0;) pB3_4.sing:12
+// ** redefining SJ (return(1);) pB3_4.sing:12
+L=4 m=8: (a ap)^(m+ell-1) x_C in Q + a,ap-families + a,ap-box: 1
+VIGIA-FIN-OK exit=0 pico_kb=4032 t=0s

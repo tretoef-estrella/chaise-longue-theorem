@@ -1,0 +1,16 @@
+mu=(1, 1) n=6 q=9 vdim(tops) = 3930  sec 1
+  m1 = a^8 b^7 x_C                         deg 17  in gr I: 0
+  m1' = a^7 b^8 x_C                        deg 17  in gr I: 0
+  m2 = (ab)^8 e_{|C|-1}(C)                 deg 17  in gr I: 0
+  m1+m2 = a^8 D'_b                         deg 17  in gr I: 0
+  F2 = m1+m1'+m2                           deg 17  in gr I: 1
+  m1-m1'                                   deg 17  in gr I: 0
+  n1 = a^7 x_P (phi piece)                 deg 11  in gr I: 0
+  n2 = a^8 e_3(P)                          deg 11  in gr I: 0
+  phi_12                                   deg 11  in gr I: 1
+  a^8 x_P (N0 |A|=1)                       deg 12  in gr I: 1
+  b^7 x_C (slice top)                      deg 9  in gr I: 0
+  D_{2;34}                                 deg 10  in gr I: 0
+  a^8 D_{2;34}                             deg 18  in gr I: 1
+  a^7 b^7 x_C                              deg 16  in gr I: 0
+VIGIA-FIN-OK exit=0 pico_kb=6736 t=0s

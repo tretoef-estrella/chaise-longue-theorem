@@ -1,0 +1,13 @@
+ring r = (9,a), (x(1..5), t), dp;
+proc elv(list vl, int k) { if (k < 0) {return(0);} if (k == 0) {return(1);} if (k > size(vl)) {return(0);}
+  list w = delete(vl, size(vl)); return(elv(w, k) + vl[size(vl)] * elv(w, k-1)); }
+list X; int p; for (p = 1; p <= 5; p++) { X = insert(X, x(p), size(X)); }
+list SA = list(a^0, a^1);
+ideal I; int j; int rr; poly g;
+for (j = 1; j <= 7; j = j + 2) { g = 0; for (rr = 0; rr <= 2; rr++) { g = g + elv(SA, rr) * elv(X, j - rr); } I = I, homog(g, t); }
+for (j = 1; j <= 5; j++) { I = I, x(j)^9 - x(j)*t^8; }
+ideal G = std(I);
+poly F = (x(1)*x(2))^7 * elv(list(x(1),x(2),x(5)), 2);
+poly N = reduce(F, G); "deg F", deg(F); "NF(F) (should be divisible by t):"; N;
+poly Nt = subst(N, t, 1); "lift L = F - NF|t=1 has lower part -NF:"; "deg", deg(Nt); jet(Nt, deg(Nt)) - jet(Nt, deg(Nt)-1);
+quit;

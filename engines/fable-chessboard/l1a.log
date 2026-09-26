@@ -1,0 +1,3 @@
+q=3: ansatz gamma0 = e1^(q-3)*rho works with rho coefficients (r1^i r2^(d-i), i=0..d) = {2}
+q=9: ansatz gamma0 = e1^(q-3)*rho(r1,r2) FAILS
+FIN-OK

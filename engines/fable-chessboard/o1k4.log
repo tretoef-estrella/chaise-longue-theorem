@@ -1,0 +1,5 @@
+K'_4 at q=3 built, numgens 490
+dim S_8/K'_4 = 1016
+(O1_4) at q=3: z'*x_6*x_0^2 x_1^2 x_2^2 in K'_4: true
+all z'*M^(3)({0..6}) monomials in K'_4 at q=3: true
+EXIT 0 after 1s

@@ -1,0 +1,5 @@
+L=5 m=1: (a ap)^(m+ell-1) x_C in Q + a,ap-families + a,ap-box: 1
+// ** redefining J (ell-1) x_C in Q + a,ap-families + a,ap-box:", reduce((a*ap)^5*c1*c2, SJ) == 0;) pB3_5.sing:6
+// ** redefining SJ (return(1);) pB3_5.sing:6
+L=5 m=2: (a ap)^(m+ell-1) x_C in Q + a,ap-families + a,ap-box: 1
+VIGIA-FIN-OK exit=0 pico_kb=1056 t=0s

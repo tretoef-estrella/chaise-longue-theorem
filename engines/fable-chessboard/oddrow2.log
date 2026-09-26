@@ -1,0 +1,7 @@
+q-free part: 3 generators, degrees {-1, 4, 5}
+colengths: R'_2 = 380 ; L'+fam+qfree = 380
+remaining mingens beyond B: 0 ; degrees {}
+cand1 (y_b^3 y_j^(q-2)) subset R'_2: true ; B+cand1 colength 380
+cand2 (y_j^(q-2)[y_by_c(y_b+y_c)+y_j h_2(y_b,y_c)]) subset R'_2: true ; B+cand2 colength 380
+B + cand1 + cand2 colength 380 (target 380)
+EXIT 0 after 1s

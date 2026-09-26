@@ -1,0 +1,17 @@
+L=3 m0=0: a^m0 * Pi_L in (e_1,e_3,e_>=3) + (x_[n]minus beta) + (a^(m0+L)): 0
+L=3 m0=1: a^m0 * Pi_L in (e_1,e_3,e_>=3) + (x_[n]minus beta) + (a^(m0+L)): 1
+L=3 m0=2: a^m0 * Pi_L in (e_1,e_3,e_>=3) + (x_[n]minus beta) + (a^(m0+L)): 1
+L=3 m0=3: a^m0 * Pi_L in (e_1,e_3,e_>=3) + (x_[n]minus beta) + (a^(m0+L)): 1
+L=3 m0=4: a^m0 * Pi_L in (e_1,e_3,e_>=3) + (x_[n]minus beta) + (a^(m0+L)): 1
+L=3 m0=5: a^m0 * Pi_L in (e_1,e_3,e_>=3) + (x_[n]minus beta) + (a^(m0+L)): 1
+L=3 m0=6: a^m0 * Pi_L in (e_1,e_3,e_>=3) + (x_[n]minus beta) + (a^(m0+L)): 1
+L=3 m0=7: a^m0 * Pi_L in (e_1,e_3,e_>=3) + (x_[n]minus beta) + (a^(m0+L)): 1
+L=3 m0=8: a^m0 * Pi_L in (e_1,e_3,e_>=3) + (x_[n]minus beta) + (a^(m0+L)): 1
+  claim A at q=9: 1
+// ** redefining Aq (25*elv(list(b1,c1,c2),2)+a^26*elv(list(b1,c1,c2),1)) - a^26*c1*c2), SAq) == 0;) pB2_3.sing:16
+// ** redefining SAq (25*elv(list(b1,c1,c2),2)+a^26*elv(list(b1,c1,c2),1)) - a^26*c1*c2), SAq) == 0;) pB2_3.sing:16
+  claim A at q=27: 1
+// ** redefining Aq (79*elv(list(b1,c1,c2),2)+a^80*elv(list(b1,c1,c2),1)) - a^80*c1*c2), SAq) == 0;) pB2_3.sing:17
+// ** redefining SAq (79*elv(list(b1,c1,c2),2)+a^80*elv(list(b1,c1,c2),1)) - a^80*c1*c2), SAq) == 0;) pB2_3.sing:17
+  claim A at q=81: 1
+VIGIA-FIN-OK exit=0 pico_kb=656 t=0s

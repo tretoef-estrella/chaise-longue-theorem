@@ -1,0 +1,26 @@
+ring r = (9,a), (x(1..6), t), dp;
+proc elv(list vl, int k) { if (k < 0) {return(0);} if (k == 0) {return(1);} if (k > size(vl)) {return(0);}
+  list w = delete(vl, size(vl)); return(elv(w, k) + vl[size(vl)] * elv(w, k-1)); }
+list X; int p; for (p = 1; p <= 6; p++) { X = insert(X, x(p), size(X)); }
+list SA = list(a^0, a^1);
+ideal I; int j; int rr; poly g;
+for (j = 1; j <= 8; j = j + 2) { g = 0; for (rr = 0; rr <= 2; rr++) { g = g + elv(SA, rr) * elv(X, j - rr); } I = I, homog(g, t); }
+for (j = 1; j <= 6; j++) { I = I, x(j)^9 - x(j)*t^8; }
+int t0 = timer; ideal G = std(I);
+ideal T; int i; poly h; for (i = 1; i <= size(G); i++) { h = G[i]; while ((h != 0) && (subst(h, t, 0) == 0)) { h = h / t; } T = T, subst(h, t, 0); }
+ideal ST = std(T + ideal(t)); "mu=(1, 1) n=6 q=9 vdim(tops) =", vdim(ST), " sec", timer-t0;
+h = x(1)^8*x(2)^7*x(5)*x(6); "  m1 = a^8 b^7 x_C                         deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(1)^7*x(2)^8*x(5)*x(6); "  m1' = a^7 b^8 x_C                        deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = (x(1)*x(2))^8*(x(5)+x(6)); "  m2 = (ab)^8 e_{|C|-1}(C)                 deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(1)^8*x(2)^7*x(5)*x(6)+(x(1)*x(2))^8*(x(5)+x(6)); "  m1+m2 = a^8 D'_b                         deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(1)^8*x(2)^7*x(5)*x(6)+x(1)^7*x(2)^8*x(5)*x(6)+(x(1)*x(2))^8*(x(5)+x(6)); "  F2 = m1+m1'+m2                           deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(1)^8*x(2)^7*x(5)*x(6)-x(1)^7*x(2)^8*x(5)*x(6); "  m1-m1'                                   deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(1)^7*x(3)*x(4)*x(5)*x(6); "  n1 = a^7 x_P (phi piece)                 deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(1)^8*elv(list(x(3),x(4),x(5),x(6)),3); "  n2 = a^8 e_3(P)                          deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(1)^7*elv(list(x(1),x(3),x(4),x(5),x(6)),4); "  phi_12                                   deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(1)^8*x(3)*x(4)*x(5)*x(6); "  a^8 x_P (N0 |A|=1)                       deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(2)^7*x(5)*x(6); "  b^7 x_C (slice top)                      deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(2)^7*elv(list(x(1),x(2),x(5),x(6)),3); "  D_{2;34}                                 deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(1)^8*x(2)^7*elv(list(x(1),x(2),x(5),x(6)),3); "  a^8 D_{2;34}                             deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+h = x(1)^7*x(2)^7*x(5)*x(6); "  a^7 b^7 x_C                              deg", deg(h), " in gr I:", reduce(h, ST) == 0;
+quit;
