@@ -1,0 +1,16 @@
+m=3 d=1 s=0: |Gamma_Js|=4 pred Q_s*(m-1)^(d-s)=4 OK
+m=3 d=1 s=1: |Gamma_Js|=6 pred Q_s*(m-1)^(d-s)=6 OK
+m=3 d=2 s=0: |Gamma_Js|=8 pred Q_s*(m-1)^(d-s)=8 OK
+m=3 d=2 s=1: |Gamma_Js|=12 pred Q_s*(m-1)^(d-s)=12 OK
+m=3 d=2 s=2: |Gamma_Js|=20 pred Q_s*(m-1)^(d-s)=20 OK
+m=3 d=3 s=0: |Gamma_Js|=16 pred Q_s*(m-1)^(d-s)=16 OK
+m=3 d=3 s=1: |Gamma_Js|=24 pred Q_s*(m-1)^(d-s)=24 OK
+m=3 d=3 s=2: |Gamma_Js|=40 pred Q_s*(m-1)^(d-s)=40 OK
+m=3 d=3 s=3: |Gamma_Js|=70 pred Q_s*(m-1)^(d-s)=70 OK
+m=5 d=1 s=0: |Gamma_Js|=16 pred Q_s*(m-1)^(d-s)=16 OK
+m=5 d=1 s=1: |Gamma_Js|=36 pred Q_s*(m-1)^(d-s)=36 OK
+m=5 d=2 s=0: |Gamma_Js|=64 pred Q_s*(m-1)^(d-s)=64 OK
+m=5 d=2 s=1: |Gamma_Js|=144 pred Q_s*(m-1)^(d-s)=144 OK
+m=5 d=2 s=2: |Gamma_Js|=400 pred Q_s*(m-1)^(d-s)=400 OK
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=6656 t=0s

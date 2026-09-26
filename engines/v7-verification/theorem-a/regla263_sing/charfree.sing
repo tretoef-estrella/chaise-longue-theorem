@@ -1,0 +1,17 @@
+// regla263 — the proof of Theorem Gamma never uses char 3 (only 1/2) nor q = p^v (only q odd).
+// PREDICTION (falsifiable): dim_K K[x_1..x_n]/((e_odd)+box_q) = |W_empty(n)| for EVERY field of char != 2 and EVERY odd q.
+// Control: char 2 must be allowed to differ (the proof divides by 2).
+proc esym(int k, int n) { poly s=0; int i; list L; if(k==0){return(1);} 
+  // via generating function
+  ring RR=0,(t),dp; setring RR; return(0); }
+proc run(int ch, int n, int q) {
+  ring R=ch,(x(1..n)),dp;
+  poly E=1; int i; ring RT=ch,(x(1..n),t),dp; poly G=1; for(i=1;i<=n;i++){G=G*(1+var(i)*t);}
+  matrix C=coeffs(G,t); ideal I; for(i=1;i<=n;i=i+2){ I=I+C[i+1,1]; } for(i=1;i<=n;i++){I=I+var(i)^q;} I=I+t;
+  I=std(I); return(vdim(I));
+}
+int n; int q; int ch; list CH=0,3,5,7,11,2;
+for(int a=1;a<=size(CH);a++){ ch=CH[a];
+  for(n=2;n<=6;n=n+2){ for(q=3;q<=9;q=q+2){ print("char="+string(ch)+" n="+string(n)+" q="+string(q)+" dim="+string(run(ch,n,q))); } }
+}
+quit;

@@ -1,0 +1,7 @@
+PARENT mu=(2,1) n1=4 q=81 TOTAL_BAD=0
+real 0.06
+PARENT mu=(1,1) n1=4 q=81 TOTAL_BAD=0
+real 0.08
+PARENT mu=(3,) n1=4 q=81 TOTAL_BAD=0
+real 0.06
+VIGIA-FIN-OK exit=0 pico_kb=2208 t=0s

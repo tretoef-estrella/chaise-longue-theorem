@@ -1,0 +1,25 @@
+(n,m)=(10,3) k=5: DIM-dim_C=924  Q_k(m)=924  OK
+(n,m)=(6,5) k=3: DIM-dim_C=4900  Q_k(m)=4900  OK
+(n,m)=(6,7) k=3: DIM-dim_C=44730  Q_k(m)=44730  OK
+(n,m)=(6,9) k=3: DIM-dim_C=190120  Q_k(m)=190120  OK
+(n,m)=(8,5) k=4: DIM-dim_C=63504  Q_k(m)=63504  OK
+(n,m)=(4,13) k=2: DIM-dim_C=19920  Q_k(m)=19920  OK
+(n,m)=(4,17) k=2: DIM-dim_C=50560  Q_k(m)=50560  OK
+(n,m)=(4,19) k=2: DIM-dim_C=73620  Q_k(m)=73620  OK
+(n,m)=(4,3) k=2: DIM-dim_C=20  Q_k(m)=20  OK
+(n,m)=(6,3) k=3: DIM-dim_C=70  Q_k(m)=70  OK
+(n,m)=(4,5) k=2: DIM-dim_C=400  Q_k(m)=400  OK
+(n,m)=(4,7) k=2: DIM-dim_C=1860  Q_k(m)=1860  OK
+(n,m)=(8,3) k=4: DIM-dim_C=252  Q_k(m)=252  OK
+(n,m)=(4,9) k=2: DIM-dim_C=5120  Q_k(m)=5120  OK
+(n,m)=(4,11) k=2: DIM-dim_C=10900  Q_k(m)=10900  OK
+(n,m)=(4,15) k=2: DIM-dim_C=32900  Q_k(m)=32900  OK
+(n,m)=(6,11) k=3: DIM-dim_C=551950  Q_k(m)=551950  OK
+(n,m)=(12,3) k=6: DIM-dim_C=3432  Q_k(m)=3432  OK
+(n,m)=(6,13) k=3: DIM-dim_C=1281420  Q_k(m)=1281420  OK
+(n,m)=(8,7) k=4: DIM-dim_C=1172556  Q_k(m)=1172556  OK
+(n,m)=(10,5) k=5: DIM-dim_C=853776  Q_k(m)=853776  OK
+(n,m)=(14,3) k=7: DIM-dim_C=12870  Q_k(m)=12870  OK
+OK 22 FAIL 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=1712 t=0s

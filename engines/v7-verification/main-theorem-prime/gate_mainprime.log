@@ -1,0 +1,12 @@
+m=3 p=2: dim quotient = 21, predicted m^3-Q_1(m) = 21  OK
+m=3 p=3: dim quotient = 21, predicted m^3-Q_1(m) = 21  OK
+m=3 p=5: dim quotient = 21, predicted m^3-Q_1(m) = 21  OK
+m=5 p=2: dim quotient = 89, predicted m^3-Q_1(m) = 89  OK
+m=5 p=3: dim quotient = 89, predicted m^3-Q_1(m) = 89  OK
+m=5 p=5: dim quotient = 89, predicted m^3-Q_1(m) = 89  OK
+m=5 p=7: dim quotient = 89, predicted m^3-Q_1(m) = 89  OK
+m=7 p=2: dim quotient = 253, predicted m^3-Q_1(m) = 253  OK
+m=7 p=3: dim quotient = 253, predicted m^3-Q_1(m) = 253  OK
+m=7 p=7: dim quotient = 253, predicted m^3-Q_1(m) = 253  OK
+m=9 p=2: dim quotient = 561, predicted m^3-Q_1(m) = 561  OK
+m=9 p=3: dim quotient = 561, predicted m^3-Q_1(m) = 561  OK

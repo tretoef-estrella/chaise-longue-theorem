@@ -1,0 +1,6 @@
+INDICES q=3 |mu|<=12 objects=1106 uncovered=0 []
+INDICES q=9 |mu|<=14 objects=74667 uncovered=0 []
+INDICES q=27 |mu|<=14 objects=397667 uncovered=0 []
+INDICES q=81 |mu|<=14 objects=1200281 uncovered=0 []
+FIN-OK I
+VIGIA-FIN-OK exit=0 pico_kb=12880 t=2s

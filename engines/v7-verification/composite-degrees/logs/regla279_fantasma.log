@@ -1,0 +1,11 @@
+PHANTOM (a,q,p)=(1,3,3)  dim ideal=15  count=15  EQUAL
+PHANTOM (a,q,p)=(2,3,3)  dim ideal=93  count=93  EQUAL
+PHANTOM (a,q,p)=(3,3,3)  dim ideal=639  count=639  EQUAL
+PHANTOM (a,q,p)=(1,5,5)  dim ideal=45  count=45  EQUAL
+PHANTOM (a,q,p)=(2,5,5)  dim ideal=545  count=545  EQUAL
+PHANTOM (a,q,p)=(3,5,5)  dim ideal=7885  count=7885  EQUAL
+PHANTOM (a,q,p)=(1,9,3)  dim ideal=153  count=153  EQUAL
+PHANTOM (a,q,p)=(2,9,3)  dim ideal=3681  count=3681  EQUAL
+PHANTOM (a,q,p)=(2,7,7)  dim ideal=1645  count=1645  EQUAL
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=118944 t=0s

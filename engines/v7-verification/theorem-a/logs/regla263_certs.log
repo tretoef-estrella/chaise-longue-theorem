@@ -1,0 +1,169 @@
+RAISE q=9 n=5 mu=(2, 1) w=1 A=[] B=[0] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=5 mu=(2, 1) w=1 A=[] B=[0] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=5 mu=(2, 1) w=1 A=[1] B=[2, 3] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=5 mu=(2, 1) w=1 A=[3] B=[1, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=5 mu=(2, 1) w=1 A=[0, 1] B=[2, 3, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=5 mu=(2, 1) w=1 A=[2, 4] B=[0, 1, 3] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=5 mu=(2, 1) w=2 A=[] B=[0, 3] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=5 mu=(2, 1) w=2 A=[] B=[1, 2] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=5 mu=(2, 1) w=2 A=[4] B=[1, 2, 3] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=5 mu=(2, 1) w=2 A=[4] B=[0, 2, 3] expansion_exact=True istar=8 target_nonzero=True
+NEWCLASS q=9 n=5 mu=(2, 1) A=[] B=[] identity=True (#lhs 10)
+NEWCLASS q=9 n=5 mu=(2, 1) A=[3] B=[1] identity=True (#lhs 8)
+NEWCLASS q=9 n=5 mu=(2, 1) A=[2, 3] B=[1, 4] identity=True (#lhs 7)
+DESCENT q=9 n=5 a=1 s=2 A=[3] B=[1, 4] exact=True
+DESCENT q=9 n=5 a=2 s=3 A=[3] B=[0, 1] exact=True
+DESCENT q=9 n=5 a=3 s=3 A=[3] B=[1, 4] exact=True
+DESCENT q=9 n=5 a=2 s=1 A=[2] B=[0, 4] exact=True
+RAISE q=9 n=6 mu=(3, 1) w=1 A=[] B=[0] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=1 A=[] B=[3] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=1 A=[2] B=[0, 1] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=1 A=[4] B=[1, 2] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=1 A=[2, 3] B=[1, 4, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=1 A=[0, 2] B=[1, 3, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=2 A=[] B=[0, 2] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=2 A=[] B=[1, 2] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=2 A=[0] B=[3, 4, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=2 A=[5] B=[0, 2, 4] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=2 A=[0, 1] B=[2, 3, 4, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=2 A=[1, 5] B=[0, 2, 3, 4] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=3 A=[] B=[0, 4, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=3 A=[] B=[1, 2, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=3 A=[1] B=[0, 3, 4, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 1) w=3 A=[3] B=[0, 1, 2, 5] expansion_exact=True istar=8 target_nonzero=True
+NEWCLASS q=9 n=6 mu=(3, 1) A=[] B=[] identity=True (#lhs 15)
+NEWCLASS q=9 n=6 mu=(3, 1) A=[0] B=[5] identity=True (#lhs 16)
+NEWCLASS q=9 n=6 mu=(3, 1) A=[3, 5] B=[1, 2] identity=True (#lhs 16)
+DESCENT q=9 n=6 a=1 s=2 A=[1] B=[0, 4] exact=True
+DESCENT q=9 n=6 a=2 s=3 A=[4] B=[0, 3] exact=True
+DESCENT q=9 n=6 a=3 s=3 A=[2] B=[0, 4] exact=True
+DESCENT q=9 n=6 a=2 s=1 A=[0] B=[2, 3] exact=True
+RAISE q=9 n=6 mu=(2, 2) w=1 A=[] B=[3] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(2, 2) w=1 A=[] B=[2] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(2, 2) w=1 A=[3] B=[4, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(2, 2) w=1 A=[1] B=[0, 2] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(2, 2) w=1 A=[3, 5] B=[0, 2, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(2, 2) w=1 A=[0, 3] B=[1, 2, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(2, 2) w=2 A=[] B=[2, 3] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(2, 2) w=2 A=[] B=[1, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(2, 2) w=2 A=[5] B=[0, 2, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(2, 2) w=2 A=[5] B=[1, 3, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(2, 2) w=2 A=[0, 4] B=[1, 2, 3, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(2, 2) w=2 A=[3, 5] B=[0, 1, 2, 4] expansion_exact=True istar=7 target_nonzero=True
+NEWCLASS q=9 n=6 mu=(2, 2) A=[] B=[] identity=True (#lhs 15)
+NEWCLASS q=9 n=6 mu=(2, 2) A=[3] B=[4] identity=True (#lhs 16)
+NEWCLASS q=9 n=6 mu=(2, 2) A=[1, 2] B=[0, 4] identity=True (#lhs 16)
+DESCENT q=9 n=6 a=1 s=2 A=[5] B=[0, 2] exact=True
+DESCENT q=9 n=6 a=2 s=3 A=[5] B=[1, 2] exact=True
+DESCENT q=9 n=6 a=3 s=3 A=[5] B=[3, 4] exact=True
+DESCENT q=9 n=6 a=2 s=1 A=[3] B=[1, 5] exact=True
+RAISE q=9 n=6 mu=(3, 2) w=1 A=[] B=[0] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=1 A=[] B=[2] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=1 A=[5] B=[0, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=1 A=[0] B=[2, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=1 A=[1, 2] B=[0, 3, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=1 A=[2, 3] B=[0, 1, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=2 A=[] B=[0, 3] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=2 A=[] B=[3, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=2 A=[3] B=[0, 1, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=2 A=[1] B=[2, 3, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=2 A=[0, 5] B=[1, 2, 3, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=2 A=[3, 4] B=[0, 1, 2, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=3 A=[] B=[0, 4, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=3 A=[] B=[1, 2, 3] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=3 A=[0] B=[1, 2, 3, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(3, 2) w=3 A=[1] B=[2, 3, 4, 5] expansion_exact=True istar=8 target_nonzero=True
+NEWCLASS q=9 n=6 mu=(3, 2) A=[] B=[] identity=True (#lhs 6)
+NEWCLASS q=9 n=6 mu=(3, 2) A=[1] B=[2] identity=True (#lhs 16)
+NEWCLASS q=9 n=6 mu=(3, 2) A=[2, 5] B=[0, 1] identity=True (#lhs 20)
+DESCENT q=9 n=6 a=1 s=2 A=[0] B=[1, 4] exact=True
+DESCENT q=9 n=6 a=2 s=3 A=[2] B=[1, 3] exact=True
+DESCENT q=9 n=6 a=3 s=3 A=[4] B=[3, 5] exact=True
+DESCENT q=9 n=6 a=2 s=1 A=[2] B=[0, 1] exact=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=1 A=[] B=[0] expansion_exact=True istar=6 target_nonzero=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=1 A=[] B=[5] expansion_exact=True istar=6 target_nonzero=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=1 A=[5] B=[1, 2] expansion_exact=True istar=6 target_nonzero=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=1 A=[0] B=[2, 6] expansion_exact=True istar=6 target_nonzero=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=1 A=[1, 5] B=[0, 3, 6] expansion_exact=True istar=6 target_nonzero=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=1 A=[2, 3] B=[0, 1, 4] expansion_exact=True istar=6 target_nonzero=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=2 A=[] B=[0, 1] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=2 A=[] B=[4, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=2 A=[6] B=[0, 2, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=2 A=[6] B=[0, 1, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=2 A=[2, 6] B=[1, 3, 4, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=7 mu=(2, 2, 1) w=2 A=[0, 6] B=[1, 2, 3, 4] expansion_exact=True istar=7 target_nonzero=True
+NEWCLASS q=9 n=7 mu=(2, 2, 1) A=[] B=[] identity=True (#lhs 21)
+NEWCLASS q=9 n=7 mu=(2, 2, 1) A=[0] B=[1] identity=True (#lhs 32)
+NEWCLASS q=9 n=7 mu=(2, 2, 1) A=[1, 5] B=[0, 2] identity=True (#lhs 36)
+DESCENT q=9 n=7 a=1 s=2 A=[1] B=[3, 4] exact=True
+DESCENT q=9 n=7 a=2 s=3 A=[6] B=[1, 5] exact=True
+DESCENT q=9 n=7 a=3 s=3 A=[4] B=[3, 6] exact=True
+DESCENT q=9 n=7 a=2 s=1 A=[5] B=[2, 4] exact=True
+RAISE q=27 n=5 mu=(3, 1) w=1 A=[] B=[2] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=1 A=[] B=[4] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=1 A=[1] B=[2, 4] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=1 A=[0] B=[1, 4] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=1 A=[0, 2] B=[1, 3, 4] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=1 A=[2, 4] B=[0, 1, 3] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=2 A=[] B=[1, 3] expansion_exact=True istar=26 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=2 A=[] B=[0, 2] expansion_exact=True istar=26 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=2 A=[4] B=[1, 2, 3] expansion_exact=True istar=26 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=2 A=[3] B=[1, 2, 4] expansion_exact=True istar=26 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=3 A=[] B=[2, 3, 4] expansion_exact=True istar=26 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=3 A=[] B=[1, 3, 4] expansion_exact=True istar=26 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=3 A=[0] B=[1, 2, 3, 4] expansion_exact=True istar=26 target_nonzero=True
+RAISE q=27 n=5 mu=(3, 1) w=3 A=[2] B=[0, 1, 3, 4] expansion_exact=True istar=26 target_nonzero=True
+NEWCLASS q=27 n=5 mu=(3, 1) A=[] B=[] identity=True (#lhs 5)
+NEWCLASS q=27 n=5 mu=(3, 1) A=[2] B=[0] identity=True (#lhs 8)
+NEWCLASS q=27 n=5 mu=(3, 1) A=[0, 1] B=[2, 3] identity=True (#lhs 9)
+DESCENT q=27 n=5 a=1 s=2 A=[4] B=[0, 2] exact=True
+DESCENT q=27 n=5 a=2 s=3 A=[2] B=[0, 1] exact=True
+DESCENT q=27 n=5 a=3 s=3 A=[0] B=[1, 3] exact=True
+DESCENT q=27 n=5 a=2 s=1 A=[1] B=[0, 3] exact=True
+RAISE q=27 n=5 mu=(2, 2) w=1 A=[] B=[3] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(2, 2) w=1 A=[] B=[1] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(2, 2) w=1 A=[4] B=[1, 2] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(2, 2) w=1 A=[4] B=[1, 2] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(2, 2) w=1 A=[1, 3] B=[0, 2, 4] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(2, 2) w=1 A=[0, 4] B=[1, 2, 3] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(2, 2) w=2 A=[] B=[0, 1] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(2, 2) w=2 A=[] B=[1, 4] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(2, 2) w=2 A=[1] B=[0, 2, 4] expansion_exact=True istar=25 target_nonzero=True
+RAISE q=27 n=5 mu=(2, 2) w=2 A=[1] B=[2, 3, 4] expansion_exact=True istar=25 target_nonzero=True
+NEWCLASS q=27 n=5 mu=(2, 2) A=[] B=[] identity=True (#lhs 5)
+NEWCLASS q=27 n=5 mu=(2, 2) A=[4] B=[0] identity=True (#lhs 8)
+NEWCLASS q=27 n=5 mu=(2, 2) A=[0, 4] B=[2, 3] identity=True (#lhs 9)
+DESCENT q=27 n=5 a=1 s=2 A=[3] B=[1, 4] exact=True
+DESCENT q=27 n=5 a=2 s=3 A=[0] B=[3, 4] exact=True
+DESCENT q=27 n=5 a=3 s=3 A=[0] B=[2, 3] exact=True
+DESCENT q=27 n=5 a=2 s=1 A=[4] B=[1, 3] exact=True
+RAISE q=9 n=6 mu=(4, 1) w=1 A=[] B=[0] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=1 A=[] B=[5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=1 A=[3] B=[0, 4] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=1 A=[3] B=[1, 2] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=1 A=[0, 4] B=[2, 3, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=1 A=[0, 3] B=[2, 4, 5] expansion_exact=True istar=7 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=2 A=[] B=[1, 2] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=2 A=[] B=[0, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=2 A=[2] B=[0, 3, 4] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=2 A=[4] B=[0, 1, 2] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=2 A=[1, 3] B=[0, 2, 4, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=2 A=[3, 4] B=[0, 1, 2, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=3 A=[] B=[0, 3, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=3 A=[] B=[0, 2, 3] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=3 A=[5] B=[0, 2, 3, 4] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=3 A=[1] B=[0, 2, 3, 4] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=4 A=[] B=[0, 2, 4, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=4 A=[] B=[2, 3, 4, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=4 A=[3] B=[0, 1, 2, 4, 5] expansion_exact=True istar=8 target_nonzero=True
+RAISE q=9 n=6 mu=(4, 1) w=4 A=[2] B=[0, 1, 3, 4, 5] expansion_exact=True istar=8 target_nonzero=True
+NEWCLASS q=9 n=6 mu=(4, 1) A=[] B=[] identity=True (#lhs 6)
+NEWCLASS q=9 n=6 mu=(4, 1) A=[5] B=[1] identity=True (#lhs 16)
+NEWCLASS q=9 n=6 mu=(4, 1) A=[0, 1] B=[2, 5] identity=True (#lhs 20)
+DESCENT q=9 n=6 a=1 s=2 A=[3] B=[4, 5] exact=True
+DESCENT q=9 n=6 a=2 s=3 A=[2] B=[0, 1] exact=True
+DESCENT q=9 n=6 a=3 s=3 A=[3] B=[0, 4] exact=True
+DESCENT q=9 n=6 a=2 s=1 A=[0] B=[1, 5] exact=True
+X cases=166 fails=0
+FIN-OK X
+VIGIA-FIN-OK exit=0 pico_kb=49072 t=2s

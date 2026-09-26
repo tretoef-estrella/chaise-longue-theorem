@@ -1,0 +1,45 @@
+mu=(3,) n=6 q=27 vdim=1490 W=1490 ngens=768
+real 29.67
+mu=(2,1) n=6 q=27 vdim=4320 W=4320 ngens=552
+real 37.68
+mu=(1,1,1) n=6 q=27 vdim=8400 W=8400 ngens=426
+real 35.49
+mu=(4,) n=6 q=27 vdim=381 W=381 ngens=1175
+real 2.31
+mu=(3,1) n=6 q=27 vdim=1470 W=1470 ngens=909
+real 38.83
+mu=(2,2) n=6 q=27 vdim=2190 W=2190 ngens=819
+real 47.24
+mu=(2,1,1) n=6 q=27 vdim=4260 W=4260 ngens=693
+real 50.03
+mu=(1,1,1,1) n=6 q=27 vdim=8280 W=8280 ngens=567
+real 48.99
+mu=(5,) n=6 q=27 vdim=6 W=6 ngens=1603
+real 3.42
+mu=(4,1) n=6 q=27 vdim=30 W=30 ngens=1316
+real 13.51
+mu=(3,2) n=6 q=27 vdim=60 W=60 ngens=1176
+real 13.18
+mu=(3,1,1) n=6 q=27 vdim=120 W=120 ngens=1050
+real 15.29
+mu=(2,2,1) n=6 q=27 vdim=180 W=180 ngens=960
+real 15.00
+mu=(2,1,1,1) n=6 q=27 vdim=360 W=360 ngens=834
+real 13.86
+mu=(1,1,1,1,1) n=6 q=27 vdim=720 W=720 ngens=708
+real 13.00
+mu=(6,) n=6 q=27 vdim=1 W=1 ngens=2037
+real 3.72
+mu=(5,1) n=6 q=27 vdim=6 W=6 ngens=1744
+real 4.15
+mu=(4,2) n=6 q=27 vdim=15 W=15 ngens=1583
+real 8.27
+mu=(4,1,1) n=6 q=27 vdim=30 W=30 ngens=1457
+real 16.62
+mu=(3,3) n=6 q=27 vdim=20 W=20 ngens=1533
+real 8.12
+mu=(3,2,1) n=6 q=27 vdim=60 W=60 ngens=1317
+real 16.08
+mu=(2,2,2) n=6 q=27 vdim=90 W=90 ngens=1227
+real 15.66
+VIGIA-FIN-OK exit=0 pico_kb=14608 t=452s

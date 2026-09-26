@@ -1,0 +1,6 @@
+PARENT mu=(3,1) n1=6 q=9 TOTAL_BAD=0
+real 0.62
+row 0 child (3,) ngen 281 bad=65
+PARENT mu=(3,1) n1=6 q=9 TOTAL_BAD=65
+real 0.60
+VIGIA-FIN-OK exit=0 pico_kb=14752 t=1s

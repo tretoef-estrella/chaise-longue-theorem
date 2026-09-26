@@ -1,0 +1,189 @@
+(eval):ulimit:1: setrlimit failed: invalid argument
+G1  m=15 p=3: dim_F_p (psi_J : J) F_p[G] = 546   |Gamma| = 3(m-1)(m-2) = 546   quotient dim = 2829   time 1.4s  maxrss 223 MB
+(eval):ulimit:1: setrlimit failed: invalid argument
+G1  m=15 p=5: dim_F_p (psi_J : J) F_p[G] = 546   |Gamma| = 3(m-1)(m-2) = 546   quotient dim = 2829   time 1.3s  maxrss 206 MB
+(eval):ulimit:1: setrlimit failed: invalid argument
+G1  m=15 p=31: dim_F_p (psi_J : J) F_p[G] = 546   |Gamma| = 3(m-1)(m-2) = 546   quotient dim = 2829   time 1.4s  maxrss 155 MB
+G1  m=3 p=3: dim_F_p (psi_J : J) F_p[G] = 6   |Gamma| = 3(m-1)(m-2) = 6   quotient dim = 21   time 0.0s  maxrss 21 MB
+G1  m=5 p=5: dim_F_p (psi_J : J) F_p[G] = 36   |Gamma| = 3(m-1)(m-2) = 36   quotient dim = 89   time 0.0s  maxrss 21 MB
+G1  m=7 p=7: dim_F_p (psi_J : J) F_p[G] = 90   |Gamma| = 3(m-1)(m-2) = 90   quotient dim = 253   time 0.0s  maxrss 22 MB
+G1  m=9 p=3: dim_F_p (psi_J : J) F_p[G] = 168   |Gamma| = 3(m-1)(m-2) = 168   quotient dim = 561   time 0.0s  maxrss 24 MB
+G1  m=21 p=3: dim_F_p (psi_J : J) F_p[G] = 1140   |Gamma| = 3(m-1)(m-2) = 1140   quotient dim = 8121   time 19.8s  maxrss 596 MB
+G1  m=21 p=7: dim_F_p (psi_J : J) F_p[G] = 1140   |Gamma| = 3(m-1)(m-2) = 1140   quotient dim = 8121   time 18.9s  maxrss 576 MB
+G1  m=21 p=43: dim_F_p (psi_J : J) F_p[G] = 1140   |Gamma| = 3(m-1)(m-2) = 1140   quotient dim = 8121   time 17.9s  maxrss 617 MB
+|Gamma| at (m,n)=(15,2) by enumeration: 546
+  p=3 (q=3, r=5): compatible colourings 61; sum_c prod(block counts) = 546; colour-1 counts {0: 1, 2: 2, 4: 6}, N {0: 1, 1: 3}, N' {0: 3, 1: 15}   MATCH
+  p=5 (q=5, r=3): compatible colourings 19; sum_c prod(block counts) = 546; colour-1 counts {0: 1, 2: 4, 4: 36}, N {0: 1, 1: 5}, N' {0: 5, 1: 45}   MATCH
+time 0.0s
+|Gamma| at (m,n)=(21,2) by enumeration: 1140
+  p=3 (q=3, r=7): compatible colourings 127; sum_c prod(block counts) = 1140; colour-1 counts {0: 1, 2: 2, 4: 6}, N {0: 1, 1: 3}, N' {0: 3, 1: 15}   MATCH
+  p=7 (q=7, r=3): compatible colourings 19; sum_c prod(block counts) = 1140; colour-1 counts {0: 1, 2: 6, 4: 90}, N {0: 1, 1: 7}, N' {0: 7, 1: 91}   MATCH
+time 0.0s
+|Gamma| at (m,n)=(45,2) by enumeration: 5676
+  p=3 (q=9, r=5): compatible colourings 61; sum_c prod(block counts) = 5676; colour-1 counts {0: 1, 2: 8, 4: 168}, N {0: 1, 1: 9}, N' {0: 9, 1: 153}   MATCH
+  p=5 (q=5, r=9): compatible colourings 217; sum_c prod(block counts) = 5676; colour-1 counts {0: 1, 2: 4, 4: 36}, N {0: 1, 1: 5}, N' {0: 5, 1: 45}   MATCH
+time 0.1s
+|Gamma| at (m,n)=(15,4) by enumeration: 32900
+  p=3 (q=3, r=5): compatible colourings 1001; sum_c prod(block counts) = 32900; colour-1 counts {0: 1, 2: 2, 4: 6, 6: 20}, N {0: 1, 1: 3, 2: 15}, N' {0: 3, 1: 15, 2: 93}   MATCH
+  p=5 (q=5, r=3): compatible colourings 141; sum_c prod(block counts) = 32900; colour-1 counts {0: 1, 2: 4, 4: 36, 6: 400}, N {0: 1, 1: 5, 2: 45}, N' {0: 5, 1: 45, 2: 545}   MATCH
+time 0.7s
+G3 m=15 p=3 (q=3, r=5, field F_81): compatible colourings 61; incompatible colourings with a non-zero image: 0; per-colouring mismatches: 0; sum of dims = 546  (|Gamma| = 546)   time 0.1s maxrss 22 MB
+  colouring types (|E|, 0 in E, pair blocks (size, 0 in block)) -> count: {(4, True, ()): 1, (2, False, ((1, True),)): 12, (2, True, ((1, False),)): 12, (0, False, ((2, True),)): 12, (0, False, ((1, False), (1, True))): 24}
+G3 m=15 p=5 (q=5, r=3, field F_25): compatible colourings 19; incompatible colourings with a non-zero image: 0; per-colouring mismatches: 0; sum of dims = 546  (|Gamma| = 546)   time 0.1s maxrss 22 MB
+  colouring types (|E|, 0 in E, pair blocks (size, 0 in block)) -> count: {(4, True, ()): 1, (2, False, ((1, True),)): 6, (2, True, ((1, False),)): 6, (0, False, ((2, True),)): 6}
+G3 m=21 p=7 (q=7, r=3, field F_7): compatible colourings 19; incompatible colourings with a non-zero image: 0; per-colouring mismatches: 0; sum of dims = 1140  (|Gamma| = 1140)   time 0.3s maxrss 22 MB
+  colouring types (|E|, 0 in E, pair blocks (size, 0 in block)) -> count: {(4, True, ()): 1, (2, False, ((1, True),)): 6, (2, True, ((1, False),)): 6, (0, False, ((2, True),)): 6}
+G3 m=21 p=3 (q=3, r=7, field F_729): compatible colourings 127; incompatible colourings with a non-zero image: 0; per-colouring mismatches: 0; sum of dims = 1140  (|Gamma| = 1140)   time 0.5s maxrss 86 MB
+  colouring types (|E|, 0 in E, pair blocks (size, 0 in block)) -> count: {(4, True, ()): 1, (2, False, ((1, True),)): 18, (2, True, ((1, False),)): 18, (0, False, ((2, True),)): 18, (0, False, ((1, False), (1, True))): 72}
+(k,q)=(1,3) over F_3: dim = 6 (expected Q_k(q) = 6) graded [2, 3, 1]  0.0s  OK
+(k,q)=(2,3) over F_3: dim = 20 (expected Q_k(q) = 20) graded [5, 9, 5, 1]  0.0s  OK
+(k,q)=(3,3) over F_3: dim = 70 (expected Q_k(q) = 70) graded [14, 28, 20, 7, 1]  0.0s  OK
+(k,q)=(1,5) over F_5: dim = 36 (expected Q_k(q) = 36) graded [3, 6, 8, 9, 6, 3, 1]  0.0s  OK
+(k,q)=(1,9) over F_3: dim = 168 (expected Q_k(q) = 168) graded [3, 6, 9, 12, 15, 18, 20, 21, 18, 15, 12, 9, 6, 3, 1]  0.0s  OK
+(k,q)=(2,5) over F_5: dim = 400 (expected Q_k(q) = 400) graded [14, 40, 66, 85, 81, 59, 34, 15, 5, 1]  0.0s  OK
+(k,q)=(1,7) over F_7: dim = 90 (expected Q_k(q) = 90) graded [3, 6, 9, 12, 14, 15, 12, 9, 6, 3, 1]  0.0s  OK
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '1 3 3'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '2 3 3'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '3 3 3'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '4 3 3'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '2 5 5'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '3 5 5'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '2 7 7'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '2 9 3'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '3 9 3'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '1 3 3'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '2 3 3'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '3 3 3'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '1 5 5'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '2 5 5'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '3 5 5'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '1 9 3'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '2 9 3'
+Traceback (most recent call last):
+  File "/Users/rafa/Desktop/FABLE_GRADO_COMPUESTO/bipartite.py", line 63, in <module>
+    kind, a, q, p = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
+ValueError: invalid literal for int() with base 10: '2 7 7'
+bal (a,q)=(1,3) over F_3: dim I_1 = 3   count = 3   graded [1, 1, 1] (from degree 2)   time 0.0s maxrss 21 MB   EQUAL
+bal (a,q)=(2,3) over F_3: dim I_2 = 15   count = 15   graded [2, 4, 5, 3, 1] (from degree 4)   time 0.0s maxrss 21 MB   EQUAL
+bal (a,q)=(3,3) over F_3: dim I_3 = 93   count = 93   graded [6, 17, 26, 24, 14, 5, 1] (from degree 6)   time 0.0s maxrss 21 MB   EQUAL
+bal (a,q)=(4,3) over F_3: dim I_4 = 639   count = 639   graded [23, 80, 143, 163, 126, 69, 27, 7, 1] (from degree 8)   time 0.1s maxrss 27 MB   EQUAL
+bal (a,q)=(2,5) over F_5: dim I_2 = 45   count = 45   graded [2, 4, 6, 8, 9, 7, 5, 3, 1] (from degree 8)   time 0.0s maxrss 21 MB   EQUAL
+bal (a,q)=(3,5) over F_5: dim I_3 = 545   count = 545   graded [6, 18, 36, 59, 80, 89, 86, 72, 50, 29, 14, 5, 1] (from degree 12)   time 0.1s maxrss 25 MB   EQUAL
+bal (a,q)=(2,7) over F_7: dim I_2 = 91   count = 91   graded [2, 4, 6, 8, 10, 12, 13, 11, 9, 7, 5, 3, 1] (from degree 12)   time 0.0s maxrss 21 MB   EQUAL
+bal (a,q)=(2,9) over F_3: dim I_2 = 153   count = 153   graded [2, 4, 6, 8, 10, 12, 14, 16, 17, 15, 13, 11, 9, 7, 5, 3, 1] (from degree 16)   time 0.0s maxrss 22 MB   EQUAL
+bal (a,q)=(3,9) over F_3: dim I_3 = 3681   count = 3681   graded [6, 18, 36, 60, 90, 126, 168, 215, 260, 293, 314, 323, 320, 305, 278, 240, 194, 149, 110, 77, 50, 29, 14, 5, 1] (from degree 24)   time 4.1s maxrss 823 MB   EQUAL
+ph (a,q)=(1,3) over F_3: dim I'_1 = 15   count = 15  N(a+1,q) = 15   graded [2, 4, 5, 3, 1] (from degree 2)   time 0.0s maxrss 21 MB   EQUAL
+ph (a,q)=(2,3) over F_3: dim I'_2 = 93   count = 93  N(a+1,q) = 93   graded [6, 17, 26, 24, 14, 5, 1] (from degree 4)   time 0.0s maxrss 21 MB   EQUAL
+ph (a,q)=(3,3) over F_3: dim I'_3 = 639   count = 639  N(a+1,q) = 639   graded [23, 80, 143, 163, 126, 69, 27, 7, 1] (from degree 6)   time 0.0s maxrss 24 MB   EQUAL
+ph (a,q)=(1,5) over F_5: dim I'_1 = 45   count = 45  N(a+1,q) = 45   graded [2, 4, 6, 8, 9, 7, 5, 3, 1] (from degree 4)   time 0.0s maxrss 21 MB   EQUAL
+ph (a,q)=(2,5) over F_5: dim I'_2 = 545   count = 545  N(a+1,q) = 545   graded [6, 18, 36, 59, 80, 89, 86, 72, 50, 29, 14, 5, 1] (from degree 8)   time 0.0s maxrss 23 MB   EQUAL
+ph (a,q)=(3,5) over F_5: dim I'_3 = 7885   count = 7885  N(a+1,q) = 7885   graded [24, 96, 239, 463, 735, 984, 1143, 1164, 1038, 815, 562, 337, 174, 76, 27, 7, 1] (from degree 12)   time 4.1s maxrss 865 MB   EQUAL
+ph (a,q)=(1,9) over F_3: dim I'_1 = 153   count = 153  N(a+1,q) = 153   graded [2, 4, 6, 8, 10, 12, 14, 16, 17, 15, 13, 11, 9, 7, 5, 3, 1] (from degree 8)   time 0.0s maxrss 21 MB   EQUAL
+ph (a,q)=(2,9) over F_3: dim I'_2 = 3681   count = 3681  N(a+1,q) = 3681   graded [6, 18, 36, 60, 90, 126, 168, 215, 260, 293, 314, 323, 320, 305, 278, 240, 194, 149, 110, 77, 50, 29, 14, 5, 1] (from degree 16)   time 0.8s maxrss 181 MB   EQUAL
+ph (a,q)=(2,7) over F_7: dim I'_2 = 1645   count = 1645  N(a+1,q) = 1645   graded [6, 18, 36, 60, 90, 125, 158, 179, 188, 185, 170, 144, 110, 77, 50, 29, 14, 5, 1] (from degree 12)   time 0.2s maxrss 33 MB   EQUAL
+(2,1,q=3) P1/P2: |Par(alpha-1,beta)| = 2, comparable pairs checked 3, tails checked 9: OK
+  down-sets: 4
+  RESULT (2,1,q=3,p=3): 4 down-sets, failures of >=: 0; time 0.0s maxrss 21 MB
+(2,2,q=3) P1/P2: |Par(alpha-1,beta)| = 3, comparable pairs checked 6, tails checked 27: OK
+  down-sets: 7
+  RESULT (2,2,q=3,p=3): 7 down-sets, failures of >=: 0; time 0.0s maxrss 22 MB
+(3,2,q=3) P1/P2: |Par(alpha-1,beta)| = 5, comparable pairs checked 14, tails checked 81: OK
+  down-sets: 8
+  RESULT (3,2,q=3,p=3): 8 down-sets, failures of >=: 0; time 0.0s maxrss 23 MB
+(3,3,q=3) P1/P2: |Par(alpha-1,beta)| = 6, comparable pairs checked 20, tails checked 243: OK
+  down-sets: 11
+  RESULT (3,3,q=3,p=3): 11 down-sets, failures of >=: 0; time 0.1s maxrss 24 MB
+(2,1,q=5) P1/P2: |Par(alpha-1,beta)| = 2, comparable pairs checked 3, tails checked 25: OK
+  down-sets: 4
+  RESULT (2,1,q=5,p=5): 4 down-sets, failures of >=: 0; time 0.0s maxrss 22 MB
+(2,2,q=5) P1/P2: |Par(alpha-1,beta)| = 3, comparable pairs checked 6, tails checked 125: OK
+  down-sets: 8
+  RESULT (2,2,q=5,p=5): 8 down-sets, failures of >=: 0; time 0.1s maxrss 23 MB
+(3,2,q=5) P1/P2: |Par(alpha-1,beta)| = 6, comparable pairs checked 20, tails checked 625: OK
+  down-sets: 15
+  RESULT (3,2,q=5,p=5): 15 down-sets, failures of >=: 0; time 0.9s maxrss 33 MB
+(4,3,q=3) P1/P2: |Par(alpha-1,beta)| = 8, comparable pairs checked 34, tails checked 729: OK
+  down-sets: 16
+  RESULT (4,3,q=3,p=3): 16 down-sets, failures of >=: 0; time 1.1s maxrss 35 MB
+(3,3,q=5) P1/P2: |Par(alpha-1,beta)| = 9, comparable pairs checked 40, tails checked 3125: OK
+  down-sets: 38
+  RESULT (3,3,q=5,p=5): 38 down-sets, failures of >=: 0; time 78.8s maxrss 621 MB
+(4,4,q=3) P1/P2: |Par(alpha-1,beta)| = 10, comparable pairs checked 50, tails checked 2187: OK
+  down-sets: 25
+  RESULT (4,4,q=3,p=3): 25 down-sets, failures of >=: 0; time 16.3s maxrss 343 MB
+(2,2,q=9) P1/P2: |Par(alpha-1,beta)| = 3, comparable pairs checked 6, tails checked 729: OK
+  down-sets: 8
+  RESULT (2,2,q=9,p=3): 8 down-sets, failures of >=: 0; time 1.0s maxrss 43 MB
+(3,2,q=9) P1/P2: |Par(alpha-1,beta)| = 6, comparable pairs checked 20, tails checked 6561: OK
+  down-sets: 15
+  RESULT (3,2,q=9,p=3): 15 down-sets, failures of >=: 0; time 301.7s maxrss 1583 MB
+(5,4,q=3) P1/P2: |Par(alpha-1,beta)| = 13, comparable pairs checked 81, tails checked 6561: OK
+  down-sets: 31
+  RESULT (5,4,q=3,p=3): 31 down-sets, failures of >=: 0; time 301.2s maxrss 1460 MB
+(6,6,q=9) P1/P2: |Par(alpha-1,beta)| = 133, comparable pairs checked 5182, tails checked 0: OK
+(7,5,q=27) P1/P2: |Par(alpha-1,beta)| = 136, comparable pairs checked 5417, tails checked 0: OK
+(5,5,q=81) P1/P2: |Par(alpha-1,beta)| = 59, comparable pairs checked 1164, tails checked 0: OK
+(8,7,q=5) P1/P2: |Par(alpha-1,beta)| = 152, comparable pairs checked 7366, tails checked 0: OK
+P3 (2,2,q=3,p=3): 7 down-sets, 54 (layer generator, slice) memberships checked, failures 0; coverage-formula failures 0; time 0.0s maxrss 23 MB
+P3 (3,2,q=3,p=3): 8 down-sets, 148 (layer generator, slice) memberships checked, failures 0; coverage-formula failures 0; time 0.1s maxrss 22 MB
+P3 (3,3,q=3,p=3): 11 down-sets, 496 (layer generator, slice) memberships checked, failures 0; coverage-formula failures 0; time 0.8s maxrss 25 MB
+P3 (2,2,q=5,p=5): 8 down-sets, 103 (layer generator, slice) memberships checked, failures 0; coverage-formula failures 0; time 0.1s maxrss 24 MB
+P3 (3,2,q=5,p=5): 15 down-sets, 534 (layer generator, slice) memberships checked, failures 0; coverage-formula failures 0; time 3.5s maxrss 46 MB
+P3 (4,3,q=3,p=3): 16 down-sets, 2048 (layer generator, slice) memberships checked, failures 0; coverage-formula failures 0; time 13.7s maxrss 44 MB
+P3 (2,1,q=9,p=3): 4 down-sets, 45 (layer generator, slice) memberships checked, failures 0; coverage-formula failures 0; time 0.0s maxrss 23 MB
+P3 TIGHT(negative control) (3,2,q=3,p=3): 8 down-sets, 107 (layer generator, slice) memberships checked, failures 17; coverage-formula failures 0; time 0.1s maxrss 22 MB
+P3 TIGHT(negative control) (3,3,q=3,p=3): 11 down-sets, 360 (layer generator, slice) memberships checked, failures 58; coverage-formula failures 0; time 0.4s maxrss 25 MB
+P3 TIGHT(negative control) (2,2,q=5,p=5): 8 down-sets, 87 (layer generator, slice) memberships checked, failures 10; coverage-formula failures 0; time 0.1s maxrss 24 MB
+ph (a,q)=(4,3) over F_3: dim I'_4 = 4653   count = 4653  N(a+1,q) = 4653   graded [103, 410, 825, 1079, 994, 682, 360, 146, 44, 9, 1] (from degree 8)   time 1.4s maxrss 395 MB   EQUAL
+bal (a,q)=(3,7) over F_7: dim I_3 = 1645   count = 1645   graded [6, 18, 36, 60, 90, 125, 158, 179, 188, 185, 170, 144, 110, 77, 50, 29, 14, 5, 1] (from degree 18)   time 0.6s maxrss 150 MB   EQUAL

@@ -1,0 +1,12 @@
+(k,m,p)=(1,15,3) q=3 r=5 compatible=61 total=546 Q_1(m)=546
+   C1=0 bal1 ph0          colourings=  12 each=    9 sum=108
+   C1=0 ph0 bal1          colourings=  12 each=    9 sum=108
+   C1=0 ph1               colourings=  12 each=   15 sum=180
+   C1=2 ph0               colourings=  12 each=    6 sum=72
+   C1=2∋0 bal1            colourings=  12 each=    6 sum=72
+   C1=4∋0                 colourings=   1 each=    6 sum=6
+(k,m,p)=(1,15,5) q=5 r=3 compatible=19 total=546 Q_1(m)=546
+   C1=0 ph1               colourings=   6 each=   45 sum=270
+   C1=2 ph0               colourings=   6 each=   20 sum=120
+   C1=2∋0 bal1            colourings=   6 each=   20 sum=120
+   C1=4∋0                 colourings=   1 each=   36 sum=36

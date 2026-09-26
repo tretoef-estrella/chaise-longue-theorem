@@ -1,0 +1,4 @@
+raise ok True 7
+NC flipped sign (must be False): (False, 8)
+NC correct: (True, 8)
+VIGIA-FIN-OK exit=0 pico_kb=256 t=0s

@@ -1,0 +1,6 @@
+mu=(1,1) n=4 q=27 vdim=300 W=300 ngens=40
+mu=() n=4 q=9 vdim=217 W=217 ngens=2
+mu=(1,) n=5 q=9 vdim=855 W=855 ngens=54
+mu=(2,1) n=6 q=9 vdim=1080 W=1080 ngens=552
+mu=() n=6 q=9 vdim=7761 W=7761 ngens=3
+VIGIA-FIN-OK exit=0 pico_kb=7456 t=0s

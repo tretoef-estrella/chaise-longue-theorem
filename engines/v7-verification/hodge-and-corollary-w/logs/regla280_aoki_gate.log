@@ -1,0 +1,15 @@
+SEALED PREDICTIONS: [(7, 6, 'EQUAL'), (11, 6, 'EQUAL'), (15, 2, 'EXTRA'), (21, 2, 'EXTRA'), (35, 2, 'EQUAL'), (55, 2, 'EQUAL'), (77, 2, 'EQUAL'), (45, 2, 'EXTRA'), (13, 4, 'EQUAL'), (35, 4, 'EXTRA'), (15, 4, 'EXTRA')]
+m=7 n=6 #Hodge=44730 #pair=44730 got=EQUAL pred=EQUAL OK
+m=11 n=6 #Hodge=551950 #pair=551950 got=EQUAL pred=EQUAL OK
+m=15 n=2 #Hodge=834 #pair=546 got=EXTRA pred=EXTRA OK
+m=21 n=2 #Hodge=1572 #pair=1140 got=EXTRA pred=EXTRA OK
+m=35 n=2 #Hodge=3366 #pair=3366 got=EQUAL pred=EQUAL OK
+m=55 n=2 #Hodge=8586 #pair=8586 got=EQUAL pred=EQUAL OK
+m=77 n=2 #Hodge=17100 #pair=17100 got=EQUAL pred=EQUAL OK
+m=45 n=2 #Hodge=6204 #pair=5676 got=EXTRA pred=EXTRA OK
+m=13 n=4 #Hodge=19920 #pair=19920 got=EQUAL pred=EQUAL OK
+m=35 n=4 #Hodge=543220 #pair=538900 got=EXTRA pred=EXTRA OK
+m=15 n=4 #Hodge=78260 #pair=32900 got=EXTRA pred=EXTRA OK
+SCORE 11/11
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=9088 t=1s
