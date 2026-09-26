@@ -1,0 +1,25 @@
+(q,m)=(27,3) h=13: Par_m=[(1,), (1, 1, 1), (2, 1), (3,)] ; Par_(m-1)=[(), (1, 1), (2,)] ; 5 down-sets
+  Lambda=[]: #gens=0 dimV=0 |Z|=0 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=0 ; layers sizes=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  Lambda=[(1,)]: #gens=3 dimV=1950 |Z|=1950 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=3 ; layers sizes=[3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  Lambda=[(1,), (1, 1, 1)]: #gens=4 dimV=15678 |Z|=15678 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=3 ; layers sizes=[3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]
+  Lambda=[(1,), (1, 1, 1), (2, 1)]: #gens=7 dimV=17550 |Z|=17550 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=2 ; layers sizes=[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2]
+  Lambda=[(1,), (1, 1, 1), (2, 1), (3,)]: #gens=13 dimV=17576 |Z|=17576 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=0 ; layers sizes=[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+SUMMARY (q,m)=(27,3): P3 membership tests=288, failures=0, negative-control firings=8, down-sets with dimV==|Z|: 5/5 ; 113.1s
+      113.22 real       112.51 user         0.38 sys
+           295829504  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               38329  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+               27183  involuntary context switches
+       1662886381422  instructions retired
+        361228103724  cycles elapsed
+           322634352  peak memory footprint

@@ -1,0 +1,20 @@
+k=5 n'=11: total dim = 924 (Q_k(3)=C(2k+2,k+1)=924); graded = [132, 297, 275, 154, 54, 11, 1]; ballot = [132, 297, 275, 154, 54, 11, 1]; LM==U: True; 5.5s
+k=6 n'=13: total dim = 3432 (Q_k(3)=C(2k+2,k+1)=3432); graded = [429, 1001, 1001, 637, 273, 77, 13, 1]; ballot = [429, 1001, 1001, 637, 273, 77, 13, 1]; LM==U: True; 162.2s
+      168.14 real       166.24 user         1.35 sys
+          1451147264  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              347292  page reclaims
+                  23  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+               39602  involuntary context switches
+       1879092593448  instructions retired
+        542108169634  cycles elapsed
+          1748518448  peak memory footprint

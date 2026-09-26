@@ -1,0 +1,7 @@
+(q,m)=(3,4): 4 down-sets, tests=40, P1 failures=0, (5.1) failures=0
+(q,m)=(3,6): 5 down-sets, tests=175, P1 failures=0, (5.1) failures=0
+(q,m)=(9,3): 5 down-sets, tests=335, P1 failures=0, (5.1) failures=0
+(q,m)=(9,4): 10 down-sets, tests=5160, P1 failures=0, (5.1) failures=0
+(q,m)=(9,5): 13 down-sets, tests=53352, P1 failures=0, (5.1) failures=0
+(q,m)=(27,3): 5 down-sets, tests=3395, P1 failures=0, (5.1) failures=0
+(q,m)=(27,4): 10 down-sets, tests=175800, P1 failures=0, (5.1) failures=0

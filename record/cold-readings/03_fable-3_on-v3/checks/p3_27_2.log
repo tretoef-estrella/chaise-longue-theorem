@@ -1,0 +1,24 @@
+(q,m)=(27,2) h=13: Par_m=[(), (1, 1), (2,)] ; Par_(m-1)=[(1,)] ; 4 down-sets
+  Lambda=[]: #gens=0 dimV=0 |Z|=0 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=0 ; layers sizes=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  Lambda=[()]: #gens=1 dimV=26 |Z|=26 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=1 ; layers sizes=[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  Lambda=[(), (1, 1)]: #gens=2 dimV=650 |Z|=650 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=1 ; layers sizes=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+  Lambda=[(), (1, 1), (2,)]: #gens=4 dimV=676 |Z|=676 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=0 ; layers sizes=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+SUMMARY (q,m)=(27,2): P3 membership tests=52, failures=0, negative-control firings=2, down-sets with dimV==|Z|: 4/4 ; 0.1s
+        0.16 real         0.14 user         0.01 sys
+            25722880  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2725  page reclaims
+                  19  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  81  involuntary context switches
+          1835427609  instructions retired
+           476639368  cycles elapsed
+            19366200  peak memory footprint

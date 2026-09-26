@@ -1,0 +1,30 @@
+(q,m)=(9,4) h=4: Par_m=[(), (1, 1), (1, 1, 1, 1), (2,), (2, 1, 1), (2, 2), (3, 1), (4,)] ; Par_(m-1)=[(1,), (1, 1, 1), (2, 1), (3,)] ; 10 down-sets
+  Lambda=[]: #gens=0 dimV=0 |Z|=0 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=0 ; layers sizes=[0, 0, 0, 0, 0, 0, 0, 0]
+  Lambda=[()]: #gens=3 dimV=168 |Z|=168 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=3 ; layers sizes=[1, 0, 0, 0, 0, 0, 0, 0]
+  Lambda=[(), (1, 1)]: #gens=9 dimV=1896 |Z|=1896 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=7 ; layers sizes=[3, 2, 2, 1, 1, 1, 1, 0]
+  Lambda=[(), (1, 1), (1, 1, 1, 1)]: #gens=10 dimV=2280 |Z|=2280 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=7 ; layers sizes=[3, 2, 2, 2, 2, 1, 1, 0]
+  Lambda=[(), (1, 1), (2,)]: #gens=21 dimV=2216 |Z|=2216 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=10 ; layers sizes=[4, 3, 2, 1, 1, 1, 1, 1]
+  Lambda=[(), (1, 1), (1, 1, 1, 1), (2,)]: #gens=22 dimV=2600 |Z|=2600 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=10 ; layers sizes=[4, 3, 2, 2, 2, 1, 1, 1]
+  Lambda=[(), (1, 1), (1, 1, 1, 1), (2,), (2, 1, 1)]: #gens=26 dimV=3752 |Z|=3752 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=9 ; layers sizes=[4, 3, 3, 3, 3, 3, 2, 2]
+  Lambda=[(), (1, 1), (1, 1, 1, 1), (2,), (2, 1, 1), (2, 2)]: #gens=32 dimV=3896 |Z|=3896 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=9 ; layers sizes=[4, 3, 3, 3, 3, 3, 3, 2]
+  Lambda=[(), (1, 1), (1, 1, 1, 1), (2,), (2, 1, 1), (2, 2), (3, 1)]: #gens=44 dimV=4088 |Z|=4088 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=6 ; layers sizes=[4, 4, 4, 4, 4, 4, 4, 3]
+  Lambda=[(), (1, 1), (1, 1, 1, 1), (2,), (2, 1, 1), (2, 2), (3, 1), (4,)]: #gens=68 dimV=4096 |Z|=4096 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=0 ; layers sizes=[4, 4, 4, 4, 4, 4, 4, 4]
+SUMMARY (q,m)=(9,4): P3 membership tests=456, failures=0, negative-control firings=61, down-sets with dimV==|Z|: 10/10 ; 34.6s
+       34.67 real        34.47 user         0.10 sys
+           104120320  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11089  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                6175  involuntary context switches
+        508810486786  instructions retired
+        110547762433  cycles elapsed
+           121536920  peak memory footprint

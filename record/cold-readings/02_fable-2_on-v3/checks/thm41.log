@@ -1,0 +1,10 @@
+k=1: |U|=6 = C(2k+2,k+1)=6  construction failures=0
+   brute force k=1: leading monomials of all y_T D_J: 6 distinct, 0 outside the ballot set; ballot set fully reached: True
+k=2: |U|=20 = C(2k+2,k+1)=20  construction failures=0
+   brute force k=2: leading monomials of all y_T D_J: 20 distinct, 0 outside the ballot set; ballot set fully reached: True
+k=3: |U|=70 = C(2k+2,k+1)=70  construction failures=0
+   brute force k=3: leading monomials of all y_T D_J: 70 distinct, 0 outside the ballot set; ballot set fully reached: True
+k=4: |U|=252 = C(2k+2,k+1)=252  construction failures=0
+   brute force k=4: leading monomials of all y_T D_J: 252 distinct, 0 outside the ballot set; ballot set fully reached: True
+k=5: |U|=924 = C(2k+2,k+1)=924  construction failures=0
+k=6: |U|=3432 = C(2k+2,k+1)=3432  construction failures=0

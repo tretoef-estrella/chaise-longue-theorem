@@ -1,0 +1,12 @@
+cell (q,m)=(9,4): |Par_m|=8 down-sets=10
+  Lambda=[]: dim V=0 |Z|=0 slices=ok OK
+  Lambda=[()]: dim V=168 |Z|=168 slices=ok OK
+  Lambda=[(), (1, 1)]: dim V=1896 |Z|=1896 slices=ok OK
+  Lambda=[(), (2,), (1, 1)]: dim V=2216 |Z|=2216 slices=ok OK
+  Lambda=[(), (1, 1), (1, 1, 1, 1)]: dim V=2280 |Z|=2280 slices=ok OK
+  Lambda=[(), (2,), (1, 1), (1, 1, 1, 1)]: dim V=2600 |Z|=2600 slices=ok OK
+  Lambda=[(), (2,), (2, 1, 1), (1, 1), (1, 1, 1, 1)]: dim V=3752 |Z|=3752 slices=ok OK
+  Lambda=[(), (2,), (2, 2), (2, 1, 1), (1, 1), (1, 1, 1, 1)]: dim V=3896 |Z|=3896 slices=ok OK
+  Lambda=[(), (3, 1), (2,), (2, 2), (2, 1, 1), (1, 1), (1, 1, 1, 1)]: dim V=4088 |Z|=4088 slices=ok OK
+  Lambda=[(), (4,), (3, 1), (2,), (2, 2), (2, 1, 1), (1, 1), (1, 1, 1, 1)]: dim V=4096 |Z|=4096 slices=ok OK
+cell (9,4) done: down-sets with a problem: 0; negative control (one slice tighter): 7/9 tests fail

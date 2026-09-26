@@ -1,0 +1,21 @@
+q=27 m=3: |Par_2|=3 comparable pairs=3 failures=0
+q=27 m=4: |Par_3|=4 comparable pairs=6 failures=0
+q=27 m=5: |Par_4|=8 comparable pairs=27 failures=0
+q=27 m=6: |Par_5|=11 comparable pairs=51 failures=0
+q=27 m=7: |Par_6|=19 comparable pairs=153 failures=0
+q=27 m=8: |Par_7|=26 comparable pairs=281 failures=0
+q=27 m=9: |Par_8|=41 comparable pairs=687 failures=0
+q=27 m=10: |Par_9|=56 comparable pairs=1248 failures=0
+q=81 m=4: |Par_3|=4 comparable pairs=6 failures=0
+q=81 m=6: |Par_5|=11 comparable pairs=51 failures=0
+q=81 m=8: |Par_7|=26 comparable pairs=281 failures=0
+q=81 m=9: |Par_8|=41 comparable pairs=687 failures=0
+q=9 m=5: |Par_4|=8 comparable pairs=27 failures=0
+q=9 m=7: |Par_6|=17 comparable pairs=126 failures=0
+q=9 m=9: |Par_8|=32 comparable pairs=442 failures=0
+q=9 m=11: |Par_10|=55 comparable pairs=1284 failures=0
+q=9 m=13: |Par_12|=89 comparable pairs=3285 failures=0
+q=3 m=5: |Par_4|=3 comparable pairs=3 failures=0
+q=3 m=9: |Par_8|=5 comparable pairs=10 failures=0
+q=3 m=13: |Par_12|=7 comparable pairs=21 failures=0
+TOTAL FAILURES 0

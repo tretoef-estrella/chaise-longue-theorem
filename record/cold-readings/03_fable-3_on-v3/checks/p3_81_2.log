@@ -1,0 +1,24 @@
+(q,m)=(81,2) h=40: Par_m=[(), (1, 1), (2,)] ; Par_(m-1)=[(1,)] ; 4 down-sets
+  Lambda=[]: #gens=0 dimV=0 |Z|=0 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=0 ; layers sizes=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  Lambda=[()]: #gens=1 dimV=80 |Z|=80 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=1 ; layers sizes=[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  Lambda=[(), (1, 1)]: #gens=2 dimV=6320 |Z|=6320 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=1 ; layers sizes=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+  Lambda=[(), (1, 1), (2,)]: #gens=4 dimV=6400 |Z|=6400 EQ ; P3 failures=0 ; tighter-slice failures (neg control)=0 ; layers sizes=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+SUMMARY (q,m)=(81,2): P3 membership tests=160, failures=0, negative-control firings=2, down-sets with dimV==|Z|: 4/4 ; 2.0s
+        2.06 real         1.98 user         0.02 sys
+            44056576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3820  page reclaims
+                  44  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                 576  involuntary context switches
+         30261191443  instructions retired
+          6399604482  cycles elapsed
+            37749048  peak memory footprint

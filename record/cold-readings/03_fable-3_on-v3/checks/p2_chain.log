@@ -1,0 +1,11 @@
+h=1 (q=3), m<=16: comparable pairs=285, failures=0  [0s]
+h=2 (q=5), m<=16: comparable pairs=3795, failures=0  [0s]
+h=3 (q=7), m<=14: comparable pairs=8896, failures=0  [0s]
+h=4 (q=9), m<=14: comparable pairs=20539, failures=0  [0s]
+h=7 (q=15), m<=13: comparable pairs=30496, failures=0  [1s]
+h=13 (q=27), m<=12: comparable pairs=19978, failures=0  [2s]
+h=40 (q=81), m<=12: comparable pairs=19978, failures=0  [6s]
+h=60 (q=121), m<=12: comparable pairs=19978, failures=0  [12s]
+h=200 (q=401), random 600 partitions of size <= 30: comparable pairs=97190, failures=852  [190s]
+
+[exited with code 0]

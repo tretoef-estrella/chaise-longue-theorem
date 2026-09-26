@@ -1,0 +1,9 @@
+cell (q,m)=(9,5): |Par_m|=10 down-sets=13
+  Lambda=[]: dim V=0 |Z|=0 slices=ok OK
+  Lambda=[(1,)]: dim V=5120 |Z|=5120 slices=ok OK
+  Lambda=[(1,), (1, 1, 1)]: dim V=14720 |Z|=14720 slices=ok OK
+  Lambda=[(2, 1), (1,), (1, 1, 1)]: dim V=22880 |Z|=22880 slices=ok OK
+  Lambda=[(3,), (2, 1), (1,), (1, 1, 1)]: dim V=23400 |Z|=23400 slices=ok OK
+  Lambda=[(2, 1), (2, 1, 1, 1), (1,), (1, 1, 1)]: dim V=26720 |Z|=26720 slices=ok OK
+  Lambda=[(3,), (2, 1), (2, 1, 1, 1), (1,), (1, 1, 1)]: dim V=27240 |Z|=27240 slices=ok OK
+  Lambda=[(2, 2, 1), (2, 1), (2, 1, 1, 1), (1,), (1, 1, 1)]: dim V=29600 |Z|=29600 slices=ok OK

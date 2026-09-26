@@ -1,0 +1,95 @@
+  deg 0: monomials 1 row-reps 1 target 15 rank 1 (0.0s)
+  deg 1: monomials 5 row-reps 2 target 45 rank 5 (0.0s)
+  deg 2: monomials 15 row-reps 6 target 90 rank 15 (0.0s)
+  deg 3: monomials 35 row-reps 11 target 150 rank 34 (0.0s)
+  deg 4: monomials 70 row-reps 22 target 225 rank 65 (0.0s)
+  deg 5: monomials 126 row-reps 36 target 315 rank 110 (0.0s)
+  deg 6: monomials 210 row-reps 60 target 420 rank 170 (0.0s)
+  deg 7: monomials 330 row-reps 90 target 540 rank 245 (0.0s)
+  deg 8: monomials 495 row-reps 135 target 675 rank 335 (0.0s)
+  deg 9: monomials 715 row-reps 190 target 825 rank 440 (0.0s)
+  deg 10: monomials 1001 row-reps 266 target 990 rank 560 (0.0s)
+  deg 11: monomials 1365 row-reps 357 target 1170 rank 695 (0.0s)
+  deg 12: monomials 1820 row-reps 476 target 1365 rank 845 (0.0s)
+  deg 13: monomials 2380 row-reps 616 target 1575 rank 1010 (0.0s)
+  deg 14: monomials 3060 row-reps 792 target 1800 rank 1190 (0.0s)
+  deg 15: monomials 3876 row-reps 996 target 2040 rank 1385 (0.0s)
+  deg 16: monomials 4845 row-reps 1245 target 2295 rank 1595 (0.0s)
+  deg 17: monomials 5985 row-reps 1530 target 2565 rank 1820 (0.0s)
+  deg 18: monomials 7315 row-reps 1870 target 2850 rank 2060 (0.0s)
+  deg 19: monomials 8855 row-reps 2255 target 3150 rank 2315 (0.0s)
+  deg 20: monomials 10626 row-reps 2706 target 3465 rank 2585 (0.0s)
+  deg 21: monomials 12650 row-reps 3212 target 3795 rank 2870 (0.1s)
+  deg 22: monomials 14950 row-reps 3796 target 4140 rank 3170 (0.1s)
+  deg 23: monomials 17550 row-reps 4446 target 4500 rank 3485 (0.1s)
+  deg 24: monomials 20475 row-reps 5187 target 4875 rank 3815 (0.1s)
+  deg 25: monomials 23751 row-reps 6006 target 5265 rank 4160 (0.1s)
+  deg 26: monomials 27400 row-reps 6928 target 5625 rank 4514 (0.1s)
+  deg 27: monomials 31440 row-reps 7938 target 5955 rank 4866 (0.2s)
+  deg 28: monomials 35885 row-reps 9059 target 6255 rank 5200 (0.2s)
+  deg 29: monomials 40745 row-reps 10274 target 6525 rank 5511 (0.2s)
+  deg 30: monomials 46026 row-reps 11604 target 6765 rank 5795 (0.3s)
+  deg 31: monomials 51730 row-reps 13030 target 6975 rank 6050 (0.3s)
+  deg 32: monomials 57855 row-reps 14571 target 7155 rank 6275 (0.3s)
+  deg 33: monomials 64395 row-reps 16206 target 7305 rank 6470 (0.3s)
+  deg 34: monomials 71340 row-reps 17952 target 7425 rank 6635 (0.4s)
+  deg 35: monomials 78676 row-reps 19786 target 7515 rank 6770 (0.4s)
+  deg 36: monomials 86385 row-reps 21723 target 7575 rank 6875 (0.4s)
+  deg 37: monomials 94445 row-reps 23738 target 7605 rank 6950 (0.4s)
+  deg 38: monomials 102830 row-reps 25844 target 7605 rank 6995 (0.5s)
+  deg 39: monomials 111510 row-reps 28014 target 7575 rank 7010 (0.5s)
+  deg 40: monomials 120451 row-reps 30259 target 7515 rank 6995 (0.5s)
+  deg 41: monomials 129615 row-reps 32550 target 7425 rank 6950 (0.5s)
+  deg 42: monomials 138960 row-reps 34896 target 7305 rank 6875 (0.6s)
+  deg 43: monomials 148440 row-reps 37266 target 7155 rank 6770 (0.6s)
+  deg 44: monomials 158005 row-reps 39667 target 6975 rank 6635 (0.6s)
+  deg 45: monomials 167601 row-reps 42066 target 6765 rank 6470 (0.6s)
+  deg 46: monomials 177170 row-reps 44468 target 6525 rank 6275 (0.6s)
+  deg 47: monomials 186650 row-reps 46838 target 6255 rank 6050 (0.6s)
+  deg 48: monomials 195975 row-reps 49179 target 5955 rank 5795 (0.6s)
+  deg 49: monomials 205075 row-reps 51454 target 5625 rank 5510 (0.6s)
+  deg 50: monomials 213876 row-reps 53664 target 5265 rank 5195 (0.6s)
+  deg 51: monomials 222300 row-reps 55770 target 4875 rank 4850 (0.6s)
+  deg 52: monomials 230275 row-reps 57772 target 4500 rank 4495 (0.6s)
+  deg 53: monomials 237735 row-reps 59637 target 4140 rank 4139 (0.5s)
+  deg 54: monomials 244620 row-reps 61365 target 3795 rank 3795 (0.5s)
+  deg 55: monomials 250876 row-reps 62929 target 3465 rank 3465 (0.5s)
+  deg 56: monomials 256455 row-reps 64329 target 3150 rank 3150 (0.4s)
+  deg 57: monomials 261315 row-reps 65544 target 2850 rank 2850 (0.4s)
+  deg 58: monomials 265420 row-reps 66574 target 2565 rank 2565 (0.4s)
+  deg 59: monomials 268740 row-reps 67404 target 2295 rank 2295 (0.4s)
+  deg 60: monomials 271251 row-reps 68034 target 2040 rank 2040 (0.3s)
+  deg 61: monomials 272935 row-reps 68455 target 1800 rank 1800 (0.3s)
+  deg 62: monomials 273780 row-reps 68667 target 1575 rank 1575 (0.3s)
+  deg 63: monomials 273780 row-reps 68667 target 1365 rank 1365 (0.3s)
+  deg 64: monomials 272935 row-reps 68455 target 1170 rank 1170 (0.3s)
+  deg 65: monomials 271251 row-reps 68034 target 990 rank 990 (0.3s)
+  deg 66: monomials 268740 row-reps 67404 target 825 rank 825 (0.2s)
+  deg 67: monomials 265420 row-reps 66574 target 675 rank 675 (0.2s)
+  deg 68: monomials 261315 row-reps 65544 target 540 rank 540 (0.2s)
+  deg 69: monomials 256455 row-reps 64329 target 420 rank 420 (0.2s)
+  deg 70: monomials 250876 row-reps 62929 target 315 rank 315 (0.1s)
+  deg 71: monomials 244620 row-reps 61365 target 225 rank 225 (0.1s)
+  deg 72: monomials 237735 row-reps 59637 target 150 rank 150 (0.1s)
+  deg 73: monomials 230275 row-reps 57772 target 90 rank 90 (0.1s)
+  deg 74: monomials 222300 row-reps 55770 target 45 rank 45 (0.1s)
+  deg 75: monomials 213876 row-reps 53664 target 15 rank 15 (0.1s)
+(k,q)=(2,27) sym-intersection form: b_k(q-1) = 234260   Q_k(q) = 234260   graded [1, 5, 15, 34, 65, 110, 170, 245, 335, 440, 560, 695, 845, 1010, 1190, 1385, 1595, 1820, 2060, 2315, 2585, 2870, 3170, 3485, 3815, 4160, 4514, 4866, 5200, 5511, 5795, 6050, 6275, 6470, 6635, 6770, 6875, 6950, 6995, 7010, 6995, 6950, 6875, 6770, 6635, 6470, 6275, 6050, 5795, 5510, 5195, 4850, 4495, 4139, 3795, 3465, 3150, 2850, 2565, 2295, 2040, 1800, 1575, 1365, 1170, 990, 825, 675, 540, 420, 315, 225, 150, 90, 45, 15]
+       23.25 real        22.35 user         1.34 sys
+           887685120  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              309829  page reclaims
+                 599  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 378  voluntary context switches
+               33150  involuntary context switches
+        261705192829  instructions retired
+         76434309996  cycles elapsed
+          1340802344  peak memory footprint
