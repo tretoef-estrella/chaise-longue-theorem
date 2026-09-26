@@ -1,0 +1,5 @@
+RESULT q=9 mu=(2, 1) n=4 f=1: vdim(unifK) = 12  vdim(tops) = 12  K<=tops: 1  sec: 0
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 24 / 24  y_a^(q-2) D: 12 / 12  in tops ; vdim(K+S2) = 12  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+  total sec: 0
+VIGIA-FIN-OK exit=0 pico_kb=4864 t=0s

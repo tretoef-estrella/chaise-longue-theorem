@@ -1,0 +1,4 @@
+RESULT q=9 mu=(2, 1, 1) n=6 f=2: vdim(unifK) = 1020  vdim(tops) = 1020  K<=tops: 1  sec: 1
+  NEW beyond K: 0  degrees: 
+  total sec: 1
+VIGIA-FIN-OK exit=0 pico_kb=7344 t=0s

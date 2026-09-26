@@ -1,0 +1,6 @@
+RESULT q=9 mu=(1, 1) n=6 f=4: vdim(unifK) = 3930  vdim(tops) = 3930  K<=tops: 1  sec: 1
+  NEW beyond K: 0  degrees: 
+  LAW y_c^2 D: 120 / 120  y_a^(q-2) D: 180 / 180  in tops ; vdim(K+S2) = 3930  ; K+S2 contains tops: 1  ; S2 inside unifK (redundant): 1
+  G3: 20 / 20  in tops ; G3 inside K+S2 (redundant): 1
+  total sec: 1
+VIGIA-FIN-OK exit=0 pico_kb=8032 t=1s
