@@ -1,0 +1,7 @@
+E RAISE parent (1,1)(9) -> (2,1)(8), r=2 w=1: (True, 7, 1)
+E RAISE parent (2,1)(9) -> (2,2)(8), r=1 w=1: (True, 7, 6)
+E NC parent (2,1)(9) -> (2,1,1)(8), r=2: (True, 32)
+E NC parent (1,1,1)(9) -> (1^4)(8), r=2: (True, 32)
+E NC parent (2)(10) -> (2,1)(9), r=2: (True, 23)
+FIN-OK E
+VIGIA-FIN-OK exit=0 pico_kb=189904 t=39s

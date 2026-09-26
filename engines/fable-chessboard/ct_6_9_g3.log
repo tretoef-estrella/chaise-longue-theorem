@@ -1,0 +1,4 @@
+// ** SB is no standard basis
+// ** SK is no standard basis
+content n=6 q=9 r=3: G in B: 1 ; G in B+(phi): 1 ; secs 0
+VIGIA-FIN-OK exit=0 pico_kb=4560 t=0s

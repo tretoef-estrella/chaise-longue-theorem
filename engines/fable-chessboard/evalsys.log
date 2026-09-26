@@ -1,0 +1,9 @@
+q=3 unknowns 11 rank(L1)=11 rank(C)=10 rank(L1|C)=11
+  (C) implies (L1)? false   (L1) implies (C)? true
+  (C) solvable? true
+  (L1) solvable? true  kernel dim L1 = 0
+q=9 unknowns 1135 rank(L1)=645 rank(C)=645 rank(L1|C)=645
+  (C) implies (L1)? true   (L1) implies (C)? true
+  (C) solvable? true
+  (L1) solvable? true  kernel dim L1 = 490
+FIN-OK

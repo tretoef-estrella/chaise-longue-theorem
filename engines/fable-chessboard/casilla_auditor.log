@@ -1,0 +1,9 @@
+EVEN k=1 q=9 dim J_1=24 dim K=24 equal:true
+EVEN k=2 q=3 dim J_1=45 dim K=45 equal:true
+EVEN k=2 q=9 dim J_1=855 dim K=855 equal:true
+EVEN k=3 q=3 dim J_1=357 dim K=357 equal:true
+ODD  k=1 q=9 dim J_1=2 dim K=2 equal:true
+ODD  k=2 q=3 dim J_1=16 dim K=16 equal:true
+ODD  k=2 q=9 dim J_1=88 dim K=88 equal:true
+ODD  k=3 q=3 dim J_1=126 dim K=126 equal:true
+FIN-OK

@@ -1,0 +1,4 @@
+ENG15 k=1 q=3 drop=[] ranks=[2, 3, 1] total=6 Q=6 DS-HOLDS
+ENG15 k=3 q=3 drop=[] ranks=[14, 28, 20, 7, 1] total=70 Q=70 DS-HOLDS
+ENG15 k=5 q=3 drop=[] ranks=[132, 297, 275, 154, 54, 11, 1] total=924 Q=924 DS-HOLDS
+VIGIA-FIN-OK exit=0 pico_kb=140320 t=1s

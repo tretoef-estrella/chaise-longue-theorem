@@ -1,0 +1,10 @@
+(k,q)=(2,9)  dim S'/L = 88
+   in L:   X1 false  X2 false  X3 false  X1-X2-X3 true
+   in R_2: X1 false  X2 false  X3 false  X1-X2-X3 true  s0 true
+(k,q)=(2,27)  dim S'/L = 304
+   in L:   X1 false  X2 false  X3 false  X1-X2-X3 true
+   in R_2: X1 false  X2 false  X3 false  X1-X2-X3 true  s0 true
+(k,q)=(3,9)  dim S'/L = 4266
+   in L:   X1 false  X2 false  X3 false  X1-X2-X3 true
+   in R_2: X1 false  X2 false  X3 false  X1-X2-X3 true  s0 true
+EXIT 0 after 5s

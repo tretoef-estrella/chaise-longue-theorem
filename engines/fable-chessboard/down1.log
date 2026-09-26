@@ -1,0 +1,5 @@
+q=81 trials=300 tests=23587  Z-mismatch=0 KEY-fail=0 downset/λ-fail=0 strong-fail=0
+q=27 trials=300 tests=7527  Z-mismatch=0 KEY-fail=0 downset/λ-fail=0 strong-fail=0
+q=9 trials=300 tests=2319  Z-mismatch=0 KEY-fail=0 downset/λ-fail=0 strong-fail=0
+q=243 trials=150 tests=35565  Z-mismatch=0 KEY-fail=0 downset/λ-fail=0 strong-fail=0
+VIGIA-FIN-OK exit=0 pico_kb=15584 t=6s

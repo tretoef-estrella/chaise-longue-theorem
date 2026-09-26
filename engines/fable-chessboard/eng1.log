@@ -1,0 +1,24 @@
+=== cell (6,2) q=9  n=5 c=2 d=10
+gb E: 0 s
+RAW ENGINE: z^2*s in I+z*Ntilde+(z^3)? true
+  with N_{m-2}: true
+structured: 630 candidates (u=y_i, g monomial deg 5); kernel dim 280
+STRUCTURED (u=y_i): s in known + shadows? false  ; s in known alone? false
+STRUCTURED (u in {y_j,y_l} only): kernel dim 97 ; s in known + shadows? false
+STRUCTURED (u = y_j only): kernel dim 46 ; s in known + shadows? false
+=== cell (6,1) q=9  n=5 c=3 d=11
+gb E: 0 s
+RAW ENGINE: z^2*s in I+z*Ntilde+(z^3)? true
+structured: 1050 candidates (u=y_i, g monomial deg 6); kernel dim 230
+STRUCTURED (u=y_i): s in known + shadows? false  ; s in known alone? false
+STRUCTURED (u in {y_j,y_l} only): kernel dim 47 ; s in known + shadows? false
+STRUCTURED (u = y_j only): kernel dim 16 ; s in known + shadows? false
+=== cell (5,1) q=9  n=4 c=2 d=10
+gb E: 0 s
+RAW ENGINE: z^2*s in I+z*Ntilde+(z^3)? true
+structured: 336 candidates (u=y_i, g monomial deg 6); kernel dim 105
+STRUCTURED (u=y_i): s in known + shadows? false  ; s in known alone? false
+STRUCTURED (u in {y_j,y_l} only): kernel dim 20 ; s in known + shadows? false
+STRUCTURED (u = y_j only): kernel dim 0 ; s in known + shadows? false
+FIN-OK
+EXIT 0 after 12s

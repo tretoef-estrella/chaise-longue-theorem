@@ -1,0 +1,2 @@
+DEGEN k=2 q=9 v=2  bt=5115  Q=5120  bt < Q (degeneration loses 5)
+VIGIA-FIN-OK exit=0 pico_kb=65328 t=1s

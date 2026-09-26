@@ -1,0 +1,10 @@
+=== cell (7,2) q=9  n=6 c=3 d=11
+gb E: 5 s
+RAW ENGINE: z^2*s in I+z*Ntilde+(z^3)? true
+  with N_{m-2}: true
+=== cell (7,3) q=9  n=6 c=2 d=10
+gb E: 0 s
+RAW ENGINE: z^2*s in I+z*Ntilde+(z^3)? true
+  with N_{m-2}: true
+FIN-OK
+EXIT 0 after 6s

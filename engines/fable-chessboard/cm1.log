@@ -1,0 +1,11 @@
+|Gamma'| = 168
+k=1 q=9 |Std|=168 |LM|=168  refl(Std_lex(Gamma')) == LM((D)C): True
+|Gamma'| = 5120
+k=2 q=9 |Std|=5120 |LM|=5120  refl(Std_lex(Gamma')) == LM((D)C): True
+|Gamma'| = 20
+k=2 q=3 |Std|=20 |LM|=20  refl(Std_lex(Gamma')) == LM((D)C): True
+|Gamma'| = 252
+k=4 q=3 |Std|=252 |LM|=252  refl(Std_lex(Gamma')) == LM((D)C): True
+|Gamma'| = 1950
+k=1 q=27 |Std|=1950 |LM|=1950  refl(Std_lex(Gamma')) == LM((D)C): True
+VIGIA-FIN-OK exit=0 pico_kb=2176 t=0s
