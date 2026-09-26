@@ -1,0 +1,6 @@
+=== (n+1,m)=(6,2) q=9 c=2 d=10
+  general first-order A (1166 unknowns): solvable? true  (11.0797 s)
+  power-sum descent ansatz (630 unknowns): solvable? false  (4.81756 s)
+=== (n+1,m)=(7,2) q=9 c=3 d=11
+WATCHDOG-KILLED at 570s
+pgrep: no M2 process remains

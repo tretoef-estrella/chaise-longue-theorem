@@ -1,0 +1,8 @@
+=== (n+1,m)=(6,2) q=9 c=2 d=10
+  X-family {{0, 1}}... (1 sets, 1997 unknowns): solvable? true  (.827427 s)
+  X-family {{0, 1}, {0, 2}, {1, 2}}... (10 sets, 19970 unknowns): solvable? true  (11.7427 s)
+  X-family {{0}, {1}, {2}}... (15 sets, 29955 unknowns): solvable? true  (20.2299 s)
+  X-family {{0, 1, 2}, {0, 1, 3}, {0, 2, 3}}... (10 sets, 19970 unknowns): solvable? true  (13.7063 s)
+  X-family {{0}, {1}, {2}}... (25 sets, 49925 unknowns): solvable? true  (43.4844 s)
+FIN-OK
+EXIT 0 after 45s

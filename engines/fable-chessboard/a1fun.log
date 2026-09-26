@@ -1,0 +1,18 @@
+=== (n+1,m)=(5,1) q=9 c=2 d=10 ; gb(I(W)) .00074 s ; dim S/I(W) = 88
+  #top classes 7 ; #B squarefree classes 34 ; #B e_even classes 34
+  NFs done .007498 s ; standard monomials of degree >= d-1 involved: 6
+  SOLVABLE with orbit classes? true ; rank 1 of 75
+=== (n+1,m)=(6,1) q=9 c=3 d=11 ; gb(I(W)) .008721 s ; dim S/I(W) = 855
+  #top classes 71 ; #B squarefree classes 41 ; #B e_even classes 64
+  NFs done .302656 s ; standard monomials of degree >= d-1 involved: 89
+  SOLVABLE with orbit classes? true ; rank 15 of 176
+=== (n+1,m)=(6,2) q=9 c=2 d=10 ; gb(I(W)) .009032 s ; dim S/I(W) = 855
+  #top classes 145 ; #B squarefree classes 91 ; #B e_even classes 41
+  NFs done .334585 s ; standard monomials of degree >= d-1 involved: 187
+  SOLVABLE with orbit classes? true ; rank 34 of 277
+=== (n+1,m)=(5,1) q=27 c=2 d=28 ; gb(I(W)) .014336 s ; dim S/I(W) = 304
+  #top classes 7 ; #B squarefree classes 1378 ; #B e_even classes 1378
+  NFs done 45.3112 s ; standard monomials of degree >= d-1 involved: 6
+  SOLVABLE with orbit classes? true ; rank 1 of 2763
+FIN-OK
+EXIT 0 after 61s

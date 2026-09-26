@@ -1,0 +1,1 @@
+estimate b2gate3: leaves (tiny) + q=27 n<=5 fibre GB over GF(27)? -- NOTE GF(27) point ideals forbidden but fibre ideals at n<=5 allowed; <= 3 min, <= 500 MB

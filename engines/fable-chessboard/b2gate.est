@@ -1,0 +1,1 @@
+estimate b2gate: n<=6 q=9 GF(9), per cell GB<=4 s + layer ideals (<= a few thousand monomials) + ideal equality, total <= 4 min, <= 600 MB

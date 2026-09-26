@@ -1,0 +1,9 @@
+T mod b1 divisible by x^2? true
+q=9 (C_1') G-invariant: unknowns 72+104 rows 336 solvable? true kernel dim 74
+  (I) holds? true
+  (II) holds? true
+  (C_1) holds? true
+  (C_2) holds? true
+  (C_3) holds? true
+  (C_4) holds? true
+FIN-OK

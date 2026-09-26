@@ -1,0 +1,5 @@
+G computed, colength 20370 [51.4835 s]
+K' = Q + box + F_(1,1,1) (layer N_0 omitted: redundant for (1^l)) built [51.9408 s]
+K' == G (as ideals)? true [52.4505 s]
+FIN-OK
+EXIT 0 after 48s

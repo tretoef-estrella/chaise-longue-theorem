@@ -1,0 +1,22 @@
+cell (n+1,m)=(4,1) q=9 n=3 c=1 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.002585 s]
+cell (n+1,m)=(5,1) q=9 n=4 c=2 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.002235 s]
+cell (n+1,m)=(5,2) q=9 n=4 c=1 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.002053 s]
+cell (n+1,m)=(6,1) q=9 n=5 c=3 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.011631 s]
+cell (n+1,m)=(6,2) q=9 n=5 c=2 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.006169 s]
+cell (n+1,m)=(6,3) q=9 n=5 c=1 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.004999 s]
+cell (n+1,m)=(7,1) q=9 n=6 c=4 : (T) top in J? true ; (Sh) shadow = s mod B? true   [1.29308 s]
+cell (n+1,m)=(7,2) q=9 n=6 c=3 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.105437 s]
+cell (n+1,m)=(7,3) q=9 n=6 c=2 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.021259 s]
+cell (n+1,m)=(7,4) q=9 n=6 c=1 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.014566 s]
+cell (n+1,m)=(4,1) q=27 n=3 c=1 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.001529 s]
+cell (n+1,m)=(5,1) q=27 n=4 c=2 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.007499 s]
+cell (n+1,m)=(5,2) q=27 n=4 c=1 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.002706 s]
+cell (n+1,m)=(6,1) q=27 n=5 c=3 : (T) top in J? true ; (Sh) shadow = s mod B? true   [5.21268 s]
+cell (n+1,m)=(6,2) q=27 n=5 c=2 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.204556 s]
+cell (n+1,m)=(6,3) q=27 n=5 c=1 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.008281 s]
+cell (n+1,m)=(4,1) q=81 n=3 c=1 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.002731 s]
+cell (n+1,m)=(5,1) q=81 n=4 c=2 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.665704 s]
+cell (n+1,m)=(5,2) q=81 n=4 c=1 : (T) top in J? true ; (Sh) shadow = s mod B? true   [.014967 s]
+ALL TRUE? true
+FIN-OK
+EXIT 0 after 9s

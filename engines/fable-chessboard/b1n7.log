@@ -1,0 +1,5 @@
+DegreeLimit 11 : colength of top forms 25592 (target 20370) [1.61417 s]
+DegreeLimit 12 : colength of top forms 25592 (target 20370) [2.1227 s]
+DegreeLimit 13 : colength of top forms 25592 (target 20370) [3.80229 s]
+FIN-OK
+EXIT 0 after 8s

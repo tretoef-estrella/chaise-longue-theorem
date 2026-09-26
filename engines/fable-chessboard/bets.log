@@ -1,0 +1,7 @@
+B3 k=1 dim((e_2..e_n)+m^{k+2}) = 2 ; dim ann = 2^n - Q = 2  HIT
+B3 k=2 dim((e_2..e_n)+m^{k+2}) = 12 ; dim ann = 2^n - Q = 12  HIT
+B3 k=3 dim((e_2..e_n)+m^{k+2}) = 58 ; dim ann = 2^n - Q = 58  HIT
+B3 k=4 dim((e_2..e_n)+m^{k+2}) = 260 ; dim ann = 2^n - Q = 260  HIT
+B3 k=5 dim((e_2..e_n)+m^{k+2}) = 1124 ; dim ann = 2^n - Q = 1124  HIT
+B7 (1,9): dim(E' + p_1^{q-1}) = 296 ; dim ann = 344 ; extra generators needed (B7 HIT) [0, 0, 0, 0, 0, 1, 3, 7, 14, 21, 28, 33, 36, 36, 33, 28, 21, 15, 10, 6, 3, 1]
+VIGIA-FIN-OK exit=0 pico_kb=33440 t=0s

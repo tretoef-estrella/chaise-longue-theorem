@@ -1,0 +1,8 @@
+mu={3, 1} n=6 f=2 |W|=390 : K_unif == G (as ideals)? true  [2.00299 s]
+mu={2, 2} n=6 f=2 |W|=570 : K_unif == G (as ideals)? true  [1.59166 s]
+mu={1, 1, 1} n=5 f=2 |W|=360 : K_unif == G (as ideals)? true  [.037043 s]
+mu={1, 1, 1} n=6 f=3 |W|=1920 : K_unif == G (as ideals)? true  [3.36881 s]
+mu={2, 1, 1} n=6 f=2 |W|=1020 : K_unif == G (as ideals)? true  [1.40737 s]
+mu={1, 1, 1, 1} n=6 f=2 |W|=1800 : K_unif == G (as ideals)? true  [3.54738 s]
+FIN-OK
+EXIT 0 after 12s

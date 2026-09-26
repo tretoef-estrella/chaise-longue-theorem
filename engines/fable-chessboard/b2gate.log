@@ -1,0 +1,7 @@
+mu={1, 1} n=4 f=2 |W|=84 : (w, K==G, colength K) {(0,true,84)} ; no layer: true ; Q+box+layer(mu1-1) alone == G? false
+mu={1, 1} n=5 f=3 |W|=380 : (w, K==G, colength K) {(0,true,380)} ; no layer: true ; Q+box+layer(mu1-1) alone == G? false
+mu={1, 1} n=6 f=4 |W|=3930 : (w, K==G, colength K) {(0,true,3930)} ; no layer: true ; Q+box+layer(mu1-1) alone == G? false
+mu={2, 1} n=5 f=2 |W|=200 : (w, K==G, colength K) {(1,true,200), (0,true,200)} ; no layer: true ; Q+box+layer(mu1-1) alone == G? false
+mu={2, 1} n=6 f=3 |W|=1080 : (w, K==G, colength K) {(1,true,1080), (0,false,1110)} ; no layer: false ; Q+box+layer(mu1-1) alone == G? false
+WATCHDOG-KILLED at 570s
+pgrep: no M2 process remains
