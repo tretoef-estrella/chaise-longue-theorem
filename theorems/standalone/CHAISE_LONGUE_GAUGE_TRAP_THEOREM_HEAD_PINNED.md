@@ -1,0 +1,41 @@
+> **Rafael Amichis Luengo** · tretoef@gmail.com · *The Chaise Longue campaign* · 2026-07-17
+>
+> Part of the working record of **The Chaise Longue Theorem** — [the paper](../../paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) · DOI [10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150) · [index of all standalones](../INDEX.md)
+>
+> **How to cite this document:** Amichis Luengo, R. (2026). *CHAISE LONGUE — THE FINAL ASSAULT'S HONEST VERDICT: THE GAUGE-TRAP THEOREM (EVERY ANTISYMMETRIC SIGN FACTORS), THE CROSSING CANDIDATES MEASURED DEAD, AND THE HEAD'S REMAINING UNKNOWN PINNED TO ONE SYMMETRIC WEIGHT* [working document]. In *The Chaise Longue Theorem — working record*. https://github.com/tretoef-estrella/chaise-longue-theorem/blob/main/theorems/standalone/CHAISE_LONGUE_GAUGE_TRAP_THEOREM_HEAD_PINNED.md
+>
+> **Status, as written in the document:** CHAISE LONGUE — THE FINAL ASSAULT'S HONEST VERDICT: THE GAUGE-TRAP THEOREM (EVERY ANTISYMMETRIC SIGN FACTORS), THE CROSSING CANDIDATES MEASURED DEAD, AND THE HEAD'S REMAINING UNKNOWN PINNED TO ONE SYMMETRIC WEIGHT
+>
+> **Later audit:** No later refutation of this document was found in the campaign's records; that is not the same as a referee's approval.
+>
+> ⚠️ *A working document of the campaign, reproduced as written (source version `v1`). It has not been refereed. Documents written before 23 September 2026 may treat the count `A_k(q) = P_k(q)` as the algebraic form of Conjecture 1.2; that identification is false (paper, §1.8 and §9). The authoritative statements are those of the paper, §14.*
+
+---
+
+# CHAISE LONGUE — THE FINAL ASSAULT'S HONEST VERDICT: THE GAUGE-TRAP THEOREM (EVERY ANTISYMMETRIC SIGN FACTORS), THE CROSSING CANDIDATES MEASURED DEAD, AND THE HEAD'S REMAINING UNKNOWN PINNED TO ONE SYMMETRIC WEIGHT
+## The head's gate (1, 7, 49, 210, 679) is NOT passed — nothing is faked (Ley 42). The assault's real yield, measured this session: **(1) THE GAUGE-TRAP THEOREM:** every complement-antisymmetric sign η(S,M) factors as η = ε(S)·μ(S,M) with ε pointed and μ complement-SYMMETRIC; the gauge f ↦ ε·f identifies the twisted problem with the PLAIN problem weighted by μ — so with μ ≡ 1 (every coherent convention, including the pointed sign) the operator lands back in the plain sector 1⊕20⊕14 with NO kernel: measured live (spectrum 54¹, 24¹⁴, 12²⁰), the entire class of "pick an antisymmetric sign" mountings dies as one object, completing Locard's §3 (which killed the global sign). **(2) The crossing candidates measured dead:** the crossing parity is NOT conserved across sides (measured — so one-sided crossing μ is ill-defined as a symmetric weight), and the forced constructions produce irrational noise spectra with zero kernel — not the structural object. **(3) The requirement pinned exactly:** the head's operator = the plain incidence weighted by a NON-CONSTANT complement-symmetric μ(S,M) ∈ {±1}, determined by the filed NONDEG gluing data (not by convention), whose weighted Gram must open a kernel of dimension 7 at degree 1. The assault's unknown is now ONE function on 315 incidence pairs, with its defining source named.
+
+**Chaise Longue campaign — mission LA GRAN COLLEJA DEL CIERRE delivery** · Constructor: Bisel (Fable) · 17 July 2026 · Pending P0 · Zero fits: every claim above is a measured spectrum or a two-line factorization proof.
+
+**Certificado Ley 41.** Object: the sign-convention space of the twisted nerve mounting. Locard's §3 (global sign → plain, no kernel) is the neighboring result; this turn's theorem strictly extends it (global ⊂ antisymmetric class). No tomb shares the object; the graveyard gains one street: SIGN-BY-CONVENTION (all mountings whose η is chosen rather than derived).
+
+---
+
+## §0. Para Rafa — la colleja que devuelve el golpe con información
+
+La cerradura no cae hoy, y no te la fabrico. Pero el asalto ha hecho lo que hace un buen asalto fallido: **levantar el plano completo de la cerradura.** Locard mató el signo global; hoy muere de un solo teorema TODA la familia de signos elegidos a mano — porque cualquier signo antisimétrico se descompone en (gauge) × (peso simétrico), y el gauge no cambia nada: solo el peso manda. Y los pesos naturales de tanteo (cruces) están medidos muertos: la paridad de cruce ni siquiera se conserva entre los dos lados de la bipartición — dato nuevo, no opinión. Conclusión con nombre y apellido: **la bujía tiene UNA incógnita — un peso de ±1 sobre las 315 incidencias, simétrico bajo complemento, no constante — y su definición vive en los datos NONDEG del corpus**, no en ninguna convención que se pueda inventar. Sube el doc NONDEG a uploads en el próximo turno de asalto y el operador se monta de sus datos, no de conjeturas. Media colleja para mí, el plano entero para el proyecto.
+
+## §1. The Gauge-Trap Theorem (proved + measured)
+> **Theorem.** Let η: incidences → {±1} satisfy η(S^c, M) = −η(S, M). Then η = ε·μ with ε(S) = ±1 pointed (ε(S^c) = −ε(S)) and μ = ε·η complement-symmetric. The map f ↦ ε·f is an isomorphism (odd functions) → (even functions) intertwining N_η with N_μ. Hence the twisted mounting with η is EQUIVALENT to the plain mounting weighted by μ; in particular, for μ ≡ 1 the twisted Gram has the plain spectrum and **no kernel**. ∎
+**Measured this session:** pointed η (μ ≡ 1): twisted-sector spectrum 54¹ ⊕ 24¹⁴ ⊕ 12²⁰ — plain multiplicities, kernel 0 (matching Locard's global-sign 27¹/12¹⁴/6²⁰ up to the projector factor). **Corollary: no choice of antisymmetric sign alone can produce the head. The content is entirely in μ.**
+
+## §2. The crossing candidates — measured dead
+(a) **Conservation fails:** crossing parity of M∩S vs M∩S^c disagrees on measured incidences (live check) ⟹ one-sided crossing is NOT complement-symmetric ⟹ ill-defined as μ. (b) The forced pointed×one-sided construction yields an irrational 18-level spectrum with kernel 0 on both sides — noise, not structure. Both filed to the graveyard street SIGN-BY-CONVENTION.
+
+## §3. The pinned requirement (the assault's next and final input)
+The head's operator = plain incidence N weighted by **μ: 315 incidences → {±1}, complement-symmetric, non-constant, derived from the NONDEG gluing data** (the per-sheet Schur blocks' relative orientations). Necessary conditions now on file: its weighted Gram must open kernel dim 7 at degree 1 (the small twisted... note: after the gauge, "twisted" content = the weight, and the degree-1 kernel must be the 7); the degree ladder must then produce 49, 210, 679 with the per-degree blocks. **One function, one source, one gate.** For the next assault turn: NONDEG doc (and per-sheet window blocks if available) in uploads.
+
+## §4. For Locard
+(i) The factorization is two lines — bless or break. (ii) Reproduce the conservation failure (it kills the crossing family a priori in your own frame). (iii) The graveyard street SIGN-BY-CONVENTION: file it with this doc's spectra as the killing numbers. (iv) Your §3 + my §1 = together: global AND antisymmetric conventions dead ⟹ the μ-from-NONDEG route is the ONLY street left standing — the assault map is now a single road.
+
+**MARCADOR: [LA GRAN COLLEJA — VEREDICTO HONESTO: el gate de la cabeza NO pasado, nada fingido (Ley 42) · **EL TEOREMA DE LA TRAMPA DE GAUGE (probado + medido):** todo signo antisimétrico factoriza η = ε·μ (pointed × simétrico) y el gauge identifica el problema twisted con el problema LLANO pesado por μ ⟹ con μ ≡ 1 el espectro es llano (54¹/24¹⁴/12²⁰ medido) y SIN kernel — muere de un golpe TODA la familia de signos por convención, extendiendo el §3 de Locard (global ⊂ antisimétrico) · **candidatos de cruce MEDIDOS MUERTOS:** la paridad de cruce NO se conserva entre lados (dato nuevo) ⟹ μ unilateral mal definido; la construcción forzada da espectro irracional de 18 niveles sin kernel = ruido · **LA INCÓGNITA DE LA CABEZA, CLAVADA: UNA función μ: 315 incidencias → {±1}, simétrica bajo complemento, no constante, DERIVADA de los datos NONDEG** — con condición necesaria kernel dim 7 en grado 1; calle nueva al cementerio: SIGN-BY-CONVENTION · la ruta única que queda en pie: μ-desde-NONDEG (subir doc NONDEG a uploads para el asalto) · pending P0 · SIN GRITO ∀k∀q]. — Bisel (Constructor, Fable), misión La Gran Colleja del Cierre**

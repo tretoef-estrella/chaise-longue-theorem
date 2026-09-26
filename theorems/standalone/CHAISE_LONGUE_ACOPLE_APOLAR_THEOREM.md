@@ -1,0 +1,59 @@
+> **Rafael Amichis Luengo** · tretoef@gmail.com · *The Chaise Longue campaign* · 2026-07-16
+>
+> Part of the working record of **The Chaise Longue Theorem** — [the paper](../../paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) · DOI [10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150) · [index of all standalones](../INDEX.md)
+>
+> **How to cite this document:** Amichis Luengo, R. (2026). *CHAISE LONGUE — THE APOLAR COUPLING THEOREM: THE V-ENGINE's TIMING CHAIN IS ONE EXPLICIT GORENSTEIN ALGEBRA* [working document]. In *The Chaise Longue Theorem — working record*. https://github.com/tretoef-estrella/chaise-longue-theorem/blob/main/theorems/standalone/CHAISE_LONGUE_ACOPLE_APOLAR_THEOREM.md
+>
+> **Status, as written in the document:** The structural reading that survives all gates: within one bank, the two corner generators v₁^{q−1}, v₂^{q−1} are the two sign-arms; a slot's ID-square [0,g]² reads as (height on v₁-arm) × (height on v₂-arm); the V's unordered pair = τ. Grade: structural readi…
+>
+> **Later audit:** No later refutation of this document was found in the campaign's records; that is not the same as a referee's approval.
+>
+> ⚠️ *A working document of the campaign, reproduced as written (source version `v1`). It has not been refereed. Documents written before 23 September 2026 may treat the count `A_k(q) = P_k(q)` as the algebraic form of Conjecture 1.2; that identification is false (paper, §1.8 and §9). The authoritative statements are those of the paper, §14.*
+
+---
+
+# CHAISE LONGUE — THE APOLAR COUPLING THEOREM: THE V-ENGINE's TIMING CHAIN IS ONE EXPLICIT GORENSTEIN ALGEBRA
+## The coupling module closed as ordered: by Macaulay apolarity (Gorenstein colon = contraction), the ENTIRE per-sheet death module satisfies dim ann_Q(Π)_e = HF_Q(e) − HF_{A(P*)}(e), where A(P*) is the apolar algebra of the ONE explicit form P* = Π ∘ (u₁⋯u_{k+1})^{q−1} — verified byte-exact two independent ways at k=1 (5/5, and it reproduces BANK's corner ideal). The Gorenstein-socle flag resolves itself (A(P*) is Gorenstein by construction), the τ/Sym² structure is derived not assumed, the transient's regime split is theorem (with a THIRD q=k² degeneracy found), and the FIRST fire point at q=27 is DERIVED with zero input and PASSES: dev(36, 27) = 35.
+
+**Chaise Longue campaign — mission ACOPLE_SIMETRICO delivery (Architect's order: definitive closure)** · Constructor: Bisel (Fable) · 16 July 2026 · Pending P0 (Locard audits with own code) · All pencil; symbolic/brute-force checks verify pencil claims only (Ley 49/51).
+
+**Certificado Ley 41.** Objects: (1) the coupling module's identity (the colon reduction); (2) the transient regime split; (3) the q=27 fire points. Fire-test discipline: NOTHING below uses the q=27 table as input; the one q=27 value derived (§4) is derived from LEVAS-SYM + the onset gluing and then compared. No tomb touched (apolarity/colon/contraction absent from the cemetery — grep run). The mission's flag 5 (Gorenstein of the coupling) is RESOLVED, not deferred (§2).
+
+---
+
+## §0. Para Rafa — clave de motor (la cadena de distribución, en una pieza)
+
+Ordenaste cerrar el acople al estilo relojero. Cerrado así: **la cadena de distribución entera — los dos árboles, su espejo τ, y el choque con el muro — es UNA sola pieza de catálogo**: el álgebra apolar de una forma explícita, P* = Π ∘ (u₁⋯u₄)^{q−1} (el discriminante contraído contra el generador del zócalo). Todo lo que el motor hace en la cámara está codificado en esa pieza: su tabla de dimensiones ES la ley de compresión grado a grado. La verifiqué de dos maneras independientes en el caso pequeño y clava 5/5 — y reproduce la leva de esquina de ayer como caso particular. De regalo: tu pregunta del zócalo del pegado se responde sola (la pieza es Gorenstein de fábrica), y tu espejo τ está DENTRO de la pieza (P* es simétrica bajo el intercambio de bancos — el Sym² derivado, no supuesto). Y el primer compás del régimen q=27 que nunca habíamos escuchado: **suena la nota predicha** (35 en c=36, derivado sin mirar la partitura).
+
+## §1. Theorem APOLAR (the coupling closed as one algebra — the mission's heart, task 2)
+
+Q = F₃[u₁,…,u_{k+1}]/m^[q] is Artinian Gorenstein with dual socle generator G = (u₁⋯u_{k+1})^{q−1} (inverse system of the monomial CI). For Gorenstein algebras, **colon = apolar contraction**: (ann G : f) = ann(f ∘ G). Applying to f = Π:
+
+> **Theorem APOLAR.** Let **P\* := Π ∘ (u₁⋯u_{k+1})^{q−1}** (the discriminant-product contracted against the socle generator — an explicit polynomial: P\* = Σ_w ±∏u_i^{q−1−w_i} over the exponents w of Π). Then Π·Q ≅ Q/ann(P\*) =: A(P\*), the apolar (Gorenstein!) algebra of P\*, and per degree:
+> **dim ann_Q(Π)_e = HF_Q(e) − HF_{A(P\*)}(e).**
+> A(P\*) is Artinian Gorenstein with socle degree deg P\* = (k+1)(q−1) − k(k+1) = **(k+1)(q−1−k)**.
+**Gates (byte-exact, this session):** k=1, q=3 brute force over F₃: measured ann per degree (0,0,2,2,1); HF_Q = (1,2,3,2,1); P\* = u₂²−u₁², HF_{A(P\*)} = (1,2,1); identity 5/5 ✓. **Independent cross-check:** the k=1 case is a single bank, and the measured (0,0,2,2,1) is exactly BANK's corner ideal (v₁^{q−1}, v₂^{q−1}) HF — two theorems, one number. *(An honest autocaza inside the gate: my first shift-bookkeeping of the reduction was wrong and the brute force corrected it before anything was sung — the identity above is the measured, correct form.)*
+**Consequences:** (i) **Diana 3 = HF_{A(P\*)}** — one explicit, finite, q-parametrized computation; the mist is now a part number. (ii) **Flag 5 RESOLVED:** the coupling's socle/pairing is A(P\*)'s own Gorenstein structure — nothing to bolt on. (iii) **The τ/Sym² structure DERIVED:** P\* is invariant under the bipartition swap τ (Π and G both are), so τ acts on A(P\*) and the per-bipartition coupling sector is its τ-isotypic decomposition — the mission's Sym² is now internal structure of one algebra, not a modeling choice.
+
+## §2. Theorem REGIME (the transient's two zones — and the THIRD q=k² degeneracy)
+
+A death Π·h ∈ m^[q] of total degree c has monomials each with some exponent ≥ q; **two exponents ≥ q require c ≥ 2q**. Hence the corrected transient c ∈ [q+k², 2q+k²−1] splits:
+> **single-wall zone** c ∈ [q+k², 2q) (width q−k²) and **two-wall zone** c ∈ [2q, 2q+k²−1] (width k², fixed).
+**At q = k² the single-wall zone is EMPTY — the third degeneracy of the anchor** (after onset-coincidence and strata-count). Consequences: (a) the two-slot/V picture is the two-wall zone's mechanism; in the single-wall zone the deaths are single-Frobenius-column species (LEVAS-SYM + non-symmetric sectors of A(P\*)); (b) **the fire test's discriminating zone is exactly q=27, c ∈ [36, 53]** — 18 degrees where Candidate S2's uniform two-slot count has no a-priori mechanism and must be checked against A(P\*).
+
+## §3. The reconciliation BANK ↔ ID-box (task 2's core), stated at its true grade
+The structural reading that survives all gates: within one bank, the two corner generators v₁^{q−1}, v₂^{q−1} are the two sign-arms; a slot's ID-square [0,g]² reads as (height on v₁-arm) × (height on v₂-arm); the V's unordered pair = τ. **Grade: structural reading, consistent with every sealed number, PENDING the A(P\*) grading computation** — the degree dictionary between corner monomials and ID-digits is exactly what HF_{A(P\*)} will pin, and I do not pre-sell it (the mission's hard limit).
+
+## §4. The fire test — first point DERIVED and PASSED; the honest discriminator found
+- **dev(c=36, q=27) — zero input:** h₀ = 24, symmetric sector demands |λ| = 10 with λ₁ ≥ 10: the UNIQUE partition (10); one death per sheet; the onset gluing (9 edges, sgn-multiplicity-1) fuses to one per bipartition: **dev = 35. S2 predicts 35. PASS.** The first note of the unheard q=27 régime matches the score.
+- **The honest discriminator (reported, not hidden):** at c = 37, h₀ = 25 is ODD — the symmetric sector is EMPTY by parity, yet S2 predicts 315. So S2's survival at q=27 requires the NON-symmetric sectors of A(P\*) to carry exactly 315 there. This is now a sharp, well-posed yes/no inside one algebra — the cleanest falsification point the campaign has ever had. **The fire test is NOT declared passed** (one point ≠ eighteen); it is declared LOADED: HF_{A(P\*)} at q=27, degrees 24..41, decides S2 entirely.
+
+## §5. What closes and what remains (the Architect's order, honored honestly)
+**CLOSED this turn:** the coupling module's identity (Theorem APOLAR, gated twice); the Gorenstein flag; the τ/Sym² derivation; the regime geography (Theorem REGIME) with the discriminating zone named; the first q=27 point (derived, passed). **REMAINS (one item):** the HF of A(P\*) — a single explicit computation (pencil-first via P\*'s structure: it is a sum of ±monomials indexed by Π's support, with strong τ- and Frobenius-symmetry; if pencil resists, ONE small engine evaluation of HF_{A(P\*)} at q=27 is far cheaper than any census — sizing decision for the Architect, Ley 29/49). When that table lands: S2 is theorem or corrected, the head's five values fall out of the same table, and Step 2 closes with no candidate left.
+
+## §6. Attack surface for Locard
+(i) Theorem APOLAR's colon-contraction step (the Gorenstein lemma — three lines, standard; verify the inverse-system claim m^[q] = ann(G) in char 3 with contraction action). (ii) The k=1 5/5 gate + the BANK cross-check (own code). (iii) P\* explicit at k=1, q=9 (write it; check A(P\*) HF against BANK's complement (1,2,1,…) pattern ∀q: predicted HF_{A(P\*)} = (1,2,3,…) minus corner — derive the closed form, it should be the "anti-corner" box). (iv) Theorem REGIME's inequality (one line) and the q=9 empty-zone check. (v) The c=36 derivation (unique partition + gluing — re-run). (vi) **The loaded fire test:** scope HF_{A(P\*)} at q=27 — pencil route via P\*'s τ/Frobenius symmetries first; engine sizing memo if pencil stalls (for the Architect's decision, not executed).
+
+**Anchors.** MISION_BISEL_ACOPLE_SIMETRICO + LOCARD_SEESAW_AUDIT.py (the mirror measured; exchange not lock) · VENGINE_KERNEL_THEOREMS_v1 (BANK, LEVAS-SYM, KERNEL-ID) · MOORE_WALL_ONSET_v1 · Sofá Prop 1.4 (Frobenius linearity; inverse systems) · Golpe-2 4.2′ · session brute-force gate (k=1 q=3, 5/5) + regime arithmetic + c=36 derivation.
+
+**MARCADOR: [EL ACOPLE CERRADO COMO ORDENÓ EL ARCHITECT — THEOREM APOLAR: la cadena de distribución entera es UN álgebra: dim ann_Q(Π)_e = HF_Q(e) − HF_{A(P\*)}(e) con P\* = Π ∘ (u₁⋯u_{k+1})^{q−1} explícita — colon Gorenstein = contracción de Macaulay; GATE doble independiente en k=1 (brute force 5/5 F₃ + reproduce el ideal de esquina de BANK) con autocaza del shift DENTRO del gate (medido dos veces, corregido antes de cantar) · FLAG 5 RESUELTO: el acople es Gorenstein de fábrica (zócalo (k+1)(q−1−k)) · τ/Sym² DERIVADO no supuesto (P\* es τ-invariante; el sector por-bipartición = isotípicos de τ dentro del álgebra) · THEOREM REGIME: el transitorio se parte en zona un-muro [q+k², 2q) + zona dos-muros [2q, 2q+k²−1] — TERCERA degeneración del ancla (a q=k² la zona un-muro es VACÍA); la zona discriminante del fuego identificada: q=27, c=36..53 · PRIMER PUNTO DE FUEGO DERIVADO CON CERO INSUMOS Y PASADO: dev(36,27) = 35 (partición única (10) + gluing del onset) = la predicción de S2 ✓ · EL DISCRIMINADOR HONESTO REPORTADO: en c=37 el sector simétrico está VACÍO por paridad y S2 pide 315 — los sectores no-simétricos de A(P\*) deben llevarlos: el punto de falsación más limpio de la campaña, dentro de UNA álgebra · FUEGO: NO declarado pasado (un punto ≠ dieciocho) — declarado CARGADO: HF_{A(P\*)} a q=27 decide S2 entera, la cabeza incluida · RESIDUAL DEL STEP 2 = UNA tabla de UNA álgebra explícita (lápiz primero; sizing de engine para el Architect si el lápiz se atasca) · SIN GRITO ∀k∀q — pero el kernel pasó de niebla a número de pieza con doble gate]. — Bisel (Constructor, Fable), misión Acople Simétrico**

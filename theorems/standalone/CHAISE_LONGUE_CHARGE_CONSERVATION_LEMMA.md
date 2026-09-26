@@ -1,0 +1,117 @@
+> **Rafael Amichis Luengo** · tretoef@gmail.com · *The Chaise Longue campaign* · 2026 (date not stated in the document)
+>
+> Part of the working record of **The Chaise Longue Theorem** — [the paper](../../paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) · DOI [10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150) · [index of all standalones](../INDEX.md)
+>
+> **How to cite this document:** Amichis Luengo, R. (2026). *The Charge Conservation Lemma* [working document]. In *The Chaise Longue Theorem — working record*. https://github.com/tretoef-estrella/chaise-longue-theorem/blob/main/theorems/standalone/CHAISE_LONGUE_CHARGE_CONSERVATION_LEMMA.md
+>
+> **Status, as written in the document:** not stated in the document itself
+>
+> **Later audit:** The campaign's later records mention this document next to a refutation, retraction, circularity or supersession (1 lines). Search its name in [the Cemetery](../../archive/CHAISE_LONGUE_CEMENTERIO_LIVE_v502.md) before relying on it.
+>
+> ⚠️ *A working document of the campaign, reproduced as written (source version `v1`). It has not been refereed. Documents written before 23 September 2026 may treat the count `A_k(q) = P_k(q)` as the algebraic form of Conjecture 1.2; that identification is false (paper, §1.8 and §9). The authoritative statements are those of the paper, §14.*
+
+---
+
+# The Charge Conservation Lemma
+
+### The odd block of the odd-elementary residue system is a conservation law: it is satisfied automatically by every admissible input, in every characteristic
+
+**Chaise Longue campaign · standalone · v1 · Marsh (Auditor), from Frescales IX turn 6**
+
+---
+
+## Abstract
+
+In the residue-gluing formulation of the contraction `(\star): \mathfrak m^{[q]}_R = R\cap\mathfrak
+m^{[q]}_{\overline R}` for the odd-elementary complete intersection, the per-sheet residue data splits, on each
+codimension-one seam, into an **odd block** (the seam charge and the shared residues) and an **even block** (the
+knobs). We prove that the odd block is never an obstruction: for any admissible input `z`, the odd charge
+`(\rho_l+\varepsilon\rho_m)|_F` and each shared residue `\rho_s|_F` are **intrinsic to `z|_F`** — they do not
+depend on which of the two sheets meeting at the seam is used to compute them. Hence the odd agreement
+conditions hold identically. The proof is a uniqueness statement for division by a regular sequence in a
+Frobenius-truncated ring; it is uniform in `k` and independent of the characteristic. The sealing of the
+residue complex is thereby reduced to the coverage of the even (knob) block alone.
+
+---
+
+## 1. Setup
+
+`K` a field, `\mathrm{char}\,K=p` odd, `q=p^v`, `n=2k+2`, `R=S/E`, `E=(e_1,\dots,e_{2k+1})`; sheets `L_J`,
+`x_{a_l}=u_l,\ x_{b_l}=-u_l`. An input `z\in R` is **admissible** (certified) if `z|_{L_\sigma}\in\mathfrak
+m^{[q]}|_{L_\sigma}` for every sheet `\sigma` — i.e. on each sheet there exist residues
+`(\rho_{l,\sigma})_l` (the antisymmetric part `r_{a_l}-r_{b_l}`) with the **pinning**
+```
+    \sum_{l} u_l^{q}\,\rho_{l,\sigma} \;=\; z|_{L_\sigma},
+```
+the `\rho_{l,\sigma}` being determined up to the Koszul syzygies of the regular sequence `(u_1^{q},\dots,
+u_{k+1}^{q})`. Two sheets `\sigma,\sigma'` meeting on a codimension-one **seam** `F` differ by one 4-set swap
+of two matched pairs `\{l,m\}`; on `F` one has `u_l=\varepsilon u_m` (`\varepsilon\in\{\pm1\}`), the two swapped
+coordinates coincide up to sign, and the remaining (shared) pairs `s` keep their coordinates. The **odd
+agreement conditions** across the seam are
+```
+    (O1)\quad (\rho_{l,\sigma}+\varepsilon\rho_{m,\sigma})|_F \;=\; (\rho_{l',\sigma'}+\varepsilon\rho_{m',\sigma'})|_F,
+    \qquad
+    (O2)\quad \rho_{s,\sigma}|_F \;=\; \rho_{s,\sigma'}|_F .
+```
+
+## 2. The lemma
+
+> **Charge Conservation Lemma.** Let `z` be admissible and let `F` be a seam between sheets `\sigma,\sigma'`,
+> with collapsed coordinate `v` (`=u_l=\varepsilon u_m` on `F`) and shared coordinates `w=(u_s)_s`. Then the
+> **odd charge** `(\rho_l+\varepsilon\rho_m)|_F` and each **shared residue** `\rho_s|_F` depend only on `z|_F`,
+> not on the sheet used to compute them. Consequently `(O1)` and `(O2)` hold identically, for every admissible
+> `z`, every seam, every `k`, and independently of `\mathrm{char}\,K`.
+
+### Proof
+
+Both sheets `\sigma,\sigma'` contain `F` and restrict the **same** ambient function `z` to it, so
+`z|_{L_\sigma}|_F = z|_{L_{\sigma'}}|_F = z|_F`. Restricting the pinning to `F` collapses the two swapped
+coordinates to `v` and leaves the shared coordinates `w`, giving, on either sheet,
+```
+    v^{q}\,\big(\rho_l+\varepsilon\rho_m\big)\big|_F \;+\; \sum_s w_s^{q}\,\rho_{s}\big|_F \;=\; z|_F .   \tag{$\ast$}
+```
+(The cross term uses `u_l^{q}\rho_l+u_m^{q}\rho_m = v^{q}(\rho_l+\varepsilon\rho_m)` on `F`, since
+`u_m^{q}=\varepsilon^{q}v^{q}=\varepsilon v^{q}` for `q` odd.) Equation `(\ast)` exhibits `z|_F` as an element of
+the ideal generated by the regular sequence `(v^{q}, w_1^{q},\dots)` in the seam ring, with the odd charge and
+the shared residues as its division coefficients.
+
+Division by a regular sequence is unique **modulo the Koszul syzygies** of the sequence. Working, as one must
+(finite length: `\mathfrak m^{[q]}` is `\mathfrak m`-primary), in the Frobenius-truncated ring
+`B=K[v,w]/(v^{q},w^{q})`, every Koszul syzygy — being a `K[v,w]`-combination of the sequence elements
+`v^{q},w_s^{q}` — is **zero in `B`**. Hence the division coefficients of `z|_F` are *unique* in `B`: the class
+of `(\rho_l+\varepsilon\rho_m)|_F` and of each `\rho_s|_F` in `B` is a function of `z|_F` alone.
+
+Both sheets solve the same equation `(\ast)` for the same `z|_F` in the same ring `B`; by uniqueness they obtain
+the same odd charge and the same shared residues. This is exactly `(O1)` and `(O2)`. Nothing in the argument
+used `k`, and the only use of the characteristic was `\varepsilon^{q}=\varepsilon` (odd `q`), which holds in
+every odd characteristic. `\qquad\blacksquare`
+
+## 3. Consequences
+
+> **Corollary 1 (the odd block is free).** For admissible inputs the odd agreement conditions impose no
+> constraint: they are conservation laws satisfied identically. The obstruction to sealing the residue complex
+> lies **entirely in the even (knob) block**.
+
+> **Corollary 2 (characteristic-independence of the odd sector).** The reduction of Corollary 1 holds over any
+> field of odd characteristic and over `\mathbb Q`. In particular no characteristic-specific phenomenon can
+> enter the residue system through the odd block; if the model residue complex seals over one odd
+> characteristic for realizable inputs, the odd block is not the reason it could fail over another.
+
+*(Remark. This is what forces the sealing mechanism into the even block and its knob coverage of the
+sheet-dependent antisymmetric remainder `(\rho_l-\varepsilon\rho_m)|_F`; the even block, unlike the odd, is
+genuinely sheet-dependent and is where the knob map does its work.)*
+
+## 4. Grades
+
+| Statement | Grade | Scope |
+|---|---|---|
+| Charge Conservation Lemma (§2) | **PROVED** (pencil) | `\forall k`, all seams, all odd `\mathrm{char}`; machine-confirmed (`O`-rank `0`) at the `k=2` model |
+| Corollary 1 (odd block free; obstruction is even-only) | **PROVED** | `\forall k` |
+| Corollary 2 (characteristic-independence of the odd sector) | **PROVED** | `\forall k` |
+
+## 5. One line
+
+Two sheets meeting on a seam see the same restriction of the same function, and the datum of dividing it by the
+Frobenius regular sequence is unique in the truncated ring — so the odd charge and shared residues are intrinsic
+to the seam, the odd agreement conditions hold for free, and the entire obstruction to gluing is pushed into the
+even knob block, uniformly in dimension and independently of the characteristic.
