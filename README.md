@@ -20,15 +20,15 @@ In a paper published in 2016, Alex Degtyarev and Ichiro Shimada asked whether th
 
 ## The answer
 
-> **Main Theorem.** *For every odd degree $m \ge 3$ and every $k \ge 0$, the group $H_{2k}(X;\mathbb{Z})/L(X)$ is torsion free. Equivalently, $L(X)$ is a primitive sublattice of rank $Q_k(m)+1$, where $Q_k(m) = (2k+2)!\,[x^{2k+2}]\, I_0(2x)^{(m-1)/2}$.*
+> **Main Theorem.** For every odd degree $m \ge 3$ and every $k \ge 0$, the group $H_{2k}(X;\mathbb{Z})/L(X)$ is torsion free. Equivalently, $L(X)$ is a primitive sublattice of rank $Q_k(m)+1$, where $Q_k(m) = (2k+2)!\,[x^{2k+2}]\, I_0(2x)^{(m-1)/2}$.
 
 It has an algebraic form that needs no topology at all:
 
-> **Main Theorem′.** *For every odd $m \ge 3$ and $k \ge 1$, the group $\mathbb{Z}[G]/(\psi_J : J \in \mathcal{J})$ of Degtyarev–Shimada, with $G = (\mathbb{Z}/m)^{2k+1}$, is free abelian of rank $m^{2k+1} - Q_k(m)$.*
+> **Main Theorem′.** For every odd $m \ge 3$ and $k \ge 1$, the group $\mathbb{Z}[G]/(\psi_J : J \in \mathcal{J})$ of Degtyarev–Shimada, with $G = (\mathbb{Z}/m)^{2k+1}$, is free abelian of rank $m^{2k+1} - Q_k(m)$.
 
 And it has a consequence in Hodge theory:
 
-> **Corollary H.** *If $m$ is an odd prime, or every prime factor of $m$ exceeds $2k+2$, then every integral Hodge class of middle degree on $X$ is an integral combination of classes of linear subspaces. In particular the integral Hodge conjecture holds for $X$.*
+> **Corollary H.** If $m$ is an odd prime, or every prime factor of $m$ exceeds $2k+2$, then every integral Hodge class of middle degree on $X$ is an integral combination of classes of linear subspaces. In particular the integral Hodge conjecture holds for $X$.
 
 **In plain words.** Degtyarev and Shimada turned a question about the shape of a variety into a question about counting: the conjecture holds exactly when, for each prime dividing the degree, a certain family of polynomials — one for each way of pairing up $2k+2$ objects — spans a space of the right size. The proof counts that space by peeling off one variable at a time. Each slice turns out to be a smaller problem of the same kind, the bookkeeping collapses onto partitions of whole numbers ordered by dominance, and at every step the possible values of the new coordinate line up in a single chain. For the degrees that are not prime powers, the problem first splits into independent colour blocks, and one new family of blocks is counted by the same method.
 
