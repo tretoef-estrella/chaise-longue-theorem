@@ -1,0 +1,23 @@
+Thm 4.1 k=1: lead==ballot: True ; |lead|=6 vs C(2k+2,k+1)=6 ; graded ranks [2, 3, 1] vs predicted [2, 3, 1]
+Thm 4.1 k=2: lead==ballot: True ; |lead|=20 vs C(2k+2,k+1)=20 ; graded ranks [5, 9, 5, 1] vs predicted [5, 9, 5, 1]
+Thm 4.1 k=3: lead==ballot: True ; |lead|=70 vs C(2k+2,k+1)=70 ; graded ranks [14, 28, 20, 7, 1] vs predicted [14, 28, 20, 7, 1]
+Thm 4.1 k=4: lead==ballot: True ; |lead|=252 vs C(2k+2,k+1)=252 ; graded ranks [42, 90, 75, 35, 9, 1] vs predicted [42, 90, 75, 35, 9, 1]
+Thm 4.1 k=5: lead==ballot: True ; |lead|=924 vs C(2k+2,k+1)=924 ; graded ranks [132, 297, 275, 154, 54, 11, 1] vs predicted [132, 297, 275, 154, 54, 11, 1]
+        3.84 real         2.57 user         0.40 sys
+           349700096  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               93706  page reclaims
+                5155  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1969  voluntary context switches
+                4280  involuntary context switches
+            27341641  instructions retired
+            13929771  cycles elapsed
+             1065248  peak memory footprint

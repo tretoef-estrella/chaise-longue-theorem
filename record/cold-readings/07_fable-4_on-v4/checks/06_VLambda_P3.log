@@ -1,0 +1,8 @@
+P3 membership (q,m)=(5,3) over F_5: down-sets=4 tests=38 FAILURES=0 ; negative control (slice q-3-i): 5 of 38 generators NOT in the lower slice (paper says the lower slice fails)
+P3 membership (q,m)=(5,4) over F_5: down-sets=7 tests=156 FAILURES=0 ; negative control (slice q-3-i): 33 of 156 generators NOT in the lower slice (paper says the lower slice fails)
+P3 membership (q,m)=(7,3) over F_7: down-sets=5 tests=68 FAILURES=0 ; negative control (slice q-3-i): 8 of 68 generators NOT in the lower slice (paper says the lower slice fails)
+P3 membership (q,m)=(9,3) over F_3: down-sets=5 tests=90 FAILURES=0 ; negative control (slice q-3-i): 8 of 90 generators NOT in the lower slice (paper says the lower slice fails)
+P3 membership (q,m)=(3,4) over F_3: down-sets=4 tests=33 FAILURES=0 ; negative control (slice q-3-i): 9 of 33 generators NOT in the lower slice (paper says the lower slice fails)
+P3 membership (q,m)=(3,5) over F_3: down-sets=4 tests=150 FAILURES=0 ; negative control (slice q-3-i): 36 of 150 generators NOT in the lower slice (paper says the lower slice fails)
+
+[referee note] The run was cut by the 600 s alarm during cell (9,4): the generic Sage subspace intersection on a 4096-dimensional space is slow. Cells (9,4) and (11,3) of the P3 mode DID NOT CONCLUDE; the six cells above completed with 0 failures. Orphaned python/bash processes were killed by hand afterwards.

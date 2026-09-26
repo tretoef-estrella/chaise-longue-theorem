@@ -1,0 +1,31 @@
+composite q=15 over F_3 [Thm 5.9 applies]: dim (D_J)C = 546 ; Q_1(q) = 546 ; EQUAL ; 0.0s
+composite q=15 over F_5 [Thm 5.9 applies]: dim (D_J)C = 546 ; Q_1(q) = 546 ; EQUAL ; 0.0s
+composite q=15 over F_7 [p | q-1 (no claim)]: dim (D_J)C = 546 ; Q_1(q) = 546 ; EQUAL ; 0.0s
+composite q=15 over F_2 [p | q-1 (no claim)]: dim (D_J)C = 546 ; Q_1(q) = 546 ; EQUAL ; 0.0s
+composite q=21 over F_3 [Thm 5.9 applies]: dim (D_J)C = 1140 ; Q_1(q) = 1140 ; EQUAL ; 0.0s
+composite q=21 over F_11 [Thm 5.9 applies]: dim (D_J)C = 1140 ; Q_1(q) = 1140 ; EQUAL ; 0.0s
+composite q=21 over F_5 [p | q-1 (no claim)]: dim (D_J)C = 1140 ; Q_1(q) = 1140 ; EQUAL ; 0.0s
+composite q=21 over F_2 [p | q-1 (no claim)]: dim (D_J)C = 1140 ; Q_1(q) = 1140 ; EQUAL ; 0.0s
+composite q=45 over F_7 [Thm 5.9 applies]: dim (D_J)C = 5676 ; Q_1(q) = 5676 ; EQUAL ; 0.0s
+all down-sets (q,m)=(15,3) over F_3: 5 down-sets, dim<|Z|: 0, dim>|Z|: 0
+all down-sets (q,m)=(15,3) over F_7: 5 down-sets, dim<|Z|: 0, dim>|Z|: 0
+all down-sets (q,m)=(15,4) over F_5: 10 down-sets, dim<|Z|: 0, dim>|Z|: 0
+all down-sets (q,m)=(21,3) over F_11: 5 down-sets, dim<|Z|: 0, dim>|Z|: 0
+        2.93 real         1.73 user         0.34 sys
+           246710272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               83680  page reclaims
+                5110  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   1  signals received
+                1264  voluntary context switches
+                3905  involuntary context switches
+            27293437  instructions retired
+            14725906  cycles elapsed
+             1065248  peak memory footprint

@@ -1,0 +1,68 @@
+== Q_k(q) table (paper section 3) ==
+3 [6, 20, 70, 252, 924]
+5 [36, 400, 4900, 63504, 853776]
+7 [90, 1860, 44730, 1172556, 32496156]
+9 [168, 5120, 190120, 7939008, 357713664]
+11 [270, 10900, 551950, 32232060, 2070891900]
+13 [396, 19920, 1281420, 96807312, 8175770064]
+25 [1656, 182400, 26926200, 4890642624, 1038711332736]
+27 [1950, 234260, 37849630, 7550855676, 1767675505596]
+Q_1(q)=3(q-1)(q-2): True
+Q_2(q) poly: True
+Q_3(q) poly: True
+Q_k(3)=C(2k+2,k+1): True
+== Lemma 2.2: |Gamma_J| in mu_q\{1} by brute force vs Q_k(q) ==
+(1, 3) 6 6
+(1, 5) 36 36
+(1, 7) 90 90
+(2, 3) 20 20
+(2, 5) 400 400
+(1, 9) 168 168
+== Lemma 3.1: |Gamma'| = #{y in T^{2k+1}: nu(y)=k} ==
+(1, 3) 6 6 6
+(1, 5) 36 36 36
+(1, 7) 90 90 90
+(2, 3) 20 20 20
+(2, 5) 400 400 400
+(3, 3) 70 70 70
+(1, 9) 168 168 168
+(2, 7) 1860 1860 1860
+== count_shape_formula vs brute force, several cells ==
+mismatches: 0
+== section 5.10 worked example (q,m)=(9,4) ==
+Par_3: [(1,), (3,), (2, 1), (1, 1, 1)] Par_4: [(), (2,), (1, 1), (4,), (3, 1), (2, 2), (2, 1, 1), (1, 1, 1, 1)] #downsets Par_4: 10
+(1,) 168
+(3,) 8
+(2, 1) 144
+(1, 1, 1) 192
+downset? True
+(1,) [(), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (2,)] 8
+(3,) [(2,), (3, 1), (3, 1), (3, 1), (3, 1), (3, 1), (3, 1), (4,)] 1
+(2, 1) [(1, 1), (2,), (2, 1, 1), (2, 1, 1), (2, 1, 1), (2, 1, 1), (2, 2), (3, 1)] 2
+(1, 1, 1) [(1, 1), (1, 1), (1, 1), (1, 1, 1, 1), (1, 1, 1, 1), (2, 1, 1), (2, 1, 1), (2, 1, 1)] 3
+layers: [[(1,), (1, 1, 1), (2, 1), (3,)], [(1,), (1, 1, 1), (2, 1)], [(1,), (1, 1, 1)], [(1,)], [(1,)], [(1,)], [(1,)], [(1,)]]
+|Z_Lambda| via layers: 2216  brute: 2216
+Lam2 (1,) 7
+Lam2 (3,) 0
+Lam2 (2, 1) 1
+Lam2 (1, 1, 1) 3
+|Z_Lam2|: 1896
+elapsed 0.1s
+        0.14 real         0.12 user         0.01 sys
+            12238848  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1704  page reclaims
+                  51  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  52  voluntary context switches
+                  23  involuntary context switches
+          2015532228  instructions retired
+           467223106  cycles elapsed
+             8175880  peak memory footprint

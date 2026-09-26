@@ -1,0 +1,2 @@
+# NEW cell 4,5,5 (not in the paper's table except (1,49)); prediction: EQUAL to Q_k(q); estimate: ring dim 262144, unknown time/memory; watchdog 600 s / 1100 MB
+[watchdog] KILLED: RSS 1160 MB > cap 1100 MB ; wall 6.2 s ; peak RSS of process group 1160 MB

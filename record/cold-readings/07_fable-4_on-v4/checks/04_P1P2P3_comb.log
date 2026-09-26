@@ -1,0 +1,35 @@
+(q,m)=(3,4): |Par_m|=3, #downsets=4, brute=True, tests=81, FAILURES=0  [0.0s]
+(q,m)=(3,6): |Par_m|=4, #downsets=5, brute=True, tests=239, FAILURES=0  [0.0s]
+(q,m)=(5,3): |Par_m|=3, #downsets=4, brute=True, tests=166, FAILURES=0  [0.0s]
+(q,m)=(5,4): |Par_m|=6, #downsets=7, brute=True, tests=601, FAILURES=0  [0.0s]
+(q,m)=(5,5): |Par_m|=6, #downsets=7, brute=True, tests=2073, FAILURES=0  [0.0s]
+(q,m)=(5,6): |Par_m|=10, #downsets=12, brute=True, tests=12692, FAILURES=0  [0.2s]
+(q,m)=(7,3): |Par_m|=4, #downsets=5, brute=True, tests=338, FAILURES=0  [0.2s]
+(q,m)=(7,4): |Par_m|=7, #downsets=8, brute=True, tests=2000, FAILURES=0  [0.2s]
+(q,m)=(7,5): |Par_m|=9, #downsets=11, brute=True, tests=14817, FAILURES=0  [0.4s]
+(q,m)=(9,3): |Par_m|=4, #downsets=5, brute=True, tests=516, FAILURES=0  [0.5s]
+(q,m)=(9,4): |Par_m|=8, #downsets=10, brute=True, tests=5509, FAILURES=0  [0.6s]
+(q,m)=(9,5): |Par_m|=10, #downsets=13, brute=True, tests=54098, FAILURES=0  [1.6s]
+(q,m)=(11,3): |Par_m|=4, #downsets=5, brute=True, tests=734, FAILURES=0  [1.7s]
+(q,m)=(11,4): |Par_m|=8, #downsets=10, brute=True, tests=10457, FAILURES=0  [1.9s]
+(q,m)=(13,4): |Par_m|=8, #downsets=10, brute=True, tests=17805, FAILURES=0  [2.4s]
+P2 random large-h pairs: tests=369134 FAILURES=0
+TOTAL tests=491260 FAILURES=0 elapsed 3.4s
+        3.41 real         3.24 user         0.08 sys
+            12959744  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1808  page reclaims
+                 258  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 112  voluntary context switches
+                 605  involuntary context switches
+         51683941030  instructions retired
+         11185542134  cycles elapsed
+             9224480  peak memory footprint

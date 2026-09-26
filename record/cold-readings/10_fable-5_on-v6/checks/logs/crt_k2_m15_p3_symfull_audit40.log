@@ -1,0 +1,76 @@
+# command: python3 scripts/crt_colouring_k2.py 15 3 --k 2 --sym full --audit 40
+# prediction: Σ_c dim = Q_2(15) = 32900 (paper §12.3: 1001 colourings with non-zero image at p=3); est < 5 min, < 300 MB
+# cap: 1150 MB RSS (polled every 0.5 s) and 600 s wall; run date: Fri Sep 25 13:29:24 CEST 2026
+m=15=3*5 p=3 k=2 nvar=5: F=GF(3^4) (poly [1, 0, 1, 1, 1]), zeta of order 5; block dim q^nvar=243; #colourings r^nvar=3125; PREDICTION Σ_c dim = Q_2(15) = 32900, quotient 726475
+#orbits (sym=full) = 34
+  orbit 0/34 rep=(0, 0, 0, 0, 0) mult=1 surviving gens=15 dim=20  (running total 20, 0.0s)
+  orbit 1/34 rep=(0, 0, 0, 0, 1) mult=20 surviving gens=3 dim=18  (running total 380, 0.0s)
+  orbit 4/34 rep=(0, 0, 0, 1, 4) mult=40 surviving gens=3 dim=18  (running total 1100, 0.0s)
+  orbit 8/34 rep=(0, 0, 1, 1, 4) mult=120 surviving gens=2 dim=30  (running total 4700, 0.1s)
+  orbit 9/34 rep=(0, 0, 1, 2, 3) mult=240 surviving gens=1 dim=18  (running total 9020, 0.1s)
+  orbit 18/34 rep=(0, 1, 1, 4, 4) mult=60 surviving gens=2 dim=30  (running total 10820, 0.1s)
+  orbit 19/34 rep=(0, 1, 2, 3, 4) mult=120 surviving gens=1 dim=18  (running total 12980, 0.1s)
+  orbit 29/34 rep=(1, 1, 1, 4, 4) mult=40 surviving gens=6 dim=93  (running total 16700, 0.2s)
+  orbit 32/34 rep=(1, 1, 2, 3, 4) mult=240 surviving gens=2 dim=45  (running total 27500, 0.2s)
+  orbit 33/34 rep=(1, 1, 2, 4, 4) mult=120 surviving gens=2 dim=45  (running total 32900, 0.2s)
+TOTAL Σ_c dim π_c(I) = 32900  over 1001 colourings with non-zero image (10 orbits); prediction 32900: AGREES  [0.2s]
+  audit e=(2, 3, 3, 1, 1) dim=0 orbit-rep=(1, 1, 2, 2, 4) orbit-dim=0 ok
+  audit e=(4, 4, 0, 0, 1) dim=30 orbit-rep=(0, 0, 1, 1, 4) orbit-dim=30 ok
+  audit e=(0, 0, 1, 3, 1) dim=0 orbit-rep=(0, 0, 1, 1, 3) orbit-dim=0 ok
+  audit e=(1, 4, 3, 4, 3) dim=0 orbit-rep=(1, 1, 2, 2, 4) orbit-dim=0 ok
+  audit e=(2, 2, 0, 1, 4) dim=0 orbit-rep=(0, 1, 1, 2, 3) orbit-dim=0 ok
+  audit e=(1, 1, 1, 3, 3) dim=0 orbit-rep=(1, 1, 1, 3, 3) orbit-dim=0 ok
+  audit e=(1, 3, 4, 1, 1) dim=0 orbit-rep=(1, 1, 1, 3, 4) orbit-dim=0 ok
+  audit e=(3, 3, 2, 3, 3) dim=0 orbit-rep=(1, 1, 1, 1, 4) orbit-dim=0 ok
+  audit e=(2, 4, 1, 2, 1) dim=0 orbit-rep=(1, 1, 2, 2, 4) orbit-dim=0 ok
+  audit e=(1, 0, 1, 2, 2) dim=0 orbit-rep=(0, 1, 1, 2, 2) orbit-dim=0 ok
+  audit e=(2, 2, 1, 0, 3) dim=0 orbit-rep=(0, 1, 1, 3, 4) orbit-dim=0 ok
+  audit e=(0, 4, 0, 1, 3) dim=18 orbit-rep=(0, 0, 1, 2, 3) orbit-dim=18 ok
+  audit e=(2, 4, 0, 4, 3) dim=0 orbit-rep=(0, 1, 1, 2, 3) orbit-dim=0 ok
+  audit e=(1, 3, 2, 3, 4) dim=45 orbit-rep=(1, 1, 2, 3, 4) orbit-dim=45 ok
+  audit e=(3, 3, 2, 0, 2) dim=30 orbit-rep=(0, 1, 1, 4, 4) orbit-dim=30 ok
+  audit e=(4, 0, 2, 3, 4) dim=0 orbit-rep=(0, 1, 1, 2, 3) orbit-dim=0 ok
+  audit e=(1, 0, 3, 2, 4) dim=18 orbit-rep=(0, 1, 2, 3, 4) orbit-dim=18 ok
+  audit e=(4, 0, 0, 1, 0) dim=18 orbit-rep=(0, 0, 0, 1, 4) orbit-dim=18 ok
+  audit e=(3, 3, 0, 3, 0) dim=0 orbit-rep=(0, 0, 1, 1, 1) orbit-dim=0 ok
+  audit e=(1, 1, 0, 3, 0) dim=0 orbit-rep=(0, 0, 1, 1, 3) orbit-dim=0 ok
+  audit e=(2, 1, 3, 0, 3) dim=0 orbit-rep=(0, 1, 1, 2, 4) orbit-dim=0 ok
+  audit e=(4, 4, 0, 4, 3) dim=0 orbit-rep=(0, 1, 1, 1, 2) orbit-dim=0 ok
+  audit e=(0, 2, 4, 4, 3) dim=0 orbit-rep=(0, 1, 1, 2, 3) orbit-dim=0 ok
+  audit e=(3, 2, 2, 0, 0) dim=30 orbit-rep=(0, 0, 1, 1, 4) orbit-dim=30 ok
+  audit e=(4, 4, 0, 2, 2) dim=0 orbit-rep=(0, 1, 1, 2, 2) orbit-dim=0 ok
+  audit e=(2, 3, 2, 2, 3) dim=93 orbit-rep=(1, 1, 1, 4, 4) orbit-dim=93 ok
+  audit e=(3, 4, 0, 4, 1) dim=0 orbit-rep=(0, 1, 1, 2, 4) orbit-dim=0 ok
+  audit e=(3, 1, 2, 2, 4) dim=45 orbit-rep=(1, 1, 2, 3, 4) orbit-dim=45 ok
+  audit e=(1, 0, 2, 1, 2) dim=0 orbit-rep=(0, 1, 1, 2, 2) orbit-dim=0 ok
+  audit e=(0, 4, 4, 1, 1) dim=30 orbit-rep=(0, 1, 1, 4, 4) orbit-dim=30 ok
+  audit e=(1, 1, 3, 3, 2) dim=0 orbit-rep=(1, 1, 2, 2, 4) orbit-dim=0 ok
+  audit e=(4, 3, 2, 3, 4) dim=0 orbit-rep=(1, 1, 2, 2, 3) orbit-dim=0 ok
+  audit e=(0, 2, 2, 3, 3) dim=30 orbit-rep=(0, 1, 1, 4, 4) orbit-dim=30 ok
+  audit e=(1, 1, 1, 0, 3) dim=0 orbit-rep=(0, 1, 1, 1, 3) orbit-dim=0 ok
+  audit e=(2, 1, 0, 4, 4) dim=0 orbit-rep=(0, 1, 1, 3, 4) orbit-dim=0 ok
+  audit e=(2, 0, 2, 3, 4) dim=0 orbit-rep=(0, 1, 1, 2, 4) orbit-dim=0 ok
+  audit e=(0, 0, 3, 4, 1) dim=18 orbit-rep=(0, 0, 1, 2, 3) orbit-dim=18 ok
+  audit e=(3, 0, 0, 0, 4) dim=0 orbit-rep=(0, 0, 0, 1, 2) orbit-dim=0 ok
+  audit e=(2, 1, 0, 3, 0) dim=18 orbit-rep=(0, 0, 1, 2, 3) orbit-dim=18 ok
+  audit e=(0, 0, 4, 2, 0) dim=0 orbit-rep=(0, 0, 0, 1, 2) orbit-dim=0 ok
+AUDIT: 40 random colourings recomputed without symmetry, 0 mismatches  [0.4s]
+        0.52 real         0.50 user         0.02 sys
+            29458432  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3082  page reclaims
+                  48  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  27  voluntary context switches
+                  35  involuntary context switches
+          7179410245  instructions retired
+          1650631969  cycles elapsed
+            22724896  peak memory footprint
+# watchdog: max polled RSS = 28576 KB; wall = 0 s; completed

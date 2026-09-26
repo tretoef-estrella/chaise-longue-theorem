@@ -1,0 +1,34 @@
+(a) literal [DS] form (k,q)=(1,3) over F_3: dim F_p[G]/(psi_J) = 21 ; q^{2k+1}-Q_k(q) = 21 ; EQUAL
+(a) literal [DS] form (k,q)=(1,5) over F_5: dim F_p[G]/(psi_J) = 89 ; q^{2k+1}-Q_k(q) = 89 ; EQUAL
+(a) literal [DS] form (k,q)=(1,7) over F_7: dim F_p[G]/(psi_J) = 253 ; q^{2k+1}-Q_k(q) = 253 ; EQUAL
+(a) literal [DS] form (k,q)=(2,3) over F_3: dim F_p[G]/(psi_J) = 223 ; q^{2k+1}-Q_k(q) = 223 ; EQUAL
+(a) literal [DS] form (k,q)=(1,9) over F_3: dim F_p[G]/(psi_J) = 561 ; q^{2k+1}-Q_k(q) = 561 ; EQUAL
+(a) literal [DS] form (k,q)=(2,5) over F_5: dim F_p[G]/(psi_J) = 2725 ; q^{2k+1}-Q_k(q) = 2725 ; EQUAL
+(a) literal [DS] form (k,q)=(1,11) over F_11: dim F_p[G]/(psi_J) = 1061 ; q^{2k+1}-Q_k(q) = 1061 ; EQUAL
+(b) Z-Smith form (k,q)=(1,3): rank(ideal)=6, so rank A_K = 21 (prediction 21); torsion invariants of A_K: NONE ; 0.0s
+(b) Z-Smith form (k,q)=(1,5): rank(ideal)=36, so rank A_K = 89 (prediction 89); torsion invariants of A_K: NONE ; 0.0s
+(b) Z-Smith form (k,q)=(1,7): rank(ideal)=90, so rank A_K = 253 (prediction 253); torsion invariants of A_K: NONE ; 0.5s
+(b) Z-Smith form (k,q)=(2,3): rank(ideal)=20, so rank A_K = 223 (prediction 223); torsion invariants of A_K: NONE ; 0.9s
+(b) Z-Smith form (k,q)=(1,9): rank(ideal)=168, so rank A_K = 561 (prediction 561); torsion invariants of A_K: NONE ; 4.6s
+(c) (k,q)=(2,3): subfamilies with dim(D_J:K)C < |Gamma_K|: 800 of 32767 (paper: 800); worst deficit 2 (paper: 2); 24.4s
+    example: ([1, 5, 7], 18, 20)
+(b-control) Z-Smith form (k,q)=(2,3) K=[1, 5, 7]: rank(ideal)=20, so rank A_K = 223 (prediction -1); torsion invariants of A_K: [3, 3] ; 0.0s
+    prediction from Prop 2.1: number of cyclic 3-factors = deficit = 2 ; found: 2 -> CONSISTENT
+       34.81 real        33.07 user         0.75 sys
+           538591232  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              120669  page reclaims
+                5128  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1862  voluntary context switches
+               11999  involuntary context switches
+            16710521  instructions retired
+             8693159  cycles elapsed
+             1065248  peak memory footprint

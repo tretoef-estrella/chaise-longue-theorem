@@ -1,0 +1,85 @@
+# command: /usr/bin/time -l python3 scripts/crt_colouring_k2.py 15 3 --k 1 --sym none
+# prediction: total = Q_1(15) = 546 (must equal the literal engine's 546); < 30 s, < 100 MB
+# run date: Fri Sep 25 13:21:23 CEST 2026
+m=15=3*5 p=3 k=1 nvar=3: F=GF(3^4) (poly [1, 0, 1, 1, 1]), zeta of order 5; block dim q^nvar=27; #colourings r^nvar=125; PREDICTION Σ_c dim = Q_1(15) = 546, quotient 2829
+#orbits (sym=none) = 125
+  orbit 0/125 rep=(0, 0, 0) mult=1 surviving gens=3 dim=6  (running total 6, 0.0s)
+  orbit 1/125 rep=(0, 0, 1) mult=1 surviving gens=1 dim=6  (running total 12, 0.0s)
+  orbit 2/125 rep=(0, 0, 2) mult=1 surviving gens=1 dim=6  (running total 18, 0.0s)
+  orbit 3/125 rep=(0, 0, 3) mult=1 surviving gens=1 dim=6  (running total 24, 0.0s)
+  orbit 4/125 rep=(0, 0, 4) mult=1 surviving gens=1 dim=6  (running total 30, 0.0s)
+  orbit 5/125 rep=(0, 1, 0) mult=1 surviving gens=1 dim=6  (running total 36, 0.0s)
+  orbit 9/125 rep=(0, 1, 4) mult=1 surviving gens=1 dim=6  (running total 42, 0.0s)
+  orbit 10/125 rep=(0, 2, 0) mult=1 surviving gens=1 dim=6  (running total 48, 0.0s)
+  orbit 13/125 rep=(0, 2, 3) mult=1 surviving gens=1 dim=6  (running total 54, 0.0s)
+  orbit 15/125 rep=(0, 3, 0) mult=1 surviving gens=1 dim=6  (running total 60, 0.0s)
+  orbit 17/125 rep=(0, 3, 2) mult=1 surviving gens=1 dim=6  (running total 66, 0.0s)
+  orbit 20/125 rep=(0, 4, 0) mult=1 surviving gens=1 dim=6  (running total 72, 0.0s)
+  orbit 21/125 rep=(0, 4, 1) mult=1 surviving gens=1 dim=6  (running total 78, 0.0s)
+  orbit 25/125 rep=(1, 0, 0) mult=1 surviving gens=1 dim=6  (running total 84, 0.0s)
+  orbit 29/125 rep=(1, 0, 4) mult=1 surviving gens=1 dim=6  (running total 90, 0.0s)
+  orbit 34/125 rep=(1, 1, 4) mult=1 surviving gens=2 dim=15  (running total 105, 0.0s)
+  orbit 38/125 rep=(1, 2, 3) mult=1 surviving gens=1 dim=9  (running total 114, 0.0s)
+  orbit 39/125 rep=(1, 2, 4) mult=1 surviving gens=1 dim=9  (running total 123, 0.0s)
+  orbit 42/125 rep=(1, 3, 2) mult=1 surviving gens=1 dim=9  (running total 132, 0.0s)
+  orbit 44/125 rep=(1, 3, 4) mult=1 surviving gens=1 dim=9  (running total 141, 0.0s)
+  orbit 45/125 rep=(1, 4, 0) mult=1 surviving gens=1 dim=6  (running total 147, 0.0s)
+  orbit 46/125 rep=(1, 4, 1) mult=1 surviving gens=2 dim=15  (running total 162, 0.0s)
+  orbit 47/125 rep=(1, 4, 2) mult=1 surviving gens=1 dim=9  (running total 171, 0.0s)
+  orbit 48/125 rep=(1, 4, 3) mult=1 surviving gens=1 dim=9  (running total 180, 0.0s)
+  orbit 49/125 rep=(1, 4, 4) mult=1 surviving gens=2 dim=15  (running total 195, 0.0s)
+  orbit 50/125 rep=(2, 0, 0) mult=1 surviving gens=1 dim=6  (running total 201, 0.0s)
+  orbit 53/125 rep=(2, 0, 3) mult=1 surviving gens=1 dim=6  (running total 207, 0.0s)
+  orbit 58/125 rep=(2, 1, 3) mult=1 surviving gens=1 dim=9  (running total 216, 0.0s)
+  orbit 59/125 rep=(2, 1, 4) mult=1 surviving gens=1 dim=9  (running total 225, 0.0s)
+  orbit 63/125 rep=(2, 2, 3) mult=1 surviving gens=2 dim=15  (running total 240, 0.0s)
+  orbit 65/125 rep=(2, 3, 0) mult=1 surviving gens=1 dim=6  (running total 246, 0.0s)
+  orbit 66/125 rep=(2, 3, 1) mult=1 surviving gens=1 dim=9  (running total 255, 0.0s)
+  orbit 67/125 rep=(2, 3, 2) mult=1 surviving gens=2 dim=15  (running total 270, 0.0s)
+  orbit 68/125 rep=(2, 3, 3) mult=1 surviving gens=2 dim=15  (running total 285, 0.0s)
+  orbit 69/125 rep=(2, 3, 4) mult=1 surviving gens=1 dim=9  (running total 294, 0.1s)
+  orbit 71/125 rep=(2, 4, 1) mult=1 surviving gens=1 dim=9  (running total 303, 0.1s)
+  orbit 73/125 rep=(2, 4, 3) mult=1 surviving gens=1 dim=9  (running total 312, 0.1s)
+  orbit 75/125 rep=(3, 0, 0) mult=1 surviving gens=1 dim=6  (running total 318, 0.1s)
+  orbit 77/125 rep=(3, 0, 2) mult=1 surviving gens=1 dim=6  (running total 324, 0.1s)
+  orbit 82/125 rep=(3, 1, 2) mult=1 surviving gens=1 dim=9  (running total 333, 0.1s)
+  orbit 84/125 rep=(3, 1, 4) mult=1 surviving gens=1 dim=9  (running total 342, 0.1s)
+  orbit 85/125 rep=(3, 2, 0) mult=1 surviving gens=1 dim=6  (running total 348, 0.1s)
+  orbit 86/125 rep=(3, 2, 1) mult=1 surviving gens=1 dim=9  (running total 357, 0.1s)
+  orbit 87/125 rep=(3, 2, 2) mult=1 surviving gens=2 dim=15  (running total 372, 0.1s)
+  orbit 88/125 rep=(3, 2, 3) mult=1 surviving gens=2 dim=15  (running total 387, 0.1s)
+  orbit 89/125 rep=(3, 2, 4) mult=1 surviving gens=1 dim=9  (running total 396, 0.1s)
+  orbit 92/125 rep=(3, 3, 2) mult=1 surviving gens=2 dim=15  (running total 411, 0.1s)
+  orbit 96/125 rep=(3, 4, 1) mult=1 surviving gens=1 dim=9  (running total 420, 0.1s)
+  orbit 97/125 rep=(3, 4, 2) mult=1 surviving gens=1 dim=9  (running total 429, 0.1s)
+  orbit 100/125 rep=(4, 0, 0) mult=1 surviving gens=1 dim=6  (running total 435, 0.1s)
+  orbit 101/125 rep=(4, 0, 1) mult=1 surviving gens=1 dim=6  (running total 441, 0.1s)
+  orbit 105/125 rep=(4, 1, 0) mult=1 surviving gens=1 dim=6  (running total 447, 0.1s)
+  orbit 106/125 rep=(4, 1, 1) mult=1 surviving gens=2 dim=15  (running total 462, 0.1s)
+  orbit 107/125 rep=(4, 1, 2) mult=1 surviving gens=1 dim=9  (running total 471, 0.1s)
+  orbit 108/125 rep=(4, 1, 3) mult=1 surviving gens=1 dim=9  (running total 480, 0.1s)
+  orbit 109/125 rep=(4, 1, 4) mult=1 surviving gens=2 dim=15  (running total 495, 0.1s)
+  orbit 111/125 rep=(4, 2, 1) mult=1 surviving gens=1 dim=9  (running total 504, 0.1s)
+  orbit 113/125 rep=(4, 2, 3) mult=1 surviving gens=1 dim=9  (running total 513, 0.1s)
+  orbit 116/125 rep=(4, 3, 1) mult=1 surviving gens=1 dim=9  (running total 522, 0.1s)
+  orbit 117/125 rep=(4, 3, 2) mult=1 surviving gens=1 dim=9  (running total 531, 0.1s)
+  orbit 121/125 rep=(4, 4, 1) mult=1 surviving gens=2 dim=15  (running total 546, 0.1s)
+TOTAL Σ_c dim π_c(I) = 546  over 61 colourings with non-zero image (61 orbits); prediction 546: AGREES  [0.1s]
+        0.21 real         0.14 user         0.02 sys
+            25608192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2779  page reclaims
+                 115  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 211  voluntary context switches
+                  81  involuntary context switches
+          1900874664  instructions retired
+           559647103  cycles elapsed
+            18841912  peak memory footprint

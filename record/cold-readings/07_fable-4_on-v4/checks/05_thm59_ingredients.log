@@ -1,0 +1,39 @@
+(q,m)=(5,3) evaluation of D on TxT: failures=0
+(q,m)=(5,3) support statement on all 64 points x all patterns: tests=832 failures=0  [0.0s]
+(q,m)=(5,4) evaluation of D on TxT: failures=0
+(q,m)=(5,4) support statement on all 256 points x all patterns: tests=16384 failures=0  [0.1s]
+(q,m)=(7,3) evaluation of D on TxT: failures=0
+(q,m)=(7,3) support statement on all 216 points x all patterns: tests=3024 failures=0  [0.0s]
+(q,m)=(7,4) evaluation of D on TxT: failures=0
+(q,m)=(7,4) support statement on all 1296 points x all patterns: tests=88128 failures=0  [0.3s]
+(q,m)=(9,3) evaluation of D on TxT: failures=0
+(q,m)=(9,3) support statement on all 512 points x all patterns: tests=7168 failures=0  [0.0s]
+(q,m)=(9,4) evaluation of D on TxT: failures=0
+(q,m)=(9,4) support statement on all 4096 points x all patterns: tests=282624 failures=0  [1.5s]
+(q,m)=(11,3) evaluation of D on TxT: failures=0
+(q,m)=(11,3) support statement on all 1000 points x all patterns: tests=14000 failures=0  [0.1s]
+(q,m)=(13,3) evaluation of D on TxT: failures=0
+(q,m)=(13,3) support statement on all 1728 points x all patterns: tests=24192 failures=0  [0.1s]
+q=7, char 3: D(a,-a) = 0  (zero polynomial: True)
+q=5, char 2: D(a,-a) = 0  (zero polynomial: True)
+q=13, char 3: D(a,-a) = 0  (zero polynomial: True)
+q=7, char 2: D(a,-a) = 0  (zero polynomial: True)
+q=9, char 2: D(a,-a) = 0  (zero polynomial: True)
+        5.16 real         3.97 user         0.40 sys
+           247398400  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               84874  page reclaims
+                5088  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1283  voluntary context switches
+                5256  involuntary context switches
+            16520348  instructions retired
+             7673459  cycles elapsed
+             1081632  peak memory footprint

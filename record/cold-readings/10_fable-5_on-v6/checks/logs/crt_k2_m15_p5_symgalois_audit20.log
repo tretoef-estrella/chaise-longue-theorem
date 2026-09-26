@@ -1,0 +1,118 @@
+# command: python3 scripts/crt_colouring_k2.py 15 5 --k 2 --sym galois --audit 20
+# prediction: Σ_c dim = Q_2(15) = 32900 (paper: 141 colourings with non-zero image at p=5); est < 10 min, < 500 MB
+# cap: 1150 MB RSS (polled every 0.5 s) and 600 s wall; run date: Fri Sep 25 13:29:24 CEST 2026
+m=15=5*3 p=5 k=2 nvar=5: F=GF(5^2) (poly [1, 1, 1]), zeta of order 3; block dim q^nvar=3125; #colourings r^nvar=243; PREDICTION Σ_c dim = Q_2(15) = 32900, quotient 726475
+#orbits (sym=galois) = 122
+  orbit 0/122 rep=(0, 0, 0, 0, 0) mult=1 surviving gens=15 dim=400  (running total 400, 2.1s)
+  orbit 1/122 rep=(0, 0, 0, 0, 1) mult=2 surviving gens=3 dim=180  (running total 760, 2.6s)
+  orbit 2/122 rep=(0, 0, 0, 1, 0) mult=2 surviving gens=3 dim=180  (running total 1120, 3.1s)
+  orbit 4/122 rep=(0, 0, 0, 1, 2) mult=2 surviving gens=3 dim=180  (running total 1480, 3.6s)
+  orbit 5/122 rep=(0, 0, 1, 0, 0) mult=2 surviving gens=3 dim=180  (running total 1840, 4.0s)
+  orbit 7/122 rep=(0, 0, 1, 0, 2) mult=2 surviving gens=3 dim=180  (running total 2200, 4.5s)
+  orbit 10/122 rep=(0, 0, 1, 1, 2) mult=2 surviving gens=2 dim=180  (running total 2560, 5.0s)
+  orbit 11/122 rep=(0, 0, 1, 2, 0) mult=2 surviving gens=3 dim=180  (running total 2920, 5.5s)
+  orbit 12/122 rep=(0, 0, 1, 2, 1) mult=2 surviving gens=2 dim=180  (running total 3280, 6.0s)
+  orbit 13/122 rep=(0, 0, 1, 2, 2) mult=2 surviving gens=2 dim=180  (running total 3640, 6.4s)
+  orbit 14/122 rep=(0, 1, 0, 0, 0) mult=2 surviving gens=3 dim=180  (running total 4000, 6.8s)
+  orbit 16/122 rep=(0, 1, 0, 0, 2) mult=2 surviving gens=3 dim=180  (running total 4360, 7.3s)
+  orbit 19/122 rep=(0, 1, 0, 1, 2) mult=2 surviving gens=2 dim=180  (running total 4720, 7.8s)
+  orbit 20/122 rep=(0, 1, 0, 2, 0) mult=2 surviving gens=3 dim=180  (running total 5080, 8.2s)
+  orbit 21/122 rep=(0, 1, 0, 2, 1) mult=2 surviving gens=2 dim=180  (running total 5440, 8.7s)
+  orbit 22/122 rep=(0, 1, 0, 2, 2) mult=2 surviving gens=2 dim=180  (running total 5800, 9.2s)
+  orbit 25/122 rep=(0, 1, 1, 0, 2) mult=2 surviving gens=2 dim=180  (running total 6160, 9.7s)
+  orbit 29/122 rep=(0, 1, 1, 2, 0) mult=2 surviving gens=2 dim=180  (running total 6520, 10.2s)
+  orbit 31/122 rep=(0, 1, 1, 2, 2) mult=2 surviving gens=2 dim=180  (running total 6880, 10.6s)
+  orbit 32/122 rep=(0, 1, 2, 0, 0) mult=2 surviving gens=3 dim=180  (running total 7240, 11.1s)
+  orbit 33/122 rep=(0, 1, 2, 0, 1) mult=2 surviving gens=2 dim=180  (running total 7600, 11.6s)
+  orbit 34/122 rep=(0, 1, 2, 0, 2) mult=2 surviving gens=2 dim=180  (running total 7960, 12.1s)
+  orbit 35/122 rep=(0, 1, 2, 1, 0) mult=2 surviving gens=2 dim=180  (running total 8320, 12.5s)
+  orbit 37/122 rep=(0, 1, 2, 1, 2) mult=2 surviving gens=2 dim=180  (running total 8680, 13.0s)
+  orbit 38/122 rep=(0, 1, 2, 2, 0) mult=2 surviving gens=2 dim=180  (running total 9040, 13.5s)
+  orbit 39/122 rep=(0, 1, 2, 2, 1) mult=2 surviving gens=2 dim=180  (running total 9400, 13.9s)
+  orbit 41/122 rep=(1, 0, 0, 0, 0) mult=2 surviving gens=3 dim=180  (running total 9760, 14.3s)
+  orbit 43/122 rep=(1, 0, 0, 0, 2) mult=2 surviving gens=3 dim=180  (running total 10120, 14.7s)
+  orbit 46/122 rep=(1, 0, 0, 1, 2) mult=2 surviving gens=2 dim=180  (running total 10480, 15.2s)
+  orbit 47/122 rep=(1, 0, 0, 2, 0) mult=2 surviving gens=3 dim=180  (running total 10840, 15.7s)
+  orbit 48/122 rep=(1, 0, 0, 2, 1) mult=2 surviving gens=2 dim=180  (running total 11200, 16.2s)
+  orbit 49/122 rep=(1, 0, 0, 2, 2) mult=2 surviving gens=2 dim=180  (running total 11560, 16.7s)
+  orbit 50/122 rep=(1, 0, 1, 0, 0) mult=2 surviving gens=0 dim=0  (running total 11560, 16.7s)
+  orbit 52/122 rep=(1, 0, 1, 0, 2) mult=2 surviving gens=2 dim=180  (running total 11920, 17.1s)
+  orbit 56/122 rep=(1, 0, 1, 2, 0) mult=2 surviving gens=2 dim=180  (running total 12280, 17.6s)
+  orbit 58/122 rep=(1, 0, 1, 2, 2) mult=2 surviving gens=2 dim=180  (running total 12640, 18.0s)
+  orbit 59/122 rep=(1, 0, 2, 0, 0) mult=2 surviving gens=3 dim=180  (running total 13000, 18.5s)
+  orbit 60/122 rep=(1, 0, 2, 0, 1) mult=2 surviving gens=2 dim=180  (running total 13360, 19.0s)
+  orbit 61/122 rep=(1, 0, 2, 0, 2) mult=2 surviving gens=2 dim=180  (running total 13720, 19.5s)
+  orbit 62/122 rep=(1, 0, 2, 1, 0) mult=2 surviving gens=2 dim=180  (running total 14080, 19.9s)
+  orbit 64/122 rep=(1, 0, 2, 1, 2) mult=2 surviving gens=2 dim=180  (running total 14440, 20.4s)
+  orbit 65/122 rep=(1, 0, 2, 2, 0) mult=2 surviving gens=2 dim=180  (running total 14800, 20.8s)
+  orbit 66/122 rep=(1, 0, 2, 2, 1) mult=2 surviving gens=2 dim=180  (running total 15160, 21.3s)
+  orbit 70/122 rep=(1, 1, 0, 0, 2) mult=2 surviving gens=2 dim=180  (running total 15520, 21.8s)
+  orbit 74/122 rep=(1, 1, 0, 2, 0) mult=2 surviving gens=2 dim=180  (running total 15880, 22.2s)
+  orbit 76/122 rep=(1, 1, 0, 2, 2) mult=2 surviving gens=2 dim=180  (running total 16240, 22.7s)
+  orbit 85/122 rep=(1, 1, 1, 2, 2) mult=2 surviving gens=6 dim=545  (running total 17330, 26.1s)
+  orbit 86/122 rep=(1, 1, 2, 0, 0) mult=2 surviving gens=2 dim=180  (running total 17690, 26.6s)
+  orbit 88/122 rep=(1, 1, 2, 0, 2) mult=2 surviving gens=2 dim=180  (running total 18050, 27.0s)
+  orbit 91/122 rep=(1, 1, 2, 1, 2) mult=2 surviving gens=6 dim=545  (running total 19140, 30.7s)
+  orbit 92/122 rep=(1, 1, 2, 2, 0) mult=2 surviving gens=2 dim=180  (running total 19500, 31.2s)
+  orbit 93/122 rep=(1, 1, 2, 2, 1) mult=2 surviving gens=6 dim=545  (running total 20590, 35.1s)
+  orbit 94/122 rep=(1, 1, 2, 2, 2) mult=2 surviving gens=6 dim=545  (running total 21680, 38.8s)
+  orbit 95/122 rep=(1, 2, 0, 0, 0) mult=2 surviving gens=3 dim=180  (running total 22040, 39.3s)
+  orbit 96/122 rep=(1, 2, 0, 0, 1) mult=2 surviving gens=2 dim=180  (running total 22400, 39.8s)
+  orbit 97/122 rep=(1, 2, 0, 0, 2) mult=2 surviving gens=2 dim=180  (running total 22760, 40.2s)
+  orbit 98/122 rep=(1, 2, 0, 1, 0) mult=2 surviving gens=2 dim=180  (running total 23120, 40.7s)
+  orbit 100/122 rep=(1, 2, 0, 1, 2) mult=2 surviving gens=2 dim=180  (running total 23480, 41.1s)
+  orbit 101/122 rep=(1, 2, 0, 2, 0) mult=2 surviving gens=2 dim=180  (running total 23840, 41.6s)
+  orbit 102/122 rep=(1, 2, 0, 2, 1) mult=2 surviving gens=2 dim=180  (running total 24200, 42.1s)
+  orbit 104/122 rep=(1, 2, 1, 0, 0) mult=2 surviving gens=2 dim=180  (running total 24560, 42.5s)
+  orbit 106/122 rep=(1, 2, 1, 0, 2) mult=2 surviving gens=2 dim=180  (running total 24920, 43.0s)
+  orbit 109/122 rep=(1, 2, 1, 1, 2) mult=2 surviving gens=6 dim=545  (running total 26010, 46.6s)
+  orbit 110/122 rep=(1, 2, 1, 2, 0) mult=2 surviving gens=2 dim=180  (running total 26370, 47.1s)
+  orbit 111/122 rep=(1, 2, 1, 2, 1) mult=2 surviving gens=6 dim=545  (running total 27460, 51.2s)
+  orbit 112/122 rep=(1, 2, 1, 2, 2) mult=2 surviving gens=6 dim=545  (running total 28550, 55.1s)
+  orbit 113/122 rep=(1, 2, 2, 0, 0) mult=2 surviving gens=2 dim=180  (running total 28910, 55.5s)
+  orbit 114/122 rep=(1, 2, 2, 0, 1) mult=2 surviving gens=2 dim=180  (running total 29270, 56.1s)
+  orbit 116/122 rep=(1, 2, 2, 1, 0) mult=2 surviving gens=2 dim=180  (running total 29630, 56.6s)
+  orbit 117/122 rep=(1, 2, 2, 1, 1) mult=2 surviving gens=6 dim=545  (running total 30720, 60.7s)
+  orbit 118/122 rep=(1, 2, 2, 1, 2) mult=2 surviving gens=6 dim=545  (running total 31810, 64.4s)
+  orbit 120/122 rep=(1, 2, 2, 2, 1) mult=2 surviving gens=6 dim=545  (running total 32900, 67.9s)
+TOTAL Σ_c dim π_c(I) = 32900  over 141 colourings with non-zero image (71 orbits); prediction 32900: AGREES  [68.0s]
+  audit e=(1, 0, 2, 2, 1) dim=180 orbit-rep=(1, 0, 2, 2, 1) orbit-dim=180 ok
+  audit e=(2, 0, 2, 2, 1) dim=0 orbit-rep=(1, 0, 1, 1, 2) orbit-dim=0 ok
+  audit e=(0, 0, 0, 0, 2) dim=180 orbit-rep=(0, 0, 0, 0, 1) orbit-dim=180 ok
+  audit e=(2, 1, 2, 0, 2) dim=0 orbit-rep=(1, 2, 1, 0, 1) orbit-dim=0 ok
+  audit e=(2, 1, 2, 1, 1) dim=545 orbit-rep=(1, 2, 1, 2, 2) orbit-dim=545 ok
+  audit e=(2, 1, 1, 2, 1) dim=545 orbit-rep=(1, 2, 2, 1, 2) orbit-dim=545 ok
+  audit e=(0, 2, 2, 1, 1) dim=180 orbit-rep=(0, 1, 1, 2, 2) orbit-dim=180 ok
+  audit e=(2, 2, 0, 0, 2) dim=0 orbit-rep=(1, 1, 0, 0, 1) orbit-dim=0 ok
+  audit e=(1, 0, 1, 1, 1) dim=0 orbit-rep=(1, 0, 1, 1, 1) orbit-dim=0 ok
+  audit e=(2, 2, 2, 1, 1) dim=545 orbit-rep=(1, 1, 1, 2, 2) orbit-dim=545 ok
+  audit e=(0, 1, 2, 1, 1) dim=0 orbit-rep=(0, 1, 2, 1, 1) orbit-dim=0 ok
+  audit e=(0, 2, 1, 2, 0) dim=180 orbit-rep=(0, 1, 2, 1, 0) orbit-dim=180 ok
+  audit e=(1, 2, 1, 0, 0) dim=180 orbit-rep=(1, 2, 1, 0, 0) orbit-dim=180 ok
+  audit e=(1, 1, 0, 1, 0) dim=0 orbit-rep=(1, 1, 0, 1, 0) orbit-dim=0 ok
+  audit e=(0, 1, 1, 1, 2) dim=0 orbit-rep=(0, 1, 1, 1, 2) orbit-dim=0 ok
+  audit e=(1, 0, 1, 1, 2) dim=0 orbit-rep=(1, 0, 1, 1, 2) orbit-dim=0 ok
+  audit e=(0, 1, 0, 1, 1) dim=0 orbit-rep=(0, 1, 0, 1, 1) orbit-dim=0 ok
+  audit e=(2, 2, 0, 2, 1) dim=0 orbit-rep=(1, 1, 0, 1, 2) orbit-dim=0 ok
+  audit e=(1, 1, 0, 0, 2) dim=180 orbit-rep=(1, 1, 0, 0, 2) orbit-dim=180 ok
+  audit e=(0, 2, 1, 1, 0) dim=180 orbit-rep=(0, 1, 2, 2, 0) orbit-dim=180 ok
+AUDIT: 20 random colourings recomputed without symmetry, 0 mismatches  [82.4s]
+       82.52 real        81.47 user         0.96 sys
+            47628288  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5679  page reclaims
+                  22  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  13  voluntary context switches
+                6759  involuntary context switches
+       1504347180359  instructions retired
+        274432345949  cycles elapsed
+            40878416  peak memory footprint
+# watchdog: max polled RSS = 46512 KB; wall = 82 s; completed

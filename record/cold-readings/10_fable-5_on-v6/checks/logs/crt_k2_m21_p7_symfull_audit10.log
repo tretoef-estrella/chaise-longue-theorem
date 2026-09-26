@@ -1,0 +1,45 @@
+# command: python3 scripts/crt_colouring_k2.py 21 7 --k 2 --sym full --audit 10
+# prediction: Σ_c dim = Q_2(21) = 102800 (paper: 141 colourings with non-zero image at p=7); est < 10 min, < 700 MB
+# cap: 1150 MB RSS (polled every 0.5 s) and 600 s wall; run date: Fri Sep 25 13:30:47 CEST 2026
+m=21=7*3 p=7 k=2 nvar=5: F=GF(7^1) (poly None), zeta of order 3; block dim q^nvar=16807; #colourings r^nvar=243; PREDICTION Σ_c dim = Q_2(21) = 102800, quotient 3981301
+#orbits (sym=full) = 21
+  orbit 0/21 rep=(0, 0, 0, 0, 0) mult=1 surviving gens=15 dim=1860  (running total 1860, 25.1s)
+  orbit 1/21 rep=(0, 0, 0, 0, 1) mult=5 surviving gens=3 dim=630  (running total 5010, 32.0s)
+  orbit 2/21 rep=(0, 0, 0, 0, 2) mult=5 surviving gens=3 dim=630  (running total 8160, 38.9s)
+  orbit 4/21 rep=(0, 0, 0, 1, 2) mult=20 surviving gens=3 dim=630  (running total 20760, 43.5s)
+  orbit 7/21 rep=(0, 0, 1, 1, 2) mult=30 surviving gens=2 dim=546  (running total 37140, 47.5s)
+  orbit 8/21 rep=(0, 0, 1, 2, 2) mult=30 surviving gens=2 dim=546  (running total 53520, 52.2s)
+  orbit 12/21 rep=(0, 1, 1, 2, 2) mult=30 surviving gens=2 dim=546  (running total 69900, 55.8s)
+  orbit 17/21 rep=(1, 1, 1, 2, 2) mult=10 surviving gens=6 dim=1645  (running total 86350, 75.0s)
+  orbit 18/21 rep=(1, 1, 2, 2, 2) mult=10 surviving gens=6 dim=1645  (running total 102800, 96.0s)
+TOTAL Σ_c dim π_c(I) = 102800  over 141 colourings with non-zero image (9 orbits); prediction 102800: AGREES  [96.1s]
+  audit e=(1, 0, 2, 2, 1) dim=546 orbit-rep=(0, 1, 1, 2, 2) orbit-dim=546 ok
+  audit e=(2, 0, 2, 2, 1) dim=0 orbit-rep=(0, 1, 2, 2, 2) orbit-dim=0 ok
+  audit e=(0, 0, 0, 0, 2) dim=630 orbit-rep=(0, 0, 0, 0, 2) orbit-dim=630 ok
+  audit e=(2, 1, 2, 0, 2) dim=0 orbit-rep=(0, 1, 2, 2, 2) orbit-dim=0 ok
+  audit e=(2, 1, 2, 1, 1) dim=1645 orbit-rep=(1, 1, 1, 2, 2) orbit-dim=1645 ok
+  audit e=(2, 1, 1, 2, 1) dim=1645 orbit-rep=(1, 1, 1, 2, 2) orbit-dim=1645 ok
+  audit e=(0, 2, 2, 1, 1) dim=546 orbit-rep=(0, 1, 1, 2, 2) orbit-dim=546 ok
+  audit e=(2, 2, 0, 0, 2) dim=0 orbit-rep=(0, 0, 2, 2, 2) orbit-dim=0 ok
+  audit e=(1, 0, 1, 1, 1) dim=0 orbit-rep=(0, 1, 1, 1, 1) orbit-dim=0 ok
+  audit e=(2, 2, 2, 1, 1) dim=1645 orbit-rep=(1, 1, 2, 2, 2) orbit-dim=1645 ok
+AUDIT: 10 random colourings recomputed without symmetry, 0 mismatches  [172.4s]
+      172.47 real       170.94 user         1.14 sys
+           339525632  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               47542  page reclaims
+                  20  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  34  voluntary context switches
+               23846  involuntary context switches
+       3058173300103  instructions retired
+        574571290374  cycles elapsed
+           364773976  peak memory footprint
+# watchdog: max polled RSS = 330928 KB; wall = 173 s; completed

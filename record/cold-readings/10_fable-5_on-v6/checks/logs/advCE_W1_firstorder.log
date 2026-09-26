@@ -1,0 +1,86 @@
+COMMAND: /usr/bin/time -l python3 /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts/advCE_W1_firstorder.py
+EXIT CODE: 0
+WALL (s, measured by date): 2.283070000
+WALL (time -l):         2.27 real         2.07 user         0.07 sys
+PEAK MEMORY:             64258048  maximum resident set size
+prediction: < 5 s, < 80 MB
+run date: Fri Sep 25 13:46:35 CEST 2026
+----- time -l full output -----
+        2.27 real         2.07 user         0.07 sys
+            64258048  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6152  page reclaims
+                 452  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 779  voluntary context switches
+                 266  involuntary context switches
+         28571482214  instructions retired
+          7105848358  cycles elapsed
+            52904272  peak memory footprint
+----- script output -----
+==============================================================================
+TEST 1: first-order deformations of a mixed plane vs a product plane on the Fermat 4-fold
+        (s=1, d=2; direction h added to the equation; 'ok' = deforms to first order)
+==============================================================================
+
+--- m = 3 ---
+  tangent space of GL_2-orbit of x^m+y^m: monomials x^i y^j with (i,j) in [(0, 3), (1, 2), (2, 1), (3, 0)]  (dim 4 of 4)
+  Pi_mix   h in block f0: monomials k=0..3 [x^(m-k) y^k]: ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_mix   h in block f1: monomials k=0..3 [x^(m-k) y^k]: ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_mix   h in block f2: monomials k=0..3 [x^(m-k) y^k]: ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_mix   unobstructed f0-monomials = [(0, 3), (1, 2), (2, 1), (3, 0)] ; equals orbit tangent monomials: True
+  Pi_prod  h in block f0: monomials k=0..3 [x^(m-k) y^k]: ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_prod  h in block f1: monomials k=0..3 [x^(m-k) y^k]: ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_prod  h in block f2: monomials k=0..3 [x^(m-k) y^k]: ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_prod  unobstructed f0-monomials = all 4 of 4: True
+
+--- m = 5 ---
+  tangent space of GL_2-orbit of x^m+y^m: monomials x^i y^j with (i,j) in [(0, 5), (1, 4), (4, 1), (5, 0)]  (dim 4 of 6)
+  Pi_mix   h in block f0: monomials k=0..5 [x^(m-k) y^k]: ok  ok  OBS OBS ok  ok  | random form: OBSTRUCTED   (rank of linearisation = 9)
+  Pi_mix   h in block f1: monomials k=0..5 [x^(m-k) y^k]: ok  ok  OBS OBS ok  ok  | random form: OBSTRUCTED   (rank of linearisation = 9)
+  Pi_mix   h in block f2: monomials k=0..5 [x^(m-k) y^k]: ok  ok  ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_mix   unobstructed f0-monomials = [(0, 5), (1, 4), (4, 1), (5, 0)] ; equals orbit tangent monomials: True
+  Pi_prod  h in block f0: monomials k=0..5 [x^(m-k) y^k]: ok  ok  ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_prod  h in block f1: monomials k=0..5 [x^(m-k) y^k]: ok  ok  ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_prod  h in block f2: monomials k=0..5 [x^(m-k) y^k]: ok  ok  ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_prod  unobstructed f0-monomials = all 6 of 6: True
+
+--- m = 7 ---
+  tangent space of GL_2-orbit of x^m+y^m: monomials x^i y^j with (i,j) in [(0, 7), (1, 6), (6, 1), (7, 0)]  (dim 4 of 8)
+  Pi_mix   h in block f0: monomials k=0..7 [x^(m-k) y^k]: ok  ok  OBS OBS OBS OBS ok  ok  | random form: OBSTRUCTED   (rank of linearisation = 9)
+  Pi_mix   h in block f1: monomials k=0..7 [x^(m-k) y^k]: ok  ok  OBS OBS OBS OBS ok  ok  | random form: OBSTRUCTED   (rank of linearisation = 9)
+  Pi_mix   h in block f2: monomials k=0..7 [x^(m-k) y^k]: ok  ok  ok  ok  ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_mix   unobstructed f0-monomials = [(0, 7), (1, 6), (6, 1), (7, 0)] ; equals orbit tangent monomials: True
+  Pi_prod  h in block f0: monomials k=0..7 [x^(m-k) y^k]: ok  ok  ok  ok  ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_prod  h in block f1: monomials k=0..7 [x^(m-k) y^k]: ok  ok  ok  ok  ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_prod  h in block f2: monomials k=0..7 [x^(m-k) y^k]: ok  ok  ok  ok  ok  ok  ok  ok  | random form: ok   (rank of linearisation = 9)
+  Pi_prod  unobstructed f0-monomials = all 8 of 8: True
+
+==============================================================================
+TEST 2: lines on S = { x^m+y^m (z0,z1) + f_1(z2,z3) = 0 }, counted as m^2 product lines
+        + m * #(Moebius maps roots(f_0) -> roots(f_1)) graph lines
+==============================================================================
+
+--- m = 3: f_0 = x^m + y^m ---
+  f_1 = x^m+y^m (Fermat)                          : #Moebius =   6, graph lines =   18, total lines =   27   (3*m^2 = 27)
+  f_1 = x^m + 3 y^m (in GL_2-orbit of Fermat)     : #Moebius =   6, graph lines =   18, total lines =   27   (3*m^2 = 27)
+  f_1 = random squarefree [-2, 2, 4, 4]           : #Moebius =   6, graph lines =   18, total lines =   27   (3*m^2 = 27)
+
+--- m = 5: f_0 = x^m + y^m ---
+  f_1 = x^m+y^m (Fermat)                          : #Moebius =  10, graph lines =   50, total lines =   75   (3*m^2 = 75)
+  f_1 = x^m + 3 y^m (in GL_2-orbit of Fermat)     : #Moebius =  10, graph lines =   50, total lines =   75   (3*m^2 = 75)
+  f_1 = random squarefree [-3, 2, -1, -3, 1, 1]   : #Moebius =   0, graph lines =    0, total lines =   25   (3*m^2 = 75)
+
+--- m = 7: f_0 = x^m + y^m ---
+  f_1 = x^m+y^m (Fermat)                          : #Moebius =  14, graph lines =   98, total lines =  147   (3*m^2 = 147)
+  f_1 = x^m + 3 y^m (in GL_2-orbit of Fermat)     : #Moebius =  14, graph lines =   98, total lines =  147   (3*m^2 = 147)
+  f_1 = random squarefree [-4, -3, 2, -2, 1, -3, -2, -1]: #Moebius =   0, graph lines =    0, total lines =   49   (3*m^2 = 147)
+
+done in 1.88s

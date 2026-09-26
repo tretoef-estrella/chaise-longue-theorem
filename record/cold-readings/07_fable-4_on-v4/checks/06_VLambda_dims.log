@@ -1,0 +1,56 @@
+(q,m)=(5,2) over F_5 [Thm5.9 applies]: down-sets=4; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 4, 12, 16]  [0.0s]
+(q,m)=(5,3) over F_5 [Thm5.9 applies]: down-sets=4; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 36, 60, 64]  [0.0s]
+(q,m)=(5,4) over F_5 [Thm5.9 applies]: down-sets=7; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 36, 132, 196, 220, 252, 256]  [0.0s]
+(q,m)=(5,5) over F_5 [Thm5.9 applies]: down-sets=7; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 400, 800, 900, 980, 1020, 1024]  [0.0s]
+(q,m)=(7,2) over F_7 [Thm5.9 applies]: down-sets=4; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 6, 30, 36]  [0.0s]
+(q,m)=(7,3) over F_7 [Thm5.9 applies]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 90, 138, 210, 216]  [0.0s]
+(q,m)=(7,4) over F_7 [Thm5.9 applies]: down-sets=8; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 90, 666, 834, 1122, 1194, 1290, 1296]  [0.0s]
+(q,m)=(9,3) over F_3 [Thm5.9 applies]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 168, 360, 504, 512]  [0.0s]
+(q,m)=(9,4) over F_3 [Thm5.9 applies]: down-sets=10; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 168, 1896, 2216, 2280, 2600, 3752, 3896, 4088, 4096]  [0.0s]
+(q,m)=(11,3) over F_11 [Thm5.9 applies]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 270, 750, 990, 1000]  [0.0s]
+(q,m)=(13,3) over F_13 [Thm5.9 applies]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 396, 1356, 1716, 1728]  [0.0s]
+(q,m)=(3,4) over F_3 [Thm5.9 applies]: down-sets=4; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 6, 14, 16]  [0.0s]
+(q,m)=(3,5) over F_3 [Thm5.9 applies]: down-sets=4; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 20, 30, 32]  [0.0s]
+(q,m)=(3,6) over F_3 [Thm5.9 applies]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 20, 50, 62, 64]  [0.0s]
+(q,m)=(5,3) over F_3 [Thm5.9 applies]: down-sets=4; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 36, 60, 64]  [0.0s]
+(q,m)=(5,4) over F_3 [Thm5.9 applies]: down-sets=7; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 36, 132, 196, 220, 252, 256]  [0.0s]
+(q,m)=(5,4) over F_7 [Thm5.9 applies]: down-sets=7; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 36, 132, 196, 220, 252, 256]  [0.0s]
+(q,m)=(7,3) over F_5 [Thm5.9 applies]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 90, 138, 210, 216]  [0.0s]
+(q,m)=(7,3) over F_11 [Thm5.9 applies]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 90, 138, 210, 216]  [0.0s]
+(q,m)=(9,3) over F_5 [Thm5.9 applies]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 168, 360, 504, 512]  [0.0s]
+(q,m)=(9,4) over F_7 [Thm5.9 applies]: down-sets=10; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 168, 1896, 2216, 2280, 2600, 3752, 3896, 4088, 4096]  [0.0s]
+(q,m)=(11,3) over F_3 [Thm5.9 applies]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 270, 750, 990, 1000]  [0.0s]
+(q,m)=(13,3) over F_5 [Thm5.9 applies]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 396, 1356, 1716, 1728]  [0.0s]
+(q,m)=(5,3) over F_2 [p | q-1 (no claim)]: down-sets=4; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 36, 60, 64]  [0.0s]
+(q,m)=(5,4) over F_2 [p | q-1 (no claim)]: down-sets=7; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 36, 132, 196, 220, 252, 256]  [0.0s]
+(q,m)=(7,3) over F_2 [p | q-1 (no claim)]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 90, 138, 210, 216]  [0.0s]
+(q,m)=(7,3) over F_3 [p | q-1 (no claim)]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 90, 138, 210, 216]  [0.0s]
+(q,m)=(7,4) over F_3 [p | q-1 (no claim)]: down-sets=8; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 90, 666, 834, 1122, 1194, 1290, 1296]  [0.0s]
+(q,m)=(7,4) over F_2 [p | q-1 (no claim)]: down-sets=8; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 90, 666, 834, 1122, 1194, 1290, 1296]  [0.0s]
+(q,m)=(9,3) over F_2 [p | q-1 (no claim)]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 168, 360, 504, 512]  [0.0s]
+(q,m)=(9,4) over F_2 [p | q-1 (no claim)]: down-sets=10; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 168, 1896, 2216, 2280, 2600, 3752, 3896, 4088, 4096]  [0.0s]
+(q,m)=(11,3) over F_5 [p | q-1 (no claim)]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 270, 750, 990, 1000]  [0.0s]
+(q,m)=(11,3) over F_2 [p | q-1 (no claim)]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 270, 750, 990, 1000]  [0.0s]
+(q,m)=(13,3) over F_3 [p | q-1 (no claim)]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 396, 1356, 1716, 1728]  [0.0s]
+(q,m)=(13,3) over F_2 [p | q-1 (no claim)]: down-sets=5; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 396, 1356, 1716, 1728]  [0.0s]
+(q,m)=(5,5) over F_2 [p | q-1 (no claim)]: down-sets=7; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 400, 800, 900, 980, 1020, 1024]  [0.0s]
+(q,m)=(5,6) over F_3 [Thm5.9 applies]: down-sets=12; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 400, 1600, 2500, 2980, 3700, 3780, 3844, 3924, 4044, 4092, 4096]  [0.4s]
+(q,m)=(7,5) over F_3 [p | q-1 (no claim)]: down-sets=11; dim<|Z| (would refute 5.3): 0; dim>|Z|: 0; dims=[0, 1860, 3300, 5940, 6210, 6660, 6930, 7410, 7650, 7770, 7776]  [0.1s]
+        3.85 real         2.64 user         0.40 sys
+           247988224  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               84456  page reclaims
+                5091  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1268  voluntary context switches
+                6156  involuntary context switches
+            26946191  instructions retired
+            13737928  cycles elapsed
+             1081632  peak memory footprint

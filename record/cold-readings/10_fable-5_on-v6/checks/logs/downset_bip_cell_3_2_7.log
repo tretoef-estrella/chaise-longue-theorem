@@ -1,0 +1,86 @@
+=== RUN ===
+command: python3 downset_bip_cells.py --cell 3 2 7
+cwd: /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts
+date: Fri Sep 25 13:52:25 CEST 2026
+exit status: 0
+wall time (/usr/bin/time -l, real): 13.96 s
+peak memory (maximum resident set size): 115310592 bytes = 109 MB
+=== PREDICTION (written before the run) ===
+prediction command: python3 downset_bip_cells.py --cell 3 2 7 --predict
+cell (alpha, beta, q) = (3, 2, 7), p = 7, q = p^1, F = F_7, Omega = {0..6}
+date: 2026-09-25 13:52:11
+BPar_q(alpha,beta): 9 elements: (1)|() (2)|(1) (1,1)|(1) (3)|(2) (3)|(1,1) (2,1)|(2) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)
+strict order relations (product of weak dominance orders): 31
+number of down-sets: 15
+shape histogram over all 16807 points: (1)|():1645 (1,1)|(1):6930 (1,1,1)|(1,1):2520 (1,1,1)|(2):840 (2)|(1):1470 (2,1)|(1,1):2520 (2,1)|(2):630 (3)|(1,1):210 (3)|(2):42
+set of shapes == BPar_q(alpha,beta)? True
+ring dimension q^(alpha+beta) = 16807, degrees 0..30, n_d = [1, 5, 15, 35, 70, 126, 210, 325, 470, 640, 826, 1015, 1190, 1330, 1420, 1451, 1420, 1330, 1190, 1015, 826, 640, 470, 325, 210, 126, 70, 35, 15, 5, 1]
+tight patterns per element (count, degree of product): (1)|():6,12 (2)|(1):6,6 (1,1)|(1):6,7 (3)|(2):1,0 (3)|(1,1):1,1 (2,1)|(2):3,1 (2,1)|(1,1):3,2 (1,1,1)|(2):1,3 (1,1,1)|(1,1):1,4
+
+down-sets (index: elements | |Z_Lambda| | dim V_Lambda):
+  # 0: {} | |Z| = 0 | predicted dim = 0 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+  # 1: {(1)|()} | |Z| = 1645 | predicted dim = 1645 (equality measured by the paper; Thm 7.6 says >=) | est 12.2 s
+  # 2: {(1)|() (1,1)|(1)} | |Z| = 8575 | predicted dim = 8575 (equality measured by the paper; Thm 7.6 says >=) | est 20.3 s
+  # 3: {(1)|() (2)|(1) (1,1)|(1)} | |Z| = 10045 | predicted dim = 10045 (equality measured by the paper; Thm 7.6 says >=) | est 21.5 s
+  # 4: {(1)|() (1,1)|(1) (1,1,1)|(1,1)} | |Z| = 11095 | predicted dim = 11095 (equality measured by the paper; Thm 7.6 says >=) | est 21.1 s
+  # 5: {(1)|() (2)|(1) (1,1)|(1) (1,1,1)|(1,1)} | |Z| = 12565 | predicted dim = 12565 (equality measured by the paper; Thm 7.6 says >=) | est 21.7 s
+  # 6: {(1)|() (2)|(1) (1,1)|(1) (2,1)|(1,1) (1,1,1)|(1,1)} | |Z| = 15085 | predicted dim = 15085 (equality measured by the paper; Thm 7.6 says >=) | est 22.0 s
+  # 7: {(1)|() (2)|(1) (1,1)|(1) (3)|(1,1) (2,1)|(1,1) (1,1,1)|(1,1)} | |Z| = 15295 | predicted dim = 15295 (equality measured by the paper; Thm 7.6 says >=) | est 22.0 s
+  # 8: {(1)|() (1,1)|(1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 11935 | predicted dim = 11935 (equality measured by the paper; Thm 7.6 says >=) | est 21.6 s
+  # 9: {(1)|() (2)|(1) (1,1)|(1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 13405 | predicted dim = 13405 (equality measured by the paper; Thm 7.6 says >=) | est 21.9 s
+  #10: {(1)|() (2)|(1) (1,1)|(1) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 15925 | predicted dim = 15925 (equality measured by the paper; Thm 7.6 says >=) | est 22.0 s
+  #11: {(1)|() (2)|(1) (1,1)|(1) (3)|(1,1) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 16135 | predicted dim = 16135 (equality measured by the paper; Thm 7.6 says >=) | est 22.0 s
+  #12: {(1)|() (2)|(1) (1,1)|(1) (2,1)|(2) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 16555 | predicted dim = 16555 (equality measured by the paper; Thm 7.6 says >=) | est 22.0 s
+  #13: {(1)|() (2)|(1) (1,1)|(1) (3)|(1,1) (2,1)|(2) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 16765 | predicted dim = 16765 (equality measured by the paper; Thm 7.6 says >=) | est 22.0 s
+  #14: {(1)|() (2)|(1) (1,1)|(1) (3)|(2) (3)|(1,1) (2,1)|(2) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 16807 | predicted dim = 16807 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+
+ESTIMATE: matmul 2.99e+11 flops + elimination 4.25e+10 ops -> raw model ~272 s (rates 5.0e+09, 2.0e+08 per s), calibrated ~27 s (x0.10, observed on (2,2,11),(5,3,3)); plus overhead ~15 down-sets x ~0.5 s; memory ~89 MB (3 float32 n_max^2 blocks, n_max = 1451, ring tables, up to 28 generators, baseline)
+=== OUTPUT ===
+cell (alpha, beta, q) = (3, 2, 7), p = 7, q = p^1, F = F_7, Omega = {0..6}
+date: 2026-09-25 13:52:11
+BPar_q(alpha,beta): 9 elements: (1)|() (2)|(1) (1,1)|(1) (3)|(2) (3)|(1,1) (2,1)|(2) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)
+strict order relations (product of weak dominance orders): 31
+number of down-sets: 15
+shape histogram over all 16807 points: (1)|():1645 (1,1)|(1):6930 (1,1,1)|(1,1):2520 (1,1,1)|(2):840 (2)|(1):1470 (2,1)|(1,1):2520 (2,1)|(2):630 (3)|(1,1):210 (3)|(2):42
+set of shapes == BPar_q(alpha,beta)? True
+ring dimension q^(alpha+beta) = 16807, degrees 0..30, n_d = [1, 5, 15, 35, 70, 126, 210, 325, 470, 640, 826, 1015, 1190, 1330, 1420, 1451, 1420, 1330, 1190, 1015, 826, 640, 470, 325, 210, 126, 70, 35, 15, 5, 1]
+tight patterns per element (count, degree of product): (1)|():6,12 (2)|(1):6,6 (1,1)|(1):6,7 (3)|(2):1,0 (3)|(1,1):1,1 (2,1)|(2):3,1 (2,1)|(1,1):3,2 (1,1,1)|(2):1,3 (1,1,1)|(1,1):1,4
+
+down-sets (index: elements | |Z_Lambda| | dim V_Lambda):
+  # 0: {} | |Z| = 0 | dim = 0 | OK(=) | gens 0 (of 0 patterns) | per-degree [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] | 0.0s
+  # 1: {(1)|()} | |Z| = 1645 | dim = 1645 | OK(=) | gens 6 (of 6 patterns) | per-degree [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 18, 36, 60, 90, 125, 158, 179, 188, 185, 170, 144, 110, 77, 50, 29, 14, 5, 1] | 0.1s
+  # 2: {(1)|() (1,1)|(1)} | |Z| = 8575 | dim = 8575 | OK(=) | gens 12 (of 12 patterns) | per-degree [0, 0, 0, 0, 0, 0, 0, 6, 24, 60, 120, 209, 330, 472, 617, 747, 845, 896, 890, 825, 718, 587, 449, 319, 209, 126, 70, 35, 15, 5, 1] | 0.8s
+  # 3: {(1)|() (2)|(1) (1,1)|(1)} | |Z| = 10045 | dim = 10045 | OK(=) | gens 18 (of 18 patterns) | per-degree [0, 0, 0, 0, 0, 0, 6, 24, 60, 120, 210, 333, 483, 642, 792, 915, 994, 1016, 976, 882, 752, 604, 455, 320, 209, 126, 70, 35, 15, 5, 1] | 0.9s
+  # 4: {(1)|() (1,1)|(1) (1,1,1)|(1,1)} | |Z| = 11095 | dim = 11095 | OK(=) | gens 13 (of 13 patterns) | per-degree [0, 0, 0, 0, 1, 5, 15, 40, 88, 165, 274, 414, 580, 753, 909, 1028, 1095, 1101, 1044, 930, 782, 621, 464, 324, 210, 126, 70, 35, 15, 5, 1] | 1.3s
+  # 5: {(1)|() (2)|(1) (1,1)|(1) (1,1,1)|(1,1)} | |Z| = 12565 | dim = 12565 | OK(=) | gens 19 (of 19 patterns) | per-degree [0, 0, 0, 0, 1, 5, 21, 58, 124, 225, 364, 538, 733, 923, 1084, 1196, 1244, 1221, 1130, 987, 816, 638, 470, 325, 210, 126, 70, 35, 15, 5, 1] | 1.3s
+  # 6: {(1)|() (2)|(1) (1,1)|(1) (2,1)|(1,1) (1,1,1)|(1,1)} | |Z| = 15085 | dim = 15085 | OK(=) | gens 22 (of 22 patterns) | per-degree [0, 0, 2, 9, 25, 55, 109, 194, 313, 464, 641, 834, 1025, 1189, 1307, 1367, 1363, 1295, 1170, 1005, 822, 639, 470, 325, 210, 126, 70, 35, 15, 5, 1] | 1.4s
+  # 7: {(1)|() (2)|(1) (1,1)|(1) (3)|(1,1) (2,1)|(1,1) (1,1,1)|(1,1)} | |Z| = 15295 | dim = 15295 | OK(=) | gens 23 (of 23 patterns) | per-degree [0, 1, 5, 15, 35, 70, 129, 218, 339, 490, 665, 854, 1040, 1199, 1313, 1370, 1364, 1295, 1170, 1005, 822, 639, 470, 325, 210, 126, 70, 35, 15, 5, 1] | 1.2s
+  # 8: {(1)|() (1,1)|(1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 11935 | dim = 11935 | OK(=) | gens 14 (of 14 patterns) | per-degree [0, 0, 0, 1, 5, 15, 35, 74, 139, 234, 359, 510, 680, 849, 994, 1097, 1146, 1135, 1064, 940, 786, 622, 464, 324, 210, 126, 70, 35, 15, 5, 1] | 1.3s
+  # 9: {(1)|() (2)|(1) (1,1)|(1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 13405 | dim = 13405 | OK(=) | gens 20 (of 20 patterns) | per-degree [0, 0, 0, 1, 5, 15, 41, 92, 175, 294, 449, 634, 833, 1019, 1169, 1265, 1295, 1255, 1150, 997, 820, 639, 470, 325, 210, 126, 70, 35, 15, 5, 1] | 1.4s
+  #10: {(1)|() (2)|(1) (1,1)|(1) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 15925 | dim = 15925 | OK(=) | gens 23 (of 23 patterns) | per-degree [0, 0, 2, 10, 29, 65, 129, 228, 364, 533, 726, 930, 1125, 1285, 1392, 1436, 1414, 1329, 1190, 1015, 826, 640, 470, 325, 210, 126, 70, 35, 15, 5, 1] | 1.4s
+  #11: {(1)|() (2)|(1) (1,1)|(1) (3)|(1,1) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 16135 | dim = 16135 | OK(=) | gens 24 (of 24 patterns) | per-degree [0, 1, 5, 16, 39, 80, 149, 252, 390, 559, 750, 950, 1140, 1295, 1398, 1439, 1415, 1329, 1190, 1015, 826, 640, 470, 325, 210, 126, 70, 35, 15, 5, 1] | 1.2s
+  #12: {(1)|() (2)|(1) (1,1)|(1) (2,1)|(2) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 16555 | dim = 16555 | OK(=) | gens 26 (of 26 patterns) | per-degree [0, 2, 9, 25, 55, 105, 184, 296, 440, 611, 800, 994, 1175, 1320, 1414, 1448, 1419, 1330, 1190, 1015, 826, 640, 470, 325, 210, 126, 70, 35, 15, 5, 1] | 1.3s
+  #13: {(1)|() (2)|(1) (1,1)|(1) (3)|(1,1) (2,1)|(2) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 16765 | dim = 16765 | OK(=) | gens 27 (of 27 patterns) | per-degree [0, 3, 12, 31, 65, 120, 204, 320, 466, 637, 824, 1014, 1190, 1330, 1420, 1451, 1420, 1330, 1190, 1015, 826, 640, 470, 325, 210, 126, 70, 35, 15, 5, 1] | 0.3s
+  #14: {(1)|() (2)|(1) (1,1)|(1) (3)|(2) (3)|(1,1) (2,1)|(2) (2,1)|(1,1) (1,1,1)|(2) (1,1,1)|(1,1)} | |Z| = 16807 | dim = 16807 | OK(=) | gens (contains 1) | per-degree [1, 5, 15, 35, 70, 126, 210, 325, 470, 640, 826, 1015, 1190, 1330, 1420, 1451, 1420, 1330, 1190, 1015, 826, 640, 470, 325, 210, 126, 70, 35, 15, 5, 1] | 0.0s
+
+SUMMARY cell=(3,2,7) #down-sets=15 #computed=15 #dim<|Z|=0 #dim>|Z|=0 #equal=15  total 13.8s
+ROOT I^ph_2 at q=7: dim = 1645, |Z_{((1),0)}| = 1645, N_ph by direct count = 1645, N_bal(3,q) direct = 1645
+=== /usr/bin/time -l (raw) ===
+       13.96 real        13.83 user         0.11 sys
+           115310592  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               16688  page reclaims
+                  21  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   6  voluntary context switches
+                  80  involuntary context switches
+        262102247624  instructions retired
+         46925870257  cycles elapsed
+           106545560  peak memory footprint

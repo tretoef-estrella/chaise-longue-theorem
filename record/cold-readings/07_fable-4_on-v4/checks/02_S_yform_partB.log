@@ -1,0 +1,42 @@
+(k,q)=(1,25) over F_5 : dim (D_J)C = 1656 ; Q_k(q) = 1656 ; EQUAL ; 0.0s
+(k,q)=(2,7) over F_7 : dim (D_J)C = 1860 ; Q_k(q) = 1860 ; EQUAL ; 0.0s
+(k,q)=(1,5) over F_3 : dim (D_J)C = 36 ; Q_k(q) = 36 ; EQUAL ; 0.0s
+(k,q)=(1,5) over F_7 : dim (D_J)C = 36 ; Q_k(q) = 36 ; EQUAL ; 0.0s
+(k,q)=(2,5) over F_3 : dim (D_J)C = 400 ; Q_k(q) = 400 ; EQUAL ; 0.0s
+(k,q)=(1,7) over F_5 : dim (D_J)C = 90 ; Q_k(q) = 90 ; EQUAL ; 0.0s
+(k,q)=(1,7) over F_11 : dim (D_J)C = 90 ; Q_k(q) = 90 ; EQUAL ; 0.0s
+(k,q)=(1,9) over F_5 : dim (D_J)C = 168 ; Q_k(q) = 168 ; EQUAL ; 0.0s
+(k,q)=(1,9) over F_7 : dim (D_J)C = 168 ; Q_k(q) = 168 ; EQUAL ; 0.0s
+(k,q)=(2,5) over F_11 : dim (D_J)C = 400 ; Q_k(q) = 400 ; EQUAL ; 0.0s
+(k,q)=(1,11) over F_3 : dim (D_J)C = 270 ; Q_k(q) = 270 ; EQUAL ; 0.0s
+(k,q)=(1,13) over F_5 : dim (D_J)C = 396 ; Q_k(q) = 396 ; EQUAL ; 0.0s
+(k,q)=(1,13) over F_7 : dim (D_J)C = 396 ; Q_k(q) = 396 ; EQUAL ; 0.0s
+(k,q)=(1,5) over F_2 : dim (D_J)C = 36 ; Q_k(q) = 36 ; EQUAL ; 0.0s
+(k,q)=(1,7) over F_2 : dim (D_J)C = 90 ; Q_k(q) = 90 ; EQUAL ; 0.0s
+(k,q)=(1,7) over F_3 : dim (D_J)C = 90 ; Q_k(q) = 90 ; EQUAL ; 0.0s
+(k,q)=(2,7) over F_3 : dim (D_J)C = 1860 ; Q_k(q) = 1860 ; EQUAL ; 0.0s
+(k,q)=(2,7) over F_2 : dim (D_J)C = 1860 ; Q_k(q) = 1860 ; EQUAL ; 0.0s
+(k,q)=(1,9) over F_2 : dim (D_J)C = 168 ; Q_k(q) = 168 ; EQUAL ; 0.0s
+(k,q)=(1,13) over F_3 : dim (D_J)C = 396 ; Q_k(q) = 396 ; EQUAL ; 0.0s
+(k,q)=(1,13) over F_2 : dim (D_J)C = 396 ; Q_k(q) = 396 ; EQUAL ; 0.0s
+(k,q)=(2,5) over F_2 : dim (D_J)C = 400 ; Q_k(q) = 400 ; EQUAL ; 0.0s
+(k,q)=(1,11) over F_5 : dim (D_J)C = 270 ; Q_k(q) = 270 ; EQUAL ; 0.0s
+(k,q)=(1,11) over F_2 : dim (D_J)C = 270 ; Q_k(q) = 270 ; EQUAL ; 0.0s
+        2.85 real         1.75 user         0.38 sys
+           245432320  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               83927  page reclaims
+                4967  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1256  voluntary context switches
+                5043  involuntary context switches
+            24473516  instructions retired
+             9305709  cycles elapsed
+             1098016  peak memory footprint

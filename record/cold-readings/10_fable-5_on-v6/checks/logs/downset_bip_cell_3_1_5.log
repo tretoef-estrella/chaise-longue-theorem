@@ -1,0 +1,69 @@
+=== RUN ===
+command: python3 downset_bip_cells.py --cell 3 1 5
+cwd: /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts
+date: Fri Sep 25 13:36:30 CEST 2026
+exit status: 0
+wall time (/usr/bin/time -l, real): 0.09 s
+peak memory (maximum resident set size): 25313280 bytes = 24 MB
+=== PREDICTION (written before the run) ===
+prediction command: python3 downset_bip_cells.py --cell 3 1 5 --predict
+cell (alpha, beta, q) = (3, 1, 5), p = 5, q = p^1, F = F_5, Omega = {0..4}
+date: 2026-09-25 13:36:30
+BPar_q(alpha,beta): 5 elements: (2)|() (1,1)|() (3)|(1) (2,1)|(1) (1,1,1)|(1)
+strict order relations (product of weak dominance orders): 9
+number of down-sets: 7
+shape histogram over all 625 points: (1,1)|():240 (1,1,1)|(1):120 (2)|():65 (2,1)|(1):180 (3)|(1):20
+set of shapes == BPar_q(alpha,beta)? True
+ring dimension q^(alpha+beta) = 625, degrees 0..16, n_d = [1, 4, 10, 20, 35, 52, 68, 80, 85, 80, 68, 52, 35, 20, 10, 4, 1]
+tight patterns per element (count, degree of product): (2)|():3,4 (1,1)|():3,5 (3)|(1):1,0 (2,1)|(1):3,1 (1,1,1)|(1):1,3
+
+down-sets (index: elements | |Z_Lambda| | dim V_Lambda):
+  # 0: {} | |Z| = 0 | predicted dim = 0 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+  # 1: {(1,1)|()} | |Z| = 240 | predicted dim = 240 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+  # 2: {(2)|() (1,1)|()} | |Z| = 305 | predicted dim = 305 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+  # 3: {(1,1)|() (1,1,1)|(1)} | |Z| = 360 | predicted dim = 360 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+  # 4: {(2)|() (1,1)|() (1,1,1)|(1)} | |Z| = 425 | predicted dim = 425 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+  # 5: {(2)|() (1,1)|() (2,1)|(1) (1,1,1)|(1)} | |Z| = 605 | predicted dim = 605 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+  # 6: {(2)|() (1,1)|() (3)|(1) (2,1)|(1) (1,1,1)|(1)} | |Z| = 625 | predicted dim = 625 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+
+ESTIMATE: matmul 1.02e+07 flops + elimination 2.68e+07 ops -> ~0 s (rates 5.0e+09, 2.0e+08 per s), plus overhead ~7 down-sets x ~0.5 s; memory ~60 MB (3 float32 n_max^2 blocks, n_max = 85, ring tables, up to 11 dense generators, baseline)
+=== OUTPUT ===
+cell (alpha, beta, q) = (3, 1, 5), p = 5, q = p^1, F = F_5, Omega = {0..4}
+date: 2026-09-25 13:36:30
+BPar_q(alpha,beta): 5 elements: (2)|() (1,1)|() (3)|(1) (2,1)|(1) (1,1,1)|(1)
+strict order relations (product of weak dominance orders): 9
+number of down-sets: 7
+shape histogram over all 625 points: (1,1)|():240 (1,1,1)|(1):120 (2)|():65 (2,1)|(1):180 (3)|(1):20
+set of shapes == BPar_q(alpha,beta)? True
+ring dimension q^(alpha+beta) = 625, degrees 0..16, n_d = [1, 4, 10, 20, 35, 52, 68, 80, 85, 80, 68, 52, 35, 20, 10, 4, 1]
+tight patterns per element (count, degree of product): (2)|():3,4 (1,1)|():3,5 (3)|(1):1,0 (2,1)|(1):3,1 (1,1,1)|(1):1,3
+
+down-sets (index: elements | |Z_Lambda| | dim V_Lambda):
+  # 0: {} | |Z| = 0 | dim = 0 | OK(=) | gens 0 (of 0 patterns) | per-degree [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] | 0.0s
+  # 1: {(1,1)|()} | |Z| = 240 | dim = 240 | OK(=) | gens 3 (of 3 patterns) | per-degree [0, 0, 0, 0, 0, 3, 9, 18, 29, 38, 41, 38, 30, 19, 10, 4, 1] | 0.0s
+  # 2: {(2)|() (1,1)|()} | |Z| = 305 | dim = 305 | OK(=) | gens 6 (of 6 patterns) | per-degree [0, 0, 0, 0, 3, 9, 18, 30, 42, 48, 48, 42, 31, 19, 10, 4, 1] | 0.0s
+  # 3: {(1,1)|() (1,1,1)|(1)} | |Z| = 360 | dim = 360 | OK(=) | gens 4 (of 4 patterns) | per-degree [0, 0, 0, 1, 4, 12, 24, 38, 51, 58, 56, 47, 34, 20, 10, 4, 1] | 0.0s
+  # 4: {(2)|() (1,1)|() (1,1,1)|(1)} | |Z| = 425 | dim = 425 | OK(=) | gens 7 (of 7 patterns) | per-degree [0, 0, 0, 1, 7, 18, 33, 50, 64, 68, 63, 51, 35, 20, 10, 4, 1] | 0.0s
+  # 5: {(2)|() (1,1)|() (2,1)|(1) (1,1,1)|(1)} | |Z| = 605 | dim = 605 | OK(=) | gens 10 (of 10 patterns) | per-degree [0, 2, 7, 16, 31, 49, 66, 79, 85, 80, 68, 52, 35, 20, 10, 4, 1] | 0.0s
+  # 6: {(2)|() (1,1)|() (3)|(1) (2,1)|(1) (1,1,1)|(1)} | |Z| = 625 | dim = 625 | OK(=) | gens (contains 1) | per-degree [1, 4, 10, 20, 35, 52, 68, 80, 85, 80, 68, 52, 35, 20, 10, 4, 1] | 0.0s
+
+SUMMARY cell=(3,1,5) #down-sets=7 #dim<|Z|=0 #dim>|Z|=0 #equal=7  total 0.0s
+=== /usr/bin/time -l (raw) ===
+        0.09 real         0.07 user         0.01 sys
+            25313280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2758  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  36  involuntary context switches
+           903022917  instructions retired
+           296431629  cycles elapsed
+            18776352  peak memory footprint

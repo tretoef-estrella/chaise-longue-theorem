@@ -1,0 +1,3 @@
+# prediction: dim (D_J)C = Q_3(5) = 4900 in C_7 = F_5[y1..y7]/(y^4), dim 16384, 105 generators of degree 6. Estimate: Singular std on a 0-dim ideal of colength 11484 in 7 variables: < 10 min, < 1 GB (unknown; watchdog at 1100 MB).
+(k,q)=(3,5) over F_5: dim (D_J)C = 4900 ; Q_k(q) = 4900 ; EQUAL ; 0.1s
+[watchdog] finished ; wall 3.1 s ; peak RSS of process group 221 MB

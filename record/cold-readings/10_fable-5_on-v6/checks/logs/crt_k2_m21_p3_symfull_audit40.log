@@ -1,0 +1,81 @@
+# command: python3 scripts/crt_colouring_k2.py 21 3 --k 2 --sym full --audit 40
+# prediction: Σ_c dim = Q_2(21) = 102800 (paper: 3301 colourings with non-zero image at p=3); est < 10 min, < 300 MB
+# cap: 1150 MB RSS (polled every 0.5 s) and 600 s wall; run date: Fri Sep 25 13:33:40 CEST 2026
+m=21=3*7 p=3 k=2 nvar=5: F=GF(3^6) (poly [1, 0, 0, 0, 1, 1, 1]), zeta of order 7; block dim q^nvar=243; #colourings r^nvar=16807; PREDICTION Σ_c dim = Q_2(21) = 102800, quotient 3981301
+#orbits (sym=full) = 80
+  orbit 0/80 rep=(0, 0, 0, 0, 0) mult=1 surviving gens=15 dim=20  (running total 20, 0.1s)
+  orbit 1/80 rep=(0, 0, 0, 0, 1) mult=30 surviving gens=3 dim=18  (running total 560, 0.1s)
+  orbit 5/80 rep=(0, 0, 0, 1, 6) mult=60 surviving gens=3 dim=18  (running total 1640, 0.1s)
+  orbit 11/80 rep=(0, 0, 1, 1, 6) mult=180 surviving gens=2 dim=30  (running total 7040, 0.2s)
+  orbit 14/80 rep=(0, 0, 1, 2, 5) mult=360 surviving gens=1 dim=18  (running total 13520, 0.2s)
+  orbit 15/80 rep=(0, 0, 1, 2, 6) mult=360 surviving gens=1 dim=18  (running total 20000, 0.2s)
+  orbit 34/80 rep=(0, 1, 1, 6, 6) mult=90 surviving gens=2 dim=30  (running total 22700, 0.3s)
+  orbit 37/80 rep=(0, 1, 2, 5, 6) mult=360 surviving gens=1 dim=18  (running total 29180, 0.3s)
+  orbit 50/80 rep=(1, 1, 1, 3, 4) mult=120 surviving gens=0 dim=0  (running total 29180, 0.3s)
+  orbit 58/80 rep=(1, 1, 1, 6, 6) mult=60 surviving gens=6 dim=93  (running total 34760, 0.4s)
+  orbit 70/80 rep=(1, 1, 2, 5, 6) mult=360 surviving gens=2 dim=45  (running total 50960, 0.5s)
+  orbit 71/80 rep=(1, 1, 2, 6, 6) mult=180 surviving gens=2 dim=45  (running total 59060, 0.5s)
+  orbit 75/80 rep=(1, 1, 3, 4, 6) mult=360 surviving gens=2 dim=45  (running total 75260, 0.6s)
+  orbit 77/80 rep=(1, 1, 3, 6, 6) mult=180 surviving gens=2 dim=45  (running total 83360, 0.6s)
+  orbit 79/80 rep=(1, 2, 3, 4, 5) mult=720 surviving gens=1 dim=27  (running total 102800, 0.6s)
+TOTAL Σ_c dim π_c(I) = 102800  over 3301 colourings with non-zero image (14 orbits); prediction 102800: AGREES  [0.6s]
+  audit e=(5, 4, 5, 4, 1) dim=0 orbit-rep=(1, 1, 2, 3, 3) orbit-dim=0 ok
+  audit e=(0, 0, 6, 5, 4) dim=0 orbit-rep=(0, 0, 1, 2, 3) orbit-dim=0 ok
+  audit e=(4, 0, 3, 4, 6) dim=0 orbit-rep=(0, 1, 1, 5, 6) orbit-dim=0 ok
+  audit e=(5, 0, 1, 2, 4) dim=0 orbit-rep=(0, 1, 2, 3, 4) orbit-dim=0 ok
+  audit e=(2, 4, 3, 3, 3) dim=0 orbit-rep=(1, 1, 1, 3, 6) orbit-dim=0 ok
+  audit e=(3, 4, 5, 5, 0) dim=0 orbit-rep=(0, 1, 1, 2, 5) orbit-dim=0 ok
+  audit e=(5, 6, 4, 5, 0) dim=0 orbit-rep=(0, 1, 1, 4, 5) orbit-dim=0 ok
+  audit e=(2, 1, 3, 0, 6) dim=0 orbit-rep=(0, 1, 2, 3, 5) orbit-dim=0 ok
+  audit e=(5, 0, 4, 3, 2) dim=18 orbit-rep=(0, 1, 2, 5, 6) orbit-dim=18 ok
+  audit e=(1, 4, 6, 0, 4) dim=0 orbit-rep=(0, 1, 1, 2, 5) orbit-dim=0 ok
+  audit e=(5, 6, 2, 3, 4) dim=27 orbit-rep=(1, 2, 3, 4, 5) orbit-dim=27 ok
+  audit e=(3, 3, 6, 4, 1) dim=45 orbit-rep=(1, 1, 2, 5, 6) orbit-dim=45 ok
+  audit e=(2, 2, 4, 4, 0) dim=0 orbit-rep=(0, 1, 1, 2, 2) orbit-dim=0 ok
+  audit e=(2, 3, 5, 6, 3) dim=0 orbit-rep=(1, 1, 2, 3, 4) orbit-dim=0 ok
+  audit e=(4, 5, 6, 2, 2) dim=0 orbit-rep=(1, 1, 2, 3, 6) orbit-dim=0 ok
+  audit e=(1, 1, 5, 0, 2) dim=0 orbit-rep=(0, 1, 1, 2, 5) orbit-dim=0 ok
+  audit e=(5, 4, 2, 4, 1) dim=0 orbit-rep=(1, 1, 2, 3, 4) orbit-dim=0 ok
+  audit e=(6, 6, 0, 6, 6) dim=0 orbit-rep=(0, 1, 1, 1, 1) orbit-dim=0 ok
+  audit e=(2, 1, 6, 2, 5) dim=45 orbit-rep=(1, 1, 3, 4, 6) orbit-dim=45 ok
+  audit e=(2, 0, 1, 0, 3) dim=0 orbit-rep=(0, 0, 1, 2, 3) orbit-dim=0 ok
+  audit e=(2, 5, 4, 3, 6) dim=27 orbit-rep=(1, 2, 3, 4, 5) orbit-dim=27 ok
+  audit e=(1, 0, 3, 0, 2) dim=0 orbit-rep=(0, 0, 1, 2, 3) orbit-dim=0 ok
+  audit e=(2, 4, 1, 0, 1) dim=0 orbit-rep=(0, 1, 1, 2, 4) orbit-dim=0 ok
+  audit e=(4, 4, 4, 2, 6) dim=0 orbit-rep=(1, 1, 1, 4, 5) orbit-dim=0 ok
+  audit e=(4, 2, 5, 2, 3) dim=45 orbit-rep=(1, 1, 2, 5, 6) orbit-dim=45 ok
+  audit e=(0, 2, 1, 5, 0) dim=18 orbit-rep=(0, 0, 1, 2, 5) orbit-dim=18 ok
+  audit e=(6, 1, 5, 5, 6) dim=0 orbit-rep=(1, 1, 2, 2, 6) orbit-dim=0 ok
+  audit e=(4, 4, 3, 0, 2) dim=0 orbit-rep=(0, 1, 1, 4, 6) orbit-dim=0 ok
+  audit e=(0, 2, 3, 6, 5) dim=0 orbit-rep=(0, 1, 2, 3, 4) orbit-dim=0 ok
+  audit e=(6, 6, 5, 3, 4) dim=0 orbit-rep=(1, 1, 2, 3, 4) orbit-dim=0 ok
+  audit e=(5, 4, 4, 5, 6) dim=0 orbit-rep=(1, 1, 3, 3, 5) orbit-dim=0 ok
+  audit e=(0, 0, 2, 2, 1) dim=0 orbit-rep=(0, 0, 1, 1, 4) orbit-dim=0 ok
+  audit e=(0, 0, 4, 3, 1) dim=18 orbit-rep=(0, 0, 1, 2, 6) orbit-dim=18 ok
+  audit e=(2, 1, 4, 3, 5) dim=27 orbit-rep=(1, 2, 3, 4, 5) orbit-dim=27 ok
+  audit e=(2, 3, 0, 4, 2) dim=0 orbit-rep=(0, 1, 1, 2, 5) orbit-dim=0 ok
+  audit e=(3, 6, 2, 4, 3) dim=0 orbit-rep=(1, 1, 2, 3, 6) orbit-dim=0 ok
+  audit e=(1, 2, 3, 3, 5) dim=0 orbit-rep=(1, 1, 3, 4, 5) orbit-dim=0 ok
+  audit e=(5, 4, 4, 1, 3) dim=0 orbit-rep=(1, 1, 2, 3, 6) orbit-dim=0 ok
+  audit e=(1, 3, 0, 5, 4) dim=0 orbit-rep=(0, 1, 2, 3, 5) orbit-dim=0 ok
+  audit e=(2, 3, 2, 3, 2) dim=0 orbit-rep=(1, 1, 1, 5, 5) orbit-dim=0 ok
+AUDIT: 40 random colourings recomputed without symmetry, 0 mismatches  [1.0s]
+        1.16 real         1.11 user         0.02 sys
+           136445952  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9600  page reclaims
+                  57  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 171  voluntary context switches
+                  58  involuntary context switches
+         16290975189  instructions retired
+          3694564267  cycles elapsed
+           129745280  peak memory footprint
+# watchdog: max polled RSS = 133216 KB; wall = 1 s; completed

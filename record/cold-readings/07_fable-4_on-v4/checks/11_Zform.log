@@ -1,0 +1,28 @@
+root (k,q)=(1,5): rank of V_Z = 36 (Q_k(q)=36); torsion of Z[y]/(V_Z+box): NONE (free) ; 0.0s
+root (k,q)=(1,7): rank of V_Z = 90 (Q_k(q)=90); torsion of Z[y]/(V_Z+box): NONE (free) ; 0.0s
+root (k,q)=(2,3): rank of V_Z = 20 (Q_k(q)=20); torsion of Z[y]/(V_Z+box): NONE (free) ; 0.0s
+root (k,q)=(1,9): rank of V_Z = 168 (Q_k(q)=168); torsion of Z[y]/(V_Z+box): NONE (free) ; 0.8s
+all down-sets (q,m)=(5,3): 4 down-sets; rank V_Z = |Z_Lambda| and quotient free in all but 0
+all down-sets (q,m)=(7,3): 5 down-sets; rank V_Z = |Z_Lambda| and quotient free in all but 0
+all down-sets (q,m)=(9,3): 5 down-sets; rank V_Z = |Z_Lambda| and quotient free in all but 0
+all down-sets (q,m)=(5,4): 7 down-sets; rank V_Z = |Z_Lambda| and quotient free in all but 0
+       14.76 real        13.18 user         0.72 sys
+          1320943616  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              268543  page reclaims
+                5002  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1881  voluntary context switches
+                4539  involuntary context switches
+            16617343  instructions retired
+             8138556  cycles elapsed
+             1065248  peak memory footprint
+
+[referee note] CAP VIOLATION: this run peaked at 1 320 943 616 bytes RSS (1.32 GB), above the 1.2 GB cap; my estimate (< 400 MB) was wrong — the integer Smith normal form of the 1536 x 512 matrix at (1,9) (PARI/FLINT) is the culprit. The run completed in 15 s and was not killed; reported in REPORT.md, Step 11.

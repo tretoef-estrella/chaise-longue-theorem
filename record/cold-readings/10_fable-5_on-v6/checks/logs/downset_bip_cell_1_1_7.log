@@ -1,0 +1,62 @@
+=== RUN ===
+command: python3 downset_bip_cells.py --cell 1 1 7
+cwd: /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts
+date: Fri Sep 25 13:36:29 CEST 2026
+exit status: 0
+wall time (/usr/bin/time -l, real): 0.07 s
+peak memory (maximum resident set size): 23560192 bytes = 22 MB
+=== PREDICTION (written before the run) ===
+prediction command: python3 downset_bip_cells.py --cell 1 1 7 --predict
+cell (alpha, beta, q) = (1, 1, 7), p = 7, q = p^1, F = F_7, Omega = {0..6}
+date: 2026-09-25 13:36:29
+BPar_q(alpha,beta): 2 elements: ()|() (1)|(1)
+strict order relations (product of weak dominance orders): 1
+number of down-sets: 3
+shape histogram over all 49 points: ()|():7 (1)|(1):42
+set of shapes == BPar_q(alpha,beta)? True
+ring dimension q^(alpha+beta) = 49, degrees 0..12, n_d = [1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1]
+tight patterns per element (count, degree of product): ()|():1,6 (1)|(1):1,0
+
+down-sets (index: elements | |Z_Lambda| | dim V_Lambda):
+  # 0: {} | |Z| = 0 | predicted dim = 0 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+  # 1: {()|()} | |Z| = 7 | predicted dim = 7 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+  # 2: {()|() (1)|(1)} | |Z| = 49 | predicted dim = 49 (equality measured by the paper; Thm 7.6 says >=) | est 0.0 s
+
+ESTIMATE: matmul 1.55e+02 flops + elimination 4.65e+02 ops -> ~0 s (rates 5.0e+09, 2.0e+08 per s), plus overhead ~3 down-sets x ~0.5 s; memory ~60 MB (3 float32 n_max^2 blocks, n_max = 7, ring tables, up to 2 dense generators, baseline)
+=== OUTPUT ===
+cell (alpha, beta, q) = (1, 1, 7), p = 7, q = p^1, F = F_7, Omega = {0..6}
+date: 2026-09-25 13:36:29
+BPar_q(alpha,beta): 2 elements: ()|() (1)|(1)
+strict order relations (product of weak dominance orders): 1
+number of down-sets: 3
+shape histogram over all 49 points: ()|():7 (1)|(1):42
+set of shapes == BPar_q(alpha,beta)? True
+ring dimension q^(alpha+beta) = 49, degrees 0..12, n_d = [1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1]
+tight patterns per element (count, degree of product): ()|():1,6 (1)|(1):1,0
+
+down-sets (index: elements | |Z_Lambda| | dim V_Lambda):
+  # 0: {} | |Z| = 0 | dim = 0 | OK(=) | gens 0 (of 0 patterns) | per-degree [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] | 0.0s
+  # 1: {()|()} | |Z| = 7 | dim = 7 | OK(=) | gens 1 (of 1 patterns) | per-degree [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1] | 0.0s
+  # 2: {()|() (1)|(1)} | |Z| = 49 | dim = 49 | OK(=) | gens (contains 1) | per-degree [1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1] | 0.0s
+
+SUMMARY cell=(1,1,7) #down-sets=3 #dim<|Z|=0 #dim>|Z|=0 #equal=3  total 0.0s
+ROOT I^bal_1 at q=7: dim = 7, |Z_{(0,0)}| = 7, N_bal by direct count = 7, paper's closed form = 7
+=== /usr/bin/time -l (raw) ===
+        0.07 real         0.05 user         0.01 sys
+            23560192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2651  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  28  involuntary context switches
+           597895427  instructions retired
+           221898153  cycles elapsed
+            17023264  peak memory footprint

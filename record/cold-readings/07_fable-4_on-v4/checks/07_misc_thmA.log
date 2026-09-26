@@ -1,0 +1,34 @@
+Thm A n=2 q=3 char 3: dim=3, N_q(n)=3 : EQUAL
+Thm A n=4 q=3 char 3: dim=19, N_q(n)=19 : EQUAL
+Thm A n=4 q=5 char 5: dim=61, N_q(n)=61 : EQUAL
+Thm A n=4 q=7 char 7: dim=127, N_q(n)=127 : EQUAL
+Thm A n=6 q=3 char 3: dim=141, N_q(n)=141 : EQUAL
+Thm A n=4 q=3 char 5: dim=19, N_q(n)=19 : EQUAL
+Thm A n=4 q=5 char 3: dim=61, N_q(n)=61 : EQUAL
+Thm A n=4 q=9 char 3: dim=217, N_q(n)=217 : EQUAL
+Thm A n=6 q=5 char 5: dim=1001, N_q(n)=1001 : EQUAL
+Thm A n=4 q=3 char 0: dim=19, N_q(n)=19 : EQUAL
+Thm A n=4 q=5 char 0: dim=61, N_q(n)=61 : EQUAL
+Thm A n=2 q=5 char 2: dim=5, N_q(n)=5 : EQUAL
+Thm A n=4 q=3 char 2: dim=21, N_q(n)=19 : char 2 (fails as Remark 6.3 says)
+Thm A n=4 q=5 char 2: dim=65, N_q(n)=61 : char 2 (fails as Remark 6.3 says)
+Thm A n=4 q=7 char 2: dim=133, N_q(n)=127 : char 2 (fails as Remark 6.3 says)
+Thm A n=4 q=9 char 2: dim=225, N_q(n)=217 : char 2 (fails as Remark 6.3 says)
+        2.75 real         1.75 user         0.36 sys
+           246333440  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               84128  page reclaims
+                4800  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1256  voluntary context switches
+                4289  involuntary context switches
+            16749122  instructions retired
+             7266825  cycles elapsed
+             1065248  peak memory footprint

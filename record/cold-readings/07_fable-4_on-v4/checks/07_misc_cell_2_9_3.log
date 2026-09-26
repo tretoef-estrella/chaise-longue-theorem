@@ -1,0 +1,4 @@
+# prediction: dim = Q_2(9) = 5120 in C_5 = F_3[y1..y5]/(y^8), dim 32768, 15 generators of degree 14; graded ranks of Table 8.1: 15,45,90,150,224,310,395,470,515,530,516,475,411,329,245,170,110,65,34,15,5,1. Estimate < 10 min, < 1 GB.
+(k,q)=(2,9) over F_3: dim (D_J)C = 5120 ; Q_k(q) = 5120 ; EQUAL ; 0.0s
+   graded ranks of the ideal from degree 14: [15, 45, 90, 150, 224, 310, 395, 470, 515, 530, 516, 475, 411, 329, 245, 170, 110, 65, 34, 15, 5, 1]
+[watchdog] finished ; wall 3.1 s ; peak RSS of process group 230 MB

@@ -1,0 +1,26 @@
+# command: python3 scripts/crt_colouring_k2.py 9 3 --k 2 --sym none
+# prediction: CONTROL prime power m=9 (r=1, one colouring = the whole ring 9^5): dim = Q_2(9) = 5120; est < 10 min, < 900 MB
+# cap: 1150 MB RSS (polled every 0.5 s) and 600 s wall; run date: Fri Sep 25 13:33:41 CEST 2026
+m=9=9*1 p=3 k=2 nvar=5: F=GF(3^1) (poly None), zeta of order 1; block dim q^nvar=59049; #colourings r^nvar=1; PREDICTION Σ_c dim = Q_2(9) = 5120, quotient 53929
+#orbits (sym=none) = 1
+  orbit 0/1 rep=(0, 0, 0, 0, 0) mult=1 surviving gens=15 dim=5120  (running total 5120, 382.0s)
+TOTAL Σ_c dim π_c(I) = 5120  over 1 colourings with non-zero image (1 orbits); prediction 5120: AGREES  [382.0s]
+      382.04 real       377.66 user         2.99 sys
+          1076248576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              680698  page reclaims
+                  29  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  13  voluntary context switches
+               54793  involuntary context switches
+       6267716161272  instructions retired
+       1261008557217  cycles elapsed
+          1440433592  peak memory footprint
+# watchdog: max polled RSS = 1026336 KB; wall = 383 s; completed

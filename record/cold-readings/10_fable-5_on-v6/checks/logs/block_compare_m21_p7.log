@@ -1,0 +1,25 @@
+# command: /usr/bin/time -l python3 scripts/block_compare.py 21 7 2 logs/crt_k2_m21_p7_symfull_audit10.log
+# prediction: |Γ_J| = Q_2(21) = 102800; every colouring: enumerated count == Lemma 6.8 block product == engine dim (0 mismatches). est < 5 min, < 100 MB
+# run date: Fri Sep 25 13:34:16 CEST 2026
+(A) enumerating Γ_J for m=21, n=4: 4084101 tuples ...
+(A) |Γ_J| = 102800; colourings with points: 141
+(A) Σ_c block products = 102800 vs |Γ_J| = 102800: AGREES; per-colouring mismatches: 0
+(B) 18 colourings/orbit representatives from logs/crt_k2_m21_p7_symfull_audit10.log: engine dim == block product == enumerated count in all but 0
+       14.33 real        14.21 user         0.03 sys
+            10764288  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2053  page reclaims
+                  50  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   5  voluntary context switches
+                1018  involuntary context switches
+        237130100281  instructions retired
+         46925097536  cycles elapsed
+             6947080  peak memory footprint

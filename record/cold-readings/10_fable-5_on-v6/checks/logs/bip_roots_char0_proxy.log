@@ -1,0 +1,31 @@
+# command: python3 scripts/bip_roots_char0_proxy.py
+# prediction: char-0 proxies 4,24,169,18,126,129,416,1025 (paper Remark 7.9(2)/§12.4); mod-p values 3,15,93,15,93,45,91,153; est < 3 min, < 300 MB (previous attempt killed: GF tables for p=10007; now table-free)
+# cap: 1150 MB RSS (polled every 0.5 s) and 600 s wall; run date: Fri Sep 25 14:03:05 CEST 2026
+prediction (paper, Remark 7.9(2) / §12.4): the char-0 values listed; mod p (p | q) the values N_bal/N_ph
+I^bal_1 at q=3: dim mod 3 = 3; dim mod 10007 = 4; mod 10009 = 4; paper's char-0 claim 4: AGREES
+I^bal_2 at q=3: dim mod 3 = 15; dim mod 10007 = 24; mod 10009 = 24; paper's char-0 claim 24: AGREES
+I^bal_3 at q=3: dim mod 3 = 93; dim mod 10007 = 169; mod 10009 = 169; paper's char-0 claim 169: AGREES
+I^ph_1 at q=3: dim mod 3 = 15; dim mod 10007 = 18; mod 10009 = 18; paper's char-0 claim 18: AGREES
+I^ph_2 at q=3: dim mod 3 = 93; dim mod 10007 = 126; mod 10009 = 126; paper's char-0 claim 126: AGREES
+I^bal_2 at q=5: dim mod 5 = 45; dim mod 10007 = 129; mod 10009 = 129; paper's char-0 claim 129: AGREES
+I^bal_2 at q=7: dim mod 7 = 91; dim mod 10007 = 416; mod 10009 = 416; paper's char-0 claim 416: AGREES
+I^bal_2 at q=9: dim mod 3 = 153; dim mod 10007 = 1025; mod 10009 = 1025; paper's char-0 claim 1025: AGREES
+        4.56 real         4.51 user         0.04 sys
+           132808704  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9256  page reclaims
+                  19  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                  49  involuntary context switches
+         75589970132  instructions retired
+         15335273200  cycles elapsed
+           126222744  peak memory footprint
+# watchdog: max polled RSS = 129648 KB; wall = 5 s; completed

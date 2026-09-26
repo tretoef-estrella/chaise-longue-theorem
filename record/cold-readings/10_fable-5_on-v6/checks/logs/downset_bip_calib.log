@@ -1,0 +1,37 @@
+=== RUN ===
+command: python3 downset_bip_calib.py
+cwd: /Users/rafa/Desktop/LECTORES_EN_FRIO/FABLE_5/checks/scripts
+date: Fri Sep 25 13:32:25 CEST 2026
+exit status: 0
+wall time (/usr/bin/time -l, real): 15.94 s
+peak memory (maximum resident set size): 277250048 bytes = 264 MB
+=== PREDICTION (written before the run) ===
+Purpose: calibrate the time model (model-flops per second of the Echelon class) on random
+matrices of the sizes that occur at the heaviest cells. No prediction of a mathematical value.
+Expected: ranks = full column rank (random matrices); ~10-60 s total; memory < 200 MB
+(largest matrix 10506 x 1751 int64 = 147 MB, converted to float32 batches).
+=== OUTPUT ===
+p= 5   10506 x  1751  rank  1751  4.88s  -> model rate 3.30e+09/s
+p= 3    8856 x  1107  rank  1107  1.53s  -> model rate 3.55e+09/s
+p= 7    7255 x  1451  rank  1451  3.87s  -> model rate 1.97e+09/s
+p=11    3564 x   891  rank   891  1.59s  -> model rate 8.92e+08/s
+p=19    2660 x  1330  rank  1330  3.82s  -> model rate 6.16e+08/s
+=== /usr/bin/time -l (raw) ===
+       15.94 real        15.71 user         0.15 sys
+           277250048  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               32178  page reclaims
+                 199  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 171  voluntary context switches
+                5183  involuntary context switches
+        163080130380  instructions retired
+         52074962569  cycles elapsed
+           395543152  peak memory footprint
