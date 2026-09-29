@@ -4,11 +4,11 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22961150.svg)](https://doi.org/10.5281/zenodo.22961150)
 
-**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint v7, 25 September 2026
+**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint v8, 29 September 2026
 
-> **Status.** A complete proof, published as a preprint. It has been read cold, step by step, eleven times, by AI systems of three providers; no reader found a fatal error, and every gap or error reported on an earlier version has been repaired in v7. **It has not yet been refereed by a human expert.** It is being sent to A. Degtyarev and I. Shimada, the authors of the conjecture. This repository exists so that they, and any referee, can check every step: the paper, every engine and log behind its numbers, every cold reading, and the complete record of how the proof was found, dead ends included.
+> **Status.** A complete proof, published as a preprint. It has been read cold, step by step, eleven times, by AI systems of three providers; no reader found a fatal error, and every gap or error reported on an earlier version has been repaired. Its algebraic core, Main Theorem′, has been checked in Lean 4 ([lean/](lean/README.md)). **It has not yet been refereed by a human expert.** Version 7 was sent to A. Degtyarev and I. Shimada, the authors of the conjecture, on 26 September 2026. This repository exists so that they, and any referee, can check every step: the paper, every engine and log behind its numbers, every cold reading, and the complete record of how the proof was found, dead ends included.
 
-**Read the paper:** [paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf](paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) · [Markdown source](paper/THE_CHAISE_LONGUE_THEOREM_v7.md) · permanent archive: [doi.org/10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150)
+**Read the paper:** [paper/THE_CHAISE_LONGUE_THEOREM_v8.pdf](paper/THE_CHAISE_LONGUE_THEOREM_v8.pdf) · [Markdown source](paper/THE_CHAISE_LONGUE_THEOREM_v8.md) · the previous version: [v7](paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) · permanent archive: [doi.org/10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150)
 
 ---
 
@@ -131,7 +131,7 @@ The story behind these numbers — the dogs' sweep, the gold found where we had 
 ## Repository map
 
 ```
-paper/                      the paper, v7 (PDF, as published on Zenodo, and its Markdown source)
+paper/                      the paper, v8 (PDF and Markdown source; §12.8 is the Lean proof), and v7
 THEOREMS.md                 a guided tour of the results, for referees
 theorems/INDEX.md           the 222 standalone documents, by campaign, with their status
 theorems/standalone/        the standalone documents, each with a citation header
@@ -149,4 +149,4 @@ archive/                    the working notebooks: the Master Catalogue, the Cem
 
 [CITATION.md](CITATION.md) · [LICENSE-TEXT.md](LICENSE-TEXT.md) · [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) · [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md) · [A personal note](A_PERSONAL_NOTE.md) · [On AI and mathematics](ON_AI_AND_MATHEMATICS.md)
 
-*Cite as:* Amichis Luengo, R. (2026). *The Chaise Longue Theorem* (preprint, version v7). Zenodo. https://doi.org/10.5281/zenodo.22961150
+*Cite as:* Amichis Luengo, R. (2026). *The Chaise Longue Theorem* (preprint, version v8). Zenodo. https://doi.org/10.5281/zenodo.22961150
