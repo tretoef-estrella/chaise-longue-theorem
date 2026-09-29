@@ -42,10 +42,31 @@ And it has a consequence in Hodge theory:
 | **Corollary W** | the linear spaces on partial Fermat varieties span primitive sublattices | proved (what [DS] had proved conditionally) |
 | **Theorem A** | a *different* count, $\dim F[x]/(e_1, e_3, \dots; x_i^q) = n!\,[y^n]\,e^y I_0(2y)^{(q-1)/2}$ | proved; it is **not** the conjecture (§9) |
 | even degrees $m$ | | open (§13) |
+| **Lean 4** | Main Theorem′, every odd $m$, every $k$, over $\mathbb{Z}$ and over every field | machine-checked: no `sorry`, only the standard axioms ([lean/](lean/README.md)) |
 
 *Related recent work.* R. Jumagulov, *The Hodge conjecture for Fermat fourfolds of odd degree at most 199* (arXiv:2608.18134, July 2026), gives a computer-assisted proof of the **rational** Hodge conjecture for the Fermat fourfolds $X^4_m$ of every odd degree $m \le 199$, using algebraic cycles beyond linear subspaces. Corollary H is an **integral** statement about **linear** cycles; for fourfolds ($k = 2$) it covers the odd primes and the odd $m$ whose prime factors all exceed $6$, so the composite odd degrees divisible by $3$ or $5$ are not covered by it.
 
 A guided tour of these results, with the lemmas a referee should look at first, is in **[THEOREMS.md](THEOREMS.md)**.
+
+---
+
+## Machine-checked in Lean 4
+
+> **Main Theorem′ is proved in Lean 4 with Mathlib** (29 September 2026), for every odd $m \ge 1$, every $k \ge 0$, over $\mathbb{Z}$ and over every field. The proof has 113 files, 21,126 lines and 937 theorems. It contains no `sorry`, and the final theorem `ColAssembly.mainTheorem'` depends only on the standard axioms `propext`, `Classical.choice`, `Quot.sound`.
+
+- **Who wrote the proofs.** The Lean proofs were written by Aristotle (Harmonic), in 29 pieces written from the paper.
+- **How they were checked.** Every file was compiled again on the author's machine, and every statement was audited against the paper.
+- **What stays cited.** Only the topology is not formalized: [DS, Theorem 1.1(a)] (Pham's theorem and [DS, Theorem 2.2]), which identifies the torsion of $\mathbb{Z}[G]/(\psi_J)$ with that of $H_{2k}(X;\mathbb{Z})/L(X)$.
+
+**Certificate:** [lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v1.pdf](lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v1.pdf). It gives the exact statement, the comparison with the paper, the trust base, the data of every piece and how to reproduce it. **Code:** [lean/project/](lean/project/).
+
+**Check it yourself, from the evidence to the full rebuild:**
+1. The final theorem as Lean prints it, with its axioms: [lean/logs/check_run29.log](lean/logs/check_run29.log). The axiom lines are 55–60.
+2. The theorem in the source: [lean/project/RequestProject/ColAssembly/Main.lean](lean/project/RequestProject/ColAssembly/Main.lean).
+3. A rebuild from scratch, module by module, 113 of 113 with no error: [lean/logs/clean_rebuild_2026-09-29.log](lean/logs/clean_rebuild_2026-09-29.log). The final full build is [lean/logs/build_after_clean.log](lean/logs/build_after_clean.log).
+4. What the final theorem actually uses (2,367 declarations in 90 files): [lean/logs/deps_mainTheorem.log](lean/logs/deps_mainTheorem.log).
+5. The audit of each of the 29 runs: [lean/AUDIT_LOG.md](lean/AUDIT_LOG.md). The pieces as sent: [lean/pieces/](lean/pieces/). The checks run before sending each one: [lean/checks/](lean/checks/).
+6. Rebuild it on your own machine: [lean/README.md](lean/README.md#how-to-check-it).
 
 ---
 
@@ -93,8 +114,17 @@ The campaign ran from **23 May to 25 September 2026** — 126 days, of which the
 | Results found again that the archive already held | **129**, each caught and logged (`OWN-DEPOSITED`) |
 | The great sweep | **20** reports; **2,403** never-classified documents brought to **0** |
 | Cold readings of the paper | **11**, of versions 3 to 7 |
+| Lean 4 formalization of Main Theorem′ | **29** pieces; **113** files, **21,126** lines, **937** theorems; **0** `sorry` (28–29 September 2026) |
+| Time invested, in the author's own words | more than **1,000 hours** for the whole route (Hodge–Fermat, Sofa, Hammock, Chaise Longue); the Chaise Longue alone, **76 days at about 12 hours a day**, often more |
 
 The story behind these numbers — the dogs' sweep, the gold found where we had already walked, the day we discovered we had been proving the wrong statement, and the three days that closed it — is told in **[THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md)**.
+
+*On the time, from Rafael Amichis Luengo.* Some think that work like this means giving the problem to an AI, pressing a button and receiving the result. That is not how this proof was made.
+
+- The whole route took me more than a thousand hours.
+- The Hodge–Fermat campaign helped: its splitting into blocks by the Chinese remainder theorem is the precedent of the colour reduction of §6, which closed the degrees that are not prime powers.
+- The Sofa and the Hammock were the first cases, $k = 2$ and $k = 3$.
+- The Chaise Longue alone took 76 days, from 11 July to 25 September, at about twelve hours a day and often more. You do not stop thinking about it, not even in the shower.
 
 ---
 
@@ -109,6 +139,7 @@ hodge-fermat-campaign/      the earlier campaign: Watermark, Double Ladder, Loca
                             the Nail, the sixteen machine verdicts, and their engines and logs
 engines/                    every engine and log behind the paper's numbers (see HOW_TO_VERIFY.md)
 record/                     cold readings of every version, and the audits of the proofs
+lean/                       the Lean 4 proof of Main Theorem′: certificate, project, pieces, checks, logs
 archive/                    the working notebooks: the Master Catalogue, the Cemetery, the tree, Rafa's ideas
 ```
 
@@ -116,6 +147,6 @@ archive/                    the working notebooks: the Master Catalogue, the Cem
 
 ---
 
-[CITATION.md](CITATION.md) · [LICENSE-TEXT.md](LICENSE-TEXT.md) · [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) · [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md)
+[CITATION.md](CITATION.md) · [LICENSE-TEXT.md](LICENSE-TEXT.md) · [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) · [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md) · [A personal note](A_PERSONAL_NOTE.md) · [On AI and mathematics](ON_AI_AND_MATHEMATICS.md)
 
 *Cite as:* Amichis Luengo, R. (2026). *The Chaise Longue Theorem* (preprint, version v7). Zenodo. https://doi.org/10.5281/zenodo.22961150
