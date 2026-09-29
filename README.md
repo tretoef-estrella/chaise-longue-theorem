@@ -115,7 +115,7 @@ The campaign ran from **23 May to 25 September 2026** — 126 days, of which the
 | The great sweep | **20** reports; **2,403** never-classified documents brought to **0** |
 | Cold readings of the paper | **11**, of versions 3 to 7 |
 | Lean 4 formalization of Main Theorem′ | **29** pieces; **113** files, **21,126** lines, **937** theorems; **0** `sorry` (28–29 September 2026) |
-| Time invested, in the author's own words | more than **1,000 hours** for the whole route (Hodge–Fermat, Sofa, Hammock, Chaise Longue); the Chaise Longue alone, **76 days at about 12 hours a day**, often more |
+| Time invested, in the author's own words | more than **1,000 hours** for the whole route (Hodge–Fermat, Sofa, Hammock, Chaise Longue); the Chaise Longue alone, **76 days.|
 
 The story behind these numbers — the dogs' sweep, the gold found where we had already walked, the day we discovered we had been proving the wrong statement, and the three days that closed it — is told in **[THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md)**.
 
