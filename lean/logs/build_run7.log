@@ -1,0 +1,49 @@
+⚠ [8028/8052] Replayed RequestProject.Chain.Main
+warning: RequestProject/Chain/Main.lean:23:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:33:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:46:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8035/8052] Replayed RequestProject.Peel.Main
+warning: RequestProject/Peel/Main.lean:61:19: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:62:5: unused variable `hj`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:82:16: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:229:25: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8047/8052] Replayed RequestProject.Monotone.Main
+warning: RequestProject/Monotone/Main.lean:25:33: unused variable `hh`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8049/8052] Built RequestProject.Tight.Defs (36s)
+✔ [8050/8052] Built RequestProject.Tight.Lemmas (28s)
+✔ [8051/8052] Built RequestProject.Tight.Main (31s)
+Build completed successfully (8052 jobs).
+      103.12 real        29.13 user        16.67 sys
+          2158264320  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              735063  page reclaims
+              735580  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              112180  voluntary context switches
+              837860  involuntary context switches
+         52215366005  instructions retired
+         21105060996  cycles elapsed
+           287331192  peak memory footprint

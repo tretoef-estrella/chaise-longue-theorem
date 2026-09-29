@@ -1,0 +1,47 @@
+⚠ [8028/8038] Replayed RequestProject.Peel.Main
+warning: RequestProject/Peel/Main.lean:61:19: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:62:5: unused variable `hj`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:82:16: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:229:25: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8031/8038] Replayed RequestProject.Chain.Main
+warning: RequestProject/Chain/Main.lean:23:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:33:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:46:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8034/8038] Built RequestProject.Bip.Defs (21s)
+✔ [8035/8038] Built RequestProject.Bip.Peeling (55s)
+✔ [8036/8038] Built RequestProject.Bip.Counts (55s)
+✔ [8037/8038] Built RequestProject.Bip.Roots (55s)
+✔ [8038/8038] Built RequestProject.Bip.Main (13s)
+Build completed successfully (8038 jobs).
+       97.79 real        25.17 user        26.76 sys
+          2579152896  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             2155330  page reclaims
+              774993  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              111607  voluntary context switches
+             2147101  involuntary context switches
+         53663304926  instructions retired
+         21611788220  cycles elapsed
+           328946600  peak memory footprint

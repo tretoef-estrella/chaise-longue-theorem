@@ -1,0 +1,32 @@
+@lemma68_i : ∀ {F : Type u_1} [inst : Field F] {S : ColSplit.ColSetting F},
+  S.p ≠ 2 →
+    Odd S.r →
+      (∀ (x : Tm S), negTm S (negTm S x) = x) ∧
+        (∀ (x : Tm S), negTm S x ≠ x) ∧
+          Fintype.card (Tm S) = S.m - 1 ∧ S.m - 1 = 2 * ((S.m - 1) / 2) ∧ 1 ≤ (S.m - 1) / 2
+@lemma68_ii : ∀ {F : Type u_1} [inst : Field F] {S : ColSplit.ColSetting F} (hp : S.p ≠ 2) (hr : Odd S.r)
+  {R : Finset F},
+  ColComp.IsReps S R →
+    ∀ (k : ℕ) (c : Fin (2 * k + 1) → ↥S.μ),
+      {g ∈ TheoremB.closedTuples (TmSetting S hp hr) (2 * k + 2) |
+            ∀ (i : Fin (2 * k + 2)), ↑(↑(g i)).2 = ColSurv.cExt c i}.card =
+        if ∃ J, ColComp.Compatible (ColSurv.cExt c) J then N1 hp c * ∏ ζ ∈ R, Nz c ζ else 0
+@lemma68_iii : ∀ {F : Type u_1} [inst : Field F] {S : ColSplit.ColSetting F} (hp : S.p ≠ 2),
+  Odd S.r →
+    ∀ {R : Finset F},
+      ColComp.IsReps S R →
+        ∀ (k : ℕ),
+          (∑ c, if ∃ J, ColComp.Compatible (ColSurv.cExt c) J then N1 hp c * ∏ ζ ∈ R, Nz c ζ else 0) = TheoremB.Qk k S.m
+def ColCount.N1.{u_1} : {F : Type u_1} →
+  [inst : Field F] → {S : ColSplit.ColSetting F} → S.p ≠ 2 → {k : ℕ} → (Fin (2 * k + 1) → ↥S.μ) → ℕ :=
+fun {F} [Field F] {S} hp {k} c =>
+  (TheoremB.closedTuples (TheoremB.stdSetting ((S.q - 1) / 2) ⋯) (ColComp.cls (ColSurv.cExt c) 1).card).card
+def ColCount.Nz.{u_1} : {F : Type u_1} →
+  [inst : Field F] → {S : ColSplit.ColSetting F} → {k : ℕ} → (Fin (2 * k + 1) → ↥S.μ) → F → ℕ :=
+fun {F} [Field F] {S} {k} c ζ =>
+  if 0 ∈ ColComp.cls (ColSurv.cExt c) ζ ∪ ColComp.cls (ColSurv.cExt c) ζ⁻¹ then
+    Bip.Nph (min ((ColComp.cls (ColSurv.cExt c) ζ).erase 0).card ((ColComp.cls (ColSurv.cExt c) ζ⁻¹).erase 0).card) S.q
+  else Bip.Nbal ((ColComp.cls (ColSurv.cExt c) ζ).erase 0).card S.q
+'ColCount.lemma68_i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColCount.lemma68_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColCount.lemma68_iii' depends on axioms: [propext, Classical.choice, Quot.sound]

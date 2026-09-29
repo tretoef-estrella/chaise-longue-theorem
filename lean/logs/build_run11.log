@@ -1,0 +1,35 @@
+⚠ [8028/8031] Replayed RequestProject.Peel.Main
+warning: RequestProject/Peel/Main.lean:61:19: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:62:5: unused variable `hj`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:82:16: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:229:25: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8029/8031] Built RequestProject.Degeneration.Defs (33s)
+✔ [8030/8031] Built RequestProject.Degeneration.Lemma (34s)
+✔ [8031/8031] Built RequestProject.Degeneration.Main (29s)
+Build completed successfully (8031 jobs).
+      104.75 real        23.94 user        17.20 sys
+          2064580608  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              719859  page reclaims
+              790575  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              114940  voluntary context switches
+              865217  involuntary context switches
+         53937311548  instructions retired
+         21882692792  cycles elapsed
+           278401912  peak memory footprint

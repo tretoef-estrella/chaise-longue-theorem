@@ -1,0 +1,52 @@
+⚠ [8028/8058] Replayed RequestProject.Chain.Main
+warning: RequestProject/Chain/Main.lean:23:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:33:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:46:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8034/8058] Replayed RequestProject.Peel.Main
+warning: RequestProject/Peel/Main.lean:61:19: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:62:5: unused variable `hj`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:82:16: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:229:25: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8048/8058] Replayed RequestProject.Monotone.Main
+warning: RequestProject/Monotone/Main.lean:25:33: unused variable `hh`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8052/8058] Built RequestProject.Lifts.Defs (45s)
+✔ [8053/8058] Built RequestProject.Lifts.Options (65s)
+✔ [8054/8058] Built RequestProject.Lifts.Algebra (50s)
+✔ [8055/8058] Built RequestProject.Lifts.Patterns (37s)
+✔ [8056/8058] Built RequestProject.Lifts.Lift (32s)
+✔ [8057/8058] Built RequestProject.Lifts.Main (32s)
+Build completed successfully (8058 jobs).
+      270.32 real        33.29 user        36.04 sys
+          1997750272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1453379  page reclaims
+             2182261  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              137893  voluntary context switches
+             2074725  involuntary context switches
+         55553654222  instructions retired
+         22492772746  cycles elapsed
+           326046584  peak memory footprint

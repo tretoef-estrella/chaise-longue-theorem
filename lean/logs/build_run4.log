@@ -1,0 +1,46 @@
+⚠ [8037/8042] Replayed RequestProject.Peel.Main
+warning: RequestProject/Peel/Main.lean:61:19: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:62:5: unused variable `hj`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:82:16: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:229:25: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8038/8042] Built RequestProject.Chain.Defs (34s)
+✔ [8039/8042] Built RequestProject.Chain.Lemmas (35s)
+⚠ [8040/8042] Built RequestProject.Chain.Main (23s)
+warning: RequestProject/Chain/Main.lean:23:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:33:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:46:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8041/8042] Built RequestProject.Chain.Checks (20s)
+Build completed successfully (8042 jobs).
+      120.67 real        15.78 user        19.47 sys
+          2199257088  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              960247  page reclaims
+              941294  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              104777  voluntary context switches
+              976459  involuntary context switches
+         51776050518  instructions retired
+         21067264764  cycles elapsed
+           306434912  peak memory footprint
+EXIT 0

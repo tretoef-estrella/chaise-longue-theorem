@@ -1,0 +1,60 @@
+@lemma23_i : ∀ {F : Type u_1} [inst : Field F] {d : ℕ} {B : ColTensor.BoxSetting F d} {W : Finset (Fin d)}
+  (S : ColSplit.ColSetting F),
+  S.p ≠ 2 →
+    B.q = S.q →
+      (∀ (s : ↥W), B.c ↑s = 1) →
+        ∀ (e : Fin W.card ≃ ↥W),
+          ∃ Ψ,
+            ∀ (i : Fin W.card),
+              Ψ ((Ideal.Quotient.mk (Peel.powIdeal F (B.q + 1) W.card)) (MvPolynomial.X i)) = yW B W (e i)
+@lemma23_ii_one : ∀ {F : Type u_1} [inst : Field F] {d : ℕ} {B : ColTensor.BoxSetting F d} {W : Finset (Fin d)}
+  {S : ColSplit.ColSetting F}, S.p ≠ 2 → (∀ (s : ↥W), B.c ↑s = 1) → ∀ (s : ↥W), ∃ u, B.t W s - 1 = ↑u * yW B W s
+@lemma23_ii_two : ∀ {F : Type u_1} [inst : Field F] {d : ℕ} {B : ColTensor.BoxSetting F d} {W : Finset (Fin d)}
+  {S : ColSplit.ColSetting F},
+  S.p ≠ 2 → (∀ (s : ↥W), B.c ↑s = 1) → ∀ (s l : ↥W), ∃ u, B.t W s * B.t W l - 1 = ↑u * (yW B W s + yW B W l)
+@lemma24_i : ∀ {F : Type u_1} [inst : Field F] {S : ColSplit.ColSetting F},
+  S.p ≠ 2 →
+    ∀ {A : Type u_2} [inst_1 : CommRing A] [Algebra F A] (a b : A),
+      b ^ S.q = 0 → (a + b) ^ (S.q - 1) * b = -a * b * Dab S.q a b
+@lemma24_ii : ∀ {F : Type u_1} [inst : Field F] (S : ColSplit.ColSetting F) {k : ℕ},
+  S.p ≠ 2 →
+    ∀ (c : Fin (2 * k + 1) → ↥S.μ) (P : ColComp.PerfMatch ↥(ColComp.cls (ColSurv.cExt c) 1)),
+      ∃ u, ColDecomp.gP S c P = ↑u * (YW (ColDecomp.boxS S c) (ColDecomp.W1 S c) * DP S c P)
+@lemma25_i : ∀ {F : Type u_1} [inst : Field F] {q : ℕ} (m : ℕ),
+  (∀ (f : Peel.C F (q + 1) m), Ym F q m * f = 0 ↔ f ∈ Ideal.span (Set.range fun i => Tight.y F (q + 1) i ^ (q - 1))) ∧
+    (∀ (g : MvPolynomial (Fin m) F),
+        (muY F q m) ((Ideal.Quotient.mk (Peel.powIdeal F q m)) g) =
+          Ym F q m * (Ideal.Quotient.mk (Peel.powIdeal F (q + 1) m)) g) ∧
+      Function.Injective ⇑(muY F q m)
+@lemma25_ii : ∀ {F : Type u_1} [inst : Field F] {q : ℕ} {ι : Type u_2} (m : ℕ) (f : ι → MvPolynomial (Fin m) F),
+  Module.finrank F
+      ↥(Submodule.restrictScalars F
+          (Ideal.span (Set.range fun α => Ym F q m * (Ideal.Quotient.mk (Peel.powIdeal F (q + 1) m)) (f α)))) =
+    Module.finrank F
+      ↥(Submodule.restrictScalars F (Ideal.span (Set.range fun α => (Ideal.Quotient.mk (Peel.powIdeal F q m)) (f α))))
+@lemma66_i : ∀ {F : Type u_1} [inst : Field F] (S : ColSplit.ColSetting F) {k : ℕ} (c : Fin (2 * k + 1) → ↥S.μ),
+  Odd (ColComp.cls (ColSurv.cExt c) 1).card → ColDecomp.Ic1 S c = ⊥
+@lemma66_ii : ∀ {F : Type u_1} [inst : Field F] (S : ColSplit.ColSetting F) {k : ℕ},
+  S.p ≠ 2 →
+    ∀ (c : Fin (2 * k + 1) → ↥S.μ) {j : ℕ},
+      0 ∈ ColComp.cls (ColSurv.cExt c) 1 →
+        (ColComp.cls (ColSurv.cExt c) 1).card = 2 * j + 2 →
+          Module.finrank F ↥(ColDecomp.Ic1 S c) =
+              Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F S.q j)) ∧
+            Module.finrank F ↥(ColDecomp.Ic1 S c) ≥ TheoremB.Qk j S.q
+@lemma66_iii : ∀ {F : Type u_1} [inst : Field F] (S : ColSplit.ColSetting F) {k : ℕ} (hp : S.p ≠ 2)
+  (c : Fin (2 * k + 1) → ↥S.μ) {j : ℕ},
+  0 ∉ ColComp.cls (ColSurv.cExt c) 1 →
+    (ColComp.cls (ColSurv.cExt c) 1).card = 2 * j →
+      Module.finrank F ↥(ColDecomp.Ic1 S c) ≥
+        (TheoremB.closedTuples (TheoremB.stdSetting ((S.q - 1) / 2) ⋯) (2 * j)).card
+'ColOne.lemma23_i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColOne.lemma23_ii_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColOne.lemma23_ii_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColOne.lemma24_i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColOne.lemma24_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColOne.lemma25_i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColOne.lemma25_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColOne.lemma66_i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColOne.lemma66_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColOne.lemma66_iii' depends on axioms: [propext, Classical.choice, Quot.sound]

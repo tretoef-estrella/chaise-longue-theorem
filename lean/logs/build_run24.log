@@ -1,0 +1,24 @@
+✔ [8038/8041] Built RequestProject.ColDecomp.Defs (59s)
+✔ [8039/8041] Built RequestProject.ColDecomp.Pairs (53s)
+✔ [8040/8041] Built RequestProject.ColDecomp.Gens (39s)
+✔ [8041/8041] Built RequestProject.ColDecomp.Main (37s)
+Build completed successfully (8041 jobs).
+      197.60 real        20.41 user        27.30 sys
+          2074722304  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              946690  page reclaims
+             1707087  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              126257  voluntary context switches
+             1641976  involuntary context switches
+         54105203648  instructions retired
+         23595185699  cycles elapsed
+           282792824  peak memory footprint
+EXIT 0

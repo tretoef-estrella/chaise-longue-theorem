@@ -1,0 +1,21 @@
+✔ [8028/8029] Built RequestProject.ColSurv.Defs (72s)
+✔ [8029/8029] Built RequestProject.ColSurv.Main (72s)
+Build completed successfully (8029 jobs).
+      152.14 real        20.36 user        19.74 sys
+          1739390976  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              538521  page reclaims
+             1162164  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              110703  voluntary context switches
+             1234534  involuntary context switches
+         51752392962  instructions retired
+         21062273557  cycles elapsed
+           285201296  peak memory footprint

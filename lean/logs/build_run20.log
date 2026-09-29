@@ -1,0 +1,21 @@
+✔ [8026/8027] Built RequestProject.ColSplit.Basic (50s)
+✔ [8027/8027] Built RequestProject.ColSplit.Main (52s)
+Build completed successfully (8027 jobs).
+      109.94 real        20.14 user        16.65 sys
+          1756610560  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              491133  page reclaims
+              912226  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              105727  voluntary context switches
+              960395  involuntary context switches
+         51365834447  instructions retired
+         20910051572  cycles elapsed
+           279679840  peak memory footprint

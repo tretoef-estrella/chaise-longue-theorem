@@ -1,0 +1,35 @@
+✔ [8035/8038] Built RequestProject.Peel.Defs (29s)
+✔ [8036/8038] Built RequestProject.Peel.Expand (21s)
+⚠ [8037/8038] Built RequestProject.Peel.Main (24s)
+warning: RequestProject/Peel/Main.lean:61:19: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:62:5: unused variable `hj`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:82:16: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:229:25: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (8038 jobs).
+       84.19 real        22.86 user        14.86 sys
+          2278506496  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              727582  page reclaims
+              581227  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               94527  voluntary context switches
+              681831  involuntary context switches
+         51111271099  instructions retired
+         21715010033  cycles elapsed
+           277697352  peak memory footprint
+EXIT 0

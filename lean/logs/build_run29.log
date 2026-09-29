@@ -1,0 +1,93 @@
+⚠ [8037/8115] Replayed RequestProject.Peel.Main
+warning: RequestProject/Peel/Main.lean:61:19: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:62:5: unused variable `hj`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:82:16: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:229:25: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8040/8115] Replayed RequestProject.Chain.Main
+warning: RequestProject/Chain/Main.lean:23:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:33:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:46:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8055/8115] Replayed RequestProject.Monotone.Main
+warning: RequestProject/Monotone/Main.lean:25:33: unused variable `hh`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8088/8115] Replayed RequestProject.BipOpt.Main
+warning: RequestProject/BipOpt/Main.lean:29:31: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/BipOpt/Main.lean:38:72: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/BipOpt/Main.lean:40:5: unused variable `hμ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/BipOpt/Main.lean:51:78: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/BipOpt/Main.lean:53:5: unused variable `hμ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/BipOpt/Main.lean:53:67: unused variable `hΛ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/BipOpt/Main.lean:64:76: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/BipOpt/Main.lean:66:5: unused variable `hΛ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/BipOpt/Main.lean:86:32: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/BipOpt/Main.lean:101:31: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8090/8115] Replayed RequestProject.BipP2.Main
+warning: RequestProject/BipP2/Main.lean:30:30: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/BipP2/Main.lean:30:43: unused variable `hα`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8093/8115] Replayed RequestProject.BipP3.Main
+warning: RequestProject/BipP3/Main.lean:214:29: unused variable `hodd`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8111/8115] Built RequestProject.ColAssembly.Prop69 (70s)
+✔ [8112/8115] Built RequestProject.ColAssembly.Extension (70s)
+✔ [8113/8115] Built RequestProject.ColAssembly.BasisZ (70s)
+✔ [8114/8115] Built RequestProject.ColAssembly.EveryField (19s)
+✔ [8115/8115] Built RequestProject.ColAssembly.Main (17s)
+Build completed successfully (8115 jobs).
+      113.92 real        38.37 user        30.76 sys
+          2502049792  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             2433840  page reclaims
+              842359  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              115608  voluntary context switches
+             2508306  involuntary context switches
+         53610867877  instructions retired
+         21384073020  cycles elapsed
+           325997432  peak memory footprint

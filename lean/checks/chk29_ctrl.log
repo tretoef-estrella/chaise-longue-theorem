@@ -1,0 +1,19 @@
+control m=9 k=1 drop 0: rank over large prime 120, over p|m {3: 120} -> no torsion
+control m=9 k=1 drop 1: rank over large prime 120, over p|m {3: 120} -> no torsion
+control m=9 k=1 drop 2: rank over large prime 120, over p|m {3: 120} -> no torsion
+control m=3 k=2 drop 0: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 1: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 2: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 3: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 4: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 5: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 6: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 7: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 8: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 9: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 10: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 11: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 12: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 13: rank over large prime 20, over p|m {3: 20} -> no torsion
+control m=3 k=2 drop 14: rank over large prime 20, over p|m {3: 20} -> no torsion
+VIGIA-FIN-OK exit=0 pico_kb=65712 t=6s

@@ -1,0 +1,23 @@
+✔ [8029/8032] Built RequestProject.ColComp.PerfMatch (62s)
+✔ [8030/8032] Built RequestProject.ColComp.Defs (62s)
+✔ [8031/8032] Built RequestProject.ColComp.Product (37s)
+✔ [8032/8032] Built RequestProject.ColComp.Main (32s)
+Build completed successfully (8032 jobs).
+      139.67 real        15.09 user        26.25 sys
+          1991983104  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1486732  page reclaims
+             1130495  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              113167  voluntary context switches
+             1769142  involuntary context switches
+         53308049014  instructions retired
+         21458920557  cycles elapsed
+           308286352  peak memory footprint

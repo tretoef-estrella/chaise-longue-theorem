@@ -1,0 +1,22 @@
+✔ [8026/8028] Built RequestProject.ColTensor.Tensor (46s)
+✔ [8027/8028] Built RequestProject.ColTensor.Box (42s)
+✔ [8028/8028] Built RequestProject.ColTensor.Blocks (36s)
+Build completed successfully (8028 jobs).
+      131.69 real        25.03 user        19.23 sys
+          1973469184  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              751092  page reclaims
+              990068  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              116284  voluntary context switches
+             1011992  involuntary context switches
+         52359970153  instructions retired
+         21470847311  cycles elapsed
+           305140576  peak memory footprint

@@ -1,0 +1,78 @@
+@prop69 : ∀ {F : Type u_1} [inst : Field F] (S : ColSplit.ColSetting F) {k : ℕ},
+  S.p ≠ 2 → Odd S.r → Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F S.m k)) = TheoremB.Qk k S.m
+@theorem_every_field : ∀ {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ) (F : Type u_1) [inst : Field F],
+      EveryField.rankOver F (ColUpper.intMatU m k) = TheoremB.Qk k m ∧
+        Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F m k)) = TheoremB.Qk k m
+@mainTheorem' : ∀ {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ),
+      (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+          Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - TheoremB.Qk k m) ∧
+        ∀ (F : Type) [inst : Field F],
+          Module.finrank F (ColSplit.GA F (2 * k + 1) m ⧸ ColUpper.IK F m k) = m ^ (2 * k + 1) - TheoremB.Qk k m
+@mainTheorem'_Z : ∀ {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ),
+      Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+        Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - TheoremB.Qk k m
+@mainTheorem'_field : ∀ {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ) (F : Type u_1) [inst : Field F],
+      Module.finrank F (ColSplit.GA F (2 * k + 1) m ⧸ ColUpper.IK F m k) = m ^ (2 * k + 1) - TheoremB.Qk k m
+@rank_map_algebraMap : ∀ {K : Type u_1} {L : Type u_2} [inst : Field K] [inst_1 : Field L] [inst_2 : Algebra K L]
+  {m : Type u_3} {n : Type u_4} [Finite m] [inst_4 : Fintype n] (M : Matrix m n K),
+  (M.map ⇑(algebraMap K L)).rank = M.rank
+@[reducible] def ColAssembly.RZ : ℕ → ℕ → Type :=
+fun d m => MvPolynomial (Fin d) ℤ ⧸ idealZ d m
+def ColAssembly.idealZ : (d : ℕ) → ℕ → Ideal (MvPolynomial (Fin d) ℤ) :=
+fun d m => Ideal.span (Set.range fun i => MvPolynomial.X i ^ m - 1)
+def ColAssembly.IZ : (m k : ℕ) → Ideal (RZ (2 * k + 1) m) :=
+fun m k => Ideal.span (Set.range fun J => (Ideal.Quotient.mk (idealZ (2 * k + 1) m)) (ColUpper.psiP ℤ m J))
+def ColUpper.psiP.{u_1} : (R : Type u_1) →
+  [inst : CommRing R] → ℕ → {k : ℕ} → BallotBound.Matching k → MvPolynomial (Fin (2 * k + 1)) R :=
+fun R [CommRing R] m {k} J =>
+  (∏ a with a < ↑J a, (ColUpper.tP R k (↑J a) - 1)) *
+    ∏ a with 0 < a ∧ a < ↑J a, ColSurv.phi m (ColUpper.tP R k a * ColUpper.tP R k (↑J a))
+def ColUpper.psiG.{u_1} : (K : Type u_1) →
+  [inst : Field K] → (m : ℕ) → {k : ℕ} → BallotBound.Matching k → ColSplit.GA K (2 * k + 1) m :=
+fun K [Field K] m {k} J =>
+  (∏ a with a < ↑J a, (ColUpper.tU K m k (↑J a) - 1)) *
+    ∏ a with 0 < a ∧ a < ↑J a, ColSurv.phi m (ColUpper.tU K m k a * ColUpper.tU K m k (↑J a))
+def ColUpper.IK.{u_1} : (K : Type u_1) → [inst : Field K] → (m k : ℕ) → Ideal (ColSplit.GA K (2 * k + 1) m) :=
+fun K [Field K] m k => Ideal.span (Set.range (ColUpper.psiG K m))
+@[reducible] def ColSplit.GA.{u_1} : (F : Type u_1) → [Field F] → ℕ → ℕ → Type u_1 :=
+fun F [Field F] d m => MvPolynomial (Fin d) F ⧸ ColSplit.gaIdeal F d m
+def TheoremB.Qk : ℕ → ℕ → ℕ :=
+fun k q =>
+  ∑ b ∈ Fintype.piFinset fun x => Finset.range (2 * k + 3) with 2 * ∑ u, b u = 2 * k + 2,
+    (2 * k + 2).factorial / ∏ u, (b u).factorial ^ 2
+def BallotBound.Matching : ℕ → Type :=
+fun k => { J // ∀ (x : Fin (2 * k + 2)), J x ≠ x ∧ J (J x) = x }
+def ColSurv.phi.{u_2} : {A : Type u_2} → [Semiring A] → ℕ → A → A :=
+fun {A} [Semiring A] m u => ∑ s ∈ Finset.range m, u ^ s
+'ColAssembly.prop69' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColAssembly.theorem_every_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColAssembly.mainTheorem'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColAssembly.mainTheorem'_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColAssembly.mainTheorem'_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColAssembly.rank_map_algebraMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+       94.29 real         8.56 user        10.62 sys
+          2449604608  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              267019  page reclaims
+              737103  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               47201  voluntary context switches
+              704161  involuntary context switches
+          4677888806  instructions retired
+          1920892706  cycles elapsed
+           138842472  peak memory footprint

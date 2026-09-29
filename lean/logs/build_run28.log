@@ -1,0 +1,53 @@
+⚠ [8033/8066] Replayed RequestProject.Peel.Main
+warning: RequestProject/Peel/Main.lean:61:19: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:62:5: unused variable `hj`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:82:16: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:229:25: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8036/8066] Replayed RequestProject.Chain.Main
+warning: RequestProject/Chain/Main.lean:23:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:33:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:46:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8051/8066] Replayed RequestProject.Monotone.Main
+warning: RequestProject/Monotone/Main.lean:25:33: unused variable `hh`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8060/8066] Built RequestProject.ColUpper.Defs (71s)
+✔ [8061/8066] Built RequestProject.ColUpper.Matching (71s)
+✔ [8062/8066] Built RequestProject.ColUpper.Basis (36s)
+✔ [8063/8066] Built RequestProject.ColUpper.Integral (62s)
+✔ [8064/8066] Built RequestProject.ColUpper.Count (62s)
+✔ [8065/8066] Built RequestProject.ColUpper.Points (27s)
+✔ [8066/8066] Built RequestProject.ColUpper.Main (33s)
+Build completed successfully (8066 jobs).
+      239.64 real        48.68 user        43.97 sys
+          2145402880  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             2831361  page reclaims
+             1886371  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              128398  voluntary context switches
+             3194360  involuntary context switches
+         56338634603  instructions retired
+         23103200913  cycles elapsed
+           332272504  peak memory footprint

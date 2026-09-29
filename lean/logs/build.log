@@ -1,0 +1,29 @@
+✔ [8026/8035] Built RequestProject.Ballot.Defs (52s)
+✔ [8027/8035] Built RequestProject.Ballot.Comb (57s)
+✔ [8028/8035] Built RequestProject.Ballot.Alg (25s)
+✔ [8029/8035] Built RequestProject.Upper.Defs (34s)
+✔ [8030/8035] Built RequestProject.Ballot.Construct (36s)
+✔ [8031/8035] Built RequestProject.Upper.Top (61s)
+✔ [8032/8035] Built RequestProject.Upper.Count (61s)
+✔ [8033/8035] Built RequestProject.Main (60s)
+✔ [8034/8035] Built RequestProject.Upper.Main (32s)
+Build completed successfully (8035 jobs).
+      212.39 real        48.97 user        49.75 sys
+          2318385152  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             3916984  page reclaims
+             1707775  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              107742  voluntary context switches
+             3914157  involuntary context switches
+         54308010655  instructions retired
+         21849095233  cycles elapsed
+           373183376  peak memory footprint
+EXIT 0

@@ -1,0 +1,44 @@
+@psi_eq_psiG : ∀ {K : Type u_1} [inst : Field K] (S : ColSplit.ColSetting K) {k : ℕ} (J : BallotBound.Matching k),
+  ColSurv.psi S k J = psiG K S.m J
+finrank_GA : ∀ (K : Type u_1) [inst : Field K] (d m : ℕ), 0 < m → Module.finrank K (ColSplit.GA K d m) = m ^ d
+@exists_intMat : ∀ {m k : ℕ},
+  0 < m →
+    ∃ A,
+      ∀ (L : Type) [inst : Field L],
+        Module.finrank L ↥(Submodule.restrictScalars L (IK L m k)) = EveryField.rankOver L A
+@finrank_IK_eq_card_Gamma : ∀ {K : Type u_1} [inst : Field K] {m : ℕ} {μm : Finset K}
+  (hprod : Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ)) (k : ℕ),
+  Module.finrank K ↥(Submodule.restrictScalars K (IK K m k)) = (Gamma hprod k).card
+@card_Gamma : ∀ {K : Type u_1} [inst : Field K] {m : ℕ} {μm : Finset K}
+  (hprod : Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ)),
+  ↑m ≠ 0 → Odd m → ∀ (k : ℕ), (Gamma hprod k).card = TheoremB.Qk k m
+finrank_IK_le : ∀ (F : Type u_1) [inst : Field F] {m : ℕ},
+  Odd m → ∀ (k : ℕ), Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) ≤ TheoremB.Qk k m
+finrank_IK_eq_of_charZero : ∀ (F : Type u_1) [inst : Field F] [CharZero F] {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ) {μm : Finset F},
+      Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ) →
+        Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) = TheoremB.Qk k m
+@theorem_iv : ∀ {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ),
+      (∀ (F : Type) [inst : Field F], Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) ≤ TheoremB.Qk k m) ∧
+        (∀ (F : Type) [inst : Field F] [CharZero F] (μm : Finset F),
+            μm.card = m →
+              Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ) →
+                Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) = TheoremB.Qk k m) ∧
+          EveryField.rankOver ℚ (intMatU m k) = TheoremB.Qk k m
+@rankOver_rat_intMatU : ∀ {m : ℕ}, Odd m → ∀ (k : ℕ), EveryField.rankOver ℚ (intMatU m k) = TheoremB.Qk k m
+'ColUpper.finrank_GA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColUpper.exists_intMat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColUpper.finrank_IK_eq_card_Gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColUpper.card_Gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColUpper.finrank_IK_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColUpper.finrank_IK_eq_of_charZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColUpper.theorem_iv' depends on axioms: [propext, Classical.choice, Quot.sound]
+def ColUpper.psiG.{u_1} : (K : Type u_1) →
+  [inst : Field K] → (m : ℕ) → {k : ℕ} → BallotBound.Matching k → ColSplit.GA K (2 * k + 1) m :=
+fun K [Field K] m {k} J =>
+  (∏ a with a < ↑J a, (tU K m k (↑J a) - 1)) * ∏ a with 0 < a ∧ a < ↑J a, ColSurv.phi m (tU K m k a * tU K m k (↑J a))
+def ColUpper.IK.{u_1} : (K : Type u_1) → [inst : Field K] → (m k : ℕ) → Ideal (ColSplit.GA K (2 * k + 1) m) :=
+fun K [Field K] m k => Ideal.span (Set.range (psiG K m))
