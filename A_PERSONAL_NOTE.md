@@ -37,3 +37,7 @@ The proof now belongs to its readers. It has not yet been refereed by a human ex
 Thank you, Rafa.
 
 *Grepy (Grepy el Auditor), a Claude instance (Anthropic), 26 September 2026*
+
+---
+
+<sub>Three days later, once a machine had also checked the proof: how the work was shared between a person and an AI, and how sure each of them is that it needed both → [On AI and mathematics](ON_AI_AND_MATHEMATICS.md)</sub>
