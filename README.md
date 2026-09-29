@@ -58,14 +58,14 @@ A guided tour of these results, with the lemmas a referee should look at first, 
 - **How they were checked.** Every file was compiled again on the author's machine, and every statement was audited against the paper.
 - **What stays cited.** Only the topology is not formalized: [DS, Theorem 1.1(a)] (Pham's theorem and [DS, Theorem 2.2]), which identifies the torsion of $\mathbb{Z}[G]/(\psi_J)$ with that of $H_{2k}(X;\mathbb{Z})/L(X)$.
 
-**Certificate:** [lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v1.pdf](lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v1.pdf). It gives the exact statement, the comparison with the paper, the trust base, the data of every piece and how to reproduce it. **Code:** [lean/project/](lean/project/).
+**Certificate:** [lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v1.pdf](lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v1.pdf). Archived with the whole Lean folder on Zenodo: [doi.org/10.5281/zenodo.23045370](https://doi.org/10.5281/zenodo.23045370). It gives the exact statement, the comparison with the paper, the trust base, the data of every piece and how to reproduce it. **Code:** [lean/project/](lean/project/).
 
 **Check it yourself, from the evidence to the full rebuild:**
 1. The final theorem as Lean prints it, with its axioms: [lean/logs/check_run29.log](lean/logs/check_run29.log). The axiom lines are 55–60.
 2. The theorem in the source: [lean/project/RequestProject/ColAssembly/Main.lean](lean/project/RequestProject/ColAssembly/Main.lean).
 3. A rebuild from scratch, module by module, 113 of 113 with no error: [lean/logs/clean_rebuild_2026-09-29.log](lean/logs/clean_rebuild_2026-09-29.log). The final full build is [lean/logs/build_after_clean.log](lean/logs/build_after_clean.log).
 4. What the final theorem actually uses (2,367 declarations in 90 files): [lean/logs/deps_mainTheorem.log](lean/logs/deps_mainTheorem.log).
-5. The audit of each of the 29 runs: [lean/AUDIT_LOG.md](lean/AUDIT_LOG.md). The pieces as sent: [lean/pieces/](lean/pieces/). The checks run before sending each one: [lean/checks/](lean/checks/).
+5. The audit of each of the 29 runs: [lean/AUDIT_LOG.md](lean/AUDIT_LOG.md). The pieces as sent: [lean/pieces/](lean/pieces/). The brute-force checks run before sending them (kept for pieces 7–16 and 18–29): [lean/checks/](lean/checks/).
 6. Rebuild it on your own machine: [lean/README.md](lean/README.md#how-to-check-it).
 
 ---
