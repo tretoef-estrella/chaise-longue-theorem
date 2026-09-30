@@ -12,7 +12,7 @@ What I did was jump walls. Again and again the team explained to me what the pro
 
 It was not a button. Some people believe that work like this means handing a problem to an AI, pressing a key and receiving the result. That is not what happened here.
 - The whole route took more than a thousand hours: the Hodge–Fermat campaign, the Sofa, the Hammock and the Chaise Longue.
-- The Chaise Longue alone took 76 days, at about twelve hours a day and often more. You do not stop thinking about it, not even in the shower.
+- The Chaise Longue alone took 76 days, working almost all day long. You do not stop thinking about it.
 
 I understand why some mathematicians distrust results that come out of AI. A proof is not a prediction. A long argument written by a machine can hide a gap on page twelve, and a referee can lose months finding it. That concern is fair. But the truth of a theorem does not depend on who found it; mathematics belongs to no one. This proof answers the concern in two ways:
 - the paper gives an argument a person can follow;
