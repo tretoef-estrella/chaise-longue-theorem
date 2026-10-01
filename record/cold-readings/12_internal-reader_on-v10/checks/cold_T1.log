@@ -1,0 +1,57 @@
+cell r=2 N=2: exact identities over Z (x_a+x_b)D=0 and e_odd*D=0: True; walks=2
+   p=2: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 2, dim C/cap(I_J) = 2, equal: True, graded duality: True | (iii) dim C/(e_odd) = 2, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=3: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 2, dim C/cap(I_J) = 2, equal: True, graded duality: True | (iii) dim C/(e_odd) = 2, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=5: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 2, dim C/cap(I_J) = 2, equal: True, graded duality: True | (iii) dim C/(e_odd) = 2, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=1000003: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 2, dim C/cap(I_J) = 2, equal: True, graded duality: True | (iii) dim C/(e_odd) = 2, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+cell r=2 N=4: exact identities over Z (x_a+x_b)D=0 and e_odd*D=0: True; walks=6
+   p=2: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 6, dim C/cap(I_J) = 6, equal: True, graded duality: True | (iii) dim C/(e_odd) = 8, S<=Q: True | S==walks: True | ideals equal (S==Q): False   [0.0s]
+   p=3: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 6, dim C/cap(I_J) = 6, equal: True, graded duality: True | (iii) dim C/(e_odd) = 6, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=5: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 6, dim C/cap(I_J) = 6, equal: True, graded duality: True | (iii) dim C/(e_odd) = 6, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=1000003: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 6, dim C/cap(I_J) = 6, equal: True, graded duality: True | (iii) dim C/(e_odd) = 6, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+cell r=2 N=6: exact identities over Z (x_a+x_b)D=0 and e_odd*D=0: True; walks=20
+   p=2: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 20, dim C/cap(I_J) = 20, equal: True, graded duality: True | (iii) dim C/(e_odd) = 32, S<=Q: True | S==walks: True | ideals equal (S==Q): False   [0.0s]
+   p=3: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 20, dim C/cap(I_J) = 20, equal: True, graded duality: True | (iii) dim C/(e_odd) = 20, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=5: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 20, dim C/cap(I_J) = 20, equal: True, graded duality: True | (iii) dim C/(e_odd) = 20, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=1000003: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 20, dim C/cap(I_J) = 20, equal: True, graded duality: True | (iii) dim C/(e_odd) = 20, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+cell r=4 N=2: exact identities over Z (x_a+x_b)D=0 and e_odd*D=0: True; walks=4
+   p=2: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 4, dim C/cap(I_J) = 4, equal: True, graded duality: True | (iii) dim C/(e_odd) = 4, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=3: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 4, dim C/cap(I_J) = 4, equal: True, graded duality: True | (iii) dim C/(e_odd) = 4, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=5: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 4, dim C/cap(I_J) = 4, equal: True, graded duality: True | (iii) dim C/(e_odd) = 4, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=1000003: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 4, dim C/cap(I_J) = 4, equal: True, graded duality: True | (iii) dim C/(e_odd) = 4, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+cell r=4 N=4: exact identities over Z (x_a+x_b)D=0 and e_odd*D=0: True; walks=36
+   p=2: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 36, dim C/cap(I_J) = 36, equal: True, graded duality: True | (iii) dim C/(e_odd) = 40, S<=Q: True | S==walks: True | ideals equal (S==Q): False   [0.0s]
+   p=3: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 36, dim C/cap(I_J) = 36, equal: True, graded duality: True | (iii) dim C/(e_odd) = 36, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=5: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 36, dim C/cap(I_J) = 36, equal: True, graded duality: True | (iii) dim C/(e_odd) = 36, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=1000003: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 36, dim C/cap(I_J) = 36, equal: True, graded duality: True | (iii) dim C/(e_odd) = 36, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+cell r=6 N=4: exact identities over Z (x_a+x_b)D=0 and e_odd*D=0: True; walks=90
+   p=2: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 90, dim C/cap(I_J) = 90, equal: True, graded duality: True | (iii) dim C/(e_odd) = 96, S<=Q: True | S==walks: True | ideals equal (S==Q): False   [0.2s]
+   p=3: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 90, dim C/cap(I_J) = 90, equal: True, graded duality: True | (iii) dim C/(e_odd) = 90, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.2s]
+   p=5: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 90, dim C/cap(I_J) = 90, equal: True, graded duality: True | (iii) dim C/(e_odd) = 90, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.2s]
+   p=1000003: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 90, dim C/cap(I_J) = 90, equal: True, graded duality: True | (iii) dim C/(e_odd) = 90, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.2s]
+cell r=3 N=2: exact identities over Z (x_a+x_b)D=0 and e_odd*D=0: True; walks=3
+   p=2: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 3, dim C/cap(I_J) = 3, equal: True, graded duality: True | (iii) dim C/(e_odd) = 3, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=3: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 3, dim C/cap(I_J) = 3, equal: True, graded duality: True | (iii) dim C/(e_odd) = 3, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=5: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 3, dim C/cap(I_J) = 3, equal: True, graded duality: True | (iii) dim C/(e_odd) = 3, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=1000003: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 3, dim C/cap(I_J) = 3, equal: True, graded duality: True | (iii) dim C/(e_odd) = 3, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+cell r=3 N=4: exact identities over Z (x_a+x_b)D=0 and e_odd*D=0: True; walks=19
+   p=2: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 19, dim C/cap(I_J) = 19, equal: True, graded duality: True | (iii) dim C/(e_odd) = 21, S<=Q: True | S==walks: True | ideals equal (S==Q): False   [0.0s]
+   p=3: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 19, dim C/cap(I_J) = 19, equal: True, graded duality: True | (iii) dim C/(e_odd) = 19, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=5: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 19, dim C/cap(I_J) = 19, equal: True, graded duality: True | (iii) dim C/(e_odd) = 19, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=1000003: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 19, dim C/cap(I_J) = 19, equal: True, graded duality: True | (iii) dim C/(e_odd) = 19, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+cell r=3 N=6: exact identities over Z (x_a+x_b)D=0 and e_odd*D=0: True; walks=141
+   p=2: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 141, dim C/cap(I_J) = 141, equal: True, graded duality: True | (iii) dim C/(e_odd) = 183, S<=Q: True | S==walks: True | ideals equal (S==Q): False   [0.2s]
+   p=3: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 141, dim C/cap(I_J) = 141, equal: True, graded duality: True | (iii) dim C/(e_odd) = 141, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.2s]
+   p=5: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 141, dim C/cap(I_J) = 141, equal: True, graded duality: True | (iii) dim C/(e_odd) = 141, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.2s]
+   p=1000003: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 141, dim C/cap(I_J) = 141, equal: True, graded duality: True | (iii) dim C/(e_odd) = 141, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.2s]
+cell r=5 N=2: exact identities over Z (x_a+x_b)D=0 and e_odd*D=0: True; walks=5
+   p=2: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 5, dim C/cap(I_J) = 5, equal: True, graded duality: True | (iii) dim C/(e_odd) = 5, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=3: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 5, dim C/cap(I_J) = 5, equal: True, graded duality: True | (iii) dim C/(e_odd) = 5, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=5: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 5, dim C/cap(I_J) = 5, equal: True, graded duality: True | (iii) dim C/(e_odd) = 5, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+   p=1000003: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 5, dim C/cap(I_J) = 5, equal: True, graded duality: True | (iii) dim C/(e_odd) = 5, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.0s]
+cell r=5 N=4: exact identities over Z (x_a+x_b)D=0 and e_odd*D=0: True; walks=61
+   p=2: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 61, dim C/cap(I_J) = 61, equal: True, graded duality: True | (iii) dim C/(e_odd) = 65, S<=Q: True | S==walks: True | ideals equal (S==Q): False   [0.1s]
+   p=3: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 61, dim C/cap(I_J) = 61, equal: True, graded duality: True | (iii) dim C/(e_odd) = 61, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.1s]
+   p=5: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 61, dim C/cap(I_J) = 61, equal: True, graded duality: True | (iii) dim C/(e_odd) = 61, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.1s]
+   p=1000003: (i) ann(D_J)=I_J [dims]: True | (ii) dim Sum D_J C = 61, dim C/cap(I_J) = 61, equal: True, graded duality: True | (iii) dim C/(e_odd) = 61, S<=Q: True | S==walks: True | ideals equal (S==Q): True   [0.1s]
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=28128 t=2s

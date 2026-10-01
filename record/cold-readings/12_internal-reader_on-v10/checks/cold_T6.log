@@ -1,0 +1,18 @@
+full family (15): sum count = 141  intersection count = 141  points = 141
+remove matching 0 [(0, 1), (2, 3), (4, 5)]: sum count = 141  intersection count = 140  points = 141
+remove matching 1 [(0, 1), (2, 4), (3, 5)]: sum count = 141  intersection count = 140  points = 141
+remove matching 2 [(0, 1), (2, 5), (3, 4)]: sum count = 141  intersection count = 140  points = 141
+remove matching 3 [(0, 2), (1, 3), (4, 5)]: intersection count = 140  points = 141
+remove matching 4 [(0, 2), (1, 4), (3, 5)]: intersection count = 140  points = 141
+remove matching 5 [(0, 2), (1, 5), (3, 4)]: intersection count = 140  points = 141
+remove matching 6 [(0, 3), (1, 2), (4, 5)]: intersection count = 140  points = 141
+remove matching 7 [(0, 3), (1, 4), (2, 5)]: intersection count = 140  points = 141
+remove matching 8 [(0, 3), (1, 5), (2, 4)]: intersection count = 140  points = 141
+remove matching 9 [(0, 4), (1, 2), (3, 5)]: intersection count = 140  points = 141
+remove matching 10 [(0, 4), (1, 3), (2, 5)]: intersection count = 140  points = 141
+remove matching 11 [(0, 4), (1, 5), (2, 3)]: intersection count = 140  points = 141
+remove matching 12 [(0, 5), (1, 2), (3, 4)]: intersection count = 140  points = 141
+remove matching 13 [(0, 5), (1, 3), (2, 4)]: intersection count = 140  points = 141
+remove matching 14 [(0, 5), (1, 4), (2, 3)]: intersection count = 140  points = 141
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=641024 t=30s

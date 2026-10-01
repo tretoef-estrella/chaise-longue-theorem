@@ -1,0 +1,26 @@
+q=3 k=0 (r=2,N=2) p=2: dim M=2  rank theta(M)=2  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=2  dim(theta(M)+(D_J)C)=2  Q_k(q)=2  ALL-EQUAL: True
+q=3 k=0 (r=2,N=2) p=3: dim M=2  rank theta(M)=2  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=2  dim(theta(M)+(D_J)C)=2  Q_k(q)=2  ALL-EQUAL: True
+q=3 k=0 (r=2,N=2) p=5: dim M=2  rank theta(M)=2  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=2  dim(theta(M)+(D_J)C)=2  Q_k(q)=2  ALL-EQUAL: True
+q=3 k=0 (r=2,N=2) p=1000003: dim M=2  rank theta(M)=2  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=2  dim(theta(M)+(D_J)C)=2  Q_k(q)=2  ALL-EQUAL: True
+q=3 k=1 (r=2,N=4) p=2: dim M=6  rank theta(M)=6  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=6  dim(theta(M)+(D_J)C)=6  Q_k(q)=6  ALL-EQUAL: True
+q=3 k=1 (r=2,N=4) p=3: dim M=6  rank theta(M)=6  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=6  dim(theta(M)+(D_J)C)=6  Q_k(q)=6  ALL-EQUAL: True
+q=3 k=1 (r=2,N=4) p=5: dim M=6  rank theta(M)=6  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=6  dim(theta(M)+(D_J)C)=6  Q_k(q)=6  ALL-EQUAL: True
+q=3 k=1 (r=2,N=4) p=1000003: dim M=6  rank theta(M)=6  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=6  dim(theta(M)+(D_J)C)=6  Q_k(q)=6  ALL-EQUAL: True
+q=3 k=2 (r=2,N=6) p=2: dim M=20  rank theta(M)=20  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=20  dim(theta(M)+(D_J)C)=20  Q_k(q)=20  ALL-EQUAL: True
+q=3 k=2 (r=2,N=6) p=3: dim M=20  rank theta(M)=20  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=20  dim(theta(M)+(D_J)C)=20  Q_k(q)=20  ALL-EQUAL: True
+q=3 k=2 (r=2,N=6) p=5: dim M=20  rank theta(M)=20  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=20  dim(theta(M)+(D_J)C)=20  Q_k(q)=20  ALL-EQUAL: True
+q=3 k=2 (r=2,N=6) p=1000003: dim M=20  rank theta(M)=20  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=20  dim(theta(M)+(D_J)C)=20  Q_k(q)=20  ALL-EQUAL: True
+q=5 k=0 (r=4,N=2) p=2: dim M=4  rank theta(M)=4  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=4  dim(theta(M)+(D_J)C)=4  Q_k(q)=4  ALL-EQUAL: True
+q=5 k=0 (r=4,N=2) p=3: dim M=4  rank theta(M)=4  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=4  dim(theta(M)+(D_J)C)=4  Q_k(q)=4  ALL-EQUAL: True
+q=5 k=0 (r=4,N=2) p=5: dim M=4  rank theta(M)=4  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=4  dim(theta(M)+(D_J)C)=4  Q_k(q)=4  ALL-EQUAL: True
+q=5 k=0 (r=4,N=2) p=1000003: dim M=4  rank theta(M)=4  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=4  dim(theta(M)+(D_J)C)=4  Q_k(q)=4  ALL-EQUAL: True
+q=5 k=1 (r=4,N=4) p=2: dim M=36  rank theta(M)=36  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=36  dim(theta(M)+(D_J)C)=36  Q_k(q)=36  ALL-EQUAL: True
+q=5 k=1 (r=4,N=4) p=3: dim M=36  rank theta(M)=36  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=36  dim(theta(M)+(D_J)C)=36  Q_k(q)=36  ALL-EQUAL: True
+q=5 k=1 (r=4,N=4) p=5: dim M=36  rank theta(M)=36  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=36  dim(theta(M)+(D_J)C)=36  Q_k(q)=36  ALL-EQUAL: True
+q=5 k=1 (r=4,N=4) p=1000003: dim M=36  rank theta(M)=36  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=36  dim(theta(M)+(D_J)C)=36  Q_k(q)=36  ALL-EQUAL: True
+q=7 k=1 (r=6,N=4) p=2: dim M=90  rank theta(M)=90  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=90  dim(theta(M)+(D_J)C)=90  Q_k(q)=90  ALL-EQUAL: True
+q=7 k=1 (r=6,N=4) p=3: dim M=90  rank theta(M)=90  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=90  dim(theta(M)+(D_J)C)=90  Q_k(q)=90  ALL-EQUAL: True
+q=7 k=1 (r=6,N=4) p=5: dim M=90  rank theta(M)=90  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=90  dim(theta(M)+(D_J)C)=90  Q_k(q)=90  ALL-EQUAL: True
+q=7 k=1 (r=6,N=4) p=1000003: dim M=90  rank theta(M)=90  recursion f_(u-1)=-sigma f_u: True  dim (D_J)C=90  dim(theta(M)+(D_J)C)=90  Q_k(q)=90  ALL-EQUAL: True
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=86624 t=0s

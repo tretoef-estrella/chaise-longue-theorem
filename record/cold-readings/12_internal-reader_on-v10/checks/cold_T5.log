@@ -1,0 +1,101 @@
+== Theorem 7.1: HS of F[L]/I_q(L) against sum over closed walks of t^stat (two tie-breaks)
+  q=3 n=2 p=3: HS=[1, 1, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=2 p=5: HS=[1, 1, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=2 p=1000003: HS=[1, 1, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=3 p=3: HS=[1, 2, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=3 p=5: HS=[1, 2, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=3 p=1000003: HS=[1, 2, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=4 p=3: HS=[1, 3, 6, 6, 3]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=4 p=5: HS=[1, 3, 6, 6, 3]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=4 p=1000003: HS=[1, 3, 6, 6, 3]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=5 p=3: HS=[1, 4, 10, 15, 15, 6]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=5 p=5: HS=[1, 4, 10, 15, 15, 6]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=5 p=1000003: HS=[1, 4, 10, 15, 15, 6]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=6 p=3: HS=[1, 5, 15, 29, 40, 36, 15]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=6 p=5: HS=[1, 5, 15, 29, 40, 36, 15]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=6 p=1000003: HS=[1, 5, 15, 29, 40, 36, 15]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=7 p=3: HS=[1, 6, 21, 49, 84, 105, 91, 36]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=7 p=5: HS=[1, 6, 21, 49, 84, 105, 91, 36]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=3 n=7 p=1000003: HS=[1, 6, 21, 49, 84, 105, 91, 36]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=2 p=3: HS=[1, 1, 1, 1, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=2 p=5: HS=[1, 1, 1, 1, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=2 p=1000003: HS=[1, 1, 1, 1, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=3 p=3: HS=[1, 2, 3, 3, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=3 p=5: HS=[1, 2, 3, 3, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=3 p=1000003: HS=[1, 2, 3, 3, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=4 p=3: HS=[1, 3, 6, 9, 12, 12, 9, 6, 3]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=4 p=5: HS=[1, 3, 6, 9, 12, 12, 9, 6, 3]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=4 p=1000003: HS=[1, 3, 6, 9, 12, 12, 9, 6, 3]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=5 p=3: HS=[1, 4, 10, 19, 31, 41, 44, 36, 24, 10, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=5 p=5: HS=[1, 4, 10, 19, 31, 41, 44, 36, 24, 10, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=5 n=5 p=1000003: HS=[1, 4, 10, 19, 31, 41, 44, 36, 24, 10, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=7 n=2 p=3: HS=[1, 1, 1, 1, 1, 1, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=7 n=2 p=5: HS=[1, 1, 1, 1, 1, 1, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=7 n=2 p=1000003: HS=[1, 1, 1, 1, 1, 1, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=7 n=3 p=3: HS=[1, 2, 3, 3, 3, 3, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=7 n=3 p=5: HS=[1, 2, 3, 3, 3, 3, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=7 n=3 p=1000003: HS=[1, 2, 3, 3, 3, 3, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=7 n=4 p=3: HS=[1, 3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=7 n=4 p=5: HS=[1, 3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=7 n=4 p=1000003: HS=[1, 3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=9 n=3 p=3: HS=[1, 2, 3, 3, 3, 3, 3, 3, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=9 n=3 p=5: HS=[1, 2, 3, 3, 3, 3, 3, 3, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+  q=9 n=3 p=1000003: HS=[1, 2, 3, 3, 3, 3, 3, 3, 3, 1]  stat(tb1)==HS: True  stat(tb2)==HS: True
+== q=3 closed formula stat = n - #{j : p_j = 0, p_{j-1} in {0,-1}}
+  n=2: formula==HS(p=5): True
+  n=3: formula==HS(p=5): True
+  n=4: formula==HS(p=5): True
+  n=5: formula==HS(p=5): True
+  n=6: formula==HS(p=5): True
+  n=7: formula==HS(p=5): True
+== roots of unity: sum_d w^d dim A_d = 1 for every (q-1)-th root of unity w != 1
+  q=3 n=2: residue-class sums mod q-1 = [2, 1]  identity holds: True
+  q=3 n=3: residue-class sums mod q-1 = [4, 3]  identity holds: True
+  q=3 n=4: residue-class sums mod q-1 = [10, 9]  identity holds: True
+  q=3 n=5: residue-class sums mod q-1 = [26, 25]  identity holds: True
+  q=3 n=6: residue-class sums mod q-1 = [71, 70]  identity holds: True
+  q=3 n=7: residue-class sums mod q-1 = [197, 196]  identity holds: True
+  q=5 n=2: residue-class sums mod q-1 = [2, 1, 1, 1]  identity holds: True
+  q=5 n=3: residue-class sums mod q-1 = [4, 3, 3, 3]  identity holds: True
+  q=5 n=4: residue-class sums mod q-1 = [16, 15, 15, 15]  identity holds: True
+  q=5 n=5: residue-class sums mod q-1 = [56, 55, 55, 55]  identity holds: True
+  q=7 n=2: residue-class sums mod q-1 = [2, 1, 1, 1, 1, 1]  identity holds: True
+  q=7 n=3: residue-class sums mod q-1 = [4, 3, 3, 3, 3, 3]  identity holds: True
+  q=7 n=4: residue-class sums mod q-1 = [22, 21, 21, 21, 21, 21]  identity holds: True
+  q=9 n=3: residue-class sums mod q-1 = [4, 3, 3, 3, 3, 3, 3, 3]  identity holds: True
+== K_(1)(L) = I_q(L) + (prod_{a in A} a^{q-1} prod_{x in P} x : |A|=|B|) : dim against N_(1)(n) = walks 0 -> eps_1
+  q=3 n=1 p=3: dim F[L]/K_(1) = 1   N_(1)(n) = 1   equal: True
+  q=3 n=1 p=5: dim F[L]/K_(1) = 1   N_(1)(n) = 1   equal: True
+  q=3 n=1 p=1000003: dim F[L]/K_(1) = 1   N_(1)(n) = 1   equal: True
+  q=3 n=2 p=3: dim F[L]/K_(1) = 2   N_(1)(n) = 2   equal: True
+  q=3 n=2 p=5: dim F[L]/K_(1) = 2   N_(1)(n) = 2   equal: True
+  q=3 n=2 p=1000003: dim F[L]/K_(1) = 2   N_(1)(n) = 2   equal: True
+  q=3 n=3 p=3: dim F[L]/K_(1) = 6   N_(1)(n) = 6   equal: True
+  q=3 n=3 p=5: dim F[L]/K_(1) = 6   N_(1)(n) = 6   equal: True
+  q=3 n=3 p=1000003: dim F[L]/K_(1) = 6   N_(1)(n) = 6   equal: True
+  q=3 n=4 p=3: dim F[L]/K_(1) = 16   N_(1)(n) = 16   equal: True
+  q=3 n=4 p=5: dim F[L]/K_(1) = 16   N_(1)(n) = 16   equal: True
+  q=3 n=4 p=1000003: dim F[L]/K_(1) = 16   N_(1)(n) = 16   equal: True
+  q=3 n=5 p=3: dim F[L]/K_(1) = 45   N_(1)(n) = 45   equal: True
+  q=3 n=5 p=5: dim F[L]/K_(1) = 45   N_(1)(n) = 45   equal: True
+  q=3 n=5 p=1000003: dim F[L]/K_(1) = 45   N_(1)(n) = 45   equal: True
+  q=3 n=6 p=3: dim F[L]/K_(1) = 126   N_(1)(n) = 126   equal: True
+  q=3 n=6 p=5: dim F[L]/K_(1) = 126   N_(1)(n) = 126   equal: True
+  q=3 n=6 p=1000003: dim F[L]/K_(1) = 126   N_(1)(n) = 126   equal: True
+  q=5 n=1 p=3: dim F[L]/K_(1) = 1   N_(1)(n) = 1   equal: True
+  q=5 n=1 p=5: dim F[L]/K_(1) = 1   N_(1)(n) = 1   equal: True
+  q=5 n=1 p=1000003: dim F[L]/K_(1) = 1   N_(1)(n) = 1   equal: True
+  q=5 n=2 p=3: dim F[L]/K_(1) = 2   N_(1)(n) = 2   equal: True
+  q=5 n=2 p=5: dim F[L]/K_(1) = 2   N_(1)(n) = 2   equal: True
+  q=5 n=2 p=1000003: dim F[L]/K_(1) = 2   N_(1)(n) = 2   equal: True
+  q=5 n=3 p=3: dim F[L]/K_(1) = 12   N_(1)(n) = 12   equal: True
+  q=5 n=3 p=5: dim F[L]/K_(1) = 12   N_(1)(n) = 12   equal: True
+  q=5 n=3 p=1000003: dim F[L]/K_(1) = 12   N_(1)(n) = 12   equal: True
+  q=5 n=4 p=3: dim F[L]/K_(1) = 40   N_(1)(n) = 40   equal: True
+  q=5 n=4 p=5: dim F[L]/K_(1) = 40   N_(1)(n) = 40   equal: True
+  q=5 n=4 p=1000003: dim F[L]/K_(1) = 40   N_(1)(n) = 40   equal: True
+  q=7 n=3 p=3: dim F[L]/K_(1) = 18   N_(1)(n) = 18   equal: True
+  q=7 n=3 p=5: dim F[L]/K_(1) = 18   N_(1)(n) = 18   equal: True
+  q=7 n=3 p=1000003: dim F[L]/K_(1) = 18   N_(1)(n) = 18   equal: True
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=69952 t=3s

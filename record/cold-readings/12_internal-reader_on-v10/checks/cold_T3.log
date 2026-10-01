@@ -1,0 +1,112 @@
+== (a) coefficients of E(t)/E(-t)-1 versus (e_odd), modulo the box
+  r=3 n=3 p=3: dim ideal(coeffs)=20  dim (e_odd)=20  dim sum=20  equal: True
+  r=3 n=3 p=5: dim ideal(coeffs)=20  dim (e_odd)=20  dim sum=20  equal: True
+  r=3 n=3 p=7: dim ideal(coeffs)=20  dim (e_odd)=20  dim sum=20  equal: True
+  r=3 n=3 p=1000003: dim ideal(coeffs)=20  dim (e_odd)=20  dim sum=20  equal: True
+  r=3 n=3 p=2: dim ideal(coeffs)=0  dim (e_odd)=20  dim sum=20  equal: False
+  r=3 n=4 p=3: dim ideal(coeffs)=62  dim (e_odd)=62  dim sum=62  equal: True
+  r=3 n=4 p=5: dim ideal(coeffs)=62  dim (e_odd)=62  dim sum=62  equal: True
+  r=3 n=4 p=7: dim ideal(coeffs)=62  dim (e_odd)=62  dim sum=62  equal: True
+  r=3 n=4 p=1000003: dim ideal(coeffs)=62  dim (e_odd)=62  dim sum=62  equal: True
+  r=3 n=4 p=2: dim ideal(coeffs)=0  dim (e_odd)=60  dim sum=60  equal: False
+  r=3 n=5 p=3: dim ideal(coeffs)=192  dim (e_odd)=192  dim sum=192  equal: True
+  r=3 n=5 p=5: dim ideal(coeffs)=192  dim (e_odd)=192  dim sum=192  equal: True
+  r=3 n=5 p=7: dim ideal(coeffs)=192  dim (e_odd)=192  dim sum=192  equal: True
+  r=3 n=5 p=1000003: dim ideal(coeffs)=192  dim (e_odd)=192  dim sum=192  equal: True
+  r=3 n=5 p=2: dim ideal(coeffs)=0  dim (e_odd)=182  dim sum=182  equal: False
+  r=5 n=3 p=3: dim ideal(coeffs)=112  dim (e_odd)=112  dim sum=112  equal: True
+  r=5 n=3 p=5: dim ideal(coeffs)=112  dim (e_odd)=112  dim sum=112  equal: True
+  r=5 n=3 p=7: dim ideal(coeffs)=112  dim (e_odd)=112  dim sum=112  equal: True
+  r=5 n=3 p=1000003: dim ideal(coeffs)=112  dim (e_odd)=112  dim sum=112  equal: True
+  r=5 n=3 p=2: dim ideal(coeffs)=0  dim (e_odd)=112  dim sum=112  equal: False
+  r=5 n=4 p=3: dim ideal(coeffs)=564  dim (e_odd)=564  dim sum=564  equal: True
+  r=5 n=4 p=5: dim ideal(coeffs)=564  dim (e_odd)=564  dim sum=564  equal: True
+  r=5 n=4 p=7: dim ideal(coeffs)=564  dim (e_odd)=564  dim sum=564  equal: True
+  r=5 n=4 p=1000003: dim ideal(coeffs)=564  dim (e_odd)=564  dim sum=564  equal: True
+  r=5 n=4 p=2: dim ideal(coeffs)=0  dim (e_odd)=560  dim sum=560  equal: False
+  r=7 n=3 p=3: dim ideal(coeffs)=324  dim (e_odd)=324  dim sum=324  equal: True
+  r=7 n=3 p=5: dim ideal(coeffs)=324  dim (e_odd)=324  dim sum=324  equal: True
+  r=7 n=3 p=7: dim ideal(coeffs)=324  dim (e_odd)=324  dim sum=324  equal: True
+  r=7 n=3 p=1000003: dim ideal(coeffs)=324  dim (e_odd)=324  dim sum=324  equal: True
+  r=7 n=3 p=2: dim ideal(coeffs)=0  dim (e_odd)=324  dim sum=324  equal: False
+  r=4 n=3 p=3: dim ideal(coeffs)=55  dim (e_odd)=55  dim sum=55  equal: True
+  r=4 n=3 p=5: dim ideal(coeffs)=55  dim (e_odd)=55  dim sum=55  equal: True
+  r=4 n=3 p=7: dim ideal(coeffs)=55  dim (e_odd)=55  dim sum=55  equal: True
+  r=4 n=3 p=1000003: dim ideal(coeffs)=55  dim (e_odd)=55  dim sum=55  equal: True
+  r=4 n=3 p=2: dim ideal(coeffs)=0  dim (e_odd)=54  dim sum=54  equal: False
+  r=4 n=4 p=3: dim ideal(coeffs)=220  dim (e_odd)=220  dim sum=220  equal: True
+  r=4 n=4 p=5: dim ideal(coeffs)=220  dim (e_odd)=220  dim sum=220  equal: True
+  r=4 n=4 p=7: dim ideal(coeffs)=220  dim (e_odd)=220  dim sum=220  equal: True
+  r=4 n=4 p=1000003: dim ideal(coeffs)=220  dim (e_odd)=220  dim sum=220  equal: True
+  r=4 n=4 p=2: dim ideal(coeffs)=0  dim (e_odd)=216  dim sum=216  equal: False
+  r=2 n=5 p=3: dim ideal(coeffs)=22  dim (e_odd)=22  dim sum=22  equal: True
+  r=2 n=5 p=5: dim ideal(coeffs)=22  dim (e_odd)=22  dim sum=22  equal: True
+  r=2 n=5 p=7: dim ideal(coeffs)=22  dim (e_odd)=22  dim sum=22  equal: True
+  r=2 n=5 p=1000003: dim ideal(coeffs)=22  dim (e_odd)=22  dim sum=22  equal: True
+  r=2 n=5 p=2: dim ideal(coeffs)=0  dim (e_odd)=16  dim sum=16  equal: False
+  r=6 n=3 p=3: dim ideal(coeffs)=201  dim (e_odd)=201  dim sum=201  equal: True
+  r=6 n=3 p=5: dim ideal(coeffs)=201  dim (e_odd)=201  dim sum=201  equal: True
+  r=6 n=3 p=7: dim ideal(coeffs)=201  dim (e_odd)=201  dim sum=201  equal: True
+  r=6 n=3 p=1000003: dim ideal(coeffs)=201  dim (e_odd)=201  dim sum=201  equal: True
+  r=6 n=3 p=2: dim ideal(coeffs)=0  dim (e_odd)=200  dim sum=200  equal: False
+== (b) random elements of Z: prod f(x) - 1 in (e_odd)?
+  r=3 n=4 p=3: 6 random f in Z, all in (e_odd): True
+  r=3 n=4 p=5: 6 random f in Z, all in (e_odd): True
+  r=3 n=4 p=1000003: 6 random f in Z, all in (e_odd): True
+  r=5 n=3 p=3: 6 random f in Z, all in (e_odd): True
+  r=5 n=3 p=5: 6 random f in Z, all in (e_odd): True
+  r=5 n=3 p=1000003: 6 random f in Z, all in (e_odd): True
+  r=5 n=4 p=3: 6 random f in Z, all in (e_odd): True
+  r=5 n=4 p=5: 6 random f in Z, all in (e_odd): True
+  r=5 n=4 p=1000003: 6 random f in Z, all in (e_odd): True
+  r=7 n=3 p=3: 6 random f in Z, all in (e_odd): True
+  r=7 n=3 p=5: 6 random f in Z, all in (e_odd): True
+  r=7 n=3 p=1000003: 6 random f in Z, all in (e_odd): True
+  r=4 n=4 p=3: 6 random f in Z, all in (e_odd): True
+  r=4 n=4 p=5: 6 random f in Z, all in (e_odd): True
+  r=4 n=4 p=1000003: 6 random f in Z, all in (e_odd): True
+  r=6 n=3 p=3: 6 random f in Z, all in (e_odd): True
+  r=6 n=3 p=5: 6 random f in Z, all in (e_odd): True
+  r=6 n=3 p=1000003: 6 random f in Z, all in (e_odd): True
+== (c) finite field F_3: ideal generated by {prod f(x) - 1 : f in Z(F_3)} against (e_odd)
+  r=q=3 n=3: |Z(F_3)|=3; dim of the ideal of Z(F_3)-coinvariants relations = 18; dim (e_odd) = 20; coinvariants of Z(F_3): 9; ring of Theorem A: 7; equal: False
+  r=q=3 n=4: |Z(F_3)|=3; dim of the ideal of Z(F_3)-coinvariants relations = 54; dim (e_odd) = 62; coinvariants of Z(F_3): 27; ring of Theorem A: 19; equal: False
+  r=q=5 n=3: |Z(F_3)|=9; dim of the ideal of Z(F_3)-coinvariants relations = 106; dim (e_odd) = 112; coinvariants of Z(F_3): 19; ring of Theorem A: 13; equal: False
+== (d) even q: dim F[x]/((e_odd)+(x^q)) against walks (closed for even n; 0 -> eps_1 for odd n)
+  q=2 n=3 p=3: dim ring = 3  walks = 3  equal: True
+  q=2 n=3 p=5: dim ring = 3  walks = 3  equal: True
+  q=2 n=3 p=7: dim ring = 3  walks = 3  equal: True
+  q=2 n=3 p=1000003: dim ring = 3  walks = 3  equal: True
+  q=2 n=3 p=2: dim ring = 4  walks = 3  equal: False
+  q=2 n=4 p=3: dim ring = 6  walks = 6  equal: True
+  q=2 n=4 p=5: dim ring = 6  walks = 6  equal: True
+  q=2 n=4 p=7: dim ring = 6  walks = 6  equal: True
+  q=2 n=4 p=1000003: dim ring = 6  walks = 6  equal: True
+  q=2 n=4 p=2: dim ring = 8  walks = 6  equal: False
+  q=2 n=5 p=3: dim ring = 10  walks = 10  equal: True
+  q=2 n=5 p=5: dim ring = 10  walks = 10  equal: True
+  q=2 n=5 p=7: dim ring = 10  walks = 10  equal: True
+  q=2 n=5 p=1000003: dim ring = 10  walks = 10  equal: True
+  q=2 n=5 p=2: dim ring = 16  walks = 10  equal: False
+  q=4 n=3 p=3: dim ring = 9  walks = 9  equal: True
+  q=4 n=3 p=5: dim ring = 9  walks = 9  equal: True
+  q=4 n=3 p=7: dim ring = 9  walks = 9  equal: True
+  q=4 n=3 p=1000003: dim ring = 9  walks = 9  equal: True
+  q=4 n=3 p=2: dim ring = 10  walks = 9  equal: False
+  q=4 n=4 p=3: dim ring = 36  walks = 36  equal: True
+  q=4 n=4 p=5: dim ring = 36  walks = 36  equal: True
+  q=4 n=4 p=7: dim ring = 36  walks = 36  equal: True
+  q=4 n=4 p=1000003: dim ring = 36  walks = 36  equal: True
+  q=4 n=4 p=2: dim ring = 40  walks = 36  equal: False
+  q=4 n=5 p=3: dim ring = 100  walks = 100  equal: True
+  q=4 n=5 p=5: dim ring = 100  walks = 100  equal: True
+  q=4 n=5 p=7: dim ring = 100  walks = 100  equal: True
+  q=4 n=5 p=1000003: dim ring = 100  walks = 100  equal: True
+  q=4 n=5 p=2: dim ring = 136  walks = 100  equal: False
+  q=6 n=3 p=3: dim ring = 15  walks = 15  equal: True
+  q=6 n=3 p=5: dim ring = 15  walks = 15  equal: True
+  q=6 n=3 p=7: dim ring = 15  walks = 15  equal: True
+  q=6 n=3 p=1000003: dim ring = 15  walks = 15  equal: True
+  q=6 n=3 p=2: dim ring = 16  walks = 15  equal: False
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=32256 t=3s
