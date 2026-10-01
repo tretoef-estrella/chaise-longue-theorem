@@ -1,6 +1,6 @@
 # Theorem A and the centralizer of a principal nilpotent element
 
-Engines and logs behind Remark 8.4 and §12.5 of version 9 of the paper, and behind the note [the-1-october-kostant-correction.md](../../record/audits/the-1-october-kostant-correction.md). All runs were made on 1 October 2026 inside the watchdog [tools/vigia.sh](../tools/vigia.sh); the largest used 260 MB.
+Engines and logs behind Remarks 8.4 and 8.7, Corollary 8.6 and §12.5 of version 10 of the paper, behind the supplement [THE_REGULAR_CENTRALIZER_NOTE_v1](../../paper/THE_REGULAR_CENTRALIZER_NOTE_v1.pdf), and behind the two notes of 1 October 2026 in [record/audits/](../../record/audits/). All runs were made on 1 October 2026 inside the watchdog [tools/vigia.sh](../tools/vigia.sh); the largest completed run used 260 MB; one run of version 10 was stopped by the watchdog at 1.36 GB and rerun with a corrected engine (see below).
 
 Run the Python scripts from inside `regla_oro_gordo_2026-10-01/` (they read data from the sibling folder). They need only Python 3. The `.m2` files need Macaulay2; `frob_ver.sage` and the `.sage` files of the other folder need SageMath.
 
@@ -26,5 +26,13 @@ Run the Python scripts from inside `regla_oro_gordo_2026-10-01/` (they read data
 | `casillas_directo.py` → `casillas_directo.log` | the Hilbert function of the top-degree forms of the ideal of the walks ending at a weight `μ`, computed from the points, against the statistic | 18 of 18 |
 | `estadistica_cerrada.py` | a closed form of the statistic: correct for `q = 3`, **wrong for `m ≥ 2`** (kept as a negative result) | 16 of 24 |
 | `frob_ver.sage` | prints the graded Frobenius characters at `q = 3` | — |
+
+## `regla_centralizador_2026-10-01/` — Theorem B as a statement about invariant tensors (version 10)
+| File | What it checks | Result |
+|---|---|---|
+| `generacion.py` → `generacion.log` | `dim Σ_J D_{r,J}·C_r` against the number of closed walks (Corollary 8.6, Remark 8.7(3)): cells `(r, N)` with `r ∈ {3, 5, 7, 9}`, in characteristics 3, 5, 7, 32003. **This run was stopped by the watchdog at the cell `(5, 6)` (1.36 GB)**; the log is kept as it ended | 28 of 28 before the stop |
+| `generacion_v2.py` → `generacion_v2.log` | the same engine with a preallocated basis and updates by blocks: the cells with even `r ∈ {2, 4, 6}` (Theorem B, in `2k + 2` variables) and the cell `(5, 6)` in characteristics 3 and 5 | 22 of 22 |
+| `generacion_char2.py` → `generacion_char2.log` | the same in characteristic 2, at 9 cells of both parities | 9 of 9 |
+| `finite_field_caveat.py` → `finite_field_caveat.log` | the coinvariants of the finite group of `F_p`-points of the centralizer against the ring of Theorem A (the last sentences of Remark 8.4(1)) | `9, 27, 19` against `7, 19, 13` over `F_3`; equal at the two cells over `F_5` |
 
 The code is under the MIT licence ([LICENSE](../../LICENSE)).
