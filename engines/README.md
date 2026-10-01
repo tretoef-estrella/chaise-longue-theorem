@@ -1,6 +1,6 @@
 # Engines and logs
 
-Every number in §12 of the [paper](../paper/THE_CHAISE_LONGUE_THEOREM_v9.pdf) comes from a script in this folder, and every script comes with the log of the run that produced the number. **The step-by-step guide — which command, which output — is [HOW_TO_VERIFY.md](../HOW_TO_VERIFY.md).**
+Every number in §12 of the [paper](../paper/THE_CHAISE_LONGUE_THEOREM_v10.pdf) comes from a script in this folder, and every script comes with the log of the run that produced the number. **The step-by-step guide — which command, which output — is [HOW_TO_VERIFY.md](../HOW_TO_VERIFY.md).**
 
 | Folder | What is in it |
 |---|---|
