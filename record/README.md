@@ -17,6 +17,7 @@ Every version of the paper from v3 on was handed to readers who had not seen it 
 | 9 | Claude (internal reader) | v6 — every odd degree | holds | [09_internal-reader_on-v6](cold-readings/09_internal-reader_on-v6/REPORT.md) |
 | 10 | Claude (Fable) | v6 | holds; led to Main Theorem′ (the upper bound is algebraic) | [10_fable-5_on-v6](cold-readings/10_fable-5_on-v6/REPORT.md) |
 | 11 | ChatGPT (OpenAI) | v7 — the published version | holds: no fatal error, no gap, no error | [11_chatgpt_on-v7](cold-readings/11_chatgpt_on-v7/REPORT.md) |
+| 12 | Claude (internal reader) | v10 — the new material of §8 (Remark 8.4, Proposition 8.5, Corollary 8.6, Remark 8.7) and the supplementary note | holds; **one gap** (characteristic 2 in Remark 8.7(3)) and three errors, repaired; an under-claim that became Corollary A.17 | [12_internal-reader_on-v10](cold-readings/12_internal-reader_on-v10/REPORT.md) |
 
 Each folder holds the reader's report, the auditor's grading and, where the reader wrote code, its `checks/` folder. The paper itself summarises these readings, and their limits, in §12.6.
 
@@ -35,6 +36,7 @@ The three constructions that close the conjecture were each audited cold, step b
 - [the-23-september-retraction.md](audits/the-23-september-retraction.md) — the day the team found that it had been proving the wrong statement
 - [reading-the-original-DS.md](audits/reading-the-original-DS.md) — the original paper of Degtyarev and Shimada, read line by line
 - [the-1-october-kostant-correction.md](audits/the-1-october-kostant-correction.md) — 1 October 2026: in characteristic 0, Theorem A follows from Kostant's theorem (1963); what version 9 corrects, and what remains the paper's own
+- [the-1-october-second-correction-bezrukavnikov-riche-rider.md](audits/the-1-october-second-correction-bezrukavnikov-riche-rider.md) — 1 October 2026, later the same day: in odd characteristic Theorem A follows from a proposition of Bezrukavnikov–Riche–Rider (2020); what version 10 corrects; and Theorem B read as a statement about invariant tensors
 
 ---
 
