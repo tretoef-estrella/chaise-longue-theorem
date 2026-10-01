@@ -1,0 +1,12 @@
+char0 q=3 n=4 (e_odd)+box == (p_1..p_{q-2} odd)+box : true
+char0 q=5 n=4 (e_odd)+box == (p_1..p_{q-2} odd)+box : true
+char0 q=5 n=5 (e_odd)+box == (p_1..p_{q-2} odd)+box : true
+char0 q=7 n=4 (e_odd)+box == (p_1..p_{q-2} odd)+box : true
+char0 q=7 n=5 (e_odd)+box == (p_1..p_{q-2} odd)+box : true
+char0 q=9 n=4 (e_odd)+box == (p_1..p_{q-2} odd)+box : true
+char 3 n=4 coeff ideal of E(t)/E(-t)-1 == (e_odd) : true
+char 3 n=5 coeff ideal of E(t)/E(-t)-1 == (e_odd) : true
+char 5 n=4 coeff ideal of E(t)/E(-t)-1 == (e_odd) : true
+char 5 n=6 coeff ideal of E(t)/E(-t)-1 == (e_odd) : true
+char 7 n=5 coeff ideal of E(t)/E(-t)-1 == (e_odd) : true
+VIGIA-FIN-OK exit=0 pico_kb=259408 t=1s

@@ -1,0 +1,12 @@
+q=2 n=2 HF={1, 1} total=2
+q=2 n=4 HF={1, 3, 2} total=6
+q=2 n=6 HF={1, 5, 9, 5} total=20
+q=2 n=8 HF={1, 7, 20, 28, 14} total=70
+q=4 n=2 HF={1, 1, 1, 1} total=4
+q=4 n=4 HF={1, 3, 6, 9, 8, 6, 3} total=36
+q=4 n=6 HF={1, 5, 15, 34, 59, 81, 85, 66, 40, 14} total=400
+q=6 n=4 HF={1, 3, 6, 9, 12, 15, 14, 12, 9, 6, 3} total=90
+q=4 n=3 HF={1, 2, 3, 3} total=9
+q=2 n=3 HF={1, 2} total=3
+q=2 n=5 HF={1, 4, 5} total=10
+VIGIA-FIN-OK exit=0 pico_kb=83056 t=0s
