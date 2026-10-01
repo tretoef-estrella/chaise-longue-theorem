@@ -4,13 +4,13 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22961150.svg)](https://doi.org/10.5281/zenodo.22961150)
 
-**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint v9, 1 October 2026
+**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint v10, 1 October 2026
 
 > **Status.** A complete proof, published as a preprint. It has been read cold, step by step, eleven times, by AI systems of three providers; no reader found a fatal error, and every gap or error reported on an earlier version has been repaired. Its algebraic core, Main Theorem′, has been checked in Lean 4 ([lean/](lean/README.md)). **It has not yet been refereed by a human expert.** Version 7 was sent to A. Degtyarev and I. Shimada, the authors of the conjecture, on 26 September 2026. This repository exists so that they, and any referee, can check every step: the paper, every engine and log behind its numbers, every cold reading, and the complete record of how the proof was found, dead ends included.
 
-**Read the paper:** [paper/THE_CHAISE_LONGUE_THEOREM_v9.pdf](paper/THE_CHAISE_LONGUE_THEOREM_v9.pdf) · [Markdown source](paper/THE_CHAISE_LONGUE_THEOREM_v9.md) · the previous versions: [v8](paper/THE_CHAISE_LONGUE_THEOREM_v8.pdf), [v7](paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) · permanent archive: [doi.org/10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150)
+**Read the paper:** [paper/THE_CHAISE_LONGUE_THEOREM_v10.pdf](paper/THE_CHAISE_LONGUE_THEOREM_v10.pdf) · [Markdown source](paper/THE_CHAISE_LONGUE_THEOREM_v10.md) · the previous versions: [v9](paper/THE_CHAISE_LONGUE_THEOREM_v9.pdf), [v8](paper/THE_CHAISE_LONGUE_THEOREM_v8.pdf), [v7](paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) · permanent archive: [doi.org/10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150)
 
-> **Version 9 (1 October 2026): a correction of attribution.** Theorem A — the *different* count of §8, which is not the conjecture — follows in characteristic 0 from a theorem of Kostant (1963) on the centralizer of a principal nilpotent element. The earlier versions did not cite it. Version 9 does (Remark 8.4), and says what remains new: the same count in every characteristic $\ne 2$. No statement and no proof changes. The note is [record/audits/the-1-october-kostant-correction.md](record/audits/the-1-october-kostant-correction.md).
+> **Version 10 (1 October 2026): a second correction of attribution, and a dictionary.** Theorem A — the *different* count of §8, which is not the conjecture — is not new as a count. Over an infinite field its ring is the space of coinvariants of the centralizer of a regular unipotent element of $SO_q$ in a tensor power of the vector representation, and the count follows from a theorem of Kostant (1963) in characteristic 0 and from a proposition of Bezrukavnikov, Riche and Rider (arXiv:2005.05583, Proposition 2.12) in odd characteristic. Version 9, of the same day, had credited Kostant and said that no version in positive characteristic was known to us; that was wrong. What the paper contributes to Theorem A is the dictionary and an elementary proof. In the same language, Theorem B — the algebraic form of the conjecture for prime-power degree — says that the invariant tensors of $Sp_{q-1}$ generate the invariants of that centralizer (§8 of version 10). No statement and no proof of the Main Theorem changes. Notes: [the second correction](record/audits/the-1-october-second-correction-bezrukavnikov-riche-rider.md), [the first](record/audits/the-1-october-kostant-correction.md); supplement: [paper/THE_REGULAR_CENTRALIZER_NOTE_v1.pdf](paper/THE_REGULAR_CENTRALIZER_NOTE_v1.pdf).
 
 ---
 
@@ -42,7 +42,7 @@ And it has a consequence in Hodge theory:
 | **Theorem C** | the bipartite count behind the composite degrees | proved |
 | **Corollary H** | the integral Hodge conjecture in the degrees above | proved, modulo classical results that are quoted (Shioda–Katsura, Ran, Aoki) |
 | **Corollary W** | the linear spaces on partial Fermat varieties span primitive sublattices | proved (what [DS] had proved conditionally) |
-| **Theorem A** | a *different* count, $\dim F[x]/(e_1, e_3, \dots; x_i^q) = n!\,[y^n]\,e^y I_0(2y)^{(q-1)/2}$ | proved; it is **not** the conjecture (§9). In characteristic 0 it follows from Kostant's theorem (1963); what the paper adds is every characteristic $\ne 2$ (Remark 8.4) |
+| **Theorem A** | a *different* count, $\dim F[x]/(e_1, e_3, \dots; x_i^q) = n!\,[y^n]\,e^y I_0(2y)^{(q-1)/2}$ | proved; it is **not** the conjecture (§9). **As a count it is not new:** it follows from Kostant's theorem (1963) in characteristic 0 and from Bezrukavnikov–Riche–Rider (2020) in odd characteristic; the paper adds the dictionary and an elementary proof (Remark 8.4) |
 | even degrees $m$ | | open (§13) |
 | **Lean 4** | Main Theorem′, every odd $m$, every $k$, over $\mathbb{Z}$ and over every field | machine-checked: no `sorry`, only the standard axioms ([lean/](lean/README.md)) |
 
@@ -135,7 +135,7 @@ The story behind these numbers — the dogs' sweep, the gold found where we had 
 ## Repository map
 
 ```
-paper/                      the paper, v9 (PDF and Markdown source; §12.8 is the Lean proof), and v8, v7
+paper/                      the paper, v10 (PDF and Markdown source; §12.8 is the Lean proof), v9, v8, v7, and the supplement on the regular centralizer
 THEOREMS.md                 a guided tour of the results, for referees
 theorems/INDEX.md           the 222 standalone documents, by campaign, with their status
 theorems/standalone/        the standalone documents, each with a citation header
@@ -153,4 +153,4 @@ archive/                    the working notebooks: the Master Catalogue, the Cem
 
 [CITATION.md](CITATION.md) · [LICENSE-TEXT.md](LICENSE-TEXT.md) · [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) · [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md) · [A personal note](A_PERSONAL_NOTE.md) · [On AI and mathematics](ON_AI_AND_MATHEMATICS.md)
 
-*Cite as:* Amichis Luengo, R. (2026). *The Chaise Longue Theorem* (preprint, version v9). Zenodo. https://doi.org/10.5281/zenodo.22961150
+*Cite as:* Amichis Luengo, R. (2026). *The Chaise Longue Theorem* (preprint, version v10). Zenodo. https://doi.org/10.5281/zenodo.22961150
