@@ -1,5 +1,7 @@
 # 1 October 2026 — Theorem A and Kostant's theorem: a correction of attribution
 
+> **Corrected the same day.** Two statements of this note are wrong, and a later note corrects them: [the-1-october-second-correction-bezrukavnikov-riche-rider.md](the-1-october-second-correction-bezrukavnikov-riche-rider.md). (1) The count in characteristic `p ≠ 2` and the absence of odd torsion are **not** the paper's own: they follow from a proposition of Bezrukavnikov, Riche and Rider (arXiv:2005.05583, Proposition 2.12). (2) The sentence «We do not know a version of Kostant's theorem in positive characteristic that gives this» was true of us and false of the literature. The text below is left as it was published.
+
 **What happened.** Versions 3 to 8 of the paper presented Theorem A,
 
 `dim_F F[x_1, …, x_n]/(e_1, e_3, e_5, …; x_1^q, …, x_n^q) = n!·[y^n] e^y I_0(2y)^{(q−1)/2}`  (char `F ≠ 2`, `q` odd),
@@ -34,7 +36,10 @@ In characteristic `p` the argument above is not available: Newton's identities d
 
 The search of the same morning looked for the ring: «odd elementary symmetric», «Hilbert–Kunz», «power sums». The object has a classical name that contains none of these words.
 
-## Found the same day, computed and not yet written up
+## Found the same day, computed
+
+> Written up since, with attributions, in [paper/THE_REGULAR_CENTRALIZER_NOTE_v1.pdf](../../paper/THE_REGULAR_CENTRALIZER_NOTE_v1.pdf). Item 4 is no longer open for even `n`: it follows from the same proposition.
+
 
 These are recorded here with their date. They are measured, not claimed as theorems, and will be written up separately. The engines and logs are in [engines/theorem-a-kostant/](../../engines/theorem-a-kostant/).
 
