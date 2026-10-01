@@ -1,0 +1,24 @@
+q=2 n=4 p=3: dim sum_J D_J B = 6   walks = 6   OK
+q=2 n=4 p=5: dim sum_J D_J B = 6   walks = 6   OK
+q=2 n=4 p=7: dim sum_J D_J B = 6   walks = 6   OK
+q=2 n=4 p=32003: dim sum_J D_J B = 6   walks = 6   OK
+q=2 n=6 p=3: dim sum_J D_J B = 20   walks = 20   OK
+q=2 n=6 p=5: dim sum_J D_J B = 20   walks = 20   OK
+q=2 n=6 p=7: dim sum_J D_J B = 20   walks = 20   OK
+q=2 n=6 p=32003: dim sum_J D_J B = 20   walks = 20   OK
+q=4 n=4 p=3: dim sum_J D_J B = 36   walks = 36   OK
+q=4 n=4 p=5: dim sum_J D_J B = 36   walks = 36   OK
+q=4 n=4 p=7: dim sum_J D_J B = 36   walks = 36   OK
+q=4 n=4 p=32003: dim sum_J D_J B = 36   walks = 36   OK
+q=4 n=6 p=3: dim sum_J D_J B = 400   walks = 400   OK
+q=4 n=6 p=5: dim sum_J D_J B = 400   walks = 400   OK
+q=4 n=6 p=7: dim sum_J D_J B = 400   walks = 400   OK
+q=4 n=6 p=32003: dim sum_J D_J B = 400   walks = 400   OK
+q=6 n=4 p=3: dim sum_J D_J B = 90   walks = 90   OK
+q=6 n=4 p=5: dim sum_J D_J B = 90   walks = 90   OK
+q=6 n=4 p=7: dim sum_J D_J B = 90   walks = 90   OK
+q=6 n=4 p=32003: dim sum_J D_J B = 90   walks = 90   OK
+q=5 n=6 p=3: dim sum_J D_J B = 1001   walks = 1001   OK
+q=5 n=6 p=5: dim sum_J D_J B = 1001   walks = 1001   OK
+TOTAL 22/22
+VIGIA-FIN-OK exit=0 pico_kb=205232 t=37s

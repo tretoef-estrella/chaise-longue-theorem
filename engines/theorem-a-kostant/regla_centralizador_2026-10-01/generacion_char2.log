@@ -1,0 +1,11 @@
+q=3 n=4 p=2: dim sum_J D_J B = 19   walks = 19   OK
+q=3 n=6 p=2: dim sum_J D_J B = 141   walks = 141   OK
+q=5 n=4 p=2: dim sum_J D_J B = 61   walks = 61   OK
+q=7 n=4 p=2: dim sum_J D_J B = 127   walks = 127   OK
+q=2 n=4 p=2: dim sum_J D_J B = 6   walks = 6   OK
+q=2 n=6 p=2: dim sum_J D_J B = 20   walks = 20   OK
+q=4 n=4 p=2: dim sum_J D_J B = 36   walks = 36   OK
+q=4 n=6 p=2: dim sum_J D_J B = 400   walks = 400   OK
+q=6 n=4 p=2: dim sum_J D_J B = 90   walks = 90   OK
+TOTAL 9/9
+VIGIA-FIN-OK exit=0 pico_kb=42048 t=1s

@@ -1,0 +1,7 @@
+p=3 q=3 n=3: |Z(F_p)|=3  coinvariants of Z(F_p)=9  ring of Theorem A=7
+p=3 q=3 n=4: |Z(F_p)|=3  coinvariants of Z(F_p)=27  ring of Theorem A=19
+p=3 q=5 n=3: |Z(F_p)|=9  coinvariants of Z(F_p)=19  ring of Theorem A=13
+p=5 q=3 n=3: |Z(F_p)|=5  coinvariants of Z(F_p)=7  ring of Theorem A=7
+p=5 q=5 n=3: |Z(F_p)|=25  coinvariants of Z(F_p)=13  ring of Theorem A=13
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=12352 t=0s
