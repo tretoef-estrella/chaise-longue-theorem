@@ -34,6 +34,7 @@ The three constructions that close the conjecture were each audited cold, step b
 - [audit-of-the-composite-degrees.md](audits/audit-of-the-composite-degrees.md) — the audit of §6–§7
 - [the-23-september-retraction.md](audits/the-23-september-retraction.md) — the day the team found that it had been proving the wrong statement
 - [reading-the-original-DS.md](audits/reading-the-original-DS.md) — the original paper of Degtyarev and Shimada, read line by line
+- [the-1-october-kostant-correction.md](audits/the-1-october-kostant-correction.md) — 1 October 2026: in characteristic 0, Theorem A follows from Kostant's theorem (1963); what version 9 corrects, and what remains the paper's own
 
 ---
 
