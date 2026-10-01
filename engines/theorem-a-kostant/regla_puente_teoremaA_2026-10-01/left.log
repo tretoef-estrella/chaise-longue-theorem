@@ -1,0 +1,13 @@
+== sin el tipo (6, 0) (mu=[6]): 0 ajustes de los demas
+== sin el tipo (4, 1) (mu=[4, 1, 1]): 2 ajustes de los demas
+   desplaz. {(6, 0): 4, (2, 2): 0, (0, 3): 2}  sobrante= t^5*s[4, 1, 1] + t^6*s[4, 2] + (t^5+t^4)*s[5, 1] + t^6*s[6]  | sobrante(t=1)==h_mu? True
+   desplaz. {(6, 0): 6, (2, 2): 0, (0, 3): 2}  sobrante= t^5*s[4, 1, 1] + t^6*s[4, 2] + (t^5+t^4)*s[5, 1] + t^4*s[6]  | sobrante(t=1)==h_mu? True
+== sin el tipo (2, 2) (mu=[2, 2, 2]): 4 ajustes de los demas
+   desplaz. {(6, 0): 4, (4, 1): 0, (0, 3): 2}  sobrante= t^6*s[2, 2, 2] + (t^5+t^4)*s[3, 2, 1] + t^3*s[3, 3] + t^5*s[4, 1, 1] + (t^6+t^4+t^3)*s[4, 2] + (t^5+t^4)*s[5, 1] + t^6*s[6]  | sobrante(t=1)==h_mu? True
+   desplaz. {(6, 0): 6, (4, 1): 0, (0, 3): 2}  sobrante= t^6*s[2, 2, 2] + (t^5+t^4)*s[3, 2, 1] + t^3*s[3, 3] + t^5*s[4, 1, 1] + (t^6+t^4+t^3)*s[4, 2] + (t^5+t^4)*s[5, 1] + t^4*s[6]  | sobrante(t=1)==h_mu? True
+   desplaz. {(6, 0): 4, (4, 1): 2, (0, 3): 0}  sobrante= t^6*s[2, 2, 2] + (t^5+t^4)*s[3, 2, 1] + t^5*s[3, 3] + t^3*s[4, 1, 1] + (t^6+t^4+t^3)*s[4, 2] + (t^5+t^2)*s[5, 1] + t^6*s[6]  | sobrante(t=1)==h_mu? True
+   desplaz. {(6, 0): 6, (4, 1): 2, (0, 3): 0}  sobrante= t^6*s[2, 2, 2] + (t^5+t^4)*s[3, 2, 1] + t^5*s[3, 3] + t^3*s[4, 1, 1] + (t^6+t^4+t^3)*s[4, 2] + (t^5+t^2)*s[5, 1] + t^4*s[6]  | sobrante(t=1)==h_mu? True
+== sin el tipo (0, 3) (mu=[3, 3]): 2 ajustes de los demas
+   desplaz. {(6, 0): 4, (4, 1): 2, (2, 2): 0}  sobrante= t^5*s[3, 3] + t^6*s[4, 2] + t^5*s[5, 1] + t^6*s[6]  | sobrante(t=1)==h_mu? True
+   desplaz. {(6, 0): 6, (4, 1): 2, (2, 2): 0}  sobrante= t^5*s[3, 3] + t^6*s[4, 2] + t^5*s[5, 1] + t^4*s[6]  | sobrante(t=1)==h_mu? True
+VIGIA-FIN-OK exit=0 pico_kb=255392 t=2s
