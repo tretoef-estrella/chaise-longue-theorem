@@ -1,6 +1,6 @@
 # Engines and logs
 
-Every number in §12 of the [paper](../paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) comes from a script in this folder, and every script comes with the log of the run that produced the number. **The step-by-step guide — which command, which output — is [HOW_TO_VERIFY.md](../HOW_TO_VERIFY.md).**
+Every number in §12 of the [paper](../paper/THE_CHAISE_LONGUE_THEOREM_v9.pdf) comes from a script in this folder, and every script comes with the log of the run that produced the number. **The step-by-step guide — which command, which output — is [HOW_TO_VERIFY.md](../HOW_TO_VERIFY.md).**
 
 | Folder | What is in it |
 |---|---|
@@ -12,6 +12,7 @@ Every number in §12 of the [paper](../paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) c
 | [composite-degrees-auditor/](composite-degrees-auditor/) | the auditor's Singular engine for §6–§7: the Fermat fourfolds of degree 15 and 21, every down-set of Theorem 7.6, the roots of Theorem C, the literal ring and its control subfamily |
 | [fable-composite-degrees/](fable-composite-degrees/) | the constructor's engine for §6–§7, with its mission and report |
 | [fable-chessboard/](fable-chessboard/) | the laboratory of the fifteen *Chessboard* missions: missions, reports and every run (Singular, Macaulay2, Python) |
+| [theorem-a-kostant/](theorem-a-kostant/) | Remark 8.4 (version 9): the dictionary between Theorem A and the centralizer of a principal nilpotent element; the Hilbert series against Lusztig's $t$-analogues; the even-$q$ rings in characteristics 0, 3, 5, 7, 2 |
 | [tools/vigia.sh](tools/vigia.sh) | the watchdog: every run was made inside it, with a cap of 1.2 GB of memory and ten minutes |
 
 The script names (`regla264`, `regla270`, …) are those of the audit records they belong to, kept so that every log can be traced to its day. The code is under the MIT licence ([LICENSE](../LICENSE)).
