@@ -4295,7 +4295,7 @@ No cierra nada. `P0-9` sí queda saldada (R34-bis, DOMINO probado ∀k) y `R30`/
 ## LA LÍNEA DE SYLVESTER, ÍNTEGRA Y SIN RETOCAR
 
 > `[20-Jul-2026-b · Sylvester]` **Q0 AUDIT RESOLVED — the UNIFORM COLLAR CLAMP tombstone STANDS (case B).**
-> Thm 4.3's cited line: *"Syz(q+f) ≤ [HF(R)+σ](q+f) + dim D_f"* — `dim D_f` is a container/upper bound (**SLACK**), not a condition count. **Larger `D_f` = weaker ceiling.** The `k=2` budget moreover equals `dim D_f` EXACTLY (zero margin).
+> Thm 4.3's cited line: *"Syz(q+f) ≤ [HF(R)+σ]\(q+f) + dim D_f"* — `dim D_f` is a container/upper bound (**SLACK**), not a condition count. **Larger `D_f` = weaker ceiling.** The `k=2` budget moreover equals `dim D_f` EXACTLY (zero margin).
 > **Amendment to the tombstone, important:** the OBJECT in the tomb is only the **closed quadratic ∀k form**. The container itself is identically the Hammock's sharpened collar ceiling (crude Koszul ambient − slack species): my six `k=3` cells = `630·C(f+3,3) − slack₃(f)` byte-exact, 6/6, INCLUDING the pre-stable head `H(0..5)=679,210,49,7,1,0`.
 
 ## ★ RETRACTACIÓN DE LOCARD — LA v62 ESTABA EQUIVOCADA
