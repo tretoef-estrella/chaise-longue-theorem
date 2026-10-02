@@ -33,7 +33,7 @@ By the sheaf presentation, σ_e = dim Γ_e − HF_R(e), with Γ = pair-constant 
 **Order e^k (sheets).** Restriction to sheets is injective (X reduced); each sheet carries (k+1) free pair-functions: dim Γ_e = N(k+1)C(e+k,k) − (codim-1 corrections) + O(e^{k−2}); HF_R(e) = N·C(e+k,k) − (…) likewise. The corrections at order e^{k−1} live on the codim-1 strata only (deeper flats have dim ≤ k−1, hence O(e^{k−2}) function spaces; likewise the pairwise-glued-vs-global obstruction lives over codim ≥ 2 — the triple phenomenon — and is O(e^{k−2})).
 
 **Order e^{k−1} (swap flats).** Every codim-1 flat V_F is a swap flat, shared by EXACTLY two sheets J, J′ (Swap Theorem), where two J-pairs merge with two J′-pairs into one 4-cycle. Compatibility of the two sheet-tuples on V_F: the k−1 untouched pairs give k−1 conditions (h_p|_F = h′_p|_F), and the 4-cycle forces all four components to ONE common value: 3 conditions. Total k+2 function-conditions on O(V_F) per flat — restrictions from linear flats are surjective in every degree, and conditions at distinct flats interfere only in codim ≥ 2. For the single-function sheaf O_X the same count is 1 condition per flat. Hence at order e^{k−1}:
-> dim Γ_e = N(k+1)C(e+k,k) − [Nk(k+1)/2](k+2)C(e+k−1,k−1) + O(e^{k−2}),
+> dim Γ_e = N(k+1)C(e+k,k) − [Nk(k+1)/2]\(k+2)C(e+k−1,k−1) + O(e^{k−2}),
 > HF_R(e) = N·C(e+k,k) − [Nk(k+1)/2]·C(e+k−1,k−1) + O(e^{k−2}),
 and subtracting, the net per-flat census weight is (k+2) − 1 = k+1, giving the displayed formula. ∎
 

@@ -32,7 +32,7 @@ Define the opposition graph G_x on [2k+2]: edge (a,b) iff x_a = −x_b (a ≠ b)
 
 ## Corollaries (the pincer absorbs the previous floor results)
 1. **The Swap Theorem** and **the Depth-Two Census** become corollaries (coefficient extractions of the generating function).
-2. **The trinomial identity for the floor, proven ∀k:** at q = 3 (m = 1), the balanced count is Σ_c (2k+2)!/(c!·c!·(2k+2−2c)!) = **[x^{2k+2}](1+x+x²)^{2k+2} = T(2k+2)** — one line. (The anchor identity A_k(3) = T(2k+2) is now equivalent to A_k(3) = P_k(3), the v=1 case of the conjecture.)
+2. **The trinomial identity for the floor, proven ∀k:** at q = 3 (m = 1), the balanced count is Σ_c (2k+2)!/(c!·c!·(2k+2−2c)!) = **[x^{2k+2}]\(1+x+x²)^{2k+2} = T(2k+2)** — one line. (The anchor identity A_k(3) = T(2k+2) is now equivalent to A_k(3) = P_k(3), the v=1 case of the conjecture.)
 3. **P₅(q) — virgin dimension 10, complete:** 10395q⁶ − 155925q⁵ + 1074150q⁴ − 4178790q³ + 9317946q² − 10793475q + 4725700. Internal gates ALL passed: leading 11!! ✓ · Swap −155925 ✓ · **Depth-2's falsifiable prediction 1,074,150 CONFIRMED by an independent route ✓✓** · P₅(1)=1 ✓ · P₅(3) = 73789 = T(12) ✓ (fourth dimension of the trinomial identity).
 4. The formula holds for EVERY odd q, not only 3^v — the floor is characteristic-free combinatorics.
 

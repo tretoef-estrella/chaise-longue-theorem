@@ -164,4 +164,4 @@ The Forced Rank Theorem settles Step 3 for every orbit where the scaling or froz
 
 1. A. Degtyarev, I. Shimada, *On the topology of projective subspaces in complex Fermat varieties.* J. Math. Soc. Japan **68**:3 (2016), 975–996. arXiv:1405.4683.
 2. R. Amichis Luengo, *The Orbit Theorem.* Campaign note, 29 June 2026. [THE_ORBIT_THEOREM.md](THE_ORBIT_THEOREM.md)
-3. R. Amichis Luengo, *The Nail Theorem, v3.* Campaign note, 4 June 2026. [THE_NAIL_THEOREM.md, Version 3.0, in the repository fermat-hodge-primitivity](https://github.com/tretoef-estrella/fermat-hodge-primitivity/blob/main/THE_NAIL_THEOREM.md)
+3. R. Amichis Luengo, *The Nail Theorem, v3.* Campaign note, 4 June 2026. [THE_NAIL_THEOREM.md](../../hodge-fermat-campaign/THE_NAIL_THEOREM.md) (Version 3.0)

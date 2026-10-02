@@ -20,7 +20,7 @@
 **Proof.** Total degree < q is preserved by linear substitution and bounds every per-variable degree. Restricting to a component V_J ≅ A^{k+1}: a polynomial with per-variable degrees < q vanishing on all of F_q^{k+1} is identically zero (Combinatorial Nullstellensatz / the basic finite-field fact). Hence the form ∈ I(V_J) for every J, so ∈ ∩_J I(V_J) = **E by the Radicality Theorem**. ∎
 
 ## LEMMA 2 — TAIL-VANISHING (pencil, one line)
-> **Every descent tail vanishes on the rational points.** If z = Σbⱼxⱼ with Σbⱼxⱼ^q ∈ E, then at any rational point P: xⱼ(P)^q = xⱼ(P), so z(P) = [Σbⱼxⱼ^q](P) = 0 (E vanishes on the arrangement). ∎
+> **Every descent tail vanishes on the rational points.** If z = Σbⱼxⱼ with Σbⱼxⱼ^q ∈ E, then at any rational point P: xⱼ(P)^q = xⱼ(P), so z(P) = [Σbⱼxⱼ^q]\(P) = 0 (E vanishes on the arrangement). ∎
 Consequence: every tail lies in I(points) = E + (x^q−x) (proven exact) — the descent never leaves the ideal J; each step drops the Tor-degree by q−1; once total degree < q, **Lemma 1 lands the chain in E.**
 
 ## THE DESCENT, MEASURED ACROSS ALL DEGREES (the anchor speaks)
