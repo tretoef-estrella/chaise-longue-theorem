@@ -1,0 +1,15 @@
+⚠ [8028/8028] Built RequestProject.Peel.Main (85s)
+warning: RequestProject/Peel/Main.lean:61:19: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:62:5: unused variable `hj`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:82:16: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:229:25: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (8028 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1798976 t=92s

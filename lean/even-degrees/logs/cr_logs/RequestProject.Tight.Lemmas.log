@@ -1,0 +1,26 @@
+⚠ [8028/8034] Replayed RequestProject.Peel.Main
+warning: RequestProject/Peel/Main.lean:61:19: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:62:5: unused variable `hj`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:82:16: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:229:25: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8031/8034] Replayed RequestProject.Chain.Main
+warning: RequestProject/Chain/Main.lean:23:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:33:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:46:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8034/8034] Built RequestProject.Tight.Lemmas (56s)
+Build completed successfully (8034 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1864032 t=62s
