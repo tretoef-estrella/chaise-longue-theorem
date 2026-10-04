@@ -1,0 +1,24 @@
+EvenAll.mainTheorem'             mine-vs-postclean: SAME   mine-vs-certificate: SAME
+EvenAll.B1                       mine-vs-postclean: SAME   mine-vs-certificate: not in certificate
+EvenAll.B2                       mine-vs-postclean: SAME   mine-vs-certificate: not in certificate
+EvenAll.A3                       mine-vs-postclean: SAME   mine-vs-certificate: not in certificate
+OddEquality.D1                   mine-vs-postclean: SAME   mine-vs-certificate: SAME
+OddEquality.D2_DJ                mine-vs-postclean: SAME   mine-vs-certificate: SAME
+OddEquality.D2_M                 mine-vs-postclean: SAME   mine-vs-certificate: SAME
+OddTheorem.theoremO              mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def EvenAll.Qall                 mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def EvenCount.QkEven             mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def TheoremB.Qk                  mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def ColAssembly.idealZ           mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def ColAssembly.RZ               mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def ColAssembly.IZ               mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def ColUpper.psiP                mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def ColUpper.tP                  mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def ColSurv.phi                  mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def BallotBound.Matching         mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def ColSplit.gaIdeal             mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def ColSplit.GA                  mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def ColUpper.IK                  mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def ColUpper.psiG                mine-vs-postclean: SAME   mine-vs-certificate: SAME
+def ColUpper.tU                  mine-vs-postclean: SAME   mine-vs-certificate: SAME
+VIGIA-FIN-OK exit=0 pico_kb=6080 t=0s

@@ -1,0 +1,77 @@
+pdf pages: 14  pdf chars: 43319
+4 412                                                md:True  pdf:True 
+4 169                                                md:True  pdf:True 
+2 470                                                md:True  pdf:True 
+2 425                                                md:True  pdf:True 
+41 243                                               md:True  pdf:True 
+1 859                                                md:True  pdf:True 
+20 117                                               md:True  pdf:True 
+922                                                  md:True  pdf:True 
+187                                                  md:True  pdf:True 
+33 731                                               md:True  pdf:True 
+8 209                                                md:True  pdf:True 
+13 190                                               md:True  pdf:True 
+2.35 GiB                                             md:True  pdf:True 
+229 of the 233                                       md:True  pdf:True 
+216 of the 233                                       md:True  pdf:True 
+413 lines                                            md:True  pdf:True 
+401 give the three axioms                            md:True  pdf:True 
+15 instances                                         md:True  pdf:True 
+22 files                                             md:True  pdf:True 
+8ac0df81107480be80e53c75b2e4dbbd                     md:True  pdf:False   <-- DIFFERS
+8f9d9cff6bd728b17a24e163c9402775d9e6a365             md:True  pdf:True 
+v4.28.0                                              md:True  pdf:True 
+mainTheorem                                          md:True  pdf:True 
+Qall                                                 md:True  pdf:True 
+QkEven                                               md:True  pdf:True 
+propext                                              md:True  pdf:True 
+Classical.choice                                     md:True  pdf:True 
+Quot.sound                                           md:True  pdf:True 
+aligned with version 12                              md:True  pdf:True 
+4 October 2026                                       md:True  pdf:True 
+Two passages                                         md:True  pdf:True 
+coincide with those of version 11                    md:True  pdf:True 
+m ^ (2 * k + 1) - EvenAll.Qall m k                   md:True  pdf:True 
+Module.Free                                          md:True  pdf:True 
+359 properties PROVED                                md:True  pdf:True 
+Lemma 8.12, Corollary 8.13                           md:True  pdf:True 
+Fin.cases 0                                          md:True  pdf:True 
+J x ≠ x ∧ J (J x) = x                                md:True  pdf:True 
+md headers: 20  not found verbatim in the pdf text (first 40 chars): 0
+
+line-end hyphenations in the PDF text:
+   pdf line 10: 're‐' + 'sult'  -> joined 'result'; joined in md: True
+   pdf line 11: 'cov‐' + 'ers'  -> joined 'covers'; joined in md: True
+   pdf line 38: 'pa‐' + 'per'  -> joined 'paper'; joined in md: True
+   pdf line 48: 'checks/Check‐' + 'Pares.lean,'  -> joined 'checks/CheckPares.lean,'; joined in md: False
+   pdf line 81: 'quanti‐' + 'fies'  -> joined 'quantifies'; joined in md: True
+   pdf line 120: '(MvPoly‐' + 'nomial.X'  -> joined '(MvPolynomial.X'; joined in md: True
+   pdf line 132: 'coeffi‐' + 'for'  -> joined 'coeffifor'; joined in md: False
+   pdf line 161: 'de‐' + 'rives'  -> joined 'derives'; joined in md: True
+   pdf line 230: '(The‐' + 'orem'  -> joined '(Theorem'; joined in md: True
+   pdf line 242: 'ex‐' + 'ported.'  -> joined 'exported.'; joined in md: True
+   pdf line 249: 'writ‐' + 'ten'  -> joined 'written'; joined in md: True
+   pdf line 251: 'tak‐' + 'en'  -> joined 'taken'; joined in md: True
+   pdf line 252: 'ex‐' + 'terior'  -> joined 'exterior'; joined in md: True
+   pdf line 327: 'inter‐' + 'mediate'  -> joined 'intermediate'; joined in md: True
+   pdf line 339: 'uni‐' + 'ty,'  -> joined 'unity,'; joined in md: True
+   pdf line 349: '(Lem‐' + 'ma'  -> joined '(Lemma'; joined in md: True
+   pdf line 356: 'ver‐' + 'sion'  -> joined 'version'; joined in md: True
+   pdf line 364: 'identi‐' + 'cal'  -> joined 'identical'; joined in md: True
+   pdf line 380: 'sum‐' + 'mary'  -> joined 'summary'; joined in md: True
+   pdf line 390: 'lake-' + 'manifest.json);'  -> joined 'lakemanifest.json);'; joined in md: False
+   pdf line 406: 're‐' + 'laxedAutoImplicit'  -> joined 'relaxedAutoImplicit'; joined in md: True
+   pdf line 419: 'sor‐' + 'ryAx.'  -> joined 'sorryAx.'; joined in md: False
+   pdf line 429: 'ax‐' + 'ioms,'  -> joined 'axioms,'; joined in md: True
+   pdf line 436: 'deliberate‐' + 'ly'  -> joined 'deliberately'; joined in md: True
+   pdf line 445: 'fi‐' + 'nite'  -> joined 'finite'; joined in md: True
+   pdf line 455: 'mod‐' + 'ules,'  -> joined 'modules,'; joined in md: True
+   pdf line 555: '8f9d9cff6b‐' + 'd728b17a24e163c9402775d9e6a365.'  -> joined '8f9d9cff6bd728b17a24e163c9402775d9e6a365.'; joined in md: False
+   pdf line 569: 'un‐' + 'changed,'  -> joined 'unchanged,'; joined in md: True
+   pdf line 572: 'im‐' + 'ports'  -> joined 'imports'; joined in md: True
+   pdf line 586: 'check_pares_post‐' + 'clean.log'  -> joined 'check_pares_postclean.log'; joined in md: True
+   pdf line 588: 'deps_‐' + 'pares.log),'  -> joined 'deps_pares.log),'; joined in md: False
+   pdf line 589: 'con‐' + 'tains'  -> joined 'contains'; joined in md: True
+   pdf line 593: '8ac0d‐' + 'f81107480be80e53c75b2e4dbbd.'  -> joined '8ac0df81107480be80e53c75b2e4dbbd.'; joined in md: False
+total suspicious hyphenations: 33
+VIGIA-FIN-OK exit=0 pico_kb=5344 t=0s

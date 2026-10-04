@@ -1,0 +1,108 @@
+files scanned: project 233 + material/checks 24
+[sorry] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[admit] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[axiom] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[native_decide] CODE: 0 in 0 files; COMMENT/STRING: 3 in 3 files
+    comment material/project/RequestProject/EvenAll/Checks.lean 1
+    comment material/project/RequestProject/EvenOne/Checks.lean 1
+    comment material/project/RequestProject/OddEquality/Checks.lean 1
+[implemented_by] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[extern] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[unsafe] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[opaque] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[csimp] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[skipKernelTC] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[partial def] CODE: 2 in 2 files; COMMENT/STRING: 0 in 0 files
+    code    material/checks/Deps29.lean 1
+    code    material/checks/DepsPares.lean 1
+[elab] CODE: 2 in 2 files; COMMENT/STRING: 0 in 0 files
+    code    material/checks/Deps29.lean 1
+    code    material/checks/DepsPares.lean 1
+[macro] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[syntax] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[notation] CODE: 1 in 1 files; COMMENT/STRING: 4 in 4 files
+    code    material/project/RequestProject/Chain/Defs.lean 1
+    comment material/project/RequestProject/Fibres/Defs.lean 1
+    comment material/project/RequestProject/Fibres/Main.lean 1
+    comment material/project/RequestProject/OddShapes/Shapes.lean 1
+    comment material/project/RequestProject/RankTwo/Update.lean 1
+[run_cmd/run_tac] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[ofReduceBool] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[import Lean] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[addDecl/Environment] CODE: 2 in 2 files; COMMENT/STRING: 2 in 2 files
+    code    material/checks/Deps29.lean 1
+    code    material/checks/DepsPares.lean 1
+    comment material/project/RequestProject/Chain/Checks.lean 1
+    comment material/project/RequestProject/Monotone/Checks.lean 1
+[local instance] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[scoped instance] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[decide (tactic)] CODE: 116 in 25 files; COMMENT/STRING: 7 in 7 files
+    code    material/project/RequestProject/Chain/Checks.lean 11
+    code    material/project/RequestProject/Chain/Defs.lean 2
+    code    material/project/RequestProject/Chain/Lemmas.lean 31
+    code    material/project/RequestProject/Chain/Main.lean 5
+    code    material/project/RequestProject/EvenAll/Checks.lean 5
+    code    material/project/RequestProject/EvenAssembly/Quartic.lean 3
+    code    material/project/RequestProject/EvenCount/Number.lean 1
+    code    material/project/RequestProject/EvenOne/Checks.lean 5
+    code    material/project/RequestProject/EveryField/Invariance.lean 1
+    code    material/project/RequestProject/Lifts/Options.lean 1
+    code    material/project/RequestProject/Monotone/Checks.lean 7
+    code    material/project/RequestProject/Monotone/Lemmas.lean 1
+    code    material/project/RequestProject/Odd3/Count.lean 2
+    code    material/project/RequestProject/OddEquality/Checks.lean 4
+    code    material/project/RequestProject/OddLayers/Rows.lean 4
+    code    material/project/RequestProject/OddShapes/Defs.lean 1
+    code    material/project/RequestProject/OddTheorem/TheoremO.lean 3
+    code    material/project/RequestProject/Pfaffian/Basic.lean 1
+    code    material/project/RequestProject/Pow2/Basic.lean 1
+    code    material/project/RequestProject/TheoremB/Checks.lean 3
+    code    material/project/RequestProject/Tight/Lemmas.lean 3
+    code    material/checks/CheckE2.lean 1
+    code    material/checks/CheckE3.lean 4
+    code    material/checks/CheckE6.lean 6
+    code    material/checks/CheckPares.lean 10
+[#eval] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[Classical.choice usage text] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+[trustCompiler] CODE: 0 in 0 files; COMMENT/STRING: 0 in 0 files
+
+set_option (code), distinct:
+    autoImplicit false  x1
+    grind.warning false  x1
+    maxHeartbeats 2000000  x1
+    maxHeartbeats 400000  x1
+    maxHeartbeats 4000000  x1
+    maxHeartbeats 8000000  x1
+    maxRecDepth 100000  x3
+    maxRecDepth 4000  x1
+    pp.coercions.types true  x1
+    pp.fullNames true  x1
+    pp.funBinderTypes true  x1
+    pp.letVarTypes true  x1
+    pp.piBinderTypes true  x1
+    pp.structureInstances true  x1
+    relaxedAutoImplicit false  x1
+    synthInstance.maxHeartbeats 20000  x1
+    synthInstance.maxHeartbeats 200000  x100
+    synthInstance.maxSize 128  x1
+
+imports by root namespace: {'RequestProject': 414, 'Mathlib': 11}
+
+instance lines in code: 16
+    material/project/RequestProject/Ballot/Alg.lean 20 instance alg_finite (F : Type*) [Field F] (k : ℕ) : Module.Finite F (Alg F k) := by
+    material/project/RequestProject/Ballot/Comb.lean 23 instance (n : ℕ) : DecidablePred (IsBallot n) := fun U => by unfold IsBallot; infer_instance
+    material/project/RequestProject/Ballot/Defs.lean 33 noncomputable instance instModuleAlgSelf : Module (Alg F k) (Alg F k) := Semiring.toModule
+    material/project/RequestProject/ColSplit/Main.lean 225 instance instFiniteGA (d : ℕ) : Module.Finite F (GA F d S.m) := finite_GA d S.m S.m_pos
+    material/project/RequestProject/ColSplit/Main.lean 227 instance instFiniteRc {d : ℕ} (c : Fin d → S.μ) :
+    material/project/RequestProject/ColSurv/Defs.lean 189 instance nontrivial_Rc : Nontrivial (Rc F S.q (fun j => (c j : F))) :=
+    material/project/RequestProject/ColUpper/Integral.lean 89 instance finite_matching (k : ℕ) : Finite (BallotBound.Matching k) :=
+    material/project/RequestProject/EvenColours/Defs.lean 41 instance qNeZero : NeZero S.q := ⟨by have := two_le_q S; omega⟩
+    material/project/RequestProject/EvenOne/Theta.lean 32 noncomputable instance (priority := high) instModuleGASelf (n q : ℕ) :
+    material/project/RequestProject/EveryField/Integral.lean 217 instance (m : ℕ) (Λ : Set Partition) : Finite (GZ q m Λ) := (GZ_finite q m Λ).to_subtype
+    material/project/RequestProject/Peel/Defs.lean 48 noncomputable instance instModuleCSelf (m : ℕ) : Module (C F q m) (C F q m) := Semiring.toModule
+    material/project/RequestProject/Peel/Defs.lean 53 noncomputable instance instCommRingC (m : ℕ) : CommRing (C F q m) := Ideal.Quotient.commRing _
+    material/project/RequestProject/Peel/Defs.lean 58 noncomputable instance instAlgebraC (m : ℕ) : Algebra F (C F q m) := Ideal.Quotient.algebra _
+    material/project/RequestProject/Peel/Main.lean 100 instance finite_C (m : ℕ) : Module.Finite F (C F q m) := by
+    material/project/RequestProject/Pfaffian/Matching.lean 31 instance {m : ℕ} : DecidablePred (IsMatching (m := m)) := fun π => by
+    material/project/RequestProject/Upper/Main.lean 99 instance instFiniteFun : Module.Finite F (Finset (Fin (2 * k + 1)) → F) :=
+VIGIA-FIN-OK exit=0 pico_kb=11280 t=1s

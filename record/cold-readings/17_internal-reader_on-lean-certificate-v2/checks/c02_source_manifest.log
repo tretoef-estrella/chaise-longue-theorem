@@ -1,0 +1,14 @@
+manifest md5 = 8ac0df81107480be80e53c75b2e4dbbd (claimed 8ac0df81107480be80e53c75b2e4dbbd)
+manifest entries = 233  sorted bytewise: True
+.lean files on disk = 233
+on disk not in manifest: []
+in manifest not on disk: []
+md5 mismatches: 0
+modules without .olean: 4 ['RequestProject/EvenAll/Checks', 'RequestProject/EvenAll/Main', 'RequestProject/OddEquality/Checks', 'RequestProject/OddEquality/Main']
+sources newer than their .olean: 0 []
+olean mtime range: 2026-10-03 17:21:31 RequestProject/Ballot/Defs .. 2026-10-03 21:00:11 RequestProject/Upper/Main
+source mtime range: 2026-09-28 12:39:01 .. 2026-10-03 16:51:48
+lakefile.toml d3ae68ecf8839d5954d8999ca45a888c
+lean-toolchain b8b2923c1cc888de50773971faed83b7
+lake-manifest.json 235e6523a8458ad46bc886f85c26165a
+VIGIA-FIN-OK exit=0 pico_kb=5200 t=0s

@@ -1,0 +1,148 @@
+== Defs column: stated rule (def / noncomputable def / abbrev) vs broader rule (def|noncomputable|abbrev|structure|class|instance|inductive at line start, comments included)
+E1   BipAny        stated-rule   0  broad-rule   0  certificate   0 
+E2   EvenCount     stated-rule   5  broad-rule   6  certificate   6 
+        + EvenCount/Defs.lean:40: structure PointedSetting (T : Type*) [Fintype T] (h : ℕ) where
+E3   Odd3          stated-rule  15  broad-rule  15  certificate  15 
+E4   Pow2          stated-rule  12  broad-rule  13  certificate  13 
+        + Pow2/Theta.lean:167: class of `P_J` in `B`. -/
+E5   EvenAssembly  stated-rule   1  broad-rule   1  certificate   1 
+E6   OddShapes     stated-rule  13  broad-rule  14  certificate  14 
+        + OddShapes/Defs.lean:29: structure OddSetting (T : Type*) [Fintype T] (h : ℕ) where
+E7   OddLayers     stated-rule   5  broad-rule   5  certificate   5 
+E8   Pfaffian      stated-rule  22  broad-rule  23  certificate  23 
+        + Pfaffian/Matching.lean:31: instance {m : ℕ} : DecidablePred (IsMatching (m := m)) := fun π => by
+E9   RankTwo       stated-rule   9  broad-rule   9  certificate   9 
+E10  Membership    stated-rule   6  broad-rule   6  certificate   6 
+E11  OddPatterns   stated-rule   6  broad-rule   7  certificate   7 
+        + OddPatterns/Defs.lean:40: structure MarkedPattern {m : ℕ} (lam : Partition) (I : Finset (Fin m))
+E12  OddLifts      stated-rule   2  broad-rule   2  certificate   2 
+E13  OddLifts2     stated-rule   2  broad-rule   2  certificate   2 
+E14  OddTheorem    stated-rule   1  broad-rule   1  certificate   1 
+E15  OddEquality   stated-rule  26  broad-rule  28  certificate  28 
+        + OddEquality/PartA.lean:60: noncomputable abbrev iota (h k : ℕ) : Peel.C F (2 * h + 2) (2 * k + 1)
+        + OddEquality/PartC.lean:255: structure `S` (`EvenCount.PointedSetting`) whose involution is `u ↦ −u
+E16  EvenBlocks    stated-rule  13  broad-rule  13  certificate  13 
+E17  EvenColours   stated-rule  14  broad-rule  15  certificate  15 
+        + EvenColours/Defs.lean:41: instance qNeZero : NeZero S.q := ⟨by have := two_le_q S; omega⟩
+E18  EvenMinus     stated-rule  13  broad-rule  13  certificate  13 
+E19  EvenOne       stated-rule  11  broad-rule  12  certificate  12 
+        + EvenOne/Theta.lean:32: noncomputable instance (priority := high) instModuleGASelf (n q : ℕ) :
+E20  EvenAll       stated-rule   2  broad-rule   2  certificate   2 
+totals: stated rule 178  broad rule 187  certificate 187
+
+== decide: files with the whole word "decide" (grep -lw, comments included)
+22  new 11  v1 11
+
+== §3.2 dependency cones (deps_pares_postclean.log)
+EvenAll.mainTheorem'   header: 4412 decls, 180 modules; parsed 4412 decls, 180 modules
+OddEquality.D1         header: 2425 decls, 97 modules; parsed 2425 decls, 97 modules
+OddEquality.D2_DJ      header: 2470 decls, 101 modules; parsed 2470 decls, 101 modules
+EvenAll.B2             header: 4169 decls, 174 modules; parsed 4169 decls, 174 modules
+modules outside the cone of the final theorem: 53
+    (top) ['Main']
+    Ballot ['Alg', 'Comb', 'Construct']
+    Chain ['Checks']
+    Degeneration ['Defs', 'Lemma']
+    EvenAll ['Checks', 'Main', 'PartD', 'PartE']
+    EvenAssembly ['Quartic']
+    EvenCount ['Number']
+    EvenMinus ['Main']
+    EvenOne ['Checks']
+    EveryField ['Integral', 'Invariance', 'Main']
+    FreeZ ['Defs', 'Main']
+    Membership ['Main']
+    Monotone ['Checks']
+    Odd3 ['Cases', 'Count', 'Main', 'Pairs', 'Slice']
+    OddEquality ['Checks', 'Defs', 'IntegralGen', 'Main', 'PartA', 'PartB', 'PartC', 'PartC3', 'PartD']
+    OddLayers ['Main']
+    OddPatterns ['Examples', 'Main', 'Relabel']
+    OddShapes ['Main']
+    OddTheorem ['Main']
+    Pfaffian ['Main']
+    RankTwo ['Main']
+    Support ['Defs', 'Evaluation', 'Main', 'SupportLemma']
+    TheoremB ['Checks']
+    Upper ['Count', 'Defs', 'Main', 'Top']
+OddEquality modules in cone of D1: ['RequestProject.OddEquality.Defs', 'RequestProject.OddEquality.PartA', 'RequestProject.OddEquality.PartB', 'RequestProject.OddEquality.PartC', 'RequestProject.OddEquality.PartD']
+
+== §8 clean rebuild log
+modules with a result line: 229  exit 0: 229
+sum t: 13069  sum wall: 13190
+longest t: RequestProject.Peel.Main 92  longest wall: RequestProject.Peel.Main 93  peak: RequestProject.EveryField.Main 2462976 kB = 2.349 GiB
+['START 2026-10-03 17:20:22', 'SKIPPED RequestProject.EvenAll.Checks', 'SKIPPED RequestProject.EvenAll.Main', 'SKIPPED RequestProject.OddEquality.Checks', 'SKIPPED RequestProject.OddEquality.Main', 'END 2026-10-03 21:00:12 modules=229 fails=0', 'FIN-OK']
+per-module logs consistent with summary: True  cr_logs files: 229
+orden_modulos entries: 233  marked #: ['#RequestProject.EvenAll.Checks', '#RequestProject.EvenAll.Main', '#RequestProject.OddEquality.Checks', '#RequestProject.OddEquality.Main']
+orden = set of all modules: True
+orden_modulos is a topological order of the imports: True
+  importers of RequestProject.EvenAll.Checks : ['RequestProject.EvenAll.Main']
+  importers of RequestProject.EvenAll.Main : []
+  importers of RequestProject.OddEquality.Checks : ['RequestProject.OddEquality.Main']
+  importers of RequestProject.OddEquality.Main : []
+  imports of RequestProject.Main (top): ['RequestProject.Ballot.Construct', 'RequestProject.Ballot.Comb']
+
+CheckPares imports: ['RequestProject.EvenAll.PartBC', 'RequestProject.EvenAll.PartD', 'RequestProject.EvenAll.PartE', 'RequestProject.OddEquality.PartD', 'RequestProject.ColAssembly.Main']  == the five of §8: True
+import closure of the five modules: 216 of 233
+DepsPares imports: ['RequestProject.EvenAll.PartBC', 'RequestProject.OddEquality.PartD']  inside the closure: True
+modules of the final cone outside the closure: []
+
+== check_pares.log vs check_pares_postclean.log; deps_pares.log vs deps_pares_postclean.log
+check_pares.log 104 lines; check_pares_postclean.log 106 lines; differing lines: 4
+     +def ColUpper.tU.{u_1} : (K : Type u_1) → [inst : Field K] → (m k : ℕ) → Fin (2 * k + 2) → GA K (2 * k + 1) m :=
+     +fun K [Field K] m k i => Fin.cases 0 (fun j => (Ideal.Quotient.mk (gaIdeal K (2 * k + 1) m)) (MvPolynomial.X j)) i
+     -VIGIA-FIN-OK exit=0 pico_kb=2527824 t=112s
+     +VIGIA-FIN-OK exit=0 pico_kb=1414064 t=210s
+     check_pares_postclean.log contains error : 0
+     check_pares_postclean.log contains warning : 0
+     check_pares_postclean.log contains sorry : 0
+deps_pares.log 558 lines; deps_pares_postclean.log 558 lines; differing lines: 2
+     -VIGIA-FIN-OK exit=0 pico_kb=1845664 t=180s
+     +VIGIA-FIN-OK exit=0 pico_kb=1566240 t=188s
+     deps_pares_postclean.log contains error : 0
+     deps_pares_postclean.log contains warning : 0
+     deps_pares_postclean.log contains sorry : 0
+
+== Table 6a brute force: "checks N" in the final log of each piece
+E2   log 64 failures 0  certificate 64  OK  controls(total,fired)=-
+E3   log 195 failures 0  certificate 195  OK  controls(total,fired)=-
+E4   log 106 failures 0  certificate 106  OK  controls(total,fired)=('18', '17')
+E5   log 21 failures 0  certificate 21  OK  controls(total,fired)=('7', '7')
+E6   log 93 failures 0  certificate 93  OK  controls(total,fired)=-
+E7   log 120 failures 0  certificate 120  OK  controls(total,fired)=-
+E8   log 4491 failures 0  certificate 4491  OK  controls(total,fired)=-
+E9   log 1718 failures 0  certificate 1718  OK  controls(total,fired)=-
+E10  log 840 failures 0  certificate 840  OK  controls(total,fired)=('58', '38')
+E11  log 1170 failures 0  certificate 1170  OK  controls(total,fired)=('49', '47')
+E12  log 8261 failures 0  certificate 8261  OK  controls(total,fired)=('16', '16')
+E13  log 2269 failures 0  certificate 2269  OK  controls(total,fired)=('6', '6')
+E14  log 8743 failures 0  certificate 8743  OK  controls(total,fired)=-
+E16  log 3399 failures 0  certificate 3399  OK  controls(total,fired)=-
+E17  log 1869 failures 0  certificate 1869  OK  controls(total,fired)=-
+E18  log 84 failures 0  certificate 84  OK  controls(total,fired)=-
+E19  log 118 failures 0  certificate 118  OK  controls(total,fired)=-
+E20  log 59 failures 0  certificate 59  OK  controls(total,fired)=-
+E15  log 111 failures 0  certificate 111  OK  controls(total,fired)=-
+sum 33731  certificate 33 731
+
+== Table 6b build columns from per_piece/build_runE<n>_<Module>.log
+E1   built 6 sum_t 411 peak 1.87 GiB   certificate 6 411 1.87  OK  others: []
+E2   built 5 sum_t 346 peak 1.76 GiB   certificate 5 346 1.76  OK  others: []
+E3   built 6 sum_t 397 peak 1.83 GiB   certificate 6 397 1.83  OK  others: []
+E4   built 4 sum_t 255 peak 2.16 GiB   certificate 4 255 2.16  OK  others: []
+E5   built 3 sum_t 172 peak 2.07 GiB   certificate 3 172 2.07  OK  others: []
+E6   built 6 sum_t 397 peak 1.80 GiB   certificate 6 397 1.8  OK  others: []
+E7   built 6 sum_t 481 peak 1.98 GiB   certificate 6 481 1.98  OK  others: []
+E8   built 9 sum_t 589 peak 1.77 GiB   certificate 9 589 1.77  OK  others: []
+E9   built 8 sum_t 463 peak 2.07 GiB   certificate 8 463 2.07  OK  others: []
+E10  built 5 sum_t 342 peak 1.93 GiB   certificate 5 342 1.93  OK  others: []
+E11  built 7 sum_t 495 peak 2.13 GiB   certificate 7 495 2.13  OK  others: []
+E12  built 4 sum_t 391 peak 1.83 GiB   certificate 4 391 1.83  OK  others: []
+E13  built 5 sum_t 429 peak 1.70 GiB   certificate 5 429 1.7  OK  others: []
+E14  built 5 sum_t 335 peak 1.87 GiB   certificate 5 335 1.87  OK  others: []
+E16  built 6 sum_t 410 peak 1.98 GiB   certificate 6 410 1.98  OK  others: []
+E17  built 7 sum_t 483 peak 1.89 GiB   certificate 7 483 1.89  OK  others: []
+E18  built 7 sum_t 440 peak 1.99 GiB   certificate 7 440 1.99  OK  others: []
+E19  built 6 sum_t 448 peak 2.25 GiB   certificate 6 448 2.25  OK  others: []
+E20  built 4 sum_t 296 peak 1.85 GiB   certificate 4 296 1.85  OK  others: [('build_runE20_Checks.log', 'VIGIA-MATADO-MEMORIA mem_kb=4750336 t=106s')]
+E15  built 7 sum_t 629 peak 1.74 GiB   certificate 7 629 1.74  OK  others: [('build_runE15_Checks.log', 'VIGIA-MATADO-MEMORIA mem_kb=4728832 t=133s')]
+total build s 8209 (certificate 8 209)  max peak 2.25 (certificate 2.25)
+VIGIA-FIN-OK exit=0 pico_kb=12336 t=0s

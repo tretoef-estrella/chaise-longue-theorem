@@ -1,0 +1,145 @@
+====================================================================================================
+E1 BipAny
+  [Main.lean] theorem thm76_any (hq : 2 ≤ q) (hbin : ∀ t, t ≤ q - 1 → (((q - 1).choose t : ℕ) : F) ≠ 0) {Ω : Type*} [Fintype Ω] [DecidableEq Ω] (hΩ : Fintype.card Ω = q) (α β : ℕ) (Λ : Set (Partition × Partition)) (hΛ : IsDownSetB q α β Λ) : (ZLam Ω α β Λ).card ≤ Module.finrank F ((VLamB F q α β Λ).restrictScalars F)
+  [Main.lean] theorem theoremC_any (hq : 2 ≤ q) (hbin : ∀ t, t ≤ q - 1 → (((q - 1).choose t : ℕ) : F) ≠ 0) (a : ℕ) : Nbal a q ≤ Module.finrank F ((Ibal F q a).restrictScalars F) ∧ Nph a q ≤ Module.finrank F ((Iph F q a).restrictScalars F) ∧ Nph a q = Nbal (a + 1) q
+  [Binomial.lean] theorem choose_pred_prime_pow (F : Type*) [Field F] {p v q : ℕ} (hp : p.Prime) (hv : 1 ≤ v) (hqpv : q = p ^ v) [CharP F p] : ∀ t, t ≤ q - 1 → (((q - 1).choose t : ℕ) : F) = (-1) ^ t
+  [Main.lean] theorem thm76_prime_pow {p v : ℕ} (hp : p.Prime) (hv : 1 ≤ v) (hqpv : q = p ^ v) [CharP F p] {Ω : Type*} [Fintype Ω] [DecidableEq Ω] (hΩ : Fintype.card Ω = q) (α β : ℕ) (Λ : Set (Partition × Partition)) (hΛ : IsDownSetB q α β Λ) : (ZLam Ω α β Λ).card ≤ Module.finrank F ((VLamB F q α β Λ).restrictScalars F)
+  [Main.lean] theorem theoremC_prime_pow {p v : ℕ} (hp : p.Prime) (hv : 1 ≤ v) (hqpv : q = p ^ v) [CharP F p] (a : ℕ) : Nbal a q ≤ Module.finrank F ((Ibal F q a).restrictScalars F) ∧ Nph a q ≤ Module.finrank F ((Iph F q a).restrictScalars F) ∧ Nph a q = Nbal (a + 1) q
+====================================================================================================
+E2 EvenCount
+  [Number.lean] theorem QkEven_eq (k m : ℕ) : QkEven k m = 1 + ∑ c ∈ Finset.range (k + 1), (2 * k + 2).choose (2 * c) * Qk (k - c) (m - 1)
+  [Closed.lean] theorem card_closedPointed (S : PointedSetting T h) (k : ℕ) : (closedPointed S (2 * k + 2)).card = QkEven k (2 * h + 2)
+  [Points.lean] theorem card_Gamma_even (hm : (m : K) ≠ 0) (heven : Even m) (k : ℕ) : (Gamma hprod k).card = QkEven k m
+  [Main.lean] theorem finrank_IK_le_even (F : Type*) [Field F] {m : ℕ} (heven : Even m) (h2 : 2 ≤ m) (k : ℕ) : Module.finrank F ((IK F m k).restrictScalars F) ≤ QkEven k m
+====================================================================================================
+E3 Odd3
+  [Main.lean] theorem O_ge_three (F : Type*) [Field F] (k : ℕ) : EvenCount.QkEven k 4 ≤ Module.finrank F ((TheoremB.DIdeal F 4 k).restrictScalars F)
+  [Main.lean] theorem I_odd_one_eq_DIdeal (k : ℕ) : I F (2 * k + 1) 1 = TheoremB.DIdeal F 4 k
+  [Main.lean] theorem card_Z_le_finrank (m J : ℕ) : (Z m J).card ≤ Module.finrank F ((I F m J).restrictScalars F)
+====================================================================================================
+E4 Pow2
+  [Main.lean] theorem prop92_ge (F : Type*) [Field F] [CharP F 2] {v : ℕ} (hv : 1 ≤ v) (k : ℕ) : Module.finrank F ((TheoremB.DIdeal F (2 ^ v) k).restrictScalars F) ≤ Module.finrank F ((ColUpper.IK F (2 ^ v) k).restrictScalars F)
+  [Main.lean] theorem quartic_char_two (F : Type*) [Field F] [CharP F 2] (k : ℕ) : Module.finrank F ((ColUpper.IK F 4 k).restrictScalars F) = EvenCount.QkEven k 4
+  [Main.lean] theorem pow2_of_oddbox (F : Type*) [Field F] [CharP F 2] {v : ℕ} (hv : 1 ≤ v) (k : ℕ) (h : EvenCount.QkEven k (2 ^ v) ≤ Module.finrank F ((TheoremB.DIdeal F (2 ^ v) k).restrictScalars F)) : Module.finrank F ((ColUpper.IK F (2 ^ v) k).restrictScalars F) = EvenCount.QkEven k (2 ^ v)
+  [Lowest.lean] theorem lowest_forms {ι : Type*} (e : ℕ) (I : Ideal (Peel.C F (e + 1) d)) (f g : ι → MvPolynomial (Fin d) F) (δ : ι → ℕ) (hf : ∀ α, Ideal.Quotient.mk _ (f α) ∈ I) (hg : ∀ α, (g α).IsHomogeneous (δ α)) (hfg : ∀ α, ∀ s ∈ (f α - g α).support, δ α < Finsupp.degree s) : Module.finrank F ((Ideal.span (Set.range fun α => Ideal.Quotient.mk (Peel.powIdeal F (e + 1) d) (g α))).restrictScalars F) ≤ Module.finrank F (I.restrictScalars F)
+====================================================================================================
+E5 EvenAssembly
+  [EveryField.lean] def HypH (m k : ℕ) : Prop
+  [EveryField.lean] theorem theorem_i (F : Type*) [Field F] {m : ℕ} (heven : Even m) (h2 : 2 ≤ m) (hne : (m : F) ≠ 0) (k : ℕ) : EveryField.rankOver F (intMatU m k) = QkEven k m ∧ Module.finrank F ((IK F m k).restrictScalars F) = QkEven k m
+  [EveryField.lean] theorem theorem_ii (F : Type*) [Field F] {m k : ℕ} (heven : Even m) (h2 : 2 ≤ m) (hH : HypH m k) : EveryField.rankOver F (intMatU m k) = QkEven k m ∧ Module.finrank F ((IK F m k).restrictScalars F) = QkEven k m
+  [Main.lean] theorem theorem_iii (heven : Even m) (h2 : 2 ≤ m) (hH : HypH m k) : (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧ Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - QkEven k m) ∧ ∀ (F : Type*) [Field F], Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - QkEven k m
+  [Quartic.lean] theorem mainTheorem'_four (k : ℕ) : (Module.Free ℤ (RZ (2 * k + 1) 4 ⧸ IZ 4 k) ∧ Module.finrank ℤ (RZ (2 * k + 1) 4 ⧸ IZ 4 k) = 4 ^ (2 * k + 1) - QkEven k 4) ∧ ∀ (F : Type) [Field F], Module.finrank F (GA F (2 * k + 1) 4 ⧸ IK F 4 k) = 4 ^ (2 * k + 1) - QkEven k 4
+====================================================================================================
+E6 OddShapes
+  [Identities.lean] theorem A0 (q : ℕ) (a b : A) : (a + b) * Dab q a b = b ^ (q - 1) - (-a) ^ (q - 1)
+  [Identities.lean] theorem A1 (r : ℕ) (hr : 1 ≤ r) (a b : A) : Dab (r + 1) a b = b ^ (r - 1) - a * Dab r a b
+  !! A2 NOT FOUND as a declaration in OddShapes/
+  !! A3 NOT FOUND as a declaration in OddShapes/
+  !! A4 NOT FOUND as a declaration in OddShapes/
+  [Interlaced.lean] theorem optS_filter_eq_Icc {h m : ℕ} (hm : 1 ≤ m) {Λ : Set Shape} (hΛ : IsInterlaced h m Λ) {μ : Partition} {δ : Bool} (hs : (μ, δ) ∈ Sh h (m - 1)) : (Finset.Icc 1 (2 * h + 1)).filter (fun p => optS h (μ, δ) p ∈ Λ) = Finset.Icc 1 (FS h Λ (μ, δ))
+  [Interlaced.lean] theorem isInterlaced_root_even (h m : ℕ) (hm : Even m) : IsInterlaced h m {(emptyPart, false)}
+  [Interlaced.lean] theorem isInterlaced_root_odd (h m : ℕ) (hh : 1 ≤ h) (hm : Odd m) : IsInterlaced h m {(onePart, false), (emptyPart, true)}
+====================================================================================================
+E7 OddLayers
+  [Layers.lean] theorem isInterlaced_layerS {h m : ℕ} (hh : 1 ≤ h) (hm : 1 ≤ m) {Λ : Set Shape} (hΛ : IsInterlaced h m Λ) (i : ℕ) : IsInterlaced h (m - 1) (layerS h m Λ i)
+  [Roots.lean] theorem card_ZS_root_even (S : OddSetting T h) (k : ℕ) : (ZS S (2 * k + 2) {(emptyPart, false)}).card = EvenCount.QkEven k (2 * h + 2)
+  [Roots.lean] theorem card_ZS_root_odd (S : OddSetting T h) (k : ℕ) : (ZS S (2 * k + 1) {(onePart, false), (emptyPart, true)}).card = EvenCount.QkEven k (2 * h + 2)
+====================================================================================================
+E8 Pfaffian
+  [Matching.lean] theorem pf_eq_sum_matchings : ∀ (m : ℕ) (A : Matrix (Fin m) (Fin m) R), pf m A = ∑ π ∈ univ.filter (fun π : Fin m → Fin m => IsMatching π), (-1) ^ (crossings π) * ∏ x ∈ univ.filter (fun x => x < π x), A x (π x) | 0, A => by rw [pf_zero] have : univ.filter (fun π : Fin 0 → Fin 0 => IsMatching π) = {fun x => x.elim0}
+  [Laplace.lean] theorem bpf_laplace {n s : ℕ} (a : Matrix (Fin n) (Fin n) R) (ha : IsAlt a) (c : Fin s → Fin n → R) : bpf a c = (-1) ^ (s * (s - 1) / 2) * ∑ S : {S : Finset (Fin n) // S.card = s}, (-1) ^ ((∑ i ∈ S.1, (i : ℕ)) - s * (s - 1) / 2) * (Matrix.of fun i k => c k (S.1.orderEmbOfFin S.2 i)).det * pf (n - s) (a.submatrix (S.1ᶜ.orderEmbOfFin (by rw [Finset.card_compl, Fintype.card_fin, S.2])) (S.1ᶜ.orderEmbOfFin (by rw [Finset.card_compl, Fintype.card_fin, S.2])))
+  [ExpandVar.lean] theorem bpf_expand_var {n s : ℕ} (a : Matrix (Fin (n + 1)) (Fin (n + 1)) R) (ha : IsAlt a) (c : Fin (s + 1) → Fin (n + 1) → R) (x : Fin (n + 1)) : bpf a c = (-1) ^ ((x : ℕ) + (n + 1) + (s + 1)) * bpf (a.submatrix x.succAbove x.succAbove) (Fin.snoc (α
+  [OddBox.lean] theorem C1 {r : ℕ} (hr : Odd r) {n s : ℕ} (y : Fin n → A) (c : Fin s → Fin n → A) (x : A) : Pf r y (Fin.snoc (α
+  [OddBox.lean] theorem C2 {r : ℕ} (hr : Odd r) {n s : ℕ} (y : Fin n → A) (c : Fin s → Fin n → A) (x : A) : Pf r y (Fin.snoc (α
+  [OddBox.lean] theorem C3 {r : ℕ} (hr : Odd r) {n s : ℕ} (y : Fin n → A) (c : Fin s → Fin n → A) (x : A) : Pf r y (Fin.snoc (α
+  [OddBox.lean] theorem C4 {r : ℕ} (hr : Odd r) {n s : ℕ} (y : Fin n → A) (e : Fin s → ℕ) (he : StrictMono e) (u : ℕ) (hu : ∀ k, e k ≠ u) (e' : Fin (s + 1) → ℕ) (he' : StrictMono e') (hrange : ∀ m, (∃ j, e' j = m) ↔ (∃ k, e k = m) ∨ m = u) : Pf r y (Fin.snoc (α
+  [OddBox.lean] theorem C5 {r : ℕ} (hr : Odd r) {s : ℕ} (y : Fin s → A) : Pfe r y (fun k : Fin s => (k : ℕ)) = (-1) ^ (s * (s - 1) / 2) * ∏ i : Fin s, ∏ j ∈ Ioi i, (y j - y i)
+  [OddBox.lean] theorem C6 {r : ℕ} (hr : Odd r) {n s : ℕ} (y : Fin n → A) (c : Fin s → Fin n → A) (σ : Perm (Fin n)) : Pf r (fun i => y (σ i)) (fun k i => c k (σ i)) = ((Perm.sign σ : ℤ) : A) * Pf r y c
+====================================================================================================
+E9 RankTwo
+  [Update.lean] theorem R4 {n s : ℕ} (a : Matrix (Fin n) (Fin n) R) (ha : IsAlt a) (c : Fin s → Fin n → R) (E O : Fin n → R) : bpf (a - Matrix.of fun i j => E i * O j - E j * O i) c = bpf a c + bpf a (Fin.snoc (α
+  [Update.lean] theorem R4' {n s : ℕ} (a : Matrix (Fin n) (Fin n) R) (ha : IsAlt a) (c : Fin s → Fin n → R) (E O : Fin n → R) : bpf (a + Matrix.of fun i j => E i * O j - E j * O i) c = bpf a c - bpf a (Fin.snoc (α
+  [Key.lean] theorem S2 (h : ℕ) {n : ℕ} (y : Fin n → A) (i j : Fin n) : Lm h y i j + X ^ h * Hm h y i j = Ev h y i * Od h y j - Ev h y j * Od h y i
+  [OddBox.lean] theorem S5a {h : ℕ} (hh : 1 ≤ h) {n s : ℕ} (t : ℕ) (hn : n = s + 2 * (t + 1)) (y : Fin n → A) (c : Fin s → Fin n → A) : Pf (2 * h + 1) y c = if t + 1 ≤ h then (-1) ^ (t + 1) * (bpf (Hm h y) (Fin.snoc (α
+  [OddBox.lean] theorem S5b {h : ℕ} (hh : 1 ≤ h) {n s : ℕ} (t : ℕ) (hn : n = s + 1 + 2 * t) (y : Fin n → A) (c : Fin s → Fin n → A) : Pf (2 * h + 1) y (Fin.snoc (α
+====================================================================================================
+E10 Membership
+  [Theorem.lean] theorem M2a {h : ℕ} (hh : 1 ≤ h) {n s : ℕ} (t : ℕ) (hn : n = s + 2 * (t + 1)) (y : Fin n → A) (hy : ∀ i, y i ^ (2 * h + 1) = 0) (e : Fin s → ℕ) : Pfe (2 * h + 1) y e ∈ U (2 * h + 1) (s + 2) y
+  [Theorem.lean] theorem M2b {h : ℕ} (hh : 1 ≤ h) {n s : ℕ} (t : ℕ) (hn : n = s + 1 + 2 * t) (y : Fin n → A) (hy : ∀ i, y i ^ (2 * h + 1) = 0) (e : Fin s → ℕ) : Pf (2 * h + 1) y (Fin.snoc (α
+  [Theorem.lean] theorem M3_pos {h : ℕ} (hh : 1 ≤ h) {n l : ℕ} (t : ℕ) (hn : n = l + 2 + 2 * t) (y : Fin n → A) (hy : ∀ i, y i ^ (2 * h + 1) = 0) : Pfe (2 * h + 1) y (fun k : Fin l => (k : ℕ)) ∈ U (2 * h + 1) (l + 2) y
+  [Theorem.lean] theorem M3_zero {h : ℕ} (hh : 1 ≤ h) {n : ℕ} (t : ℕ) (hn : n = 1 + 2 * t) (y : Fin n → A) (hy : ∀ i, y i ^ (2 * h + 1) = 0) : Pfe (2 * h + 1) y (fun _ : Fin 1 => 2 * h) ∈ U (2 * h + 1) 1 y
+  [Vand.lean] theorem V1 {R : Type*} [CommRing R] : ∀ {m : ℕ} (x : Fin m → R) (p : Fin m → R[X]), (∏ i : Fin m, ∏ j ∈ Ioi i, (x j - x i)) ∣ (Matrix.of fun i k => (p k).eval (x i)).det | 0, x, p => by simp | m + 1, x, p => by set a
+====================================================================================================
+E11 OddPatterns
+  [MarkedPf.lean] def mPf (h l : ℕ) {n : ℕ} (z : Fin n → A) : A
+  [Defs.lean] def VS {m : ℕ} (Lam : Set Shape) (I : Finset (Fin m)) : Ideal (Peel.C F (2 * h + 2) m)
+  [Defs.lean] def VSAll (m : ℕ) (Lam : Set Shape) : Ideal (Peel.C F (2 * h + 2) m)
+  [Relabel.lean] theorem C3 {m : ℕ} (σ : Equiv.Perm (Fin m)) (Lam : Set Shape) (I : Finset (Fin m)) : Ideal.map (Tight.relabel F (2 * h + 2) σ) (VS F h Lam I) = VS F h Lam (I.map σ.toEmbedding)
+  [LemmaD.lean] theorem D3 (hh : 1 ≤ h) {m : ℕ} (l : ℕ) (B : Finset (Fin m)) (t : ℕ) (hB : B.card = l + 1 + 2 * t) : markedPf F h l B ∈ Membership.UB (2 * h + 1) (l + 1) (Tight.y F (2 * h + 2)) B
+====================================================================================================
+E12 OddLifts
+  [LemmaP.lean] theorem P1 {R : Type*} [CommRing R] (h l : ℕ) (hl : 1 ≤ l) (w : Fin l → R) (k : ℕ) (hk1 : 2 * h < k + l) (hk2 : l < k + 2) : (OddPatterns.mPf h l (Fin.cons X (fun i => C (w i)) : Fin (l + 1) → R[X])).coeff k = 0
+  [LemmaP.lean] theorem P2 {R : Type*} [CommRing R] (h l : ℕ) (hl : 1 ≤ l) (w : Fin l → R) (hlh : l ≤ h) : (OddPatterns.mPf h l (Fin.cons X (fun i => C (w i)) : Fin (l + 1) → R[X])).coeff (2 * h - l) = (-1) ^ (l * (l + 1) / 2) * ∏ i : Fin l, ∏ j ∈ Finset.Ioi i, (w j - w i)
+  [LemmaP.lean] theorem P3 {R : Type*} [CommRing R] (h l : ℕ) (hl : 1 ≤ l) (w : Fin l → R) (hlh : l ≤ h) (k : ℕ) (hk : 2 * h - l < k) : (OddPatterns.mPf h l (Fin.cons X (fun i => C (w i)) : Fin (l + 1) → R[X])).coeff k = 0
+  [Main.lean] theorem T1 {n : ℕ} {Lam : Set Shape} {mu lam : Partition} (hlam : (lam, false) ∈ Lam) (T : TightPattern mu (Finset.univ : Finset (Fin n))) {cs : ℕ} (hcs : 1 ≤ cs) (hcol : ∀ c, 1 ≤ c → colLen lam c = colLen mu c + if c = cs then 1 else 0) (hd : colLen mu cs ≤ 2 * h) : T.prod F (2 * h + 2) ∈ W (m
+  [Main.lean] theorem T2 {n : ℕ} {Lam : Set Shape} {mu lam : Partition} (hlam : (lam, false) ∈ Lam) (T : TightPattern mu (Finset.univ : Finset (Fin n))) {c0 : ℕ} (hc0 : 1 ≤ c0) (hcol : ∀ c, 1 ≤ c → colLen lam c + (if c = c0 then 1 else 0) = colLen mu c) (hr : 1 ≤ colLen mu c0) (hrq : colLen mu c0 ≤ 2 * h + 1) : T.prod F (2 * h + 2) ∈ W (m
+  [Main.lean] theorem T3 {n : ℕ} {Lam : Set Shape} {mu lam : Partition} (hlam : (lam, true) ∈ Lam) (T : MarkedPattern mu (Finset.univ : Finset (Fin n))) {cs : ℕ} (hcs : 2 ≤ cs) (hcol : ∀ c, 1 ≤ c → colLen lam c = colLen mu c + if c = cs then 1 else 0) (hd : colLen mu cs ≤ 2 * h) : T.prod F h ∈ W (m
+  [Main.lean] theorem T4 {n : ℕ} {Lam : Set Shape} {mu lam : Partition} (hlam : (lam, true) ∈ Lam) (T : MarkedPattern mu (Finset.univ : Finset (Fin n))) {c0 : ℕ} (hc0 : 2 ≤ c0) (hcol : ∀ c, 1 ≤ c → colLen lam c + (if c = c0 then 1 else 0) = colLen mu c) (hr : 1 ≤ colLen mu c0) (hrq : colLen mu c0 ≤ 2 * h + 1) : T.prod F h ∈ W (m
+  [Main.lean] theorem T5 {n : ℕ} {Lam : Set Shape} {mu : Partition} (hmu : (mu, true) ∈ Lam) (T : TightPattern mu (Finset.univ : Finset (Fin n))) (hlen : mu.len ≤ h) : T.prod F (2 * h + 2) ∈ W (m
+====================================================================================================
+E13 OddLifts2
+  [LemmaQ.lean] theorem Q1 {R : Type*} [CommRing R] (h l n t : ℕ) (hn : n = l + 2 + 2 * t) (hlh : l + 1 ≤ h) (w : Fin n → R) (k : ℕ) (hk : 2 * h - l < k) : (OddPatterns.mPf h l (Fin.cons X (fun i => C (w i)) : Fin (n + 1) → R[X])).coeff k = 0
+  [LemmaQ.lean] theorem Q2 {R : Type*} [CommRing R] (h l n t : ℕ) (hn : n = l + 2 + 2 * t) (hlh : l + 1 ≤ h) (w : Fin n → R) : (OddPatterns.mPf h l (Fin.cons X (fun i => C (w i)) : Fin (n + 1) → R[X])).coeff (2 * h - l) = (-1) ^ l * OddPatterns.mPf h (l + 1) w
+  [LemmaQp.lean] theorem Q'1 {R : Type*} [CommRing R] (h ell n t : ℕ) (hn : n = ell + 1 + 2 * t) (w : Fin n → R) (k : ℕ) (hk : ell < k) : (Phi h ell w).coeff k = 0
+  [LemmaQp.lean] theorem Q'2 {R : Type*} [CommRing R] (h ell n t : ℕ) (hn : n = ell + 1 + 2 * t) (w : Fin n → R) : (Phi h ell w).coeff ell = OddPatterns.mPf h ell w
+  [Main.lean] theorem T6 {n : ℕ} {Lam : Set Shape} {mu : Partition} (hmu : (mu, false) ∈ Lam) (hh : 1 ≤ h) (hlen : mu.len ≤ h) (T : MarkedPattern mu (Finset.univ : Finset (Fin n))) : T.prod F h ∈ W (m
+  [Main.lean] theorem T7 {n : ℕ} {Lam : Set Shape} {mu : Partition} (hlam : (mu.addOne, true) ∈ Lam) (hmu : (mu, false) ∈ Lam) (hlen : mu.len < h) (T : MarkedPattern mu (Finset.univ : Finset (Fin n))) : T.prod F h ∈ W (m
+  [Main.lean] theorem T8 {n : ℕ} {Lam : Set Shape} {mu : Partition} (hlam : (mu.subE mu.len, true) ∈ Lam) (hl1 : 1 ≤ mu.len) (hlh : mu.len ≤ h) (hrow : mu.row mu.len = 1) (T : MarkedPattern mu (Finset.univ : Finset (Fin n))) : T.prod F h ∈ W (m
+====================================================================================================
+E14 OddTheorem
+  [LemmaK.lean] theorem lemmaK {h n : ℕ} {Lam : Set Shape} (hΛ : IsInterlaced h (n + 1) Lam) {mu : Partition} {d : Bool} (hs : (mu, d) ∈ Sh h n) (hΦ : 1 ≤ FS h Lam (mu, d)) : (∃ lam, (lam, d) ∈ Lam ∧ ∃ cs, (if d then 2 else 1) ≤ cs ∧ (∀ c, 1 ≤ c → colLen lam c = colLen mu c + if c = cs then 1 else 0) ∧ colLen mu cs + FS h Lam (mu, d) = 2 * h + 1) ∨ (d = true ∧ (mu.addOne, true) ∈ Lam ∧ (mu, false) ∈ Lam ∧ mu.len < h ∧ FS h Lam (mu, d) = 2 * h + 1 - mu.len) ∨ ((mu, !d) ∈ Lam ∧ FS h Lam (mu, d) = mu.len + 1) ∨ (∃ lam, (lam, d) ∈ Lam ∧ ∃ c0, (if d then 2 else 1) ≤ c0 ∧ (∀ c, 1 ≤ c → colLen lam c + (if c = c0 then 1 else 0) = colLen mu c) ∧ colLen mu c0 = FS h Lam (mu, d)) ∨ (d = true ∧ 1 ≤ mu.len ∧ mu.row mu.len = 1 ∧ (mu.su
+  [Prop810.lean] theorem prop810 (hh : 1 ≤ h) {m : ℕ} (hm : 1 ≤ m) {Lam : Set Shape} (hΛ : IsInterlaced h m Lam) {i : ℕ} (hi : i ≤ 2 * h) : (VSAll F h (m - 1) (OddLayers.layerS h m Lam i) : Set (Peel.C F (2 * h + 2) (m - 1))) ⊆ W hm (VSAll F h m Lam) (2 * h - i)
+  [Theorem811.lean] theorem theorem811 (F : Type*) [Field F] {T : Type*} [Fintype T] [DecidableEq T] {h : ℕ} (S : OddSetting T h) (m : ℕ) (Lam : Set Shape) (hΛ : IsInterlaced h m Lam) : (ZS S m Lam).card ≤ Module.finrank F ((VSAll F h m Lam).restrictScalars F)
+  [TheoremO.lean] theorem theoremO (F : Type*) [Field F] {h : ℕ} (hh : 1 ≤ h) (k : ℕ) : EvenCount.QkEven k (2 * h + 2) ≤ Module.finrank F ((TheoremB.DIdeal F (2 * h + 2) k).restrictScalars F)
+====================================================================================================
+E16 EvenBlocks
+  [Part0.lean] theorem lemma94 (S : ColSetting F) : (∀ (d : ℕ) (I' : Ideal (GA F d S.m)), Module.finrank F (I'.restrictScalars F) = ∑ c : Fin d → S.μ, Module.finrank F ((I'.map (S.piC c)).restrictScalars F)) ∧ (∀ (k : ℕ) (c : Fin (2 * k + 1) → S.μ) (J : BallotBound.Matching k), ((∃ a, 0 < a ∧ a < J.1 a ∧ cExt c a * cExt c (J.1 a) ≠ 1) → S.piC c (psi S k J) = 0) ∧ ((∀ a, 0 < a → a < J.1 a → cExt c a * cExt c (J.1 a) = 1) → cExt c 0 * cExt c (J.1 0) = 1 ∧ ∃ w : (Rc F S.q (fun i => (c i : F)))ˣ, S.piC c (psi S k J) = w * (∏ a ∈ Finset.univ.filter (fun a => a < J.1 a), (tR c (J.1 a) - 1)) * ∏ a ∈ Finset.univ.filter (fun a => 0 < a ∧ a < J.1 a), (tR c a * tR c (J.1 a) - 1) ^ (S.q - 1))) ∧ (∀ (k : ℕ) (c : Fin (2 * k + 1) → S.μ)
+  [Setting.lean] theorem exists_setting (v : ℕ) (hv : 1 ≤ v) (r : ℕ) (hr : 1 ≤ r) (hpr : ¬ p ∣ r) : ∃ S : ColSetting (AlgebraicClosure (ZMod p)), S.p = p ∧ S.v = v ∧ S.r = r ∧ S.μ = nthRootsFinset r (1 : AlgebraicClosure (ZMod p)) ∧ S.m = p ^ v * r
+  [SelfInv.lean] def SInv : Finset F
+  [Main.lean] theorem lemma95 (c : Fin (2 * k + 1) → S.μ) {R : Finset F} (hR : IsReps2 S R) : ((∃ J : BallotBound.Matching k, Compatible (cExt c) J) → Module.finrank F ((idealI S k).map (S.piC c)) = (∏ ζ ∈ SInv S, Module.finrank F (IcS S c ζ)) * ∏ ζ ∈ R, Module.finrank F (Icz S c ζ)) ∧ ((¬ ∃ J : BallotBound.Matching k, Compatible (cExt c) J) → Module.finrank F ((idealI S k).map (S.piC c)) = 0)
+====================================================================================================
+E17 EvenColours
+  [Main.lean] theorem C2 {R : Finset F} (hR : IsReps2 S R) (k : ℕ) (c : Fin (2 * k + 1) → S.μ) : ((closedT (negT S) (2 * k + 2)).filter fun g => ∀ i, ((g i).1.2 : F) = cExt c i).card = if ∃ J : BallotBound.Matching k, Compatible (cExt c) J then (∏ ζ ∈ SInv S, NS S ζ (cls (cExt c) ζ).card) * ∏ ζ ∈ R, Bip.Nbal (cls (cExt c) ζ).card S.q else 0
+  [Main.lean] theorem C4_even {R : Finset F} (hR : IsReps2 S R) (k : ℕ) (h : Even S.m) : ∑ c : Fin (2 * k + 1) → S.μ, (if ∃ J : BallotBound.Matching k, Compatible (cExt c) J then (∏ ζ ∈ SInv S, NS S ζ (cls (cExt c) ζ).card) * ∏ ζ ∈ R, Bip.Nbal (cls (cExt c) ζ).card S.q else 0) = EvenCount.QkEven k S.m
+  [Main.lean] theorem C4_odd {R : Finset F} (hR : IsReps2 S R) (k : ℕ) (h : Odd S.m) : ∑ c : Fin (2 * k + 1) → S.μ, (if ∃ J : BallotBound.Matching k, Compatible (cExt c) J then (∏ ζ ∈ SInv S, NS S ζ (cls (cExt c) ζ).card) * ∏ ζ ∈ R, Bip.Nbal (cls (cExt c) ζ).card S.q else 0) = Qk k S.m
+====================================================================================================
+E18 EvenMinus
+  [PairIdeal.lean] theorem lemma97 (hAB : (cls (cExt c) ζ).card = (cls (cExt c) ζ⁻¹).card) : Bip.Nbal (cls (cExt c) ζ).card S.q ≤ Module.finrank F (Icz S c ζ)
+  [OneBlock.lean] theorem lemma98 (hp : S.p ≠ 2) (c : Fin (2 * k + 1) → S.μ) : NS S 1 (cls (cExt c) 1).card ≤ Module.finrank F (IcS S c 1)
+  [MinusMain.lean] theorem lemma99 (hneg : (-1 : F) ≠ 1) (c : Fin (2 * k + 1) → S.μ) : EvenColours.NS S (-1) (cls (cExt c) (-1)).card ≤ Module.finrank F (IcS S c (-1))
+  [MinusMain.lean] theorem lemmaM5 (hneg : (-1 : F) ≠ 1) (c : Fin (2 * k + 1) → S.μ) {j : ℕ} (h0 : (0 : Fin (2 * k + 2)) ∈ cls (cExt c) (-1)) (hs : (cls (cExt c) (-1)).card = 2 * j + 2) : Module.finrank F (IcS S c (-1)) = Module.finrank F ((TheoremB.DIdeal F (S.q + 1) j).restrictScalars F) ∧ EvenCount.QkEven j (S.q + 1) ≤ Module.finrank F (IcS S c (-1))
+  [MinusMain.lean] theorem lemmaM6 (hneg : (-1 : F) ≠ 1) (c : Fin (2 * k + 1) → S.μ) {j : ℕ} (h0 : (0 : Fin (2 * k + 2)) ∉ cls (cExt c) (-1)) (hs : (cls (cExt c) (-1)).card = 2 * j + 2) : Module.finrank F (IcS S c (-1)) = Module.finrank F ((OddPatterns.VSAll F ((S.q - 1) / 2) (2 * j + 2) {(OddShapes.emptyPart, false)}).restrictScalars F) ∧ EvenCount.QkEven j (S.q + 1) ≤ Module.finrank F (IcS S c (-1))
+====================================================================================================
+E19 EvenOne
+  [Main.lean] theorem lemma910 (hp : S.p = 2) (c : Fin (2 * k + 1) → S.μ) : EvenColours.NS S 1 (cls (cExt c) 1).card ≤ Module.finrank F (IcS S c 1)
+  [Main.lean] theorem E1 {R : Finset F} (hR : IsReps2 S R) (c : Fin (2 * k + 1) → S.μ) (hcomp : ∃ J : BallotBound.Matching k, Compatible (cExt c) J) : (∏ ζ ∈ SInv S, EvenColours.NS S ζ (cls (cExt c) ζ).card) * ∏ ζ ∈ R, Bip.Nbal (cls (cExt c) ζ).card S.q ≤ (∏ ζ ∈ SInv S, Module.finrank F (IcS S c ζ)) * ∏ ζ ∈ R, Module.finrank F (Icz S c ζ)
+  [Main.lean] theorem E2 {R : Finset F} (hR : IsReps2 S R) (c : Fin (2 * k + 1) → S.μ) : (if ∃ J : BallotBound.Matching k, Compatible (cExt c) J then (∏ ζ ∈ SInv S, EvenColours.NS S ζ (cls (cExt c) ζ).card) * ∏ ζ ∈ R, Bip.Nbal (cls (cExt c) ζ).card S.q else 0) ≤ Module.finrank F ((idealI S k).map (S.piC c))
+  [Main.lean] theorem E3 (k : ℕ) : (EvenColours.closedT (EvenColours.negT S) (2 * k + 2)).card ≤ Module.finrank F ((idealI S k).restrictScalars F) ∧ (Even S.m → EvenCount.QkEven k S.m ≤ Module.finrank F ((idealI S k).restrictScalars F)) ∧ (Odd S.m → TheoremB.Qk k S.m ≤ Module.finrank F ((idealI S k).restrictScalars F))
+====================================================================================================
+E20 EvenAll
+  [PartA.lean] theorem A3 {m : ℕ} (heven : Even m) (h2 : 2 ≤ m) (k : ℕ) : EvenAssembly.HypH m k
+  [PartBC.lean] theorem B1 (F : Type*) [Field F] {m : ℕ} (heven : Even m) (h2 : 2 ≤ m) (k : ℕ) : EveryField.rankOver F (intMatU m k) = QkEven k m ∧ Module.finrank F ((IK F m k).restrictScalars F) = QkEven k m
+  [PartBC.lean] theorem B2 {m : ℕ} (heven : Even m) (h2 : 2 ≤ m) (k : ℕ) : (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧ Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - QkEven k m) ∧ ∀ (F : Type*) [Field F], Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - QkEven k m
+  [PartBC.lean] theorem mainTheorem' {m : ℕ} (hm : 1 ≤ m) (k : ℕ) : (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧ Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - Qall m k) ∧ ∀ (F : Type*) [Field F], Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - Qall m k ∧ Module.finrank F ((IK F m k).restrictScalars F) = Qall m k
+  [PartD.lean] theorem D2 (S : ColSetting F) {R : Finset F} (hR : IsReps2 S R) {k : ℕ} (c : Fin (2 * k + 1) → S.μ) (hcomp : ∃ J : BallotBound.Matching k, Compatible (cExt c) J) : (∀ ζ ∈ SInv S, Module.finrank F (IcS S c ζ) = EvenColours.NS S ζ (cls (cExt c) ζ).card) ∧ ∀ ζ ∈ R, Module.finrank F (Icz S c ζ) = Bip.Nbal (cls (cExt c) ζ).card S.q
+  [PartE.lean] theorem E1 {v : ℕ} (hv : 1 ≤ v) (a : ℕ) : haveI : Fact (Nat.Prime 2)
+  [PartE.lean] theorem E2 (p : ℕ) [Fact p.Prime] (_hp2 : p ≠ 2) {v : ℕ} (hv : 1 ≤ v) (a : ℕ) : Module.finrank (AlgebraicClosure (ZMod p)) ((Bip.Ibal (AlgebraicClosure (ZMod p)) (p ^ v) a).restrictScalars (AlgebraicClosure (ZMod p))) = Bip.Nbal a (p ^ v) ∧ Module.finrank (AlgebraicClosure (ZMod p)) ((Bip.Iph (AlgebraicClosure (ZMod p)) (p ^ v) a).restrictScalars (AlgebraicClosure (ZMod p))) = Bip.Nph a (p ^ v)
+====================================================================================================
+E15 OddEquality
+  [PartD.lean] theorem D1 (F : Type*) [Field F] {h : ℕ} (hh : 1 ≤ h) (k : ℕ) : Module.finrank F ((TheoremB.DIdeal F (2 * h + 2) k).restrictScalars F) = EvenCount.QkEven k (2 * h + 2) ∧ Module.finrank F ((Mideal F (2 * h + 2) (2 * k + 2)).restrictScalars F) = EvenCount.QkEven k (2 * h + 2)
+  [PartD.lean] theorem D2_DJ {h : ℕ} (hh : 1 ≤ h) (k : ℕ) : Module.Free ℤ (CZ (2 * h + 2) (2 * k + 1) ⧸ DIdealZ (2 * h + 2) k) ∧ Module.finrank ℤ (CZ (2 * h + 2) (2 * k + 1) ⧸ DIdealZ (2 * h + 2) k) = (2 * h + 1) ^ (2 * k + 1) - EvenCount.QkEven k (2 * h + 2)
+  [PartD.lean] theorem D2_M {h : ℕ} (hh : 1 ≤ h) (k : ℕ) : Module.Free ℤ (CZ (2 * h + 2) (2 * k + 2) ⧸ MidealZ (2 * h + 2) (2 * k + 2)) ∧ Module.finrank ℤ (CZ (2 * h + 2) (2 * k + 2) ⧸ MidealZ (2 * h + 2) (2 * k + 2)) = (2 * h + 1) ^ (2 * k + 2) - EvenCount.QkEven k (2 * h + 2)
+  [PartA.lean] theorem A5 (h k : ℕ) : Module.finrank F ((TheoremB.DIdeal F (2 * h + 2) k).restrictScalars F) ≤ Module.finrank F ((Mideal F (2 * h + 2) (2 * k + 2)).restrictScalars F)
+  [PartB.lean] theorem B3 (h : ℕ) : Module.finrank F ((Mideal F (2 * h + 2) n).restrictScalars F) ≤ Module.finrank F (Peel.C F (2 * h + 2) n ⧸ Kint F (2 * h + 2) n)
+  [PartC.lean] theorem partC (h k : ℕ) : Module.finrank ℚ (Peel.C ℚ (2 * h + 2) (2 * k + 2) ⧸ Kint ℚ (2 * h + 2) (2 * k + 2)) ≤ EvenCount.QkEven k (2 * h + 2)
+VIGIA-FIN-OK exit=0 pico_kb=2384 t=0s

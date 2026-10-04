@@ -1,0 +1,4 @@
+project constants in the cone of the five roots: 4669
+NEGATIVE CONTROL: rejected by the kernel, as it must be
+checked items 0..4668 of 4669 in 102042 ms (stopped by budget: false): re-checked OK 4650, FAILED 0, skipped (inductive/ctor/rec/quot) 19, axioms 0
+VIGIA-FIN-OK exit=0 pico_kb=2545296 t=173s

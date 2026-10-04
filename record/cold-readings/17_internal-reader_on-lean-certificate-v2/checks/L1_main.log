@@ -1,0 +1,2192 @@
+@EvenAll.mainTheorem' : ∀ {m : ℕ},
+  1 ≤ m →
+    ∀ (k : ℕ),
+      (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+          Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - EvenAll.Qall m k) ∧
+        ∀ (F : Type u_1) [inst : Field F],
+          Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - EvenAll.Qall m k ∧
+            Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) = EvenAll.Qall m k
+EvenAll.B1 : ∀ (F : Type u_1) [inst : Field F] {m : ℕ},
+  Even m →
+    2 ≤ m →
+      ∀ (k : ℕ),
+        EveryField.rankOver F (intMatU m k) = EvenCount.QkEven k m ∧
+          Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) = EvenCount.QkEven k m
+@EvenAll.B2 : ∀ {m : ℕ},
+  Even m →
+    2 ≤ m →
+      ∀ (k : ℕ),
+        (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+            Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - EvenCount.QkEven k m) ∧
+          ∀ (F : Type u_1) [inst : Field F],
+            Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - EvenCount.QkEven k m
+@EvenAll.A3 : ∀ {m : ℕ}, Even m → 2 ≤ m → ∀ (k : ℕ), EvenAssembly.HypH m k
+EvenAssembly.HypH : ℕ → ℕ → Prop
+EvenAssembly.theorem_ii : ∀ (F : Type u_1) [inst : Field F] {m k : ℕ},
+  Even m →
+    2 ≤ m →
+      EvenAssembly.HypH m k →
+        EveryField.rankOver F (intMatU m k) = EvenCount.QkEven k m ∧
+          Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) = EvenCount.QkEven k m
+@EvenAssembly.theorem_iii : ∀ {m k : ℕ},
+  Even m →
+    2 ≤ m →
+      EvenAssembly.HypH m k →
+        (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+            Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - EvenCount.QkEven k m) ∧
+          ∀ (F : Type u_1) [inst : Field F],
+            Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - EvenCount.QkEven k m
+@mainTheorem' : ∀ {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ),
+      (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+          Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - TheoremB.Qk k m) ∧
+        ∀ (F : Type) [inst : Field F],
+          Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - TheoremB.Qk k m
+@mainTheorem'_Z : ∀ {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ),
+      Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+        Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - TheoremB.Qk k m
+@mainTheorem'_field : ∀ {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ) (F : Type u_1) [inst : Field F],
+      Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - TheoremB.Qk k m
+finrank_IK_eq : ∀ (F : Type u_1) [inst : Field F] {m : ℕ},
+  Odd m → ∀ (k : ℕ), Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) = TheoremB.Qk k m
+OddEquality.D1 : ∀ (F : Type u_1) [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F (2 * h + 2) k)) =
+          EvenCount.QkEven k (2 * h + 2) ∧
+        Module.finrank F ↥(Submodule.restrictScalars F (OddEquality.Mideal F (2 * h + 2) (2 * k + 2))) =
+          EvenCount.QkEven k (2 * h + 2)
+@OddEquality.D2_DJ : ∀ {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.Free ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 1) ⧸ OddEquality.DIdealZ (2 * h + 2) k) ∧
+        Module.finrank ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 1) ⧸ OddEquality.DIdealZ (2 * h + 2) k) =
+          (2 * h + 1) ^ (2 * k + 1) - EvenCount.QkEven k (2 * h + 2)
+@OddEquality.D2_M : ∀ {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.Free ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 2) ⧸ OddEquality.MidealZ (2 * h + 2) (2 * k + 2)) ∧
+        Module.finrank ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 2) ⧸ OddEquality.MidealZ (2 * h + 2) (2 * k + 2)) =
+          (2 * h + 1) ^ (2 * k + 2) - EvenCount.QkEven k (2 * h + 2)
+OddTheorem.theoremO : ∀ (F : Type u_1) [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      EvenCount.QkEven k (2 * h + 2) ≤ Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F (2 * h + 2) k))
+@EvenOne.E3 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) (k : ℕ),
+  (EvenColours.closedT (EvenColours.negT S) (2 * k + 2)).card ≤
+      Module.finrank F ↥(Submodule.restrictScalars F (ColDecomp.idealI S k)) ∧
+    (Even S.m → EvenCount.QkEven k S.m ≤ Module.finrank F ↥(Submodule.restrictScalars F (ColDecomp.idealI S k))) ∧
+      (Odd S.m → TheoremB.Qk k S.m ≤ Module.finrank F ↥(Submodule.restrictScalars F (ColDecomp.idealI S k)))
+@EvenMinus.lemma99 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ},
+  -1 ≠ 1 →
+    ∀ (c : Fin (2 * k + 1) → ↥S.μ),
+      EvenColours.NS S (-1) (ColComp.cls (ColSurv.cExt c) (-1)).card ≤ Module.finrank F ↥(EvenBlocks.IcS S c (-1))
+@RankTwo.R4 : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin s → Fin n → R) (E O : Fin n → R),
+      Pfaffian.bpf (a - Matrix.of fun i j => E i * O j - E j * O i) c =
+        Pfaffian.bpf a c + Pfaffian.bpf a (Fin.snoc (Fin.snoc c E) O)
+@EvenCount.card_Gamma_even : ∀ {K : Type u_1} [inst : Field K] {m : ℕ} {μm : Finset K}
+  (hprod : Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ)),
+  ↑m ≠ 0 → Even m → ∀ (k : ℕ), (Gamma hprod k).card = EvenCount.QkEven k m
+@finrank_IK_eq_card_Gamma : ∀ {K : Type u_1} [inst : Field K] {m : ℕ} {μm : Finset K}
+  (hprod : Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ)) (k : ℕ),
+  Module.finrank K ↥(Submodule.restrictScalars K (IK K m k)) = (Gamma hprod k).card
+@Gamma : {K : Type u_1} →
+  [inst : Field K] →
+    {m : ℕ} →
+      {μm : Finset K} →
+        Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ) → (k : ℕ) → Finset (Fin (2 * k + 1) → ↥μm)
+EvenCount.finrank_IK_le_even : ∀ (F : Type u_1) [inst : Field F] {m : ℕ},
+  Even m → 2 ≤ m → ∀ (k : ℕ), Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) ≤ EvenCount.QkEven k m
+Pow2.q_two : ∀ (F : Type u_1) [inst : Field F] [CharP F 2] (k : ℕ),
+  Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F 2 k)) = 1 ∧
+    EvenCount.QkEven k 2 = 1 ∧ Module.finrank F ↥(Submodule.restrictScalars F (IK F 2 k)) = 1
+def EvenAll.Qall : ℕ → ℕ → ℕ :=
+fun m k => if Even m then EvenCount.QkEven k m else TheoremB.Qk k m
+def EvenCount.QkEven : ℕ → ℕ → ℕ :=
+fun k m =>
+  ∑ c ∈ Finset.range (k + 2),
+    ∑ b ∈ Fintype.piFinset fun x => Finset.range (2 * k + 3) with 2 * c + 2 * ∑ u, b u = 2 * k + 2,
+      (2 * k + 2).factorial / ((2 * c).factorial * ∏ u, (b u).factorial ^ 2)
+def TheoremB.Qk : ℕ → ℕ → ℕ :=
+fun k q =>
+  ∑ b ∈ Fintype.piFinset fun x => Finset.range (2 * k + 3) with 2 * ∑ u, b u = 2 * k + 2,
+    (2 * k + 2).factorial / ∏ u, (b u).factorial ^ 2
+def ColAssembly.idealZ : (d : ℕ) → ℕ → Ideal (MvPolynomial (Fin d) ℤ) :=
+fun d m => Ideal.span (Set.range fun i => MvPolynomial.X i ^ m - 1)
+@[reducible] def ColAssembly.RZ : ℕ → ℕ → Type :=
+fun d m => MvPolynomial (Fin d) ℤ ⧸ idealZ d m
+def ColAssembly.IZ : (m k : ℕ) → Ideal (RZ (2 * k + 1) m) :=
+fun m k => Ideal.span (Set.range fun J => (Ideal.Quotient.mk (idealZ (2 * k + 1) m)) (psiP ℤ m J))
+def ColUpper.psiP.{u_1} : (R : Type u_1) →
+  [inst : CommRing R] → ℕ → {k : ℕ} → BallotBound.Matching k → MvPolynomial (Fin (2 * k + 1)) R :=
+fun R [CommRing R] m {k} J =>
+  (∏ a with a < ↑J a, (tP R k (↑J a) - 1)) * ∏ a with 0 < a ∧ a < ↑J a, ColSurv.phi m (tP R k a * tP R k (↑J a))
+def ColUpper.tP.{u_1} : (R : Type u_1) →
+  [inst : CommRing R] → (k : ℕ) → Fin (2 * k + 2) → MvPolynomial (Fin (2 * k + 1)) R :=
+fun R [CommRing R] k i => Fin.cases 0 MvPolynomial.X i
+def ColSurv.phi.{u_2} : {A : Type u_2} → [Semiring A] → ℕ → A → A :=
+fun {A} [Semiring A] m u => ∑ s ∈ Finset.range m, u ^ s
+def BallotBound.Matching : ℕ → Type :=
+fun k => { J // ∀ (x : Fin (2 * k + 2)), J x ≠ x ∧ J (J x) = x }
+def ColSplit.gaIdeal.{u_1} : (F : Type u_1) → [inst : Field F] → (d : ℕ) → ℕ → Ideal (MvPolynomial (Fin d) F) :=
+fun F [Field F] d m => Ideal.span (Set.range fun i => MvPolynomial.X i ^ m - 1)
+@[reducible] def ColSplit.GA.{u_1} : (F : Type u_1) → [Field F] → ℕ → ℕ → Type u_1 :=
+fun F [Field F] d m => MvPolynomial (Fin d) F ⧸ gaIdeal F d m
+def ColUpper.IK.{u_1} : (K : Type u_1) → [inst : Field K] → (m k : ℕ) → Ideal (GA K (2 * k + 1) m) :=
+fun K [Field K] m k => Ideal.span (Set.range (psiG K m))
+def ColUpper.psiG.{u_1} : (K : Type u_1) →
+  [inst : Field K] → (m : ℕ) → {k : ℕ} → BallotBound.Matching k → GA K (2 * k + 1) m :=
+fun K [Field K] m {k} J =>
+  (∏ a with a < ↑J a, (tU K m k (↑J a) - 1)) * ∏ a with 0 < a ∧ a < ↑J a, ColSurv.phi m (tU K m k a * tU K m k (↑J a))
+def ColUpper.tU.{u_1} : (K : Type u_1) → [inst : Field K] → (m k : ℕ) → Fin (2 * k + 2) → GA K (2 * k + 1) m :=
+fun K [Field K] m k i => Fin.cases 0 (fun j => (Ideal.Quotient.mk (gaIdeal K (2 * k + 1) m)) (MvPolynomial.X j)) i
+def TheoremB.DIdeal.{u_1} : (F : Type u_1) → [inst : Field F] → (q k : ℕ) → Ideal (Peel.C F q (2 * k + 1)) :=
+fun F [Field F] q k => Ideal.span (Set.range (TheoremB.DJ F q))
+def TheoremB.DJ.{u_1} : (F : Type u_1) →
+  [inst : Field F] → (q : ℕ) → {k : ℕ} → BallotBound.Matching k → Peel.C F q (2 * k + 1) :=
+fun F [Field F] q {k} J => ∏ a with a ≠ 0 ∧ ↑J a ≠ 0 ∧ a < ↑J a, Tight.D F q (TheoremB.idx a) (TheoremB.idx (↑J a))
+def TheoremB.idx : {k : ℕ} → Fin (2 * k + 2) → Fin (2 * k + 1) :=
+fun {k} a => ⟨↑a - 1, ⋯⟩
+def Tight.D.{u_1} : (F : Type u_1) → [inst : Field F] → (q : ℕ) → {m : ℕ} → Fin m → Fin m → Peel.C F q m :=
+fun F [Field F] q {m} a b => ∑ i ∈ Finset.range (q - 1), (-1) ^ i * Tight.y F q a ^ i * Tight.y F q b ^ (q - 2 - i)
+def Tight.y.{u_1} : (F : Type u_1) → [inst : Field F] → (q : ℕ) → {m : ℕ} → Fin m → Peel.C F q m :=
+fun F [Field F] q {m} a => (Ideal.Quotient.mk (Peel.powIdeal F q m)) (MvPolynomial.X a)
+@[reducible] def Peel.C.{u_1} : (F : Type u_1) → [Field F] → ℕ → ℕ → Type u_1 :=
+fun F [Field F] q m => MvPolynomial (Fin m) F ⧸ Peel.powIdeal F q m
+def Peel.powIdeal.{u_1} : (F : Type u_1) → [inst : Field F] → ℕ → (m : ℕ) → Ideal (MvPolynomial (Fin m) F) :=
+fun F [Field F] q m => Ideal.span (Set.range fun i => MvPolynomial.X i ^ (q - 1))
+def OddEquality.Mideal.{u_1} : (F : Type u_1) → [inst : Field F] → (q n : ℕ) → Ideal (Peel.C F q n) :=
+fun F [Field F] q n => Ideal.span (Set.range fun P => ColOne.DPn F q P)
+def ColOne.DPn.{u_1} : (F : Type u_1) →
+  [inst : Field F] → (q : ℕ) → {n : ℕ} → ColComp.PerfMatch (Fin n) → Peel.C F q n :=
+fun F [Field F] q {n} P => ∏ a with a < ↑P a, Tight.D F q a (↑P a)
+def ColComp.PerfMatch.{u_1} : Type u_1 → Type u_1 :=
+fun T => { P // ∀ (x : T), P x ≠ x ∧ P (P x) = x }
+def OddEquality.DIdealZ : (q k : ℕ) → Ideal (FreeZ.CZ q (2 * k + 1)) :=
+fun q k => Ideal.span (Set.range fun J => (Ideal.Quotient.mk (FreeZ.powIdealZ q (2 * k + 1))) (OddEquality.DJZ q J))
+def OddEquality.DJZ : ℕ → {k : ℕ} → BallotBound.Matching k → MvPolynomial (Fin (2 * k + 1)) ℤ :=
+fun q {k} J => ∏ a with a ≠ 0 ∧ ↑J a ≠ 0 ∧ a < ↑J a, EveryField.DPR ℤ q (TheoremB.idx a) (TheoremB.idx (↑J a))
+def OddEquality.MidealZ : (q n : ℕ) → Ideal (FreeZ.CZ q n) :=
+fun q n => Ideal.span (Set.range fun P => (Ideal.Quotient.mk (FreeZ.powIdealZ q n)) (OddEquality.DPnZ q P))
+def OddEquality.DPnZ : ℕ → {n : ℕ} → ColComp.PerfMatch (Fin n) → MvPolynomial (Fin n) ℤ :=
+fun q {n} P => ∏ a with a < ↑P a, EveryField.DPR ℤ q a (↑P a)
+def EveryField.DPR.{u_1} : (R : Type u_1) →
+  [inst : CommRing R] → ℕ → {m : ℕ} → Fin m → Fin m → MvPolynomial (Fin m) R :=
+fun R [CommRing R] q {m} a b =>
+  ∑ i ∈ Finset.range (q - 1), (-1) ^ i * MvPolynomial.X a ^ i * MvPolynomial.X b ^ (q - 2 - i)
+@[reducible] def FreeZ.CZ : ℕ → ℕ → Type :=
+fun q m => MvPolynomial (Fin m) ℤ ⧸ FreeZ.powIdealZ q m
+def FreeZ.powIdealZ : ℕ → (m : ℕ) → Ideal (MvPolynomial (Fin m) ℤ) :=
+fun q m => Ideal.span (Set.range fun i => MvPolynomial.X i ^ (q - 1))
+fun F [inst : Field F] m k =>
+  @Module.finrank F
+    (@HasQuotient.Quotient
+      (@GA F inst
+        (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+          (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+            k)
+          (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+        m)
+      (@Ideal
+        (@GA F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m)
+        (@Ideal.Quotient.semiring
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial.instCommRingMvPolynomial F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+          (@gaIdeal F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)))
+      (@Ideal.instHasQuotient_1
+        (@GA F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m)
+        (@Ideal.Quotient.commRing
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial.instCommRingMvPolynomial F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+          (@gaIdeal F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)))
+      (@IK F inst m k))
+    (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+    (@NonUnitalNonAssocSemiring.toAddCommMonoid
+      (@HasQuotient.Quotient
+        (@GA F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m)
+        (@Ideal
+          (@GA F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)
+          (@Ideal.Quotient.semiring
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.instCommRingMvPolynomial F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+            (@gaIdeal F inst
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              m)))
+        (@Ideal.instHasQuotient_1
+          (@GA F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)
+          (@Ideal.Quotient.commRing
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.instCommRingMvPolynomial F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+            (@gaIdeal F inst
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              m)))
+        (@IK F inst m k))
+      (@NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring
+        (@HasQuotient.Quotient
+          (@GA F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)
+          (@Ideal
+            (@GA F inst
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              m)
+            (@Ideal.Quotient.semiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.instCommRingMvPolynomial F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+              (@gaIdeal F inst
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                m)))
+          (@Ideal.instHasQuotient_1
+            (@GA F inst
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              m)
+            (@Ideal.Quotient.commRing
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.instCommRingMvPolynomial F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+              (@gaIdeal F inst
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                m)))
+          (@IK F inst m k))
+        (@NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing
+          (@HasQuotient.Quotient
+            (@GA F inst
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              m)
+            (@Ideal
+              (@GA F inst
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                m)
+              (@Ideal.Quotient.semiring
+                (@MvPolynomial
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                (@MvPolynomial.instCommRingMvPolynomial F
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+                (@gaIdeal F inst
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                  m)))
+            (@Ideal.instHasQuotient_1
+              (@GA F inst
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                m)
+              (@Ideal.Quotient.commRing
+                (@MvPolynomial
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                (@MvPolynomial.instCommRingMvPolynomial F
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+                (@gaIdeal F inst
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                  m)))
+            (@IK F inst m k))
+          (@NonUnitalCommRing.toNonUnitalNonAssocCommRing
+            (@HasQuotient.Quotient
+              (@GA F inst
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                m)
+              (@Ideal
+                (@GA F inst
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                  m)
+                (@Ideal.Quotient.semiring
+                  (@MvPolynomial
+                    (Fin
+                      (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                        (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                          (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                        (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                    F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                  (@MvPolynomial.instCommRingMvPolynomial F
+                    (Fin
+                      (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                        (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                          (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                        (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                    (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+                  (@gaIdeal F inst
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                    m)))
+              (@Ideal.instHasQuotient_1
+                (@GA F inst
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                  m)
+                (@Ideal.Quotient.commRing
+                  (@MvPolynomial
+                    (Fin
+                      (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                        (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                          (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                        (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                    F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                  (@MvPolynomial.instCommRingMvPolynomial F
+                    (Fin
+                      (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                        (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                          (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                        (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                    (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+                  (@gaIdeal F inst
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                    m)))
+              (@IK F inst m k))
+            (@CommRing.toNonUnitalCommRing
+              (@HasQuotient.Quotient
+                (@GA F inst
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                  m)
+                (@Ideal
+                  (@GA F inst
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                    m)
+                  (@Ideal.Quotient.semiring
+                    (@MvPolynomial
+                      (Fin
+                        (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                          (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                            (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                          (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                      F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                    (@MvPolynomial.instCommRingMvPolynomial F
+                      (Fin
+                        (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                          (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                            (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                          (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                      (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+                    (@gaIdeal F inst
+                      (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                        (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                          (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                        (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                      m)))
+                (@Ideal.instHasQuotient_1
+                  (@GA F inst
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                    m)
+                  (@Ideal.Quotient.commRing
+                    (@MvPolynomial
+                      (Fin
+                        (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                          (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                            (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                          (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                      F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                    (@MvPolynomial.instCommRingMvPolynomial F
+                      (Fin
+                        (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                          (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                            (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                          (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                      (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+                    (@gaIdeal F inst
+                      (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                        (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                          (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                        (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                      m)))
+                (@IK F inst m k))
+              (@Ideal.Quotient.commRing
+                (@GA F inst
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                  m)
+                (@Ideal.Quotient.commRing
+                  (@MvPolynomial
+                    (Fin
+                      (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                        (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                          (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                        (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                    F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                  (@MvPolynomial.instCommRingMvPolynomial F
+                    (Fin
+                      (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                        (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                          (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                        (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                    (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+                  (@gaIdeal F inst
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                    m))
+                (@IK F inst m k)))))))
+    (@Submodule.Quotient.module'
+      (@GA F inst
+        (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+          (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+            k)
+          (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+        m)
+      (@GA F inst
+        (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+          (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+            k)
+          (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+        m)
+      (@Ideal.Quotient.instRingQuotient
+        (@MvPolynomial
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+        (@MvPolynomial.instCommRingMvPolynomial F
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          (@Field.toCommRing F inst))
+        (@gaIdeal F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m))
+      (@Submodule.Quotient.addCommGroup
+        (@MvPolynomial
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+        (@MvPolynomial
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+        (@CommRing.toRing
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial.instCommRingMvPolynomial F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))
+        (@Ring.toAddCommGroup
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@CommRing.toRing
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.instCommRingMvPolynomial F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))))
+        (@Semiring.toModule
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@Ring.toSemiring
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@CommRing.toRing
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.instCommRingMvPolynomial F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))))
+        (@gaIdeal F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m))
+      (@Semiring.toModule
+        (@GA F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m)
+        (@Ideal.Quotient.semiring
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial.instCommRingMvPolynomial F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+          (@gaIdeal F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)))
+      F (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+      (@Submodule.Quotient.instSMul'
+        (@MvPolynomial
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+        (@MvPolynomial
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+        (@CommRing.toRing
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial.instCommRingMvPolynomial F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))
+        (@LieRing.toAddCommGroup
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@LieRing.ofAssociativeRing
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@CommRing.toRing
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.instCommRingMvPolynomial F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))))
+        (@Semiring.toModule
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@CommSemiring.toSemiring
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.commSemiring F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+        F
+        (@Algebra.toSMul F
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+          (@CommSemiring.toSemiring
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.commSemiring F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))))
+          (@MvPolynomial.algebra F F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@Algebra.id F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+        (@Algebra.toSMul F
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+          (@CommSemiring.toSemiring
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.commSemiring F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))))
+          (@MvPolynomial.algebra F F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@Algebra.id F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+        ⋯
+        (@gaIdeal F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m))
+      (@Submodule.Quotient.module'
+        (@MvPolynomial
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+        (@MvPolynomial
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+        (@CommRing.toRing
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial.instCommRingMvPolynomial F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))
+        (@LieRing.toAddCommGroup
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@LieRing.ofAssociativeRing
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@CommRing.toRing
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.instCommRingMvPolynomial F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))))
+        (@Semiring.toModule
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@CommSemiring.toSemiring
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.commSemiring F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+        F (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+        (@Algebra.toSMul F
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+          (@CommSemiring.toSemiring
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.commSemiring F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))))
+          (@MvPolynomial.algebra F F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@Algebra.id F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+        (@MvPolynomial.module F F
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+          (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+          (@LieAlgebra.toModule F F (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))
+            (@LieRing.ofAssociativeRing F (@DivisionRing.toRing F (@Field.toDivisionRing F inst)))
+            (@LieAlgebra.ofAssociativeAlgebra F (@DivisionRing.toRing F (@Field.toDivisionRing F inst)) F
+              (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))
+              (@Algebra.id F
+                (@CommRing.toCommSemiring F (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))))))
+        ⋯
+        (@gaIdeal F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m))
+      ⋯ (@IK F inst m k)) : (F : Type) → [Field F] → Nat → Nat → Nat
+fun F [inst : ⋯] m k =>
+  @Module.finrank F
+    (↥(@Submodule.restrictScalars F
+        (@GA F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m)
+        (@GA F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m)
+        (@Ideal.Quotient.semiring
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial.instCommRingMvPolynomial F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+          (@gaIdeal F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m))
+        (@NonUnitalNonAssocSemiring.toAddCommMonoid
+          (@GA F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)
+          (@NonAssocSemiring.toNonUnitalNonAssocSemiring
+            (@GA F inst
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              m)
+            (@Semiring.toNonAssocSemiring
+              (@GA F inst
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                m)
+              (@Ideal.Quotient.semiring
+                (@MvPolynomial
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                (@MvPolynomial.instCommRingMvPolynomial F
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+                (@gaIdeal F inst
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                  m)))))
+        (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+        (@Submodule.Quotient.module'
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@CommRing.toRing
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.instCommRingMvPolynomial F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))
+          (@LieRing.toAddCommGroup
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@LieRing.ofAssociativeRing
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@CommRing.toRing
+                (@MvPolynomial
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                (@MvPolynomial.instCommRingMvPolynomial F
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))))
+          (@Semiring.toModule
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@CommSemiring.toSemiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.commSemiring F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+          F (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+          (@Algebra.toSMul F
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@CommSemiring.toSemiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.commSemiring F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Semifield.toCommSemiring F (@Field.toSemifield F inst))))
+            (@MvPolynomial.algebra F F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Algebra.id F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+          (@MvPolynomial.module F F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@LieAlgebra.toModule F F (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))
+              (@LieRing.ofAssociativeRing F (@DivisionRing.toRing F (@Field.toDivisionRing F inst)))
+              (@LieAlgebra.ofAssociativeAlgebra F (@DivisionRing.toRing F (@Field.toDivisionRing F inst)) F
+                (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))
+                (@Algebra.id F
+                  (@CommRing.toCommSemiring F (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))))))
+          ⋯
+          (@gaIdeal F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m))
+        (@Semiring.toModule
+          (@GA F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)
+          (@Ideal.Quotient.semiring
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.instCommRingMvPolynomial F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+            (@gaIdeal F inst
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              m)))
+        (@Submodule.Quotient.instSMul'
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@CommRing.toRing
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.instCommRingMvPolynomial F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))
+          (@LieRing.toAddCommGroup
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@LieRing.ofAssociativeRing
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@CommRing.toRing
+                (@MvPolynomial
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                (@MvPolynomial.instCommRingMvPolynomial F
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))))
+          (@Semiring.toModule
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@CommSemiring.toSemiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.commSemiring F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+          F
+          (@Algebra.toSMul F
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@CommSemiring.toSemiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.commSemiring F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Semifield.toCommSemiring F (@Field.toSemifield F inst))))
+            (@MvPolynomial.algebra F F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Algebra.id F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+          (@Algebra.toSMul F
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@CommSemiring.toSemiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.commSemiring F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Semifield.toCommSemiring F (@Field.toSemifield F inst))))
+            (@MvPolynomial.algebra F F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Algebra.id F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+          ⋯
+          (@gaIdeal F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m))
+        ⋯ (@IK F inst m k)))
+    (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+    (@Submodule.addCommMonoid F
+      (@GA F inst
+        (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+          (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+            k)
+          (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+        m)
+      (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+      (@NonUnitalNonAssocSemiring.toAddCommMonoid
+        (@GA F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m)
+        (@NonAssocSemiring.toNonUnitalNonAssocSemiring
+          (@GA F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)
+          (@Semiring.toNonAssocSemiring
+            (@GA F inst
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              m)
+            (@Ideal.Quotient.semiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.instCommRingMvPolynomial F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+              (@gaIdeal F inst
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                m)))))
+      (@Submodule.Quotient.module'
+        (@MvPolynomial
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+        (@MvPolynomial
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+        (@CommRing.toRing
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial.instCommRingMvPolynomial F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))
+        (@LieRing.toAddCommGroup
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@LieRing.ofAssociativeRing
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@CommRing.toRing
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.instCommRingMvPolynomial F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))))
+        (@Semiring.toModule
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@CommSemiring.toSemiring
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.commSemiring F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+        F (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+        (@Algebra.toSMul F
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+          (@CommSemiring.toSemiring
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.commSemiring F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))))
+          (@MvPolynomial.algebra F F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@Algebra.id F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+        (@MvPolynomial.module F F
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+          (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+          (@LieAlgebra.toModule F F (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))
+            (@LieRing.ofAssociativeRing F (@DivisionRing.toRing F (@Field.toDivisionRing F inst)))
+            (@LieAlgebra.ofAssociativeAlgebra F (@DivisionRing.toRing F (@Field.toDivisionRing F inst)) F
+              (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))
+              (@Algebra.id F
+                (@CommRing.toCommSemiring F (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))))))
+        ⋯
+        (@gaIdeal F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m))
+      (@Submodule.restrictScalars F
+        (@GA F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m)
+        (@GA F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m)
+        (@Ideal.Quotient.semiring
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial.instCommRingMvPolynomial F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+          (@gaIdeal F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m))
+        (@NonUnitalNonAssocSemiring.toAddCommMonoid
+          (@GA F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)
+          (@NonAssocSemiring.toNonUnitalNonAssocSemiring
+            (@GA F inst
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              m)
+            (@Semiring.toNonAssocSemiring
+              (@GA F inst
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                m)
+              (@Ideal.Quotient.semiring
+                (@MvPolynomial
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                (@MvPolynomial.instCommRingMvPolynomial F
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+                (@gaIdeal F inst
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                  m)))))
+        (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+        (@Submodule.Quotient.module'
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@CommRing.toRing
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.instCommRingMvPolynomial F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))
+          (@LieRing.toAddCommGroup
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@LieRing.ofAssociativeRing
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@CommRing.toRing
+                (@MvPolynomial
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                (@MvPolynomial.instCommRingMvPolynomial F
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))))
+          (@Semiring.toModule
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@CommSemiring.toSemiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.commSemiring F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+          F (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+          (@Algebra.toSMul F
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@CommSemiring.toSemiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.commSemiring F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Semifield.toCommSemiring F (@Field.toSemifield F inst))))
+            (@MvPolynomial.algebra F F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Algebra.id F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+          (@MvPolynomial.module F F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@LieAlgebra.toModule F F (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))
+              (@LieRing.ofAssociativeRing F (@DivisionRing.toRing F (@Field.toDivisionRing F inst)))
+              (@LieAlgebra.ofAssociativeAlgebra F (@DivisionRing.toRing F (@Field.toDivisionRing F inst)) F
+                (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))
+                (@Algebra.id F
+                  (@CommRing.toCommSemiring F (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))))))
+          ⋯
+          (@gaIdeal F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m))
+        (@Semiring.toModule
+          (@GA F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)
+          (@Ideal.Quotient.semiring
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.instCommRingMvPolynomial F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+            (@gaIdeal F inst
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              m)))
+        (@Submodule.Quotient.instSMul'
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@CommRing.toRing
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@MvPolynomial.instCommRingMvPolynomial F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))
+          (@LieRing.toAddCommGroup
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@LieRing.ofAssociativeRing
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@CommRing.toRing
+                (@MvPolynomial
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+                (@MvPolynomial.instCommRingMvPolynomial F
+                  (Fin
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                      (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                  (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))))
+          (@Semiring.toModule
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@CommSemiring.toSemiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.commSemiring F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+          F
+          (@Algebra.toSMul F
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@CommSemiring.toSemiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.commSemiring F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Semifield.toCommSemiring F (@Field.toSemifield F inst))))
+            (@MvPolynomial.algebra F F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Algebra.id F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+          (@Algebra.toSMul F
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+            (@CommSemiring.toSemiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.commSemiring F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@Semifield.toCommSemiring F (@Field.toSemifield F inst))))
+            (@MvPolynomial.algebra F F
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Semifield.toCommSemiring F (@Field.toSemifield F inst))
+              (@Algebra.id F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))))
+          ⋯
+          (@gaIdeal F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m))
+        ⋯ (@IK F inst m k)))
+    (@Submodule.module F
+      (@GA F inst
+        (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+          (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+            k)
+          (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+        m)
+      (@DivisionSemiring.toSemiring F (@Semifield.toDivisionSemiring F (@Field.toSemifield F inst)))
+      (@NonUnitalNonAssocSemiring.toAddCommMonoid
+        (@GA F inst
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              k)
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          m)
+        (@NonAssocSemiring.toNonUnitalNonAssocSemiring
+          (@GA F inst
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+            m)
+          (@Semiring.toNonAssocSemiring
+            (@GA F inst
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+              m)
+            (@Ideal.Quotient.semiring
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.instCommRingMvPolynomial F
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst)))
+              (@gaIdeal F inst
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+                m)))))
+      (@Submodule.Quotient.module'
+        (@MvPolynomial
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+        (@MvPolynomial
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+        (@CommRing.toRing
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@MvPolynomial.instCommRingMvPolynomial F
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            (@EuclideanDomain.toCommRing F (@Field.toEuclideanDomain F inst))))
+        (@LieRing.toAddCommGroup
+          (@MvPolynomial
+            (Fin
+              (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                  (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+            F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+          (@LieRing.ofAssociativeRing
+            (@MvPolynomial
+              (Fin
+                (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                  (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                    (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+              F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+            (@CommRing.toRing
+              (@MvPolynomial
+                (Fin
+                  (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                    (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                      (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+                    (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+                F (@Semifield.toCommSemiring F (@Field.toSemifield F inst)))
+              (@MvPolynomial.instCommRingMvPolynomial F
+                (Fin (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat) (@HMul.hMul Nat ⋯ ⋯ ⋯ ⋯ ⋯) ⋯)) ⋯))))
+        ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯)
+      ⋯) : (F : Type) → [Field F] → Nat → Nat → Nat
+'EvenAll.mainTheorem'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.A3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColAssembly.mainTheorem'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.D1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.D2_DJ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.D2_M' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.theoremO' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.E3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenMinus.lemma99' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.R4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.card_Gamma_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.QkEven_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+[19, 61, 141, 127]
+[6, 36, 90, 168]
+[1, 1, 1, 0, 0, 0, 2, 3, 20, 400, 1001, 70, 1107, 217, 331, 270]
+../../checks/L1_main.lean:141:2: error: failed to synthesize
+  Module.Free ℤ (RZ 3 6 ⧸ IZ 6 1)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+../../checks/L1_main.lean:170:32: warning: unused variable `hk`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+61
+'gs_Qall_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=1 pico_kb=1431632 t=262s

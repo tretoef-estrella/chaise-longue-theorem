@@ -1,0 +1,11 @@
+Environment.replay : Std.HashMap Name ConstantInfo → Environment → IO Environment
+@importModules : Array Import →
+  Options →
+    optParam UInt32 0 →
+      optParam (Array System.FilePath) #[] →
+        optParam Bool false →
+          optParam Bool false →
+            optParam OLeanLevel OLeanLevel.private → optParam (NameMap ImportArtifacts) ∅ → IO Environment
+@Kernel.Environment.addDecl : Kernel.Environment →
+  Options → Declaration → optParam (Option IO.CancelToken) none → Except Kernel.Exception Kernel.Environment
+VIGIA-FIN-OK exit=0 pico_kb=1413808 t=8s

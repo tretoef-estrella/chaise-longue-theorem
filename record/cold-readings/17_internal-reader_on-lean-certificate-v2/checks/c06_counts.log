@@ -1,0 +1,79 @@
+== §7 totals (files, lines[wc -l], lines[incl. unterminated last], thm/lemma[line start], thm/lemma[lenient], defs)
+whole project (233, 41243, 41243, 1859, 1903, 506)  certificate: 233 / 41 243 / 1 859
+E1-E20        (120, 20117, 20117, 922, 946, 178)  certificate: 120 / 20 117 / 922 / 187
+version 1     (113, 21126, 21126, 937, 957, 328)  certificate: 113 / 21 126 / 937
+old folders: ['(top)', 'Ballot', 'Bip', 'BipInd', 'BipOpt', 'BipP2', 'BipP3', 'Chain', 'ColAssembly', 'ColComp', 'ColCount', 'ColDecomp', 'ColOne', 'ColPairs', 'ColSplit', 'ColSurv', 'ColTensor', 'ColUpper', 'Degeneration', 'EveryField', 'Fibres', 'FreeZ', 'Induction', 'Lifts', 'Monotone', 'Peel', 'Support', 'TheoremB', 'Tight', 'Upper']
+
+== Table 6b (files, lines, thms, defs) mine vs certificate
+E1   BipAny        mine (6, 633, 28, 0)  cert (6, 633, 28, 0)  OK
+E2   EvenCount     mine (5, 825, 24, 5)  cert (5, 825, 24, 6)  DIFF
+E3   Odd3          mine (6, 1150, 74, 15)  cert (6, 1150, 74, 15)  OK  (lenient thm count 75)
+E4   Pow2          mine (4, 978, 50, 12)  cert (4, 978, 50, 13)  DIFF  (lenient thm count 51)
+E5   EvenAssembly  mine (3, 253, 14, 1)  cert (3, 253, 14, 1)  OK
+E6   OddShapes     mine (6, 1056, 57, 13)  cert (6, 1056, 57, 14)  DIFF
+E7   OddLayers     mine (6, 850, 48, 5)  cert (6, 850, 48, 5)  OK
+E8   Pfaffian      mine (9, 2132, 105, 22)  cert (9, 2132, 105, 23)  DIFF  (lenient thm count 113)
+E9   RankTwo       mine (8, 1152, 54, 9)  cert (8, 1152, 54, 9)  OK  (lenient thm count 58)
+E10  Membership    mine (5, 552, 23, 6)  cert (5, 552, 23, 6)  OK
+E11  OddPatterns   mine (7, 770, 38, 6)  cert (7, 770, 38, 7)  DIFF
+E12  OddLifts      mine (4, 1099, 40, 2)  cert (4, 1099, 40, 2)  OK
+E13  OddLifts2     mine (5, 1107, 36, 2)  cert (5, 1107, 36, 2)  OK
+E14  OddTheorem    mine (5, 504, 14, 1)  cert (5, 504, 14, 1)  OK
+E15  OddEquality   mine (9, 1346, 67, 26)  cert (9, 1346, 67, 28)  DIFF
+E16  EvenBlocks    mine (6, 929, 43, 13)  cert (6, 929, 43, 13)  OK
+E17  EvenColours   mine (7, 1454, 51, 14)  cert (7, 1454, 51, 15)  DIFF  (lenient thm count 52)
+E18  EvenMinus     mine (7, 1501, 66, 13)  cert (7, 1501, 66, 13)  OK  (lenient thm count 69)
+E19  EvenOne       mine (6, 957, 48, 11)  cert (6, 957, 48, 12)  DIFF  (lenient thm count 54)
+E20  EvenAll       mine (6, 869, 42, 2)  cert (6, 869, 42, 2)  OK
+sum of Table 6b rows (files, lines, thms, defs): [120, 20117, 922, 187]
+
+== §4 #print axioms lines in per_piece/check_runE<n>.log (n = 1..20, final runs only)
+total 413 {'propext, Classical.choice, Quot.sound': 401, '(no axioms)': 0, 'propext, Quot.sound': 11, 'propext': 1}
+per log (axiom lines, no-axiom lines): {1: (8, 0), 2: (10, 0), 3: (8, 0), 4: (10, 0), 5: (6, 0), 6: (27, 0), 7: (15, 0), 8: (32, 0), 9: (28, 0), 10: (23, 0), 11: (38, 0), 12: (40, 0), 13: (38, 0), 14: (15, 0), 15: (19, 0), 16: (27, 0), 17: (15, 0), 18: (22, 0), 19: (17, 0), 20: (15, 0)}
+   E8 Pfaffian.IsAlt.bmat [propext, Quot.sound]
+   E9 RankTwo.elemOp_isAlt [propext, Quot.sound]
+   E11 OddPatterns.odd_two_mul_add_one [propext]
+   E11 OddPatterns.colLen_one [propext, Quot.sound]
+   E11 OddPatterns.comp_singleton_true [propext, Quot.sound]
+   E12 OddLifts.len_eq_of_colLen_one [propext, Quot.sound]
+   E13 OddLifts2.snoc_range_eq [propext, Quot.sound]
+   E13 OddLifts2.colLen_subE_len_of_two_le [propext, Quot.sound]
+   E13 OddLifts2.len_subE_len [propext, Quot.sound]
+   E14 OddTheorem.emptyPart_addOne [propext, Quot.sound]
+
+== decide: files of RequestProject with the tactic decide
+files containing the string "decide" anywhere: 25
+files using decide as a tactic (code): 12  new: 9  v1: 3
+    Chain/Checks.lean
+    EvenAll/Checks.lean
+    EvenAssembly/Quartic.lean
+    EvenCount/Number.lean
+    EvenOne/Checks.lean
+    Monotone/Checks.lean
+    Odd3/Count.lean
+    OddEquality/Checks.lean
+    OddTheorem/TheoremO.lean
+    Pfaffian/Basic.lean
+    Pow2/Basic.lean
+    TheoremB/Checks.lean
+string-but-not-tactic: ['Chain/Defs.lean', 'Chain/Lemmas.lean', 'Chain/Main.lean', 'EveryField/Invariance.lean', 'Lifts/Options.lean', 'Monotone/Lemmas.lean', 'OddLayers/Roots.lean', 'OddLayers/Rows.lean', 'OddShapes/Defs.lean', 'OddShapes/Shapes.lean', 'Support/Main.lean', 'Support/SupportLemma.lean', 'Tight/Lemmas.lean']
+
+== instances (declarations in code)
+    v1  ('Ballot/Alg.lean', 20, 'instance alg_finite (F : Type*) [Field F] (k : ℕ) : Module.Finite F (Alg F k) := by')
+    v1  ('Ballot/Comb.lean', 23, 'instance (n : ℕ) : DecidablePred (IsBallot n) := fun U => by unfold IsBallot; infer_instance')
+    v1  ('Ballot/Defs.lean', 33, 'noncomputable instance instModuleAlgSelf : Module (Alg F k) (Alg F k) := Semiring.toModule')
+    v1  ('ColSplit/Main.lean', 225, 'instance instFiniteGA (d : ℕ) : Module.Finite F (GA F d S.m) := finite_GA d S.m S.m_pos')
+    v1  ('ColSplit/Main.lean', 227, 'instance instFiniteRc {d : ℕ} (c : Fin d → S.μ) :')
+    v1  ('ColSurv/Defs.lean', 189, 'instance nontrivial_Rc : Nontrivial (Rc F S.q (fun j => (c j : F))) :=')
+    v1  ('ColUpper/Integral.lean', 89, 'instance finite_matching (k : ℕ) : Finite (BallotBound.Matching k) :=')
+    NEW ('EvenColours/Defs.lean', 41, 'instance qNeZero : NeZero S.q := ⟨by have := two_le_q S; omega⟩')
+    NEW ('EvenOne/Theta.lean', 32, 'noncomputable instance (priority := high) instModuleGASelf (n q : ℕ) :')
+    v1  ('EveryField/Integral.lean', 217, 'instance (m : ℕ) (Λ : Set Partition) : Finite (GZ q m Λ) := (GZ_finite q m Λ).to_subtype')
+    v1  ('Peel/Defs.lean', 48, 'noncomputable instance instModuleCSelf (m : ℕ) : Module (C F q m) (C F q m) := Semiring.toModule')
+    v1  ('Peel/Defs.lean', 53, 'noncomputable instance instCommRingC (m : ℕ) : CommRing (C F q m) := Ideal.Quotient.commRing _')
+    v1  ('Peel/Defs.lean', 58, 'noncomputable instance instAlgebraC (m : ℕ) : Algebra F (C F q m) := Ideal.Quotient.algebra _')
+    v1  ('Peel/Main.lean', 100, 'instance finite_C (m : ℕ) : Module.Finite F (C F q m) := by')
+    NEW ('Pfaffian/Matching.lean', 31, 'instance {m : ℕ} : DecidablePred (IsMatching (m := m)) := fun π => by')
+    v1  ('Upper/Main.lean', 99, 'instance instFiniteFun : Module.Finite F (Finset (Fin (2 * k + 1)) → F) :=')
+total 16  new 3
+VIGIA-FIN-OK exit=0 pico_kb=11264 t=0s
