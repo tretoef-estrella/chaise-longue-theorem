@@ -2,7 +2,7 @@
 
 ## To the authors of the conjecture
 
-This work exists because **Alex Degtyarev** and **Ichiro Shimada** asked a precise question and gave, in the same paper, the machinery to turn it into algebra: a criterion that could be run on a laptop, and a table of cells that showed where it stood. Everything in this repository starts from their paper, *On the topology of projective subspaces in complex Fermat varieties* (J. Math. Soc. Japan 68 (2016), 975–996; arXiv:1405.4683), which we read, and re-derived, many times. The proof is being sent to them.
+This work exists because **Alex Degtyarev** and **Ichiro Shimada** asked a precise question and gave, in the same paper, the machinery to turn it into algebra: a criterion that could be run on a laptop, and a table of cells that showed where it stood. Everything in this repository starts from their paper, *On the topology of projective subspaces in complex Fermat varieties* (J. Math. Soc. Japan 68 (2016), 975–996; arXiv:1405.4683), which we read, and re-derived, many times. Version 7 of the proof (the odd degrees) was sent to them on 26 September 2026.
 
 ## To the mathematicians whose work we read
 
@@ -17,10 +17,13 @@ T. Shioda; T. Shioda and T. Katsura (quoted through [DS] and [Ran]) ·
 M. Schütt, T. Shioda, R. van Luijk (*Lines on Fermat surfaces*) ·
 C. Voisin; M. F. Atiyah and F. Hirzebruch; J. Kollár (for the context of the integral Hodge conjecture) ·
 R. Jumagulov (*The Hodge conjecture for Fermat fourfolds of odd degree at most 199*, arXiv:2608.18134) ·
+M. Miranda, H. Movasati, L. Rufino, R. Villaflor (*Lengths of Hodge characters in Fermat varieties*, arXiv:2609.27301) ·
+D. Favero, T. L. Kelly (*The Chern character of a coherent sheaf on a smooth projective hypersurface*, arXiv:2609.12759) ·
+M. Mizukami (quoted through Schütt–Shioda–van Luijk) ·
 F. Pham, J. Milnor, L. C. Washington, N. Koblitz and A. Ogus (for the topological and arithmetic inputs).
 
 **Commutative algebra, representation theory and combinatorics.**
-D. Cox, J. Little, D. O'Shea · L. Cerlienco, M. Mureddu · A. M. Garsia, C. Procesi · T. Tanisaki · G. D. James · J. C. Jantzen (*Representations of Algebraic Groups*, read in Chapter II) · O. Mathieu (*Filtrations of G-modules*) · C. De Concini, C. Procesi (*A characteristic free approach to invariant theory*) · M. Hashimoto (arXiv:math/0408429) · G. Lehrer, R. B. Zhang (arXiv:1207.5889) · S. V. Sam, A. Snowden (arXiv:2006.04328) · R. Nagpal, S. V. Sam, A. Snowden (arXiv:1501.06925) · T. Church, J. Ellenberg, B. Farb (arXiv:1204.4533) · S. Papadima, A. Suciu (arXiv:math/0109070) · S. Hermiller, I. Swanson (arXiv:math/0212238) · N. Altafi, A. Iarrobino, P. Macias Marques (*Jordan type of an Artinian algebra*, arXiv:2307.00957) · T. Harima, J. Watanabe · P. Monsky and C. Han · A. Kustin, A. Vraciu · H. Brenner · G. F. Clements, B. Lindström · I. M. Gelfand, V. A. Ponomarev · G. Birkhoff · R. Fedder · A. Björner, T. Ekedahl (*Subspace arrangements over finite fields*).
+D. Cox, J. Little, D. O'Shea · L. Cerlienco, M. Mureddu · A. M. Garsia, C. Procesi · T. Tanisaki · G. D. James · J. C. Jantzen (*Representations of Algebraic Groups*, read in Chapter II) · O. Mathieu (*Filtrations of G-modules*) · C. De Concini, C. Procesi (*A characteristic free approach to invariant theory*) · M. Hashimoto (arXiv:math/0408429) · G. Lehrer, R. B. Zhang (arXiv:1207.5889) · S. V. Sam, A. Snowden (arXiv:2006.04328) · R. Nagpal, S. V. Sam, A. Snowden (arXiv:1501.06925) · T. Church, J. Ellenberg, B. Farb (arXiv:1204.4533) · S. Papadima, A. Suciu (arXiv:math/0109070) · S. Hermiller, I. Swanson (arXiv:math/0212238) · N. Altafi, A. Iarrobino, P. Macias Marques (*Jordan type of an Artinian algebra*, arXiv:2307.00957) · T. Harima, J. Watanabe · P. Monsky and C. Han · A. Kustin, A. Vraciu · H. Brenner · G. F. Clements, B. Lindström · I. M. Gelfand, V. A. Ponomarev · G. Birkhoff · R. Fedder · A. Björner, T. Ekedahl (*Subspace arrangements over finite fields*) · B. Kostant (quoted through V. Ginzburg, arXiv:math/9803141) · R. Bezrukavnikov, S. Riche, L. Rider (arXiv:2005.05583) · S. Riche (arXiv:1411.3112) · L. Liu (arXiv:2007.12444) · D. E. Knuth (*Overlapping Pfaffians*) · S. Okada (*Pfaffian formulas and Schur Q-function identities*).
 
 **Arrangements, splines and differentials** (a line of attack that the final proof did not need, but that taught us where the difficulty was).
 S. Yuzvinsky (*Cohomology of local sheaves on arrangement lattices*, Proc. AMS 1991) · P. Mücksch (arXiv:2008.13700) · S. Gilbert, S. Polster, J. Tymoczko · M. Lanini, H. Schenck, J. Tymoczko · M. DiPasquale · H. Schenck; H. Schenck and M. Stillman; J. Dalbec and H. Schenck · L. J. Billera; L. J. Billera and L. L. Rose (known to us only through summaries) · W. Bruns, J. Herzog (*Cohen–Macaulay Rings*, Chapter 1) · J. Herzog (*Homological properties of the module of differentials*, arXiv:2502.14159) · C. Miller, S. Vassiliadou · C. Huneke, G. Leuschke · G. Leuschke, R. Wiegand · W. Vasconcelos · R. de Alba, J. Duarte · M. Kreuzer, T. H. Linh, L. N. Long · B. de Smit · J. Lipman · H. Terao; L. Solomon and H. Terao.
@@ -33,9 +36,11 @@ We apologise to anyone whose work we used and failed to list here; the [archive]
 
 **ChatGPT (OpenAI)** read versions 4, 5 and 7 of the paper cold, as a referee, and found, among other things, the one error of v5 (a claim of novelty contradicted by the cells of [DS, §5]). **Gemini (Google)** read version 4 cold. **Grok (xAI)** answered technical consultations. Their reports are in [record/](record/README.md).
 
+**Aristotle (Harmonic)** wrote the Lean 4 proofs of Main Theorem′ and Theorem O, in 49 pieces written from the paper; every returned module that holds a theorem was compiled again on the author's machine and audited before the next piece was sent ([lean/](lean/README.md)). The Lean proofs rest on **Lean 4** (L. de Moura, S. Ullrich and the Lean developers) and on **Mathlib** (the mathlib Community).
+
 ## The limits of this
 
-**No human expert has yet refereed this work.** Every reading so far has been made by an AI system; the readers worked separately and without access to each other's code, but they are not independent in the way that different human experts are. The paper says so (§12.6), and it is being sent to Degtyarev and Shimada so that this can change.
+**No human expert has yet refereed this work.** Every reading so far has been made by an AI system; the readers worked separately and without access to each other's code, but they are not independent in the way that different human experts are. The paper says so (§14.6). Version 7 was sent to Degtyarev and Shimada on 26 September 2026 so that this can change.
 
 The author, **Rafael Amichis Luengo**, directed the project and takes responsibility for its content.
 

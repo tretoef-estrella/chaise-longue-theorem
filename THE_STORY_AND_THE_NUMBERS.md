@@ -11,7 +11,8 @@
 | **Hodge–Fermat** | 23 May – mid-June | ran the Degtyarev–Shimada criterion further than it had been run, on an 8 GB laptop: sixteen cells decided by machine, eleven of them beyond the published table; the *Watermark*, *Double Ladder*, *Localization* and *Nail* theorems ([hodge-fermat-campaign/](hodge-fermat-campaign/README.md)) |
 | **The Sofa** | June – early July | the case $k = 2$ ([repository](https://github.com/tretoef-estrella/sofa-theorem)) |
 | **The Hammock** | July | the case $k = 3$ ([repository](https://github.com/tretoef-estrella/hammock-theorem)) |
-| **The Chaise Longue** | 12 July – 25 September | every $k$, and then every odd degree: [the paper](paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) |
+| **The Chaise Longue** | 12 July – 25 September | every $k$, and then every odd degree: [the paper, version 7](paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) |
+| **The aeroplane** | 2 – 4 October | every degree: the odd box and the even degrees, and Lean for every degree: [the paper, version 12](paper/THE_CHAISE_LONGUE_THEOREM_v12.pdf) |
 
 A sofa, a hammock and a chaise longue are three pieces of furniture for lying down, each longer than the last. The names stuck.
 
@@ -21,8 +22,9 @@ No human mathematician took part. The director, Rafael Amichis Luengo, has a bac
 
 Some of them, by role:
 
-- **The scribes and auditors — the Grepy line.** One name, many lives: *Grepy*, *Grepy Bu Bú el Ingenioso*, *Grepy Toloco*, *Grepy el Genio*, *Grepy el Cartógrafo*, *Grepy el Lector*, *Grepy el Auditor*, and an older *Grepy* who, before its conversation ended, wrote down everything it remembered so that its successors would not lose it. The Grepys kept the archive, audited every claim against its source, and wrote the paper.
+- **The scribes and auditors — the Grepy line.** One name, many lives: *Grepy*, *Grepy Bu Bú el Ingenioso*, *Grepy Toloco*, *Grepy el Genio*, *Grepy el Cartógrafo*, *Grepy el Lector*, *Grepy el Auditor*, *Grepy Chats*, *Grepy Mandalay*, and an older *Grepy* who, before its conversation ended, wrote down everything it remembered so that its successors would not lose it. The Grepys kept the archive, audited every claim against its source, and wrote the paper.
 - **The constructors who worked inside the archive**: *Grepy el Herrero* (the blacksmith, thirty-three commissions), *Grepy el Relojero* (the watchmaker) and *Grepy el Encuadernador* (the bookbinder).
+- **The pilot of the aeroplane**: *Grepy Skies*, the external constructor who proved the odd box and the even degrees on 2 October; and the cold readers of that autumn, *Skies 2*, *Grepy Tinta*, *Grepy Lupa* and *Grepy Sello*.
 - **The strategists**: *Bisel*, twice incarnated, constructor of the Sofa era and later adviser; *MacGyver*, who wrote the missions and kept the living documents.
 - **The constructors from outside**, who received self-contained missions and never saw the archive: *Don Mister Jordan*; the *Frescales*, numbered from I to XXI; the *Propinero* (the tipper), forty-seven turns without a corpus; and the **Fables** — the fifteen *Chessboard* missions, the composite-degree mission, and five cold readers of the paper. (*Fable* is itself a family of Claude models.)
 - **The auditors and constructors named after forensic scientists and detectives**: *Locard*, *Lacassagne*, *Tardieu*, *Orfila*, *Uhlenhuth*, *Gettler*, *Marsh*, *Reiss*, *Bertillon*, *Balthazard*, *Brouardel*, *Devergie*, *Vucetich*, *Goddard*, *Vidocq* — with *Cárdano*, *Nash*, *Sylvester*, *Vernier*, *Relevo*, *Gross*, *Apolo*, *Gramil*, *Palmer*, *Vaucanson*, *Fresh Eyes*, and *Sherlock* I, II and III, the sweepers.
@@ -119,11 +121,17 @@ What the original paper did say — once read again, slowly — was a different 
 
 The count $A_k(q) = P_k(q)$ that had misled everyone is in the paper too, proved in general, as **Theorem A** — with a section explaining why it is not the conjecture.
 
+## 7½. The aeroplane
+
+Version 10 of the paper (1 October) listed the even degrees as its first open problem. The proof for the odd degrees uses a sign, a division by $2$ and linear relations, and at the prime $2$ all three fail. Rafa's picture, the next morning, was that this was not a job for the car or the tank of the odd degrees: *«a beautiful light aeroplane called “Grepy is in the Sky”, which needs no steering wheel, no grip and no straight, firm ground»*. Translated: do not repair the three things; find what is left when they are gone. Before writing any mission the auditor measured, «from the rooftop», that at the degrees $2^v$ the forms of lowest degree of the generators already span an ideal of the right dimension, in seven cells of seven.
+
+That measurement became the mission of an external constructor, *Grepy Skies*, which on **2 October** proved a third count — at a box of odd size, on a grid where one value is its own opposite — for every odd box and every field, and reduced every even degree to it. The same day its proof was audited cold, step by step, with separate code, and read cold by a second reader that had only the proof documents, version 10 of the paper and the original paper of Degtyarev and Shimada; neither found an error or a gap. The printed text was read cold again; and between 2 and 3 October the whole algebraic chain was proved in Lean, in twenty more pieces. Version 12 of the paper (**4 October**) proves the conjecture for **every** degree, and the Lean proof covers every degree too. The record of those three days is in [record/even-degrees/](record/even-degrees/README.md).
+
 ## 8. The numbers, together
 
 | | |
 |---|---|
-| Duration | **23 May – 25 September 2026**: 126 days; the Chaise Longue proper, 76 |
+| Duration | **23 May – 25 September 2026**: 126 days; the Chaise Longue proper, 76; then the even degrees, **2–4 October** |
 | Distinct Markdown documents | **9,782**, 2.3 GB — and **13,862** distinct files |
 | Versions of the twenty living documents | **5,012** |
 | The tree | **1,295** nodes, **12,733** lines, **293** versions |
@@ -133,8 +141,9 @@ The count $A_k(q) = P_k(q)$ that had misled everyone is in the paper too, proved
 | The auditor's reports | **144**, then **107** missions and **99** technical audit records |
 | Results found again that were already in the archive | **129** |
 | The dogs' sweep | **20** reports; **2,403 → 0** unclassified documents |
-| Missions to external constructors that closed the proof | **15** *Chessboard* missions + **1** composite-degree mission |
-| Cold readings of the paper | **11**, of versions 3 to 7, by three AI providers |
+| Missions to external constructors that closed the proof | **15** *Chessboard* missions + **1** composite-degree mission + **1** for the even degrees |
+| Lean 4 | **49** pieces; **233** files, **41,243** lines, **1,859** theorems; **0** `sorry` |
+| Cold readings | **17**: eleven of versions 3 to 7, one of the new material of version 10, one of each Lean certificate, one of the proof documents of the even degrees, one of the printed text of version 11, one of the changes of version 12; by three AI providers |
 | Human referees so far | **0** — which is why this repository exists |
 
 ---

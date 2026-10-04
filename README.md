@@ -1,16 +1,28 @@
 # The Chaise Longue Theorem
 
-### Conjecture 1.2 of Degtyarev–Shimada for the Fermat varieties of every odd degree in every even dimension, and the integral Hodge conjecture for those whose degree is prime or prime to $(n+2)!$
+### Conjecture 1.2 of Degtyarev–Shimada for the Fermat varieties of every degree in every even dimension, and the integral Hodge conjecture for those whose degree is prime, equal to $4$, or prime to $(n+1)!$
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22961150.svg)](https://doi.org/10.5281/zenodo.22961150)
 
-**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint v10, 1 October 2026
+**Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint v12, 4 October 2026
 
-> **Status.** A complete proof, published as a preprint. It has been read cold, step by step, eleven times, by AI systems of three providers; no reader found a fatal error, and every gap or error reported on an earlier version has been repaired. Its algebraic core, Main Theorem′, has been checked in Lean 4 ([lean/](lean/README.md)). **It has not yet been refereed by a human expert.** Version 7 was sent to A. Degtyarev and I. Shimada, the authors of the conjecture, on 26 September 2026. This repository exists so that they, and any referee, can check every step: the paper, every engine and log behind its numbers, every cold reading, and the complete record of how the proof was found, dead ends included.
+> **Status.** A complete proof, published as a preprint, for **every degree $m \ge 3$**. It rests on two topological results that it quotes and does not re-prove: Pham's theorem on the homology of the affine Fermat variety, and the intersection numbers of Degtyarev and Shimada. Its algebraic core, Main Theorem′, is **proved in Lean 4 for every degree**, with no `sorry` and only the three standard axioms ([lean/](lean/README.md)). The paper, the proof documents of the even degrees and both Lean certificates have been read cold seventeen times, by readers who had not watched them being written: AI systems of three providers. No reader found a fatal error, and every gap or error reported has been repaired. **It has not yet been refereed by a human expert.** Version 7 (the odd degrees) was sent to A. Degtyarev and I. Shimada, the authors of the conjecture, on 26 September 2026. This repository exists so that they, and any referee, can check every step: the paper, the Lean proof, every engine and log behind its numbers, every cold reading, and the complete record of how the proof was found, dead ends included.
 
-**Read the paper:** [paper/THE_CHAISE_LONGUE_THEOREM_v10.pdf](paper/THE_CHAISE_LONGUE_THEOREM_v10.pdf) · [Markdown source](paper/THE_CHAISE_LONGUE_THEOREM_v10.md) · the previous versions: [v9](paper/THE_CHAISE_LONGUE_THEOREM_v9.pdf), [v8](paper/THE_CHAISE_LONGUE_THEOREM_v8.pdf), [v7](paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) · permanent archive: [doi.org/10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150)
+**Read the paper:** [paper/THE_CHAISE_LONGUE_THEOREM_v12.pdf](paper/THE_CHAISE_LONGUE_THEOREM_v12.pdf) · [Markdown source](paper/THE_CHAISE_LONGUE_THEOREM_v12.md) · the previous versions: [v10](paper/THE_CHAISE_LONGUE_THEOREM_v10.pdf), [v9](paper/THE_CHAISE_LONGUE_THEOREM_v9.pdf), [v8](paper/THE_CHAISE_LONGUE_THEOREM_v8.pdf), [v7](paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf) · permanent archive: [doi.org/10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150) (this version: [doi.org/10.5281/zenodo.23129698](https://doi.org/10.5281/zenodo.23129698))
 
-> **Version 10 (1 October 2026): a second correction of attribution, and a dictionary.** Theorem A — the *different* count of §8, which is not the conjecture — is not new as a count. Over an infinite field its ring is the space of coinvariants of the centralizer of a regular unipotent element of $SO_q$ in a tensor power of the vector representation, and the count follows from a theorem of Kostant (1963) in characteristic 0 and from a proposition of Bezrukavnikov, Riche and Rider (arXiv:2005.05583, Proposition 2.12) in odd characteristic. Version 9, of the same day, had credited Kostant and said that no version in positive characteristic was known to us; that was wrong. What the paper contributes to Theorem A is the dictionary and an elementary proof. In the same language, Theorem B — the algebraic form of the conjecture for prime-power degree — says that the invariant tensors of $Sp_{q-1}$ generate the invariants of that centralizer (§8 of version 10). No statement and no proof of the Main Theorem changes. Notes: [the second correction](record/audits/the-1-october-second-correction-bezrukavnikov-riche-rider.md), [the first](record/audits/the-1-october-kostant-correction.md); supplement: [paper/THE_REGULAR_CENTRALIZER_NOTE_v1.pdf](paper/THE_REGULAR_CENTRALIZER_NOTE_v1.pdf).
+---
+
+## What is new in version 12 (4 October 2026)
+
+- **The even degrees.** Version 10 proved the conjecture for every odd degree and listed the even degrees as its first open problem. Version 12 proves it for **every** degree $m \ge 3$. No statement of version 10 changes.
+- **A third count, at an odd box (Theorem O).** The even degrees need a count in a box of odd size $r$, on a grid with one self-opposite value, $0$. Theorem O proves it, with equality over every field and a free quotient over $\mathbb{Z}$ (§8). Version 10 listed it as open problem 7.
+- **The quartics.** Corollary H now includes $m = 4$: **the integral Hodge conjecture holds for the Fermat quartic of every even dimension**, and its integral Hodge classes of middle degree are generated by the standard linear subspaces. For dimension at least $8$ this is new, to our knowledge.
+- **Lean for every degree.** The Lean proof of Main Theorem′, which covered the odd degrees since 29 September, now covers every degree $m \ge 1$, and Theorem O with equality: $233$ files, $41\,243$ lines, $1\,859$ theorems, $0$ `sorry`. Certificate: [lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v2.pdf](lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v2.pdf); archive: [doi.org/10.5281/zenodo.23129677](https://doi.org/10.5281/zenodo.23129677).
+- **Three proofs printed as they were formalized**, which are shorter: Lemma 8.7 by a rank-two update of bordered Pfaffians, the upper bound of Corollary 8.13 by a pairing of the box ring, and Lemma 9.10.
+- **A summary and a literature search.** §1.0 of the paper is a one-table summary of every result, with what it rests on and whether it is in Lean. §1.10 says what we searched for, where, and what we found; the query log is in [record/literature/](record/literature/).
+- **How it was found and checked:** [record/even-degrees/](record/even-degrees/) (the proof documents, the audit, the engines of the new cells, the gates of the printed text) and [record/cold-readings/](record/README.md) (readings 13 to 17).
+
+Version 11 was never made public; everything in it is in version 12.
 
 ---
 
@@ -22,57 +34,59 @@ In a paper published in 2016, Alex Degtyarev and Ichiro Shimada asked whether th
 
 ## The answer
 
-> **Main Theorem.** For every odd degree $m \ge 3$ and every $k \ge 0$, the group $H_{2k}(X;\mathbb{Z})/L(X)$ is torsion free. Equivalently, $L(X)$ is a primitive sublattice of rank $Q_k(m)+1$, where $Q_k(m) = (2k+2)!\,[x^{2k+2}]\, I_0(2x)^{(m-1)/2}$.
+> **Main Theorem.** For every degree $m \ge 3$ and every $k \ge 0$, the group $H_{2k}(X;\mathbb{Z})/L(X)$ is torsion free. Equivalently, $L(X)$ is a primitive sublattice of rank $Q_k(m)+1$, where $Q_k(m) = (2k+2)!\,[x^{2k+2}]\, I_0(2x)^{(m-1)/2}$ for odd $m$ and $Q_k(m) = (2k+2)!\,[x^{2k+2}]\,\cosh(x)\,I_0(2x)^{(m-2)/2}$ for even $m$.
 
 It has an algebraic form that needs no topology at all:
 
-> **Main Theorem′.** For every odd $m \ge 3$ and $k \ge 1$, the group $\mathbb{Z}[G]/(\psi_J : J \in \mathcal{J})$ of Degtyarev–Shimada, with $G = (\mathbb{Z}/m)^{2k+1}$, is free abelian of rank $m^{2k+1} - Q_k(m)$.
+> **Main Theorem′.** For every $m \ge 3$ and $k \ge 1$, the group $\mathbb{Z}[G]/(\psi_J : J \in \mathcal{J})$ of Degtyarev–Shimada, with $G = (\mathbb{Z}/m)^{2k+1}$, is free abelian of rank $m^{2k+1} - Q_k(m)$.
 
 And it has a consequence in Hodge theory:
 
-> **Corollary H.** If $m$ is an odd prime, or every prime factor of $m$ exceeds $2k+2$, then every integral Hodge class of middle degree on $X$ is an integral combination of classes of linear subspaces. In particular the integral Hodge conjecture holds for $X$.
+> **Corollary H.** If $m$ is prime, or $m = 4$, or every prime factor of $m$ is at least $2k+3$, then every integral Hodge class of middle degree on $X$ is an integral combination of classes of linear subspaces. In particular the integral Hodge conjecture holds for $X$.
 
-**In plain words.** Degtyarev and Shimada turned a question about the shape of a variety into a question about counting: the conjecture holds exactly when, for each prime dividing the degree, a certain family of polynomials — one for each way of pairing up $2k+2$ objects — spans a space of the right size. The proof counts that space by peeling off one variable at a time. Each slice turns out to be a smaller problem of the same kind, the bookkeeping collapses onto partitions of whole numbers ordered by dominance, and at every step the possible values of the new coordinate line up in a single chain. For the degrees that are not prime powers, the problem first splits into independent colour blocks, and one new family of blocks is counted by the same method.
+**In plain words.** Degtyarev and Shimada turned a question about the shape of a variety into a question about counting: the conjecture holds exactly when, for each prime dividing the degree, a certain family of polynomials — one for each way of pairing up $2k+2$ objects — spans a space of the right size. The proof counts that space by peeling off one variable at a time. Each slice turns out to be a smaller problem of the same kind, the bookkeeping collapses onto partitions of whole numbers ordered by dominance, and at every step the possible values of the new coordinate line up in a single chain. For the degrees that are not prime powers, the problem first splits into independent colour blocks. For the even degrees two new blocks appear, and both are the same new count, at a box of odd size, where one value of the grid is its own opposite; it is counted by the same method, with Pfaffians in place of some determinants.
 
-| | Statement | Status in the paper (§14) |
-|---|---|---|
-| **Main Theorem′** | the algebraic form, every odd $m$ | proved, with no topology |
-| **Main Theorem** | Conjecture 1.2, every odd $m$, every even dimension | proved, modulo Pham's theorem and the intersection numbers of [DS, Thm 2.2] |
-| **Theorem B** | the dimension count, over every field and every odd $q$, free over $\mathbb{Z}$ | proved |
-| **Theorem C** | the bipartite count behind the composite degrees | proved |
-| **Corollary H** | the integral Hodge conjecture in the degrees above | proved, modulo classical results that are quoted (Shioda–Katsura, Ran, Aoki) |
-| **Corollary W** | the linear spaces on partial Fermat varieties span primitive sublattices | proved (what [DS] had proved conditionally) |
-| **Theorem A** | a *different* count, $\dim F[x]/(e_1, e_3, \dots; x_i^q) = n!\,[y^n]\,e^y I_0(2y)^{(q-1)/2}$ | proved; it is **not** the conjecture (§9). **As a count it is not new:** it follows from Kostant's theorem (1963) in characteristic 0 and from Bezrukavnikov–Riche–Rider (2020) in odd characteristic; the paper adds the dictionary and an elementary proof (Remark 8.4) |
-| even degrees $m$ | | open (§13) |
-| **Lean 4** | Main Theorem′, every odd $m$, every $k$, over $\mathbb{Z}$ and over every field | machine-checked: no `sorry`, only the standard axioms ([lean/](lean/README.md)) |
+| | Statement | Status in the paper (§16) | Lean |
+|---|---|---|---|
+| **Main Theorem′** | the algebraic form, every $m \ge 3$ | proved, with no topology | yes, every $m \ge 1$, $k \ge 0$ |
+| **Main Theorem** | Conjecture 1.2, every $m \ge 3$, every even dimension | proved, modulo Pham's theorem and the intersection numbers of [DS, Thm 2.2] | the algebraic form only |
+| **Theorem B** | the count at the even box $q - 1$, every odd $q$, every field, free over $\mathbb{Z}$ | proved | yes, except the graded refinement |
+| **Theorem C** | the bipartite count behind the composite degrees | proved, every $q \ge 2$ | yes |
+| **Theorem O** | the count at the odd box $r$, every odd $r \ge 3$, every field, free over $\mathbb{Z}$ | proved | yes, except the graded refinement |
+| **Corollary H** | the integral Hodge conjecture in the degrees above | proved, modulo classical results that are quoted (Shioda–Katsura, Ran, Aoki) | no |
+| **Corollary W** | the linear spaces on partial Fermat varieties span primitive sublattices | proved (what [DS] had proved conditionally) | no |
+| **Theorem A** | a *different* count, $\dim F[x]/(e_1, e_3, \dots; x_i^q) = n!\,[y^n]\,e^y I_0(2y)^{(q-1)/2}$ | proved; it is **not** the conjecture (§11). **As a count it is not new:** it follows from Kostant's theorem (1963) in characteristic 0 and from Bezrukavnikov–Riche–Rider (2020) in odd characteristic; the paper adds the dictionary and an elementary proof (Remark 10.4) | no |
 
-*Related recent work.* R. Jumagulov, *The Hodge conjecture for Fermat fourfolds of odd degree at most 199* (arXiv:2608.18134, July 2026), gives a computer-assisted proof of the **rational** Hodge conjecture for the Fermat fourfolds $X^4_m$ of every odd degree $m \le 199$, using algebraic cycles beyond linear subspaces. Corollary H is an **integral** statement about **linear** cycles; for fourfolds ($k = 2$) it covers the odd primes and the odd $m$ whose prime factors all exceed $6$, so the composite odd degrees divisible by $3$ or $5$ are not covered by it.
+*Related recent work* on the **rational** Hodge conjecture for Fermat varieties, which is complementary to ours: R. Jumagulov (arXiv:2608.18134) gives a computer-assisted proof for the Fermat fourfolds of odd degree at most $199$; Miranda, Movasati, Rufino and Villaflor prove it for every dimension and every degree $d < 65$ other than $44, 51, 52$; Favero and Kelly prove it for the Fermat fourfold of degree $33$. Corollary H is an **integral** statement about **linear** cycles. See §1.3 of the paper.
 
 A guided tour of these results, with the lemmas a referee should look at first, is in **[THEOREMS.md](THEOREMS.md)**.
 
 ---
 
+## For a referee: how to check this in an afternoon
+
+1. **The chain, in one screen.** By [DS, Theorem 1.1(a)] (Pham's theorem and [DS, Theorem 2.2]; Appendix B of the paper re-derives it from those two), Conjecture 1.2 at degree $m$ is the statement that $\mathbb{Z}[G]/(\psi_J)$ is torsion free. That holds if, for every prime $p \mid m$, $\dim_{\mathbb{F}_p}(\bar\psi_J) \ge Q_k(m)$ (the opposite inequality is the count [DS, Claim 4.3], re-proved in Appendix B). Writing $m = p^v r'$, the group algebra over $\overline{\mathbb{F}}_p$ splits over colourings by $r'$-th roots of unity (§6, §9.3), and every block is one of four counts: Theorem 5.3, the general form of Theorem B (colour $1$ at an odd prime), Theorem C (pairs of inverse colours, at every prime), Theorem O (colour $-1$ at an odd prime), and Proposition 9.2 with Theorem O (colour $1$ at the prime $2$). Each count is proved by peeling off one variable and an induction over down-sets of partitions (§5, §7, §8).
+2. **Read, in this order:** §1.0 (the summary table) → §2 (the translation, against [DS]) → §5 (Theorem B; the case analysis is Proposition 5.6) → §6–§7 (colours and the bipartite count; Proposition 7.4) → §8 (the odd box; Lemma 8.4 and Proposition 8.10) → §9 (the even degrees) → §14.7 (the joints we would press first) → §16 (exact status).
+3. **Check the Lean proof** of Main Theorem′ and Theorem O: [lean/README.md](lean/README.md#how-to-check-it). The final theorem is `EvenAll.mainTheorem'`; its statement and its fifteen definitions, as Lean prints them, are in [lean/even-degrees/logs/check_pares_postclean.log](lean/even-degrees/logs/check_pares_postclean.log), and the certificate compares them with the paper and with [DS] line by line (§1.1–§1.3).
+4. **Re-run the gates:** [HOW_TO_VERIFY.md](HOW_TO_VERIFY.md) (odd degrees) and [record/even-degrees/](record/even-degrees/) (the odd box and the even degrees; the gate of the printed text of version 12 runs $4\,831$ checks with $0$ failures).
+5. **What is NOT proved here, and what is NOT formalized.** Not re-proved: Pham's theorem and the intersection numbers [DS, Thm 2.2]; for Corollary H, the classical facts (H1)–(H3) and Aoki's theorem (H5). Not formalized in Lean: the topology of [DS, Theorem 1.1(a)], Theorem A, Corollaries H and W, §11, and the graded refinements of Theorems B and O. Not refereed by a human expert.
+
+---
+
 ## Machine-checked in Lean 4
 
-> **Main Theorem′ is proved in Lean 4 with Mathlib** (29 September 2026), for every odd $m \ge 1$, every $k \ge 0$, over $\mathbb{Z}$ and over every field. The proof has 113 files, 21,126 lines and 937 theorems. It contains no `sorry`, and the final theorem `ColAssembly.mainTheorem'` depends only on the standard axioms `propext`, `Classical.choice`, `Quot.sound`.
+> **Main Theorem′ is proved in Lean 4 with Mathlib for every degree** (odd degrees on 29 September 2026, every degree on 3 October 2026): for every $m \ge 1$ and every $k \ge 0$, over $\mathbb{Z}$ and over every field. Theorem O is proved with equality over every field and the freeness over $\mathbb{Z}$. The project has $233$ files, $41\,243$ lines and $1\,859$ theorems. It contains no `sorry`, and the final theorem `EvenAll.mainTheorem'` depends only on the standard axioms `propext`, `Classical.choice`, `Quot.sound`.
 
-- **Who wrote the proofs.** The Lean proofs were written by Aristotle (Harmonic), in 29 pieces written from the paper.
-- **How they were checked.** Every file was compiled again on the author's machine, and every statement was audited against the paper.
+- **Who wrote the proofs.** The Lean proofs were written by Aristotle (Harmonic), in $49$ pieces written from the paper ($29$ for the odd degrees, $20$ for the rest).
+- **How they were checked.** Every module that holds a theorem was compiled again on the author's machine, and every statement was audited against the paper before the next piece was sent. A clean rebuild from source compiled $229$ of the $233$ modules; the other four are two modules of numeric checks that need more memory than the local cap, and the two modules that only import them; no theorem used elsewhere is in them.
 - **What stays cited.** Only the topology is not formalized: [DS, Theorem 1.1(a)] (Pham's theorem and [DS, Theorem 2.2]), which identifies the torsion of $\mathbb{Z}[G]/(\psi_J)$ with that of $H_{2k}(X;\mathbb{Z})/L(X)$.
+- **Read cold.** Version 1 of the certificate (odd degrees) and version 2 (every degree) were each read cold by a separate reader, which recounted the certificate's numbers and compared every definition with the paper; the second reader also ran Lean itself on the compiled project, re-elaborated five files of the chain from source, and re-submitted to the Lean kernel all 4 669 project declarations on which the final theorem depends, with a negative control. Its verdict: «holds as far as I can check»; its findings were about the wording and numbers of the certificate, not the proofs, and all are corrected: [record/cold-readings/](record/README.md).
 
-**Certificate:** [lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v1.pdf](lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v1.pdf). Archived with the whole Lean folder on Zenodo: [doi.org/10.5281/zenodo.23045370](https://doi.org/10.5281/zenodo.23045370). It gives the exact statement, the comparison with the paper, the trust base, the data of every piece and how to reproduce it. **Code:** [lean/project/](lean/project/).
-
-**Check it yourself, from the evidence to the full rebuild:**
-1. The final theorem as Lean prints it, with its axioms: [lean/logs/check_run29.log](lean/logs/check_run29.log). The axiom lines are 55–60.
-2. The theorem in the source: [lean/project/RequestProject/ColAssembly/Main.lean](lean/project/RequestProject/ColAssembly/Main.lean).
-3. A rebuild from scratch, module by module, 113 of 113 with no error: [lean/logs/clean_rebuild_2026-09-29.log](lean/logs/clean_rebuild_2026-09-29.log). The final full build is [lean/logs/build_after_clean.log](lean/logs/build_after_clean.log).
-4. What the final theorem actually uses (2,367 declarations in 90 files): [lean/logs/deps_mainTheorem.log](lean/logs/deps_mainTheorem.log).
-5. The audit of each of the 29 runs: [lean/AUDIT_LOG.md](lean/AUDIT_LOG.md). The pieces as sent: [lean/pieces/](lean/pieces/). The brute-force checks run before sending them (kept for pieces 7–16 and 18–29): [lean/checks/](lean/checks/).
-6. Rebuild it on your own machine: [lean/README.md](lean/README.md#how-to-check-it).
+**Certificates:** [lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v2.pdf](lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v2.pdf) (every degree) and [lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v1.pdf](lean/LEAN_CERTIFICATE_CHAISE_LONGUE_v1.pdf) (the odd degrees, as released on 29 September). Archived with the whole Lean folder on Zenodo: [doi.org/10.5281/zenodo.23045370](https://doi.org/10.5281/zenodo.23045370) (version 2: [10.5281/zenodo.23129677](https://doi.org/10.5281/zenodo.23129677)). **Code:** [lean/project/](lean/project/). **How to check it:** [lean/README.md](lean/README.md#how-to-check-it).
 
 **Also in Lean: the Watermark and Double Ladder Theorems** of the Hodge–Fermat campaign (30 September 2026). They give the discriminant `m^{3(m−3)²}` of the lattice of lines on the Fermat surface of prime degree `m ≥ 5`, and its discriminant group. Each paper is in [hodge-fermat-campaign/](hodge-fermat-campaign/) next to its Lean certificate: [Watermark](hodge-fermat-campaign/LEAN_CERTIFICATE_WATERMARK_v2.pdf), [Double Ladder](hodge-fermat-campaign/LEAN_CERTIFICATE_DOUBLE_LADDER_v2.pdf). The Lean project and all its evidence have their own repository, [watermark-theorem](https://github.com/tretoef-estrella/watermark-theorem), and are archived on Zenodo: [doi.org/10.5281/zenodo.23062529](https://doi.org/10.5281/zenodo.23062529).
 
-**The sequel: the Watermark in every even dimension** (1 October 2026). Open problem 3 of the paper asks for the discriminant and the elementary divisors of the Hodge lattice of a Fermat variety of prime degree beyond surfaces. The discriminant now has an answer, for prime degree `p` and every even dimension `2k` (the elementary divisors stay open): the discriminant group is the finite ring `Z[G]/(I_𝔅 + I_T)` (this part for every degree `m ≥ 3`), and `|disc Hdg(X)| = p^{E_k(p)}`, with `E_k(p)` computed from the Hilbert function of the Theorem-A ring of this paper with the even box `p − 1`; for surfaces it returns `3(p−3)²`. The general formula rests on a count that follows from a theorem of Bezrukavnikov, Riche and Rider; without it the formula is a proved lower bound, and it was checked by machine in 22 cells. The note was read cold by an independent reader before release. It lives in the [watermark-theorem](https://github.com/tretoef-estrella/watermark-theorem#in-every-even-dimension-1-october-2026) repository and on Zenodo: [doi.org/10.5281/zenodo.23091045](https://doi.org/10.5281/zenodo.23091045).
+**The sequel: the Watermark in every even dimension** (1 October 2026). Open problem 3 of the paper asks for the discriminant and the elementary divisors of the Hodge lattice of a Fermat variety of prime degree beyond surfaces. The discriminant now has an answer, for prime degree `p` and every even dimension `2k` (the elementary divisors stay open): the discriminant group is the finite ring `Z[G]/(I_𝔅 + I_T)` (this part for every degree `m ≥ 3`), and `|disc Hdg(X)| = p^{E_k(p)}`, with `E_k(p)` computed from the Hilbert function of the Theorem-A ring of this paper with the even box `p − 1`; for surfaces it returns `3(p−3)²`. The general formula rests on a count that follows from a theorem of Bezrukavnikov, Riche and Rider; without it the formula is a proved lower bound, and it was checked by machine in 22 cells. The note was read cold by an independent reader before release. A copy is in [paper/](paper/THE_WATERMARK_IN_EVERY_EVEN_DIMENSION.pdf); its home is the [watermark-theorem](https://github.com/tretoef-estrella/watermark-theorem#in-every-even-dimension-1-october-2026) repository, and it is archived on Zenodo: [doi.org/10.5281/zenodo.23091045](https://doi.org/10.5281/zenodo.23091045).
 
 ---
 
@@ -80,9 +94,9 @@ A guided tour of these results, with the lemmas a referee should look at first, 
 
 - **[HOW_TO_VERIFY.md](HOW_TO_VERIFY.md)**: which engine certifies which number of the paper, how to run it, and what it prints. Every script runs on a laptop in seconds or minutes, with no external data.
 - **[WHERE_TO_ATTACK.md](WHERE_TO_ATTACK.md)**: the load-bearing joints of the proof, named by us, in the order we would attack them.
-- **[record/](record/README.md)**: every cold reading of every version of the paper (by Claude, ChatGPT and Gemini), each with its report, its own code and its grading, and the audits of the three proofs that close the conjecture.
+- **[record/](record/README.md)**: every cold reading of every version of the paper (by Claude, ChatGPT and Gemini), each with its report, its own code and its grading; the audits of the proofs; the record of the even degrees; and the literature search of version 12.
 
-The honest limits are stated in the paper (§12.6) and repeated here: every reader so far is an AI system; no human expert has refereed the work; Pham's theorem and the intersection numbers of [DS] are quoted, not re-proved.
+The honest limits are stated in the paper (§14.6) and repeated here: every reader so far is an AI system; no human expert has refereed the work; Pham's theorem and the intersection numbers of [DS] are quoted, not re-proved.
 
 ---
 
@@ -97,6 +111,7 @@ That was the method, and it is the particular thing about this work. When the te
 - **The chessboard** (21 September). *«You can count a board without looking at every square: rows times columns.»* Translated: slice the ideal by the powers of one variable, and compare each slice with the points that share one value of that coordinate. Measured the same day, each row of the board was exactly a smaller problem of the same kind. The picture became a mission for an external Claude, *The Chessboard*; fifteen missions and three days later, on 24 September, its report proved the conjecture for the degrees $3^v$ by exactly that move — peel off one variable, match each slice with a fibre of points — and that move is the spine of the proof in the paper (§5). The same line of missions had proved the count behind Theorem A the day before.
 - **The hinge that goes *clack*.** *«What sticks out on the outside is what is missing on the inside; press it from the centre and it folds from the edges and fits.»* Translated: when one pair of coordinates is fixed, the generating series of level $k$ restricts to that of level $k-1$ times a single hinge factor, $U(w) \mapsto (1 - v^2 w)\,U'(w)$ — what sticks out is exactly the pair that was removed. That is the Hinge Lemma, proved for every $k$ ([theorems/standalone/CHAISE_LONGUE_HINGE_LEMMA.md](theorems/standalone/CHAISE_LONGUE_HINGE_LEMMA.md)); the file credits it as *«Rafa's clack»*.
 - **The tank.** A racing car had been the previous picture, and it failed: it depends on the grip of the asphalt. *«A tank does not move on one part. It has tracks that grip the ground, an engine that pushes, and a gearbox that multiplies.»* Translated: every tool was classified as a *track* (it advances one degree at a time, whatever the field), an *engine* (it is structural and works in every dimension at once) or a *gearbox* (it tries to lift a result from one field to a bigger one). We showed why every gearbox must fail, and measured that the tracks leave a middle band that never shrinks. From then on, no tool was admitted without being classified first. The proof that finally closed the conjecture is of the engine kind: it works for every degree at once, with no gearbox anywhere.
+- **The aeroplane** (2 October). *«Set aside the car or the tank, which serve for the odd degrees. Here it will be a beautiful light aeroplane called “Grepy is in the Sky”, which needs no steering wheel, no grip and no straight, firm ground: that is the even case.»* Translated: the proof for odd degrees uses a sign, a division by $2$ and linear relations, and at the prime $2$ all three fail; do not repair them, find what is left when they are gone. Before writing a mission for the even degrees, the auditor measured from the rooftop: at the degrees $2^v$, the forms of lowest degree of the generators already span an ideal of the right dimension, in seven cells of seven. That measurement became the mission of an external Claude, which proved the count at the odd box the same day; its proof is §8–§9 of the paper.
 
 More of these pictures, and what each one produced or failed to produce, are in [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md). The complete notebook of them, in Spanish, is [archive/CHAISE_LONGUE_LAS_IDEAS_DE_RAFA_v231.md](archive/CHAISE_LONGUE_LAS_IDEAS_DE_RAFA_v231.md).
 
@@ -106,7 +121,7 @@ I say plainly what follows from this, because it matters to anyone reading the p
 
 ## The record, in numbers
 
-The campaign ran from **23 May to 25 September 2026** — 126 days, of which the Chaise Longue proper took the last 76 — through the *Hodge–Fermat* campaign, the *Sofa* ($k=2$), the *Hammock* ($k=3$) and the *Chaise Longue* (every $k$). Nothing was deleted along the way; every retraction was written under the line it retracts.
+The campaign ran from **23 May to 25 September 2026** — 126 days, of which the Chaise Longue proper took the last 76 — through the *Hodge–Fermat* campaign, the *Sofa* ($k=2$), the *Hammock* ($k=3$) and the *Chaise Longue* (every $k$); the even degrees followed on **2–4 October 2026**. Nothing was deleted along the way; every retraction was written under the line it retracts. The rows below were counted on 26 September 2026, except the three marked †, which were brought up to date on 4 October.
 
 | | |
 |---|---|
@@ -119,9 +134,9 @@ The campaign ran from **23 May to 25 September 2026** — 126 days, of which the
 | Auditor's reports and missions | **144** reports, **107** missions, **99** technical audit records |
 | Results found again that the archive already held | **129**, each caught and logged (`OWN-DEPOSITED`) |
 | The great sweep | **20** reports; **2,403** never-classified documents brought to **0** |
-| Cold readings of the paper | **11**, of versions 3 to 7 |
-| Lean 4 formalization of Main Theorem′ | **29** pieces; **113** files, **21,126** lines, **937** theorems; **0** `sorry` (28–29 September 2026) |
-| Time invested, in the author's own words | more than **1,000 hours** for the whole route (Hodge–Fermat, Sofa, Hammock, Chaise Longue); the Chaise Longue alone, **76 days at about 12 hours a day**, often more |
+| Cold readings † | **17**: eleven of versions 3 to 7, one of the new material of version 10, one of each Lean certificate (v1 and v2), one of the proof documents of the even degrees, one of the printed text of version 11, and one of the changes of version 12 |
+| Lean 4 formalization † | **49** pieces; **233** files, **41,243** lines, **1,859** theorems; **0** `sorry` (odd degrees 28–29 September, every degree 2–3 October 2026) |
+| Time invested, in the author's own words † | more than **1,000 hours** for the whole route (Hodge–Fermat, Sofa, Hammock, Chaise Longue); the Chaise Longue alone, **76 days at about 12 hours a day**, often more, until 25 September — and the even degrees after it |
 
 The story behind these numbers — the dogs' sweep, the gold found where we had already walked, the day we discovered we had been proving the wrong statement, and the three days that closed it — is told in **[THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md)**.
 
@@ -137,15 +152,18 @@ The story behind these numbers — the dogs' sweep, the gold found where we had 
 ## Repository map
 
 ```
-paper/                      the paper, v10 (PDF and Markdown source; §12.8 is the Lean proof), v9, v8, v7, and the supplement on the regular centralizer
+paper/                      the paper, v12 (PDF and Markdown source; §14.8 is the Lean proof), v10, v9, v8, v7,
+                            the supplement on the regular centralizer, and a copy of the sequel note
 THEOREMS.md                 a guided tour of the results, for referees
 theorems/INDEX.md           the 222 standalone documents, by campaign, with their status
 theorems/standalone/        the standalone documents, each with a citation header
 hodge-fermat-campaign/      the earlier campaign: Watermark, Double Ladder, Localization, Block Decomposition,
                             the Nail, the sixteen machine verdicts, and their engines and logs
-engines/                    every engine and log behind the paper's numbers (see HOW_TO_VERIFY.md)
-record/                     cold readings of every version, and the audits of the proofs
-lean/                       the Lean 4 proof of Main Theorem′: certificate, project, pieces, checks, logs
+engines/                    every engine and log behind the paper's numbers for the odd degrees (see HOW_TO_VERIFY.md)
+record/                     cold readings of every version, the audits of the proofs, the record of the even
+                            degrees (with its engines and gates), and the literature search of version 12
+lean/                       the Lean 4 proof of Main Theorem′ for every degree: two certificates, the project,
+                            the 49 pieces, the checks and every log
 archive/                    the working notebooks: the Master Catalogue, the Cemetery, the tree, Rafa's ideas
 ```
 
@@ -155,4 +173,4 @@ archive/                    the working notebooks: the Master Catalogue, the Cem
 
 [CITATION.md](CITATION.md) · [LICENSE-TEXT.md](LICENSE-TEXT.md) · [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) · [THE_STORY_AND_THE_NUMBERS.md](THE_STORY_AND_THE_NUMBERS.md) · [A personal note](A_PERSONAL_NOTE.md) · [On AI and mathematics](ON_AI_AND_MATHEMATICS.md)
 
-*Cite as:* Amichis Luengo, R. (2026). *The Chaise Longue Theorem* (preprint, version v10). Zenodo. https://doi.org/10.5281/zenodo.22961150
+*Cite as:* Amichis Luengo, R. (2026). *The Chaise Longue Theorem* (preprint, version v12). Zenodo. https://doi.org/10.5281/zenodo.22961150
