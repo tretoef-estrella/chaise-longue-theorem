@@ -1,0 +1,19 @@
+rref on (45, 3195) int64 maxrss 42.3 -> 44.6
+rref on (72, 3510) int64 maxrss 65.2 -> 67.5
+rref on (84, 3750) int64 maxrss 84.2 -> 89.1
+rref on (154, 2826) int64 maxrss 111.3 -> 114.6
+rref on (144, 3510) int64 maxrss 128.3 -> 136.0
+rref on (202, 2826) int64 maxrss 153.4 -> 157.8
+rref on (180, 3510) int64 maxrss 171.1 -> 180.8
+rref on (252, 2826) int64 maxrss 202.4 -> 207.9
+rref on (264, 3195) int64 maxrss 231.8 -> 244.6
+rref on (252, 3510) int64 maxrss 264.4 -> 277.9
+rref on (306, 3195) int64 maxrss 285.4 -> 300.3
+rref on (288, 3510) int64 maxrss 323.5 -> 339.0
+rref on (349, 3195) int64 maxrss 347.5 -> 364.5
+rref on (391, 3195) int64 maxrss 372.9 -> 388.5
+rref on (431, 3195) int64 maxrss 397.8 -> 412.5
+rref on (395, 3510) int64 maxrss 433.4 -> 454.6
+rref on (473, 3195) int64 maxrss 466.1 -> 489.1
+7761 503.0
+VIGIA-FIN-OK exit=0 pico_kb=507760 t=7s

@@ -1,0 +1,2 @@
+RING k=2 m=10 p=2: vdim quotient=92239  dim ideal=7761  |Gamma|=N_(m-1)(2k+2)=7761  equal=True
+VIGIA-FIN-OK exit=0 pico_kb=459776 t=181s

@@ -1,0 +1,14 @@
+k=1 m=4: |Gamma| by definition=19  formula N_(m-1)(2k+2)=19  brute closed tuples=19  agree=True   [controls: without -1: 6 (<: True); -1 as an ordinary class: 36 (>: True)]
+k=1 m=6: |Gamma| by definition=61  formula N_(m-1)(2k+2)=61  brute closed tuples=61  agree=True   [controls: without -1: 36 (<: True); -1 as an ordinary class: 90 (>: True)]
+k=1 m=8: |Gamma| by definition=127  formula N_(m-1)(2k+2)=127  brute closed tuples=127  agree=True   [controls: without -1: 90 (<: True); -1 as an ordinary class: 168 (>: True)]
+k=1 m=10: |Gamma| by definition=217  formula N_(m-1)(2k+2)=217  brute closed tuples=217  agree=True   [controls: without -1: 168 (<: True); -1 as an ordinary class: 270 (>: True)]
+k=1 m=12: |Gamma| by definition=331  formula N_(m-1)(2k+2)=331  brute closed tuples=331  agree=True   [controls: without -1: 270 (<: True); -1 as an ordinary class: 396 (>: True)]
+k=1 m=16: |Gamma| by definition=631  formula N_(m-1)(2k+2)=631  brute closed tuples=631  agree=True   [controls: without -1: 546 (<: True); -1 as an ordinary class: 720 (>: True)]
+k=1 m=32: |Gamma| by definition=2791  formula N_(m-1)(2k+2)=2791  brute closed tuples=2791  agree=True   [controls: without -1: 2610 (<: True); -1 as an ordinary class: 2976 (>: True)]
+k=2 m=4: |Gamma| by definition=141  formula N_(m-1)(2k+2)=141  brute closed tuples=141  agree=True   [controls: without -1: 20 (<: True); -1 as an ordinary class: 400 (>: True)]
+k=2 m=6: |Gamma| by definition=1001  formula N_(m-1)(2k+2)=1001  brute closed tuples=1001  agree=True   [controls: without -1: 400 (<: True); -1 as an ordinary class: 1860 (>: True)]
+k=2 m=8: |Gamma| by definition=3301  formula N_(m-1)(2k+2)=3301  brute closed tuples=3301  agree=True   [controls: without -1: 1860 (<: True); -1 as an ordinary class: 5120 (>: True)]
+k=2 m=10: |Gamma| by definition=7761  formula N_(m-1)(2k+2)=7761  brute closed tuples=7761  agree=True   [controls: without -1: 5120 (<: True); -1 as an ordinary class: 10900 (>: True)]
+k=3 m=4: |Gamma| by definition=1107  formula N_(m-1)(2k+2)=1107  brute closed tuples=1107  agree=True   [controls: without -1: 70 (<: True); -1 as an ordinary class: 4900 (>: True)]
+ALL AGREE
+VIGIA-FIN-OK exit=0 pico_kb=22368 t=1s

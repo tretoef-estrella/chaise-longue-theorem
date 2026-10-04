@@ -1,0 +1,18 @@
+bal a=1 q=2: dim ideal=2  count=2  equal=True
+bal a=2 q=2: dim ideal=6  count=6  equal=True
+bal a=3 q=2: dim ideal=20  count=20  equal=True
+bal a=4 q=2: dim ideal=70  count=70  equal=True
+bal a=1 q=4: dim ideal=4  count=4  equal=True
+bal a=2 q=4: dim ideal=28  count=28  equal=True
+bal a=3 q=4: dim ideal=256  count=256  equal=True
+bal a=1 q=8: dim ideal=8  count=8  equal=True
+bal a=2 q=8: dim ideal=120  count=120  equal=True
+ph a=1 q=2: dim ideal=6  count=6  equal=True
+ph a=2 q=2: dim ideal=20  count=20  equal=True
+ph a=3 q=2: dim ideal=70  count=70  equal=True
+ph a=1 q=4: dim ideal=28  count=28  equal=True
+ph a=2 q=4: dim ideal=256  count=256  equal=True
+ph a=1 q=8: dim ideal=120  count=120  equal=True
+CONTROL single bijection a=2 q=2: dim ideal=4  count=6  equal=False
+CONTROL single bijection a=2 q=4: dim ideal=16  count=28  equal=False
+VIGIA-FIN-OK exit=0 pico_kb=7040 t=0s

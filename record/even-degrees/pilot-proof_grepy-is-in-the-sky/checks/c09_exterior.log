@@ -1,0 +1,6 @@
+EXTERIOR r=3 (h=1): dictionary True; decomposability True; recursion True; identities (4): True  --  t=1: (4a) True [0 monomials], (4b) True [1 monomials]
+EXTERIOR r=5 (h=2): dictionary True; decomposability True; recursion True; identities (4): True  --  t=1: (4a) True [1 monomials], (4b) True [2 monomials]; t=2: (4a) True [0 monomials], (4b) True [1 monomials]
+EXTERIOR r=7 (h=3): dictionary True; decomposability True; recursion True; identities (4): True  --  t=1: (4a) True [3 monomials], (4b) True [3 monomials]; t=2: (4a) True [1 monomials], (4b) True [3 monomials]; t=3: (4a) True [0 monomials], (4b) True [1 monomials]
+EXTERIOR r=9 (h=4): dictionary True; decomposability True; recursion True; identities (4): True  --  t=1: (4a) True [6 monomials], (4b) True [4 monomials]; t=2: (4a) True [4 monomials], (4b) True [6 monomials]; t=3: (4a) True [1 monomials], (4b) True [4 monomials]; t=4: (4a) True [0 monomials], (4b) True [1 monomials]
+EXTERIOR r=11 (h=5): dictionary True; decomposability True; recursion True; identities (4): True  --  t=1: (4a) True [10 monomials], (4b) True [5 monomials]; t=2: (4a) True [10 monomials], (4b) True [10 monomials]; t=3: (4a) True [5 monomials], (4b) True [10 monomials]; t=4: (4a) True [1 monomials], (4b) True [5 monomials]; t=5: (4a) True [0 monomials], (4b) True [1 monomials]
+VIGIA-FIN-OK exit=0 pico_kb=9776 t=3s

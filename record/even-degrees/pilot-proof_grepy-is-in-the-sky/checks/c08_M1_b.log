@@ -1,0 +1,3 @@
+M1 r=7 l=1 t=2 p=2: 6 variables, deg Pf=15, generators of U: 45 of degree 13;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=7 l=0 t=3 p=2: 7 variables, deg Pf=21, generators of U: 105 of degree 18;  Pf in U: True  (deg Pf = deg Vandermonde)
+VIGIA-FIN-OK exit=0 pico_kb=194224 t=1s

@@ -1,0 +1,15 @@
+RING k=1 m=4 p=2: vdim quotient=45  dim ideal=19  |Gamma|=N_(m-1)(2k+2)=19  equal=True
+RING k=1 m=6 p=2: vdim quotient=155  dim ideal=61  |Gamma|=N_(m-1)(2k+2)=61  equal=True
+RING k=1 m=6 p=3: vdim quotient=155  dim ideal=61  |Gamma|=N_(m-1)(2k+2)=61  equal=True
+RING k=1 m=8 p=2: vdim quotient=385  dim ideal=127  |Gamma|=N_(m-1)(2k+2)=127  equal=True
+RING k=1 m=10 p=2: vdim quotient=783  dim ideal=217  |Gamma|=N_(m-1)(2k+2)=217  equal=True
+RING k=1 m=10 p=5: vdim quotient=783  dim ideal=217  |Gamma|=N_(m-1)(2k+2)=217  equal=True
+RING k=1 m=12 p=2: vdim quotient=1397  dim ideal=331  |Gamma|=N_(m-1)(2k+2)=331  equal=True
+RING k=1 m=12 p=3: vdim quotient=1397  dim ideal=331  |Gamma|=N_(m-1)(2k+2)=331  equal=True
+RING k=2 m=4 p=2: vdim quotient=883  dim ideal=141  |Gamma|=N_(m-1)(2k+2)=141  equal=True
+RING k=2 m=6 p=2: vdim quotient=6775  dim ideal=1001  |Gamma|=N_(m-1)(2k+2)=1001  equal=True
+RING k=2 m=6 p=3: vdim quotient=6775  dim ideal=1001  |Gamma|=N_(m-1)(2k+2)=1001  equal=True
+LOCAL k=1 q=4: dim true ideal=19  dim ideal of the lowest forms L_J=19  |Gamma|=19  all equal=True
+LOCAL k=1 q=8: dim true ideal=127  dim ideal of the lowest forms L_J=127  |Gamma|=127  all equal=True
+LOCAL k=2 q=4: dim true ideal=141  dim ideal of the lowest forms L_J=141  |Gamma|=141  all equal=True
+VIGIA-FIN-OK exit=0 pico_kb=48496 t=6s

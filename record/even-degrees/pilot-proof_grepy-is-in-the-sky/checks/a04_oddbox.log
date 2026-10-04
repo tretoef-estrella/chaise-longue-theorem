@@ -1,0 +1,27 @@
+BOX k=1 r=3 p=2 mode=signed: dim C=27 dim ideal=19 N_r(2k+2)=19 equal=True  HF=[3, 6, 6, 3, 1] from degree 2
+BOX k=1 r=5 p=2 mode=signed: dim C=125 dim ideal=61 N_r(2k+2)=61 equal=True  HF=[3, 6, 9, 12, 12, 9, 6, 3, 1] from degree 4
+BOX k=1 r=7 p=2 mode=signed: dim C=343 dim ideal=127 N_r(2k+2)=127 equal=True  HF=[3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3, 1] from degree 6
+BOX k=1 r=9 p=2 mode=signed: dim C=729 dim ideal=217 N_r(2k+2)=217 equal=True  HF=[3, 6, 9, 12, 15, 18, 21, 24, 24, 21, 18, 15, 12, 9, 6, 3, 1] from degree 8
+BOX k=1 r=11 p=2 mode=signed: dim C=1331 dim ideal=331 N_r(2k+2)=331 equal=True  HF=[3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1] from degree 10
+BOX k=2 r=3 p=2 mode=signed: dim C=243 dim ideal=141 N_r(2k+2)=141 equal=True  HF=[15, 36, 40, 29, 15, 5, 1] from degree 4
+BOX k=2 r=5 p=2 mode=signed: dim C=3125 dim ideal=1001 N_r(2k+2)=1001 equal=True  HF=[15, 45, 90, 140, 170, 171, 145, 105, 65, 34, 15, 5, 1] from degree 8
+BOX k=2 r=7 p=2 mode=signed: dim C=16807 dim ideal=3301 N_r(2k+2)=3301 equal=True  HF=[15, 45, 90, 150, 225, 305, 365, 395, 395, 366, 310, 240, 170, 110, 65, 34, 15, 5, 1] from degree 12
+BOX k=2 r=9 p=2 mode=signed: dim C=59049 dim ideal=7761 N_r(2k+2)=7761 equal=True  HF=[15, 45, 90, 150, 225, 315, 420, 530, 620, 680, 710, 710, 680, 621, 535, 435, 335, 245, 170, 110, 65, 34, 15, 5, 1] from degree 16
+BOX k=3 r=3 p=2 mode=signed: dim C=2187 dim ideal=1107 N_r(2k+2)=1107 equal=True  HF=[91, 232, 280, 238, 154, 76, 28, 7, 1] from degree 6
+BOX k=1 r=3 p=3 mode=signed: dim C=27 dim ideal=19 N_r(2k+2)=19 equal=True  HF=[3, 6, 6, 3, 1] from degree 2
+BOX k=2 r=3 p=3 mode=signed: dim C=243 dim ideal=141 N_r(2k+2)=141 equal=True  HF=[15, 36, 40, 29, 15, 5, 1] from degree 4
+BOX k=1 r=5 p=3 mode=signed: dim C=125 dim ideal=61 N_r(2k+2)=61 equal=True  HF=[3, 6, 9, 12, 12, 9, 6, 3, 1] from degree 4
+BOX k=2 r=5 p=3 mode=signed: dim C=3125 dim ideal=1001 N_r(2k+2)=1001 equal=True  HF=[15, 45, 90, 140, 170, 171, 145, 105, 65, 34, 15, 5, 1] from degree 8
+BOX k=1 r=5 p=5 mode=signed: dim C=125 dim ideal=61 N_r(2k+2)=61 equal=True  HF=[3, 6, 9, 12, 12, 9, 6, 3, 1] from degree 4
+BOX k=2 r=5 p=5 mode=signed: dim C=3125 dim ideal=1001 N_r(2k+2)=1001 equal=True  HF=[15, 45, 90, 140, 170, 171, 145, 105, 65, 34, 15, 5, 1] from degree 8
+BOX k=1 r=9 p=3 mode=signed: dim C=729 dim ideal=217 N_r(2k+2)=217 equal=True  HF=[3, 6, 9, 12, 15, 18, 21, 24, 24, 21, 18, 15, 12, 9, 6, 3, 1] from degree 8
+BOX k=1 r=7 p=7 mode=signed: dim C=343 dim ideal=127 N_r(2k+2)=127 equal=True  HF=[3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3, 1] from degree 6
+BOX k=1 r=3 p=3 mode=nosign: dim C=27 dim ideal=18 N_r(2k+2)=19 equal=False  HF=[3, 5, 6, 3, 1] from degree 2
+BOX k=2 r=3 p=3 mode=nosign: dim C=243 dim ideal=138 N_r(2k+2)=141 equal=False  HF=[15, 31, 41, 30, 15, 5, 1] from degree 4
+BOX k=1 r=5 p=5 mode=nosign: dim C=125 dim ideal=60 N_r(2k+2)=61 equal=False  HF=[3, 6, 9, 11, 12, 9, 6, 3, 1] from degree 4
+BOX k=1 r=5 p=3 mode=nosign: dim C=125 dim ideal=61 N_r(2k+2)=61 equal=True  HF=[3, 6, 9, 12, 12, 9, 6, 3, 1] from degree 4
+BOX k=2 r=5 p=3 mode=nosign: dim C=3125 dim ideal=1061 N_r(2k+2)=1001 equal=False  HF=[15, 45, 90, 145, 180, 185, 160, 115, 70, 35, 15, 5, 1] from degree 8
+DROP k=2 r=3 p=2: dimension with one matching removed, for each of the 15 matchings: [140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140]   N_r=141
+DROP k=2 r=3 p=3: dimension with one matching removed, for each of the 15 matchings: [140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140, 140]   N_r=141
+DROP k=1 r=5 p=2: dimension with one matching removed, for each of the 3 matchings: [45, 45, 45]   N_r=61
+VIGIA-FIN-OK exit=0 pico_kb=35904 t=3s

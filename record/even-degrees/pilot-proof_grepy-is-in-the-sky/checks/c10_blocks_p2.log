@@ -1,0 +1,22 @@
+  block with 0 variables of type B (ring of dimension 8): dim ideal = 1   x 1 blocks
+  block with 1 variables of type B (ring of dimension 16): dim ideal = 4   x 3 blocks
+  block with 2 variables of type B (ring of dimension 32): dim ideal = 4   x 3 blocks
+  block with 3 variables of type B (ring of dimension 64): dim ideal = 36   x 1 blocks
+DIRECT k=1 m=6 p=2: sum over the 8 blocks = 61   |Gamma| = N_5(4) = 61   equal: True
+  block with 0 variables of type B (ring of dimension 32): dim ideal = 1   x 1 blocks
+  block with 1 variables of type B (ring of dimension 64): dim ideal = 4   x 5 blocks
+  block with 2 variables of type B (ring of dimension 128): dim ideal = 4   x 10 blocks
+  block with 3 variables of type B (ring of dimension 256): dim ideal = 36   x 10 blocks
+  block with 4 variables of type B (ring of dimension 512): dim ideal = 36   x 5 blocks
+  block with 5 variables of type B (ring of dimension 1024): dim ideal = 400   x 1 blocks
+DIRECT k=2 m=6 p=2: sum over the 32 blocks = 1001   |Gamma| = N_5(6) = 1001   equal: True
+  block with 0 variables of type B (ring of dimension 128): dim ideal = 1   x 1 blocks
+  block with 1 variables of type B (ring of dimension 256): dim ideal = 4   x 7 blocks
+  block with 2 variables of type B (ring of dimension 512): dim ideal = 4   x 21 blocks
+  block with 3 variables of type B (ring of dimension 1024): dim ideal = 36   x 35 blocks
+  block with 4 variables of type B (ring of dimension 2048): dim ideal = 36   x 35 blocks
+  block with 5 variables of type B (ring of dimension 4096): dim ideal = 400   x 21 blocks
+  block with 6 variables of type B (ring of dimension 8192): dim ideal = 400   x 7 blocks
+  block with 7 variables of type B (ring of dimension 16384): dim ideal = 4900   x 1 blocks
+DIRECT k=3 m=6 p=2: sum over the 128 blocks = 18733   |Gamma| = N_5(8) = 18733   equal: True
+VIGIA-FIN-OK exit=0 pico_kb=32560 t=9s

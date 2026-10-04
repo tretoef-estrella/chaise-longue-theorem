@@ -1,0 +1,36 @@
+R3 k=1 q=4: |Gamma|=19  dim true ideal=19  dim tangent ideal=19  equal=True
+   degrees 5..9
+   HF in(true)  : [3, 6, 6, 3, 1]
+   HF tangent   : [3, 6, 6, 3, 1]
+   same Hilbert function: True
+R3 k=1 q=8: |Gamma|=127  dim true ideal=127  dim tangent ideal=127  equal=True
+   degrees 9..21
+   HF in(true)  : [3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3, 1]
+   HF tangent   : [3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3, 1]
+   same Hilbert function: True
+R3 k=1 q=16: |Gamma|=631  dim true ideal=631  dim tangent ideal=631  equal=True
+   degrees 17..45
+   HF in(true)  : [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 42, 39, 36, 33, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1]
+   HF tangent   : [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 42, 39, 36, 33, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1]
+   same Hilbert function: True
+R3 k=1 q=32: |Gamma|=2791  dim true ideal=2791  dim tangent ideal=2791  equal=True
+   degrees 33..93
+   HF in(true)  : [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 90, 87, 84, 81, 78, 75, 72, 69, 66, 63, 60, 57, 54, 51, 48, 45, 42, 39, 36, 33, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1]
+   HF tangent   : [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 90, 87, 84, 81, 78, 75, 72, 69, 66, 63, 60, 57, 54, 51, 48, 45, 42, 39, 36, 33, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1]
+   same Hilbert function: True
+R3 k=2 q=4: |Gamma|=141  dim true ideal=141  dim tangent ideal=141  equal=True
+   degrees 9..15
+   HF in(true)  : [15, 36, 40, 29, 15, 5, 1]
+   HF tangent   : [15, 36, 40, 29, 15, 5, 1]
+   same Hilbert function: True
+R3 k=2 q=8: |Gamma|=3301  dim true ideal=3301  dim tangent ideal=3301  equal=True
+   degrees 17..35
+   HF in(true)  : [15, 45, 90, 150, 225, 305, 365, 395, 395, 366, 310, 240, 170, 110, 65, 34, 15, 5, 1]
+   HF tangent   : [15, 45, 90, 150, 225, 305, 365, 395, 395, 366, 310, 240, 170, 110, 65, 34, 15, 5, 1]
+   same Hilbert function: True
+R3 k=3 q=4: |Gamma|=1107  dim true ideal=1107  dim tangent ideal=1107  equal=True
+   degrees 13..21
+   HF in(true)  : [91, 232, 280, 238, 154, 76, 28, 7, 1]
+   HF tangent   : [91, 232, 280, 238, 154, 76, 28, 7, 1]
+   same Hilbert function: True
+VIGIA-FIN-OK exit=0 pico_kb=36224 t=1s

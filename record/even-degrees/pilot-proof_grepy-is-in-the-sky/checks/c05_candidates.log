@@ -1,0 +1,29 @@
+GRID r=3 m=1 p=101: down-sets of ⊑: 2;  candidate ideal = gr J(Z): 2;  candidate inside gr J: 2;  [control without absorbed pairs: 2 equal]
+GRID r=3 m=2 p=101: down-sets of ⊑: 3;  candidate ideal = gr J(Z): 3;  candidate inside gr J: 3;  [control without absorbed pairs: 3 equal]
+GRID r=3 m=3 p=101: down-sets of ⊑: 4;  candidate ideal = gr J(Z): 4;  candidate inside gr J: 4;  [control without absorbed pairs: 3 equal]
+GRID r=3 m=4 p=101: down-sets of ⊑: 5;  candidate ideal = gr J(Z): 5;  candidate inside gr J: 5;  [control without absorbed pairs: 5 equal]
+GRID r=3 m=5 p=101: down-sets of ⊑: 6;  candidate ideal = gr J(Z): 6;  candidate inside gr J: 6;  [control without absorbed pairs: 5 equal]
+GRID r=5 m=1 p=101: down-sets of ⊑: 2;  candidate ideal = gr J(Z): 2;  candidate inside gr J: 2;  [control without absorbed pairs: 2 equal]
+GRID r=5 m=2 p=101: down-sets of ⊑: 4;  candidate ideal = gr J(Z): 4;  candidate inside gr J: 4;  [control without absorbed pairs: 4 equal]
+GRID r=5 m=3 p=101: down-sets of ⊑: 6;  candidate ideal = gr J(Z): 6;  candidate inside gr J: 6;  [control without absorbed pairs: 5 equal]
+GRID r=5 m=4 p=101: down-sets of ⊑: 10;  candidate ideal = gr J(Z): 10;  candidate inside gr J: 10;  [control without absorbed pairs: 9 equal]
+GRID r=7 m=1 p=13: down-sets of ⊑: 2;  candidate ideal = gr J(Z): 2;  candidate inside gr J: 2;  [control without absorbed pairs: 2 equal]
+GRID r=7 m=2 p=13: down-sets of ⊑: 4;  candidate ideal = gr J(Z): 4;  candidate inside gr J: 4;  [control without absorbed pairs: 4 equal]
+GRID r=7 m=3 p=13: down-sets of ⊑: 8;  candidate ideal = gr J(Z): 8;  candidate inside gr J: 8;  [control without absorbed pairs: 7 equal]
+GRID r=5 m=2 p=5: down-sets of ⊑: 4;  candidate ideal = gr J(Z): 4;  candidate inside gr J: 4;  [control without absorbed pairs: 4 equal]
+GRID r=5 m=3 p=5: down-sets of ⊑: 6;  candidate ideal = gr J(Z): 6;  candidate inside gr J: 6;  [control without absorbed pairs: 5 equal]
+GRID r=5 m=4 p=5: down-sets of ⊑: 10;  candidate ideal = gr J(Z): 10;  candidate inside gr J: 10;  [control without absorbed pairs: 9 equal]
+GRID r=3 m=3 p=3: down-sets of ⊑: 4;  candidate ideal = gr J(Z): 4;  candidate inside gr J: 4;  [control without absorbed pairs: 3 equal]
+GRID r=3 m=4 p=3: down-sets of ⊑: 5;  candidate ideal = gr J(Z): 5;  candidate inside gr J: 5;  [control without absorbed pairs: 5 equal]
+GRID r=3 m=5 p=3: down-sets of ⊑: 6;  candidate ideal = gr J(Z): 6;  candidate inside gr J: 6;  [control without absorbed pairs: 5 equal]
+TREE k=1 r=3 p=2: nodes (m >= 1): 6;  node = ideal of the candidate patterns: 6
+TREE k=2 r=3 p=2: nodes (m >= 1): 13;  node = ideal of the candidate patterns: 13
+TREE k=1 r=5 p=2: nodes (m >= 1): 6;  node = ideal of the candidate patterns: 6
+TREE k=2 r=5 p=2: nodes (m >= 1): 15;  node = ideal of the candidate patterns: 15
+TREE k=3 r=3 p=2: nodes (m >= 1): 22;  node = ideal of the candidate patterns: 22
+TREE k=1 r=7 p=2: nodes (m >= 1): 6;  node = ideal of the candidate patterns: 6
+TREE k=2 r=3 p=3: nodes (m >= 1): 13;  node = ideal of the candidate patterns: 13
+TREE k=2 r=5 p=3: nodes (m >= 1): 15;  node = ideal of the candidate patterns: 15
+TREE k=2 r=5 p=101: nodes (m >= 1): 15;  node = ideal of the candidate patterns: 15
+TREE k=3 r=3 p=101: nodes (m >= 1): 22;  node = ideal of the candidate patterns: 22
+VIGIA-FIN-OK exit=0 pico_kb=77216 t=55s

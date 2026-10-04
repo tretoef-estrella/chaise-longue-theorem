@@ -1,0 +1,23 @@
+k=1 m=6 p=2 (q=2, r'=3): sum over 19 compatible colourings=61  |Gamma| by definition=61  N_(m-1)(2k+2)=61  agree=True
+k=1 m=6 p=3 (q=3, r'=2): sum over 8 compatible colourings=61  |Gamma| by definition=61  N_(m-1)(2k+2)=61  agree=True
+k=2 m=6 p=2 (q=2, r'=3): sum over 141 compatible colourings=1001  |Gamma| by definition=1001  N_(m-1)(2k+2)=1001  agree=True
+k=2 m=6 p=3 (q=3, r'=2): sum over 32 compatible colourings=1001  |Gamma| by definition=1001  N_(m-1)(2k+2)=1001  agree=True
+k=1 m=10 p=2 (q=2, r'=5): sum over 61 compatible colourings=217  |Gamma| by definition=217  N_(m-1)(2k+2)=217  agree=True
+k=1 m=10 p=5 (q=5, r'=2): sum over 8 compatible colourings=217  |Gamma| by definition=217  N_(m-1)(2k+2)=217  agree=True
+k=2 m=10 p=2 (q=2, r'=5): sum over 1001 compatible colourings=7761  |Gamma| by definition=7761  N_(m-1)(2k+2)=7761  agree=True
+k=2 m=10 p=5 (q=5, r'=2): sum over 32 compatible colourings=7761  |Gamma| by definition=7761  N_(m-1)(2k+2)=7761  agree=True
+k=1 m=12 p=2 (q=4, r'=3): sum over 19 compatible colourings=331  |Gamma| by definition=331  N_(m-1)(2k+2)=331  agree=True
+k=1 m=12 p=3 (q=3, r'=4): sum over 38 compatible colourings=331  |Gamma| by definition=331  N_(m-1)(2k+2)=331  agree=True
+k=2 m=12 p=2 (q=4, r'=3): sum over 141 compatible colourings=15101  |Gamma| by definition=15101  N_(m-1)(2k+2)=15101  agree=True
+k=2 m=12 p=3 (q=3, r'=4): sum over 472 compatible colourings=15101  |Gamma| by definition=15101  N_(m-1)(2k+2)=15101  agree=True
+k=1 m=20 p=2 (q=4, r'=5): sum over 61 compatible colourings=1027  |Gamma| by definition=1027  N_(m-1)(2k+2)=1027  agree=True
+k=1 m=20 p=5 (q=5, r'=4): sum over 38 compatible colourings=1027  |Gamma| by definition=1027  N_(m-1)(2k+2)=1027  agree=True
+k=1 m=18 p=2 (q=2, r'=9): sum over 217 compatible colourings=817  |Gamma| by definition=817  N_(m-1)(2k+2)=817  agree=True
+k=1 m=18 p=3 (q=9, r'=2): sum over 8 compatible colourings=817  |Gamma| by definition=817  N_(m-1)(2k+2)=817  agree=True
+k=1 m=30 p=2 (q=2, r'=15): sum over 631 compatible colourings=2437  |Gamma| by definition=2437  N_(m-1)(2k+2)=2437  agree=True
+k=1 m=30 p=3 (q=3, r'=10): sum over 272 compatible colourings=2437  |Gamma| by definition=2437  N_(m-1)(2k+2)=2437  agree=True
+k=1 m=30 p=5 (q=5, r'=6): sum over 92 compatible colourings=2437  |Gamma| by definition=2437  N_(m-1)(2k+2)=2437  agree=True
+k=3 m=6 p=2 (q=2, r'=3): sum over 1107 compatible colourings=18733  |Gamma| by definition=18733  N_(m-1)(2k+2)=18733  agree=True
+k=3 m=6 p=3 (q=3, r'=2): sum over 128 compatible colourings=18733  |Gamma| by definition=18733  N_(m-1)(2k+2)=18733  agree=True
+ALL AGREE
+VIGIA-FIN-OK exit=0 pico_kb=22864 t=6s

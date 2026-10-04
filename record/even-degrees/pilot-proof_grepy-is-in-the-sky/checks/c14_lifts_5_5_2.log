@@ -1,0 +1,2 @@
+LIFTS r=5 m=5 p=2: (generator, down-set) pairs tested: 926; failures: 0;  by case (tested, failed): alpha: (409, 0), beta: (87, 0), beta': (31, 0), gamma: (226, 0), gamma': (11, 0), zeta: (123, 0), zeta': (39, 0)
+VIGIA-FIN-OK exit=0 pico_kb=27328 t=90s

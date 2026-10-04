@@ -1,0 +1,45 @@
+M1 r=3 l=0 t=1 p=2: 3 variables, deg Pf=3, generators of U: 3 of degree 2;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=5 l=0 t=1 p=2: 3 variables, deg Pf=7, generators of U: 3 of degree 4;  Pf in U: True
+M1 r=5 l=0 t=2 p=2: 5 variables, deg Pf=10, generators of U: 15 of degree 8;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=5 l=1 t=1 p=2: 4 variables, deg Pf=6, generators of U: 6 of degree 5;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=7 l=0 t=1 p=2: 3 variables, deg Pf=11, generators of U: 3 of degree 6;  Pf in U: True
+M1 r=7 l=1 t=1 p=2: 4 variables, deg Pf=10, generators of U: 6 of degree 7;  Pf in U: True
+M1 r=9 l=0 t=1 p=2: 3 variables, deg Pf=15, generators of U: 3 of degree 8;  Pf in U: True
+M1 r=9 l=1 t=1 p=2: 4 variables, deg Pf=14, generators of U: 6 of degree 9;  Pf in U: True
+M1 r=3 l=0 t=1 p=3: 3 variables, deg Pf=3, generators of U: 3 of degree 2;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=5 l=0 t=1 p=3: 3 variables, deg Pf=7, generators of U: 3 of degree 4;  Pf in U: True
+M1 r=5 l=0 t=2 p=3: 5 variables, deg Pf=10, generators of U: 15 of degree 8;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=5 l=1 t=1 p=3: 4 variables, deg Pf=6, generators of U: 6 of degree 5;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=7 l=0 t=1 p=3: 3 variables, deg Pf=11, generators of U: 3 of degree 6;  Pf in U: True
+M1 r=7 l=1 t=1 p=3: 4 variables, deg Pf=10, generators of U: 6 of degree 7;  Pf in U: True
+M1 r=9 l=0 t=1 p=3: 3 variables, deg Pf=15, generators of U: 3 of degree 8;  Pf in U: True
+M1 r=9 l=1 t=1 p=3: 4 variables, deg Pf=14, generators of U: 6 of degree 9;  Pf in U: True
+M1 r=3 l=0 t=1 p=5: 3 variables, deg Pf=3, generators of U: 3 of degree 2;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=5 l=0 t=1 p=5: 3 variables, deg Pf=7, generators of U: 3 of degree 4;  Pf in U: True
+M1 r=5 l=0 t=2 p=5: 5 variables, deg Pf=10, generators of U: 15 of degree 8;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=5 l=1 t=1 p=5: 4 variables, deg Pf=6, generators of U: 6 of degree 5;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=7 l=0 t=1 p=5: 3 variables, deg Pf=11, generators of U: 3 of degree 6;  Pf in U: True
+M1 r=7 l=1 t=1 p=5: 4 variables, deg Pf=10, generators of U: 6 of degree 7;  Pf in U: True
+M1 r=9 l=0 t=1 p=5: 3 variables, deg Pf=15, generators of U: 3 of degree 8;  Pf in U: True
+M1 r=9 l=1 t=1 p=5: 4 variables, deg Pf=14, generators of U: 6 of degree 9;  Pf in U: True
+M1 r=3 l=0 t=1 p=7: 3 variables, deg Pf=3, generators of U: 3 of degree 2;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=5 l=0 t=1 p=7: 3 variables, deg Pf=7, generators of U: 3 of degree 4;  Pf in U: True
+M1 r=5 l=0 t=2 p=7: 5 variables, deg Pf=10, generators of U: 15 of degree 8;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=5 l=1 t=1 p=7: 4 variables, deg Pf=6, generators of U: 6 of degree 5;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=7 l=0 t=1 p=7: 3 variables, deg Pf=11, generators of U: 3 of degree 6;  Pf in U: True
+M1 r=7 l=1 t=1 p=7: 4 variables, deg Pf=10, generators of U: 6 of degree 7;  Pf in U: True
+M1 r=9 l=0 t=1 p=7: 3 variables, deg Pf=15, generators of U: 3 of degree 8;  Pf in U: True
+M1 r=9 l=1 t=1 p=7: 4 variables, deg Pf=14, generators of U: 6 of degree 9;  Pf in U: True
+M1 r=3 l=0 t=1 p=101: 3 variables, deg Pf=3, generators of U: 3 of degree 2;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=5 l=0 t=1 p=101: 3 variables, deg Pf=7, generators of U: 3 of degree 4;  Pf in U: True
+M1 r=5 l=0 t=2 p=101: 5 variables, deg Pf=10, generators of U: 15 of degree 8;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=5 l=1 t=1 p=101: 4 variables, deg Pf=6, generators of U: 6 of degree 5;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=7 l=0 t=1 p=101: 3 variables, deg Pf=11, generators of U: 3 of degree 6;  Pf in U: True
+M1 r=7 l=1 t=1 p=101: 4 variables, deg Pf=10, generators of U: 6 of degree 7;  Pf in U: True
+M1 r=9 l=0 t=1 p=101: 3 variables, deg Pf=15, generators of U: 3 of degree 8;  Pf in U: True
+M1 r=9 l=1 t=1 p=101: 4 variables, deg Pf=14, generators of U: 6 of degree 9;  Pf in U: True
+M1 r=7 l=0 t=2 p=2: 5 variables, deg Pf=16, generators of U: 15 of degree 12;  Pf in U: True
+M1 r=7 l=2 t=1 p=2: 5 variables, deg Pf=10, generators of U: 10 of degree 9;  Pf in U: True  (deg Pf = deg Vandermonde)
+M1 r=7 l=0 t=2 p=7: 5 variables, deg Pf=16, generators of U: 15 of degree 12;  Pf in U: True
+M1 r=7 l=2 t=1 p=7: 5 variables, deg Pf=10, generators of U: 10 of degree 9;  Pf in U: True  (deg Pf = deg Vandermonde)
+VIGIA-FIN-OK exit=0 pico_kb=26704 t=4s

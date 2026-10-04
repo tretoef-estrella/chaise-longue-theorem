@@ -1,0 +1,8 @@
+python 3.9.6 numpy 2.0.2 flint 0.6.0
+nmod_mat rank 1 rref ([1, 2, 3]
+[0, 0, 0], 1)
+6
+4
+
+i3 : 
+VIGIA-FIN-OK exit=0 pico_kb=86192 t=1s

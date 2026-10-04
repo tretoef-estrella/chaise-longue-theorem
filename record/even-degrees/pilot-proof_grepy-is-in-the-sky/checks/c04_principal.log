@@ -1,0 +1,169 @@
+PRINCIPAL r=3 m=1 p=101
+  shape {(1)}: down-set {(1) ()*}  |Z|=3  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {()*}: down-set {()*}  |Z|=1  mingens={2: 1}  new generators (deg:number)={2: 1}
+        +y1^2
+PRINCIPAL r=3 m=2 p=101
+  shape {()}: down-set {()}  |Z|=3  mingens={2: 1}  new generators (deg:number)={2: 1}
+        +y2^2 -y1y2 +y1^2
+  shape {(2)}: down-set {() (2) (1)*}  |Z|=9  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {(1)*}: down-set {() (1)*}  |Z|=7  mingens={1: 1, 2: 1}  new generators (deg:number)={1: 1}
+        +y2 -y1
+PRINCIPAL r=3 m=3 p=101
+  shape {(1)}: down-set {(1) ()*}  |Z|=19  mingens={2: 3}  new generators (deg:number)={2: 3}
+        +y3^2 -y1y3 +y1^2
+        +y2y3 -y1y3 -y1y2 +2y1^2
+        +y2^2 -y1y2 +y1^2
+  shape {()*}: down-set {()*}  |Z|=7  mingens={3: 1, 4: 1}  new generators (deg:number)={3: 1, 4: 1}
+        +y2y3^2 -y2^2y3 -y1y3^2 +y1y2^2 +y1^2y3 -y1^2y2
+  shape {(3)}: down-set {(1) ()* (3) (2)*}  |Z|=27  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {(2)*}: down-set {(1) ()* (2)*}  |Z|=25  mingens={1: 2, 2: 1}  new generators (deg:number)={1: 2}
+        +y3 -y1
+        +y2 -y1
+PRINCIPAL r=3 m=4 p=101
+  shape {()}: down-set {()}  |Z|=19  mingens={4: 3}  new generators (deg:number)={4: 3}
+        +y3^2y4^2 -y2y3^2y4 +y2^2y3^2 -y1y3y4^2 +y1y2y3y4 -y1y2^2y3 +y1^2y4^2 -y1^2y2y4 +y1^2y2^2
+        +y2^2y4^2 -y2^2y3y4 +y2^2y3^2 -y1y2y4^2 +y1y2y3y4 -y1y2y3^2 +y1^2y4^2 -y1^2y3y4 +y1^2y3^2
+  shape {(2)}: down-set {() (2) (1)*}  |Z|=71  mingens={2: 6}  new generators (deg:number)={2: 6}
+        +y4^2 -y1y4 +y1^2
+        +y3y4 -y1y4 -y1y3 +2y1^2
+        +y3^2 -y1y3 +y1^2
+  shape {(1)*}: down-set {() (1)*}  |Z|=51  mingens={3: 6, 4: 1}  new generators (deg:number)={3: 6}
+        +y3y4^2 -y2^2y3 -y1y4^2 -y1y3y4 +y1y2y3 +y1y2^2 +2y1^2y4 -2y1^2y2
+        +y3^2y4 -y2^2y3 -y1y3y4 -y1y3^2 +y1y2y3 +y1y2^2 +y1^2y4 +y1^2y3 -2y1^2y2
+        +y2y4^2 -y2^2y3 -y1y4^2 -y1y2y4 +y1y2y3 +y1y2^2 +2y1^2y4 -y1^2y3 -y1^2y2
+  shape {(4)}: down-set {() (2) (1)* (4) (3)*}  |Z|=81  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {(3)*}: down-set {() (2) (1)* (3)*}  |Z|=79  mingens={1: 3, 2: 1}  new generators (deg:number)={1: 3}
+        +y4 -y1
+        +y3 -y1
+        +y2 -y1
+PRINCIPAL r=3 m=5 p=101
+  shape {(1)}: down-set {(1) ()*}  |Z|=141  mingens={4: 15}  new generators (deg:number)={4: 15}
+  shape {()*}: down-set {()*}  |Z|=51  mingens={5: 6, 6: 1}  new generators (deg:number)={5: 6, 6: 1}
+  shape {(3)}: down-set {(1) ()* (3) (2)*}  |Z|=231  mingens={2: 10}  new generators (deg:number)={2: 10}
+        +y5^2 -y1y5 +y1^2
+        +y4y5 -y1y5 -y1y4 +2y1^2
+        +y4^2 -y1y4 +y1^2
+  shape {(2)*}: down-set {(1) ()* (2)*}  |Z|=201  mingens={3: 15, 4: 1}  new generators (deg:number)={3: 15}
+        +y4y5^2 -y2^2y3 -y1y5^2 -y1y4y5 +y1y2y3 +y1y2^2 +2y1^2y5 +y1^2y4 -y1^2y3 -2y1^2y2
+        +y4^2y5 -y2^2y3 -y1y4y5 -y1y4^2 +y1y2y3 +y1y2^2 +y1^2y5 +2y1^2y4 -y1^2y3 -2y1^2y2
+        +y3y5^2 -y2^2y3 -y1y5^2 -y1y3y5 +y1y2y3 +y1y2^2 +2y1^2y5 -2y1^2y2
+  shape {(5)}: down-set {(1) ()* (3) (2)* (5) (4)*}  |Z|=243  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {(4)*}: down-set {(1) ()* (3) (2)* (4)*}  |Z|=241  mingens={1: 4, 2: 1}  new generators (deg:number)={1: 4}
+        +y5 -y1
+        +y4 -y1
+        +y3 -y1
+PRINCIPAL r=3 m=6 p=101
+  shape {()}: down-set {()}  |Z|=141  mingens={6: 15}  new generators (deg:number)={6: 15}
+  shape {(2)}: down-set {() (2) (1)*}  |Z|=573  mingens={4: 40}  new generators (deg:number)={4: 40}
+  shape {(1)*}: down-set {() (1)*}  |Z|=393  mingens={5: 36, 6: 1}  new generators (deg:number)={5: 36}
+  shape {(4)}: down-set {() (2) (1)* (4) (3)*}  |Z|=715  mingens={2: 15}  new generators (deg:number)={2: 15}
+        +y6^2 -y1y6 +y1^2
+        +y5y6 -y1y6 -y1y5 +2y1^2
+        +y5^2 -y1y5 +y1^2
+  shape {(3)*}: down-set {() (2) (1)* (3)*}  |Z|=673  mingens={3: 29, 4: 1}  new generators (deg:number)={3: 29}
+        +y5y6^2 -y2^2y3 -y1y6^2 -y1y5y6 +y1y2y3 +y1y2^2 +2y1^2y6 +y1^2y5 -y1^2y3 -2y1^2y2
+        +y5^2y6 -y2^2y3 -y1y5y6 -y1y5^2 +y1y2y3 +y1y2^2 +y1^2y6 +2y1^2y5 -y1^2y3 -2y1^2y2
+        +y4y6^2 -y2^2y3 -y1y6^2 -y1y4y6 +y1y2y3 +y1y2^2 +2y1^2y6 +y1^2y4 -y1^2y3 -2y1^2y2
+  shape {(6)}: down-set {() (2) (1)* (4) (3)* (6) (5)*}  |Z|=729  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {(5)*}: down-set {() (2) (1)* (4) (3)* (5)*}  |Z|=727  mingens={1: 5, 2: 1}  new generators (deg:number)={1: 5}
+        +y6 -y1
+        +y5 -y1
+        +y4 -y1
+PRINCIPAL r=5 m=1 p=101
+  shape {(1)}: down-set {(1) ()*}  |Z|=5  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {()*}: down-set {()*}  |Z|=1  mingens={4: 1}  new generators (deg:number)={4: 1}
+        +y1^4
+PRINCIPAL r=5 m=2 p=101
+  shape {()}: down-set {()}  |Z|=5  mingens={4: 1}  new generators (deg:number)={4: 1}
+        +y2^4 -y1y2^3 +y1^2y2^2 -y1^3y2 +y1^4
+  shape {(1,1)}: down-set {() (1,1) (1)*}  |Z|=21  mingens={1: 1, 4: 1}  new generators (deg:number)={1: 1}
+        +y2 -y1
+  shape {(2)}: down-set {() (1,1) (2) (1)*}  |Z|=25  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {(1)*}: down-set {() (1)*}  |Z|=13  mingens={3: 1, 4: 1}  new generators (deg:number)={3: 1}
+        +y2^3 -y1y2^2 +y1^2y2 -y1^3
+PRINCIPAL r=5 m=3 p=101
+  shape {(1)}: down-set {(1) ()*}  |Z|=61  mingens={4: 3}  new generators (deg:number)={4: 3}
+        +y3^4 -y1y3^3 +y1^2y3^2 -y1^3y3 +y1^4
+        +y2y3^3 -y2^2y3^2 +y2^3y3 -y1y3^3 -y1y2^3 +y1^2y3^2 +y1^2y2^2 -y1^3y3 -y1^3y2 +2y1^4
+        +y2^4 -y1y2^3 +y1^2y2^2 -y1^3y2 +y1^4
+  shape {()*}: down-set {()*}  |Z|=13  mingens={7: 1, 8: 1}  new generators (deg:number)={7: 1, 8: 1}
+        +y2^3y3^4 -y2^4y3^3 -y1y2^2y3^4 +y1y2^4y3^2 +y1^2y2y3^4 -y1^2y2^4y3 -y1^3y3^4 +y1^3y2^4 +y1^4y3^3 -y1^4y2y3^2 +y1^4y2^2y3 -y1^4y2^3
+  shape {(2,1)}: down-set {(1) ()* (2,1) (1,1)* (2)*}  |Z|=121  mingens={1: 2, 4: 1}  new generators (deg:number)={1: 2}
+        +y3 -y1
+        +y2 -y1
+  shape {(3)}: down-set {(1) ()* (2,1) (3) (1,1)* (2)*}  |Z|=125  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {(1,1)*}: down-set {(1) ()* (1,1)*}  |Z|=85  mingens={3: 1, 4: 3}  new generators (deg:number)={3: 1}
+        +y2y3^2 -y2^2y3 -y1y3^2 +y1y2^2 +y1^2y3 -y1^2y2
+  shape {(2)*}: down-set {(1) ()* (1,1)* (2)*}  |Z|=97  mingens={3: 3, 4: 1}  new generators (deg:number)={3: 2}
+        +y3^3 -y1y3^2 +y1^2y3 -y1^3
+        +y2y3^2 -y2^2y3 -y1y3^2 +y1y2^2 +y1^2y3 -y1^2y2
+        +y2^3 -y1y2^2 +y1^2y2 -y1^3
+PRINCIPAL r=5 m=4 p=101
+  shape {()}: down-set {()}  |Z|=61  mingens={8: 3}  new generators (deg:number)={8: 3}
+  shape {(1,1)}: down-set {() (1,1) (1)*}  |Z|=365  mingens={5: 6, 8: 1}  new generators (deg:number)={5: 6}
+        +y3y4^4 -y2y3y4^3 +y2^2y3y4^2 -y2^3y3y4 +y2^4y3 -y1y4^4 +y1y2y4^3 -y1y2^2y4^2 +y1y2^3y4 -y1y2^4
+        +y3^4y4 -y2y3^4 -y1y3^3y4 +y1y2y3^3 +y1^2y3^2y4 -y1^2y2y3^2 -y1^3y3y4 +y1^3y2y3 +y1^4y4 -y1^4y2
+  shape {(2)}: down-set {() (1,1) (2) (1)*}  |Z|=453  mingens={4: 6}  new generators (deg:number)={4: 6}
+        +y4^4 -y1y4^3 +y1^2y4^2 -y1^3y4 +y1^4
+        +y3y4^3 -y3^2y4^2 +y3^3y4 -y1y4^3 -y1y3^3 +y1^2y4^2 +y1^2y3^2 -y1^3y4 -y1^3y3 +2y1^4
+        +y3^4 -y1y3^3 +y1^2y3^2 -y1^3y3 +y1^4
+  shape {(1)*}: down-set {() (1)*}  |Z|=221  mingens={6: 1, 7: 6, 8: 1}  new generators (deg:number)={6: 1, 7: 6}
+  shape {(2,2)}: down-set {() (1,1) (2) (1)* (2,2) (2,1)*}  |Z|=573  mingens={2: 2, 4: 4}  new generators (deg:number)={2: 2}
+        +y3y4 -y2y3 -y1y4 +y1y2
+        +y2y4 -y2y3 -y1y4 +y1y3
+  shape {(3,1)}: down-set {() (1,1) (2) (1)* (2,2) (3,1) (2,1)* (3)*}  |Z|=621  mingens={1: 3, 4: 1}  new generators (deg:number)={1: 3}
+        +y4 -y1
+        +y3 -y1
+        +y2 -y1
+  shape {(4)}: down-set {() (1,1) (2) (1)* (2,2) (3,1) (4) (2,1)* (3)*}  |Z|=625  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {(2,1)*}: down-set {() (1,1) (2) (1)* (2,1)*}  |Z|=549  mingens={3: 3, 4: 6}  new generators (deg:number)={3: 3}
+        +y3y4^2 -y3^2y4 -y1y4^2 +y1y3^2 +y1^2y4 -y1^2y3
+        +y2y4^2 -y2^2y4 -y1y4^2 +y1y2^2 +y1^2y4 -y1^2y2
+        +y2y3^2 -y2^2y3 -y1y3^2 +y1y2^2 +y1^2y3 -y1^2y2
+  shape {(3)*}: down-set {() (1,1) (2) (1)* (2,1)* (3)*}  |Z|=565  mingens={3: 6, 4: 1}  new generators (deg:number)={3: 3}
+        +y4^3 -y1y4^2 +y1^2y4 -y1^3
+        +y3y4^2 -y3^2y4 -y1y4^2 +y1y3^2 +y1^2y4 -y1^2y3
+        +y3^3 -y1y3^2 +y1^2y3 -y1^3
+PRINCIPAL r=7 m=1 p=13
+  shape {(1)}: down-set {(1) ()*}  |Z|=7  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {()*}: down-set {()*}  |Z|=1  mingens={6: 1}  new generators (deg:number)={6: 1}
+        +y1^6
+PRINCIPAL r=7 m=2 p=13
+  shape {()}: down-set {()}  |Z|=7  mingens={6: 1}  new generators (deg:number)={6: 1}
+        +y2^6 -y1y2^5 +y1^2y2^4 -y1^3y2^3 +y1^4y2^2 -y1^5y2 +y1^6
+  shape {(1,1)}: down-set {() (1,1) (1)*}  |Z|=43  mingens={1: 1, 6: 1}  new generators (deg:number)={1: 1}
+        +y2 -y1
+  shape {(2)}: down-set {() (1,1) (2) (1)*}  |Z|=49  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {(1)*}: down-set {() (1)*}  |Z|=19  mingens={5: 1, 6: 1}  new generators (deg:number)={5: 1}
+        +y2^5 -y1y2^4 +y1^2y2^3 -y1^3y2^2 +y1^4y2 -y1^5
+PRINCIPAL r=7 m=3 p=13
+  shape {(1)}: down-set {(1) ()*}  |Z|=127  mingens={6: 3}  new generators (deg:number)={6: 3}
+        +y3^6 -y1y3^5 +y1^2y3^4 -y1^3y3^3 +y1^4y3^2 -y1^5y3 +y1^6
+        +y2^6 -y1y2^5 +y1^2y2^4 -y1^3y2^3 +y1^4y2^2 -y1^5y2 +y1^6
+  shape {()*}: down-set {()*}  |Z|=19  mingens={11: 1, 12: 1}  new generators (deg:number)={11: 1, 12: 1}
+  shape {(1,1,1)}: down-set {(1) ()* (1,1,1) (1,1)*}  |Z|=247  mingens={3: 1, 6: 3}  new generators (deg:number)={3: 1}
+        +y2y3^2 -y2^2y3 -y1y3^2 +y1y2^2 +y1^2y3 -y1^2y2
+  shape {(2,1)}: down-set {(1) ()* (1,1,1) (2,1) (1,1)* (2)*}  |Z|=337  mingens={1: 2, 6: 1}  new generators (deg:number)={1: 2}
+        +y3 -y1
+        +y2 -y1
+  shape {(3)}: down-set {(1) ()* (1,1,1) (2,1) (3) (1,1)* (2)*}  |Z|=343  mingens={0: 1}  new generators (deg:number)={0: 1}
+        +1
+  shape {(1,1)*}: down-set {(1) ()* (1,1)*}  |Z|=199  mingens={5: 1, 6: 3}  new generators (deg:number)={5: 1}
+        +y2y3^4 -y2^2y3^3 +y2^3y3^2 -y2^4y3 -y1y3^4 +y1y2^4 +y1^2y3^3 -y1^2y2^3 -y1^3y3^2 +y1^3y2^2 +y1^4y3 -y1^4y2
+  shape {(2)*}: down-set {(1) ()* (1,1)* (2)*}  |Z|=217  mingens={5: 3, 6: 1}  new generators (deg:number)={5: 2}
+        +y3^5 -y1y3^4 +y1^2y3^3 -y1^3y3^2 +y1^4y3 -y1^5
+        +y2y3^4 -y2^2y3^3 +y2^3y3^2 -y2^4y3 -y1y3^4 +y1y2^4 +y1^2y3^3 -y1^2y2^3 -y1^3y3^2 +y1^3y2^2 +y1^4y3 -y1^4y2
+        +y2^5 -y1y2^4 +y1^2y2^3 -y1^3y2^2 +y1^4y2 -y1^5
+VIGIA-FIN-OK exit=0 pico_kb=60688 t=12s

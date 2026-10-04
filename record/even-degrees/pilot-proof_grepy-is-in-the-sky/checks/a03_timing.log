@@ -1,0 +1,7 @@
+R3 k=2 q=8: |Gamma|=3301  dim true ideal=3301  dim tangent ideal=3301  equal=True
+   degrees 17..35
+   HF in(true)  : [15, 45, 90, 150, 225, 305, 365, 395, 395, 366, 310, 240, 170, 110, 65, 34, 15, 5, 1]
+   HF tangent   : [15, 45, 90, 150, 225, 305, 365, 395, 395, 366, 310, 240, 170, 110, 65, 34, 15, 5, 1]
+   same Hilbert function: True
+seconds for (2,8): 0.39
+VIGIA-FIN-OK exit=0 pico_kb=28624 t=0s

@@ -1,0 +1,157 @@
+SLICE TREE k=1 r=5 p=2: root dim=61 |Z|=61 N_r=61
+node m=3 Lambda={(1) ()*}  |Z|=61 dim=61 OK  mingens(deg:number)={4: 3}
+node m=2 Lambda={()}  |Z|=5 dim=5 OK  mingens(deg:number)={4: 1}
+node m=1 Lambda={(1) ()*}  |Z|=5 dim=5 OK  mingens(deg:number)={0: 1}
+node m=0 Lambda={()}  |Z|=1 dim=1 OK  mingens(deg:number)={0: 1}
+node m=2 Lambda={() (1,1) (1)*}  |Z|=21 dim=21 OK  mingens(deg:number)={1: 1, 4: 1}
+node m=1 Lambda={()*}  |Z|=1 dim=1 OK  mingens(deg:number)={4: 1}
+node m=2 Lambda={() (1,1) (2) (1)*}  |Z|=25 dim=25 OK  mingens(deg:number)={0: 1}
+SUMMARY k=1 r=5 p=2: nodes=7  slices whose dimension differs from the layer count: 0  same-Lambda-different-ideal: 0
+SLICE TREE k=1 r=5 p=3: root dim=61 |Z|=61 N_r=61
+node m=3 Lambda={(1) ()*}  |Z|=61 dim=61 OK  mingens(deg:number)={4: 3}
+node m=2 Lambda={()}  |Z|=5 dim=5 OK  mingens(deg:number)={4: 1}
+node m=1 Lambda={(1) ()*}  |Z|=5 dim=5 OK  mingens(deg:number)={0: 1}
+node m=0 Lambda={()}  |Z|=1 dim=1 OK  mingens(deg:number)={0: 1}
+node m=2 Lambda={() (1,1) (1)*}  |Z|=21 dim=21 OK  mingens(deg:number)={1: 1, 4: 1}
+node m=1 Lambda={()*}  |Z|=1 dim=1 OK  mingens(deg:number)={4: 1}
+node m=2 Lambda={() (1,1) (2) (1)*}  |Z|=25 dim=25 OK  mingens(deg:number)={0: 1}
+SUMMARY k=1 r=5 p=3: nodes=7  slices whose dimension differs from the layer count: 0  same-Lambda-different-ideal: 0
+SLICE TREE k=1 r=5 p=101: root dim=61 |Z|=61 N_r=61
+node m=3 Lambda={(1) ()*}  |Z|=61 dim=61 OK  mingens(deg:number)={4: 3}
+node m=2 Lambda={()}  |Z|=5 dim=5 OK  mingens(deg:number)={4: 1}
+node m=1 Lambda={(1) ()*}  |Z|=5 dim=5 OK  mingens(deg:number)={0: 1}
+node m=0 Lambda={()}  |Z|=1 dim=1 OK  mingens(deg:number)={0: 1}
+node m=2 Lambda={() (1,1) (1)*}  |Z|=21 dim=21 OK  mingens(deg:number)={1: 1, 4: 1}
+node m=1 Lambda={()*}  |Z|=1 dim=1 OK  mingens(deg:number)={4: 1}
+node m=2 Lambda={() (1,1) (2) (1)*}  |Z|=25 dim=25 OK  mingens(deg:number)={0: 1}
+SUMMARY k=1 r=5 p=101: nodes=7  slices whose dimension differs from the layer count: 0  same-Lambda-different-ideal: 0
+SLICE TREE k=2 r=5 p=2: root dim=1001 |Z|=1001 N_r=1001
+node m=5 Lambda={(1) ()*}  |Z|=1001 dim=1001 OK  mingens(deg:number)={8: 15}
+node m=4 Lambda={()}  |Z|=61 dim=61 OK  mingens(deg:number)={8: 3}
+node m=3 Lambda={(1) ()*}  |Z|=61 dim=61 OK  mingens(deg:number)={4: 3}
+node m=2 Lambda={()}  |Z|=5 dim=5 OK  mingens(deg:number)={4: 1}
+node m=1 Lambda={(1) ()*}  |Z|=5 dim=5 OK  mingens(deg:number)={0: 1}
+node m=0 Lambda={()}  |Z|=1 dim=1 OK  mingens(deg:number)={0: 1}
+node m=2 Lambda={() (1,1) (1)*}  |Z|=21 dim=21 OK  mingens(deg:number)={1: 1, 4: 1}
+node m=1 Lambda={()*}  |Z|=1 dim=1 OK  mingens(deg:number)={4: 1}
+node m=2 Lambda={() (1,1) (2) (1)*}  |Z|=25 dim=25 OK  mingens(deg:number)={0: 1}
+node m=4 Lambda={() (1,1) (1)*}  |Z|=365 dim=365 OK  mingens(deg:number)={5: 6, 8: 1}
+node m=3 Lambda={()*}  |Z|=13 dim=13 OK  mingens(deg:number)={7: 1, 8: 1}
+node m=2 Lambda={() (1)*}  |Z|=13 dim=13 OK  mingens(deg:number)={3: 1, 4: 1}
+node m=3 Lambda={(1) ()* (1,1)*}  |Z|=85 dim=85 OK  mingens(deg:number)={3: 1, 4: 3}
+node m=3 Lambda={(1) ()* (2,1) (1,1)* (2)*}  |Z|=121 dim=121 OK  mingens(deg:number)={1: 2, 4: 1}
+node m=4 Lambda={() (1,1) (2) (1)*}  |Z|=453 dim=453 OK  mingens(deg:number)={4: 6}
+node m=3 Lambda={(1) ()* (2,1) (3) (1,1)* (2)*}  |Z|=125 dim=125 OK  mingens(deg:number)={0: 1}
+SUMMARY k=2 r=5 p=2: nodes=16  slices whose dimension differs from the layer count: 0  same-Lambda-different-ideal: 0
+SLICE TREE k=2 r=5 p=3: root dim=1001 |Z|=1001 N_r=1001
+node m=5 Lambda={(1) ()*}  |Z|=1001 dim=1001 OK  mingens(deg:number)={8: 15}
+node m=4 Lambda={()}  |Z|=61 dim=61 OK  mingens(deg:number)={8: 3}
+node m=3 Lambda={(1) ()*}  |Z|=61 dim=61 OK  mingens(deg:number)={4: 3}
+node m=2 Lambda={()}  |Z|=5 dim=5 OK  mingens(deg:number)={4: 1}
+node m=1 Lambda={(1) ()*}  |Z|=5 dim=5 OK  mingens(deg:number)={0: 1}
+node m=0 Lambda={()}  |Z|=1 dim=1 OK  mingens(deg:number)={0: 1}
+node m=2 Lambda={() (1,1) (1)*}  |Z|=21 dim=21 OK  mingens(deg:number)={1: 1, 4: 1}
+node m=1 Lambda={()*}  |Z|=1 dim=1 OK  mingens(deg:number)={4: 1}
+node m=2 Lambda={() (1,1) (2) (1)*}  |Z|=25 dim=25 OK  mingens(deg:number)={0: 1}
+node m=4 Lambda={() (1,1) (1)*}  |Z|=365 dim=365 OK  mingens(deg:number)={5: 6, 8: 1}
+node m=3 Lambda={()*}  |Z|=13 dim=13 OK  mingens(deg:number)={7: 1, 8: 1}
+node m=2 Lambda={() (1)*}  |Z|=13 dim=13 OK  mingens(deg:number)={3: 1, 4: 1}
+node m=3 Lambda={(1) ()* (1,1)*}  |Z|=85 dim=85 OK  mingens(deg:number)={3: 1, 4: 3}
+node m=3 Lambda={(1) ()* (2,1) (1,1)* (2)*}  |Z|=121 dim=121 OK  mingens(deg:number)={1: 2, 4: 1}
+node m=4 Lambda={() (1,1) (2) (1)*}  |Z|=453 dim=453 OK  mingens(deg:number)={4: 6}
+node m=3 Lambda={(1) ()* (2,1) (3) (1,1)* (2)*}  |Z|=125 dim=125 OK  mingens(deg:number)={0: 1}
+SUMMARY k=2 r=5 p=3: nodes=16  slices whose dimension differs from the layer count: 0  same-Lambda-different-ideal: 0
+SLICE TREE k=2 r=5 p=101: root dim=1001 |Z|=1001 N_r=1001
+node m=5 Lambda={(1) ()*}  |Z|=1001 dim=1001 OK  mingens(deg:number)={8: 15}
+node m=4 Lambda={()}  |Z|=61 dim=61 OK  mingens(deg:number)={8: 3}
+node m=3 Lambda={(1) ()*}  |Z|=61 dim=61 OK  mingens(deg:number)={4: 3}
+node m=2 Lambda={()}  |Z|=5 dim=5 OK  mingens(deg:number)={4: 1}
+node m=1 Lambda={(1) ()*}  |Z|=5 dim=5 OK  mingens(deg:number)={0: 1}
+node m=0 Lambda={()}  |Z|=1 dim=1 OK  mingens(deg:number)={0: 1}
+node m=2 Lambda={() (1,1) (1)*}  |Z|=21 dim=21 OK  mingens(deg:number)={1: 1, 4: 1}
+node m=1 Lambda={()*}  |Z|=1 dim=1 OK  mingens(deg:number)={4: 1}
+node m=2 Lambda={() (1,1) (2) (1)*}  |Z|=25 dim=25 OK  mingens(deg:number)={0: 1}
+node m=4 Lambda={() (1,1) (1)*}  |Z|=365 dim=365 OK  mingens(deg:number)={5: 6, 8: 1}
+node m=3 Lambda={()*}  |Z|=13 dim=13 OK  mingens(deg:number)={7: 1, 8: 1}
+node m=2 Lambda={() (1)*}  |Z|=13 dim=13 OK  mingens(deg:number)={3: 1, 4: 1}
+node m=3 Lambda={(1) ()* (1,1)*}  |Z|=85 dim=85 OK  mingens(deg:number)={3: 1, 4: 3}
+node m=3 Lambda={(1) ()* (2,1) (1,1)* (2)*}  |Z|=121 dim=121 OK  mingens(deg:number)={1: 2, 4: 1}
+node m=4 Lambda={() (1,1) (2) (1)*}  |Z|=453 dim=453 OK  mingens(deg:number)={4: 6}
+node m=3 Lambda={(1) ()* (2,1) (3) (1,1)* (2)*}  |Z|=125 dim=125 OK  mingens(deg:number)={0: 1}
+SUMMARY k=2 r=5 p=101: nodes=16  slices whose dimension differs from the layer count: 0  same-Lambda-different-ideal: 0
+SLICE TREE k=3 r=3 p=2: root dim=1107 |Z|=1107 N_r=1107
+node m=7 Lambda={(1) ()*}  |Z|=1107 dim=1107 OK  mingens(deg:number)={6: 91}
+node m=6 Lambda={()}  |Z|=141 dim=141 OK  mingens(deg:number)={6: 15}
+node m=5 Lambda={(1) ()*}  |Z|=141 dim=141 OK  mingens(deg:number)={4: 15}
+node m=4 Lambda={()}  |Z|=19 dim=19 OK  mingens(deg:number)={4: 3}
+node m=3 Lambda={(1) ()*}  |Z|=19 dim=19 OK  mingens(deg:number)={2: 3}
+node m=2 Lambda={()}  |Z|=3 dim=3 OK  mingens(deg:number)={2: 1}
+node m=1 Lambda={(1) ()*}  |Z|=3 dim=3 OK  mingens(deg:number)={0: 1}
+node m=0 Lambda={()}  |Z|=1 dim=1 OK  mingens(deg:number)={0: 1}
+node m=2 Lambda={() (1)*}  |Z|=7 dim=7 OK  mingens(deg:number)={1: 1, 2: 1}
+node m=1 Lambda={()*}  |Z|=1 dim=1 OK  mingens(deg:number)={2: 1}
+node m=2 Lambda={() (2) (1)*}  |Z|=9 dim=9 OK  mingens(deg:number)={0: 1}
+node m=4 Lambda={() (1)*}  |Z|=51 dim=51 OK  mingens(deg:number)={3: 6, 4: 1}
+node m=3 Lambda={()*}  |Z|=7 dim=7 OK  mingens(deg:number)={3: 1, 4: 1}
+node m=3 Lambda={(1) ()* (2)*}  |Z|=25 dim=25 OK  mingens(deg:number)={1: 2, 2: 1}
+node m=4 Lambda={() (2) (1)*}  |Z|=71 dim=71 OK  mingens(deg:number)={2: 6}
+node m=3 Lambda={(1) ()* (3) (2)*}  |Z|=27 dim=27 OK  mingens(deg:number)={0: 1}
+node m=6 Lambda={() (1)*}  |Z|=393 dim=393 OK  mingens(deg:number)={5: 36, 6: 1}
+node m=5 Lambda={()*}  |Z|=51 dim=51 OK  mingens(deg:number)={5: 6, 6: 1}
+node m=5 Lambda={(1) ()* (2)*}  |Z|=201 dim=201 OK  mingens(deg:number)={3: 15, 4: 1}
+node m=4 Lambda={() (2) (1)* (3)*}  |Z|=79 dim=79 OK  mingens(deg:number)={1: 3, 2: 1}
+node m=6 Lambda={() (2) (1)*}  |Z|=573 dim=573 OK  mingens(deg:number)={4: 40}
+node m=5 Lambda={(1) ()* (3) (2)*}  |Z|=231 dim=231 OK  mingens(deg:number)={2: 10}
+node m=4 Lambda={() (2) (1)* (4) (3)*}  |Z|=81 dim=81 OK  mingens(deg:number)={0: 1}
+SUMMARY k=3 r=3 p=2: nodes=23  slices whose dimension differs from the layer count: 0  same-Lambda-different-ideal: 0
+SLICE TREE k=3 r=3 p=3: root dim=1107 |Z|=1107 N_r=1107
+node m=7 Lambda={(1) ()*}  |Z|=1107 dim=1107 OK  mingens(deg:number)={6: 91}
+node m=6 Lambda={()}  |Z|=141 dim=141 OK  mingens(deg:number)={6: 15}
+node m=5 Lambda={(1) ()*}  |Z|=141 dim=141 OK  mingens(deg:number)={4: 15}
+node m=4 Lambda={()}  |Z|=19 dim=19 OK  mingens(deg:number)={4: 3}
+node m=3 Lambda={(1) ()*}  |Z|=19 dim=19 OK  mingens(deg:number)={2: 3}
+node m=2 Lambda={()}  |Z|=3 dim=3 OK  mingens(deg:number)={2: 1}
+node m=1 Lambda={(1) ()*}  |Z|=3 dim=3 OK  mingens(deg:number)={0: 1}
+node m=0 Lambda={()}  |Z|=1 dim=1 OK  mingens(deg:number)={0: 1}
+node m=2 Lambda={() (1)*}  |Z|=7 dim=7 OK  mingens(deg:number)={1: 1, 2: 1}
+node m=1 Lambda={()*}  |Z|=1 dim=1 OK  mingens(deg:number)={2: 1}
+node m=2 Lambda={() (2) (1)*}  |Z|=9 dim=9 OK  mingens(deg:number)={0: 1}
+node m=4 Lambda={() (1)*}  |Z|=51 dim=51 OK  mingens(deg:number)={3: 6, 4: 1}
+node m=3 Lambda={()*}  |Z|=7 dim=7 OK  mingens(deg:number)={3: 1, 4: 1}
+node m=3 Lambda={(1) ()* (2)*}  |Z|=25 dim=25 OK  mingens(deg:number)={1: 2, 2: 1}
+node m=4 Lambda={() (2) (1)*}  |Z|=71 dim=71 OK  mingens(deg:number)={2: 6}
+node m=3 Lambda={(1) ()* (3) (2)*}  |Z|=27 dim=27 OK  mingens(deg:number)={0: 1}
+node m=6 Lambda={() (1)*}  |Z|=393 dim=393 OK  mingens(deg:number)={5: 36, 6: 1}
+node m=5 Lambda={()*}  |Z|=51 dim=51 OK  mingens(deg:number)={5: 6, 6: 1}
+node m=5 Lambda={(1) ()* (2)*}  |Z|=201 dim=201 OK  mingens(deg:number)={3: 15, 4: 1}
+node m=4 Lambda={() (2) (1)* (3)*}  |Z|=79 dim=79 OK  mingens(deg:number)={1: 3, 2: 1}
+node m=6 Lambda={() (2) (1)*}  |Z|=573 dim=573 OK  mingens(deg:number)={4: 40}
+node m=5 Lambda={(1) ()* (3) (2)*}  |Z|=231 dim=231 OK  mingens(deg:number)={2: 10}
+node m=4 Lambda={() (2) (1)* (4) (3)*}  |Z|=81 dim=81 OK  mingens(deg:number)={0: 1}
+SUMMARY k=3 r=3 p=3: nodes=23  slices whose dimension differs from the layer count: 0  same-Lambda-different-ideal: 0
+SLICE TREE k=3 r=3 p=101: root dim=1107 |Z|=1107 N_r=1107
+node m=7 Lambda={(1) ()*}  |Z|=1107 dim=1107 OK  mingens(deg:number)={6: 91}
+node m=6 Lambda={()}  |Z|=141 dim=141 OK  mingens(deg:number)={6: 15}
+node m=5 Lambda={(1) ()*}  |Z|=141 dim=141 OK  mingens(deg:number)={4: 15}
+node m=4 Lambda={()}  |Z|=19 dim=19 OK  mingens(deg:number)={4: 3}
+node m=3 Lambda={(1) ()*}  |Z|=19 dim=19 OK  mingens(deg:number)={2: 3}
+node m=2 Lambda={()}  |Z|=3 dim=3 OK  mingens(deg:number)={2: 1}
+node m=1 Lambda={(1) ()*}  |Z|=3 dim=3 OK  mingens(deg:number)={0: 1}
+node m=0 Lambda={()}  |Z|=1 dim=1 OK  mingens(deg:number)={0: 1}
+node m=2 Lambda={() (1)*}  |Z|=7 dim=7 OK  mingens(deg:number)={1: 1, 2: 1}
+node m=1 Lambda={()*}  |Z|=1 dim=1 OK  mingens(deg:number)={2: 1}
+node m=2 Lambda={() (2) (1)*}  |Z|=9 dim=9 OK  mingens(deg:number)={0: 1}
+node m=4 Lambda={() (1)*}  |Z|=51 dim=51 OK  mingens(deg:number)={3: 6, 4: 1}
+node m=3 Lambda={()*}  |Z|=7 dim=7 OK  mingens(deg:number)={3: 1, 4: 1}
+node m=3 Lambda={(1) ()* (2)*}  |Z|=25 dim=25 OK  mingens(deg:number)={1: 2, 2: 1}
+node m=4 Lambda={() (2) (1)*}  |Z|=71 dim=71 OK  mingens(deg:number)={2: 6}
+node m=3 Lambda={(1) ()* (3) (2)*}  |Z|=27 dim=27 OK  mingens(deg:number)={0: 1}
+node m=6 Lambda={() (1)*}  |Z|=393 dim=393 OK  mingens(deg:number)={5: 36, 6: 1}
+node m=5 Lambda={()*}  |Z|=51 dim=51 OK  mingens(deg:number)={5: 6, 6: 1}
+node m=5 Lambda={(1) ()* (2)*}  |Z|=201 dim=201 OK  mingens(deg:number)={3: 15, 4: 1}
+node m=4 Lambda={() (2) (1)* (3)*}  |Z|=79 dim=79 OK  mingens(deg:number)={1: 3, 2: 1}
+node m=6 Lambda={() (2) (1)*}  |Z|=573 dim=573 OK  mingens(deg:number)={4: 40}
+node m=5 Lambda={(1) ()* (3) (2)*}  |Z|=231 dim=231 OK  mingens(deg:number)={2: 10}
+node m=4 Lambda={() (2) (1)* (4) (3)*}  |Z|=81 dim=81 OK  mingens(deg:number)={0: 1}
+SUMMARY k=3 r=3 p=101: nodes=23  slices whose dimension differs from the layer count: 0  same-Lambda-different-ideal: 0
+VIGIA-FIN-OK exit=0 pico_kb=39632 t=6s

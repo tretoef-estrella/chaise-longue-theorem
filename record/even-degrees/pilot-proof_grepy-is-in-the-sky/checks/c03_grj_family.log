@@ -1,0 +1,73 @@
+FAMILY r=3 m=2 p=101: down-sets 3 x 2
+   interlaced pairs: 3;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 2;  pairs where some slice differs from gr J of the layer: 0
+FAMILY r=3 m=3 p=101: down-sets 3 x 3
+   interlaced pairs: 4;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 4;  pairs where some slice differs from gr J of the layer: 4
+      first failure: Lambda={()* (2)*} i=0: dim W_2=8 |Z_Lambda_i|=9 Lambda_i={() (2) (1)*}
+   S6: naive ideal (y_c^(r-1) D_r(y_a,y_b)) dim=6  gr J of «one unpaired zero» dim=7  points=7  naive inside: True
+FAMILY r=3 m=4 p=101: down-sets 4 x 3
+   interlaced pairs: 5;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 6;  pairs where some slice differs from gr J of the layer: 6
+      first failure: Lambda={(1)*} i=0: dim W_2=22 |Z_Lambda_i|=25 Lambda_i={(1) ()* (2)*}
+FAMILY r=3 m=5 p=101: down-sets 4 x 4
+   interlaced pairs: 6;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 9;  pairs where some slice differs from gr J of the layer: 9
+      first failure: Lambda={()* (2)*} i=0: dim W_2=65 |Z_Lambda_i|=79 Lambda_i={() (2) (1)* (3)*}
+FAMILY r=3 m=2 p=3: down-sets 3 x 2
+   interlaced pairs: 3;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 2;  pairs where some slice differs from gr J of the layer: 0
+FAMILY r=3 m=3 p=3: down-sets 3 x 3
+   interlaced pairs: 4;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 4;  pairs where some slice differs from gr J of the layer: 4
+      first failure: Lambda={()* (2)*} i=0: dim W_2=8 |Z_Lambda_i|=9 Lambda_i={() (2) (1)*}
+   S6: naive ideal (y_c^(r-1) D_r(y_a,y_b)) dim=6  gr J of «one unpaired zero» dim=7  points=7  naive inside: True
+FAMILY r=3 m=4 p=3: down-sets 4 x 3
+   interlaced pairs: 5;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 6;  pairs where some slice differs from gr J of the layer: 5
+      first failure: Lambda={(1)*} i=0: dim W_2=22 |Z_Lambda_i|=25 Lambda_i={(1) ()* (2)*}
+FAMILY r=3 m=5 p=3: down-sets 4 x 4
+   interlaced pairs: 6;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 9;  pairs where some slice differs from gr J of the layer: 8
+      first failure: Lambda={()* (2)*} i=0: dim W_2=65 |Z_Lambda_i|=79 Lambda_i={() (2) (1)* (3)*}
+FAMILY r=5 m=2 p=101: down-sets 4 x 2
+   interlaced pairs: 4;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 3;  pairs where some slice differs from gr J of the layer: 0
+FAMILY r=5 m=3 p=101: down-sets 4 x 4
+   interlaced pairs: 6;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 9;  pairs where some slice differs from gr J of the layer: 7
+      first failure: Lambda={()* (1,1)* (2)*} i=0: dim W_4=24 |Z_Lambda_i|=25 Lambda_i={() (1,1) (2) (1)*}
+   S6: naive ideal (y_c^(r-1) D_r(y_a,y_b)) dim=12  gr J of «one unpaired zero» dim=13  points=13  naive inside: True
+FAMILY r=5 m=4 p=101: down-sets 7 x 4
+   interlaced pairs: 10;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 17;  pairs where some slice differs from gr J of the layer: 15
+      first failure: Lambda={(1)*} i=0: dim W_4=94 |Z_Lambda_i|=97 Lambda_i={(1) ()* (1,1)* (2)*}
+FAMILY r=5 m=2 p=5: down-sets 4 x 2
+   interlaced pairs: 4;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 3;  pairs where some slice differs from gr J of the layer: 0
+FAMILY r=5 m=3 p=5: down-sets 4 x 4
+   interlaced pairs: 6;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 9;  pairs where some slice differs from gr J of the layer: 7
+      first failure: Lambda={()* (1,1)* (2)*} i=0: dim W_4=24 |Z_Lambda_i|=25 Lambda_i={() (1,1) (2) (1)*}
+   S6: naive ideal (y_c^(r-1) D_r(y_a,y_b)) dim=12  gr J of «one unpaired zero» dim=13  points=13  naive inside: True
+FAMILY r=5 m=4 p=5: down-sets 7 x 4
+   interlaced pairs: 10;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 17;  pairs where some slice differs from gr J of the layer: 15
+      first failure: Lambda={(1)*} i=0: dim W_4=94 |Z_Lambda_i|=97 Lambda_i={(1) ()* (1,1)* (2)*}
+FAMILY r=7 m=2 p=13: down-sets 4 x 2
+   interlaced pairs: 4;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 3;  pairs where some slice differs from gr J of the layer: 0
+FAMILY r=7 m=3 p=13: down-sets 5 x 4
+   interlaced pairs: 8;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 11;  pairs where some slice differs from gr J of the layer: 8
+      first failure: Lambda={()* (1,1)* (2)*} i=0: dim W_6=48 |Z_Lambda_i|=49 Lambda_i={() (1,1) (2) (1)*}
+   S6: naive ideal (y_c^(r-1) D_r(y_a,y_b)) dim=18  gr J of «one unpaired zero» dim=19  points=19  naive inside: True
+FAMILY r=7 m=2 p=7: down-sets 4 x 2
+   interlaced pairs: 4;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 3;  pairs where some slice differs from gr J of the layer: 0
+FAMILY r=7 m=3 p=7: down-sets 5 x 4
+   interlaced pairs: 8;  pairs where some slice differs from gr J of the layer: 0;  layers not interlaced: 0;  tails whose options in Lambda are not an initial segment: 0
+   not interlaced pairs: 11;  pairs where some slice differs from gr J of the layer: 8
+      first failure: Lambda={()* (1,1)* (2)*} i=0: dim W_6=48 |Z_Lambda_i|=49 Lambda_i={() (1,1) (2) (1)*}
+   S6: naive ideal (y_c^(r-1) D_r(y_a,y_b)) dim=18  gr J of «one unpaired zero» dim=19  points=19  naive inside: True
+VIGIA-FIN-OK exit=0 pico_kb=89888 t=17s
