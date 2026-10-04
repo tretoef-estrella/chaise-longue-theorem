@@ -1,0 +1,4 @@
+8.7' cells: {'a': 15, 'b': 10, 'a_nonzero': 9, 'b_nonzero': 7}
+4827 checks, 0 failures
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=80624 t=8s
