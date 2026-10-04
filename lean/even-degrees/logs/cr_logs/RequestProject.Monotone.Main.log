@@ -1,0 +1,16 @@
+⚠ [8028/8031] Replayed RequestProject.Chain.Main
+warning: RequestProject/Chain/Main.lean:23:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:33:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:46:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8031/8031] Built RequestProject.Monotone.Main (57s)
+warning: RequestProject/Monotone/Main.lean:25:33: unused variable `hh`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (8031 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1778496 t=63s

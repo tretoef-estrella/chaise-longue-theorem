@@ -1,0 +1,30 @@
+⚠ [8030/8069] Replayed RequestProject.Peel.Main
+warning: RequestProject/Peel/Main.lean:61:19: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:62:5: unused variable `hj`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:82:16: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Peel/Main.lean:229:25: unused variable `hq`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8033/8069] Replayed RequestProject.Chain.Main
+warning: RequestProject/Chain/Main.lean:23:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:33:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:46:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8048/8069] Replayed RequestProject.Monotone.Main
+warning: RequestProject/Monotone/Main.lean:25:33: unused variable `hh`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8069/8069] Built RequestProject.FreeZ.Main (41s)
+Build completed successfully (8069 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2252704 t=47s
