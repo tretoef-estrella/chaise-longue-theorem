@@ -1,8 +1,10 @@
 # The archive — the working notebooks
 
+> **Scope, 4 October 2026.** Version 12 of the paper proves Conjecture 1.2 for **every** degree $m \ge 3$. Files written before it speak of the odd degrees, or call the even degrees open, because that was the state when they were written; they are kept as written.
+
 These are the notebooks the campaign worked in, each in its last version. They are published because a proof is also the record of how it was found, and because the dead ends in them will save the next person time.
 
-**Read them for what they are.** They were written in Spanish, by many hands, over four months, turn after turn. They are append-only: nothing was deleted, and every retraction was written under the line it retracts. So they contain, **by design, statements that are false** — later refuted, retracted or corrected, usually a few lines below. The authoritative mathematical statements are those of the [paper](../paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf), §14.
+**Read them for what they are.** They were written in Spanish, by many hands, over four months, turn after turn. They are append-only: nothing was deleted, and every retraction was written under the line it retracts. So they contain, **by design, statements that are false** — later refuted, retracted or corrected, usually a few lines below. The authoritative mathematical statements are those of the [paper](../paper/THE_CHAISE_LONGUE_THEOREM_v12.pdf), §16 (version 12).
 
 | File | What it is | Last version | Size |
 |---|---|---|---|
