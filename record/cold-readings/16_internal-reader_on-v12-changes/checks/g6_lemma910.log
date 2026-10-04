@@ -1,0 +1,18 @@
+L1: Lemma 9.10, 0 not in C_1, |C_1| = 2k'
+  q=2 2k'=2: dim M=1  dim theta(M)=1  dim prev=1  N_(q-1)(2k')=1  theta(M) contains prev: True  theta injective: True  control[(t-1) alone contained]: None  dim M with one P removed: None
+  q=2 2k'=4: dim M=1  dim theta(M)=1  dim prev=1  N_(q-1)(2k')=1  theta(M) contains prev: True  theta injective: True  control[(t-1) alone contained]: False  dim M with one P removed: 1
+  q=2 2k'=6: dim M=1  dim theta(M)=1  dim prev=1  N_(q-1)(2k')=1  theta(M) contains prev: True  theta injective: True  control[(t-1) alone contained]: False  dim M with one P removed: 1
+  q=4 2k'=2: dim M=3  dim theta(M)=3  dim prev=3  N_(q-1)(2k')=3  theta(M) contains prev: True  theta injective: True  control[(t-1) alone contained]: None  dim M with one P removed: None
+  q=4 2k'=4: dim M=19  dim theta(M)=19  dim prev=19  N_(q-1)(2k')=19  theta(M) contains prev: True  theta injective: True  control[(t-1) alone contained]: False  dim M with one P removed: 15
+  q=4 2k'=6: dim M=141  dim theta(M)=141  dim prev=141  N_(q-1)(2k')=141  theta(M) contains prev: True  theta injective: True  control[(t-1) alone contained]: False  dim M with one P removed: 140
+  q=8 2k'=2: dim M=7  dim theta(M)=7  dim prev=7  N_(q-1)(2k')=7  theta(M) contains prev: True  theta injective: True  control[(t-1) alone contained]: None  dim M with one P removed: None
+  q=8 2k'=4: dim M=127  dim theta(M)=127  dim prev=127  N_(q-1)(2k')=127  theta(M) contains prev: True  theta injective: True  control[(t-1) alone contained]: False  dim M with one P removed: 91
+
+N1: Proposition 9.2, in(I) contains Y*(D_J) = (L_J)B, in B = F_2[s]/(s^q)
+  (k,q)=(0,2): dim I=1 dim in(I)=1 dim (L_J)B=1 N_r(2k+2)=1  in(I) contains (L_J)B: True  in(I)=(L_J)B: True  control[in(I minus one psi) contains (L_J)B]: None
+  (k,q)=(1,2): dim I=1 dim in(I)=1 dim (L_J)B=1 N_r(2k+2)=1  in(I) contains (L_J)B: True  in(I)=(L_J)B: True  control[in(I minus one psi) contains (L_J)B]: True
+  (k,q)=(2,2): dim I=1 dim in(I)=1 dim (L_J)B=1 N_r(2k+2)=1  in(I) contains (L_J)B: True  in(I)=(L_J)B: True  control[in(I minus one psi) contains (L_J)B]: True
+  (k,q)=(1,4): dim I=19 dim in(I)=19 dim (L_J)B=19 N_r(2k+2)=19  in(I) contains (L_J)B: True  in(I)=(L_J)B: True  control[in(I minus one psi) contains (L_J)B]: False
+  (k,q)=(2,4): dim I=141 dim in(I)=141 dim (L_J)B=141 N_r(2k+2)=141  in(I) contains (L_J)B: True  in(I)=(L_J)B: True  control[in(I minus one psi) contains (L_J)B]: False
+  (k,q)=(1,8): dim I=127 dim in(I)=127 dim (L_J)B=127 N_r(2k+2)=127  in(I) contains (L_J)B: True  in(I)=(L_J)B: True  control[in(I minus one psi) contains (L_J)B]: False
+VIGIA-FIN-OK exit=0 pico_kb=13216 t=103s

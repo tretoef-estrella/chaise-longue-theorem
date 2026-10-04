@@ -1,0 +1,14 @@
+M1 omega_s antisymmetry, omega_{r-2}=D^-, second item, (8.6)  [r=3..11]: 85/85 hold; control fired 20 
+M3 homogeneity and top coefficients: 144/144 hold; control fired 35 
+M4 Corollary 8.9(a): 81/81 hold; control fired 45 (non-zero LHS: 45; cases t>=h checked =0: 21)
+M4 Corollary 8.9(b): 90/90 hold; control fired 60 (non-zero LHS: 60; cases t>h checked =0: 12)
+M5 H_ij = D(y_i,y_j) Od(y_j) in the box: 4/4 hold; control fired 4 
+
+SUMMARY
+  OK  M1 omega_s antisymmetry, omega_{r-2}=D^-, second item, (8.6)  [r=3..11]: 85/85; control fired 20
+  OK  M3 homogeneity and top coefficients: 144/144; control fired 35
+  OK  M4 Corollary 8.9(a): 81/81; control fired 45
+  OK  M4 Corollary 8.9(b): 90/90; control fired 60
+  OK  M5 H_ij = D(y_i,y_j) Od(y_j) in the box: 4/4; control fired 4
+ALL HOLD: True
+VIGIA-FIN-OK exit=0 pico_kb=53952 t=1s

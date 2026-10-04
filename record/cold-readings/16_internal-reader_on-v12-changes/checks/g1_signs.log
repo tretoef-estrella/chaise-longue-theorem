@@ -1,0 +1,36 @@
+T1 sgn = (-1)^crossings (all matchings, n<=10): 1070/1070 hold; control failed in 468 cases
+T2 (i) permutation: 175/175 hold; control failed in 50 cases
+T3 (ii) equal rows, ring Z: 210/210 hold; control failed in 115 cases
+T3 (ii) equal rows, ring Z/2: 210/210 hold; control failed in 77 cases
+T3 (ii) equal rows, ring Z/4: 210/210 hold; control failed in 86 cases
+T4 (iii) expansion with eps(x,z): 300/300 hold; control failed in 292 cases
+T5 (F1) transpositions: 128/128 hold; control failed in 115 cases
+T6 (F2) eta_b, additivity, equal borders: 232/232 hold; control failed in 76 cases
+T7 (F3) n = s: 120/120 hold; control failed in 20 cases
+T8 (F4) vartheta and border signs: 336/336 hold; control failed in 285 cases
+T9 (F5) at r=3,5,7: 310/310 hold; control failed in 12 cases
+T10 (F6): 210/210 hold; control failed in 24 cases
+T11 (F7) Laplace with sgn(S): 95/95 hold; control failed in 35 cases
+T12 Lemma 8.8(i) border shift: 88/88 hold; control failed in 51 cases
+T13 Lemma 8.8(ii) rank-two update: 128/128 hold; control failed in 78 cases
+T14 elementary operation: 80/80 hold; control failed in 25 cases
+
+SUMMARY
+  OK  T1 sgn = (-1)^crossings (all matchings, n<=10): 1070/1070; control fired 468
+  OK  T2 (i) permutation: 175/175; control fired 50
+  OK  T3 (ii) equal rows, ring Z: 210/210; control fired 115
+  OK  T3 (ii) equal rows, ring Z/2: 210/210; control fired 77
+  OK  T3 (ii) equal rows, ring Z/4: 210/210; control fired 86
+  OK  T4 (iii) expansion with eps(x,z): 300/300; control fired 292
+  OK  T5 (F1) transpositions: 128/128; control fired 115
+  OK  T6 (F2) eta_b, additivity, equal borders: 232/232; control fired 76
+  OK  T7 (F3) n = s: 120/120; control fired 20
+  OK  T8 (F4) vartheta and border signs: 336/336; control fired 285
+  OK  T9 (F5) at r=3,5,7: 310/310; control fired 12
+  OK  T10 (F6): 210/210; control fired 24
+  OK  T11 (F7) Laplace with sgn(S): 95/95; control fired 35
+  OK  T12 Lemma 8.8(i) border shift: 88/88; control fired 51
+  OK  T13 Lemma 8.8(ii) rank-two update: 128/128; control fired 78
+  OK  T14 elementary operation: 80/80; control fired 25
+ALL HOLD: True
+VIGIA-FIN-OK exit=0 pico_kb=12384 t=2s

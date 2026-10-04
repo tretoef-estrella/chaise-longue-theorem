@@ -1,0 +1,16 @@
+changed lines: 144  references checked: 556
+unresolved: 12
+   (24, 'Theorems', '1.1')
+   (26, '§', '4.6')
+   (81, 'Theorem', '4.9')
+   (83, 'Theorem', '2.11')
+   (132, 'Proposition', '2.12')
+   (132, '§', '12.8')
+   (135, 'Remark', '2.5′')
+   (173, 'Corollary', '1.7')
+   (1020, 'Remark', '4.4')
+   (1282, 'Proposition', '2.12')
+   (1431, 'Proposition', '2.12')
+   (1791, '§', '0')
+control: fake «Lemma 8.99» resolves? False ; fake [Zzz] resolves? False
+VIGIA-FIN-OK exit=0 pico_kb=6048 t=0s

@@ -1,0 +1,2 @@
+['coerce_fmpz_mpolys', 'fmpz_mpoly', 'fmpz_mpoly_ctx', 'nmod', 'nmod_mat', 'nmod_poly', 'nmod_series']
+VIGIA-FIN-OK exit=0 pico_kb=4192 t=0s

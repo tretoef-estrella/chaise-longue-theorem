@@ -1,0 +1,72 @@
+(r,N)=(3,4): N_r(N) formula = 19, |Gamma| enumerated = 19, box dim r^N = 81
+   (x_a+x_b)D(x_a,x_b) = 0 in the box: True;  control (x_a-x_b)D = 0: False
+   Q: dim M = 19; dim (D_J)C_(2k+1) = 19; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 19;  controls: dim M with one P removed = 15; colength of cap with one P removed = 15
+   F_2: dim M = 19; dim (D_J)C_(2k+1) = 19; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 19;  controls: dim M with one P removed = 15; colength of cap with one P removed = 15
+   F_3: dim M = 19; dim (D_J)C_(2k+1) = 19; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 19;  controls: dim M with one P removed = 15; colength of cap with one P removed = 15
+   F_5: dim M = 19; dim (D_J)C_(2k+1) = 19; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 19;  controls: dim M with one P removed = 15; colength of cap with one P removed = 15
+   F_7: dim M = 19; dim (D_J)C_(2k+1) = 19; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 19;  controls: dim M with one P removed = 15; colength of cap with one P removed = 15
+(r,N)=(3,6): N_r(N) formula = 141, |Gamma| enumerated = 141, box dim r^N = 729
+   (x_a+x_b)D(x_a,x_b) = 0 in the box: True;  control (x_a-x_b)D = 0: False
+   Q: dim M = 141; dim (D_J)C_(2k+1) = 141; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 141;  controls: dim M with one P removed = 140; colength of cap with one P removed = 140
+   F_2: dim M = 141; dim (D_J)C_(2k+1) = 141; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 141;  controls: dim M with one P removed = 140; colength of cap with one P removed = 140
+   F_3: dim M = 141; dim (D_J)C_(2k+1) = 141; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 141;  controls: dim M with one P removed = 140; colength of cap with one P removed = 140
+   F_5: dim M = 141; dim (D_J)C_(2k+1) = 141; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 141;  controls: dim M with one P removed = 140; colength of cap with one P removed = 140
+   F_7: dim M = 141; dim (D_J)C_(2k+1) = 141; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 141;  controls: dim M with one P removed = 140; colength of cap with one P removed = 140
+(r,N)=(5,4): N_r(N) formula = 61, |Gamma| enumerated = 61, box dim r^N = 625
+   (x_a+x_b)D(x_a,x_b) = 0 in the box: True;  control (x_a-x_b)D = 0: False
+   Q: dim M = 61; dim (D_J)C_(2k+1) = 61; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 61;  controls: dim M with one P removed = 45; colength of cap with one P removed = 45
+   F_2: dim M = 61; dim (D_J)C_(2k+1) = 61; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 61;  controls: dim M with one P removed = 45; colength of cap with one P removed = 45
+   F_3: dim M = 61; dim (D_J)C_(2k+1) = 61; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 61;  controls: dim M with one P removed = 45; colength of cap with one P removed = 45
+   F_5: dim M = 61; dim (D_J)C_(2k+1) = 61; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 61;  controls: dim M with one P removed = 45; colength of cap with one P removed = 45
+   F_7: dim M = 61; dim (D_J)C_(2k+1) = 61; dim Q[x]/cap_P(I_P+(x^r)) [Singular] = 61;  controls: dim M with one P removed = 45; colength of cap with one P removed = 45
+
+TABLE r N field | N_r |Gamma| | dimM dim(DJ) colength(cap) | dimM(-1P) colength(cap,-1P)
+   (3, 4, 'Q', 19, 19, 19, 19, 19, 15, 15)
+   (3, 4, 'F_2', 19, 19, 19, 19, 19, 15, 15)
+   (3, 4, 'F_3', 19, 19, 19, 19, 19, 15, 15)
+   (3, 4, 'F_5', 19, 19, 19, 19, 19, 15, 15)
+   (3, 4, 'F_7', 19, 19, 19, 19, 19, 15, 15)
+   (3, 6, 'Q', 141, 141, 141, 141, 141, 140, 140)
+   (3, 6, 'F_2', 141, 141, 141, 141, 141, 140, 140)
+   (3, 6, 'F_3', 141, 141, 141, 141, 141, 140, 140)
+   (3, 6, 'F_5', 141, 141, 141, 141, 141, 140, 140)
+   (3, 6, 'F_7', 141, 141, 141, 141, 141, 140, 140)
+   (5, 4, 'Q', 61, 61, 61, 61, 61, 45, 45)
+   (5, 4, 'F_2', 61, 61, 61, 61, 61, 45, 45)
+   (5, 4, 'F_3', 61, 61, 61, 61, 61, 45, 45)
+   (5, 4, 'F_5', 61, 61, 61, 61, 61, 45, 45)
+   (5, 4, 'F_7', 61, 61, 61, 61, 61, 45, 45)
+ALL EQUAL TO N_r(N): True
+
+ZERO-PATTERN CENSUS over Q, Pf_{E_l}(B_0) in Q[y]/(y^r), |B_0| = l+1+2t
+   r=3 l=0 t=0 n=1: zero=False  (Corollary 8.9 predicts zero: False)
+   r=3 l=0 t=1 n=3: zero=False  (Corollary 8.9 predicts zero: False)
+   r=3 l=0 t=2 n=5: zero=True  (Corollary 8.9 predicts zero: True)
+   r=3 l=1 t=0 n=2: zero=False  (Corollary 8.9 predicts zero: False)
+   r=3 l=1 t=1 n=4: zero=True  (Corollary 8.9 predicts zero: True)
+   r=3 l=1 t=2 n=6: zero=True  (Corollary 8.9 predicts zero: True)
+   r=3 l=2 t=0 n=3: zero=True  (Corollary 8.9 predicts zero: False)
+   r=3 l=2 t=1 n=5: zero=True  (Corollary 8.9 predicts zero: True)
+   r=3 l=2 t=2 n=7: zero=True  (Corollary 8.9 predicts zero: True)
+   r=3 l=3 t=0 n=4: zero=True  (Corollary 8.9 predicts zero: False)
+   r=3 l=3 t=1 n=6: zero=True  (Corollary 8.9 predicts zero: True)
+   r=5 l=0 t=0 n=1: zero=False  (Corollary 8.9 predicts zero: False)
+   r=5 l=0 t=1 n=3: zero=False  (Corollary 8.9 predicts zero: False)
+   r=5 l=0 t=2 n=5: zero=False  (Corollary 8.9 predicts zero: False)
+   r=5 l=1 t=0 n=2: zero=False  (Corollary 8.9 predicts zero: False)
+   r=5 l=1 t=1 n=4: zero=False  (Corollary 8.9 predicts zero: False)
+   r=5 l=1 t=2 n=6: zero=True  (Corollary 8.9 predicts zero: True)
+   r=5 l=2 t=0 n=3: zero=False  (Corollary 8.9 predicts zero: False)
+   r=5 l=2 t=1 n=5: zero=True  (Corollary 8.9 predicts zero: False)
+   r=5 l=3 t=0 n=4: zero=True  (Corollary 8.9 predicts zero: False)
+   r=5 l=3 t=1 n=6: zero=True  (Corollary 8.9 predicts zero: False)
+   r=7 l=0 t=0 n=1: zero=False  (Corollary 8.9 predicts zero: False)
+   r=7 l=0 t=1 n=3: zero=False  (Corollary 8.9 predicts zero: False)
+   r=7 l=0 t=2 n=5: zero=False  (Corollary 8.9 predicts zero: False)
+   r=7 l=1 t=0 n=2: zero=False  (Corollary 8.9 predicts zero: False)
+   r=7 l=1 t=1 n=4: zero=False  (Corollary 8.9 predicts zero: False)
+   r=7 l=2 t=0 n=3: zero=False  (Corollary 8.9 predicts zero: False)
+   r=7 l=2 t=1 n=5: zero=False  (Corollary 8.9 predicts zero: False)
+   r=7 l=3 t=0 n=4: zero=False  (Corollary 8.9 predicts zero: False)
+census: 29 cases, 5 where zero-ness differs from "zero iff (l>=1,t>=h) or (l=0,t>h)"
+VIGIA-FIN-OK exit=0 pico_kb=20208 t=2s

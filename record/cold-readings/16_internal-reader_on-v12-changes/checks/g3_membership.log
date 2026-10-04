@@ -1,0 +1,39 @@
+done p = 2 r = 3
+done p = 2 r = 5
+done p = 2 r = 7
+done p = 2 r = 9
+done p = 3 r = 3
+done p = 3 r = 5
+done p = 3 r = 7
+done p = 3 r = 9
+done p = 5 r = 3
+done p = 5 r = 5
+done p = 5 r = 7
+done p = 5 r = 9
+done p = 7 r = 3
+done p = 7 r = 5
+done p = 7 r = 7
+done p = 7 r = 9
+done p = 101 r = 3
+done p = 101 r = 5
+done p = 101 r = 7
+done p = 101 r = 9
+
+RESULTS (case, kind): tests, members, non-zero Pf, non-zero members, control tests, control failures
+('b', 'L8.7') {'tests': 50, 'member': 50, 'nonzero': 45, 'nonzero_member': 45, 'ctrl_tests': 45, 'ctrl_fail': 45}
+('Cb', 'r=3') {'tests': 0, 'member': 0, 'nonzero': 0, 'nonzero_member': 0, 'ctrl_tests': 15, 'ctrl_fail': 0}
+('a', 'L8.7') {'tests': 115, 'member': 115, 'nonzero': 60, 'nonzero_member': 60, 'ctrl_tests': 60, 'ctrl_fail': 60}
+('b', 'any') {'tests': 95, 'member': 95, 'nonzero': 77, 'nonzero_member': 77, 'ctrl_tests': 77, 'ctrl_fail': 73}
+('a', 'any') {'tests': 48, 'member': 48, 'nonzero': 30, 'nonzero_member': 30, 'ctrl_tests': 30, 'ctrl_fail': 29}
+('Cb', 'r=5') {'tests': 0, 'member': 0, 'nonzero': 0, 'nonzero_member': 0, 'ctrl_tests': 60, 'ctrl_fail': 15}
+('Cb', 'r=7') {'tests': 0, 'member': 0, 'nonzero': 0, 'nonzero_member': 0, 'ctrl_tests': 110, 'ctrl_fail': 44}
+('Cb', 'r=9') {'tests': 0, 'member': 0, 'nonzero': 0, 'nonzero_member': 0, 'ctrl_tests': 150, 'ctrl_fail': 58}
+
+REMARK (3): r=5, n=3
+  field F_2: Pf(N;y^2) zero=False member=False;   Pf(N;y^4) zero=False member=True
+  field F_3: Pf(N;y^2) zero=False member=False;   Pf(N;y^4) zero=False member=True
+  field F_5: Pf(N;y^2) zero=False member=False;   Pf(N;y^4) zero=False member=True
+  field F_7: Pf(N;y^2) zero=False member=False;   Pf(N;y^4) zero=False member=True
+  field F_101: Pf(N;y^2) zero=False member=False;   Pf(N;y^4) zero=False member=True
+  field Q: Pf(N;y^2) zero=False member=False;   Pf(N;y^4) zero=False member=True
+VIGIA-FIN-OK exit=0 pico_kb=68784 t=5s

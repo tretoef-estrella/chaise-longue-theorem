@@ -1,0 +1,4 @@
+tested pairs (k,m): 92938
+k = 0 : mismatches 1499 first [(4, True, False, False), (6, True, False, False), (8, True, False, False)]
+mismatches for k >= 1: 0
+VIGIA-FIN-OK exit=0 pico_kb=50416 t=0s
