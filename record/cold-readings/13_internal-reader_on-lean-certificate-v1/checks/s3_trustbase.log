@@ -1,0 +1,137 @@
+lean files: 113
+total lines: 21126
+
+== code hits (comments stripped) ==
+sorry: 0
+admit: 0
+axiom: 0
+native_decide: 0
+implemented_by: 0
+extern: 0
+unsafe: 0
+opaque: 0
+csimp: 0
+skipKernelTC: 0
+ofReduceBool: 0
+partial: 0
+elab: 0
+macro: 0
+syntax: 0
+notation: 0
+run_cmd/#eval: 0
+import Lean: 0
+debug options: 0
+Kernel/Environment API: 0
+attribute[-instance]: 0
+decide: 65
+unsafeCast/panic: 0
+decide: files = 10
+    Chain/Checks.lean:23: def mu221 : Partition := ⟨[2, 2, 1], by decide, by decide⟩
+    Chain/Checks.lean:23: def mu221 : Partition := ⟨[2, 2, 1], by decide, by decide⟩
+    Chain/Checks.lean:32: | (rw [rbar_eq _ _ (by decide) (by decide)]; decide)
+    Chain/Checks.lean:32: | (rw [rbar_eq _ _ (by decide) (by decide)]; decide)
+    Chain/Checks.lean:32: | (rw [rbar_eq _ _ (by decide) (by decide)]; decide)
+    Chain/Checks.lean:33: | (rw [rlow_eq _ _ (by decide) (by decide)]; decide)
+    Chain/Checks.lean:33: | (rw [rlow_eq _ _ (by decide) (by decide)]; decide)
+    Chain/Checks.lean:33: | (rw [rlow_eq _ _ (by decide) (by decide)]; decide)
+    Chain/Checks.lean:63: (List.range' 1 4).map (fun p => ((⟨[], by decide, by decide⟩ : Partition).opt 4 p).parts) =
+    Chain/Checks.lean:63: (List.range' 1 4).map (fun p => ((⟨[], by decide, by decide⟩ : Partition).opt 4 p).parts) =
+    Chain/Checks.lean:65: decide +kernel
+    Chain/Defs.lean:61: def sortDesc (l : List ℕ) : List ℕ := l.mergeSort (fun a b => decide (b ≤ a))
+    Chain/Defs.lean:65: have := List.pairwise_mergeSort (le := fun a b : ℕ => decide (b ≤ a))
+    Chain/Lemmas.lean:21: (∀ k, N < k → l.countP (fun x => decide (k ≤ x)) = 0) → ∀ t,
+    Chain/Lemmas.lean:22: (l.take t).sum = ∑ k ∈ Finset.Icc 1 N, min t (l.countP (fun x => decide (k ≤ x)))
+    Chain/Lemmas.lean:30: have hN' : ∀ k, N < k → l.countP (fun x => decide (k ≤ x)) = 0 := by
+    Chain/Lemmas.lean:36: have key : ∀ k ∈ Finset.Icc 1 N, min (t+1) ((a :: l).countP (fun x => decide (k ≤ x))) =
+    Chain/Lemmas.lean:37: (if k ≤ a then 1 else 0) + min t (l.countP (fun x => decide (k ≤ x))) := by
+    Chain/Lemmas.lean:42: · have : l.countP (fun x => decide (k ≤ x)) = 0 := by
+    Chain/Lemmas.lean:58: (h : ∀ k, 1 ≤ k → l'.countP (fun x => decide (k ≤ x)) + (if k = w then 1 else 0) =
+    Chain/Lemmas.lean:59: l.countP (fun x => decide (k ≤ x))) (t : ℕ) :
+    Chain/Lemmas.lean:60: (l'.take t).sum + (if l.countP (fun x => decide (w ≤ x)) ≤ t then 1 else 0) =
+    Chain/Lemmas.lean:63: have hN : ∀ k, N < k → l.countP (fun x => decide (k ≤ x)) = 0 := by
+    Chain/Lemmas.lean:69: have hN' : ∀ k, N < k → l'.countP (fun x => decide (k ≤ x)) = 0 := by
+    Chain/Lemmas.lean:77: have hrest : ∑ k ∈ (Finset.Icc 1 N).erase w, min t (l'.countP (fun x => decide (k ≤ x))) =
+    Chain/Lemmas.lean:78: ∑ k ∈ (Finset.Icc 1 N).erase w, min t (l.countP (fun x => decide (k ≤ x))) := by
+    Chain/Lemmas.lean:120: (v ≤ l[i] ↔ i < l.countP (fun x => decide (v ≤ x)))
+    Chain/Lemmas.lean:131: · have h0 : l.countP (fun x => decide (v ≤ x)) = 0 := by
+    Chain/Lemmas.lean:171: μ.rbar j = μ.parts.countP (fun x => decide (μ.row j ≤ x)) := by
+    Chain/Lemmas.lean:172: set c := μ.parts.countP (fun x => decide (μ.row j ≤ x)) with hc
+    Chain/Lemmas.lean:195: μ.parts.countP (fun x => decide (μ.row j + 1 ≤ x)) ≤ j - 1 := by
+    Chain/Lemmas.lean:204: μ.rlow j = μ.parts.countP (fun x => decide (μ.row j + 1 ≤ x)) + 1 := by
+    Chain/Lemmas.lean:205: set c := μ.parts.countP (fun x => decide (μ.row j + 1 ≤ x)) with hc
+    Chain/Lemmas.lean:228: (μ.subE j).parts.countP (fun x => decide (k ≤ x)) + (if k = μ.row j then 1 else 0) =
+    Chain/Lemmas.lean:229: μ.parts.countP (fun x => decide (k ≤ x)) := by
+    Chain/Lemmas.lean:234: have e : (μ.parts.modify (j - 1) (· - 1)).countP (fun x => decide (k ≤ x) && decide (x ≠ 0)) =
+    Chain/Lemmas.lean:234: have e : (μ.parts.modify (j - 1) (· - 1)).countP (fun x => decide (k ≤ x) && decide (x ≠ 0)) =
+    Chain/Lemmas.lean:235: (μ.parts.modify (j - 1) (· - 1)).countP (fun x => decide (k ≤ x)) := by
+    Chain/Lemmas.lean:238: have := countP_modify μ.parts (j - 1) (· - 1) (fun x => decide (k ≤ x)) hjl'
+    Chain/Lemmas.lean:245: μ.parts.countP (fun x => decide (k ≤ x)) + (if k = μ.row j + 1 then 1 else 0) =
+    Chain/Lemmas.lean:246: (μ.addE j).parts.countP (fun x => decide (k ≤ x)) := by
+    Chain/Lemmas.lean:250: have := countP_modify μ.parts (j - 1) (· + 1) (fun x => decide (k ≤ x)) hjl'
+    Chain/Lemmas.lean:257: μ.parts.countP (fun x => decide (k ≤ x)) + (if k = 1 then 1 else 0) =
+    Chain/Lemmas.lean:258: μ.addOne.parts.countP (fun x => decide (k ≤ x)) := by
+    Chain/Main.lean:50: have hc : μ.addOne.parts.countP (fun x => decide (1 ≤ x)) = μ.len + 1 := by
+    Chain/Main.lean:92: have : μ.parts.countP (fun x => decide (μ.row j ≤ x)) ≤
+    Chain/Main.lean:93: μ.parts.countP (fun x => decide (μ.row (j + 1) ≤ x)) :=
+    Chain/Main.lean:112: have : μ.parts.countP (fun x => decide (μ.row j + 1 ≤ x)) ≤
+    Chain/Main.lean:113: μ.parts.countP (fun x => decide (μ.row (j + 1) + 1 ≤ x)) :=
+    EveryField/Invariance.lean:54: (Quotient.mk _ u, decide (u = (Quotient.mk (orbitSetoid S) u).out))
+    Lifts/Options.lean:24: colLen lam c = lam.parts.countP (fun x => decide (c ≤ x)) := by
+    Monotone/Checks.lean:23: let μ : Partition := ⟨[], by decide, by decide⟩
+    Monotone/Checks.lean:23: let μ : Partition := ⟨[], by decide, by decide⟩
+    Monotone/Checks.lean:24: let ν : Partition := ⟨[1], by decide, by decide⟩
+    Monotone/Checks.lean:24: let ν : Partition := ⟨[1], by decide, by decide⟩
+    Monotone/Checks.lean:28: refine ⟨by decide, by decide, by decide, ?_, ?_⟩
+    Monotone/Checks.lean:28: refine ⟨by decide, by decide, by decide, ?_, ?_⟩
+    Monotone/Checks.lean:28: refine ⟨by decide, by decide, by decide, ?_, ?_⟩
+    Monotone/Lemmas.lean:78: have : μ.parts.countP (fun x => decide (μ.row j ≤ x)) ≤ μ.parts.length :=
+    TheoremB/Checks.lean:24: decide
+    TheoremB/Checks.lean:29: decide
+    TheoremB/Checks.lean:35: decide
+    Tight/Lemmas.lean:544: have : ∀ c, (if decide (c ≤ x) = true then x :: List.filter (fun x => decide (c ≤ x)) l
+    Tight/Lemmas.lean:544: have : ∀ c, (if decide (c ≤ x) = true then x :: List.filter (fun x => decide (c ≤ x)) l
+    Tight/Lemmas.lean:545: else List.filter (fun x => decide (c ≤ x)) l).length =
+
+== raw hits including comments (counts) ==
+decide: raw 66 vs code 65
+
+== imports (top-level package) == {'RequestProject': 154, 'Mathlib': 9}
+
+== set_option (name, value): count ==
+    ('autoImplicit', 'false') 1
+    ('grind.warning', 'false') 1
+    ('maxHeartbeats', '8000000') 1
+    ('maxRecDepth', '4000') 1
+    ('pp.coercions.types', 'true') 1
+    ('pp.fullNames', 'true') 1
+    ('pp.funBinderTypes', 'true') 1
+    ('pp.letVarTypes', 'true') 1
+    ('pp.piBinderTypes', 'true') 1
+    ('pp.structureInstances', 'true') 1
+    ('relaxedAutoImplicit', 'false') 1
+    ('synthInstance.maxHeartbeats', '20000') 1
+    ('synthInstance.maxHeartbeats', '200000') 41
+    ('synthInstance.maxSize', '128') 1
+
+== instance declarations == 13
+    Ballot/Alg.lean: instance alg_finite (F : Type*) [Field F] (k : ℕ) : Module.Finite F (Alg F k) := by
+    Ballot/Comb.lean: instance (n : ℕ) : DecidablePred (IsBallot n) := fun U => by unfold IsBallot; infer_instance
+    Ballot/Defs.lean: noncomputable instance instModuleAlgSelf : Module (Alg F k) (Alg F k) := Semiring.toModule
+    ColSplit/Main.lean: instance instFiniteGA (d : ℕ) : Module.Finite F (GA F d S.m) := finite_GA d S.m S.m_pos
+    ColSplit/Main.lean: instance instFiniteRc {d : ℕ} (c : Fin d → S.μ) :
+    ColSurv/Defs.lean: instance nontrivial_Rc : Nontrivial (Rc F S.q (fun j => (c j : F))) :=
+    ColUpper/Integral.lean: instance finite_matching (k : ℕ) : Finite (BallotBound.Matching k) :=
+    EveryField/Integral.lean: instance (m : ℕ) (Λ : Set Partition) : Finite (GZ q m Λ) := (GZ_finite q m Λ).to_subtype
+    Peel/Defs.lean: noncomputable instance instModuleCSelf (m : ℕ) : Module (C F q m) (C F q m) := Semiring.toModule
+    Peel/Defs.lean: noncomputable instance instCommRingC (m : ℕ) : CommRing (C F q m) := Ideal.Quotient.commRing _
+    Peel/Defs.lean: noncomputable instance instAlgebraC (m : ℕ) : Algebra F (C F q m) := Ideal.Quotient.algebra _
+    Peel/Main.lean: instance finite_C (m : ℕ) : Module.Finite F (C F q m) := by
+    Upper/Main.lean: instance instFiniteFun : Module.Finite F (Finset (Fin (2 * k + 1)) → F) :=
+
+== declarations by kind == {'instance': 13, 'theorem': 736, 'def': 315, 'lemma': 221, 'structure': 7, 'abbrev': 14}
+
+== project declarations whose name ends with a standard name used in the statement ==
+    ('theorem', 'ColComp.IsReps.cases', 'ColComp/Defs.lean')
+count: 1
+
+== top-level namespaces of project declarations == {'BallotBound': 79, 'Bip': 157, 'BipP3': 51, 'ChainLemma': 80, 'ColAssembly': 39, 'ColComp': 41, 'ColCount': 41, 'ColDecomp': 34, 'ColOne': 97, 'ColPairs': 60, 'ColSplit': 29, 'ColSurv': 39, 'ColTensor': 41, 'ColUpper': 80, 'Degeneration': 34, 'EveryField': 47, 'Fibres': 41, 'FreeZ': 18, 'Induction': 7, 'Lifts': 67, 'Peel': 46, 'Support': 35, 'TheoremB': 78, 'Tight': 65}

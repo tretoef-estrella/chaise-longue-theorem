@@ -1,0 +1,56 @@
+(a) modules outside the cone: 23
+    RequestProject.Ballot.Alg
+    RequestProject.Ballot.Comb
+    RequestProject.Ballot.Construct
+    RequestProject.Chain.Checks
+    RequestProject.Degeneration.Defs
+    RequestProject.Degeneration.Lemma
+    RequestProject.Degeneration.Main
+    RequestProject.EveryField.Integral
+    RequestProject.EveryField.Invariance
+    RequestProject.EveryField.Main
+    RequestProject.FreeZ.Defs
+    RequestProject.FreeZ.Main
+    RequestProject.Main
+    RequestProject.Monotone.Checks
+    RequestProject.Support.Defs
+    RequestProject.Support.Evaluation
+    RequestProject.Support.Main
+    RequestProject.Support.SupportLemma
+    RequestProject.TheoremB.Checks
+    RequestProject.Upper.Count
+    RequestProject.Upper.Defs
+    RequestProject.Upper.Main
+    RequestProject.Upper.Top
+(b) axiom sets per section of AUDIT_LOG.md
+   # Aristotle (Harmonic) — audit log, v1                       []
+   ## Project 1 — `q3_ballot_lower_bound` (pilot), 28 Sep 2026  []
+   ## Project 1, run 2 — `q3_upper_bound` (same project), sent  []
+   ## Run 2 — COMPLETED (28 Sep 2026, 12:39) and compiled local ['[propext, Classical.choice, Quot.sound]']
+   ## Run 3 — Lemma 5.1 (peeling) — COMPLETED (28 Sep 2026, ~13 ['[propext, Classical.choice, Quot.sound]']
+   ## Run 4 — Lemma 5.5 (chain) — COMPLETED (28 Sep 2026, ~14:4 ['[propext, Classical.choice, Quot.sound]']
+   ## Run 5 — piece 5, Prop. 5.6 (P2), task 65b07378 — CERTIFIE ['[propext, Classical.choice, Quot.sound]']
+   ## Run 6 — piece 6, §5.4 (P1, fibres), task b48f416d — CERTI ['[propext, Classical.choice, Quot.sound]']
+   ## Run 7 — piece 7, tight patterns + Lemma 5.7 + relabelling ['[propext, Classical.choice, Quot.sound]']
+   ## Run 8 — piece 8, Prop. 5.8 (P3, the lifts), task c83ff516 ['[propext, Classical.choice, Quot.sound]']
+   ## Run 9 — piece 9, Theorem 5.3 (the induction), task 1a0f12 ['[propext, Classical.choice, Quot.sound]']
+   ## Run 10 — piece 10, Theorem B lower bound (Lemma 5.2 + Lem ['[propext, Classical.choice, Quot.sound]']
+   ## Run 11 — piece 11, the degeneration (Lemma (i)–(ii) + Pro ['[propext, Classical.choice, Quot.sound]']
+   ## Run 12 — piece 12, Theorem 5.9 (equality), task 47b9b288  ['[propext, Classical.choice, Quot.sound]']
+   ## Run 13 — piece 13, equality over every field (Theorem 5.9 ['[propext, Classical.choice, Quot.sound]']
+   ## Run 14 — piece 14, freeness over ℤ (Theorem 5.9′, integra ['[propext, Classical.choice, Quot.sound]']
+   ## Run 15 — piece 15, the bipartite setting (§7.1–§7.2): Lem ['[propext, Classical.choice, Quot.sound]']
+   ## Run 16 — piece 16, the bipartite options, fibres and chai ['[propext, Classical.choice, Quot.sound]']
+   ## Run 17 — piece 17, options of pairs of partitions are mon ['[propext, Classical.choice, Quot.sound]']
+   ## Run 18 — piece 18, every tight pattern of a layer lies in ['[propext, Classical.choice, Quot.sound]']
+   ## Run 19 — piece 19, the bipartite down-set theorem and The ['[propext, Classical.choice, Quot.sound]']
+   ## Run 20 — piece 20, the splitting by colourings (§6.1, Lem ['[propext, Classical.choice, Quot.sound]']
+   ## Run 21 — piece 21, which generators survive on each facto ['[propext, Classical.choice, Quot.sound]']
+   ## Run 22 — piece 22, colour classes and compatible matching ['[propext, Classical.choice, Quot.sound]']
+   ## Run 23 — piece 23, tensor products of ideals and box ring ['[propext, Classical.choice, Quot.sound]', '[propext, Quot.sound]']
+   ## Run 24 — piece 24, the tensor decomposition of each facto ['[propext, Classical.choice, Quot.sound]']
+   ## Run 25 — piece 25, the pair blocks (§6.5, Lemma 6.7), tas ['[propext, Classical.choice, Quot.sound]']
+   ## Run 26 — piece 26, the §2 translation in local form and t ['[propext, Classical.choice, Quot.sound]']
+   ## Run 27 — piece 27, the count factors (§6.6, Lemma 6.8), t ['[propext, Classical.choice, Quot.sound]']
+   ## Run 28 — piece 28, the upper bound (6.1) = [DS, Claim 4.3 ['[propext, Classical.choice, Quot.sound]']
+   ## Run 29 — piece 29, the assembly: Proposition 6.9, the The ['[propext, Classical.choice, Quot.sound]']

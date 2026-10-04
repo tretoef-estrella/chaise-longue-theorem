@@ -1,0 +1,100 @@
+files: 113
+lines (newline count, = wc -l): 21126
+theorem/lemma at start of line: 937
+theorem/lemma incl. indented/attributed/private: 957
+def-like at line start (def|abbrev|structure|inductive|instance|class): 147
+... also with noncomputable/private/@[..] prefixes: 351
+... any indentation, with prefixes: 351
+sha256(concat sorted): 7d26fa1cf203aaa900c0febb1fc8a24308b722460b9dbe1d169a32953f357498
+sha256(shasum list):   81fdc844d7d57a37b9ebb832d7be4c202fc18e8bbd145615c584325b49445f94
+
+per folder: files lines thms
+  Ballot           4   777   24
+  Bip              5   973   35
+  BipInd           2   444   23
+  BipOpt           4   960   39
+  BipP2            2   317   22
+  BipP3            3   898   43
+  Chain            4   668   37
+  ColAssembly      5   623   31
+  ColComp          4   653   29
+  ColCount         4   865   25
+  ColDecomp        4   569   17
+  ColOne           6  1478   71
+  ColPairs         5  1104   42
+  ColSplit         2   419   17
+  ColSurv          2   467   30
+  ColTensor        3   548   24
+  ColUpper         7  1199   55
+  Degeneration     3   658   25
+  EveryField       4   713   28
+  Fibres           3   599   32
+  FreeZ            3   406   12
+  Induction        2   220    7
+  Lifts            6  1137   59
+  (top) Main.lean   1   120    2
+  Monotone         4   431   28
+  Peel             3   574   21
+  Support          4   708   29
+  TheoremB         7  1167   63
+  Tight            3   862   48
+  Upper            4   569   19
+
+certificate §6 vs actual (folder: cert -> actual) [mismatches only]
+  mismatches: 0 ; cert totals files/lines/thms: (113, 21126, 937)
+
+logs present: ['build.log', 'build_after_clean.log', 'build_full_run29.log', 'build_run10.log', 'build_run11.log', 'build_run12.log', 'build_run13.log', 'build_run14.log', 'build_run15.log', 'build_run16.log', 'build_run17.log', 'build_run18.log', 'build_run19.log', 'build_run20.log', 'build_run21.log', 'build_run22.log', 'build_run23.log', 'build_run24.log', 'build_run25.log', 'build_run26.log', 'build_run27.log', 'build_run28.log', 'build_run29.log', 'build_run3.log', 'build_run4.log', 'build_run5.log', 'build_run6.log', 'build_run7.log', 'build_run8.log', 'build_run9.log', 'check_run26.log', 'check_run27.log', 'check_run28.log', 'check_run29.log', 'clean_rebuild_2026-09-29.log', 'deps_mainTheorem.log']
+build_runN present for N = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]  missing in 3..29: []
+check_runN present for N = [26, 27, 28, 29]
+   ('build.log', 212.39, 2.32, True, '0', 0)
+   ('build_run3.log', 84.19, 2.28, True, '0', 0)
+   ('build_run4.log', 120.67, 2.2, True, '0', 0)
+   ('build_run5.log', 74.76, 2.52, True, None, 0)
+   ('build_run6.log', 106.5, 2.15, True, None, 0)
+   ('build_run7.log', 103.12, 2.16, True, None, 0)
+   ('build_run8.log', 270.32, 2.0, True, None, 0)
+   ('build_run9.log', 90.51, 2.17, True, None, 0)
+   ('build_run10.log', 265.88, 1.99, True, None, 0)
+   ('build_run11.log', 104.75, 2.06, True, None, 0)
+   ('build_run12.log', 129.22, 2.2, True, None, 0)
+   ('build_run13.log', 110.98, 2.23, True, None, 0)
+   ('build_run14.log', 73.33, 2.4, True, None, 0)
+   ('build_run15.log', 97.79, 2.58, True, None, 0)
+   ('build_run16.log', 87.29, 2.4, True, None, 0)
+   ('build_run17.log', 151.41, 1.71, True, None, 0)
+   ('build_run18.log', 233.69, 1.69, True, None, 0)
+   ('build_run19.log', 116.45, 1.67, True, None, 0)
+   ('build_run20.log', 109.94, 1.76, True, None, 0)
+   ('build_run21.log', 152.14, 1.74, True, None, 0)
+   ('build_run22.log', 139.67, 1.99, True, None, 0)
+   ('build_run23.log', 131.69, 1.97, True, None, 0)
+   ('build_run24.log', 197.6, 2.07, True, '0', 0)
+   ('build_run25.log', 131.13, 2.37, True, '0', 0)
+   ('build_run26.log', 264.78, 1.99, True, None, 0)
+   ('build_run27.log', 194.96, 2.08, True, None, 0)
+   ('build_run28.log', 239.64, 2.15, True, None, 0)
+   ('build_run29.log', 113.92, 2.5, True, None, 0)
+builds counted: 28  sum real (s): 4108.7
+largest build: build_run8.log 270.32
+largest RSS: build_run15.log 2.58
+
+clean rebuild: modules 113  rc=0: 113  sum sec: 5214  slowest: ('RequestProject.TheoremB.Root', '0', '117')
+  START/END: [('START', '2026-09-29 18:41:27'), ('END', '2026-09-29 20:08:22')] False
+  order.txt entries 113  distinct 113  == project modules: True  == rebuilt modules in log order: True
+  order.txt respects imports: True []
+
+deps: header ('2367', '90')  lines 90  sum 2367  folders 26
+  folders NOT in cone: ['Degeneration', 'Support', 'Upper']  top-level Main.lean in cone: False
+  Ballot: used modules ['RequestProject.Ballot.Defs']  of ['RequestProject.Ballot.Alg', 'RequestProject.Ballot.Comb', 'RequestProject.Ballot.Construct', 'RequestProject.Ballot.Defs']
+  EveryField: used modules ['RequestProject.EveryField.Rank']  of ['RequestProject.EveryField.Integral', 'RequestProject.EveryField.Invariance', 'RequestProject.EveryField.Main', 'RequestProject.EveryField.Rank']
+  FreeZ: used modules ['RequestProject.FreeZ.Lemma']  of ['RequestProject.FreeZ.Defs', 'RequestProject.FreeZ.Lemma', 'RequestProject.FreeZ.Main']
+
+axiom lines in check logs:
+  run26: 10 axiom lines; distinct sets: Counter({'propext, Classical.choice, Quot.sound': 10})
+    other axiom-related lines: []
+  run27: 3 axiom lines; distinct sets: Counter({'propext, Classical.choice, Quot.sound': 3})
+    other axiom-related lines: []
+  run28: 7 axiom lines; distinct sets: Counter({'propext, Classical.choice, Quot.sound': 7})
+    other axiom-related lines: []
+  run29: 6 axiom lines; distinct sets: Counter({'propext, Classical.choice, Quot.sound': 6})
+    other axiom-related lines: []

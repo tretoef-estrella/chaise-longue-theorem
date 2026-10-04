@@ -1,0 +1,1 @@
+run 1 of s5_math.py (2026-09-29): killed by timeout 600 s with no output; cause: literal Qk enumeration range(2k+3)^h is exponential in h=(q-1)/2 and was called for q up to 99 in part (c) and q up to 39 in part (a). Fixed in run 2: literal sum only for h <= 6, exact generating-function evaluation elsewhere (cross-checked against the literal sum where both are run).

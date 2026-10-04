@@ -1,0 +1,8 @@
+matrix (10125, 3375) 0.5s
+Qk 1 15 = 546
+p=3: dim ideal = 546 (ok), dim quotient = 2829  [5.9s]
+p=5: dim ideal = 546 (ok), dim quotient = 2829  [6.3s]
+p=2: dim ideal = 546 (ok), dim quotient = 2829  [5.2s]
+p=7: dim ideal = 546 (ok), dim quotient = 2829  [6.4s]
+p=2147483629: dim ideal = 546 (ok), dim quotient = 2829  [6.7s]
+exit 0

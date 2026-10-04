@@ -1,0 +1,35 @@
+# md5 of published pieces (material/lean/pieces), 2026-09-29 23:56:45
+ef793af3d068401f8d27224d5ee7a2fc material/lean/pieces/q3_ballot_lower_bound.md
+274d3be68d3fa3b63c0436722a1fc463 material/lean/pieces/q3_upper_bound.md
+48d6be79773ecee58a6547374d389d7b material/lean/pieces/q_P1_fibres.md
+88ab5b9cf4098f2a6159e3fae4e1ed8e material/lean/pieces/q_P2_monotone_options.md
+ed8956def9cd9d14d7e6af83e33d1dd6 material/lean/pieces/q_P3_identities.md
+4a26636457191b78a4f5c0aacbdcde3f material/lean/pieces/q_P3_lifts.md
+f29ac3c440c24d71cd1e24e7ff3aae82 material/lean/pieces/q_bip_P2.md
+bf304a54a4368b2b9786975f09881610 material/lean/pieces/q_bip_P3.md
+f33215d08670b1fbc3926fa11b69dbb3 material/lean/pieces/q_bip_induction.md
+d23d2f18537af17517e726e3168ce4e9 material/lean/pieces/q_bip_options.md
+de2aabed433f9a7fd8d9c6e219fb6902 material/lean/pieces/q_bip_setting.md
+e0f1083779232a4ffb65f5feaf1e3565 material/lean/pieces/q_chain_lemma.md
+d8542bbf555de273a0782c22aa9a7c4f material/lean/pieces/q_col_assembly.md
+0885e7245b6691286af0ca891dff32dc material/lean/pieces/q_col_compatible.md
+dc5cd5d4720bd43de661c48f5df14516 material/lean/pieces/q_col_count.md
+48cfe6e3736a69a48df5444694f0250a material/lean/pieces/q_col_decomp.md
+17e78c4fd9a4c7fb85b5a6faf8e6b1be material/lean/pieces/q_col_one.md
+e76474fbc331e90adcc2395c262ef94c material/lean/pieces/q_col_pairs.md
+3854df37adb1c4663991c84a1a6033ea material/lean/pieces/q_col_splitting.md
+0bd9d9123700005314e514513c0e13f2 material/lean/pieces/q_col_survivors.md
+7835c19831c566967852bd7e10365674 material/lean/pieces/q_col_tensor.md
+99de146a443fce5b9477ab5e0117547a material/lean/pieces/q_col_upper.md
+e3031481fc2e70689238f28e1b39f548 material/lean/pieces/q_degeneration.md
+eb5253512d5f468760222a6cbd917054 material/lean/pieces/q_every_field.md
+e86a9f48d726152d25c7319c1ca3dbd7 material/lean/pieces/q_free_Z.md
+f5174c57df4bfae0dff918ed3f27f958 material/lean/pieces/q_induction.md
+0abbf4a883af1681f16021bf5a0aaecb material/lean/pieces/q_peeling_lemma.md
+54c271bc8a73bfa8fd39d62877c1504d material/lean/pieces/q_support.md
+ea2e3b19902b1d819e25dc80343899e1 material/lean/pieces/q_theorem_B_lower.md
+
+# md5 prefixes recorded in AUDIT_LOG.md (lines 328, 337, 347): q_col_count dc5cd5d4, q_col_upper 99de146a, q_col_assembly d8542bbf
+q_col_count: MATCH (dc5cd5d4720bd43de661c48f5df14516)
+q_col_upper: MATCH (99de146a443fce5b9477ab5e0117547a)
+q_col_assembly: MATCH (d8542bbf555de273a0782c22aa9a7c4f)

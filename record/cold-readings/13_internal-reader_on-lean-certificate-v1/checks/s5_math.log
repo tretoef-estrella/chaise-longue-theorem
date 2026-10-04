@@ -1,0 +1,55 @@
+(a) Qk against the paper
+  ok   table row q=3: [6, 20, 70, 252, 924]
+  ok   table row q=5: [36, 400, 4900, 63504, 853776]
+  ok   table row q=7: [90, 1860, 44730, 1172556, 32496156]
+  ok   table row q=9: [168, 5120, 190120, 7939008, 357713664]
+  ok   table row q=11: [270, 10900, 551950, 32232060, 2070891900]
+  ok   table row q=13: [396, 19920, 1281420, 96807312, 8175770064]
+   q=25 via generating function: [1656, 182400, 26926200, 4890642624, 1038711332736]
+   q=27 via generating function: [1950, 234260, 37849630, 7550855676, 1767675505596]
+   literal Lean sum == generating function for odd q in 3..13, k in 0..4
+   polynomials Q_0..Q_3 of §3 hold for all odd q in 3..39
+  ok   Q_k(3) = C(2k+2,k+1), k<=8
+  ok   Q_k(1) = 0 (m = 1)
+  ok   values of TheoremB/Checks.lean
+(b) |Gamma_J| of [DS, Def. 1.3] by brute force
+  ok   (m,k)=(3,0): |Gamma_J| = 2, Qk = 2, |J| = 1
+  ok   (m,k)=(5,0): |Gamma_J| = 4, Qk = 4, |J| = 1
+  ok   (m,k)=(3,1): |Gamma_J| = 6, Qk = 6, |J| = 3
+  ok   (m,k)=(5,1): |Gamma_J| = 36, Qk = 36, |J| = 3
+  ok   (m,k)=(7,1): |Gamma_J| = 90, Qk = 90, |J| = 3
+  ok   (m,k)=(9,1): |Gamma_J| = 168, Qk = 168, |J| = 3
+  ok   (m,k)=(15,1): |Gamma_J| = 546, Qk = 546, |J| = 3
+  ok   (m,k)=(3,2): |Gamma_J| = 20, Qk = 20, |J| = 15
+  ok   (m,k)=(5,2): |Gamma_J| = 400, Qk = 400, |J| = 15
+  ok   (m,k)=(9,2): |Gamma_J| = 5120, Qk = 5120, |J| = 15
+  ok   (m,k)=(3,3): |Gamma_J| = 70, Qk = 70, |J| = 105
+(c) no truncation: Qk k m < m^(2k+1)
+   checked Qk <= (m-1)^(2k+1) < m^(2k+1) for odd m<100, k<=8
+(d) R/(psi_J) from the Lean formula
+  ok   (m,k)=(1,0) n=1 rows=1: dim_Fp ideal = {2: 0, 3: 0, 5: 0, 7: 0, 11: 0, 13: 0, 2147483629: 0} vs Qk=0; dim quotient = 1  [0.0s]
+  ok      Smith form over Z: 0 elementary divisors, all 1: True -> Z^n/L free of rank 1  [0.0s]
+  ok   (m,k)=(1,1) n=1 rows=3: dim_Fp ideal = {2: 0, 3: 0, 5: 0, 7: 0, 11: 0, 13: 0, 2147483629: 0} vs Qk=0; dim quotient = 1  [0.0s]
+  ok      Smith form over Z: 0 elementary divisors, all 1: True -> Z^n/L free of rank 1  [0.0s]
+  ok   (m,k)=(1,2) n=1 rows=15: dim_Fp ideal = {2: 0, 3: 0, 5: 0, 7: 0, 11: 0, 13: 0, 2147483629: 0} vs Qk=0; dim quotient = 1  [0.0s]
+  ok      Smith form over Z: 0 elementary divisors, all 1: True -> Z^n/L free of rank 1  [0.0s]
+  ok   (m,k)=(3,0) n=3 rows=3: dim_Fp ideal = {2: 2, 3: 2, 5: 2, 7: 2, 11: 2, 13: 2, 2147483629: 2} vs Qk=2; dim quotient = 1  [0.0s]
+  ok      Smith form over Z: 2 elementary divisors, all 1: True -> Z^n/L free of rank 1  [0.0s]
+  ok   (m,k)=(5,0) n=5 rows=5: dim_Fp ideal = {2: 4, 3: 4, 5: 4, 7: 4, 11: 4, 13: 4, 2147483629: 4} vs Qk=4; dim quotient = 1  [0.0s]
+  ok      Smith form over Z: 4 elementary divisors, all 1: True -> Z^n/L free of rank 1  [0.0s]
+  ok   (m,k)=(7,0) n=7 rows=7: dim_Fp ideal = {2: 6, 3: 6, 5: 6, 7: 6, 11: 6, 13: 6, 2147483629: 6} vs Qk=6; dim quotient = 1  [0.0s]
+  ok      Smith form over Z: 6 elementary divisors, all 1: True -> Z^n/L free of rank 1  [0.0s]
+  ok   (m,k)=(3,1) n=27 rows=81: dim_Fp ideal = {2: 6, 3: 6, 5: 6, 7: 6, 11: 6, 13: 6, 2147483629: 6} vs Qk=6; dim quotient = 21  [0.0s]
+  ok      Smith form over Z: 6 elementary divisors, all 1: True -> Z^n/L free of rank 21  [0.0s]
+  ok   (m,k)=(5,1) n=125 rows=375: dim_Fp ideal = {2: 36, 3: 36, 5: 36, 7: 36, 11: 36, 13: 36, 2147483629: 36} vs Qk=36; dim quotient = 89  [0.0s]
+  ok      Smith form over Z: 36 elementary divisors, all 1: True -> Z^n/L free of rank 89  [0.1s]
+  ok   (m,k)=(7,1) n=343 rows=1029: dim_Fp ideal = {2: 90, 3: 90, 5: 90, 7: 90, 11: 90, 13: 90, 2147483629: 90} vs Qk=90; dim quotient = 253  [0.2s]
+  ok      Smith form over Z: 90 elementary divisors, all 1: True -> Z^n/L free of rank 253  [1.5s]
+  ok   (m,k)=(9,1) n=729 rows=2187: dim_Fp ideal = {2: 168, 3: 168, 5: 168, 7: 168, 11: 168, 13: 168, 2147483629: 168} vs Qk=168; dim quotient = 561  [1.0s]
+  ok   (m,k)=(3,2) n=243 rows=3645: dim_Fp ideal = {2: 20, 3: 20, 5: 20, 7: 20, 11: 20, 13: 20, 2147483629: 20} vs Qk=20; dim quotient = 223  [0.4s]
+  ok      Smith form over Z: 20 elementary divisors, all 1: True -> Z^n/L free of rank 223  [1.8s]
+(e) negative controls (expected to FAIL the equality somewhere)
+   control wrongend: cells where equality fails: 0 []
+   control phi_plus: cells where equality fails: 4 [((3, 1), {2: 16, 3: 16, 5: 16, 7: 16, 2147483629: 16}, 6), ((5, 1), {2: 96, 3: 96, 5: 96, 7: 96, 2147483629: 96}, 36), ((7, 1), {2: 288, 3: 288, 5: 288, 7: 288, 2147483629: 288}, 90)]
+   control tau_plus: cells where equality fails: 4 [((3, 1), {2: 6, 3: 19, 5: 19, 7: 19, 2147483629: 19}, 6), ((5, 1), {2: 36, 3: 61, 5: 61, 7: 61, 2147483629: 61}, 36), ((7, 1), {2: 90, 3: 127, 5: 127, 7: 127, 2147483629: 127}, 90)]
+ALL OK
