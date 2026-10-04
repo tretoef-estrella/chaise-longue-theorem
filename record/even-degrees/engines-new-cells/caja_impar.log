@@ -1,0 +1,43 @@
+BOX k=1 r=3 p=2 sign=True: dim C=27 dim ideal=19 N_r=19 equal: True
+FIN-OK
+BOX k=1 r=5 p=2 sign=True: dim C=125 dim ideal=61 N_r=61 equal: True
+FIN-OK
+BOX k=1 r=7 p=2 sign=True: dim C=343 dim ideal=127 N_r=127 equal: True
+FIN-OK
+BOX k=1 r=9 p=2 sign=True: dim C=729 dim ideal=217 N_r=217 equal: True
+FIN-OK
+BOX k=1 r=11 p=2 sign=True: dim C=1331 dim ideal=331 N_r=331 equal: True
+FIN-OK
+BOX k=2 r=3 p=2 sign=True: dim C=243 dim ideal=141 N_r=141 equal: True
+FIN-OK
+BOX k=2 r=5 p=2 sign=True: dim C=3125 dim ideal=1001 N_r=1001 equal: True
+FIN-OK
+BOX k=2 r=7 p=2 sign=True: dim C=16807 dim ideal=3301 N_r=3301 equal: True
+FIN-OK
+BOX k=2 r=9 p=2 sign=True: dim C=59049 dim ideal=7761 N_r=7761 equal: True
+FIN-OK
+BOX k=3 r=3 p=2 sign=True: dim C=2187 dim ideal=1107 N_r=1107 equal: True
+FIN-OK
+BOX k=1 r=3 p=3 sign=True: dim C=27 dim ideal=19 N_r=19 equal: True
+FIN-OK
+BOX k=2 r=3 p=3 sign=True: dim C=243 dim ideal=141 N_r=141 equal: True
+FIN-OK
+BOX k=1 r=5 p=3 sign=True: dim C=125 dim ideal=61 N_r=61 equal: True
+FIN-OK
+BOX k=2 r=5 p=3 sign=True: dim C=3125 dim ideal=1001 N_r=1001 equal: True
+FIN-OK
+BOX k=1 r=5 p=5 sign=True: dim C=125 dim ideal=61 N_r=61 equal: True
+FIN-OK
+BOX k=2 r=5 p=5 sign=True: dim C=3125 dim ideal=1001 N_r=1001 equal: True
+FIN-OK
+BOX k=1 r=9 p=3 sign=True: dim C=729 dim ideal=217 N_r=217 equal: True
+FIN-OK
+BOX k=1 r=7 p=7 sign=True: dim C=343 dim ideal=127 N_r=127 equal: True
+FIN-OK
+BOX k=1 r=3 p=3 sign=False: dim C=27 dim ideal=18 N_r=19 equal: False
+FIN-OK
+BOX k=2 r=3 p=3 sign=False: dim C=243 dim ideal=138 N_r=141 equal: False
+FIN-OK
+BOX k=1 r=5 p=5 sign=False: dim C=125 dim ideal=60 N_r=61 equal: False
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=755536 t=3s

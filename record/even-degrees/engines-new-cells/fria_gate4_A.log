@@ -1,0 +1,15 @@
+(k,m,p)=(1,15,3): q=3, r'=5, field GF(81); colouring types 35 (125 colourings), with non-zero ideal 15; mismatches with the block prediction 0; sum over colourings 546; |Gamma| = N_14(4) = 469; equal False
+(k,m,p)=(1,15,5): q=5, r'=3, field GF(25); colouring types 10 (27 colourings), with non-zero ideal 6; mismatches with the block prediction 0; sum over colourings 546; |Gamma| = N_14(4) = 469; equal False
+(k,m,p)=(1,12,2): q=4, r'=3, field GF(4); colouring types 10 (27 colourings), with non-zero ideal 6; mismatches with the block prediction 0; sum over colourings 331; |Gamma| = N_11(4) = 331; equal True
+(k,m,p)=(2,12,2): q=4, r'=3, field GF(4); colouring types 21 (243 colourings), with non-zero ideal 9; mismatches with the block prediction 0; sum over colourings 15101; |Gamma| = N_11(6) = 15101; equal True
+(k,m,p)=(1,24,2): q=8, r'=3, field GF(4); colouring types 10 (27 colourings), with non-zero ideal 6; mismatches with the block prediction 0; sum over colourings 1519; |Gamma| = N_23(4) = 1519; equal True
+(k,m,p)=(1,20,2): q=4, r'=5, field GF(16); colouring types 35 (125 colourings), with non-zero ideal 15; mismatches with the block prediction 0; sum over colourings 1027; |Gamma| = N_19(4) = 1027; equal True
+(k,m,p)=(1,14,2): q=2, r'=7, field GF(8); colouring types 84 (343 colourings), with non-zero ideal 28; mismatches with the block prediction 0; sum over colourings 469; |Gamma| = N_13(4) = 469; equal True
+(k,m,p)=(2,6,2): q=2, r'=3, field GF(4); colouring types 21 (243 colourings), with non-zero ideal 9; mismatches with the block prediction 0; sum over colourings 1001; |Gamma| = N_5(6) = 1001; equal True
+(k,m,p)=(1,12,3): q=3, r'=4, field GF(9); colouring types 20 (64 colourings), with non-zero ideal 12; mismatches with the block prediction 0; sum over colourings 331; |Gamma| = N_11(4) = 331; equal True
+(k,m,p)=(2,12,3): q=3, r'=4, field GF(9); colouring types 56 (1024 colourings), with non-zero ideal 24; mismatches with the block prediction 0; sum over colourings 15101; |Gamma| = N_11(6) = 15101; equal True
+(k,m,p)=(1,18,3): q=9, r'=2, field GF(3); colouring types 4 (8 colourings), with non-zero ideal 4; mismatches with the block prediction 0; sum over colourings 817; |Gamma| = N_17(4) = 817; equal True
+(k,m,p)=(1,30,5): q=5, r'=6, field GF(25); colouring types 56 (216 colourings), with non-zero ideal 24; mismatches with the block prediction 0; sum over colourings 2437; |Gamma| = N_29(4) = 2437; equal True
+TOTAL mismatches 0; all sums equal |Gamma|: False
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=12016 t=1s

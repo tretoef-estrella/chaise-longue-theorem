@@ -1,0 +1,21 @@
+fria_gate4 (cold audit G4), written BEFORE the run, 2 Oct 2026, Grepy Chats.
+Run A: calibration on odd m (paper, Example 6.11): (1,15,3), (1,15,5) -> 546 each.  B3 (p = 2): (1,12,2), (2,12,2), (1,24,2), (1,20,2), (1,14,2), (2,6,2).  B4 (p odd, r' even): (1,12,3), (2,12,3), (1,18,3), (1,30,5).
+  Each colouring type is a Groebner basis in a local ring of dimension <= 1024 (q^(2k+1): 4^5, 3^5, 9^3, 8^3, 5^3). Up to 56 types per cell.
+  Memory < 300 MB; time guess 1-4 min (Groebner bases: uncertain; the watchdog is the guard, 600 s).
+Run B (separate, only if A is fast): (2,18,3): q = 9, local rings of dimension 9^5 = 59049, 6 colouring types. Memory and time unknown; the watchdog decides.
+Run C (written before the run): a cell NOT in [DS, section 5] and not in the pilot's runs, in the literal ring: (n, m) = (4, 20), both primes.
+  (2,20,2): q = 4, r' = 5, GF(16), 126 colouring types, local rings of dimension 1024. Guess < 300 MB, < 3 min.
+  (2,20,5): q = 5, r' = 4, GF(25), 56 colouring types, local rings of dimension 3125. Guess < 500 MB; time unknown (Groebner): the watchdog decides.
+  Prediction sealed: both sums equal N_19(6) (computed by the script), with 0 mismatches against the block prediction. The grouping of colourings by type uses that the ideal is invariant under permutations of t_1..t_{n+1} ((t_j - 1)phi(t_j t_k) = -(t_k)^(-1)(t_k - 1)phi(t_j t_k)).
+Run D (written before the run): more literal cells outside [DS, section 5], one watchdog per cell; a killed cell is reported as not done.
+  (2,14,2) GF(8), 462 types, dim 32: seconds.   (2,14,7) GF(7), 6 types, dim 16807: unknown.
+  (2,18,2) GF(64), 1287 types, dim 32: < 2 min. (2,18,3) GF(3), 6 types, dim 59049: unknown, likely the heaviest.
+  (2,30,2) GF(16), 11628 types, dim 32: minutes (script size). (2,30,3) GF(81), 2002 types, dim 243: minutes. (2,30,5) GF(25), 252 types, dim 3125: minutes.
+  (3,12,2) GF(4), 36 types, dim 16384, 105 generators: unknown. (3,12,3) GF(9), 120 types, dim 2187: minutes. (3,10,2) GF(16), 330 types, dim 128: < 2 min.
+  Memory guess < 600 MB each. Sealed prediction: 0 mismatches and sum = |Gamma| in every cell that finishes.
+Run E (written before the run): eight more literal cells, one watchdog each, in the background, nothing else running meanwhile.
+  To complete cells: (2,30,2) GF(16), 11628 types of dim 32; (2,30,3) GF(81), 2002 types of dim 243; (3,12,2) GF(4), 36 types of dim 16384, 105 generators (unknown);
+  (2,28,2) GF(8), 462 types of dim 1024; (2,28,7) GF(49), 56 types of dim 16807 (about 56 x the 15 s per type seen at (2,14,7): may be killed by time);
+  (2,18,3) GF(3), 6 types of dim 59049 (unknown, may be killed).
+  Pure powers of 2 (step B2, no colours): (2,16,2): one local ring of dimension 16^5 = 1048576 (unknown, likely killed); (4,4,2): 9 variables, dimension 4^9 = 262144, 945 generators (unknown).
+  Memory guess < 1 GB each; a killed cell is reported as NOT DONE. Sealed: every cell that finishes gives 0 mismatches and sum = |Gamma|.

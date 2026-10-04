@@ -1,0 +1,25 @@
+r=3 m=2 p=2: interlaced pairs 3; dim>=|Z| 3; equal 3; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 13, failures 0
+r=3 m=3 p=2: interlaced pairs 4; dim>=|Z| 4; equal 4; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 31, failures 0
+r=3 m=4 p=2: interlaced pairs 5; dim>=|Z| 5; equal 5; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 151, failures 0
+r=3 m=5 p=2: interlaced pairs 6; dim>=|Z| 6; equal 6; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 534, failures 0
+r=3 m=2 p=3: interlaced pairs 3; dim>=|Z| 3; equal 3; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 13, failures 0
+r=3 m=3 p=3: interlaced pairs 4; dim>=|Z| 4; equal 4; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 31, failures 0
+r=3 m=4 p=3: interlaced pairs 5; dim>=|Z| 5; equal 5; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 151, failures 0
+r=3 m=5 p=3: interlaced pairs 6; dim>=|Z| 6; equal 6; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 534, failures 0
+r=3 m=4 p=101: interlaced pairs 5; dim>=|Z| 5; equal 5; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 151, failures 0
+r=3 m=5 p=101: interlaced pairs 6; dim>=|Z| 6; equal 6; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 534, failures 0
+r=5 m=2 p=2: interlaced pairs 4; dim>=|Z| 4; equal 4; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 28, failures 0
+r=5 m=3 p=2: interlaced pairs 6; dim>=|Z| 6; equal 6; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 92, failures 0
+r=5 m=4 p=2: interlaced pairs 10; dim>=|Z| 10; equal 10; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 621, failures 0
+r=5 m=2 p=5: interlaced pairs 4; dim>=|Z| 4; equal 4; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 28, failures 0
+r=5 m=3 p=5: interlaced pairs 6; dim>=|Z| 6; equal 6; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 92, failures 0
+r=5 m=4 p=5: interlaced pairs 10; dim>=|Z| 10; equal 10; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 621, failures 0
+r=5 m=3 p=101: interlaced pairs 6; dim>=|Z| 6; equal 6; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 92, failures 0
+r=5 m=4 p=101: interlaced pairs 10; dim>=|Z| 10; equal 10; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 621, failures 0
+r=7 m=2 p=2: interlaced pairs 4; dim>=|Z| 4; equal 4; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 38, failures 0
+r=7 m=3 p=2: interlaced pairs 8; dim>=|Z| 8; equal 8; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 165, failures 0
+r=7 m=2 p=7: interlaced pairs 4; dim>=|Z| 4; equal 4; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 38, failures 0
+r=7 m=3 p=7: interlaced pairs 8; dim>=|Z| 8; equal 8; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 165, failures 0
+TOTAL {'pairs': 127, 'ge': 127, 'eq': 127, 'ctrl_fail': 13, 'lay_bad': 0, 'memb': 4744, 'memb_fail': 0, 'slice_sum_bad': 0}
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=98848 t=6s

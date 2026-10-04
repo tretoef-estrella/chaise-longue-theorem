@@ -1,0 +1,4 @@
+E(D_r) = ab D_(r-1), r = 11 True
+E(D_r) = ab D_(r-1), r = 15 True
+count identity N_r(n) = sum_j C(n,2j) Q(n-2j): all cells True
+FIN-OK

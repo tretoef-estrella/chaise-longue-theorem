@@ -1,0 +1,6 @@
+TWO k=3 q=4: matchings=105 dim B=16384 |Gamma|=1107 dim ideal=1107 dim leading-form ideal=1107
+  HF gr(ideal)        : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 232, 280, 238, 154, 76, 28, 7, 1]
+  HF leading-form idl : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 232, 280, 238, 154, 76, 28, 7, 1]
+  difference by degree: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=25552 t=2s

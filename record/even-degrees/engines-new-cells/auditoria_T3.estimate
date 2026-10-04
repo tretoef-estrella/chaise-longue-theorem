@@ -1,0 +1,1 @@
+auditoria_T3.py 6 — estimate (2 Oct 2026): box of dimension <= 729; ideals with up to a few hundred generators, each with <= 729 monomial multiples: matrices up to about 150000 x 729 int64 (0.9 GB worst case is too much: so m <= 6 only and generators processed together only when rows < 120000). Expected < 5 min, < 900 MB; the watchdog is the guard.

@@ -1,0 +1,20 @@
+q=2 (alpha,beta)=(1,1) char 2: |BPar|=2, down-sets 2 (all); dim>=|Z| 2; equal 2; control (maximal shapes only) below |Z| in 0
+q=2 (alpha,beta)=(2,1) char 2: |BPar|=2, down-sets 2 (all); dim>=|Z| 2; equal 2; control (maximal shapes only) below |Z| in 0
+q=2 (alpha,beta)=(2,2) char 2: |BPar|=3, down-sets 3 (all); dim>=|Z| 3; equal 3; control (maximal shapes only) below |Z| in 0
+q=2 (alpha,beta)=(3,1) char 2: |BPar|=3, down-sets 3 (all); dim>=|Z| 3; equal 3; control (maximal shapes only) below |Z| in 0
+q=2 (alpha,beta)=(3,2) char 2: |BPar|=3, down-sets 3 (all); dim>=|Z| 3; equal 3; control (maximal shapes only) below |Z| in 0
+q=2 (alpha,beta)=(3,3) char 2: |BPar|=4, down-sets 4 (all); dim>=|Z| 4; equal 4; control (maximal shapes only) below |Z| in 0
+q=2 (alpha,beta)=(4,2) char 2: |BPar|=4, down-sets 4 (all); dim>=|Z| 4; equal 4; control (maximal shapes only) below |Z| in 0
+q=2 (alpha,beta)=(4,1) char 2: |BPar|=3, down-sets 3 (all); dim>=|Z| 3; equal 3; control (maximal shapes only) below |Z| in 0
+q=2 (alpha,beta)=(5,1) char 2: |BPar|=4, down-sets 4 (all); dim>=|Z| 4; equal 4; control (maximal shapes only) below |Z| in 0
+q=4 (alpha,beta)=(1,1) char 2: |BPar|=2, down-sets 2 (all); dim>=|Z| 2; equal 2; control (maximal shapes only) below |Z| in 0
+q=4 (alpha,beta)=(2,1) char 2: |BPar|=3, down-sets 3 (all); dim>=|Z| 3; equal 3; control (maximal shapes only) below |Z| in 1
+q=4 (alpha,beta)=(2,2) char 2: |BPar|=6, down-sets 7 (all); dim>=|Z| 7; equal 7; control (maximal shapes only) below |Z| in 4
+q=4 (alpha,beta)=(3,1) char 2: |BPar|=5, down-sets 6 (all); dim>=|Z| 6; equal 6; control (maximal shapes only) below |Z| in 2
+q=8 (alpha,beta)=(1,1) char 2: |BPar|=2, down-sets 2 (all); dim>=|Z| 2; equal 2; control (maximal shapes only) below |Z| in 0
+q=8 (alpha,beta)=(2,1) char 2: |BPar|=3, down-sets 3 (all); dim>=|Z| 3; equal 3; control (maximal shapes only) below |Z| in 1
+q=3 (alpha,beta)=(2,2) char 3: |BPar|=5, down-sets 6 (all); dim>=|Z| 6; equal 6; control (maximal shapes only) below |Z| in 3
+q=3 (alpha,beta)=(3,2) char 3: |BPar|=6, down-sets 7 (all); dim>=|Z| 7; equal 7; control (maximal shapes only) below |Z| in 4
+TOTAL {'ds': 64, 'ge': 64, 'eq': 64, 'ctrl': 15}
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=29840 t=0s

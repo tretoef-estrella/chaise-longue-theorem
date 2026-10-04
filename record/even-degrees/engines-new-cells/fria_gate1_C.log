@@ -1,0 +1,5 @@
+r=3 m=6 p=2: interlaced pairs 7; dim>=|Z| 7; equal 7; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 3175, failures 0
+r=3 m=6 p=3: interlaced pairs 7; dim>=|Z| 7; equal 7; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 3175, failures 0
+r=9 m=3 p=2: interlaced pairs 8; dim>=|Z| 8; equal 8; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 207, failures 0
+r=7 m=4 p=2: interlaced pairs 14; dim>=|Z| 14; equal 14; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 1229, failures 0
+VIGIA-MATADO-MEMORIA mem_kb=1278976 t=77s

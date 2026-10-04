@@ -1,0 +1,4 @@
+(k,m,p)=(3,12,3): q=3, r'=4, field GF(9); colouring types 120 (16384 colourings), with non-zero ideal 40; mismatches with the block prediction 0; sum over colourings 876331; |Gamma| = N_11(8) = 876331; equal True
+TOTAL mismatches 0; all sums equal |Gamma|: True
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=33696 t=8s

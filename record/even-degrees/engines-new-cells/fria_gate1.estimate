@@ -1,0 +1,6 @@
+fria_gate1 (cold audit G1/G2), written BEFORE the run, 2 Oct 2026, Grepy Chats.
+Run A (smoke): cells (3,2,2) (3,3,2) (3,3,3): boxes <= 27; < 100 MB, < 10 s.
+Run B: r=3, m=2..5, p=2,3,101; r=5, m=2..4, p=2,5,101; r=7, m=2,3, p=2,7. Largest box 625 (r=5,m=4) and 343 (r=7,m=3) and 243 (r=3,m=5).
+  Graded elimination, matrices of a few hundred rows by <= 85 columns. Memory < 300 MB. Time uncertain (pattern enumeration at r=5,m=4 and r=7,m=3 with Pfaffians): guess 2-6 min; the watchdog is the guard (600 s). If killed: split by cell.
+Run C (written before the run): larger cells (3,6,2) (3,6,3) (9,3,2) (7,4,2) (5,5,2). Boxes 729, 729, 729, 2401, 3125. The engine now reduces in chunks of 3000 rows per degree.
+  Memory guess < 600 MB; time very uncertain (thousands of pattern products at (5,5) and (7,4)); the watchdog stops it at 600 s; cells are printed as they finish, so a kill still leaves the finished ones.

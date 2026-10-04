@@ -1,0 +1,2 @@
+fria_gate5 (cold audit G5, Lemma 5.1), written BEFORE the run. Instances (r,l,t,p): r=3: (0,1); r=5: (0,1),(0,2),(1,1),(2,1); r=7: (0,1),(1,1),(0,2); r=9: (0,1),(1,1); each over p = 2, 3 and 101 where cheap.
+Largest boxes: 5^5 = 3125, 7^5 = 16807 (r=7, (0,2): 15 x 5 generators x 16807 multiples: the risk), 9^4 = 6561. Memory guess < 700 MB with chunking; time < 5 min. To run only after the background Singular runs have ended (one engine at a time).

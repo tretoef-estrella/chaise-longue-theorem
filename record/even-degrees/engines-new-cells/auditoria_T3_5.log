@@ -1,0 +1,43 @@
+p=2 m=1 J=0: dim I = 1, |Z| = 1, dim>=|Z| True, equal True
+p=2 m=1 J=1: dim I = 3, |Z| = 3, dim>=|Z| True, equal True
+p=2 m=2 J=0: dim I = 3, |Z| = 3, dim>=|Z| True, equal True | W_2 contains I(1,1): True
+p=2 m=2 J=1: dim I = 7, |Z| = 7, dim>=|Z| True, equal True | W_0 contains I(1,0): True | W_1 contains I(1,1): True | W_2 contains I(1,2): True
+p=2 m=2 J=2: dim I = 9, |Z| = 9, dim>=|Z| True, equal True
+p=2 m=3 J=0: dim I = 7, |Z| = 7, dim>=|Z| True, equal True | W_2 contains I(2,1): True
+p=2 m=3 J=1: dim I = 19, |Z| = 19, dim>=|Z| True, equal True | W_0 contains I(2,0): True | W_1 contains I(2,1): True | W_2 contains I(2,2): True
+p=2 m=3 J=2: dim I = 25, |Z| = 25, dim>=|Z| True, equal True | W_0 contains I(2,1): True | W_1 contains I(2,2): True | W_2 contains I(2,3): True
+p=2 m=3 J=3: dim I = 27, |Z| = 27, dim>=|Z| True, equal True
+p=2 m=4 J=0: dim I = 19, |Z| = 19, dim>=|Z| True, equal True | W_2 contains I(3,1): True
+p=2 m=4 J=1: dim I = 51, |Z| = 51, dim>=|Z| True, equal True | W_0 contains I(3,0): True | W_1 contains I(3,1): True | W_2 contains I(3,2): True
+p=2 m=4 J=2: dim I = 71, |Z| = 71, dim>=|Z| True, equal True | W_0 contains I(3,1): True | W_1 contains I(3,2): True | W_2 contains I(3,3): True
+p=2 m=4 J=3: dim I = 79, |Z| = 79, dim>=|Z| True, equal True | W_0 contains I(3,2): True | W_1 contains I(3,3): True | W_2 contains I(3,4): True
+p=2 m=4 J=4: dim I = 81, |Z| = 81, dim>=|Z| True, equal True
+p=2 m=5 J=0: dim I = 51, |Z| = 51, dim>=|Z| True, equal True | W_2 contains I(4,1): True
+p=2 m=5 J=1: dim I = 141, |Z| = 141, dim>=|Z| True, equal True | W_0 contains I(4,0): True | W_1 contains I(4,1): True | W_2 contains I(4,2): True
+p=2 m=5 J=2: dim I = 201, |Z| = 201, dim>=|Z| True, equal True | W_0 contains I(4,1): True | W_1 contains I(4,2): True | W_2 contains I(4,3): True
+p=2 m=5 J=3: dim I = 231, |Z| = 231, dim>=|Z| True, equal True | W_0 contains I(4,2): True | W_1 contains I(4,3): True | W_2 contains I(4,4): True
+p=2 m=5 J=4: dim I = 241, |Z| = 241, dim>=|Z| True, equal True | W_0 contains I(4,3): True | W_1 contains I(4,4): True | W_2 contains I(4,5): True
+p=2 m=5 J=5: dim I = 243, |Z| = 243, dim>=|Z| True, equal True
+p=3 m=1 J=0: dim I = 1, |Z| = 1, dim>=|Z| True, equal True
+p=3 m=1 J=1: dim I = 3, |Z| = 3, dim>=|Z| True, equal True
+p=3 m=2 J=0: dim I = 3, |Z| = 3, dim>=|Z| True, equal True | W_2 contains I(1,1): True
+p=3 m=2 J=1: dim I = 7, |Z| = 7, dim>=|Z| True, equal True | W_0 contains I(1,0): True | W_1 contains I(1,1): True | W_2 contains I(1,2): True
+p=3 m=2 J=2: dim I = 9, |Z| = 9, dim>=|Z| True, equal True
+p=3 m=3 J=0: dim I = 7, |Z| = 7, dim>=|Z| True, equal True | W_2 contains I(2,1): True
+p=3 m=3 J=1: dim I = 19, |Z| = 19, dim>=|Z| True, equal True | W_0 contains I(2,0): True | W_1 contains I(2,1): True | W_2 contains I(2,2): True
+p=3 m=3 J=2: dim I = 25, |Z| = 25, dim>=|Z| True, equal True | W_0 contains I(2,1): True | W_1 contains I(2,2): True | W_2 contains I(2,3): True
+p=3 m=3 J=3: dim I = 27, |Z| = 27, dim>=|Z| True, equal True
+p=3 m=4 J=0: dim I = 19, |Z| = 19, dim>=|Z| True, equal True | W_2 contains I(3,1): True
+p=3 m=4 J=1: dim I = 51, |Z| = 51, dim>=|Z| True, equal True | W_0 contains I(3,0): True | W_1 contains I(3,1): True | W_2 contains I(3,2): True
+p=3 m=4 J=2: dim I = 71, |Z| = 71, dim>=|Z| True, equal True | W_0 contains I(3,1): True | W_1 contains I(3,2): True | W_2 contains I(3,3): True
+p=3 m=4 J=3: dim I = 79, |Z| = 79, dim>=|Z| True, equal True | W_0 contains I(3,2): True | W_1 contains I(3,3): True | W_2 contains I(3,4): True
+p=3 m=4 J=4: dim I = 81, |Z| = 81, dim>=|Z| True, equal True
+p=3 m=5 J=0: dim I = 51, |Z| = 51, dim>=|Z| True, equal True | W_2 contains I(4,1): True
+p=3 m=5 J=1: dim I = 141, |Z| = 141, dim>=|Z| True, equal True | W_0 contains I(4,0): True | W_1 contains I(4,1): True | W_2 contains I(4,2): True
+p=3 m=5 J=2: dim I = 201, |Z| = 201, dim>=|Z| True, equal True | W_0 contains I(4,1): True | W_1 contains I(4,2): True | W_2 contains I(4,3): True
+p=3 m=5 J=3: dim I = 231, |Z| = 231, dim>=|Z| True, equal True | W_0 contains I(4,2): True | W_1 contains I(4,3): True | W_2 contains I(4,4): True
+p=3 m=5 J=4: dim I = 241, |Z| = 241, dim>=|Z| True, equal True | W_0 contains I(4,3): True | W_1 contains I(4,4): True | W_2 contains I(4,5): True
+p=3 m=5 J=5: dim I = 243, |Z| = 243, dim>=|Z| True, equal True
+T3 gate: 40 ideals pass, 0 fail
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=74448 t=0s

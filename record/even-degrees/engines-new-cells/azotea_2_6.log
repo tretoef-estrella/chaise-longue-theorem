@@ -1,0 +1,9 @@
+TRUE k=2 m=4 p=2: matchings=15 dim R=1024 |Gamma|=141 dim ideal=141 torsion-free at p: True
+FIN-OK
+TRUE k=2 m=8 p=2: matchings=15 dim R=32768 |Gamma|=3301 dim ideal=3301 torsion-free at p: True
+FIN-OK
+TRUE k=2 m=6 p=2: matchings=15 dim R=7776 |Gamma|=1001 dim ideal=1001 torsion-free at p: True
+FIN-OK
+TRUE k=2 m=6 p=3: matchings=15 dim R=7776 |Gamma|=1001 dim ideal=1001 torsion-free at p: True
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=566272 t=9s

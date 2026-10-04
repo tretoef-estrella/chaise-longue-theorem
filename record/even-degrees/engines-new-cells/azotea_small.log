@@ -1,0 +1,22 @@
+TRUE k=1 m=4 p=2: matchings=3 dim R=64 |Gamma|=19 dim ideal=19 torsion-free at p: True
+FIN-OK
+TRUE k=1 m=6 p=2: matchings=3 dim R=216 |Gamma|=61 dim ideal=61 torsion-free at p: True
+FIN-OK
+TRUE k=1 m=6 p=3: matchings=3 dim R=216 |Gamma|=61 dim ideal=61 torsion-free at p: True
+FIN-OK
+TWO k=1 q=4: matchings=3 dim B=64 |Gamma|=19 dim ideal=19 dim leading-form ideal=19
+  HF gr(ideal)        : [0, 0, 0, 0, 0, 3, 6, 6, 3, 1]
+  HF leading-form idl : [0, 0, 0, 0, 0, 3, 6, 6, 3, 1]
+  difference by degree: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+FIN-OK
+TWO k=1 q=8: matchings=3 dim B=512 |Gamma|=127 dim ideal=127 dim leading-form ideal=127
+  HF gr(ideal)        : [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3, 1]
+  HF leading-form idl : [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3, 1]
+  difference by degree: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+FIN-OK
+TWO k=2 q=4: matchings=15 dim B=1024 |Gamma|=141 dim ideal=141 dim leading-form ideal=141
+  HF gr(ideal)        : [0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 36, 40, 29, 15, 5, 1]
+  HF leading-form idl : [0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 36, 40, 29, 15, 5, 1]
+  difference by degree: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=23456 t=0s

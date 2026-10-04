@@ -1,0 +1,6 @@
+r=3 m=2 p=2: interlaced pairs 3; dim>=|Z| 3; equal 3; control (no absorbed pairs) fails in 0; layer checks bad 0; slice-sum bad 0; memberships 13, failures 0
+r=3 m=3 p=2: interlaced pairs 4; dim>=|Z| 4; equal 4; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 31, failures 0
+r=3 m=3 p=3: interlaced pairs 4; dim>=|Z| 4; equal 4; control (no absorbed pairs) fails in 1; layer checks bad 0; slice-sum bad 0; memberships 31, failures 0
+TOTAL {'pairs': 11, 'ge': 11, 'eq': 11, 'ctrl_fail': 2, 'lay_bad': 0, 'memb': 75, 'memb_fail': 0, 'slice_sum_bad': 0}
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=2352 t=0s

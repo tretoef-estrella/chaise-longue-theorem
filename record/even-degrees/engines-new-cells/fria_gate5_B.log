@@ -1,0 +1,20 @@
+r=3 l=0 t=1 p=2: n=3, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=3 l=0 t=1 p=3: n=3, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=5 l=0 t=1 p=2: n=3, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=5 l=0 t=1 p=5: n=3, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=5 l=0 t=1 p=101: n=3, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=5 l=1 t=1 p=2: n=4, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=5 l=1 t=1 p=3: n=4, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=5 l=1 t=1 p=101: n=4, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=5 l=0 t=2 p=2: n=5, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=5 l=0 t=2 p=5: n=5, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=7 l=0 t=1 p=2: n=3, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=7 l=0 t=1 p=7: n=3, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=7 l=1 t=1 p=2: n=4, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=7 l=1 t=1 p=7: n=4, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=9 l=0 t=1 p=2: n=3, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=9 l=0 t=1 p=3: n=3, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+r=9 l=1 t=1 p=2: n=4, Pf nonzero True, in the ideal True; control (one fixed S only): in the smaller ideal False
+Lemma 5.1: 17 hold, 0 fail; control fired in 17 of 17
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=173424 t=1s

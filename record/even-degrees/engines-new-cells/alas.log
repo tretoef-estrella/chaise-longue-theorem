@@ -1,0 +1,31 @@
+WINGS k=1 q=4: |Gamma|=19 N_(q-1)=19
+  wing 1: E^2 != 0 on a random element: 0; tangent ideal dim=19; E-stable: True; rank E on it=8; homology ker/im = 3
+  wing 2: Theorem-B ideal of the odd number 5 in the same box: dim=36, Q_k(5)=36; tangent ideal inside it: True
+  wing 1, true ideal: dim=19; stable under inversion: True; rank(iota+1)=8; homology = 3
+FIN-OK
+WINGS k=1 q=8: |Gamma|=127 N_(q-1)=127
+  wing 1: E^2 != 0 on a random element: 0; tangent ideal dim=127; E-stable: True; rank E on it=62; homology ker/im = 3
+  wing 2: Theorem-B ideal of the odd number 9 in the same box: dim=168, Q_k(9)=168; tangent ideal inside it: True
+  wing 1, true ideal: dim=127; stable under inversion: True; rank(iota+1)=62; homology = 3
+FIN-OK
+WINGS k=1 q=16: |Gamma|=631 N_(q-1)=631
+  wing 1: E^2 != 0 on a random element: 0; tangent ideal dim=631; E-stable: True; rank E on it=314; homology ker/im = 3
+  wing 2: Theorem-B ideal of the odd number 17 in the same box: dim=720, Q_k(17)=720; tangent ideal inside it: True
+  wing 1, true ideal: dim=631; stable under inversion: True; rank(iota+1)=314; homology = 3
+FIN-OK
+WINGS k=2 q=4: |Gamma|=141 N_(q-1)=141
+  wing 1: E^2 != 0 on a random element: 0; tangent ideal dim=141; E-stable: True; rank E on it=63; homology ker/im = 15
+  wing 2: Theorem-B ideal of the odd number 5 in the same box: dim=400, Q_k(5)=400; tangent ideal inside it: True
+  wing 1, true ideal: dim=141; stable under inversion: True; rank(iota+1)=63; homology = 15
+FIN-OK
+WINGS k=2 q=8: |Gamma|=3301 N_(q-1)=3301
+  wing 1: E^2 != 0 on a random element: 0; tangent ideal dim=3301; E-stable: True; rank E on it=1641; homology ker/im = 19
+  wing 2: Theorem-B ideal of the odd number 9 in the same box: dim=5120, Q_k(9)=5120; tangent ideal inside it: True
+  wing 1, true ideal: dim=3301; stable under inversion: True; rank(iota+1)=1641; homology = 19
+FIN-OK
+WINGS k=3 q=4: |Gamma|=1107 N_(q-1)=1107
+  wing 1: E^2 != 0 on a random element: 0; tangent ideal dim=1107; E-stable: True; rank E on it=535; homology ker/im = 37
+  wing 2: Theorem-B ideal of the odd number 5 in the same box: dim=4900, Q_k(5)=4900; tangent ideal inside it: True
+  wing 1, true ideal: dim=1107; stable under inversion: True; rank(iota+1)=535; homology = 37
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=213312 t=16s

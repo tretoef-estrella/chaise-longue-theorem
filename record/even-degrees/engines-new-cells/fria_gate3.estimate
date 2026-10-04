@@ -1,0 +1,3 @@
+fria_gate3 (cold audit G3), written BEFORE the run, 2 Oct 2026, Grepy Chats.
+Cells (q, alpha, beta, char): q=2, alpha+beta <= 6, char 2 (boxes <= 64); q=4, alpha+beta <= 4, char 2 (boxes <= 256); q=4 (3,2) and (4,1) (box 1024); q=8 (1,1),(2,1) char 2 (boxes 64, 512);
+calibration with an odd box: q=3 (2,2),(3,2) char 3.  Memory < 400 MB; time < 5 min (guess; number of down-sets up to 2^14 per cell is the risk). The watchdog is the guard.
