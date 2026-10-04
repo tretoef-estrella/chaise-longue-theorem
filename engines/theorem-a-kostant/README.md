@@ -1,6 +1,6 @@
 # Theorem A and the centralizer of a principal nilpotent element
 
-Engines and logs behind Remarks 8.4 and 8.7, Corollary 8.6 and §12.5 of version 10 of the paper, behind the supplement [THE_REGULAR_CENTRALIZER_NOTE_v1](../../paper/THE_REGULAR_CENTRALIZER_NOTE_v1.pdf), and behind the two notes of 1 October 2026 in [record/audits/](../../record/audits/). All runs were made on 1 October 2026 inside the watchdog [tools/vigia.sh](../tools/vigia.sh); the largest completed run used 260 MB; one run of version 10 was stopped by the watchdog at 1.36 GB and rerun with a corrected engine (see below).
+Engines and logs behind Remarks 8.4 and 8.7, Corollary 8.6 and §12.5 of version 10 of the paper (in version 12: Remarks 10.4 and 10.7, Corollary 10.6 and §14.5), behind the supplement [THE_REGULAR_CENTRALIZER_NOTE_v1](../../paper/THE_REGULAR_CENTRALIZER_NOTE_v1.pdf), and behind the two notes of 1 October 2026 in [record/audits/](../../record/audits/). All runs were made on 1 October 2026 inside the watchdog [tools/vigia.sh](../tools/vigia.sh); the largest completed run used 260 MB; one run of version 10 was stopped by the watchdog at 1.36 GB and rerun with a corrected engine (see below).
 
 Run the Python scripts from inside `regla_oro_gordo_2026-10-01/` (they read data from the sibling folder). They need only Python 3. The `.m2` files need Macaulay2; `frob_ver.sage` and the `.sage` files of the other folder need SageMath.
 
