@@ -1,3 +1,374 @@
+# Summary of changes for run e8d51073-a796-4930-ae12-d0f69cd1710c
+I formalized and proved everything you listed from `q_oddbox_lifts_2.md`: Lemma Q (Q1), (Q2), Lemma Q′ (Q′1), (Q′2), and the lifts (T6), (T7), (T8). The work is in a new folder, `RequestProject/OddLifts2/` (namespace `OddLifts2`), and no existing file was changed. `RequestProject.OddLifts2.Main` builds with no errors and no warnings. There is no `sorry`, no new axiom and no `native_decide`, and `#print axioms` on all seven results shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_oddbox_lifts_2.md` it corresponds to.
+
+**Part Q** (`LemmaQ.lean`, `LemmaQp.lean`)
+- `Q1`, `Q2`, `Q'1` and `Q'2` are stated in the form you gave.
+- `Phi h ell w` is a definition equal to your `Φ`, including the plus sign. The sign `(−1)^l` in (Q2) comes out as you stated.
+- The proof expands along variable 0 with `Pfaffian.bpf_expand_var` at `x = 0` (or `bpf_expand_var_zero` when there is no border). It rewrites the first term with `Pfaffian.C1` and uses `C4_eq_zero` to kill the borders already present. For Q′, `Pfaffian.C3` makes the two `Dab (2h+1)` terms cancel.
+- **(Q1) does not need `n = l + 2 + 2t`.** I kept that hypothesis as you stated it and noted in the docstring that (Q1) holds for every `n`. (Q2) does use it, for the sign.
+
+**Part T** (`Main.lean`, plus `Patterns.lean` and `Border.lean`)
+- `T6`, `T7` and `T8` are stated with exactly your hypotheses. The conclusion is `T.prod F h ∈ Peel.W (m := n+1) _ (OddPatterns.VSAll F h (n+1) Lam) d`.
+- **No extra hypotheses were needed.** In (T7), `μ.len < h` already gives `1 ≤ h`.
+- **(T6)** follows your outline. Each generator of `Membership.UB` times `G'` is the product of a tight pattern of `μ.addOne`. `OddLifts.T2` (with `c0 = 1`) puts it in the slice. `Peel.W_isIdeal` and `OddPatterns.D3` then give `T.prod`.
+- **(T8)** works like `OddLifts.T5`. The marked block `insert 0 (liftSet B₀)` gives a marked pattern of `μ.subE μ.len`. It uses `phi_markedPf_insert_zero`, Lemma Q with `l = ℓ − 1`, `coeff_mem_W` and `mem_of_neg_one_pow_mul_mem`.
+- **(T7)** builds `f = (y₀ · markedPf (ℓ+1) (insert 0 B₀⁺) + Ψ) · incl G'`. Its image is the class of `Φ · C G'`, and Lemma Q′ plus `coeff_mem_W` conclude.
+  - To show `Ψ · incl G'` is in the ideal, `Ψ` is expanded along its last border with `bpf_expand_last`.
+  - If `t ≥ 1`, each term is the product of a marked pattern of `μ.addOne` with the new pair `{0, b}` (`B4_marked`).
+  - If `t = 0`, `C5` turns each term into ± the product of a tight pattern of `μ` (`B4_tight`, which needs `(μ, false) ∈ Λ`).
+
+**Helper results** (these support the proofs and are not in the summary table)
+- `Patterns.lean`: general builders for the patterns used above (the tight pattern of `μ.addOne` for (T6); lifted marked and tight patterns whose marked or first block, together with new pairs through 0, partition `{0} ∪ B₀⁺`).
+- `Border.lean`: `map_Pf`, the enumeration of `B ∖ {b}`, `markedPf_eq_Delta` (from `C5`), and the definition of `Ψ` with its image and membership lemmas.
+
+`Phi` and the seven results are registered in the summary table. The seven results are marked proved.
+
+# Summary of changes for run a6ec0ca7-c11a-4d05-906e-ea058a7d5242
+I formalized and proved everything you listed from `q_oddbox_lifts_1.md`: Lemma P (P1)–(P3), the auxiliary facts (L0a), (L0b), (L1), (L2), and the lifts (T1)–(T5). The work is in a new folder `RequestProject/OddLifts/` (namespace `OddLifts`). No existing file or statement was changed; the existing definitions and lemmas you named are used as they are. `RequestProject.OddLifts.Main` builds with no errors and no warnings in the new files. There is no `sorry`, no new axiom and no `native_decide`. `#print axioms` on every main result shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_oddbox_lifts_1.md` it corresponds to.
+
+**Lemma P** (`LemmaP.lean`)
+- `P1`, `P2` and `P3` are stated exactly as you gave them, for any commutative ring `R` and `1 ≤ l`.
+- The proof follows your plan. The marked Pfaffian is expanded along variable 0 with `Pfaffian.bpf_expand_var`, and the first term is rewritten with `Pfaffian.C1`.
+- In that first term, the Pfaffians with two equal borders vanish by `bpf_eq_zero_of_border_eq`. The top one is computed by `Pfaffian.C5`. The remaining terms only reach degree `l − 2` in `X`.
+- For `l = 1` I used `OddPatterns.A2` instead of `bpf_expand_var_zero`.
+- No extra hypothesis was needed: (P2) needs `l ≤ h`, which together with `1 ≤ l` already gives `1 ≤ h`.
+
+**Part L** (`Aux.lean`, `Marked.lean`)
+- `L0a` is stated for an arbitrary `q`, which is more general than `q = 2h+2`.
+- `L0b` and `L1` are stated exactly as you gave them.
+- For (L2) I defined `cleanMBlocks`: the blocks of a marked pattern, with those outside `Icc 2 (mu.row 1)` replaced by `∅`. It comes with lemmas for card, disjointness and cover. The product formula `prod_cleanMBlocks` holds for every `N ≥ mu.row 1`.
+
+**Part T** (`Main.lean`)
+- `T1` and `T2` are stated exactly as you gave them, with the conclusion in `Peel.W (m := n+1) _ (OddPatterns.VSAll F h (n+1) Lam) d`. They follow from `Lifts.mem_W_of_insert` and `Lifts.mem_W_of_pair` applied to `comp Lam false`, then (L0a) and (L0b).
+- `T3` and `T4` repeat the `Lifts` constructions for marked patterns. The lifted patterns are `exists_mpattern_insert` and `exists_mpattern_pair`; the marked block is lifted by `liftSet` and the change is handled by (L1).
+- `T5` builds the marked pattern with the marked block `insert 0 (liftSet B₁)` and puts its product in the ideal with `B4_marked`. Under `peelEquiv'`, its marked block becomes the polynomial of Lemma P (`phi_markedPf_insert_zero`). (P3), (P2) and `Membership.V2` then give the degree and the top coefficient. For `mu.len = 0`, `OddPatterns.A1` is used instead.
+
+All twelve properties are recorded as proved in the Properties table.
+
+# Summary of changes for run 8837ccde-d522-45d4-b2d9-697ff0f4a3d3
+I formalized and proved everything you listed from `q_oddbox_patterns.md`: Definition (A0) and Lemma A (A1)–(A7), Definitions (B0)–(B2) and Lemma B (B3)–(B6), Lemma C (C1)–(C3) and Lemma D (D1)–(D3). The work is in a new folder `RequestProject/OddPatterns/` (namespace `OddPatterns`), with `Main.lean` as the entry point. No existing file or statement was changed; the existing definitions and results you named are used as they are. The target `RequestProject.OddPatterns.Main` builds with no errors and no warnings in the new files. There is no `sorry`, no new axiom and no `native_decide`. `#print axioms` on every main result shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_oddbox_patterns.md` it corresponds to.
+
+**Part A** (`MarkedPf.lean`, any commutative ring `A`)
+- `mPf` is (A0), exactly in your suggested form.
+- `A1`–`A4` are stated exactly as you gave them. Each is proved by unfolding the definitions and using `pf_two` or `pf_four`.
+- `A5` follows from `pf_odd`.
+- `A6` is included (it was not left out). It follows from `bpf_eq_zero_of_lt` and `ay_isAlt`.
+- `A7` follows from `C6_e`.
+- Two helper facts are added: `map_pf` and `map_mPf` (`pf` and `mPf` commute with ring homomorphisms). `mPf_cast` lets the index type `Fin n` be replaced along an equality `n = n'`.
+
+**Part B**
+- `Defs.lean` contains `markedPf`, `MarkedPattern`, `MarkedPattern.prod`, `VS` and `VSAll`. The structure has exactly the fields you suggested. The product and the ideal are defined exactly as you asked.
+- `LemmaB.lean`:
+  - (B3) is `B3`, stated as you gave it. It uses `sum_colLen_two`: the sum of `colLen lam c` over `c` from 2 to `λ_1`, plus `lam.len`, equals `lam.size`.
+  - (B4) is split into two theorems, `B4_tight` and `B4_marked`.
+  - (B5) is split into three theorems: `B5_mono`, `B5_empty` and `B5_no_marked`.
+- `Examples.lean`: (B6) is proved as full equalities of ideals.
+  - `B6_empty`: `VSAll F h 1 {(emptyPart, true)} = span {y 0 ^ (2h)}`.
+  - `B6_one`: `VSAll F h 2 {(onePart, true)} = span {Dab (2h+1) (y 0) (y 1)}`.
+  - Here `emptyPart` and `onePart` are the existing partitions ∅ and (1) from `OddShapes`. The file's indices 1 and 2 are the elements 0 and 1 of `Fin m`.
+
+**Part C** (`Relabel.lean`)
+- (C1) is `C1`, stated with `Tight.PM`. The proof builds the permutation τ of `Fin |B|` with σ ∘ ι_B = ι_{σ(B)} ∘ τ, then applies (A7).
+- (C2) is `C2`, using `MarkedPattern.relabel`.
+- (C3) is `C3`. It combines `Tight.map_relabel_VLam` with the matching fact for the marked part, which is proved by applying the relabelling to σ and to σ⁻¹.
+- `C3_all` adds the "in particular" statement σ(V_Λ) = V_Λ.
+
+**Part D** (`LemmaD.lean`)
+- (D1) is `D1`.
+- (D2) is split into `D2_DPy` and `D2_vand`; both hold by definition.
+- `D1` and both parts of (D2) hold for every `h`, so they do not assume `1 ≤ h`.
+- (D3) is `D3`. It assumes `1 ≤ h`. For ℓ ≥ 1 it follows from `Membership.M4a` with s = ℓ − 1. For ℓ = 0 it follows from `Membership.M4b` with s = 0, as in `M3_zero`.
+
+As you asked, the claim that the dimension of `VSAll` equals the number of points is not part of this work.
+
+The definitions and the theorems above are listed in the Properties table, and every listed property is marked proved.
+
+# Summary of changes for run e52c7421-5c72-4e56-b860-73160b8ea5c5
+I formalized and proved all of `q_membership.md` that you asked for: Theorem V (V1)–(V3), Theorem H (H1)–(H3), the Part M definitions and Theorem M (M1)–(M4). The work is in a new folder `RequestProject/Membership/` (namespace `Membership`), with `Main.lean` as its entry point. No existing file or statement was changed. `Pfaffian`, `RankTwo`, `ColOne.Dab`, `Tight.vand`, `Odd3.IsPairs` and `Odd3.supp` are used as they are.
+
+The target `RequestProject.Membership.Main` builds with no errors and no warnings in the new files. There is no `sorry`, no new axiom and no `native_decide`. `#print axioms` on every main result shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_membership.md` it corresponds to. Nothing is divided, so characteristic 2 is allowed.
+
+**Part V** (`Vand.lean`)
+- **(V1)** `V1`, in exactly your form. The proof follows the file: induction on `m`, writing \(p = p(a) + (T-a)\,q\) with `q = p /ₘ (X − C a)`, subtracting row 0 from the other rows, then expanding along row 0.
+- **(V2)** `V2`, in exactly your form.
+- **(V3)**
+  - "Polynomial in `y`" is the definition `PolyIn`.
+  - The three column families are `polyIn_pow`, `polyIn_Ev` and `polyIn_Od`.
+  - The divisibility of the determinant by `C (Tight.vand y S)` is `V3`.
+
+**Part H** (`Box.lean`)
+- **(H1)** `H1`, proved from `RankTwo.S3`.
+- **(H2)** `H2`; it holds by definition (`rfl`).
+- **(H3)** `H3`, proved from `pf_eq_sum_matchings` and (H1).
+- None of these needs `h ≥ 1`, so that hypothesis is left out.
+
+**Part M definitions** (`Defs.lean`): `pairDy`, `DPy`, `UB` and `U`, exactly as you suggested. The same file contains the helper facts the proofs need:
+- the pairs of a perfect matching carried along an order embedding (`pairsOf`, `isPairs_pairsOf`, `supp_pairsOf`, `DPy_pairsOf`);
+- the transport of generators, `U_le_UB`: \(\mathfrak U_p(y\circ\iota) \le \mathfrak U_p(y;\ \iota(\mathrm{Fin}\ n))\).
+
+**Theorem M** (`Theorem.lean`)
+- **(M1)** `M1`, in your form, proved from `bpf_laplace`, (V3), (H2), (H3) and `Ideal.mem_map_C_iff`. It does not need `h ≥ 1`, so that hypothesis is dropped; this makes the statement slightly more general.
+- **(M2)** `M2a` and `M2b`, from `S5a_of_le`/`S5a_of_ge`, `S5b_of_le`/`S5b_of_gt` and (M1). The cases where the left side is zero are handled directly.
+- **(M3)** two theorems:
+  - `M3_pos`: for `n = l + 2 + 2t`, `Pfe (2h+1) y (fun k : Fin l => k) ∈ U (2h+1) (l+2) y`. This is the paper's \(\ell \ge 1\) case written with \(\ell = l+1\).
+  - `M3_zero`: for `n = 1 + 2t`, `Pfe (2h+1) y (fun _ : Fin 1 => 2h) ∈ U (2h+1) 1 y`.
+- **(M4)** `M4a` and `M4b`, in your form with `ι = B.orderEmbOfFin hB`. They follow from (M2) and `U_le_UB`.
+
+All these results are listed in the Properties table, and every property there is marked proved.
+
+# Summary of changes for run 225935e3-60d5-4842-a5bd-066dbc85a1d8
+I formalized and proved all of Theorem R (R1)–(R5) and the Part S definitions with Theorem S (S0)–(S5) from `q_rank_two.md`. The work is in a new folder `RequestProject/RankTwo/` (namespace `RankTwo`), with `RequestProject/RankTwo/Main.lean` as its entry point. No existing file or statement was changed. The folder `RequestProject/Pfaffian/` and `ColOne.Dab` are used as they are. The target `RequestProject.RankTwo.Main` builds without errors or warnings in the new files. There is no `sorry`, no new axiom and no `native_decide`, and `#print axioms` on every main result shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_rank_two.md` it corresponds to.
+
+**Part R** (any commutative ring; nothing is divided, so characteristic 2 is allowed)
+- **(R1)** `R1` (`Shift.lean`) proves both claims, alternating and `pf A' = pf A`, from (A5) and (A3) as in the file.
+- **(R2)** `R2` (`Shift.lean`) applies (R1) once per variable, by induction over finite sets of variables.
+- **(R3)** `R3_pf` holds for every matrix. `R3_bpf` assumes `n = s + 2κ` and `IsAlt a`, and is proved from (B5) `bpf_laplace` (`Homog.lean`).
+- **(R4)** `R4`, \(\mathrm{bpf}(a-M;c)=\mathrm{bpf}(a;c)+\mathrm{bpf}(a;c,E,O)\), and `R4'`, the form with `a + M` and `−` (`Update.lean`). There is no sign depending on `n` or `s`. Borders are `Fin.snoc (Fin.snoc c E) O`, and \(M\) is `Matrix.of fun i j => E i * O j - E j * O i`.
+  - Step 1 follows the file: with \(X_\theta\) written as `ext2 (bmat a c) Ẽ Õ θ`, \(\mathrm{pf}(X_\theta)=\mathrm{pf}(X_0)+\theta\cdot\mathrm{bpf}(a;c)\), and \(X_0\) is `bmat a (snoc (snoc c E) O)`.
+  - Step 2 is shorter than in the file. The first series of elementary operations becomes a single use of (R2), treating \(X_1\) as a bordered matrix whose only border is `O`. The second series is replaced by one expansion (A4) along the index of the border `E`, whose row is zero except for the entry `1`.
+- **(R5)** `R5_pf` (for `pf` on `Fin (2κ)`, with \(N=\kappa d\)) and `R5_bpf` (with `N = κ*d + Σ dk`) each give both the degree bound and the top coefficient (`TopCoeff.lean`). `R5_bpf` is proved by induction with `bpf_expand_last`.
+
+**Part S** (\(r=2h+1\), `ζ = X`, constants by `C`)
+- **Definitions** (`OddDefs.lean`): `omega`, `Lm`, `Hm`, `Ev`, `Od`, exactly as you suggested. I also added `Wm` for \(W_\sigma(y)\).
+- **(S0)**: `omega_swap` and `omega_self` (the terms `u` and `s − u` cancel in pairs, with no division by 2). `Wm_isAlt`, `Lm_isAlt` and `Hm_isAlt` follow.
+- **(S1)**: `S1` (needs `1 ≤ h`) and `S1_Wm`. `S1_top` says the matrix of the degree-`(h − 1)` coefficients of `Lm` is `Pfaffian.ay (2h+1) y`.
+- **(S2)**: `S2_scalar` is the polynomial identity. `S2` is the entrywise form `Lm + X^h * Hm = Ev i * Od j - Ev j * Od i` (`Key.lean`).
+- **(S3)**: `S3` is more general than the file. It assumes only `b^(2h+1) = 0`; the hypotheses that `i` is odd, `1 ≤ i ≤ 2h−1` and `a^(2h+1) = 0` turned out to be unnecessary and are left out. The docstring says so.
+- **(S4)**: `S4_i` and `S4_ii` (`OddBox.lean`), from (R4)/(R2) and (S2), for every border list over `Polynomial A`.
+- **(S5)**: both parts assume `1 ≤ h`, and `c` is read over `Polynomial A` as `fun k i => C (c k i)`.
+  - (a) `S5a` combines the two cases with an if-then-else (`if t + 1 ≤ h then … else 0`). `S5a_of_le` and `S5a_of_ge` state the cases separately.
+  - (b) `S5b`, `S5b_of_le` and `S5b_of_gt` do the same for `Pf (2h+1) y (snoc c (fun i => y i ^ (2h)))`.
+  - The proofs combine (S4), (R3), (R5) and (S1).
+
+The main results and the Part S definitions are listed in the Properties table, and every listed property is marked proved.
+
+# Summary of changes for run c5d2ce6f-18a9-4d2d-b1a7-9a826b54b761
+I formalized and proved all of `q_pfaffian.md` over an arbitrary commutative ring: the definitions of Parts A, B and C, Theorem A (A0)–(A5), Theorem B (B0)–(B5) and Theorem C (C1)–(C6). The work is in a new folder `RequestProject/Pfaffian/` (namespace `Pfaffian`), and `Main.lean` imports all of it. No existing file or statement was changed. `ColOne.Dab` is used unchanged, with \(D\) = `Dab (r+1)` and \(D^-\) = `Dab r`, and so are `OddShapes.A1`, `A2_Dminus`, `A4_D` and `A4_Dminus`. The target `RequestProject.Pfaffian.Main` builds with no `sorry`, no new axiom and no `native_decide`. `#print axioms` on every main result shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_pfaffian.md` it corresponds to.
+
+**Part A**
+- `Basic.lean`: `IsAlt` (zero diagonal and `A j i = -A i j`) and `pf`, which is exactly your suggested recursion. (A0) is `pf_odd`, `pf_two` and `pf_four`; these hold for any matrix, alternating or not.
+- `Perm.lean`: (A2) is `pf_perm`, proved by induction from size m to m+2. It does not reduce to neighbour transpositions:
+  - permutations that fix `0` are handled by the expansion along `0`;
+  - exchanging `0` and `1` is handled by the double expansion, the file's case k = 0;
+  - every permutation is a product of these two kinds.
+- `Expand.lean`:
+  - (A4) `pf_expand` uses `eps` with exactly your signs. Each z ≠ x is written as `x.succAbove z'`, and the minor deletes `x.succAbove ∘ z'.succAbove`. It is derived from (A2) by the cyclic permutation `x.cycleRange`, as in the file, rather than proved jointly with (A2) by induction.
+  - Two more general variants, `pf_expand_gen` and `pf_expand_fam`, are also proved.
+  - (A3) `pf_eq_zero_of_rows` holds for every commutative ring, including when 2 = 0, and never divides by 2. It moves `x` and `z` to positions 0 and 1 using (A2), then cancels the terms of the double expansion in pairs.
+  - (A5) is `pf_add_row`.
+- `Matching.lean`: (A1) is `pf_eq_sum_matchings`. A perfect matching is a fixed-point-free involutive function `Fin m → Fin m` (such a function is automatically a bijection), and `crossings` counts the pairs as in the file. It holds for every matrix, which is slightly more general.
+
+**Part B** (borders given as `c : Fin s → Fin n → R`; `bmat` uses `Fin.addCases` on `Fin (n + s)`; `bpf a c := pf (n + s) (bmat a c)`)
+- (B0): `bpf_odd`, `bpf_eq_zero_of_lt`.
+- (B1): `bpf_perm_vars`, `bpf_perm_borders`.
+- (B2): `bpf_add_border` (additive and homogeneous together, as `x + t·y`), `bpf_eq_zero_of_border_eq`, and `bpf_expand_last` with sign \((-1)^{(n+1)+(s+1)+b}\). Here the file's n and s are written n+1 and s+1; for n = 0 both sides are 0 by (B0).
+- (B3): `bpf_square`.
+- (B4): split into `bpf_expand_var` (s+1 borders) and `bpf_expand_var_zero` (no border, so the border sum is empty). The new last border \(a_x^{(x)}\) is appended with `Fin.snoc`, and "the borders with j ≠ k" are `c (k.succAbove j)`.
+- (B5): `bpf_laplace`, in `Laplace.lean`. The sum over s-subsets is a sum over `{S : Finset (Fin n) // S.card = s}`, and "in increasing order" is `orderEmbOfFin`. It is stated without the hypothesis n = s + 2κ, because the identity holds for all n and s.
+
+**Part C** (`OddBox.lean`)
+- `ay`, `Pf` and `Pfe` are the matrix \(a_y\), \(\mathrm{Pf}(y; c)\) and \(\mathrm{Pf}_e(y)\).
+- `ay_isAlt` needs r odd. It uses `Dab_self` (\(D^-(a,a) = 0\)), proved by the even-number-of-terms argument, again without dividing by 2.
+- (C1), (C2) and (C3) are `C1`, `C2`, `C3`; the column appended last is `Fin.snoc c …`.
+- (C4) is `C4_eq_zero` and `C4`. In `C4`, the increasing list e′ is given as any strictly increasing `Fin (s+1) → ℕ` whose set of values is {e_0, …, e_{s−1}, u} (that list is unique). The sign is \((-1)^{\#\{k : e_k > u\}}\).
+- (C5) is `C5`, via Mathlib's Vandermonde determinant. (C6) is `C6` and `C6_e`.
+
+The Properties table lists these definitions and results, all marked proved.
+
+# Summary of changes for run bc21e06d-5013-444b-a9be-12cf2e168b90
+I formalized and proved everything you asked for from `q_oddbox_layers.md`: the Definition of the layers, Theorem L (L1), (E), (L2), (L3), (L4), (L5) and Theorem R (R1)–(R4). The work is in a new folder `RequestProject/OddLayers/` under the namespace `OddLayers`. No existing file or statement was changed, and the definitions and results you listed are used as they are. The folder builds with no `sorry`, no new axiom and no `native_decide`. `#print axioms` on every main result shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_oddbox_layers.md` it corresponds to.
+
+**Files**
+- `Defs.lean`: `layerS h m Λ i := {σ | σ ∈ Sh h (m - 1) ∧ i < FS h Λ σ}`, exactly as you specified.
+- `Exchange.lean`:
+  - (E) `exchange` is stated in the file's form: there is `p'` with `p ≤ p' ≤ 2h+1` and `optS h (ν.subE j, !δ) p' ∈ Λ`. It assumes `IsInterlaced h m Λ` and `(ν, δ) ∈ Sh h (m-1)`; neither `1 ≤ h` nor `1 ≤ m` is needed.
+  - (L2) `FS_le_FS_subE` assumes `1 ≤ m`.
+- `Rows.lean`: the row bookkeeping used in the proof of (E).
+- `Layers.lean`:
+  - (L1) `FS_antitone` assumes `1 ≤ h` and `1 ≤ m`, which `Induction.FLam_le_FLam` needs.
+  - (L3) has three parts. `isInterlaced_layerS` assumes `1 ≤ h` and `1 ≤ m`. `layerS_succ_subset` and `layerS_eq_empty` (for `2h+1 ≤ i`) hold for every set `Λ`.
+  - (L4) `Zgt_ZS_eq_ZS_layerS` and (L5) `card_ZS_eq_sum` each assume `1 ≤ m`.
+- `Roots.lean`:
+  - (R1) `shape_eq_root_iff`.
+  - (R2): `toPointed S` is the `EvenCount.PointedSetting` given by `S` (`neg := S.neg`, `o := S.zero`). `ZS_root_even_eq_closedPointed` identifies `ZS S n {(emptyPart, false)}` with its closed tuples via (R1), and `card_ZS_root_even` is the count.
+  - (R3): `FS_root_even` is stated as `FS h {(emptyPart,false)} s = if s = (onePart,false) ∨ s = (emptyPart,true) then 1 else 0` for `s.1.len ≤ h`. `layerS_root_even_zero` assumes `1 ≤ h`. `layerS_root_even_pos` (for `1 ≤ i`) doesn't need `1 ≤ h`, so I dropped that hypothesis there.
+  - (R4) `card_ZS_root_odd` is derived from (L5), (R3) and (R2), as in the file.
+- `Main.lean` imports everything.
+
+**How the proofs follow the file**
+- (L2) goes through (E) and `optS_filter_eq_Icc` for the shapes `(ν, δ)` and `(ν.subE j, !δ)`.
+- (E) follows the file's case analysis: removals (1a/1b), the switch of the mark (2a/2b), middle positions (3), and additions (4a/4b).
+  - Every partition equality is checked by comparing counts of parts, using `subE_eq`, `addE_eq` and `addOne_eq`.
+  - The file's rows `j*`, `p*` and `i₀` are written as "#parts ≥ x" (the last row of value `x`) and "#parts > x, plus 1" (the first row of value `x`).
+- I did not find a shorter proof of (E) or (L2).
+
+**One compiler setting:** the proof of (E) runs over Lean's default time limit (`maxHeartbeats`), so I raised it to `400000` for that one theorem only.
+
+All targets in the folder were built.
+
+# Summary of changes for run 2c5d9af9-3f5e-4789-ba07-93c924955574
+I formalized and proved everything you asked for from `q_oddbox_shapes.md`: Part A (A0)–(A4), Proposition B (B1)–(B5), the definition of an interlaced pair, and Lemma C (C1)–(C3). The work is in a new folder `RequestProject/OddShapes/` under the namespace `OddShapes`. No existing file or statement was changed, and the definitions you listed are used as they are. The folder builds with no `sorry`, no new axiom and no `native_decide`. `#print axioms` on the main results shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_oddbox_shapes.md` it corresponds to.
+
+**Files**
+- `Identities.lean` (Part A), for any commutative ring:
+  - (A0) `A0` holds for every natural number `q`. This is slightly more general than the file's `q ≥ 1`, since it is also true for `q = 0`.
+  - (A1) `A1` keeps the file's hypothesis `1 ≤ r`, with no parity condition. You asked for "every natural number", but that hypothesis can't be dropped: for `r = 0` the left side is `0` and the right side is `1`.
+  - (A2)–(A4) assume `Odd r`: `A2_D`, `A2_Dminus`, `A3_D`, `A3_Dminus`, `A4_D`, `A4_Dminus`.
+  - The coefficient form of (A4) is `A4_coeff_D` and `A4_coeff_Dminus`, in `Polynomial A` with `X` and `C b`. The range `0 ≤ u ≤ r−2` is written `u + 2 ≤ r`, so it is empty for `r = 1`, as in the file.
+- `Defs.lean` has the definitions exactly as you specified them: `OddSetting`, `Shape`, `OddSetting.resPart`, `mark`, `shape`, `Sh`, `optS`, `comp`, `FS`, `ZS` and `IsInterlaced` (with conditions D0, D1, D2).
+- `Shapes.lean` (Proposition B):
+  - `Sh_eq` gives the union form of `Sh`; the second set requires `1 ≤ m`.
+  - (B1) `shape_mem_Sh`.
+  - (B2) `multiset_shape_consTuple_eq_optS` is the multiset equality. The precise form is `shape_consTuple_zero` (the value zero gives `(μ, !δ)`) and `multiset_shape_consTuple_ne_zero` (the values `t ≠ 0`).
+  - (B3) `optS_mem_Sh`.
+  - (B4) has its three forms: `card_shape_consTuple_mem`, `card_fiber_ZS` and `Zgt_ZS`.
+  - (B5) `FS_eq_card`, with the hypothesis `ℓ(μ) ≤ h`.
+  - For (B2) I transferred `Fibres.multiset_resPart_consTuple_eq_opt`, viewing the non-zero elements of `T` as a `FibreSetting`; the supporting lemmas are in `Lemmas.lean`.
+- `Interlaced.lean` (Lemma C):
+  - (C1) `subE_mem_Sh`.
+  - (C2) step form `optS_mem_of_succ`, and the initial-segment form `optS_filter_eq_Icc`. The proof follows the file's case analysis and uses `opt_le_opt_succ` for the down-set cases.
+  - (C3) `isInterlaced_empty`, `isInterlaced_Sh`, `isInterlaced_root_even` and `isInterlaced_root_odd`. The partitions `∅` and `(1)` are `emptyPart` and `onePart`. The odd root needs `1 ≤ h` so that `ℓ((1)) ≤ h`; this matches the `h ≥ 1` of the Part B setting.
+- `Lemmas.lean` holds the supporting lemmas. These include the two re-sorting facts you mentioned, proved from `subE_eq`, `addE_eq` and `addOne_eq`: `addOne_subE` gives `(μ ⊔ 1) − e_{ℓ+1} = μ`, and `exists_addE_subE` gives the row `j'`.
+- `Main.lean` imports the whole folder.
+
+The definitions and theorems are listed in the Properties table, and every property is marked proved.
+
+# Summary of changes for run ca046a54-84e7-41c4-94dc-ec39d6745cb0
+I formalized and proved parts (i)–(v) of the Theorem of `q_quartic_assembly.md` in three new files under `RequestProject/EvenAssembly/`. No existing file or statement was changed, and every definition you listed is used as it is. The folder builds with no `sorry`, no new axiom and no `native_decide`. `#print axioms` on `mainTheorem'_four`, `every_field_four`, `theorem_i` and `theorem_iii` shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_quartic_assembly.md` it corresponds to.
+
+**`EveryField.lean`**
+- `EvenAssembly.HypH m k` is the hypothesis H(m, k), in the form you asked for: `∀ p : ℕ, (hp : p.Prime) → p ∣ m → EveryField.rankOver (ZMod p) (intMatU m k) = QkEven k m`. The instance `Fact p.Prime` is built from `hp`.
+- **(i)** `theorem_i`: for even `m ≥ 2` and `(m : F) ≠ 0`, both equalities hold.
+  - In characteristic 0 it uses `rankOver_eq_rankOver_rat` and `rankOver_rat_intMatU_even`.
+  - In characteristic `p` with `p ∤ m`, it passes through `ZMod p` and its algebraic closure, then uses `prod_nthRootsFinset_of_isAlgClosed`, `finrank_IK_eq_card_Gamma` and `card_Gamma_even`.
+- **(ii)** `theorem_ii`: under H(m, k), both equalities hold for every field. When `p ∣ m`, `rankOver_eq_rankOver_zmod` reduces the field to `ZMod p`, where H applies. Characteristic 0 cannot have `m = 0` in `F`, so that case is excluded.
+
+**`Main.lean`**
+- **(iii)** `theorem_iii` combines two new lemmas:
+  - `mainTheorem'_Z_even`: `R/I_ℤ` is free of rank `m^(2k+1) − QkEven k m`.
+  - `mainTheorem'_field_even`: `dim_F F[G]/I_F = m^(2k+1) − QkEven k m` for every field.
+- These rest on re-proved versions of the odd-only lemmas, `finrank_span_map_L_even` and `free_quotient_L_even`, which use `Even m`, `2 ≤ m` and H(m, k). The old lemmas are untouched.
+- The field part of `theorem_iii` quantifies over fields in any universe, which is a little more general than needed.
+
+**`Quartic.lean`**
+- **(iv)** `hypH_four`: H(4, k) for every `k`. The only prime dividing 4 is 2, and the result follows from `Pow2.quartic_char_two (ZMod 2)` and `finrank_IK_eq_rankOver`.
+- **(v)** `mainTheorem'_four`, stated exactly as you gave it, in the shape of `ColAssembly.mainTheorem'`.
+- **(v)** `every_field_four`: for every field `F` in any universe and every `k`, `rankOver F (intMatU 4 k) = QkEven k 4` and `dim_F I_F = QkEven k 4`.
+
+The new results are all in the namespace `EvenAssembly`. They are listed in the Properties table, with the six theorems marked proved, and the work is committed.
+
+# Summary of changes for run 1955630a-4e6e-4e3c-9dd8-6a3296024abc
+I formalized and proved parts (i)–(ix) of the Theorem of `q_pow2_leading.md` in four new files under `RequestProject/Pow2/`. No existing file or statement was changed, and the existing definitions are used as they are. The folder builds with no `sorry`, no new axiom and no `native_decide`. `#print axioms` on every main result shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_pow2_leading.md` it corresponds to.
+
+**New definitions** (`Theta.lean`)
+- `Pow2.PJ`, `Pow2.LJ`, `Pow2.EJ` are the polynomials `P_J`, `L_J`, `E_J` of the file. The vertex `a ≥ 1` carries `X (TheoremB.idx a)`.
+- `mk_EJ` checks that the class of `E_J` in `C` is `TheoremB.DJ`.
+- `Pow2.Theta` is `Θ`.
+
+**Results**
+- **(i)** `phi_two_pow` (`Basic.lean`), proved by cancelling `u + 1` in `(ZMod 2)[X]` and mapping to `A`.
+- **(ii)** `Theta : ColSplit.GA F d (2^v) ≃ₐ[F] Peel.C F (2^v+1) d` for every `d`, with `Theta_X`: the class of `X i` goes to `1 + Tight.y F (2^v+1) i`. It is induced by the automorphism `X i ↦ X i + 1`.
+- **(iii)** `Theta_psiG`: `Θ (ColUpper.psiG F (2^v) J)` is the class of `P_J`.
+- **(iv)** `lowest_forms` (`Lowest.lean`), for any field, stated exactly as requested in `Peel.C F (e+1) d`.
+  - It is slightly more general than the file: the hypothesis `e ≥ 1` turned out to be unnecessary and is dropped, as noted in the docstring.
+  - The proof uses the filtration of the file: polynomials of order `≥ n`, their image `(B_e)_{≥n}`, and the projections `π_n` from homogeneous components. Only the inequality `dim in(V) ≤ dim V` is needed, and it is proved by the telescoping count.
+- **(v)(a)** `mul_add_pow`, proved by cancelling `a + b` in `MvPolynomial (Fin 2) (ZMod 2)`.
+- **(v)(b)** `mk_LJ`: the class of `L_J` equals `ColOne.Ym F q (2k+1)` times the class of `E_J`. It uses `prod_pairs_eq`: the larger elements of the pairs together with the smaller elements of the pairs avoiding 0 are exactly `1, …, 2k+1`.
+- **(vi)** `prop92_ge` (`Main.lean`), proved from (ii), (iii), (iv), (v) and `ColOne.lemma25_ii`, as in the file. The fact that `P_J = L_J + (terms of higher degree)` with `L_J` homogeneous is handled by a small "lowest form" predicate that is closed under products and powers.
+- **(vii)** `quartic_char_two`, from (viii) and `Odd3.O_ge_three`.
+- **(viii)** `pow2_of_oddbox`, from (vi) and `EvenCount.finrank_IK_le_even`.
+- **(ix)** `q_two` combines three results:
+  - `dim_DIdeal_two`: this holds for every field, whatever its characteristic. Here `D_J = 1`, and the explicit matching `pairMatching` shows that a matching exists.
+  - `QkEven_two`.
+  - `dim_IK_two`, which follows from (viii).
+
+Parts (i) and (v)(a) are also proved assuming only `(2 : A) = 0` instead of `[CharP A 2]`. These versions are used inside `B`, where they avoid needing a `CharP` instance. The Properties table lists all of these results as proved.
+
+# Summary of changes for run c5108d14-756b-4127-a3f2-df7984b70e86
+I formalized and proved parts (i)–(vi) of the Theorem of `q_odd3.md` in six new files under `RequestProject/Odd3/`. No existing file or statement was changed, and the existing definitions are used as they are, with `q := 4`. The folder builds with no `sorry`, no new axiom and no `native_decide`. `#print axioms` on all the main results shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_odd3.md` it corresponds to.
+
+**New definitions (`Defs.lean`, namespace `Odd3`)**
+- **The set `T` and `Z_J^{(m)}`:** `T = {−1, 0, 1}` is `Fin 3`, with `val3 v = (v : ℤ) − 1`. `Z m J` is the Finset of `M : Fin m → Fin 3` with `|∑ i, val3 (M i)| ≤ J`.
+- **Sets of pairs:** a set of pairwise disjoint pairs is a Finset of 2-element index sets that are pairwise disjoint (`IsPairs`).
+  - `supp P` is the union of its pairs. An index is free when it is not in `supp P`, and `P` is a perfect matching of `S` when `supp P = S`.
+  - `DP P = ∏ e ∈ P, Tight.pairD F 4 e` is `D_P`.
+- **The ideals `I F m J`:** written exactly as the four lines of the Setting, with one generator set for each line (`evenGens`, `oddGens`, `zeroGens`). The Vandermonde is `Tight.Delta F 4 {a, b, c}`.
+
+**Results**
+- **(i)** `card_Z_rec` and `card_Z_rec_zero` (`Count.lean`), stated with `1 ≤ m` as in the file.
+- **(ii)** `slices_pos` (case `J ≥ 1`) and `slice_zero` (case `J = 0`) (`Main.lean`). They are stated as inclusions of sets in `Peel.C F 4 (m − 1)`, with the slices taken by `Peel.W` of `I(m, J)`.
+  - The proof follows Cases I, II and III of the file (`Cases.lean`) and uses the explicit elements given there.
+  - The two polynomial identities of Case II (`J = 1`) are the lemmas `identity_sq` and `identity_vand`, stated in any commutative ring and used in the proof.
+  - The inclusions rely on `Peel.W_isIdeal` and `Peel.W_mono`, and on reading off the coefficient of `y_1^j` through the existing identification `C_m ≅ C_{m−1}[y_1]/(y_1^3)`.
+- **(iii)** `card_Z_le_finrank`: `card Z_J^(m) ≤ finrank F ((I F m J).restrictScalars F)` for every field, every `m` and every `J`. The proof is induction on `m` using `Peel.finrank_eq_sum`, (ii) and (i). For `J ≥ m` every slice of the unit ideal is the whole ring.
+- **(iv)** `I_odd_one_eq_DIdeal`: `I F (2k+1) 1 = TheoremB.DIdeal F 4 k`.
+  - A set of `k` disjoint pairs, together with its one free index as the block, is a tight pattern of `(1)`.
+  - The existing `TheoremB.VLamAll_one_eq_aux`, which holds for every `q`, then identifies the ideal with `DIdeal`. This is the correspondence `J ↔ P` of the file.
+- **(v)** `card_Z_one_odd`: `card Z_1^(2k+1) = EvenCount.QkEven k 4`. On `Fin 3` with `Fin.rev` and `o = 1`, the closed tuples are exactly `Z_0^(2k+2)`. `EvenCount.card_closedPointed` with `h = 1` counts them.
+  - **Difference from the file:** to pass from `Z_0^(2k+2)` to `Z_1^(2k+1)` I delete the first entry, using (i), instead of the last entry. Both bijections give the same count.
+- **(vi)** `O_ge_three`: for every field `F` and every `k`, `QkEven k 4 ≤ finrank F ((TheoremB.DIdeal F 4 k).restrictScalars F)`. It follows from (iv), (iii) and (v).
+
+**Supporting files:** `Pairs.lean` covers the combinatorics of sets of pairs and the shift of indices to `{2, …, m}`. `Slice.lean` covers the four shapes of `I(m, J)`, the remark that the second and third lines also give the unit ideal at `J = m` and `J = m + 1`, and the coefficient-reading lemmas.
+
+The new results and definitions are registered in the Properties table, and the work is committed.
+
+# Summary of changes for run d5d6af65-c500-47cc-8e9b-d359fe80dd6b
+I formalized and proved parts (i)–(vii) of the Theorem of `q_even_count.md` in five new files under `RequestProject/EvenCount/`. No existing file or statement was changed, and the existing definitions are used as they are. The folder builds with no `sorry`, no new axiom and no `native_decide`. `#print axioms` on the main theorems shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_even_count.md` it corresponds to.
+
+**New definitions (`Defs.lean`, namespace `EvenCount`)**
+- `QkEven k m`: the number `Q^e_k(m)`, written in the form you specified.
+- `PointedSetting T h`: has the fields `neg`, `neg_neg`, `o`, `neg_o`, `eq_o_of_neg_eq` and `card_eq : Fintype.card T = 2 * h + 1`.
+- `closedPointed S n`: the tuples with `cnt M u = cnt M (S.neg u)` for every `u`, and `Even (cnt M S.o)`.
+
+**Results**
+- **(i)** `QkEven_eq` (`Number.lean`). This is more general than the file, as noted in its docstring: it holds for every `m`, so `Even m` and `2 ≤ m` are dropped. Both sides only depend on `(m − 2)/2 = ((m − 1) − 1)/2`.
+- **(ii)** `mem_closedPointed_iff` (`Closed.lean`).
+  - "Only if": the existing rank construction is used. Positions holding the fixed point `o` are paired by rank: the first with the second, the third with the fourth, and so on.
+  - "If": a fixed-point-free involution forces an even count.
+- **(iii)** `card_closedPointed` (`Closed.lean`): `(closedPointed S (2k+2)).card = QkEven k (2h+2)`. The proof counts directly, through an isomorphism with the standard pointed set `Option (Fin h × Bool)`, rather than going through (i).
+- **(iv)** `card_Gamma_eq_card_pairs` (`Points.lean`): no parity hypothesis. The bijection is `g ↦ tail`. The fact that the entries multiply to 1 comes from pairing along the matching, not from parity.
+- **(v)** `card_Gamma_even` (`Points.lean`): uses the pointed set `μ_m ∖ {1}` with `o = −1`, `h = (m − 2)/2`.
+- **(vi)** In `Main.lean`, through `ℂ` as in `ColUpper.Main`:
+  - `rankOver_rat_intMatU_even`
+  - `finrank_IK_le_even`
+  - `finrank_IK_eq_of_charZero_even`
+  - `theorem_iv_even`, which collects the three in the form of `ColUpper.theorem_iv`.
+
+  Each assumes `Even m` and `2 ≤ m`.
+- **(vii)** `QkEven_values`: `QkEven 1 4 = 19`, `QkEven 2 4 = 141` and `QkEven 1 6 = 61`, computed from the definition with `decide`, which the kernel checks.
+
+**Hypotheses that differ from the file (each noted in its docstring)**
+- In (iv), (v) and the separate equality theorem of (vi), the file's hypothesis `|μ_m| = m` is omitted, because it follows from the factorization. As in `ColUpper.card_Gamma`, (iv) and (v) state it as `(m : K) ≠ 0`.
+- `theorem_iv_even` keeps `μm.card = m` so that it matches the shape of `ColUpper.theorem_iv`.
+
+The theorems and definitions are listed in the Properties table, and all seven parts are marked proved.
+
+# Summary of changes for run 423d8b51-c37e-479f-93e8-37fb0b9a381b
+I formalized and proved Theorem 7.6′, Theorem C′, Lemma P and Corollary P of `q_any_bip.md` in six new files under `RequestProject/BipAny/`. No existing file or statement was changed, and all existing definitions are used as they are. The whole folder builds, with no `sorry`, no new axiom and no `native_decide`. `#print axioms` on the main theorems shows only `propext`, `Classical.choice` and `Quot.sound`. Every docstring names the part of `q_any_bip.md` it corresponds to.
+
+**Main results (namespace `BipAny`)**
+- `thm76_any` (`Main.lean`, Theorem 7.6′): the statement of `Bip.thm76` with `hq : 2 ≤ q` and no parity hypothesis. It keeps `hbin` and `hΩ : Fintype.card Ω = q`.
+- `theoremC_any` (`Main.lean`, Theorem C′): the statement of `Bip.theoremC` with `2 ≤ q` and no parity hypothesis.
+- `choose_pred_prime_pow` (`Binomial.lean`, Lemma P): for a prime `p` (`p = 2` allowed), `v ≥ 1`, `q = p^v` and `[CharP F p]`, `((q-1).choose t : F) = (-1)^t` for `t ≤ q - 1`. `choose_pred_prime_pow_ne_zero` gives `≠ 0`. The proof uses Pascal's rule and the fact that `p` divides `C(p^v, s)` for `0 < s < p^v`.
+- `thm76_prime_pow` and `theoremC_prime_pow` (`Main.lean`, Corollary P): Theorems 7.6′ and C′ for `q = p^v` over a field of characteristic `p`, for every prime, `2` included.
+
+**Lemmas re-proved for `2 ≤ q` and without parity, by copying and adapting the existing proofs**
+- `Peeling.lean` (item 1): `Wslice_isIdeal`, `Wslice_mono`, `finrank_eq_sum_Wslice`, `card_eq_sum_Zgt_bip`.
+- `Layers.lean` (items 3 and 4): all six `lemma73_*` and all four `prop74_*` lemmas.
+- `Lifts.lean` (item 5): `Wslice_mono_le`, `prod_mem_Wslice`, `prop75`.
+- `Main.lean`: `card_ZLam_le_of_peel`.
+
+**The parity step**
+- `Swap.lean` (item 6): `swapR_prod_sign` proves `σ(prod T) = (−1)^((q−1)·|P|) · prod Tᵀ` for every `q`.
+- From it, `map_VLamB_le` and `lemmaS_iii` prove `σ(V_Λ) = V_{Λᵀ}` and `dim V_{Λᵀ} = dim V_Λ` with no hypothesis on `q` at all. This is more general than `Bip.lemmaS_iii`.
+
+**Where the hypotheses are not needed (noted in the docstrings)**
+- The `lemma73_*` and `prop74_*` versions keep `2 ≤ q` as you asked, but their proofs never use it, so they hold for every `q`.
+- In Lemma P, `v ≥ 1` is kept as in the file but not needed for the binomial identity; Corollary P does use it, to get `q ≥ 2`.
+- These unused hypotheses produce "unused variable" linter warnings, as in the existing `BipOpt`/`BipP2` files.
+
+**Can `2 ≤ q` be weakened to `1 ≤ q`?** Not established here. The peeling parts (Lemma 7.1) call the existing peeling lemma of `q_peeling_lemma.md` with `q + 1`, and that lemma is stated for `q + 1 ≥ 3`, i.e. `q ≥ 2`. So `thm76_any`, `theoremC_any` and the Lemma 7.1/Proposition 7.5 versions are given only for `2 ≤ q`. A `q = 1` version would mean re-proving that peeling lemma, which I did not attempt.
+
 # Summary of changes for run c046365e-3f56-4070-a5eb-07b5dd31d165
 I formalized and proved Proposition 6.9, the Theorem (every field) and Main Theorem′ from `q_col_assembly.md`. The work is in five new files under `RequestProject/ColAssembly/`, and no existing file or statement was changed. All five files build with no errors, no warnings and no `sorry`. The three main theorems use only the standard axioms (`propext`, `Classical.choice`, `Quot.sound`). Every docstring names the part of `q_col_assembly.md` it corresponds to.
 
