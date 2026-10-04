@@ -1,0 +1,8 @@
+control A4 (same sign on both sides of x): fails in 7 of 8
+control B3 (sign +1 at s = 2): fails in 6 of 6
+B5 measured signs (n, s) -> sign: [((0, 0), 1), ((1, 1), 1), ((2, 0), 1), ((2, 2), -1), ((3, 1), 1), ((3, 3), -1), ((4, 0), 1), ((4, 2), -1), ((4, 4), 1), ((5, 1), 1), ((5, 3), -1), ((6, 0), 1), ((6, 2), -1)]
+control B4 (theta reversed): fails in 16 of 16
+control B2 (eta shifted): fails in 4 of 4
+TOTAL checks: 4491  failures: 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=11456 t=0s

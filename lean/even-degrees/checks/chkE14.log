@@ -1,0 +1,24 @@
+h=1 m=1: 2 interlaced pairs, checks 13, fails 0
+h=1 m=2: 3 interlaced pairs, checks 54, fails 0
+h=1 m=3: 4 interlaced pairs, checks 132, fails 0
+h=1 m=4: 5 interlaced pairs, checks 259, fails 0
+h=1 m=5: 6 interlaced pairs, checks 443, fails 0
+h=1 m=6: 7 interlaced pairs, checks 696, fails 0
+h=1 m=7: 8 interlaced pairs, checks 1026, fails 0
+h=1 m=8: 9 interlaced pairs, checks 1445, fails 0
+h=2 m=1: 2 interlaced pairs, checks 1460, fails 0
+h=2 m=2: 4 interlaced pairs, checks 1524, fails 0
+h=2 m=3: 6 interlaced pairs, checks 1709, fails 0
+h=2 m=4: 10 interlaced pairs, checks 2175, fails 0
+h=2 m=5: 14 interlaced pairs, checks 3124, fails 0
+h=2 m=6: 22 interlaced pairs, checks 5137, fails 0
+h=3 m=1: 2 interlaced pairs, checks 5154, fails 0
+h=3 m=2: 4 interlaced pairs, checks 5228, fails 0
+h=3 m=3: 8 interlaced pairs, checks 5514, fails 0
+h=3 m=4: 14 interlaced pairs, checks 6397, fails 0
+h=3 m=5: 24 interlaced pairs, checks 8743, fails 0
+tails with Phi >= 1: 948  interlaced pairs: 154
+checks 8743 failures 0
+controls (each must be > 0): {'noninterlaced': 379, 'row1_for_rho': 17, 'mid_needs_D2': 45}
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=22848 t=3s

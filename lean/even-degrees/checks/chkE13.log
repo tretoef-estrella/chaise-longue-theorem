@@ -1,0 +1,49 @@
+control (Q2) with the opposite sign: wrong in 57 of 57 cases with a non-zero top FIRES
+control (Q'1) with the minus sign: degree > ell in 57 of 57 cases where X*mPf has degree > ell FIRES
+Part Q done: checks 924 fail 0
+single shapes, cell r=3 m=2 p=101: cumulative {'T6': 1, 'T7': 1, 'T8': 0}, non-zero {'T6': 1, 'T7': 1, 'T8': 0}
+single shapes, cell r=3 m=3 p=101: cumulative {'T6': 2, 'T7': 1, 'T8': 1}, non-zero {'T6': 2, 'T7': 1, 'T8': 1}
+single shapes, cell r=3 m=4 p=101: cumulative {'T6': 9, 'T7': 5, 'T8': 1}, non-zero {'T6': 9, 'T7': 5, 'T8': 1}
+single shapes, cell r=3 m=5 p=101: cumulative {'T6': 28, 'T7': 5, 'T8': 8}, non-zero {'T6': 27, 'T7': 5, 'T8': 7}
+single shapes, cell r=3 m=6 p=101: cumulative {'T6': 149, 'T7': 31, 'T8': 8}, non-zero {'T6': 142, 'T7': 30, 'T8': 7}
+single shapes, cell r=3 m=4 p=2: cumulative {'T6': 156, 'T7': 35, 'T8': 8}, non-zero {'T6': 149, 'T7': 34, 'T8': 7}
+single shapes, cell r=3 m=5 p=3: cumulative {'T6': 175, 'T7': 35, 'T8': 15}, non-zero {'T6': 167, 'T7': 34, 'T8': 13}
+single shapes, cell r=5 m=2 p=101: cumulative {'T6': 176, 'T7': 36, 'T8': 15}, non-zero {'T6': 168, 'T7': 35, 'T8': 13}
+single shapes, cell r=5 m=3 p=101: cumulative {'T6': 177, 'T7': 37, 'T8': 16}, non-zero {'T6': 169, 'T7': 36, 'T8': 14}
+single shapes, cell r=5 m=4 p=101: cumulative {'T6': 185, 'T7': 44, 'T8': 17}, non-zero {'T6': 177, 'T7': 43, 'T8': 15}
+single shapes, cell r=5 m=5 p=101: cumulative {'T6': 208, 'T7': 63, 'T8': 28}, non-zero {'T6': 200, 'T7': 62, 'T8': 26}
+single shapes, cell r=5 m=4 p=2: cumulative {'T6': 216, 'T7': 70, 'T8': 29}, non-zero {'T6': 208, 'T7': 69, 'T8': 27}
+single shapes, cell r=5 m=5 p=2: cumulative {'T6': 239, 'T7': 89, 'T8': 40}, non-zero {'T6': 231, 'T7': 88, 'T8': 38}
+single shapes, cell r=5 m=4 p=5: cumulative {'T6': 247, 'T7': 96, 'T8': 41}, non-zero {'T6': 239, 'T7': 95, 'T8': 39}
+single shapes, cell r=7 m=2 p=101: cumulative {'T6': 248, 'T7': 97, 'T8': 41}, non-zero {'T6': 240, 'T7': 96, 'T8': 39}
+single shapes, cell r=7 m=3 p=101: cumulative {'T6': 249, 'T7': 98, 'T8': 42}, non-zero {'T6': 241, 'T7': 97, 'T8': 40}
+single shapes, cell r=7 m=4 p=101: cumulative {'T6': 257, 'T7': 106, 'T8': 43}, non-zero {'T6': 249, 'T7': 105, 'T8': 41}
+single shapes, cell r=7 m=3 p=7: cumulative {'T6': 258, 'T7': 107, 'T8': 44}, non-zero {'T6': 250, 'T7': 106, 'T8': 42}
+control (T6) one slice lower: some product outside in 36 of 36 cases with d >= 1 FIRES
+control (T7) one slice lower: some product outside in 12 of 12 cases with d >= 1 FIRES
+control (T8) one slice lower: some product outside in 14 of 14 cases with d >= 1 FIRES
+control (T7) without (mu, 0) in Lambda: some product outside the slice in 22 of 22 cases FIRES
+NOTE (T7) at l(mu) = h (outside the statement): product outside the slice in 0 of 14 cases
+interlaced pairs, cell r=3 m=2 p=101: 3 pairs; cumulative {'M1': 2, 'Z1': 1, 'R1': 0}, non-zero {'M1': 2, 'Z1': 1, 'R1': 0}
+interlaced pairs, cell r=3 m=3 p=101: 4 pairs; cumulative {'M1': 2, 'Z1': 2, 'R1': 1}, non-zero {'M1': 2, 'Z1': 2, 'R1': 1}
+interlaced pairs, cell r=3 m=4 p=101: 5 pairs; cumulative {'M1': 18, 'Z1': 9, 'R1': 1}, non-zero {'M1': 18, 'Z1': 9, 'R1': 1}
+interlaced pairs, cell r=3 m=5 p=101: 6 pairs; cumulative {'M1': 18, 'Z1': 28, 'R1': 8}, non-zero {'M1': 18, 'Z1': 27, 'R1': 7}
+interlaced pairs, cell r=3 m=6 p=101: 7 pairs; cumulative {'M1': 174, 'Z1': 149, 'R1': 8}, non-zero {'M1': 168, 'Z1': 142, 'R1': 7}
+interlaced pairs, cell r=3 m=4 p=2: 5 pairs; cumulative {'M1': 190, 'Z1': 156, 'R1': 8}, non-zero {'M1': 184, 'Z1': 149, 'R1': 7}
+interlaced pairs, cell r=3 m=5 p=3: 6 pairs; cumulative {'M1': 190, 'Z1': 175, 'R1': 15}, non-zero {'M1': 184, 'Z1': 167, 'R1': 13}
+interlaced pairs, cell r=5 m=2 p=101: 4 pairs; cumulative {'M1': 193, 'Z1': 176, 'R1': 15}, non-zero {'M1': 187, 'Z1': 168, 'R1': 13}
+interlaced pairs, cell r=5 m=3 p=101: 6 pairs; cumulative {'M1': 194, 'Z1': 177, 'R1': 16}, non-zero {'M1': 188, 'Z1': 169, 'R1': 14}
+interlaced pairs, cell r=5 m=4 p=101: 10 pairs; cumulative {'M1': 236, 'Z1': 186, 'R1': 17}, non-zero {'M1': 230, 'Z1': 178, 'R1': 15}
+interlaced pairs, cell r=5 m=5 p=101: 14 pairs; cumulative {'M1': 267, 'Z1': 225, 'R1': 28}, non-zero {'M1': 261, 'Z1': 217, 'R1': 26}
+interlaced pairs, cell r=5 m=4 p=2: 10 pairs; cumulative {'M1': 309, 'Z1': 234, 'R1': 29}, non-zero {'M1': 303, 'Z1': 226, 'R1': 27}
+interlaced pairs, cell r=5 m=5 p=2: 14 pairs; cumulative {'M1': 340, 'Z1': 273, 'R1': 40}, non-zero {'M1': 334, 'Z1': 265, 'R1': 38}
+interlaced pairs, cell r=5 m=4 p=5: 10 pairs; cumulative {'M1': 382, 'Z1': 282, 'R1': 41}, non-zero {'M1': 376, 'Z1': 274, 'R1': 39}
+interlaced pairs, cell r=7 m=2 p=101: 4 pairs; cumulative {'M1': 385, 'Z1': 283, 'R1': 41}, non-zero {'M1': 379, 'Z1': 275, 'R1': 39}
+interlaced pairs, cell r=7 m=3 p=101: 8 pairs; cumulative {'M1': 387, 'Z1': 284, 'R1': 42}, non-zero {'M1': 381, 'Z1': 276, 'R1': 40}
+interlaced pairs, cell r=7 m=4 p=101: 14 pairs; cumulative {'M1': 450, 'Z1': 296, 'R1': 43}, non-zero {'M1': 444, 'Z1': 288, 'R1': 41}
+interlaced pairs, cell r=7 m=3 p=7: 8 pairs; cumulative {'M1': 452, 'Z1': 297, 'R1': 44}, non-zero {'M1': 446, 'Z1': 289, 'R1': 42}
+memberships by lemma (single shapes): {'T6': 258, 'T7': 107, 'T8': 44} ; non-zero: {'T6': 250, 'T7': 106, 'T8': 42}
+memberships by case (interlaced pairs): {'M1': 452, 'Z1': 297, 'R1': 44} ; non-zero: {'M1': 446, 'Z1': 289, 'R1': 42}
+TOTAL checks 2269, failures 0; controls 6, fire 6
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=385024 t=229s

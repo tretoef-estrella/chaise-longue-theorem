@@ -1,0 +1,18 @@
+cell p=2 v=1 r=3 k=1 m=6: total=61 QkEven=61
+cell p=2 v=1 r=3 k=2 m=6: total=1001 QkEven=1001
+cell p=2 v=2 r=3 k=1 m=12: total=331 QkEven=331
+cell p=2 v=1 r=5 k=1 m=10: total=217 QkEven=217
+cell p=2 v=3 r=3 k=1 m=24: total=1519 QkEven=1519
+cell p=3 v=1 r=2 k=1 m=6: total=61 QkEven=61
+cell p=3 v=1 r=2 k=2 m=6: total=1001 QkEven=1001
+cell p=3 v=1 r=4 k=1 m=12: total=331 QkEven=331
+cell p=5 v=1 r=2 k=1 m=10: total=217 QkEven=217
+cell p=5 v=1 r=4 k=1 m=20: total=1027 QkEven=1027
+cell p=3 v=2 r=2 k=1 m=18: total=817 QkEven=817
+cell p=3 v=1 r=2 k=3 m=6: total=18733 QkEven=18733
+cell p=3 v=1 r=5 k=1 m=15: total=546 QkEven=-
+cell p=5 v=1 r=3 k=1 m=15: total=546 QkEven=-
+controls fired (must be >0 each): {'phantom0': 9, 'drop-1': 7, 'minus-1 over Z/q*': 7}
+checks 1869 failures 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=10672 t=1s

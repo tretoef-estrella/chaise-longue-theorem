@@ -1,0 +1,20 @@
+p=3 q=3 |C_-1|=2 0in=True: literal=3 ybox=3 N_q(2a)=3 colour1point=2
+p=3 q=3 |C_-1|=2 0in=False: literal=3 ybox=3 N_q(2a)=3 colour1point=2
+p=3 q=3 |C_-1|=4 0in=True: literal=19 ybox=19 N_q(2a)=19 colour1point=6
+p=3 q=3 |C_-1|=4 0in=False: literal=19 ybox=19 N_q(2a)=19 colour1point=6
+p=3 q=3 |C_-1|=6 0in=True: literal=141 ybox=141 N_q(2a)=141 colour1point=20
+p=3 q=3 |C_-1|=6 0in=False: literal=141 ybox=141 N_q(2a)=141 colour1point=20
+p=5 q=5 |C_-1|=2 0in=True: literal=5 ybox=5 N_q(2a)=5 colour1point=4
+p=5 q=5 |C_-1|=2 0in=False: literal=5 ybox=5 N_q(2a)=5 colour1point=4
+p=5 q=5 |C_-1|=4 0in=True: literal=61 ybox=61 N_q(2a)=61 colour1point=36
+p=5 q=5 |C_-1|=4 0in=False: literal=61 ybox=61 N_q(2a)=61 colour1point=36
+p=7 q=7 |C_-1|=2 0in=True: literal=7 ybox=7 N_q(2a)=7 colour1point=6
+p=7 q=7 |C_-1|=2 0in=False: literal=7 ybox=7 N_q(2a)=7 colour1point=6
+p=7 q=7 |C_-1|=4 0in=True: literal=127 ybox=127 N_q(2a)=127 colour1point=90
+p=3 q=9 |C_-1|=2 0in=True: literal=9 ybox=9 N_q(2a)=9 colour1point=8
+p=3 q=9 |C_-1|=2 0in=False: literal=9 ybox=9 N_q(2a)=9 colour1point=8
+p=3 q=9 |C_-1|=4 0in=True: literal=217 ybox=217 N_q(2a)=217 colour1point=168
+controls fired (must be >0 each): {'colour1-point': 16, 'wrong-box': 16}
+checks 84 failures 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=137216 t=4s

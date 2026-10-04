@@ -1,0 +1,20 @@
+r=3 k=0: dim (D_J) = 3 at p = 2,3,5,7,Q
+   M: dim 3, dim C/∩ = 3
+r=3 k=1: dim (D_J) = 19 at p = 2,3,5,7,Q
+   M: dim 19, dim C/∩ = 19
+r=3 k=2: dim (D_J) = 141 at p = 2,3,5,7,Q
+   M: dim 141, dim C/∩ = 141
+r=5 k=0: dim (D_J) = 5 at p = 2,3,5,7,Q
+   M: dim 5, dim C/∩ = 5
+r=5 k=1: dim (D_J) = 61 at p = 2,3,5,7,Q
+   M: dim 61, dim C/∩ = 61
+r=7 k=0: dim (D_J) = 7 at p = 2,3,5,7,Q
+   M: dim 7, dim C/∩ = 7
+r=7 k=1: dim (D_J) = 127 at p = 2,3,5,7,Q
+r=9 k=1: dim (D_J) = 217 at p = 2,3,5,7,Q
+r=11 k=1: dim (D_J) = 331 at p = 2,3,5,7,Q
+r=13 k=1: dim (D_J) = 469 at p = 2,3,5,7,Q
+controls fired (must be >0 each): {'Dminus-instead-of-D': 7, 'count-at-r+2': 10, 'T-without-zero': 2}
+checks 111 failures 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=530496 t=9s

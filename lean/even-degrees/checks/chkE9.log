@@ -1,0 +1,17 @@
+checks 1718 failures 0
+control R1 row only : fires 6 of 31
+control R2 not a border : fires 47 of 48
+control R3 exponent n : fires 43 of 43
+control R4 minus : fires 78 of 78
+control R4 order O,E : fires 78 of 78
+control R5 constant terms : fires 20 of 20
+control S1 with D : fires 34 of 34
+control S2 plus : fires 34 of 34
+control S3 low omega : fires 10 of 10
+control S4i plus : fires 46 of 46
+control S5a coefficient h-t : fires 44 of 46
+control S5a sign : fires 46 of 46
+control S5b sign : fires 73 of 73
+control S5b with O : fires 73 of 73
+CHK-E9-END
+VIGIA-FIN-OK exit=0 pico_kb=11472 t=8s

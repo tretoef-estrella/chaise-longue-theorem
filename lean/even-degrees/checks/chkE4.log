@@ -1,0 +1,140 @@
+ok   (i) phi_q(u) = (u+1)^(q-1) in F_2[u], q=2
+ok   (i) phi_q(u) = (u+1)^(q-1) in F_2[u], q=4
+ok   (i) phi_q(u) = (u+1)^(q-1) in F_2[u], q=8
+ok   (i) phi_q(u) = (u+1)^(q-1) in F_2[u], q=16
+ok   (i) phi_q(u) = (u+1)^(q-1) in F_2[u], q=32
+ok   (i) phi_q(u) = (u+1)^(q-1) in F_2[u], q=64
+CONTROL fires   (i) with q = 6 (not a power of 2)
+ok   (v) b(a+b)^(q-1) = a b D_q(a,b) mod b^q over F_2, q=2
+CONTROL fires   (v) with D of the box q instead of q-1, q=2
+ok   (v) b(a+b)^(q-1) = a b D_q(a,b) mod b^q over F_2, q=4
+CONTROL fires   (v) with D of the box q instead of q-1, q=4
+ok   (v) b(a+b)^(q-1) = a b D_q(a,b) mod b^q over F_2, q=8
+CONTROL fires   (v) with D of the box q instead of q-1, q=8
+ok   (v) b(a+b)^(q-1) = a b D_q(a,b) mod b^q over F_2, q=16
+CONTROL fires   (v) with D of the box q instead of q-1, q=16
+ok   (v) b(a+b)^(q-1) = a b D_q(a,b) mod b^q over F_2, q=32
+CONTROL fires   (v) with D of the box q instead of q-1, q=32
+ok   (ii) (1+s)^q = 1 in F_2[s]/(s^q), q=2
+ok   (ii) (1+s)^q = 1 in F_2[s]/(s^q), q=4
+ok   (ii) (1+s)^q = 1 in F_2[s]/(s^q), q=8
+ok   (ii) (1+s)^q = 1 in F_2[s]/(s^q), q=16
+ok   (ii) (1+s)^q = 1 in F_2[s]/(s^q), q=32
+CONTROL fires   (ii) q = 6 over F_2: (1+s)^6 = 1 mod s^6 ?
+CONTROL fires   (ii) q = 4 over F_3: (1+s)^4 = 1 mod s^4 ?
+ok   (iii) Theta(psi_J) = formula of Step 1, all 1 matchings, (k,q)=(0,2)
+ok   (iv) lowest form of Theta(psi_J) is L_J, of degree (k+1)+k(q-1), (k,q)=(0,2)
+ok   (v) L_J = Y * D_J in B, (k,q)=(0,2)
+ok   (ii) dim of (psi_J) in F_2[G] = dim of (Theta psi_J) in B, (k,q)=(0,2) | 1
+ok   (vi) dim (D_J) C at box q-1 = dim (L_J) B, (k,q)=(0,2) | 1
+ok   (vi) dim (D_J) C <= dim I, (k,q)=(0,2) | 1 <= 1
+ok   (measured) dim I = QkEven(k,q), (k,q)=(0,2) | 1 vs 1
+ok   (measured) dim (D_J) C = QkEven(k,q), (k,q)=(0,2) | 1 vs 1
+ok   QkEven(k,q) = number of closed tuples, (k,q)=(0,2) | 1
+   t=0.1s
+ok   (iii) Theta(psi_J) = formula of Step 1, all 1 matchings, (k,q)=(0,4)
+ok   (iv) lowest form of Theta(psi_J) is L_J, of degree (k+1)+k(q-1), (k,q)=(0,4)
+ok   (v) L_J = Y * D_J in B, (k,q)=(0,4)
+ok   (ii) dim of (psi_J) in F_2[G] = dim of (Theta psi_J) in B, (k,q)=(0,4) | 3
+ok   (vi) dim (D_J) C at box q-1 = dim (L_J) B, (k,q)=(0,4) | 3
+ok   (vi) dim (D_J) C <= dim I, (k,q)=(0,4) | 3 <= 3
+ok   (measured) dim I = QkEven(k,q), (k,q)=(0,4) | 3 vs 3
+ok   (measured) dim (D_J) C = QkEven(k,q), (k,q)=(0,4) | 3 vs 3
+ok   QkEven(k,q) = number of closed tuples, (k,q)=(0,4) | 3
+   t=0.1s
+ok   (iii) Theta(psi_J) = formula of Step 1, all 1 matchings, (k,q)=(0,8)
+ok   (iv) lowest form of Theta(psi_J) is L_J, of degree (k+1)+k(q-1), (k,q)=(0,8)
+ok   (v) L_J = Y * D_J in B, (k,q)=(0,8)
+ok   (ii) dim of (psi_J) in F_2[G] = dim of (Theta psi_J) in B, (k,q)=(0,8) | 7
+ok   (vi) dim (D_J) C at box q-1 = dim (L_J) B, (k,q)=(0,8) | 7
+ok   (vi) dim (D_J) C <= dim I, (k,q)=(0,8) | 7 <= 7
+ok   (measured) dim I = QkEven(k,q), (k,q)=(0,8) | 7 vs 7
+ok   (measured) dim (D_J) C = QkEven(k,q), (k,q)=(0,8) | 7 vs 7
+ok   QkEven(k,q) = number of closed tuples, (k,q)=(0,8) | 7
+   t=0.1s
+ok   (iii) Theta(psi_J) = formula of Step 1, all 3 matchings, (k,q)=(1,2)
+ok   (iv) lowest form of Theta(psi_J) is L_J, of degree (k+1)+k(q-1), (k,q)=(1,2)
+ok   (v) L_J = Y * D_J in B, (k,q)=(1,2)
+CONTROL fires   (v) with Y replaced by the product without s_(k_0), (k,q)=(1,2)
+ok   (ii) dim of (psi_J) in F_2[G] = dim of (Theta psi_J) in B, (k,q)=(1,2) | 1
+ok   (vi) dim (D_J) C at box q-1 = dim (L_J) B, (k,q)=(1,2) | 1
+ok   (vi) dim (D_J) C <= dim I, (k,q)=(1,2) | 1 <= 1
+ok   (measured) dim I = QkEven(k,q), (k,q)=(1,2) | 1 vs 1
+ok   (measured) dim (D_J) C = QkEven(k,q), (k,q)=(1,2) | 1 vs 1
+ok   QkEven(k,q) = number of closed tuples, (k,q)=(1,2) | 1
+   t=0.1s
+ok   (iii) Theta(psi_J) = formula of Step 1, all 3 matchings, (k,q)=(1,4)
+ok   (iv) lowest form of Theta(psi_J) is L_J, of degree (k+1)+k(q-1), (k,q)=(1,4)
+ok   (v) L_J = Y * D_J in B, (k,q)=(1,4)
+CONTROL fires   (v) with Y replaced by the product without s_(k_0), (k,q)=(1,4)
+ok   (ii) dim of (psi_J) in F_2[G] = dim of (Theta psi_J) in B, (k,q)=(1,4) | 19
+ok   (vi) dim (D_J) C at box q-1 = dim (L_J) B, (k,q)=(1,4) | 19
+ok   (vi) dim (D_J) C <= dim I, (k,q)=(1,4) | 19 <= 19
+ok   (measured) dim I = QkEven(k,q), (k,q)=(1,4) | 19 vs 19
+ok   (measured) dim (D_J) C = QkEven(k,q), (k,q)=(1,4) | 19 vs 19
+ok   QkEven(k,q) = number of closed tuples, (k,q)=(1,4) | 19
+   t=0.1s
+ok   (iii) Theta(psi_J) = formula of Step 1, all 3 matchings, (k,q)=(1,8)
+ok   (iv) lowest form of Theta(psi_J) is L_J, of degree (k+1)+k(q-1), (k,q)=(1,8)
+ok   (v) L_J = Y * D_J in B, (k,q)=(1,8)
+CONTROL fires   (v) with Y replaced by the product without s_(k_0), (k,q)=(1,8)
+ok   (ii) dim of (psi_J) in F_2[G] = dim of (Theta psi_J) in B, (k,q)=(1,8) | 127
+ok   (vi) dim (D_J) C at box q-1 = dim (L_J) B, (k,q)=(1,8) | 127
+ok   (vi) dim (D_J) C <= dim I, (k,q)=(1,8) | 127 <= 127
+ok   (measured) dim I = QkEven(k,q), (k,q)=(1,8) | 127 vs 127
+ok   (measured) dim (D_J) C = QkEven(k,q), (k,q)=(1,8) | 127 vs 127
+ok   QkEven(k,q) = number of closed tuples, (k,q)=(1,8) | 127
+   t=0.1s
+ok   (iii) Theta(psi_J) = formula of Step 1, all 3 matchings, (k,q)=(1,16)
+ok   (iv) lowest form of Theta(psi_J) is L_J, of degree (k+1)+k(q-1), (k,q)=(1,16)
+ok   (v) L_J = Y * D_J in B, (k,q)=(1,16)
+CONTROL fires   (v) with Y replaced by the product without s_(k_0), (k,q)=(1,16)
+ok   (ii) dim of (psi_J) in F_2[G] = dim of (Theta psi_J) in B, (k,q)=(1,16) | 631
+ok   (vi) dim (D_J) C at box q-1 = dim (L_J) B, (k,q)=(1,16) | 631
+ok   (vi) dim (D_J) C <= dim I, (k,q)=(1,16) | 631 <= 631
+ok   (measured) dim I = QkEven(k,q), (k,q)=(1,16) | 631 vs 631
+ok   (measured) dim (D_J) C = QkEven(k,q), (k,q)=(1,16) | 631 vs 631
+   t=0.4s
+ok   (iii) Theta(psi_J) = formula of Step 1, all 15 matchings, (k,q)=(2,2)
+ok   (iv) lowest form of Theta(psi_J) is L_J, of degree (k+1)+k(q-1), (k,q)=(2,2)
+ok   (v) L_J = Y * D_J in B, (k,q)=(2,2)
+CONTROL fires   (v) with Y replaced by the product without s_(k_0), (k,q)=(2,2)
+ok   (ii) dim of (psi_J) in F_2[G] = dim of (Theta psi_J) in B, (k,q)=(2,2) | 1
+ok   (vi) dim (D_J) C at box q-1 = dim (L_J) B, (k,q)=(2,2) | 1
+ok   (vi) dim (D_J) C <= dim I, (k,q)=(2,2) | 1 <= 1
+ok   (measured) dim I = QkEven(k,q), (k,q)=(2,2) | 1 vs 1
+ok   (measured) dim (D_J) C = QkEven(k,q), (k,q)=(2,2) | 1 vs 1
+ok   QkEven(k,q) = number of closed tuples, (k,q)=(2,2) | 1
+   t=0.4s
+ok   (iii) Theta(psi_J) = formula of Step 1, all 15 matchings, (k,q)=(2,4)
+ok   (iv) lowest form of Theta(psi_J) is L_J, of degree (k+1)+k(q-1), (k,q)=(2,4)
+ok   (v) L_J = Y * D_J in B, (k,q)=(2,4)
+CONTROL fires   (v) with Y replaced by the product without s_(k_0), (k,q)=(2,4)
+ok   (ii) dim of (psi_J) in F_2[G] = dim of (Theta psi_J) in B, (k,q)=(2,4) | 141
+ok   (vi) dim (D_J) C at box q-1 = dim (L_J) B, (k,q)=(2,4) | 141
+ok   (vi) dim (D_J) C <= dim I, (k,q)=(2,4) | 141 <= 141
+ok   (measured) dim I = QkEven(k,q), (k,q)=(2,4) | 141 vs 141
+ok   (measured) dim (D_J) C = QkEven(k,q), (k,q)=(2,4) | 141 vs 141
+ok   QkEven(k,q) = number of closed tuples, (k,q)=(2,4) | 141
+   t=0.8s
+ok   (iii) Theta(psi_J) = formula of Step 1, all 105 matchings, (k,q)=(3,2)
+ok   (iv) lowest form of Theta(psi_J) is L_J, of degree (k+1)+k(q-1), (k,q)=(3,2)
+ok   (v) L_J = Y * D_J in B, (k,q)=(3,2)
+CONTROL fires   (v) with Y replaced by the product without s_(k_0), (k,q)=(3,2)
+ok   (ii) dim of (psi_J) in F_2[G] = dim of (Theta psi_J) in B, (k,q)=(3,2) | 1
+ok   (vi) dim (D_J) C at box q-1 = dim (L_J) B, (k,q)=(3,2) | 1
+ok   (vi) dim (D_J) C <= dim I, (k,q)=(3,2) | 1 <= 1
+ok   (measured) dim I = QkEven(k,q), (k,q)=(3,2) | 1 vs 1
+ok   (measured) dim (D_J) C = QkEven(k,q), (k,q)=(3,2) | 1 vs 1
+ok   QkEven(k,q) = number of closed tuples, (k,q)=(3,2) | 1
+   t=1.6s
+ok   (iv, general lemma) dim (lowest forms) <= dim I in 400 random ideals of F_2[s]/(s^e) | failures 0
+CONTROL SILENT  (iv) mixing lowest and top forms, 400 random ideals | violations 0
+CONTROL fires   (iv) lowest form of f and top form of x*f, 369 random pairs | violations 16
+CONTROL fires   (iv) explicit: f1 = s1 + s2^2, f2 = s2 f1, lowest(f1) and top(f2) | 13 > 12
+
+CHECKS 106  FAILURES 0
+CONTROLS 18  FIRED 17
+time 1.9s
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=27904 t=1s

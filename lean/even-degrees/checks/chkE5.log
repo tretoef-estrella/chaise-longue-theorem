@@ -1,0 +1,37 @@
+ok   rank over F_2 of A(m=4, k=1) = Qe = 19 (p | m) | rank 19
+ok   rank over F_3 of A(m=4, k=1) = Qe = 19 (p does not divide m) | rank 19
+ok   rank over F_5 of A(m=4, k=1) = Qe = 19 (p does not divide m) | rank 19
+ok   rank over F_7 of A(m=4, k=1) = Qe = 19 (p does not divide m) | rank 19
+ok   rank over F_1000003 of A(m=4, k=1) = Qe = 19 (p does not divide m) | rank 19
+   t=0.1s
+ok   rank over F_2 of A(m=4, k=2) = Qe = 141 (p | m) | rank 141
+ok   rank over F_3 of A(m=4, k=2) = Qe = 141 (p does not divide m) | rank 141
+ok   rank over F_5 of A(m=4, k=2) = Qe = 141 (p does not divide m) | rank 141
+ok   rank over F_7 of A(m=4, k=2) = Qe = 141 (p does not divide m) | rank 141
+ok   rank over F_1000003 of A(m=4, k=2) = Qe = 141 (p does not divide m) | rank 141
+   t=16.7s
+ok   rank over F_2 of A(m=6, k=1) = Qe = 61 (p | m) | rank 61
+ok   rank over F_3 of A(m=6, k=1) = Qe = 61 (p | m) | rank 61
+ok   rank over F_5 of A(m=6, k=1) = Qe = 61 (p does not divide m) | rank 61
+ok   rank over F_7 of A(m=6, k=1) = Qe = 61 (p does not divide m) | rank 61
+ok   rank over F_1000003 of A(m=6, k=1) = Qe = 61 (p does not divide m) | rank 61
+   t=16.7s
+ok   rank over F_2 of A(m=8, k=1) = Qe = 127 (p | m) | rank 127
+ok   rank over F_3 of A(m=8, k=1) = Qe = 127 (p does not divide m) | rank 127
+ok   rank over F_5 of A(m=8, k=1) = Qe = 127 (p does not divide m) | rank 127
+ok   rank over F_1000003 of A(m=8, k=1) = Qe = 127 (p does not divide m) | rank 127
+   t=17.0s
+ok   4^3 - Qe_1(4) = 45
+ok   4^5 - Qe_2(4) = 883
+CONTROL fires   one matching removed, m=4 k=1 p=2: rank 15 vs 19
+CONTROL fires   one matching removed, m=4 k=1 p=3: rank 15 vs 19
+CONTROL fires   one matching removed, m=6 k=1 p=5: rank 45 vs 61
+CONTROL fires   one matching removed, m=8 k=1 p=3: rank 91 vs 127
+CONTROL fires   phi_(m-1) in place of phi_m, m=4 k=1 p=2: rank 45 vs 19
+CONTROL fires   phi_(m-1) in place of phi_m, m=4 k=1 p=5: rank 45 vs 19
+CONTROL fires   phi_(m-1) in place of phi_m, m=4 k=2 p=2: rank 702 vs 141
+CHECKS 21  FAILURES 0
+CONTROLS 7  FIRED 7
+time 24.5s
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=508496 t=24s

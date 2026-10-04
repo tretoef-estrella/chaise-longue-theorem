@@ -1,0 +1,40 @@
+(A) the count
+  explicit sum = recursion = table of the paper in 30 cells
+  m=2 k=1: brute 1 explicit 1 recursion 1 OK
+  m=2 k=2: brute 1 explicit 1 recursion 1 OK
+  m=4 k=1: brute 19 explicit 19 recursion 19 OK
+  m=4 k=2: brute 141 explicit 141 recursion 141 OK
+  m=4 k=3: brute 1107 explicit 1107 recursion 1107 OK
+  m=6 k=1: brute 61 explicit 61 recursion 61 OK
+  m=6 k=2: brute 1001 explicit 1001 recursion 1001 OK
+  m=8 k=1: brute 127 explicit 127 recursion 127 OK
+  m=8 k=2: brute 3301 explicit 3301 recursion 3301 OK
+  m=10 k=1: brute 217 explicit 217 recursion 217 OK
+  m=10 k=2: brute 7761 explicit 7761 recursion 7761 OK
+  m=12 k=1: brute 331 explicit 331 recursion 331 OK
+  Q_1(m) = 3m^2 - 9m + 7 at m = 4, 6, 8, 12: True
+(B) the points, by evaluation over F_P
+  m=2 k=1: |Gamma| over F_3 = 1, Qe = 1 OK
+  m=2 k=2: |Gamma| over F_3 = 1, Qe = 1 OK
+  m=4 k=1: |Gamma| over F_5 = 19, Qe = 19 OK
+  m=6 k=1: |Gamma| over F_7 = 61, Qe = 61 OK
+  m=8 k=1: |Gamma| over F_17 = 127, Qe = 127 OK
+  m=10 k=1: |Gamma| over F_11 = 217, Qe = 217 OK
+  m=12 k=1: |Gamma| over F_13 = 331, Qe = 331 OK
+  m=4 k=2: |Gamma| over F_5 = 141, Qe = 141 OK
+  m=6 k=2: |Gamma| over F_7 = 1001, Qe = 1001 OK
+  m=8 k=2: |Gamma| over F_17 = 3301, Qe = 3301 OK
+  m=4 k=3: |Gamma| over F_5 = 1107, Qe = 1107 OK
+(C) the ranks
+  m=2 k=1: Qe=1 rank over F_p (p|m) {2: 1} (all equal) | rank over F_3=1 OK | control (one matching removed) rank=1 SILENT
+  m=4 k=1: Qe=19 rank over F_p (p|m) {2: 19} (all equal) | rank over F_5=19 OK | control (one matching removed) rank=15 fires
+  m=6 k=1: Qe=61 rank over F_p (p|m) {2: 61, 3: 61} (all equal) | rank over F_7=61 OK | control (one matching removed) rank=45 fires
+  m=8 k=1: Qe=127 rank over F_p (p|m) {2: 127} (all equal) | rank over F_17=127 OK | control (one matching removed) rank=91 fires
+  m=10 k=1: Qe=217 rank over F_p (p|m) {2: 217, 5: 217} (all equal) | rank over F_11=217 OK | control (one matching removed) rank=153 fires
+  m=2 k=2: Qe=1 rank over F_p (p|m) {2: 1} (all equal) | rank over F_3=1 OK | control (one matching removed) rank=1 SILENT
+  m=4 k=2: Qe=141 rank over F_p (p|m) {2: 141} (all equal) | rank over F_5=141 OK | control (one matching removed) rank=141 SILENT
+(D) control: the odd formula read at an even m
+  Q_k(m) (no fixed point) differs from the table in 30 of 30 cells
+checks 64, failures 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=211968 t=10s

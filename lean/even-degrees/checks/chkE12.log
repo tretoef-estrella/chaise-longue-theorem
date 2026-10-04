@@ -1,0 +1,61 @@
+control P2 with the opposite sign, r=3 l=1 FIRES
+control P2 at l = h + 1 (the formula should fail), r=3 l=2 FIRES
+control P2 with the opposite sign, r=5 l=1 FIRES
+control P2 with the opposite sign, r=5 l=2 FIRES
+control P2 at l = h + 1 (the formula should fail), r=5 l=3 FIRES
+control P2 with the opposite sign, r=7 l=1 FIRES
+control P2 with the opposite sign, r=7 l=2 FIRES
+control P2 with the opposite sign, r=7 l=3 FIRES
+control P2 at l = h + 1 (the formula should fail), r=7 l=4 FIRES
+Part P done: checks 38 fail 0
+L1 done: checks 64 fail 0
+single shapes, cell r=3 m=2 p=101: cumulative memberships {'T1': 2, 'T2': 1, 'T3': 0, 'T4': 0, 'T5': 1}, of non-zero products {'T1': 2, 'T2': 1, 'T3': 0, 'T4': 0, 'T5': 1}
+single shapes, cell r=3 m=3 p=101: cumulative memberships {'T1': 9, 'T2': 4, 'T3': 1, 'T4': 0, 'T5': 4}, of non-zero products {'T1': 9, 'T2': 4, 'T3': 1, 'T4': 0, 'T5': 4}
+single shapes, cell r=3 m=4 p=101: cumulative memberships {'T1': 37, 'T2': 20, 'T3': 5, 'T4': 3, 'T5': 13}, of non-zero products {'T1': 37, 'T2': 20, 'T3': 4, 'T4': 3, 'T5': 13}
+single shapes, cell r=3 m=5 p=101: cumulative memberships {'T1': 181, 'T2': 100, 'T3': 33, 'T4': 19, 'T5': 52}, of non-zero products {'T1': 180, 'T2': 100, 'T3': 22, 'T4': 15, 'T5': 52}
+single shapes, cell r=3 m=6 p=101: cumulative memberships {'T1': 1012, 'T2': 610, 'T3': 200, 'T4': 149, 'T5': 247}, of non-zero products {'T1': 1000, 'T2': 605, 'T3': 112, 'T4': 105, 'T5': 247}
+single shapes, cell r=3 m=4 p=2: cumulative memberships {'T1': 1040, 'T2': 626, 'T3': 204, 'T4': 152, 'T5': 256}, of non-zero products {'T1': 1028, 'T2': 621, 'T3': 115, 'T4': 108, 'T5': 256}
+single shapes, cell r=3 m=5 p=3: cumulative memberships {'T1': 1184, 'T2': 706, 'T3': 232, 'T4': 168, 'T5': 295}, of non-zero products {'T1': 1171, 'T2': 701, 'T3': 133, 'T4': 120, 'T5': 295}
+single shapes, cell r=5 m=2 p=101: cumulative memberships {'T1': 1186, 'T2': 707, 'T3': 232, 'T4': 168, 'T5': 296}, of non-zero products {'T1': 1173, 'T2': 702, 'T3': 133, 'T4': 120, 'T5': 296}
+single shapes, cell r=5 m=3 p=101: cumulative memberships {'T1': 1193, 'T2': 710, 'T3': 233, 'T4': 168, 'T5': 300}, of non-zero products {'T1': 1180, 'T2': 705, 'T3': 134, 'T4': 120, 'T5': 300}
+single shapes, cell r=5 m=4 p=101: cumulative memberships {'T1': 1222, 'T2': 726, 'T3': 237, 'T4': 171, 'T5': 312}, of non-zero products {'T1': 1209, 'T2': 721, 'T3': 138, 'T4': 123, 'T5': 312}
+single shapes, cell r=5 m=5 p=101: cumulative memberships {'T1': 1371, 'T2': 807, 'T3': 265, 'T4': 187, 'T5': 375}, of non-zero products {'T1': 1358, 'T2': 802, 'T3': 165, 'T4': 139, 'T5': 375}
+single shapes, cell r=5 m=4 p=2: cumulative memberships {'T1': 1400, 'T2': 823, 'T3': 269, 'T4': 190, 'T5': 387}, of non-zero products {'T1': 1387, 'T2': 818, 'T3': 169, 'T4': 142, 'T5': 387}
+single shapes, cell r=5 m=5 p=2: cumulative memberships {'T1': 1549, 'T2': 904, 'T3': 297, 'T4': 206, 'T5': 450}, of non-zero products {'T1': 1536, 'T2': 899, 'T3': 196, 'T4': 158, 'T5': 450}
+single shapes, cell r=5 m=4 p=5: cumulative memberships {'T1': 1578, 'T2': 920, 'T3': 301, 'T4': 209, 'T5': 462}, of non-zero products {'T1': 1565, 'T2': 915, 'T3': 200, 'T4': 161, 'T5': 462}
+single shapes, cell r=7 m=2 p=101: cumulative memberships {'T1': 1580, 'T2': 921, 'T3': 301, 'T4': 209, 'T5': 463}, of non-zero products {'T1': 1567, 'T2': 916, 'T3': 200, 'T4': 161, 'T5': 463}
+single shapes, cell r=7 m=3 p=101: cumulative memberships {'T1': 1587, 'T2': 924, 'T3': 302, 'T4': 209, 'T5': 467}, of non-zero products {'T1': 1574, 'T2': 919, 'T3': 201, 'T4': 161, 'T5': 467}
+single shapes, cell r=7 m=4 p=101: cumulative memberships {'T1': 1616, 'T2': 940, 'T3': 306, 'T4': 212, 'T5': 480}, of non-zero products {'T1': 1603, 'T2': 935, 'T3': 205, 'T4': 164, 'T5': 480}
+single shapes, cell r=7 m=3 p=7: cumulative memberships {'T1': 1623, 'T2': 943, 'T3': 307, 'T4': 212, 'T5': 484}, of non-zero products {'T1': 1610, 'T2': 938, 'T3': 206, 'T4': 164, 'T5': 484}
+control (T1) single shapes: in the cases with d >= 1, some product lies outside the slice d - 1 (82 of 82 cases) FIRES
+control (T2) single shapes: in the cases with d >= 1, some product lies outside the slice d - 1 (82 of 82 cases) FIRES
+control (T3) single shapes: in the cases with d >= 1, some product lies outside the slice d - 1 (2 of 2 cases) FIRES
+control (T4) single shapes: in the cases with d >= 1, some product lies outside the slice d - 1 (14 of 14 cases) FIRES
+control (T5) single shapes: in the cases with d >= 1, some product lies outside the slice d - 1 (52 of 52 cases) FIRES
+control (T5) at l(mu) = h + 1: some product outside the slice 2h - l (6 of 6 cases) FIRES
+interlaced pairs, cell r=3 m=2 p=101: 3 pairs; cumulative {'R,delta=0 (T2)': 1, 'Z,delta=0 (T5)': 1, 'A,delta=0 (T1)': 1}; E13 cases seen (products) {'M1': 2, 'Z1': 1, 'R1': 0}
+interlaced pairs, cell r=3 m=3 p=101: 4 pairs; cumulative {'R,delta=0 (T2)': 3, 'Z,delta=0 (T5)': 4, 'A,delta=0 (T1)': 3, 'M,delta=0 (T1)': 3, 'A,delta=1 (T3)': 2}; E13 cases seen (products) {'M1': 2, 'Z1': 2, 'R1': 1}
+interlaced pairs, cell r=3 m=4 p=101: 5 pairs; cumulative {'R,delta=0 (T2)': 12, 'Z,delta=0 (T5)': 13, 'A,delta=0 (T1)': 18, 'M,delta=0 (T1)': 3, 'A,delta=1 (T3)': 8, 'R,delta=1 (T4)': 3}; E13 cases seen (products) {'M1': 18, 'Z1': 9, 'R1': 1}
+interlaced pairs, cell r=3 m=5 p=101: 6 pairs; cumulative {'R,delta=0 (T2)': 48, 'Z,delta=0 (T5)': 52, 'A,delta=0 (T1)': 78, 'M,delta=0 (T1)': 18, 'A,delta=1 (T3)': 60, 'R,delta=1 (T4)': 15}; E13 cases seen (products) {'M1': 18, 'Z1': 28, 'R1': 8}
+interlaced pairs, cell r=3 m=6 p=101: 7 pairs; cumulative {'R,delta=0 (T2)': 243, 'Z,delta=0 (T5)': 247, 'A,delta=0 (T1)': 453, 'M,delta=0 (T1)': 18, 'A,delta=1 (T3)': 320, 'R,delta=1 (T4)': 110}; E13 cases seen (products) {'M1': 174, 'Z1': 149, 'R1': 8}
+interlaced pairs, cell r=3 m=4 p=2: 5 pairs; cumulative {'R,delta=0 (T2)': 252, 'Z,delta=0 (T5)': 256, 'A,delta=0 (T1)': 468, 'M,delta=0 (T1)': 18, 'A,delta=1 (T3)': 326, 'R,delta=1 (T4)': 113}; E13 cases seen (products) {'M1': 190, 'Z1': 156, 'R1': 8}
+interlaced pairs, cell r=3 m=5 p=3: 6 pairs; cumulative {'R,delta=0 (T2)': 288, 'Z,delta=0 (T5)': 295, 'A,delta=0 (T1)': 528, 'M,delta=0 (T1)': 33, 'A,delta=1 (T3)': 378, 'R,delta=1 (T4)': 125}; E13 cases seen (products) {'M1': 190, 'Z1': 175, 'R1': 15}
+interlaced pairs, cell r=5 m=2 p=101: 4 pairs; cumulative {'R,delta=0 (T2)': 289, 'Z,delta=0 (T5)': 296, 'A,delta=0 (T1)': 529, 'M,delta=0 (T1)': 34, 'A,delta=1 (T3)': 378, 'R,delta=1 (T4)': 125}; E13 cases seen (products) {'M1': 193, 'Z1': 176, 'R1': 15}
+interlaced pairs, cell r=5 m=3 p=101: 6 pairs; cumulative {'R,delta=0 (T2)': 294, 'Z,delta=0 (T5)': 301, 'A,delta=0 (T1)': 533, 'M,delta=0 (T1)': 41, 'A,delta=1 (T3)': 381, 'R,delta=1 (T4)': 125}; E13 cases seen (products) {'M1': 194, 'Z1': 177, 'R1': 16}
+interlaced pairs, cell r=5 m=4 p=101: 10 pairs; cumulative {'R,delta=0 (T2)': 321, 'Z,delta=0 (T5)': 322, 'A,delta=0 (T1)': 572, 'M,delta=0 (T1)': 50, 'A,delta=1 (T3)': 399, 'R,delta=1 (T4)': 131}; E13 cases seen (products) {'M1': 236, 'Z1': 186, 'R1': 17}
+interlaced pairs, cell r=5 m=5 p=101: 14 pairs; cumulative {'R,delta=0 (T2)': 507, 'Z,delta=0 (T5)': 445, 'A,delta=0 (T1)': 824, 'M,delta=0 (T1)': 137, 'A,delta=1 (T3)': 556, 'R,delta=1 (T4)': 171}; E13 cases seen (products) {'M1': 267, 'Z1': 225, 'R1': 28}
+interlaced pairs, cell r=5 m=5 p=2: 14 pairs; cumulative {'R,delta=0 (T2)': 693, 'Z,delta=0 (T5)': 568, 'A,delta=0 (T1)': 1076, 'M,delta=0 (T1)': 224, 'A,delta=1 (T3)': 713, 'R,delta=1 (T4)': 211}; E13 cases seen (products) {'M1': 298, 'Z1': 264, 'R1': 39}
+interlaced pairs, cell r=5 m=4 p=5: 10 pairs; cumulative {'R,delta=0 (T2)': 720, 'Z,delta=0 (T5)': 589, 'A,delta=0 (T1)': 1115, 'M,delta=0 (T1)': 233, 'A,delta=1 (T3)': 731, 'R,delta=1 (T4)': 217}; E13 cases seen (products) {'M1': 340, 'Z1': 273, 'R1': 40}
+interlaced pairs, cell r=7 m=2 p=101: 4 pairs; cumulative {'R,delta=0 (T2)': 721, 'Z,delta=0 (T5)': 590, 'A,delta=0 (T1)': 1116, 'M,delta=0 (T1)': 234, 'A,delta=1 (T3)': 731, 'R,delta=1 (T4)': 217}; E13 cases seen (products) {'M1': 343, 'Z1': 274, 'R1': 40}
+interlaced pairs, cell r=7 m=3 p=101: 8 pairs; cumulative {'R,delta=0 (T2)': 728, 'Z,delta=0 (T5)': 597, 'A,delta=0 (T1)': 1120, 'M,delta=0 (T1)': 245, 'A,delta=1 (T3)': 735, 'R,delta=1 (T4)': 217}; E13 cases seen (products) {'M1': 345, 'Z1': 275, 'R1': 41}
+interlaced pairs, cell r=7 m=4 p=101: 14 pairs; cumulative {'R,delta=0 (T2)': 775, 'Z,delta=0 (T5)': 628, 'A,delta=0 (T1)': 1174, 'M,delta=0 (T1)': 263, 'A,delta=1 (T3)': 758, 'R,delta=1 (T4)': 226}; E13 cases seen (products) {'M1': 408, 'Z1': 287, 'R1': 42}
+interlaced pairs, cell r=7 m=3 p=7: 8 pairs; cumulative {'R,delta=0 (T2)': 782, 'Z,delta=0 (T5)': 635, 'A,delta=0 (T1)': 1178, 'M,delta=0 (T1)': 274, 'A,delta=1 (T3)': 762, 'R,delta=1 (T4)': 226}; E13 cases seen (products) {'M1': 410, 'Z1': 288, 'R1': 43}
+control (II) inside the interlaced pairs, one slice lower (r - Phi - 1): some product outside in 211 of 211 cases with d >= 1 FIRES
+memberships by lemma (single shapes): {'T1': 1623, 'T2': 943, 'T3': 307, 'T4': 212, 'T5': 484}
+  of non-zero products: {'T1': 1610, 'T2': 938, 'T3': 206, 'T4': 164, 'T5': 484} ; of these in a slice d >= 1: {'T1': 888, 'T2': 888, 'T3': 8, 'T4': 164, 'T5': 484}
+memberships by case (interlaced pairs): {'R,delta=0 (T2)': 782, 'Z,delta=0 (T5)': 635, 'A,delta=0 (T1)': 1178, 'M,delta=0 (T1)': 274, 'A,delta=1 (T3)': 762, 'R,delta=1 (T4)': 226}
+  of non-zero products: {'R,delta=0 (T2)': 782, 'Z,delta=0 (T5)': 635, 'A,delta=0 (T1)': 1178, 'M,delta=0 (T1)': 274, 'A,delta=1 (T3)': 734, 'R,delta=1 (T4)': 221} ; of these in a slice d >= 1: {'R,delta=0 (T2)': 782, 'Z,delta=0 (T5)': 635, 'R,delta=1 (T4)': 221, 'M,delta=0 (T1)': 144, 'A,delta=0 (T1)': 66, 'A,delta=1 (T3)': 16}
+E13 cases seen in advance (products): {'M1': 410, 'Z1': 288, 'R1': 43} ; outside their slice: 0
+TOTAL checks 8261, failures 0; controls 16, fire 16
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=380480 t=240s

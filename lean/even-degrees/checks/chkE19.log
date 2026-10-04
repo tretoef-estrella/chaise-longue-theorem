@@ -1,0 +1,21 @@
+q=2 j=0: caseA dim=1 caseB dim=1 theta(M)=1 QkEven=1
+q=2 j=1: caseA dim=1 caseB dim=1 theta(M)=1 QkEven=1
+q=2 j=2: caseA dim=1 caseB dim=1 theta(M)=1 QkEven=1
+q=4 j=0: caseA dim=3 caseB dim=3 theta(M)=3 QkEven=3
+q=4 j=1: caseA dim=19 caseB dim=19 theta(M)=19 QkEven=19
+q=4 j=2: caseA dim=141 caseB dim=141 theta(M)=141 QkEven=141
+q=8 j=0: caseA dim=7 caseB dim=7 theta(M)=7 QkEven=7
+q=8 j=1: caseA dim=127 caseB dim=127 theta(M)=127 QkEven=127
+m=4 k=1 p=2: dim=19 Q_k(m)=19
+m=4 k=2 p=2: dim=141 Q_k(m)=141
+m=6 k=1 p=2: dim=61 Q_k(m)=61
+m=6 k=1 p=3: dim=61 Q_k(m)=61
+m=8 k=1 p=2: dim=127 Q_k(m)=127
+m=10 k=1 p=2: dim=217 Q_k(m)=217
+m=10 k=1 p=5: dim=217 Q_k(m)=217
+m=12 k=1 p=2: dim=331 Q_k(m)=331
+m=12 k=1 p=3: dim=331 Q_k(m)=331
+controls fired (must be >0 each): {'wrong-count': 8, 'theta-coef1': 23, 'phi-exp-q-2': 3}
+checks 118 failures 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=35840 t=49s

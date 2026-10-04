@@ -1,0 +1,44 @@
+Q(4,1) = 19
+Q(6,1) = 61
+Q(8,1) = 127
+Q(4,2) = 141
+Q(3,1) = 6
+Q(5,1) = 36
+Q(7,1) = 90
+Q(9,1) = 168
+Q(3,2) = 20
+m=4 k=1 p=2: dim=19 QkEven=19 quotient=45
+m=4 k=1 p=3: dim=19 QkEven=19 quotient=45
+m=4 k=1 p=5: dim=19 QkEven=19 quotient=45
+m=4 k=2 p=2: dim=141 QkEven=141 quotient=883
+m=4 k=2 p=3: dim=141 QkEven=141 quotient=883
+m=6 k=1 p=2: dim=61 QkEven=61 quotient=155
+m=6 k=1 p=3: dim=61 QkEven=61 quotient=155
+m=6 k=1 p=5: dim=61 QkEven=61 quotient=155
+m=8 k=1 p=2: dim=127 QkEven=127 quotient=385
+m=8 k=1 p=3: dim=127 QkEven=127 quotient=385
+m=10 k=1 p=2: dim=217 QkEven=217 quotient=783
+m=10 k=1 p=5: dim=217 QkEven=217 quotient=783
+m=10 k=1 p=3: dim=217 QkEven=217 quotient=783
+m=12 k=1 p=2: dim=331 QkEven=331 quotient=1397
+m=12 k=1 p=3: dim=331 QkEven=331 quotient=1397
+q=2 a=0: dim Ibal=1 Nbal=1
+q=2 a=0: dim Iph=2 Nph=2
+q=2 a=1: dim Ibal=2 Nbal=2
+q=2 a=1: dim Iph=6 Nph=6
+q=2 a=2: dim Ibal=6 Nbal=6
+q=2 a=2: dim Iph=20 Nph=20
+q=2 a=3: dim Ibal=20 Nbal=20
+q=2 a=3: dim Iph=70 Nph=70
+q=4 a=0: dim Ibal=1 Nbal=1
+q=4 a=0: dim Iph=4 Nph=4
+q=4 a=1: dim Ibal=4 Nbal=4
+q=4 a=1: dim Iph=28 Nph=28
+q=4 a=2: dim Ibal=28 Nbal=28
+q=4 a=2: dim Iph=256 Nph=256
+q=4 a=3: dim Ibal=256 Nbal=256
+q=4 a=3: dim Iph=2716 Nph=2716
+controls fired (must be >0 each): {'odd-formula-at-even-m': 6, 'Ibal-exp-q-2': 3, 'Nbal-wrong-q': 6}
+checks 59 failures 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=139872 t=66s

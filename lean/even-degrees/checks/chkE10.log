@@ -1,0 +1,155 @@
+control V without the signs (-1)^k: 10/10 FIRES
+V done 50 0
+control H with Od(y_i) in the place of Od(y_j), r=3 FIRES
+control H without the box, r=3 FIRES
+control H with Od(y_i) in the place of Od(y_j), r=5 FIRES
+control H without the box, r=5 FIRES
+control H with Od(y_i) in the place of Od(y_j), r=7 FIRES
+control H without the box, r=7 FIRES
+control H with Od(y_i) in the place of Od(y_j), r=9 FIRES
+control H without the box, r=9 FIRES
+H done 62 0
+control P without the crossing signs, r=3 n=4 FIRES
+control P without the crossing signs, r=3 n=6 FIRES
+control P without the crossing signs, r=5 n=4 FIRES
+control P without the crossing signs, r=7 n=4 FIRES
+P done 69 0
+cell (3, 'a', (), 0) ('cert', 2, 1, 2)
+cell (3, 'a', (), 1) ('zero', 4)
+cell (3, 'a', (0,), 0) ('cert', 3, 1, 0)
+cell (3, 'a', (0,), 1) ('zero', 5)
+cell (3, 'b', (), 0) ('cert', 1, 1, 1)
+cell (3, 'b', (), 1) ('cert', 3, 3, 6)
+cell (3, 'b', (), 2) ('zero', 5)
+cell (5, 'a', (), 0) ('cert', 2, 1, 4)
+cell (5, 'a', (), 1) ('cert', 4, 6, 24)
+cell (5, 'a', (), 2) ('zero', 6)
+cell (5, 'a', (0,), 0) ('cert', 3, 1, 6)
+cell (5, 'a', (0,), 1) ('cert', 5, 10, 0)
+cell (5, 'a', (0, 1), 0) ('cert', 4, 1, 0)
+cell (5, 'a', (0, 1), 1) ('cert', 6, 15, 0)
+cell (5, 'b', (), 0) ('cert', 1, 1, 1)
+cell (5, 'b', (), 1) ('cert', 3, 3, 12)
+cell (5, 'b', (), 2) ('cert', 5, 15, 120)
+cell (5, 'b', (), 3) ('zero', 7)
+cell (7, 'a', (), 0) ('cert', 2, 1, 6)
+cell (7, 'a', (), 1) ('cert', 4, 6, 72)
+cell (7, 'a', (), 2) ('cert', 6, 45, 720)
+cell (7, 'a', (0,), 0) ('cert', 3, 1, 12)
+cell (7, 'a', (0,), 1) ('cert', 5, 10, 120)
+cell (7, 'a', (0, 1), 0) ('cert', 4, 1, 24)
+cell (7, 'a', (0, 1), 1) ('cert', 6, 15, 0)
+cell (7, 'a', (0, 1, 2), 0) ('cert', 5, 1, 0)
+cell (7, 'b', (), 0) ('cert', 1, 1, 1)
+cell (7, 'b', (), 1) ('cert', 3, 3, 18)
+cell (7, 'b', (), 2) ('cert', 5, 15, 360)
+cell (9, 'a', (), 0) ('cert', 2, 1, 8)
+cell (9, 'a', (), 1) ('cert', 4, 6, 144)
+cell (9, 'a', (0,), 0) ('cert', 3, 1, 18)
+cell (9, 'a', (0,), 1) ('cert', 5, 10, 360)
+cell (9, 'a', (0, 1), 0) ('cert', 4, 1, 48)
+cell (9, 'a', (0, 1, 2), 0) ('cert', 5, 1, 120)
+cell (9, 'b', (), 0) ('cert', 1, 1, 1)
+cell (9, 'b', (), 1) ('cert', 3, 3, 24)
+cell (9, 'b', (), 2) ('cert', 5, 15, 720)
+cell (11, 'a', (), 0) ('cert', 2, 1, 10)
+cell (11, 'a', (), 1) ('cert', 4, 6, 240)
+cell (11, 'a', (0,), 0) ('cert', 3, 1, 24)
+cell (11, 'a', (0, 1), 0) ('cert', 4, 1, 72)
+cell (11, 'b', (), 0) ('cert', 1, 1, 1)
+cell (11, 'b', (), 1) ('cert', 3, 3, 30)
+cell (3, 'a', (1,), 0) ('cert', 3, 1, 0)
+cell (3, 'a', (2,), 0) ('cert', 3, 1, 6)
+cell (3, 'a', (0, 2), 0) ('cert', 4, 1, 0)
+cell (3, 'b', (0,), 0) ('cert', 2, 1, 2)
+cell (3, 'b', (1,), 1) ('cert', 4, 6, 0)
+cell (3, 'b', (0, 1), 1) ('cert', 5, 10, 0)
+cell (3, 'b', (0,), 2) ('zero', 6)
+cell (5, 'a', (2,), 0) ('cert', 3, 1, 6)
+cell (5, 'a', (3,), 1) ('cert', 5, 10, 0)
+cell (5, 'a', (1, 3), 0) ('cert', 4, 1, 0)
+cell (5, 'a', (4, 0), 0) ('cert', 4, 1, 24)
+cell (5, 'b', (0,), 1) ('cert', 4, 6, 24)
+cell (5, 'b', (1,), 1) ('cert', 4, 6, 24)
+cell (5, 'b', (0, 1), 1) ('cert', 5, 10, 0)
+cell (5, 'b', (3,), 0) ('cert', 2, 1, 2)
+cell (5, 'b', (2, 0), 0) ('cert', 3, 1, 6)
+cell (7, 'a', (1,), 0) ('cert', 3, 1, 12)
+cell (7, 'b', (0,), 1) ('cert', 4, 6, 48)
+cell (7, 'b', (2,), 0) ('cert', 2, 1, 2)
+cell (7, 'a', (2,), 1) ('cert', 5, 10, 120)
+cell (7, 'a', (1, 4), 0) ('cert', 4, 1, 48)
+cell (7, 'b', (1,), 2) ('cert', 6, 45, 720)
+cell (7, 'b', (0, 3), 1) ('cert', 5, 10, 120)
+cell (9, 'a', (5,), 1) ('cert', 5, 10, 360)
+cell (9, 'b', (2,), 1) ('cert', 4, 6, 72)
+cell (9, 'b', (1, 2), 1) ('cert', 5, 10, 240)
+M done 821 0
+I r=3 case=b e=() t=1 n=3 member: True rank of U in that degree: 6 of 7 generators: 3
+control I r=3 case=b e=() t=1 n=3 target plus one monomial FIRES
+control I r=3 case=b e=() t=1 n=3 in the ideal with 3 fixed points instead of 1 SILENT
+control I r=3 case=b e=() t=1 n=3 with y_x*D^- in the place of D SILENT
+I r=5 case=b e=() t=1 n=3 member: True rank of U in that degree: 12 of 18 generators: 3
+control I r=5 case=b e=() t=1 n=3 target plus one monomial FIRES
+control I r=5 case=b e=() t=1 n=3 in the ideal with 3 fixed points instead of 1 SILENT
+control I r=5 case=b e=() t=1 n=3 with y_x*D^- in the place of D SILENT
+I r=5 case=a e=() t=1 n=4 member: True rank of U in that degree: 18 of 68 generators: 6
+control I r=5 case=a e=() t=1 n=4 target plus one monomial FIRES
+control I r=5 case=a e=() t=1 n=4 in the ideal with 0 fixed points instead of 2 FIRES
+control I r=5 case=a e=() t=1 n=4 in the ideal with 4 fixed points instead of 2 SILENT
+control I r=5 case=a e=() t=1 n=4 with y_x*D^- in the place of D SILENT
+I r=5 case=a e=(0,) t=0 n=3 member: True rank of U in that degree: 1 of 10 generators: 1
+control I r=5 case=a e=(0,) t=0 n=3 target plus one monomial FIRES
+control I r=5 case=a e=(0,) t=0 n=3 in the ideal with 1 fixed points instead of 3 FIRES
+I r=5 case=b e=() t=2 n=5 member: True rank of U in that degree: 90 of 381 generators: 15
+control I r=5 case=b e=() t=2 n=5 target plus one monomial FIRES
+control I r=5 case=b e=() t=2 n=5 in the ideal with 3 fixed points instead of 1 SILENT
+control I r=5 case=b e=() t=2 n=5 with y_x*D^- in the place of D SILENT
+I r=7 case=b e=() t=1 n=3 member: True rank of U in that degree: 18 of 33 generators: 3
+control I r=7 case=b e=() t=1 n=3 target plus one monomial FIRES
+control I r=7 case=b e=() t=1 n=3 in the ideal with 3 fixed points instead of 1 SILENT
+control I r=7 case=b e=() t=1 n=3 with y_x*D^- in the place of D SILENT
+I r=7 case=a e=() t=1 n=4 member: True rank of U in that degree: 60 of 206 generators: 6
+control I r=7 case=a e=() t=1 n=4 target plus one monomial FIRES
+control I r=7 case=a e=() t=1 n=4 in the ideal with 0 fixed points instead of 2 FIRES
+control I r=7 case=a e=() t=1 n=4 in the ideal with 4 fixed points instead of 2 SILENT
+control I r=7 case=a e=() t=1 n=4 with y_x*D^- in the place of D SILENT
+I r=5 case=b e=(0,) t=1 n=4 member: True rank of U in that degree: 36 of 80 generators: 6
+control I r=5 case=b e=(0,) t=1 n=4 target plus one monomial FIRES
+control I r=5 case=b e=(0,) t=1 n=4 in the ideal with 4 fixed points instead of 2 SILENT
+control I r=5 case=b e=(0,) t=1 n=4 with y_x*D^- in the place of D SILENT
+I r=7 case=a e=(0,) t=0 n=3 member: True rank of U in that degree: 6 of 21 generators: 1
+control I r=7 case=a e=(0,) t=0 n=3 target plus one monomial FIRES
+control I r=7 case=a e=(0,) t=0 n=3 in the ideal with 1 fixed points instead of 3 FIRES
+I r=7 case=a e=(0,) t=1 n=5 member: True rank of U in that degree: 40 of 826 generators: 10
+control I r=7 case=a e=(0,) t=1 n=5 target plus one monomial FIRES
+control I r=7 case=a e=(0,) t=1 n=5 in the ideal with 1 fixed points instead of 3 FIRES
+control I r=7 case=a e=(0,) t=1 n=5 in the ideal with 5 fixed points instead of 3 SILENT
+control I r=7 case=a e=(0,) t=1 n=5 with y_x*D^- in the place of D SILENT
+I r=7 case=b e=() t=2 n=5 member: True rank of U in that degree: 225 of 1420 generators: 15
+control I r=7 case=b e=() t=2 n=5 target plus one monomial FIRES
+control I r=7 case=b e=() t=2 n=5 in the ideal with 3 fixed points instead of 1 SILENT
+control I r=7 case=b e=() t=2 n=5 with y_x*D^- in the place of D SILENT
+I r=9 case=a e=() t=1 n=4 member: True rank of U in that degree: 126 of 456 generators: 6
+control I r=9 case=a e=() t=1 n=4 target plus one monomial FIRES
+control I r=9 case=a e=() t=1 n=4 in the ideal with 0 fixed points instead of 2 FIRES
+control I r=9 case=a e=() t=1 n=4 in the ideal with 4 fixed points instead of 2 SILENT
+control I r=9 case=a e=() t=1 n=4 with y_x*D^- in the place of D SILENT
+I r=9 case=a e=(0, 1) t=0 n=4 member: True rank of U in that degree: 10 of 165 generators: 1
+control I r=9 case=a e=(0, 1) t=0 n=4 target plus one monomial FIRES
+control I r=9 case=a e=(0, 1) t=0 n=4 in the ideal with 2 fixed points instead of 4 FIRES
+I done 834 0
+M4 r=3 m=4 B=(0, 2, 3) case=b e=() t=1 member: True rank: 9 generators: 3
+control M4 r=3 m=4 B=(0, 2, 3) case=b e=() t=1 with the ideal of another set B' = (1, 2, 3) FIRES
+M4 r=3 m=5 B=(1, 2, 4) case=b e=() t=1 member: True rank: 12 generators: 3
+control M4 r=3 m=5 B=(1, 2, 4) case=b e=() t=1 with the ideal of another set B' = (0, 2, 4) FIRES
+M4 r=5 m=5 B=(0, 1, 3, 4) case=a e=() t=1 member: True rank: 24 generators: 6
+control M4 r=5 m=5 B=(0, 1, 3, 4) case=a e=() t=1 with the ideal of another set B' = (2, 1, 3, 4) FIRES
+M4 r=5 m=4 B=(0, 2, 3) case=b e=() t=1 member: True rank: 30 generators: 3
+control M4 r=5 m=4 B=(0, 2, 3) case=b e=() t=1 with the ideal of another set B' = (1, 2, 3) FIRES
+M4 r=5 m=5 B=(0, 2, 4) case=a e=(0,) t=0 member: True rank: 1 generators: 1
+control M4 r=5 m=5 B=(0, 2, 4) case=a e=(0,) t=0 with the ideal of another set B' = (1, 2, 4) FIRES
+M4 r=3 m=5 B=(0, 1, 3, 4) case=b e=(1,) t=1 target zero
+M4 done 840 0
+TOTAL checks 840 failures 0; controls 58 fire 38
+VIGIA-FIN-OK exit=0 pico_kb=34864 t=7s

@@ -1,0 +1,98 @@
+ok   A identities (8.1)-(8.4), r=3
+ok   A identities (8.1)-(8.4), r=5
+ok   A identities (8.1)-(8.4), r=7
+ok   A identities (8.1)-(8.4), r=9
+ok   A identities (8.1)-(8.4), r=11
+ok   A identities (8.1)-(8.4), r=13
+ok   A control: even r breaks (8.1a),(8.1b),(8.3a),(8.3b),(8.4a),(8.4b) and keeps (8.2)
+ok   A parity-free (8.3): (a+b)*Dab q a b = b^(q-1) - (-a)^(q-1), q = 1..14
+   control detail (r=4): (False, False, True, False, False, False, False)
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=1 m=1, 1 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=1 m=2, 3 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=1 m=3, 9 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=1 m=4, 27 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=1 m=5, 81 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=1 m=6, 243 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=2 m=1, 1 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=2 m=2, 5 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=2 m=3, 25 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=2 m=4, 125 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=2 m=5, 625 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=3 m=1, 1 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=3 m=2, 7 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=3 m=3, 49 tails
+ok   B Lemma 8.1 (options as a multiset, all in Sh_m): h=3 m=4, 343 tails
+ok   B control h=1 m=3: wrong variants fail (no mark switch: 9 of 9 tails; L=2h+1: 9 of 9)
+ok   B control h=2 m=3: wrong variants fail (no mark switch: 25 of 25 tails; L=2h+1: 25 of 25)
+ok   B control h=2 m=4: wrong variants fail (no mark switch: 125 of 125 tails; L=2h+1: 125 of 125)
+ok   B control h=3 m=3: wrong variants fail (no mark switch: 49 of 49 tails; L=2h+1: 49 of 49)
+ok   B Sh_0 = {(empty, 0)} for h = 1, 2, 3
+ok   B shape of every M in T^m: len <= h, |lambda|+delta <= m, same parity as m (h=1 m=5)
+ok   B shape of every M in T^m: len <= h, |lambda|+delta <= m, same parity as m (h=2 m=4)
+ok   B shape of every M in T^m: len <= h, |lambda|+delta <= m, same parity as m (h=3 m=3)
+ok   B (8.5) on 40 random subsets Lambda of Sh_m, every tail (h=1 m=4, 1080 cases)
+ok   B (8.5) on 40 random subsets Lambda of Sh_m, every tail (h=2 m=4, 5000 cases)
+ok   B (8.5) on 40 random subsets Lambda of Sh_m, every tail (h=3 m=3, 1960 cases)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=1 m=1, |Sh_m|=2, 3 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=1 m=1)
+ok   C cross-check of the enumerator with the cold audit, h=1 m=2
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=1 m=2, |Sh_m|=3, 4 pairs; non-empty pairs 3 (cold audit: 3)
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=1 m=2)
+ok   C cross-check of the enumerator with the cold audit, h=1 m=3
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=1 m=3, |Sh_m|=4, 5 pairs; non-empty pairs 4 (cold audit: 4)
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=1 m=3)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=1 m=4, |Sh_m|=5, 6 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=1 m=4)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=1 m=5, |Sh_m|=6, 7 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=1 m=5)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=1 m=6, |Sh_m|=7, 8 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=1 m=6)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=1 m=7, |Sh_m|=8, 9 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=1 m=7)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=2 m=1, |Sh_m|=2, 3 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=2 m=1)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=2 m=2, |Sh_m|=4, 5 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=2 m=2)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=2 m=3, |Sh_m|=6, 7 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=2 m=3)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=2 m=4, |Sh_m|=9, 11 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=2 m=4)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=2 m=5, |Sh_m|=12, 15 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=2 m=5)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=2 m=6, |Sh_m|=16, 23 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=2 m=6)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=3 m=1, |Sh_m|=2, 3 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=3 m=1)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=3 m=2, |Sh_m|=4, 5 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=3 m=2)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=3 m=3, |Sh_m|=7, 9 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=3 m=3)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=3 m=4, |Sh_m|=11, 15 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=3 m=4)
+ok   C Lemma 8.3 (initial segment of length F) for ALL interlaced pairs: h=3 m=5, |Sh_m|=16, 25 pairs
+ok   C (D2) well typed: (nu - e_j, 1-delta) in Sh_m for every (nu,delta) in Sh_m (h=3 m=5)
+   total interlaced pairs tested (the empty one included): 163
+ok   C control h=1 m=3: pairs of down-sets WITHOUT (D2) break the chain in 4 of 4; zero option placed last breaks it in 3 of 5 interlaced pairs
+ok   C control h=1 m=4: pairs of down-sets WITHOUT (D2) break the chain in 6 of 6; zero option placed last breaks it in 4 of 6 interlaced pairs
+ok   C control h=2 m=3: pairs of down-sets WITHOUT (D2) break the chain in 9 of 9; zero option placed last breaks it in 5 of 7 interlaced pairs
+ok   C control h=2 m=4: pairs of down-sets WITHOUT (D2) break the chain in 17 of 17; zero option placed last breaks it in 9 of 11 interlaced pairs
+ok   C control h=3 m=3: pairs of down-sets WITHOUT (D2) break the chain in 11 of 11; zero option placed last breaks it in 7 of 9 interlaced pairs
+ok   hint: (mu+e_j) - e_{j_low} = mu and (mu ⊔ 1) - e_{l+1} = mu (366 cases)
+ok   B Sh_m = {len <= h, |lambda|+delta <= m, same parity} for m = 0..8 (h=1)
+ok   B (B3): optS_p(mu,delta) in Sh_m for every (mu,delta) in Sh_{m-1}, every p, m = 1..8 (h=1)
+ok   B control (B3): the list with L = 2h+1 and no zero option leaves Sh_m (28 options, h=1)
+ok   B Sh_m = {len <= h, |lambda|+delta <= m, same parity} for m = 0..8 (h=2)
+ok   B (B3): optS_p(mu,delta) in Sh_m for every (mu,delta) in Sh_{m-1}, every p, m = 1..8 (h=2)
+ok   B control (B3): the list with L = 2h+1 and no zero option leaves Sh_m (34 options, h=2)
+ok   B Sh_m = {len <= h, |lambda|+delta <= m, same parity} for m = 0..8 (h=3)
+ok   B (B3): optS_p(mu,delta) in Sh_m for every (mu,delta) in Sh_{m-1}, every p, m = 1..8 (h=3)
+ok   B control (B3): the list with L = 2h+1 and no zero option leaves Sh_m (25 options, h=3)
+ok   B Sh_m = {len <= h, |lambda|+delta <= m, same parity} for m = 0..8 (h=4)
+ok   B (B3): optS_p(mu,delta) in Sh_m for every (mu,delta) in Sh_{m-1}, every p, m = 1..8 (h=4)
+ok   B control (B3): the list with L = 2h+1 and no zero option leaves Sh_m (14 options, h=4)
+ok   B (B5): F_Lambda(mu,delta) = #{p : optS_p(mu,delta) in Lambda} (2880 cases)
+ok   C (C3): empty, Sh_m, {(empty,0)} (m even), {((1),0),(empty,1)} (m odd) are interlaced, h = 1..3, m = 0..7
+ok   C control (C3): the two roots at the wrong parity are NOT interlaced (accepted wrongly: 0)
+TOTAL checks 93, failures 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=11680 t=4s

@@ -1,0 +1,11 @@
+k1 m6 p3: sum = 61 (expect 61), checks 101, fails 0, controls {'drop_minus_block': 7, 'count_wo_minus': 1, 'swap_rule': 18}
+k1 m6 p2: sum = 61 (expect 61), checks 422, fails 0, controls {'drop_minus_block': 0, 'count_wo_minus': 0, 'swap_rule': 0}
+k1 m10 p5: sum = 217 (expect 217), checks 523, fails 0, controls {'drop_minus_block': 7, 'count_wo_minus': 1, 'swap_rule': 18}
+k1 m12 p3: sum = 331 (expect 331), checks 1270, fails 0, controls {'drop_minus_block': 19, 'count_wo_minus': 1, 'swap_rule': 42}
+k1 m12 p2: sum = 331 (expect 331), checks 1591, fails 0, controls {'drop_minus_block': 13, 'count_wo_minus': 0, 'swap_rule': 0}
+k1 m20 p5: sum = 1027 (expect 1027), checks 2338, fails 0, controls {'drop_minus_block': 19, 'count_wo_minus': 1, 'swap_rule': 42}
+k2 m6 p3: sum = 1001 (expect 1001), checks 3399, fails 0, controls {'drop_minus_block': 31, 'count_wo_minus': 16, 'swap_rule': 90}
+checks 3399 failures 0
+controls fired (each must be > 0): {'drop_minus_block': 96, 'count_wo_minus': 20, 'swap_rule': 210}
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=34080 t=1s

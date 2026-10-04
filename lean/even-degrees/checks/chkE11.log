@@ -1,0 +1,73 @@
+control A3 with all signs plus, r=3 FIRES
+control A4 with all signs plus, r=3 FIRES
+control A2 with D in the place of D^-, r=3 FIRES
+control A3 with all signs plus, r=5 FIRES
+control A4 with all signs plus, r=5 FIRES
+control A2 with D in the place of D^-, r=5 FIRES
+control A3 with all signs plus, r=7 FIRES
+control A4 with all signs plus, r=7 FIRES
+control A2 with D in the place of D^-, r=7 FIRES
+control A6 at n + 1 = l (n=2, l=3), r=3 FIRES
+control A5 at n + l odd (n=3, l=0), r=3 FIRES
+control A7 without the sign (a transposition), r=3 n=2 l=1 FIRES
+control A7 without the sign (a transposition), r=3 n=2 l=3 FIRES
+control A7 without the sign (a transposition), r=3 n=3 l=0 FIRES
+control A6 at n + 1 = l (n=2, l=3), r=5 FIRES
+control A5 at n + l odd (n=3, l=0), r=5 FIRES
+control A7 without the sign (a transposition), r=5 n=2 l=1 FIRES
+control A7 without the sign (a transposition), r=5 n=2 l=3 FIRES
+control A7 without the sign (a transposition), r=5 n=3 l=0 FIRES
+control A7 without the sign (a transposition), r=5 n=3 l=2 FIRES
+control A7 without the sign (a transposition), r=5 n=4 l=1 FIRES
+Part A done: checks 156 fail 0
+Lean convention vs engine, sign by (l, |B|): {(0, 1): [1], (0, 3): [1], (0, 5): [1], (1, 2): [1], (1, 4): [1], (2, 3): [1]}
+cell r=3 m=1 p=101: interlaced pairs 2, equal 2
+cell r=3 m=2 p=101: interlaced pairs 3, equal 3
+control count with D^- in the pairs of the marked patterns, r=3 m=3 p=101: wrong in 1 of 3 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=3 m=3 p=101: wrong in 1 of 3 pairs FIRES
+cell r=3 m=3 p=101: interlaced pairs 4, equal 4
+control count with D^- in the pairs of the marked patterns, r=3 m=4 p=101: wrong in 1 of 3 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=3 m=4 p=101: wrong in 0 of 3 pairs SILENT
+cell r=3 m=4 p=101: interlaced pairs 5, equal 5
+control D3 target + first monomial of its degree, r=3 l=0 |B|=3 FIRES
+control count with D^- in the pairs of the marked patterns, r=3 m=5 p=101: wrong in 3 of 5 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=3 m=5 p=101: wrong in 1 of 5 pairs FIRES
+cell r=3 m=5 p=101: interlaced pairs 6, equal 6
+control count with D^- in the pairs of the marked patterns, r=3 m=3 p=2: wrong in 1 of 3 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=3 m=3 p=2: wrong in 1 of 3 pairs FIRES
+cell r=3 m=3 p=2: interlaced pairs 4, equal 4
+control count with D^- in the pairs of the marked patterns, r=3 m=4 p=2: wrong in 1 of 3 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=3 m=4 p=2: wrong in 0 of 3 pairs SILENT
+cell r=3 m=4 p=2: interlaced pairs 5, equal 5
+control count with D^- in the pairs of the marked patterns, r=3 m=5 p=3: wrong in 3 of 5 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=3 m=5 p=3: wrong in 1 of 5 pairs FIRES
+cell r=3 m=5 p=3: interlaced pairs 6, equal 6
+cell r=5 m=1 p=101: interlaced pairs 2, equal 2
+cell r=5 m=2 p=101: interlaced pairs 4, equal 4
+control count with D^- in the pairs of the marked patterns, r=5 m=3 p=101: wrong in 1 of 5 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=5 m=3 p=101: wrong in 1 of 5 pairs FIRES
+cell r=5 m=3 p=101: interlaced pairs 6, equal 6
+control D3 target + first monomial of its degree, r=5 l=0 |B|=3 FIRES
+control D3 target + first monomial of its degree, r=5 l=1 |B|=4 FIRES
+control count with D^- in the pairs of the marked patterns, r=5 m=4 p=101: wrong in 2 of 8 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=5 m=4 p=101: wrong in 1 of 8 pairs FIRES
+cell r=5 m=4 p=101: interlaced pairs 10, equal 10
+control count with D^- in the pairs of the marked patterns, r=5 m=3 p=2: wrong in 1 of 5 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=5 m=3 p=2: wrong in 1 of 5 pairs FIRES
+cell r=5 m=3 p=2: interlaced pairs 6, equal 6
+control count with D^- in the pairs of the marked patterns, r=5 m=4 p=5: wrong in 2 of 8 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=5 m=4 p=5: wrong in 1 of 8 pairs FIRES
+cell r=5 m=4 p=5: interlaced pairs 10, equal 10
+cell r=7 m=1 p=101: interlaced pairs 2, equal 2
+cell r=7 m=2 p=101: interlaced pairs 4, equal 4
+control D3 target + first monomial of its degree, r=7 l=0 |B|=3 FIRES
+control count with D^- in the pairs of the marked patterns, r=7 m=3 p=101: wrong in 1 of 7 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=7 m=3 p=101: wrong in 1 of 7 pairs FIRES
+cell r=7 m=3 p=101: interlaced pairs 8, equal 8
+control count with D^- in the pairs of the marked patterns, r=7 m=3 p=7: wrong in 1 of 7 pairs FIRES
+control count without absorbed pairs (t = 0 only), r=7 m=3 p=7: wrong in 1 of 7 pairs FIRES
+cell r=7 m=3 p=7: interlaced pairs 8, equal 8
+interlaced pairs in all: 95, with dim = |Z|: 95
+TOTAL checks 1170, failures 0; controls 49, fire 47
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=78752 t=13s

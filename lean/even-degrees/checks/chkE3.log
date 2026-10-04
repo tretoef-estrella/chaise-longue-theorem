@@ -1,0 +1,76 @@
+(A) the count recursion of (i)
+  m = 1..8, J = 0..9: 80 identities; |Z_1^(3)|, |Z_1^(5)|, |Z_1^(7)| = 19, 141, 1107
+(B) dimensions and slices
+  p=2 m=5 J=0: dim I = 51, |Z| = 51 | W_2 contains I(4,1): True | slice dims [0, 0, 51]
+  p=2 m=5 J=1: dim I = 141, |Z| = 141 | W_0 contains I(4,0): True | W_1 contains I(4,1): True | W_2 contains I(4,2): True | slice dims [19, 51, 71]
+  p=2 m=5 J=2: dim I = 201, |Z| = 201 | W_0 contains I(4,1): True | W_1 contains I(4,2): True | W_2 contains I(4,3): True | slice dims [51, 71, 79]
+  p=2 m=5 J=3: dim I = 231, |Z| = 231 | W_0 contains I(4,2): True | W_1 contains I(4,3): True | W_2 contains I(4,4): True | slice dims [71, 79, 81]
+  p=2 m=5 J=4: dim I = 241, |Z| = 241 | W_0 contains I(4,3): True | W_1 contains I(4,4): True | W_2 contains I(4,5): True | slice dims [79, 81, 81]
+  p=2 m=5 J=5: dim I = 243, |Z| = 243
+  p=2 m=6 J=0: dim I = 141, |Z| = 141 | W_2 contains I(5,1): True | slice dims [0, 0, 141]
+  p=2 m=6 J=1: dim I = 393, |Z| = 393 | W_0 contains I(5,0): True | W_1 contains I(5,1): True | W_2 contains I(5,2): True | slice dims [51, 141, 201]
+  p=2 m=6 J=2: dim I = 573, |Z| = 573 | W_0 contains I(5,1): True | W_1 contains I(5,2): True | W_2 contains I(5,3): True | slice dims [141, 201, 231]
+  p=2 m=6 J=3: dim I = 673, |Z| = 673 | W_0 contains I(5,2): True | W_1 contains I(5,3): True | W_2 contains I(5,4): True | slice dims [201, 231, 241]
+  p=2 m=6 J=4: dim I = 715, |Z| = 715 | W_0 contains I(5,3): True | W_1 contains I(5,4): True | W_2 contains I(5,5): True | slice dims [231, 241, 243]
+  p=2 m=6 J=5: dim I = 727, |Z| = 727 | W_0 contains I(5,4): True | W_1 contains I(5,5): True | W_2 contains I(5,6): True | slice dims [241, 243, 243]
+  p=2 m=6 J=6: dim I = 729, |Z| = 729
+  p=3 m=5 J=0: dim I = 51, |Z| = 51 | W_2 contains I(4,1): True | slice dims [0, 0, 51]
+  p=3 m=5 J=1: dim I = 141, |Z| = 141 | W_0 contains I(4,0): True | W_1 contains I(4,1): True | W_2 contains I(4,2): True | slice dims [19, 51, 71]
+  p=3 m=5 J=2: dim I = 201, |Z| = 201 | W_0 contains I(4,1): True | W_1 contains I(4,2): True | W_2 contains I(4,3): True | slice dims [51, 71, 79]
+  p=3 m=5 J=3: dim I = 231, |Z| = 231 | W_0 contains I(4,2): True | W_1 contains I(4,3): True | W_2 contains I(4,4): True | slice dims [71, 79, 81]
+  p=3 m=5 J=4: dim I = 241, |Z| = 241 | W_0 contains I(4,3): True | W_1 contains I(4,4): True | W_2 contains I(4,5): True | slice dims [79, 81, 81]
+  p=3 m=5 J=5: dim I = 243, |Z| = 243
+  p=3 m=6 J=0: dim I = 141, |Z| = 141 | W_2 contains I(5,1): True | slice dims [0, 0, 141]
+  p=3 m=6 J=1: dim I = 393, |Z| = 393 | W_0 contains I(5,0): True | W_1 contains I(5,1): True | W_2 contains I(5,2): True | slice dims [51, 141, 201]
+  p=3 m=6 J=2: dim I = 573, |Z| = 573 | W_0 contains I(5,1): True | W_1 contains I(5,2): True | W_2 contains I(5,3): True | slice dims [141, 201, 231]
+  p=3 m=6 J=3: dim I = 673, |Z| = 673 | W_0 contains I(5,2): True | W_1 contains I(5,3): True | W_2 contains I(5,4): True | slice dims [201, 231, 241]
+  p=3 m=6 J=4: dim I = 715, |Z| = 715 | W_0 contains I(5,3): True | W_1 contains I(5,4): True | W_2 contains I(5,5): True | slice dims [231, 241, 243]
+  p=3 m=6 J=5: dim I = 727, |Z| = 727 | W_0 contains I(5,4): True | W_1 contains I(5,5): True | W_2 contains I(5,6): True | slice dims [241, 243, 243]
+  p=3 m=6 J=6: dim I = 729, |Z| = 729
+  p=5 m=5 J=0: dim I = 51, |Z| = 51 | W_2 contains I(4,1): True | slice dims [0, 0, 51]
+  p=5 m=5 J=1: dim I = 141, |Z| = 141 | W_0 contains I(4,0): True | W_1 contains I(4,1): True | W_2 contains I(4,2): True | slice dims [19, 51, 71]
+  p=5 m=5 J=2: dim I = 201, |Z| = 201 | W_0 contains I(4,1): True | W_1 contains I(4,2): True | W_2 contains I(4,3): True | slice dims [51, 71, 79]
+  p=5 m=5 J=3: dim I = 231, |Z| = 231 | W_0 contains I(4,2): True | W_1 contains I(4,3): True | W_2 contains I(4,4): True | slice dims [71, 79, 81]
+  p=5 m=5 J=4: dim I = 241, |Z| = 241 | W_0 contains I(4,3): True | W_1 contains I(4,4): True | W_2 contains I(4,5): True | slice dims [79, 81, 81]
+  p=5 m=5 J=5: dim I = 243, |Z| = 243
+  p=7 m=5 J=0: dim I = 51, |Z| = 51 | W_2 contains I(4,1): True | slice dims [0, 0, 51]
+  p=7 m=5 J=1: dim I = 141, |Z| = 141 | W_0 contains I(4,0): True | W_1 contains I(4,1): True | W_2 contains I(4,2): True | slice dims [19, 51, 71]
+  p=7 m=5 J=2: dim I = 201, |Z| = 201 | W_0 contains I(4,1): True | W_1 contains I(4,2): True | W_2 contains I(4,3): True | slice dims [51, 71, 79]
+  p=7 m=5 J=3: dim I = 231, |Z| = 231 | W_0 contains I(4,2): True | W_1 contains I(4,3): True | W_2 contains I(4,4): True | slice dims [71, 79, 81]
+  p=7 m=5 J=4: dim I = 241, |Z| = 241 | W_0 contains I(4,3): True | W_1 contains I(4,4): True | W_2 contains I(4,5): True | slice dims [79, 81, 81]
+  p=7 m=5 J=5: dim I = 243, |Z| = 243
+  94 ideals (p = 2, 3 with m <= 6; p = 5, 7 with m <= 5), 172 slice inclusions
+(C) the identities and witnesses of the proof (over F_10007, m = 5; index 1 of the file is index 0 here)
+  y_c^2 = y_1(y_c - y_1) + D(1,c);  Delta(a,b,c) = D(1,a)(y_c-y_b) - D(1,b)(y_c-y_a) + D(1,c)(y_b-y_a);
+  D(1,b) - D(1,a) = -y_1(y_b-y_a) + y_b^2 - y_a^2;  [y_1^2] Delta(y_1,y_a,y_b) = y_b - y_a:  3 index triples each
+(D) (iv)-(vi): the ideal of the matchings and the number
+  k=0 p=2: (D_J) = I(1,1): True; dim = 3; |Z_1| = 3; tuples of sum 0 = 3; Qe_k(4) = 3
+  k=0 p=3: (D_J) = I(1,1): True; dim = 3; |Z_1| = 3; tuples of sum 0 = 3; Qe_k(4) = 3
+  k=0 p=5: (D_J) = I(1,1): True; dim = 3; |Z_1| = 3; tuples of sum 0 = 3; Qe_k(4) = 3
+  k=1 p=2: (D_J) = I(3,1): True; dim = 19; |Z_1| = 19; tuples of sum 0 = 19; Qe_k(4) = 19
+  k=1 p=3: (D_J) = I(3,1): True; dim = 19; |Z_1| = 19; tuples of sum 0 = 19; Qe_k(4) = 19
+  k=1 p=5: (D_J) = I(3,1): True; dim = 19; |Z_1| = 19; tuples of sum 0 = 19; Qe_k(4) = 19
+  k=2 p=2: (D_J) = I(5,1): True; dim = 141; |Z_1| = 141; tuples of sum 0 = 141; Qe_k(4) = 141
+  k=2 p=3: (D_J) = I(5,1): True; dim = 141; |Z_1| = 141; tuples of sum 0 = 141; Qe_k(4) = 141
+  k=2 p=5: (D_J) = I(5,1): True; dim = 141; |Z_1| = 141; tuples of sum 0 = 141; Qe_k(4) = 141
+(E) controls
+  W_0 contains I(m-1, J) (one step too far): false in 30 of 30 cases
+  I(3,0) without the Vandermonde generators, p=2: dim 6 against |Z| = 7
+  I(5,0) without the Vandermonde generators, p=2: dim 45 against |Z| = 51
+  I(3,0) without the Vandermonde generators, p=3: dim 6 against |Z| = 7
+  I(5,0) without the Vandermonde generators, p=3: dim 45 against |Z| = 51
+  I(3,0) without the Vandermonde generators, p=5: dim 6 against |Z| = 7
+  I(5,0) without the Vandermonde generators, p=5: dim 45 against |Z| = 51
+  smaller than |Z| in 6 of 6 cases
+  with a^2 + ab + b^2 in place of D, p=2: dim I(3,1) = 19 against 19
+  with a^2 + ab + b^2 in place of D, p=2: dim I(5,1) = 141 against 141
+  with a^2 + ab + b^2 in place of D, p=3: dim I(3,1) = 18 against 19
+  with a^2 + ab + b^2 in place of D, p=3: dim I(5,1) = 138 against 141
+  with a^2 + ab + b^2 in place of D, p=5: dim I(3,1) = 19 against 19
+  with a^2 + ab + b^2 in place of D, p=5: dim I(5,1) = 151 against 141
+  with a^2 + ab + b^2 in place of D, p=7: dim I(3,1) = 19 against 19
+  with a^2 + ab + b^2 in place of D, p=7: dim I(5,1) = 151 against 141
+  differs in 4 of 8 cases
+checks 195, failures 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=146336 t=7s

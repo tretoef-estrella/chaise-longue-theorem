@@ -1,0 +1,126 @@
+ok   enumerator: 163 interlaced pairs in the 18 cells (chkE6: 163)
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=1 m=1
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=1 m=1
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=1 m=1
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=1 m=1
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=1 m=2
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=1 m=2
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=1 m=2
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=1 m=2
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=1 m=3
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=1 m=3
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=1 m=3
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=1 m=3
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=1 m=4
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=1 m=4
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=1 m=4
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=1 m=4
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=1 m=5
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=1 m=5
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=1 m=5
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=1 m=5
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=1 m=6
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=1 m=6
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=1 m=6
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=1 m=6
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=1 m=7
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=1 m=7
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=1 m=7
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=1 m=7
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=2 m=1
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=2 m=1
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=2 m=1
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=2 m=1
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=2 m=2
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=2 m=2
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=2 m=2
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=2 m=2
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=2 m=3
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=2 m=3
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=2 m=3
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=2 m=3
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=2 m=4
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=2 m=4
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=2 m=4
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=2 m=4
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=2 m=5
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=2 m=5
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=2 m=5
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=2 m=5
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=2 m=6
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=2 m=6
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=2 m=6
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=2 m=6
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=3 m=1
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=3 m=1
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=3 m=1
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=3 m=1
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=3 m=2
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=3 m=2
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=3 m=2
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=3 m=2
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=3 m=3
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=3 m=3
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=3 m=3
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=3 m=3
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=3 m=4
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=3 m=4
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=3 m=4
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=3 m=4
+ok   (L1) F_Lambda(mu~,d) <= F_Lambda(mu,d) for mu <= mu~ in the same component: h=3 m=5
+ok   (L2) F_Lambda(nu,d) <= F_Lambda(nu - e_j, 1-d): h=3 m=5
+ok   (E) option p in Lambda => some option p' >= p of (nu - e_j, 1-d) in Lambda, and the explicit p' of the proof works: h=3 m=5
+ok   (L3) every layer Lambda_i (i = 0..r) is an interlaced pair of level m-1, decreasing in i, empty at i = r: h=3 m=5
+   cases: (L1) 3201, (L2) 1476, (E) 4856, (L3) 1008 layers
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=1 m=1 (9 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=1 m=1
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=1 m=2 (12 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=1 m=2
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=1 m=3 (15 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=1 m=3
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=1 m=4 (18 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=1 m=4
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=1 m=5 (21 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=1 m=5
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=1 m=6 (24 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=1 m=6
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=2 m=1 (15 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=2 m=1
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=2 m=2 (25 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=2 m=2
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=2 m=3 (35 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=2 m=3
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=2 m=4 (55 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=2 m=4
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=3 m=1 (21 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=3 m=1
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=3 m=2 (35 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=3 m=2
+ok   (L4) (Z_Lambda)_{>i} = Z_{Lambda_i} by points, every interlaced pair, i = 0..r-1: h=3 m=3 (63 layers)
+ok   (L5) |Z_Lambda| = sum_i |Z_{Lambda_i}|: h=3 m=3
+ok   (R1),(R2),(R4) h=1 k=0: Z_{(0,0)} at level 2 = closed tuples; |.| = 3 = QkEven k (2h+2) = 3; |Z_root| at level 1 = 3
+ok   (R3) h=1 k=0: layer 0 of {(empty,0)} at level 2 is {((1),0),(empty,1)}, layer 1 is empty
+ok   (R1),(R2),(R4) h=1 k=1: Z_{(0,0)} at level 4 = closed tuples; |.| = 19 = QkEven k (2h+2) = 19; |Z_root| at level 3 = 19
+ok   (R3) h=1 k=1: layer 0 of {(empty,0)} at level 4 is {((1),0),(empty,1)}, layer 1 is empty
+ok   (R1),(R2),(R4) h=1 k=2: Z_{(0,0)} at level 6 = closed tuples; |.| = 141 = QkEven k (2h+2) = 141; |Z_root| at level 5 = 141
+ok   (R3) h=1 k=2: layer 0 of {(empty,0)} at level 6 is {((1),0),(empty,1)}, layer 1 is empty
+ok   (R1),(R2),(R4) h=1 k=3: Z_{(0,0)} at level 8 = closed tuples; |.| = 1107 = QkEven k (2h+2) = 1107; |Z_root| at level 7 = 1107
+ok   (R3) h=1 k=3: layer 0 of {(empty,0)} at level 8 is {((1),0),(empty,1)}, layer 1 is empty
+ok   (R1),(R2),(R4) h=2 k=0: Z_{(0,0)} at level 2 = closed tuples; |.| = 5 = QkEven k (2h+2) = 5; |Z_root| at level 1 = 5
+ok   (R3) h=2 k=0: layer 0 of {(empty,0)} at level 2 is {((1),0),(empty,1)}, layer 1 is empty
+ok   (R1),(R2),(R4) h=2 k=1: Z_{(0,0)} at level 4 = closed tuples; |.| = 61 = QkEven k (2h+2) = 61; |Z_root| at level 3 = 61
+ok   (R3) h=2 k=1: layer 0 of {(empty,0)} at level 4 is {((1),0),(empty,1)}, layer 1 is empty
+ok   (R1),(R2),(R4) h=2 k=2: Z_{(0,0)} at level 6 = closed tuples; |.| = 1001 = QkEven k (2h+2) = 1001; |Z_root| at level 5 = 1001
+ok   (R3) h=2 k=2: layer 0 of {(empty,0)} at level 6 is {((1),0),(empty,1)}, layer 1 is empty
+ok   (R1),(R2),(R4) h=3 k=0: Z_{(0,0)} at level 2 = closed tuples; |.| = 7 = QkEven k (2h+2) = 7; |Z_root| at level 1 = 7
+ok   (R3) h=3 k=0: layer 0 of {(empty,0)} at level 2 is {((1),0),(empty,1)}, layer 1 is empty
+ok   (R1),(R2),(R4) h=3 k=1: Z_{(0,0)} at level 4 = closed tuples; |.| = 127 = QkEven k (2h+2) = 127; |Z_root| at level 3 = 127
+ok   (R3) h=3 k=1: layer 0 of {(empty,0)} at level 4 is {((1),0),(empty,1)}, layer 1 is empty
+   QkEven: (k,m) = (1,4),(2,4),(1,6),(2,6),(1,8): [19, 141, 61, 1001, 127]
+ok   values N_3(4) = 19, N_3(6) = 141, N_5(4) = 61 (paper v11 gate: 19, 141, 61)
+ok   control K1: layers defined without the zero option differ at i = 2h for Lambda = Sh_m (in 18 of 18 cells)
+ok   control K2: |Z_{((1),0)}| at level 2k+1 is strictly smaller than N_r(2k+2) (in 7 of 7 cells)
+   report K3 (pairs of down-sets without (D2)): (h, m, how many, violate (L2), have a non-interlaced layer): [(1, 3, 4, 2, 2), (1, 4, 6, 3, 3), (2, 3, 9, 9, 9), (2, 4, 17, 17, 17), (3, 3, 11, 11, 11)]
+TOTAL checks 120, failures 0
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=11264 t=4s
