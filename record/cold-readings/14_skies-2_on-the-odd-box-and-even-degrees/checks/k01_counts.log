@@ -1,0 +1,13 @@
+k m | (a) DS def | (b) closed tuples | (c) N_{m-1}(2k+2) | (d) DS Remark 4.4 | control (e) -1 forbidden | control (f) N_{m+1}
+1 4 | 19 | 19 | 19 | 19 | 6 (differs: True) | 61 (differs: True) | agree: True
+1 6 | 61 | 61 | 61 | 61 | 36 (differs: True) | 127 (differs: True) | agree: True
+1 8 | 127 | 127 | 127 | 127 | 90 (differs: True) | 217 (differs: True) | agree: True
+1 10 | 217 | 217 | 217 | 217 | 168 (differs: True) | 331 (differs: True) | agree: True
+1 12 | 331 | 331 | 331 | 331 | 270 (differs: True) | 469 (differs: True) | agree: True
+1 14 | 469 | 469 | 469 | 469 | 396 (differs: True) | 631 (differs: True) | agree: True
+2 4 | 141 | 141 | 141 | 141 | 20 (differs: True) | 1001 (differs: True) | agree: True
+2 6 | 1001 | 1001 | 1001 | 1001 | 400 (differs: True) | 3301 (differs: True) | agree: True
+2 8 | 3301 | 3301 | 3301 | 3301 | 1860 (differs: True) | 7761 (differs: True) | agree: True
+3 4 | 1107 | 1107 | 1107 | 1107 | 70 (differs: True) | 18733 (differs: True) | agree: True
+ALL AGREE: True
+VIGIA-FIN-OK exit=0 pico_kb=17440 t=0s

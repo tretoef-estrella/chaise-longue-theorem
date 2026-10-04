@@ -1,0 +1,6 @@
+cells 18 | interlaced pairs (incl. empty), summed over cells 133 | non-interlaced pairs of down-sets 176
+(pair,cell,prime) triples 400 | dim<|Z| 0 | dim=|Z| 400 | dim>|Z| 0
+Prop 6.1 containments tested 1849 failures 0 | slices with dim W != |Z_layer| 0
+shifted-slice control: fail 540 of 1327
+non-interlaced control (pair,cell,prime): dim != |Z| in 510 of 510 ; of which dim<|Z|: 0
+VIGIA-FIN-OK exit=0 pico_kb=4576 t=0s

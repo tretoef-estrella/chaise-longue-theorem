@@ -1,0 +1,16 @@
+(k,r,p)=(1,15,2): 3 generators, dim (D_J) = 631, N_r(2k+2) = 631 : EQUAL  [0.1s]
+(k,r,p)=(1,25,5): 3 generators, dim (D_J) = 1801, N_r(2k+2) = 1801 : EQUAL  [0.5s]
+(k,r,p)=(1,27,3): 3 generators, dim (D_J) = 2107, N_r(2k+2) = 2107 : EQUAL  [0.6s]
+(k,r,p)=(1,13,13): 3 generators, dim (D_J) = 469, N_r(2k+2) = 469 : EQUAL  [0.0s]
+(k,r,p)=(2,7,2): 15 generators, dim (D_J) = 3301, N_r(2k+2) = 3301 : EQUAL  [2.3s]
+(k,r,p)=(2,7,7): 15 generators, dim (D_J) = 3301, N_r(2k+2) = 3301 : EQUAL  [2.7s]
+T3, p=2, m <= 7: 35 ideals I(m,J): dim<|Z|: 0, dim=|Z|: 35, dim>|Z|: 0 ; slice containments tested 91, failures 0 ; dim I(m,J) != dim V_Lambda(Def 4.1): 0  [7.8s]
+T3, p=3, m <= 7: 35 ideals I(m,J): dim<|Z|: 0, dim=|Z|: 35, dim>|Z|: 0 ; slice containments tested 91, failures 0 ; dim I(m,J) != dim V_Lambda(Def 4.1): 0  [8.2s]
+T3, p=101, m <= 7: 35 ideals I(m,J): dim<|Z|: 0, dim=|Z|: 35, dim>|Z|: 0 ; slice containments tested 91, failures 0 ; dim I(m,J) != dim V_Lambda(Def 4.1): 0  [8.7s]
+control: I(3,1) with the unsigned D, p=2: dim = 19 against |Z| = 19 (same)
+control: I(3,1) with the unsigned D, p=3: dim = 18 against |Z| = 19 (differs)
+control: I(3,1) with the unsigned D, p=101: dim = 19 against |Z| = 19 (same)
+control: I(5,1) with the unsigned D, p=2: dim = 141 against |Z| = 141 (same)
+control: I(5,1) with the unsigned D, p=3: dim = 138 against |Z| = 141 (differs)
+control: I(5,1) with the unsigned D, p=101: dim = 151 against |Z| = 141 (differs)
+VIGIA-FIN-OK exit=0 pico_kb=271936 t=30s

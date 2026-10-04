@@ -1,0 +1,27 @@
+CONTROL RUN: wrong border sets (E_l instead of E_{l+1} in (M,eps=1); E_l instead of E_{l-1} in (R,eps=1,mu_rho=1))
+CELL r=5 m=4 p=2: 10 non-empty interlaced pairs  [0.2s]
+   A eps=0                      cases     39 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases     18 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases      9 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases     33 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 33 | f not in V_Lambda: 0
+   M eps=1 (t=>=1)              cases      9 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 9 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=>=2)     cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 1 | f not in V_Lambda: 0
+   R ordinary eps=0             cases     27 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=1             cases      6 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases     21 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      8 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=>=1)              cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CONTROL RUN: wrong border sets (E_l instead of E_{l+1} in (M,eps=1); E_l instead of E_{l-1} in (R,eps=1,mu_rho=1))
+CELL r=3 m=5 p=2: 6 non-empty interlaced pairs  [0.0s]
+   A eps=0                      cases     60 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases     48 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases     15 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=1)       cases      6 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 6 | f not in V_Lambda: 0
+   R ordinary eps=0             cases     36 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=1             cases     12 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases     39 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases     18 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   zero G (skipped)                  6
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+VIGIA-FIN-OK exit=0 pico_kb=6400 t=0s

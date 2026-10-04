@@ -1,0 +1,82 @@
+q=2 (alpha,beta)=(1,1) p=2: |BPar|=2, down-sets tested 2 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 2   dim>|Z|: 0   [0.0s]
+   root balanced a=1: dim I^bal = 2, N_bal(a,q) = 2
+q=2 (alpha,beta)=(2,1) p=2: |BPar|=2, down-sets tested 2 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 2   dim>|Z|: 0   [0.0s]
+   root phantom a=1: dim I^ph = 6, N_ph(a,q) = 6
+q=2 (alpha,beta)=(2,2) p=2: |BPar|=3, down-sets tested 3 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 3   dim>|Z|: 0   [0.0s]
+   root balanced a=2: dim I^bal = 6, N_bal(a,q) = 6
+q=2 (alpha,beta)=(3,2) p=2: |BPar|=3, down-sets tested 3 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 3   dim>|Z|: 0   [0.0s]
+   root phantom a=2: dim I^ph = 20, N_ph(a,q) = 20
+q=2 (alpha,beta)=(3,3) p=2: |BPar|=4, down-sets tested 4 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 4   dim>|Z|: 0   [0.0s]
+   root balanced a=3: dim I^bal = 20, N_bal(a,q) = 20
+q=2 (alpha,beta)=(4,3) p=2: |BPar|=4, down-sets tested 4 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 4   dim>|Z|: 0   [0.0s]
+   root phantom a=3: dim I^ph = 70, N_ph(a,q) = 70
+q=2 (alpha,beta)=(4,4) p=2: |BPar|=5, down-sets tested 5 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 5   dim>|Z|: 0   [0.0s]
+   root balanced a=4: dim I^bal = 70, N_bal(a,q) = 70
+q=4 (alpha,beta)=(1,1) p=2: |BPar|=2, down-sets tested 2 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 2   dim>|Z|: 0   [0.0s]
+   root balanced a=1: dim I^bal = 4, N_bal(a,q) = 4
+q=4 (alpha,beta)=(2,1) p=2: |BPar|=3, down-sets tested 3 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 3   dim>|Z|: 0   [0.0s]
+   root phantom a=1: dim I^ph = 28, N_ph(a,q) = 28
+q=4 (alpha,beta)=(2,2) p=2: |BPar|=6, down-sets tested 7 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 7   dim>|Z|: 0   [0.0s]
+   root balanced a=2: dim I^bal = 28, N_bal(a,q) = 28
+q=4 (alpha,beta)=(3,2) p=2: |BPar|=8, down-sets tested 12 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 12   dim>|Z|: 0   [0.6s]
+   root phantom a=2: dim I^ph = 256, N_ph(a,q) = 256
+q=8 (alpha,beta)=(1,1) p=2: |BPar|=2, down-sets tested 2 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 2   dim>|Z|: 0   [0.0s]
+   root balanced a=1: dim I^bal = 8, N_bal(a,q) = 8
+q=8 (alpha,beta)=(2,1) p=2: |BPar|=3, down-sets tested 3 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 3   dim>|Z|: 0   [0.0s]
+   root phantom a=1: dim I^ph = 120, N_ph(a,q) = 120
+q=8 (alpha,beta)=(2,2) p=2: |BPar|=6, down-sets tested 7 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 7   dim>|Z|: 0   [2.7s]
+   root balanced a=2: dim I^bal = 120, N_bal(a,q) = 120
+q=4 (alpha,beta)=(2,2) p=5: |BPar|=6, down-sets tested 7 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 1   dim>|Z|: 6   [0.0s]
+   root balanced a=2: dim I^bal = 58, N_bal(a,q) = 28
+q=4 (alpha,beta)=(3,2) p=5: |BPar|=8, down-sets tested 12 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 1   dim>|Z|: 11   [0.7s]
+   root phantom a=2: dim I^ph = 436, N_ph(a,q) = 256
+q=6 (alpha,beta)=(1,1) p=7: |BPar|=2, down-sets tested 2 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 1   dim>|Z|: 1   [0.0s]
+   root balanced a=1: dim I^bal = 10, N_bal(a,q) = 6
+q=6 (alpha,beta)=(2,1) p=7: |BPar|=3, down-sets tested 3 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 1   dim>|Z|: 2   [0.0s]
+   root phantom a=1: dim I^ph = 102, N_ph(a,q) = 66
+q=6 (alpha,beta)=(2,2) p=7: |BPar|=6, down-sets tested 7 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 1   dim>|Z|: 6   [0.4s]
+   root balanced a=2: dim I^bal = 174, N_bal(a,q) = 66
+q=3 (alpha,beta)=(2,2) p=3: |BPar|=5, down-sets tested 6 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 6   dim>|Z|: 0   [0.0s]
+   root balanced a=2: dim I^bal = 15, N_bal(a,q) = 15
+q=3 (alpha,beta)=(3,2) p=3: |BPar|=6, down-sets tested 7 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 7   dim>|Z|: 0   [0.0s]
+   root phantom a=2: dim I^ph = 93, N_ph(a,q) = 93
+q=4 (alpha,beta)=(1,1) p=3: |BPar|=2, down-sets tested 2 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: False
+   dim<|Z|: 0   dim=|Z|: 1   dim>|Z|: 1   [0.0s]
+   root balanced a=1: dim I^bal = 6, N_bal(a,q) = 4
+q=4 (alpha,beta)=(2,1) p=3: |BPar|=3, down-sets tested 3 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: False
+   dim<|Z|: 0   dim=|Z|: 1   dim>|Z|: 2   [0.0s]
+   root phantom a=1: dim I^ph = 36, N_ph(a,q) = 28
+q=4 (alpha,beta)=(2,2) p=3: |BPar|=6, down-sets tested 7 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: False
+   dim<|Z|: 0   dim=|Z|: 1   dim>|Z|: 6   [0.0s]
+   root balanced a=2: dim I^bal = 54, N_bal(a,q) = 28
+q=6 (alpha,beta)=(1,1) p=2: |BPar|=2, down-sets tested 2 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: False
+   dim<|Z|: 0   dim=|Z|: 1   dim>|Z|: 1   [0.0s]
+   root balanced a=1: dim I^bal = 12, N_bal(a,q) = 6
+q=6 (alpha,beta)=(2,2) p=2: |BPar|=6, down-sets tested 7 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: False
+   dim<|Z|: 0   dim=|Z|: 1   dim>|Z|: 6   [0.4s]
+   root balanced a=2: dim I^bal = 232, N_bal(a,q) = 66
+q=4 (alpha,beta)=(3,3) p=2: |BPar|=12, down-sets tested 25 (ALL non-empty down-sets); hypothesis C(q-1,t)!=0 mod p for all t: True
+   dim<|Z|: 0   dim=|Z|: 25   dim>|Z|: 0   [24.1s]
+   root balanced a=3: dim I^bal = 256, N_bal(a,q) = 256
+VIGIA-FIN-OK exit=0 pico_kb=304640 t=30s

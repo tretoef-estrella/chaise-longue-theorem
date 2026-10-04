@@ -1,0 +1,27 @@
+(k,m,p)=(1,6,2): q=2 r'=3 over F_4, 27 colourings, |Gamma| = 61 (brute force), N_{m-1}(2k+2) = 61
+   colouring 'all 1' (the block is the conjecture at (k, 2^v) = (1, 2) itself): dim = 1 ; N_{q-1}(2k+2) = 1
+   control (can fail): the same colouring with one matching removed: dim = 1 (< 1: False)
+   compatible colourings by (|C_1|, 0 in C_1): [((0, False), 6), ((2, False), 6), ((2, True), 6), ((4, True), 1)]
+   colourings tested 27: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 19, with non-zero ideal 19 ; sum of dims = 61  [0.0s]
+(k,m,p)=(2,6,2): q=2 r'=3 over F_4, 243 colourings, |Gamma| = 1001 (brute force), N_{m-1}(2k+2) = 1001
+   colouring 'all 1' (the block is the conjecture at (k, 2^v) = (2, 2) itself): dim = 1 ; N_{q-1}(2k+2) = 1
+   control (can fail): the same colouring with one matching removed: dim = 1 (< 1: False)
+   compatible colourings by (|C_1|, 0 in C_1): [((0, False), 20), ((2, False), 60), ((2, True), 30), ((4, False), 10), ((4, True), 20), ((6, True), 1)]
+   colourings tested 243: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 141, with non-zero ideal 141 ; sum of dims = 1001  [0.3s]
+(k,m,p)=(1,12,2): q=4 r'=3 over F_4, 27 colourings, |Gamma| = 331 (brute force), N_{m-1}(2k+2) = 331
+   colouring 'all 1' (the block is the conjecture at (k, 2^v) = (1, 4) itself): dim = 19 ; N_{q-1}(2k+2) = 19
+   control (can fail): the same colouring with one matching removed: dim = 15 (< 19: True)
+   compatible colourings by (|C_1|, 0 in C_1): [((0, False), 6), ((2, False), 6), ((2, True), 6), ((4, True), 1)]
+   colourings tested 27: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 19, with non-zero ideal 19 ; sum of dims = 331  [0.2s]
+(k,m,p)=(1,24,2): q=8 r'=3 over F_4, 27 colourings, |Gamma| = 1519 (brute force), N_{m-1}(2k+2) = 1519
+   colouring 'all 1' (the block is the conjecture at (k, 2^v) = (1, 8) itself): dim = 127 ; N_{q-1}(2k+2) = 127
+   control (can fail): the same colouring with one matching removed: dim = 91 (< 127: True)
+   compatible colourings by (|C_1|, 0 in C_1): [((0, False), 6), ((2, False), 6), ((2, True), 6), ((4, True), 1)]
+   colourings tested 27: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 19, with non-zero ideal 19 ; sum of dims = 1519  [13.8s]
+(k,m,p)=(2,12,2): q=4 r'=3 over F_4, 243 colourings, |Gamma| = 15101 (brute force), N_{m-1}(2k+2) = 15101
+   colouring 'all 1' (the block is the conjecture at (k, 2^v) = (2, 4) itself): dim = 141 ; N_{q-1}(2k+2) = 141
+   control (can fail): the same colouring with one matching removed: dim = 140 (< 141: True)
+   compatible colourings by (|C_1|, 0 in C_1): [((0, False), 2), ((2, False), 2), ((2, True), 1), ((4, False), 2), ((4, True), 1), ((6, True), 1)]
+   colourings tested 21: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 9, with non-zero ideal 9 ; sum of dims = 1133  [20.8s]
+   (only the colourings with non-decreasing exponents were tested: one per orbit of S_{2k+1}; the sum of dims is over these only)
+VIGIA-FIN-OK exit=0 pico_kb=934912 t=35s

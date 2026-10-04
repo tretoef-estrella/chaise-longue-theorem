@@ -1,0 +1,171 @@
+CELL r=3 m=2 p=2: 3 non-empty interlaced pairs  [0.0s]
+   A eps=0                      cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases      2 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=3 m=3 p=2: 4 non-empty interlaced pairs  [0.0s]
+   A eps=0                      cases      2 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases      2 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases      3 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=1)       cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases      2 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases      3 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=3 m=4 p=2: 5 non-empty interlaced pairs  [0.0s]
+   A eps=0                      cases     15 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases      6 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases     12 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=>=1)              cases      4 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases      9 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=1             cases      3 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases      9 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      6 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=>=1)              cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=3 m=5 p=2: 6 non-empty interlaced pairs  [0.0s]
+   A eps=0                      cases     60 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases     48 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases     15 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=1)       cases      6 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases     36 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=1             cases     12 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases     39 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases     18 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   zero G (skipped)                  6
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=3 m=6 p=2: 7 non-empty interlaced pairs  [0.4s]
+   A eps=0                      cases    375 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases    240 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases     90 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=>=1)              cases     60 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases    195 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=1             cases     90 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases    195 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases    105 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=>=1)              cases     10 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   zero G (skipped)                 37
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=5 m=2 p=2: 4 non-empty interlaced pairs  [0.0s]
+   A eps=0                      cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases      3 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=5 m=3 p=2: 6 non-empty interlaced pairs  [0.0s]
+   A eps=0                      cases      4 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases      3 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases      7 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=1)       cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases      5 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases      5 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=5 m=4 p=2: 10 non-empty interlaced pairs  [0.2s]
+   A eps=0                      cases     39 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases     18 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases      9 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases     33 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=>=1)              cases      9 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=>=2)     cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases     27 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=1             cases      6 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases     21 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      8 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=>=1)              cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=7 m=2 p=2: 4 non-empty interlaced pairs  [0.0s]
+   A eps=0                      cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases      3 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=7 m=3 p=2: 8 non-empty interlaced pairs  [0.0s]
+   A eps=0                      cases      4 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases      4 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases     11 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases      2 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=1)       cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases      7 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases      7 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=9 m=3 p=2: 8 non-empty interlaced pairs  [0.1s]
+   A eps=0                      cases      4 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases      4 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases     11 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases      2 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=1)       cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases      7 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases      7 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=3 m=5 p=101: 6 non-empty interlaced pairs  [0.0s]
+   A eps=0                      cases     60 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases     48 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases     15 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=1)       cases      6 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases     36 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=1             cases     12 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases     39 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases     18 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   zero G (skipped)                  6
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=5 m=4 p=101: 10 non-empty interlaced pairs  [0.2s]
+   A eps=0                      cases     39 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases     18 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases      9 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases     33 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=>=1)              cases      9 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=>=2)     cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases     27 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=1             cases      6 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases     21 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      8 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=>=1)              cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=7 m=3 p=101: 8 non-empty interlaced pairs  [0.0s]
+   A eps=0                      cases      4 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases      4 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases     11 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases      2 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=1)       cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases      7 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases      7 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=7 m=4 p=2: 14 non-empty interlaced pairs  [2.6s]
+   A eps=0                      cases     54 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases     23 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases     18 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases     50 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=>=1)              cases     13 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=>=2)     cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases     47 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=1             cases      9 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases     31 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases     11 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=>=1)              cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): determined uniquely by (F4) whenever the B-term is non-zero
+CELL r=5 m=5 p=2: 14 non-empty interlaced pairs  [6.3s]
+   A eps=0                      cases    252 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   A eps=1                      cases    157 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=0                      cases     87 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=0)                cases     30 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   M eps=1 (t=>=1)              cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=1)       cases      7 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R eps=1 mu_rho=1 (l=>=2)     cases      4 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=0             cases    186 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   R ordinary eps=1             cases     40 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=0                      cases    123 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=0)                cases     38 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   Z eps=1 (t=>=1)              cases      1 | pattern not valid / shape not in Lambda: 0 | deg_{y1} f > r-Phi: 0 | top coeff != +-G: 0 | f not in V_Lambda: 0
+   theta of (M,eps=1): ['ambiguous']
+VIGIA-FIN-OK exit=0 pico_kb=94208 t=10s

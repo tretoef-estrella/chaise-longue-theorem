@@ -1,0 +1,33 @@
+(k,m,p)=(1,6,3): q=3 r'=2 omega=2, 8 colourings, |Gamma| = 61 (brute force), N_{m-1}(2k+2) = 61
+   colouring 'all -1' (0 in C_{-1}, |C_{-1}| = 4): dim = 19 ; N_q(2k+2) = (O) at (k,q) = 19
+   control (can fail): the same colouring with one matching removed: dim = 15 (< 19: True)
+   colourings tested 8: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 8, with non-zero ideal 8 ; sum of dims = 61  [0.0s]
+(k,m,p)=(2,6,3): q=3 r'=2 omega=2, 32 colourings, |Gamma| = 1001 (brute force), N_{m-1}(2k+2) = 1001
+   colouring 'all -1' (0 in C_{-1}, |C_{-1}| = 6): dim = 141 ; N_q(2k+2) = (O) at (k,q) = 141
+   control (can fail): the same colouring with one matching removed: dim = 140 (< 141: True)
+   colourings tested 32: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 32, with non-zero ideal 32 ; sum of dims = 1001  [0.7s]
+(k,m,p)=(1,10,5): q=5 r'=2 omega=4, 8 colourings, |Gamma| = 217 (brute force), N_{m-1}(2k+2) = 217
+   colouring 'all -1' (0 in C_{-1}, |C_{-1}| = 4): dim = 61 ; N_q(2k+2) = (O) at (k,q) = 61
+   control (can fail): the same colouring with one matching removed: dim = 45 (< 61: True)
+   colourings tested 8: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 8, with non-zero ideal 8 ; sum of dims = 217  [0.1s]
+(k,m,p)=(1,20,5): q=5 r'=4 omega=2, 64 colourings, |Gamma| = 1027 (brute force), N_{m-1}(2k+2) = 1027
+   colouring 'all -1' (0 in C_{-1}, |C_{-1}| = 4): dim = 61 ; N_q(2k+2) = (O) at (k,q) = 61
+   control (can fail): the same colouring with one matching removed: dim = 45 (< 61: True)
+   colourings tested 64: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 38, with non-zero ideal 38 ; sum of dims = 1027  [0.4s]
+(k,m,p)=(1,14,7): q=7 r'=2 omega=6, 8 colourings, |Gamma| = 469 (brute force), N_{m-1}(2k+2) = 469
+   colouring 'all -1' (0 in C_{-1}, |C_{-1}| = 4): dim = 127 ; N_q(2k+2) = (O) at (k,q) = 127
+   control (can fail): the same colouring with one matching removed: dim = 91 (< 127: True)
+   colourings tested 8: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 8, with non-zero ideal 8 ; sum of dims = 469  [0.8s]
+(k,m,p)=(1,18,3): q=9 r'=2 omega=2, 8 colourings, |Gamma| = 817 (brute force), N_{m-1}(2k+2) = 817
+   colouring 'all -1' (0 in C_{-1}, |C_{-1}| = 4): dim = 217 ; N_q(2k+2) = (O) at (k,q) = 217
+   control (can fail): the same colouring with one matching removed: dim = 153 (< 217: True)
+   colourings tested 8: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 8, with non-zero ideal 8 ; sum of dims = 817  [3.6s]
+(k,m,p)=(1,42,7): q=7 r'=6 omega=3, 216 colourings, |Gamma| = 4921 (brute force), N_{m-1}(2k+2) = 4921
+   colouring 'all -1' (0 in C_{-1}, |C_{-1}| = 4): dim = 127 ; N_q(2k+2) = (O) at (k,q) = 127
+   control (can fail): the same colouring with one matching removed: dim = 91 (< 127: True)
+   colourings tested 216: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 92, with non-zero ideal 92 ; sum of dims = 4921  [5.9s]
+(k,m,p)=(2,10,5): q=5 r'=2 omega=4, 32 colourings, |Gamma| = 7761 (brute force), N_{m-1}(2k+2) = 7761
+   colouring 'all -1' (0 in C_{-1}, |C_{-1}| = 6): dim = 1001 ; N_q(2k+2) = (O) at (k,q) = 1001
+   control (can fail): the same colouring with one matching removed: dim = 976 (< 1001: True)
+   colourings tested 1: dim != |Gamma_c| in 0 ; product formula != |Gamma_c| in 0 ; colourings with Gamma_c non-empty 1, with non-zero ideal 1 ; sum of dims = 1001  [60.0s]
+VIGIA-FIN-OK exit=0 pico_kb=954368 t=72s

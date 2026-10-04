@@ -1,0 +1,60 @@
+CELL r=7 m=4 h=3 primes=[2, 7]
+ shapes of level m: () (2) (1,1) (4) (3,1) (2,2) (2,1,1) (1)* (3)* (2,1)* (1,1,1)*
+ shapes with no point: none
+ interlaced pairs: 15 (incl. empty); pairs of down-sets not interlaced: 25
+ (G2) Lemma 2.3/2.4 on 15 interlaced pairs: chain failures 0, layers not interlaced 0, fibre mismatches 0
+ (G2-control) non-interlaced pairs of down-sets: 25 of 25 break the chain, 25 of 25 have a non-interlaced layer
+ pattern products per shape (up to sign): ():3 (2):6 (1,1):6 (4):1 (3,1):6 (2,2):3 (2,1,1):4 (1)*:7 (3)*:6 (2,1)*:4 (1,1,1)*:1  [0.0s]
+ non-homogeneous products: 0
+ p=2 (G1) Theorem 6.1 on 15 interlaced pairs: dim<|Z|: 0   dim=|Z|: 15   dim>|Z|: 0   [2.7s]
+ p=2 (G3) Prop 6.1: containments tested 98, FAILURES 0; slices with dim W != |Z_{Lambda_i}|: 0
+ p=2 (G3-control) shifted slice r-2-i: 34 of 79 containments fail
+ p=2 (G4-control) non-interlaced pairs of down-sets with dim != |Z|: 25 of 25 (of which dim<|Z|: 0)  e.g. {() (1,1)} dim=1231 |Z|=847
+ p=7 (G1) Theorem 6.1 on 15 interlaced pairs: dim<|Z|: 0   dim=|Z|: 15   dim>|Z|: 0   [2.8s]
+ p=7 (G3) Prop 6.1: containments tested 98, FAILURES 0; slices with dim W != |Z_{Lambda_i}|: 0
+ p=7 (G3-control) shifted slice r-2-i: 34 of 79 containments fail
+ p=7 (G4-control) non-interlaced pairs of down-sets with dim != |Z|: 25 of 25 (of which dim<|Z|: 0)  e.g. {() (1,1)} dim=1231 |Z|=847
+TIME 13.9s
+CELL r=9 m=3 h=4 primes=[2, 3]
+ shapes of level m: (1) (3) (2,1) (1,1,1) ()* (2)* (1,1)*
+ shapes with no point: none
+ interlaced pairs: 9 (incl. empty); pairs of down-sets not interlaced: 11
+ (G2) Lemma 2.3/2.4 on 9 interlaced pairs: chain failures 0, layers not interlaced 0, fibre mismatches 0
+ (G2-control) non-interlaced pairs of down-sets: 11 of 11 break the chain, 11 of 11 have a non-interlaced layer
+ pattern products per shape (up to sign): (1):3 (3):1 (2,1):3 (1,1,1):1 ()*:4 (2)*:3 (1,1)*:1  [0.0s]
+ non-homogeneous products: 0
+ p=2 (G1) Theorem 6.1 on 9 interlaced pairs: dim<|Z|: 0   dim=|Z|: 9   dim>|Z|: 0   [0.1s]
+ p=2 (G3) Prop 6.1: containments tested 72, FAILURES 0; slices with dim W != |Z_{Lambda_i}|: 0
+ p=2 (G3-control) shifted slice r-2-i: 14 of 57 containments fail
+ p=2 (G4-control) non-interlaced pairs of down-sets with dim != |Z|: 11 of 11 (of which dim<|Z|: 0)  e.g. {(1)} dim=217 |Z|=192
+ p=2 (G5) root k=1: dim (D_J) = 217, dim V_root = 217, N_r(2k+2) = 217, V_root=(D_J): True, Hilbert [3, 6, 9, 12, 15, 18, 21, 24, 24, 21, 18, 15, 12, 9, 6, 3, 1]
+ p=2 (G5-control) one matching removed: dims [153]
+ p=3 (G1) Theorem 6.1 on 9 interlaced pairs: dim<|Z|: 0   dim=|Z|: 9   dim>|Z|: 0   [0.1s]
+ p=3 (G3) Prop 6.1: containments tested 72, FAILURES 0; slices with dim W != |Z_{Lambda_i}|: 0
+ p=3 (G3-control) shifted slice r-2-i: 14 of 57 containments fail
+ p=3 (G4-control) non-interlaced pairs of down-sets with dim != |Z|: 11 of 11 (of which dim<|Z|: 0)  e.g. {(1)} dim=217 |Z|=192
+ p=3 (G5) root k=1: dim (D_J) = 217, dim V_root = 217, N_r(2k+2) = 217, V_root=(D_J): True, Hilbert [3, 6, 9, 12, 15, 18, 21, 24, 24, 21, 18, 15, 12, 9, 6, 3, 1]
+ p=3 (G5-control) one matching removed: dims [153]
+TIME 0.6s
+CELL r=11 m=3 h=5 primes=[2, 11]
+ shapes of level m: (1) (3) (2,1) (1,1,1) ()* (2)* (1,1)*
+ shapes with no point: none
+ interlaced pairs: 9 (incl. empty); pairs of down-sets not interlaced: 11
+ (G2) Lemma 2.3/2.4 on 9 interlaced pairs: chain failures 0, layers not interlaced 0, fibre mismatches 0
+ (G2-control) non-interlaced pairs of down-sets: 11 of 11 break the chain, 11 of 11 have a non-interlaced layer
+ pattern products per shape (up to sign): (1):3 (3):1 (2,1):3 (1,1,1):1 ()*:4 (2)*:3 (1,1)*:1  [0.0s]
+ non-homogeneous products: 0
+ p=2 (G1) Theorem 6.1 on 9 interlaced pairs: dim<|Z|: 0   dim=|Z|: 9   dim>|Z|: 0   [0.3s]
+ p=2 (G3) Prop 6.1: containments tested 88, FAILURES 0; slices with dim W != |Z_{Lambda_i}|: 0
+ p=2 (G3-control) shifted slice r-2-i: 14 of 71 containments fail
+ p=2 (G4-control) non-interlaced pairs of down-sets with dim != |Z|: 11 of 11 (of which dim<|Z|: 0)  e.g. {(1)} dim=331 |Z|=300
+ p=2 (G5) root k=1: dim (D_J) = 331, dim V_root = 331, N_r(2k+2) = 331, V_root=(D_J): True, Hilbert [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1]
+ p=2 (G5-control) one matching removed: dims [231]
+ p=11 (G1) Theorem 6.1 on 9 interlaced pairs: dim<|Z|: 0   dim=|Z|: 9   dim>|Z|: 0   [0.3s]
+ p=11 (G3) Prop 6.1: containments tested 88, FAILURES 0; slices with dim W != |Z_{Lambda_i}|: 0
+ p=11 (G3-control) shifted slice r-2-i: 14 of 71 containments fail
+ p=11 (G4-control) non-interlaced pairs of down-sets with dim != |Z|: 11 of 11 (of which dim<|Z|: 0)  e.g. {(1)} dim=331 |Z|=300
+ p=11 (G5) root k=1: dim (D_J) = 331, dim V_root = 331, N_r(2k+2) = 331, V_root=(D_J): True, Hilbert [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1]
+ p=11 (G5-control) one matching removed: dims [231]
+TIME 1.3s
+VIGIA-FIN-OK exit=0 pico_kb=36352 t=16s

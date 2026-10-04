@@ -1,0 +1,8 @@
+q=2 a=2 p=2: N_bal=6 | all 2 bijections: 6 | one bijection: 4 (<N: True) | all but one: 4 (<N: True)
+q=2 a=3 p=2: N_bal=20 | all 6 bijections: 20 | one bijection: 8 (<N: True) | all but one: 20 (<N: False)
+q=2 a=4 p=2: N_bal=70 | all 24 bijections: 70 | one bijection: 16 (<N: True) | all but one: 70 (<N: False)
+q=4 a=2 p=2: N_bal=28 | all 2 bijections: 28 | one bijection: 16 (<N: True) | all but one: 16 (<N: True)
+q=4 a=3 p=2: N_bal=256 | all 6 bijections: 256 | one bijection: 64 (<N: True) | all but one: 232 (<N: True)
+q=8 a=2 p=2: N_bal=120 | all 2 bijections: 120 | one bijection: 64 (<N: True) | all but one: 64 (<N: True)
+q=3 a=2 p=3: N_bal=15 | all 2 bijections: 15 | one bijection: 9 (<N: True) | all but one: 9 (<N: True)
+VIGIA-FIN-OK exit=0 pico_kb=4992 t=0s

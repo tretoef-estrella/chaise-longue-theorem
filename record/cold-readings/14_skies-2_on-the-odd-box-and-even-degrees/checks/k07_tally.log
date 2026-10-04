@@ -1,0 +1,18 @@
+cells 16
+A eps=0                      cases    915 | invalid 0 | degree 0 | top 0 | membership 0
+A eps=1                      cases    575 | invalid 0 | degree 0 | top 0 | membership 0
+M eps=0                      cases    198 | invalid 0 | degree 0 | top 0 | membership 0
+M eps=1                      cases    359 | invalid 0 | degree 0 | top 0 | membership 0
+M eps=1 (t=0)                cases    263 | invalid 0 | degree 0 | top 0 | membership 0
+M eps=1 (t=>=1)              cases     96 | invalid 0 | degree 0 | top 0 | membership 0
+R eps=1 mu_rho=1             cases     31 | invalid 0 | degree 0 | top 0 | membership 0
+R eps=1 mu_rho=1 (l=1)       cases     24 | invalid 0 | degree 0 | top 0 | membership 0
+R eps=1 mu_rho=1 (l=>=2)     cases      7 | invalid 0 | degree 0 | top 0 | membership 0
+R ordinary eps=0             cases    594 | invalid 0 | degree 0 | top 0 | membership 0
+R ordinary eps=1             cases    178 | invalid 0 | degree 0 | top 0 | membership 0
+Z eps=0                      cases    510 | invalid 0 | degree 0 | top 0 | membership 0
+Z eps=1                      cases    235 | invalid 0 | degree 0 | top 0 | membership 0
+Z eps=1 (t=0)                cases    220 | invalid 0 | degree 0 | top 0 | membership 0
+Z eps=1 (t=>=1)              cases     15 | invalid 0 | degree 0 | top 0 | membership 0
+ALL cases (unsplit names only): 3595 failures: 0
+VIGIA-FIN-OK exit=0 pico_kb=5104 t=0s

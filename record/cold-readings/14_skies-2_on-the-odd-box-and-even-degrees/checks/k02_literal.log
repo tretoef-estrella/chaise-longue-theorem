@@ -1,0 +1,12 @@
+(k,m,p)=(1,4,2): |Gamma| = N_3(4) = 19 ; Singular: dim (psi_J) = 19 [EQUAL, 0.0s] ; my linear algebra: 19 [EQUAL, 0.0s] ; control, one matching removed: [15, 15] (all < |Gamma|: True)
+(k,m,p)=(1,6,2): |Gamma| = N_5(4) = 61 ; Singular: dim (psi_J) = 61 [EQUAL, 0.0s] ; my linear algebra: 61 [EQUAL, 0.0s] ; control, one matching removed: [45, 45] (all < |Gamma|: True)
+(k,m,p)=(1,6,3): |Gamma| = N_5(4) = 61 ; Singular: dim (psi_J) = 61 [EQUAL, 0.0s] ; my linear algebra: 61 [EQUAL, 0.0s] ; control, one matching removed: [45, 45] (all < |Gamma|: True)
+(k,m,p)=(1,8,2): |Gamma| = N_7(4) = 127 ; Singular: dim (psi_J) = 127 [EQUAL, 0.0s] ; my linear algebra: 127 [EQUAL, 0.1s] ; control, one matching removed: [91, 91] (all < |Gamma|: True)
+(k,m,p)=(1,10,2): |Gamma| = N_9(4) = 217 ; Singular: dim (psi_J) = 217 [EQUAL, 0.0s] ; my linear algebra: 217 [EQUAL, 0.4s] ; control, one matching removed: [153, 153] (all < |Gamma|: True)
+(k,m,p)=(1,10,5): |Gamma| = N_9(4) = 217 ; Singular: dim (psi_J) = 217 [EQUAL, 0.0s] ; my linear algebra: 217 [EQUAL, 0.4s] ; control, one matching removed: [153, 153] (all < |Gamma|: True)
+(k,m,p)=(1,12,2): |Gamma| = N_11(4) = 331 ; Singular: dim (psi_J) = 331 [EQUAL, 0.0s] ; my linear algebra: 331 [EQUAL, 1.1s] ; control, one matching removed: [231, 231] (all < |Gamma|: True)
+(k,m,p)=(1,12,3): |Gamma| = N_11(4) = 331 ; Singular: dim (psi_J) = 331 [EQUAL, 0.0s] ; my linear algebra: 331 [EQUAL, 1.2s] ; control, one matching removed: [231, 231] (all < |Gamma|: True)
+(k,m,p)=(2,4,2): |Gamma| = N_3(6) = 141 ; Singular: dim (psi_J) = 141 [EQUAL, 0.0s] ; my linear algebra: 141 [EQUAL, 3.0s] ; control, one matching removed: [140, 140] (all < |Gamma|: True)
+(k,m,p)=(2,6,2): |Gamma| = N_5(6) = 1001 ; Singular: dim (psi_J) = 1001 [EQUAL, 1.8s] ; control, one matching removed: [977, 977] (all < |Gamma|: True)
+(k,m,p)=(2,6,3): |Gamma| = N_5(6) = 1001 ; Singular: dim (psi_J) = 1001 [EQUAL, 3.1s] ; control, one matching removed: [976, 976] (all < |Gamma|: True)
+VIGIA-FIN-OK exit=0 pico_kb=733184 t=24s
