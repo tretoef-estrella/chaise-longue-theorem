@@ -1,0 +1,134 @@
+# The membership lemma of the odd box
+
+This file uses, unchanged:
+- `q_pfaffian.md` (namespace `Pfaffian`): `IsAlt`, `pf`, `bmat`, `bpf`; (A1) `pf_eq_sum_matchings` (with `IsMatching`, `crossings`); (B5) `bpf_laplace`; and, in Part C, `ay`, `Pf`, `Pfe`.
+- `q_rank_two.md` (namespace `RankTwo`): `omega`, `Hm`, `Ev`, `Od`; (S3) `S3`; (S5) `S5a`, `S5a_of_le`, `S5a_of_ge`, `S5b`, `S5b_of_le`, `S5b_of_gt`.
+- `q_col_one.md`: `Dab q a b = Σ_{u=0}^{q−2} (−1)^u a^u b^{q−2−u}` (`ColOne.Dab`). For odd `r`: `D(a, b) := Dab (r+1) a b` and `D^−(a, b) := Dab r a b`.
+- `q_P3_identities.md`: the Vandermonde product on a finite set of indices, `Tight.vand x B = Π_{c < c' in B} (x_{c'} − x_c)`.
+- `q_odd3.md`: «`P` is a set of pairwise disjoint pairs of indices» (`Odd3.IsPairs P`, for `P : Finset (Finset (Fin m))`) and the set of the indices covered by the pairs (`Odd3.supp P`).
+
+It is the fifth piece of §8 of the paper (the odd box): Lemma 8.7, the membership lemma. In the paper it is proved in an exterior algebra. Here it follows from the closed forms (S5) of `q_rank_two.md`, the Laplace expansion (B5), the sum over matchings (A1), the identity (S3), and one elementary fact about determinants: a determinant whose columns are polynomial functions of the points is a multiple of the Vandermonde product of the points.
+
+All indices are `0`-based. `A` and `R` are arbitrary commutative rings (the characteristic `2` is allowed; nothing is ever divided). Throughout Parts H and M: `h ≥ 1`, `r = 2h + 1`, `ζ = X` in `A[ζ]`, and constants of `A` are read in `A[ζ]` by `C`.
+
+## Part V. Determinants with polynomial columns
+
+For `x : Fin m → R` put `Δ(x) := Π_{i < j} (x_j − x_i)` (the product over the pairs `i < j` of `Fin m`; it is `Matrix.det (Matrix.vandermonde x)`).
+
+### Theorem V
+
+**(V1)** Let `x : Fin m → R` and let `p_0, …, p_{m−1} ∈ R[T]` be polynomials in one variable. Then
+
+`Δ(x)` divides `det( p_k(x_i) )_{i, k < m}` in `R`.
+
+(`p_k(x_i)` is the value of `p_k` at `x_i`; rows are indexed by the points, columns by the polynomials.)
+
+*Proof.* Induction on `m`, for all `R`, `x`, `p` at once. For `m = 0` both sides are `1`. Let the statement hold for `m`, and let `x : Fin (m+1) → R`, `p_0, …, p_m`. Put `a := x_0`. For every `p ∈ R[T]` there is `q ∈ R[T]` with `p(T) = p(a) + (T − a)·q(T)` (division by the monic polynomial `T − a`; if `p = Σ_d c_d T^d` then `q = Σ_d c_d Σ_{u+v=d−1} T^u a^v`). Let `q_k` be this polynomial for `p_k`. In the matrix `M(i, k) := p_k(x_i)` subtract the row `0` from every row `i ≥ 1`: the determinant does not change, and the new row `i` is `k ↦ p_k(x_i) − p_k(a) = (x_i − a)·q_k(x_i)`. Expand along the row `0`:
+
+`det M = Σ_{k=0}^{m} (−1)^k·p_k(a)·det N^{(k)}`,
+
+where `N^{(k)}` is the `m × m` matrix with rows `i = 1, …, m` and columns `k' ≠ k`, `N^{(k)}(i, k') = (x_i − a)·q_{k'}(x_i)`. Taking the factor `x_i − a` out of the row `i`: `det N^{(k)} = Π_{i=1}^{m} (x_i − a)·det( q_{k'}(x_i) )_{1 ≤ i ≤ m, k' ≠ k}`. By the induction hypothesis for the `m` points `x_1, …, x_m` and the `m` polynomials `q_{k'}` (`k' ≠ k`), the last determinant is a multiple of `Δ(x_1, …, x_m)`. Finally `Δ(x_0, …, x_m) = Π_{i=1}^{m} (x_i − x_0)·Δ(x_1, …, x_m)`. ∎
+
+**(V2)** Let `y : Fin n → A`, let `S` be a set of `m` indices of `Fin n` and `ι : Fin m → Fin n` its increasing enumeration (`S.orderEmbOfFin`). Then `Tight.vand y S = Δ(y ∘ ι)`.
+
+(Both are the product of `y_b − y_a` over the pairs `a < b` of elements of `S`.)
+
+**(V3)** Call a column `c : Fin n → A[ζ]` **polynomial in `y`** if there is `P ∈ (A[ζ])[T]` with `c(i) = P(C(y_i))` for every `i`. The following columns are polynomial in `y`:
+- `i ↦ C(y_i^e)` for an exponent `e` (`P = T^e`);
+- `Ev h y` (`P = Σ_{α=0}^{h} ζ^α T^{2α}`);
+- `Od h y` (`P = Σ_{β=0}^{h−1} ζ^β T^{2β+1}`).
+
+If `c'_0, …, c'_{m−1}` are polynomial in `y`, and `S`, `ι` are as in (V2), then `C(Tight.vand y S)` divides `det( c'_k(ι(i)) )_{i, k < m}` in `A[ζ]`.
+
+(By (V1) over the ring `A[ζ]` at the points `C(y_{ι(i)})`, and `Δ(C ∘ y ∘ ι) = C(Δ(y ∘ ι))`.)
+
+## Part H. The matrix `H(y)` in the box
+
+`Hm h y` is the matrix of `q_rank_two.md`: `Hm h y (i, j) = Σ_{τ=0}^{h−1} ζ^τ·C(ω_{2(h+τ)+1}(y_i, y_j))`.
+
+### Theorem H
+
+**(H1)** Let `y : Fin n → A` and `i, j` with `y_j^r = 0`. Then
+
+`Hm h y (i, j) = C( D(y_i, y_j) )·Od h y (j)`.
+
+*Proof.* By (S3) with the odd number `2τ + 1`: `ω_{2h+(2τ+1)}(a, b) = b^{2τ+1}·D(a, b)` when `b^r = 0`. So `Hm h y (i, j) = Σ_τ ζ^τ·C(y_j^{2τ+1})·C(D(y_i, y_j)) = C(D(y_i, y_j))·Od h y (j)`. ∎
+
+**(H2)** For every map `f : Fin m → Fin n`: `(Hm h y).submatrix f f = Hm h (y ∘ f)` (the entry `(i, j)` of `Hm h y` depends only on `y_i` and `y_j`).
+
+**(H3)** Let `z : Fin m → A` with `z_i^r = 0` for every `i`. Then
+
+`pf(Hm h z) = Σ_π (−1)^{cr(π)}·C( Π_{x < π(x)} D(z_x, z_{π(x)}) )·Π_{x < π(x)} Od h z (π(x))`,
+
+the sum over the perfect matchings `π` of `Fin m`, with `cr(π)` the number of crossings, as in (A1). In particular `pf(Hm h z)` lies in the ideal of `A[ζ]` generated by the constants `C( Π_{x < π(x)} D(z_x, z_{π(x)}) )`.
+
+*Proof.* (A1) and (H1). ∎
+
+## Part M. The membership lemma
+
+### Definitions
+
+Let `y : Fin n → A` and let `B` be a set of indices of `Fin n`.
+- For a 2-element set `e = {a < b}` of indices: `D_e(y) := D(y_a, y_b)` (`a` the smaller element, `b` the larger one). For a set `P` of pairwise disjoint pairs: `D_P(y) := Π_{e ∈ P} D_e(y)`, with `D_∅(y) = 1`.
+- For `p ≥ 0`: `𝔘_p(y; B)` is the ideal of `A` generated by the elements
+
+  `Tight.vand y S · D_P(y)`,
+
+  where `S ⊆ B` has `p` elements and `P` is a perfect matching of `B ∖ S` (that is, `Odd3.IsPairs P` and `Odd3.supp P = B ∖ S`). `𝔘_p(y) := 𝔘_p(y; all the indices)`.
+
+Suggested Lean forms (`r` as a parameter):
+
+- `pairDy r y e := if h : e.Nonempty then ColOne.Dab (r+1) (y (e.min' h)) (y (e.max' h)) else 1`
+- `DPy r y P := ∏ e ∈ P, pairDy r y e`
+- `UB r p y B := Ideal.span {g | ∃ (S : Finset (Fin n)) (P : Finset (Finset (Fin n))), S ⊆ B ∧ S.card = p ∧ Odd3.IsPairs P ∧ Odd3.supp P = B \ S ∧ g = Tight.vand y S * DPy r y P}`
+- `U r p y := UB r p y Finset.univ`
+
+### Theorem M
+
+Let `h ≥ 1`, `r = 2h + 1`, and `y : Fin n → A` with `y_i^r = 0` for every `i` («the box»).
+
+**(M1)** Let `c' = (c'_0, …, c'_{s'−1})` be a list of `s'` border columns over `A[ζ]`, each of them polynomial in `y` in the sense of (V3). Then every coefficient of `bpf(Hm h y; c')` lies in `𝔘_{s'}(y)`:
+
+`∀ d, (bpf (Hm h y) c').coeff d ∈ 𝔘_{s'}(y)`.
+
+*Proof.* By (B5),
+
+`bpf(Hm h y; c') = (−1)^{s'(s'−1)/2}·Σ_S sgn(S)·det( c'_k(ι_S(i)) )_{i, k < s'}·pf( (Hm h y)|_{S^c} )`,
+
+the sum over the sets `S` of `s'` indices, `ι_S` the increasing enumeration of `S`, and `(Hm h y)|_{S^c}` the submatrix on the complement, through its increasing enumeration `ι'`. Fix `S`. By (V3), `det( c'_k(ι_S(i)) ) = C(Tight.vand y S)·g` for some `g ∈ A[ζ]`. By (H2) and (H3) for `z := y ∘ ι'`, `pf( (Hm h y)|_{S^c} ) = Σ_π C(D_π)·w_π` with `w_π ∈ A[ζ]` and `D_π := Π_{x < π(x)} D(y_{ι'(x)}, y_{ι'(π(x))})`. Put `P_π := { {ι'(x), ι'(π(x))} : x < π(x) }`. It is a set of pairwise disjoint pairs with `supp P_π = S^c`, and since `ι'` is increasing, the smaller element of the pair of `x` is `ι'(x)`: so `D_π = D_{P_π}(y)`. Hence the summand of `S` is `± Σ_π C( Tight.vand y S · D_{P_π}(y) )·g·w_π`, and its coefficient at `ζ^d` is `± Σ_π Tight.vand y S · D_{P_π}(y) · [ζ^d](g·w_π)`, a combination of generators of `𝔘_{s'}(y)`. ∎
+
+(An element `Q ∈ A[ζ]` of the form `Σ_j C(u_j)·Q_j` with `u_j` in an ideal `I` of `A` has all its coefficients in `I`; in Mathlib this is `Ideal.mem_map_C_iff`.)
+
+**(M2) (the membership lemma, any exponents)** Let `e = (e_0, …, e_{s−1})` be any list of `s` exponents and `t ≥ 0`.
+
+(a) If `n = s + 2(t + 1)`: `Pfe r y e ∈ 𝔘_{s+2}(y)`.
+
+(b) If `n = s + 1 + 2t`: `Pf r y (y^{e_0}, …, y^{e_{s−1}}, y^{r−1}) ∈ 𝔘_{s+1}(y)`, where the last border is the column `i ↦ y_i^{2h}`, appended with `Fin.snoc`.
+
+*Proof.* (a) If `t ≥ h`, the left side is `0` by (S5)(a). If `t + 1 ≤ h`, by (S5)(a) it is `(−1)^{t+1}` times the coefficient at `ζ^{h−1−t}` of `bpf(Hm h y; C ∘ c, Ev h y, Od h y)` with `c_k = y^{e_k}`; these `s + 2` borders are polynomial in `y` by (V3), so (M1) applies with `s' = s + 2`. (b) The same with (S5)(b): for `t > h` the left side is `0`, and for `t ≤ h` it is `(−1)^t` times the coefficient at `ζ^{h−t}` of `bpf(Hm h y; C ∘ c, Ev h y)`, with `s' = s + 1` borders. ∎
+
+**(M3) (Lemma 8.7 of the paper)** Let `ℓ ≥ 0`, `t ≥ 0` and `n = ℓ + 1 + 2t`.
+
+- If `ℓ ≥ 1`: `Pfe r y (0, 1, …, ℓ − 2) ∈ 𝔘_{ℓ+1}(y)` (the list of exponents `e_k = k`, `k < ℓ − 1`). This is (M2)(a) with `s = ℓ − 1`.
+- If `ℓ = 0`: `Pfe r y (r − 1) ∈ 𝔘_1(y)` (one border, `i ↦ y_i^{2h}`). This is (M2)(b) with `s = 0`. Here `Tight.vand y S = 1` for the one-element sets `S`, so `𝔘_1(y)` is generated by the `D_P(y)`, `P` a perfect matching of all the indices but one.
+
+**(M4) (the same, on a set of indices)** Let `y : Fin m → A` with `y_i^r = 0` for every `i`, let `B` be a set of `n` indices of `Fin m` and `ι : Fin n → Fin m` its increasing enumeration. Then, for a list `e` of `s` exponents:
+
+(a) if `n = s + 2(t + 1)`: `Pfe r (y ∘ ι) e ∈ 𝔘_{s+2}(y; B)`;
+
+(b) if `n = s + 1 + 2t`: `Pf r (y ∘ ι) ((y ∘ ι)^{e_0}, …, (y ∘ ι)^{e_{s−1}}, (y ∘ ι)^{r−1}) ∈ 𝔘_{s+1}(y; B)`.
+
+*Proof.* (M2) for `y ∘ ι : Fin n → A` gives the membership in `𝔘_p(y ∘ ι)`. A generator of it is `Tight.vand (y ∘ ι) S' · D_{P'}(y ∘ ι)` with `S'` a set of `p` indices of `Fin n` and `P'` a perfect matching of its complement. Since `ι` is increasing and injective: `Tight.vand (y ∘ ι) S' = Tight.vand y (ι(S'))`, and `D_{P'}(y ∘ ι) = D_P(y)` for `P := { ι(e) : e ∈ P' }` (the smaller element of `ι(e)` is the image of the smaller element of `e`), which is a perfect matching of `B ∖ ι(S')`. So every generator of `𝔘_p(y ∘ ι)` is a generator of `𝔘_p(y; B)`. ∎
+
+This is the form used later: `B` is the marked block of a pattern, and `A` is the box ring of all the variables.
+
+## What was checked before sending
+
+Exact integer arithmetic in `Z[y_0, …, y_{n−1}]/(y_i^r)` and in the polynomial ring (`chkE10.py`; 840 checks, 0 failures):
+- (V1) with the explicit cofactor of the proof, for `m ≤ 4`, random polynomials and monomial columns (the cofactor without the signs `(−1)^k` fails);
+- (H1) for `r = 3, 5, 7, 9` (it fails without the box, and with `Od(y_i)` in the place of `Od(y_j)`);
+- (H3) for `r = 3, 5, 7`, up to six indices (it fails without the crossing signs);
+- the explicit certificate of (M2), in 70 cells `(r, e, t)` with `r = 3, 5, 7, 9, 11` and up to six variables (6 of them are the cases where (S5) gives `0`; in 51 of the other 64, `Pf` is not `0` in the box): the Laplace expansion, the divisibility of every determinant by the Vandermonde product (in the polynomial ring, before the box), and the equality of `Pf` with the combination `Σ_{S, P} Tight.vand y S·D_P(y)·(coefficient)` that the proof of (M1) produces. In the cells where `Pf` is not `0` the combination has up to 45 generators and `Pf` up to 720 monomials;
+- an independent test of the memberships of (M2) and (M4) by linear algebra modulo a prime, in the degree of the target (13 cells and 5 cells). Controls that fire: the target plus one monomial (13 of 13); in case (a), the ideal with `s` free indices and one pair more (7 of 7); in (M4), the ideal of another set `B'` (5 of 5).
+
+Two controls stayed silent in every cell, and they are recorded as facts measured and not used: in the cells tested, `Pf` also lies in the ideal with two free indices more and one pair fewer (10 of 10), and in the ideal obtained by writing `y_a·D^−(y_a, y_b)` in the place of `D(y_a, y_b)` (10 of 10). The certificate above is an exact identity with `D = Dab (r+1)`, so the statement to prove is not in doubt.
