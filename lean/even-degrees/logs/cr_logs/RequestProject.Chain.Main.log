@@ -1,0 +1,12 @@
+⚠ [8028/8028] Built RequestProject.Chain.Main (56s)
+warning: RequestProject/Chain/Main.lean:23:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:33:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Chain/Main.lean:46:42: unused variable `ht`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (8028 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2045760 t=62s
