@@ -1,0 +1,37 @@
+== P4.0 regression q=3 ==
+q=3 (alpha,beta)=(2,2) p=3: |BPar|=5 down-sets=6  equal=6  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(15, 15)
+q=3 (alpha,beta)=(2,2) p=10007: |BPar|=5 down-sets=6  equal=1  dim>|Z|=5  dim<|Z|=0  root (dim,|Z|)=(24, 15)
+q=3 (alpha,beta)=(1,1) p=3: |BPar|=2 down-sets=2  equal=2  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(3, 3)
+q=3 (alpha,beta)=(2,1) p=3: |BPar|=3 down-sets=3  equal=3  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(15, 15)
+== P4.1/P4.2 even box over F_2 ==
+q=2 (alpha,beta)=(1,0) p=2: |BPar|=1 down-sets=1  equal=1  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(2, 2)
+q=2 (alpha,beta)=(1,1) p=2: |BPar|=2 down-sets=2  equal=2  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(2, 2)
+q=2 (alpha,beta)=(2,1) p=2: |BPar|=2 down-sets=2  equal=2  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(6, 6)
+q=2 (alpha,beta)=(2,2) p=2: |BPar|=3 down-sets=3  equal=3  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(6, 6)
+q=2 (alpha,beta)=(3,2) p=2: |BPar|=3 down-sets=3  equal=3  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(20, 20)
+q=2 (alpha,beta)=(3,3) p=2: |BPar|=4 down-sets=4  equal=4  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(20, 20)
+q=2 (alpha,beta)=(4,3) p=2: |BPar|=4 down-sets=4  equal=4  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(70, 70)
+q=4 (alpha,beta)=(1,1) p=2: |BPar|=2 down-sets=2  equal=2  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(4, 4)
+q=4 (alpha,beta)=(2,1) p=2: |BPar|=3 down-sets=3  equal=3  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(28, 28)
+q=4 (alpha,beta)=(2,2) p=2: |BPar|=6 down-sets=7  equal=7  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(28, 28)
+q=4 (alpha,beta)=(3,2) p=2: |BPar|=8 down-sets=12  equal=12  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(256, 256)
+q=8 (alpha,beta)=(1,1) p=2: |BPar|=2 down-sets=2  equal=2  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(8, 8)
+q=8 (alpha,beta)=(2,1) p=2: |BPar|=3 down-sets=3  equal=3  dim>|Z|=0  dim<|Z|=0  root (dim,|Z|)=(120, 120)
+== P4.3 q=4 over F_5 ==
+q=4 (alpha,beta)=(1,1) p=5: |BPar|=2 down-sets=2  equal=1  dim>|Z|=1  dim<|Z|=0  root (dim,|Z|)=(6, 4)
+q=4 (alpha,beta)=(2,1) p=5: |BPar|=3 down-sets=3  equal=1  dim>|Z|=2  dim<|Z|=0  root (dim,|Z|)=(38, 28)
+q=4 (alpha,beta)=(2,2) p=5: |BPar|=6 down-sets=7  equal=1  dim>|Z|=6  dim<|Z|=0  root (dim,|Z|)=(58, 28)
+== P4.5 q=4 over F_3 (hypothesis of Theorem C fails) ==
+q=4 (alpha,beta)=(1,1) p=3: |BPar|=2 down-sets=2  equal=1  dim>|Z|=1  dim<|Z|=0  root (dim,|Z|)=(6, 4)
+q=4 (alpha,beta)=(2,1) p=3: |BPar|=3 down-sets=3  equal=1  dim>|Z|=2  dim<|Z|=0  root (dim,|Z|)=(36, 28)
+q=4 (alpha,beta)=(2,2) p=3: |BPar|=6 down-sets=7  equal=1  dim>|Z|=6  dim<|Z|=0  root (dim,|Z|)=(54, 28)
+== q=6 over F_7 (binomials non-zero) and over F_2 (C(5,1)=5 odd, C(5,2)=10 even: hypothesis fails) ==
+q=6 (alpha,beta)=(1,1) p=7: |BPar|=2 down-sets=2  equal=1  dim>|Z|=1  dim<|Z|=0  root (dim,|Z|)=(10, 6)
+q=6 (alpha,beta)=(2,1) p=7: |BPar|=3 down-sets=3  equal=1  dim>|Z|=2  dim<|Z|=0  root (dim,|Z|)=(102, 66)
+q=6 (alpha,beta)=(1,1) p=2: |BPar|=2 down-sets=2  equal=1  dim>|Z|=1  dim<|Z|=0  root (dim,|Z|)=(12, 6)
+q=6 (alpha,beta)=(2,1) p=2: |BPar|=3 down-sets=3  equal=1  dim>|Z|=2  dim<|Z|=0  root (dim,|Z|)=(116, 66)
+== P4.4 control: one bijection only, (a,q)=(2,2), F_2 ==
+   identity only: dim = 4  all of S_2: dim = 6  N_bal(2,2)= 6
+   q=4: identity only: dim = 16  all of S_2: dim = 28  N_bal(2,4)= 28
+time 0.3s
+VIGIA-FIN-OK exit=0 pico_kb=29184 t=0s

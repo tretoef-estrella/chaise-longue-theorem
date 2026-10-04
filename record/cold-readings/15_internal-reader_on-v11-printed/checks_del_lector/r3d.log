@@ -1,0 +1,75 @@
+r=3 m=0 shapes=1 interlaced pairs=1 (D1)-not-(D2) pairs=0
+r=3 m=1 shapes=2 interlaced pairs=2 (D1)-not-(D2) pairs=1
+r=3 m=2 shapes=3 interlaced pairs=3 (D1)-not-(D2) pairs=2
+r=3 m=3 shapes=4 interlaced pairs=4 (D1)-not-(D2) pairs=4
+r=3 m=4 shapes=5 interlaced pairs=5 (D1)-not-(D2) pairs=6
+r=3 m=5 shapes=6 interlaced pairs=6 (D1)-not-(D2) pairs=9
+r=3 m=6 shapes=7 interlaced pairs=7 (D1)-not-(D2) pairs=12
+m=1 done (0.0s)
+m=2 done (0.0s)
+  !! dim<|Z| 3 3 2 [((), 1)] 6 7
+  !! dim<|Z| 3 3 3 [((), 1)] 6 7
+  control {((1),0)} at (3,3), p=2: dim=19 |Z|=12
+  control {((1),0)} at (3,3), p=3: dim=19 |Z|=12
+m=3 done (0.0s)
+m=4 done (0.0s)
+  !! dim<|Z| 3 5 2 [((), 1)] 45 51
+  !! dim<|Z| 3 5 3 [((), 1)] 45 51
+m=5 done (0.1s)
+m=6 done (0.8s)
+TOTALS {'P1': 112, 'layer': 81, 'dim': 54, 'D1notD2': 68}
+FAILURES/CONTROLS {'CONTROL D1-not-D2 dim != |Z| (expected)': 68, 'dim < |Z| (p=2)': 2, 'dim < |Z| (p=3)': 2}
+root r=3 m=1 p=2: dim V_root=3 dim (D_J)=3 same ideal=True |Z|=3 slices W_0..W_{r-1}=None
+root r=3 m=1 p=3: dim V_root=3 dim (D_J)=3 same ideal=True |Z|=3 slices W_0..W_{r-1}=None
+root r=3 m=3 p=2: dim V_root=19 dim (D_J)=19 same ideal=True |Z|=19 slices W_0..W_{r-1}=None
+root r=3 m=3 p=3: dim V_root=19 dim (D_J)=19 same ideal=True |Z|=19 slices W_0..W_{r-1}=None
+root r=3 m=5 p=2: dim V_root=141 dim (D_J)=141 same ideal=True |Z|=141 slices W_0..W_{r-1}=None
+root r=3 m=5 p=3: dim V_root=141 dim (D_J)=141 same ideal=True |Z|=141 slices W_0..W_{r-1}=None
+Lambda={(empty,1)} at (3,3) p=2: dim with all t = 7 ; with t=0 only = 6 ; |Z|=7
+Lambda={(empty,1)} at (3,3) p=3: dim with all t = 7 ; with t=0 only = 6 ; |Z|=7
+time 0.8s
+r=5 m=0 shapes=1 interlaced pairs=1 (D1)-not-(D2) pairs=0
+r=5 m=1 shapes=2 interlaced pairs=2 (D1)-not-(D2) pairs=1
+r=5 m=2 shapes=4 interlaced pairs=4 (D1)-not-(D2) pairs=3
+r=5 m=3 shapes=6 interlaced pairs=6 (D1)-not-(D2) pairs=9
+r=5 m=4 shapes=9 interlaced pairs=10 (D1)-not-(D2) pairs=17
+r=5 m=5 shapes=12 interlaced pairs=14 (D1)-not-(D2) pairs=34
+m=1 done (0.1s)
+m=2 done (0.1s)
+  !! dim<|Z| 5 3 2 [((), 1)] 12 13
+  !! dim<|Z| 5 3 3 [((), 1)] 12 13
+m=3 done (0.1s)
+  !! dim<|Z| 5 4 2 [((), 0), ((1,), 1)] 213 221
+  !! dim<|Z| 5 4 3 [((), 0), ((1,), 1)] 213 221
+m=4 done (0.5s)
+  !! dim<|Z| 5 5 2 [((), 1)] 195 221
+  !! dim<|Z| 5 5 3 [((), 1)] 195 221
+  !! dim<|Z| 5 5 2 [((), 1), ((1,), 0), ((1, 1), 1), ((2,), 1)] 1901 1921
+  !! dim<|Z| 5 5 3 [((), 1), ((1,), 0), ((1, 1), 1), ((2,), 1)] 1901 1921
+m=5 done (10.2s)
+TOTALS {'P1': 220, 'layer': 180, 'dim': 72, 'D1notD2': 128}
+FAILURES/CONTROLS {'CONTROL D1-not-D2 dim != |Z| (expected)': 128, 'dim < |Z| (p=2)': 4, 'dim < |Z| (p=3)': 4}
+root r=5 m=1 p=2: dim V_root=5 dim (D_J)=5 same ideal=True |Z|=5 slices W_0..W_{r-1}=None
+root r=5 m=1 p=3: dim V_root=5 dim (D_J)=5 same ideal=True |Z|=5 slices W_0..W_{r-1}=None
+root r=5 m=3 p=2: dim V_root=61 dim (D_J)=61 same ideal=True |Z|=61 slices W_0..W_{r-1}=None
+root r=5 m=3 p=3: dim V_root=61 dim (D_J)=61 same ideal=True |Z|=61 slices W_0..W_{r-1}=None
+root r=5 m=5 p=2: dim V_root=1001 dim (D_J)=1001 same ideal=True |Z|=1001 slices W_0..W_{r-1}=None
+root r=5 m=5 p=3: dim V_root=1001 dim (D_J)=1001 same ideal=True |Z|=1001 slices W_0..W_{r-1}=None
+time 10.4s
+r=7 m=0 shapes=1 interlaced pairs=1 (D1)-not-(D2) pairs=0
+r=7 m=1 shapes=2 interlaced pairs=2 (D1)-not-(D2) pairs=1
+r=7 m=2 shapes=4 interlaced pairs=4 (D1)-not-(D2) pairs=3
+r=7 m=3 shapes=7 interlaced pairs=8 (D1)-not-(D2) pairs=11
+r=7 m=4 shapes=11 interlaced pairs=14 (D1)-not-(D2) pairs=25
+m=1 done (0.0s)
+m=2 done (0.0s)
+  !! dim<|Z| 7 3 2 [((), 1)] 18 19
+m=3 done (0.1s)
+  !! dim<|Z| 7 4 2 [((), 0), ((1,), 1)] 495 511
+m=4 done (1.7s)
+TOTALS {'P1': 140, 'layer': 196, 'dim': 28, 'D1notD2': 40}
+FAILURES/CONTROLS {'CONTROL D1-not-D2 dim != |Z| (expected)': 40, 'dim < |Z| (p=2)': 2}
+root r=7 m=1 p=2: dim V_root=7 dim (D_J)=7 same ideal=True |Z|=7 slices W_0..W_{r-1}=None
+root r=7 m=3 p=2: dim V_root=127 dim (D_J)=127 same ideal=True |Z|=127 slices W_0..W_{r-1}=None
+time 1.7s
+VIGIA-FIN-OK exit=0 pico_kb=218400 t=13s

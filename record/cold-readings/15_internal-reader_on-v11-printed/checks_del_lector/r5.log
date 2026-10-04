@@ -1,0 +1,39 @@
+== P5.1 / P5.2: the two forms, theta ==
+(r,N)=(3,4) p=2: dim M=19  dim (D_J)=19  N_r(N)=19 | dim theta(M)=19 (injective: True)  theta(M)==(D_J): True
+(r,N)=(3,4) p=3: dim M=19  dim (D_J)=19  N_r(N)=19 | dim theta(M)=19 (injective: True)  theta(M)==(D_J): True
+(r,N)=(3,4) p=5: dim M=19  dim (D_J)=19  N_r(N)=19 | dim theta(M)=19 (injective: True)  theta(M)==(D_J): True
+(r,N)=(3,6) p=2: dim M=141  dim (D_J)=141  N_r(N)=141 | dim theta(M)=141 (injective: True)  theta(M)==(D_J): True
+(r,N)=(3,6) p=3: dim M=141  dim (D_J)=141  N_r(N)=141 | dim theta(M)=141 (injective: True)  theta(M)==(D_J): True
+(r,N)=(3,6) p=5: dim M=141  dim (D_J)=141  N_r(N)=141 | dim theta(M)=141 (injective: True)  theta(M)==(D_J): True
+(r,N)=(5,4) p=2: dim M=61  dim (D_J)=61  N_r(N)=61 | dim theta(M)=61 (injective: True)  theta(M)==(D_J): True
+(r,N)=(5,4) p=3: dim M=61  dim (D_J)=61  N_r(N)=61 | dim theta(M)=61 (injective: True)  theta(M)==(D_J): True
+(r,N)=(5,4) p=5: dim M=61  dim (D_J)=61  N_r(N)=61 | dim theta(M)=61 (injective: True)  theta(M)==(D_J): True
+(r,N)=(7,4) p=2: dim M=127  dim (D_J)=127  N_r(N)=127 | dim theta(M)=127 (injective: True)  theta(M)==(D_J): True
+(r,N)=(7,4) p=7: dim M=127  dim (D_J)=127  N_r(N)=127 | dim theta(M)=127 (injective: True)  theta(M)==(D_J): True
+== P5.3 / P5.4: Corollary 10.8 ==
+(r,N)=(3,4) p=3: e_odd*D_P=0 exactly: True | dim sum D_P C=19 ; r^N-dim(e_odd)=19 ; colength of intersection=19 ; colength of (e_odd)=19 ; (e_odd) in intersection: True ; equal: True
+(r,N)=(3,4) p=5: e_odd*D_P=0 exactly: True | dim sum D_P C=19 ; r^N-dim(e_odd)=19 ; colength of intersection=19 ; colength of (e_odd)=19 ; (e_odd) in intersection: True ; equal: True
+(r,N)=(3,4) p=7: e_odd*D_P=0 exactly: True | dim sum D_P C=19 ; r^N-dim(e_odd)=19 ; colength of intersection=19 ; colength of (e_odd)=19 ; (e_odd) in intersection: True ; equal: True
+(r,N)=(3,4) p=2: e_odd*D_P=0 exactly: True | dim sum D_P C=19 ; r^N-dim(e_odd)=21 ; colength of intersection=19 ; colength of (e_odd)=21 ; (e_odd) in intersection: True ; equal: False
+(r,N)=(3,6) p=3: e_odd*D_P=0 exactly: True | dim sum D_P C=141 ; r^N-dim(e_odd)=141 ; colength of intersection=141 ; colength of (e_odd)=141 ; (e_odd) in intersection: True ; equal: True
+(r,N)=(3,6) p=5: e_odd*D_P=0 exactly: True | dim sum D_P C=141 ; r^N-dim(e_odd)=141 ; colength of intersection=141 ; colength of (e_odd)=141 ; (e_odd) in intersection: True ; equal: True
+(r,N)=(3,6) p=7: e_odd*D_P=0 exactly: True | dim sum D_P C=141 ; r^N-dim(e_odd)=141 ; colength of intersection=141 ; colength of (e_odd)=141 ; (e_odd) in intersection: True ; equal: True
+(r,N)=(3,6) p=2: e_odd*D_P=0 exactly: True | dim sum D_P C=141 ; r^N-dim(e_odd)=183 ; colength of intersection=141 ; colength of (e_odd)=183 ; (e_odd) in intersection: True ; equal: False
+(r,N)=(5,4) p=3: e_odd*D_P=0 exactly: True | dim sum D_P C=61 ; r^N-dim(e_odd)=61 ; colength of intersection=61 ; colength of (e_odd)=61 ; (e_odd) in intersection: True ; equal: True
+(r,N)=(5,4) p=5: e_odd*D_P=0 exactly: True | dim sum D_P C=61 ; r^N-dim(e_odd)=61 ; colength of intersection=61 ; colength of (e_odd)=61 ; (e_odd) in intersection: True ; equal: True
+(r,N)=(5,4) p=7: e_odd*D_P=0 exactly: True | dim sum D_P C=61 ; r^N-dim(e_odd)=61 ; colength of intersection=61 ; colength of (e_odd)=61 ; (e_odd) in intersection: True ; equal: True
+(r,N)=(5,4) p=2: e_odd*D_P=0 exactly: True | dim sum D_P C=61 ; r^N-dim(e_odd)=65 ; colength of intersection=61 ; colength of (e_odd)=65 ; (e_odd) in intersection: True ; equal: False
+== P5.5 Theorem 8.15 ==
+Theorem 8.15: 81 ideals*primes tested, dim<|Z|: 0, dim>|Z|: 0, equal: 81
+== P5.6 control: signs of D removed ==
+r=3 N=4 p=3: with signs 19 ; signs removed 18 ; N_3(N)=19
+r=3 N=4 p=2: with signs 19 ; signs removed 19 ; N_3(N)=19
+r=3 N=6 p=3: with signs 141 ; signs removed 138 ; N_3(N)=141
+r=3 N=6 p=2: with signs 141 ; signs removed 141 ; N_3(N)=141
+== P5.7 control: even box r=4, k=1 ==
+r=4 k=1 p=2: dim (D_{4,J}) = 36   (Q_1(5)=36 ; formula 12h^2+6h+1 at h=3/2 gives 37)
+r=4 k=1 p=3: dim (D_{4,J}) = 36   (Q_1(5)=36 ; formula 12h^2+6h+1 at h=3/2 gives 37)
+r=4 k=1 p=5: dim (D_{4,J}) = 36   (Q_1(5)=36 ; formula 12h^2+6h+1 at h=3/2 gives 37)
+r=4 k=1 p=10007: dim (D_{4,J}) = 36   (Q_1(5)=36 ; formula 12h^2+6h+1 at h=3/2 gives 37)
+time 1.7s
+VIGIA-FIN-OK exit=0 pico_kb=143120 t=2s

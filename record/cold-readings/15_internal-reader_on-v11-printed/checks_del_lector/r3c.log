@@ -1,0 +1,19 @@
+r=7 m=0 shapes=1 interlaced pairs=1 (D1)-not-(D2) pairs=0
+r=7 m=1 shapes=2 interlaced pairs=2 (D1)-not-(D2) pairs=1
+r=7 m=2 shapes=4 interlaced pairs=4 (D1)-not-(D2) pairs=3
+r=7 m=3 shapes=7 interlaced pairs=8 (D1)-not-(D2) pairs=11
+r=7 m=4 shapes=11 interlaced pairs=14 (D1)-not-(D2) pairs=25
+m=1 done (0.0s)
+m=2 done (0.1s)
+m=3 done (0.5s)
+m=4 done (9.4s)
+TOTALS {'P1': 140, 'layer': 196, 'dim': 84, 'slice': 588, 'lowered': 444, 'D1notD2': 120}
+FAILURES/CONTROLS {'CONTROL lowered slice fails (expected)': 156, 'CONTROL D1-not-D2 dim != |Z| (expected)': 120}
+root r=7 m=1 p=2: dim V_root=7 dim (D_J)=7 same ideal=True |Z|=7 slices W_0..W_{r-1}=[1, 1, 1, 1, 1, 1, 1]
+root r=7 m=1 p=3: dim V_root=7 dim (D_J)=7 same ideal=True |Z|=7 slices W_0..W_{r-1}=[1, 1, 1, 1, 1, 1, 1]
+root r=7 m=1 p=10007: dim V_root=7 dim (D_J)=7 same ideal=True |Z|=7 slices W_0..W_{r-1}=[1, 1, 1, 1, 1, 1, 1]
+root r=7 m=3 p=2: dim V_root=127 dim (D_J)=127 same ideal=True |Z|=127 slices W_0..W_{r-1}=[7, 7, 7, 7, 7, 43, 49]
+root r=7 m=3 p=3: dim V_root=127 dim (D_J)=127 same ideal=True |Z|=127 slices W_0..W_{r-1}=[7, 7, 7, 7, 7, 43, 49]
+root r=7 m=3 p=10007: dim V_root=127 dim (D_J)=127 same ideal=True |Z|=127 slices W_0..W_{r-1}=[7, 7, 7, 7, 7, 43, 49]
+time 9.4s
+VIGIA-FIN-OK exit=0 pico_kb=1195008 t=9s

@@ -1,0 +1,5 @@
+P2b.1 (1,3,3) sign=+1 : 19  (true value 6)
+P2b.2 (1, 4, 2) with phi(t_j t_k^-1): dim = 19
+P2b.2 (1, 6, 3) with phi(t_j t_k^-1): dim = 61
+P2b.2 (1, 6, 2) with phi(t_j t_k^-1): dim = 61
+VIGIA-FIN-OK exit=0 pico_kb=5776 t=0s

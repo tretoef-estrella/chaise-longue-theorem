@@ -1,0 +1,35 @@
+after imports: maxrss 22 MB
+== P7.1 / P7.2: Proposition 9.2 ==
+(k,q)=(1,4): Step1 formula: True ; lowest component = L_J: True ; L_J = Y*D_J: True ; dim I=19 ; dim (L_J)B=19 ; N_{q-1}(2k+2)=19
+    Hilbert function of in(I) from degree 5: [3, 6, 6, 3, 1]
+    Hilbert function of (L_J)B from degree 5: [3, 6, 6, 3, 1]  equal: True  (0.0s)
+(k,q)=(2,4): Step1 formula: True ; lowest component = L_J: True ; L_J = Y*D_J: True ; dim I=141 ; dim (L_J)B=141 ; N_{q-1}(2k+2)=141
+    Hilbert function of in(I) from degree 9: [15, 36, 40, 29, 15, 5, 1]
+    Hilbert function of (L_J)B from degree 9: [15, 36, 40, 29, 15, 5, 1]  equal: True  (0.2s)
+(k,q)=(1,8): Step1 formula: True ; lowest component = L_J: True ; L_J = Y*D_J: True ; dim I=127 ; dim (L_J)B=127 ; N_{q-1}(2k+2)=127
+    Hilbert function of in(I) from degree 9: [3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3, 1]
+    Hilbert function of (L_J)B from degree 9: [3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3, 1]  equal: True  (0.2s)
+(k,q)=(1,16): Step1 formula: True ; lowest component = L_J: True ; L_J = Y*D_J: True ; dim I=631 ; dim (L_J)B=631 ; N_{q-1}(2k+2)=631
+    Hilbert function of in(I) from degree 17: [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 42, 39, 36, 33, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1]
+    Hilbert function of (L_J)B from degree 17: [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 42, 39, 36, 33, 30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 1]  equal: True  (15.3s)
+   >>> maxrss so far: 779 MB
+== P7.3: Lemma 9.10, 0 not in C_1 ==
+q=2 k'=1: dim M=1   N_{q-1}(2k')=1
+q=2 k'=2: dim M=1   N_{q-1}(2k')=1
+q=2 k'=3: dim M=1   N_{q-1}(2k')=1
+q=4 k'=1: dim M=3   N_{q-1}(2k')=3
+q=4 k'=2: dim M=19   N_{q-1}(2k')=19
+q=4 k'=3: dim M=141   N_{q-1}(2k')=141
+q=8 k'=1: dim M=7   N_{q-1}(2k')=7
+q=8 k'=2: dim M=127   N_{q-1}(2k')=127
+   >>> maxrss so far: 779 MB
+== P7.4 / P7.5: blocks per colouring, r'=2, odd p ==
+(k,m,p)=(1,6,3): colourings=8  mismatches=0  sum of dims=61  | all -1: dim=19 (N_q(2k+2)=19) ; all +1: dim=6 (Q_k(q)=6)  (15.3s)
+(k,m,p)=(2,6,3): colourings=32  mismatches=0  sum of dims=1001  | all -1: dim=141 (N_q(2k+2)=141) ; all +1: dim=20 (Q_k(q)=20)  (15.4s)
+(k,m,p)=(1,10,5): colourings=8  mismatches=0  sum of dims=217  | all -1: dim=61 (N_q(2k+2)=61) ; all +1: dim=36 (Q_k(q)=36)  (15.5s)
+(k,m,p)=(1,14,7): colourings=8  mismatches=0  sum of dims=469  | all -1: dim=127 (N_q(2k+2)=127) ; all +1: dim=90 (Q_k(q)=90)  (15.5s)
+(k,m,p)=(1,18,3): colourings=8  mismatches=0  sum of dims=817  | all -1: dim=217 (N_q(2k+2)=217) ; all +1: dim=168 (Q_k(q)=168)  (15.5s)
+control (1,6,3), first matching removed: (colouring, dim, N_1*N_-1): [((1, 1, 1), 6, 6), ((1, 1, -1), 6, 6), ((1, -1, 1), 6, 6), ((1, -1, -1), 0, 6), ((-1, 1, 1), 0, 6), ((-1, 1, -1), 6, 6), ((-1, -1, 1), 6, 6), ((-1, -1, -1), 15, 19)]  -> dims below the count in 3 of 8 colourings
+time 15.5s
+   >>> maxrss so far: 779 MB
+VIGIA-FIN-OK exit=0 pico_kb=1017856 t=15s

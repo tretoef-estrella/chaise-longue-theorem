@@ -1,0 +1,68 @@
+== P1.1 table of 9.1 ==
+4 [19, 141, 1107, 8953, 73789] MATCH
+6 [61, 1001, 18733, 375745, 7858225] MATCH
+8 [127, 3301, 103279, 3595177, 133789789] MATCH
+10 [217, 7761, 345465, 17605249, 980612161] MATCH
+12 [331, 15101, 876331, 59415961, 4481629021] MATCH
+16 [631, 41301, 3529863, 361612105, 42214788925] MATCH
+P1.1 True
+Q_1(m)=3m^2-9m+7: True
+N_{m-1}(N) with e^x equals cosh version: True
+== P1.2 literal Gamma, and DS Rem 4.4 ==
+(1, 4) enumerated 19 formula 19 DS4.4 19 OK
+(1, 6) enumerated 61 formula 61 DS4.4 61 OK
+(1, 8) enumerated 127 formula 127 DS4.4 127 OK
+(1, 10) enumerated 217 formula 217 DS4.4 217 OK
+(1, 12) enumerated 331 formula 331 DS4.4 331 OK
+(2, 4) enumerated 141 formula 141 DS4.4 141 OK
+(2, 6) enumerated 1001 formula 1001 DS4.4 1001 OK
+(2, 8) enumerated 3301 formula 3301 DS4.4 3301 OK
+(2, 12) enumerated 15101 formula 15101 DS4.4 15101 OK
+(3, 4) enumerated 1107 formula 1107 DS4.4 1107 OK
+P1.2 True
+== P1.3 control: forbid -1 ==
+(1, 4) without -1: 6 Q_k(m)= 19 Q_k(m-1)= 6 control fires (= Q_k(m-1))
+(1, 6) without -1: 36 Q_k(m)= 61 Q_k(m-1)= 36 control fires (= Q_k(m-1))
+(1, 8) without -1: 90 Q_k(m)= 127 Q_k(m-1)= 90 control fires (= Q_k(m-1))
+(2, 4) without -1: 20 Q_k(m)= 141 Q_k(m-1)= 20 control fires (= Q_k(m-1))
+(2, 6) without -1: 400 Q_k(m)= 1001 Q_k(m-1)= 400 control fires (= Q_k(m-1))
+== P1.4/P1.5 Lemma 9.6 ==
+(1, 6, 2) sum 61 Q 61 compatible colourings 19 OK | control (0 not a coordinate): 31 fires
+(1, 6, 3) sum 61 Q 61 compatible colourings 8 OK | control (0 not a coordinate): 61 DID NOT FIRE
+(2, 6, 2) sum 1001 Q 1001 compatible colourings 141 OK | control (0 not a coordinate): 471 fires
+(2, 6, 3) sum 1001 Q 1001 compatible colourings 32 OK | control (0 not a coordinate): 1001 DID NOT FIRE
+(1, 10, 2) sum 217 Q 217 compatible colourings 61 OK | control (0 not a coordinate): 109 fires
+(1, 10, 5) sum 217 Q 217 compatible colourings 8 OK | control (0 not a coordinate): 217 DID NOT FIRE
+(1, 12, 2) sum 331 Q 331 compatible colourings 19 OK | control (0 not a coordinate): 133 fires
+(1, 12, 3) sum 331 Q 331 compatible colourings 38 OK | control (0 not a coordinate): 199 fires
+(2, 12, 2) sum 15101 Q 15101 compatible colourings 141 OK | control (0 not a coordinate): 5651 fires
+(2, 12, 3) sum 15101 Q 15101 compatible colourings 472 OK | control (0 not a coordinate): 8721 fires
+(1, 20, 2) sum 1027 Q 1027 compatible colourings 61 OK | control (0 not a coordinate): 343 fires
+(1, 20, 5) sum 1027 Q 1027 compatible colourings 38 OK | control (0 not a coordinate): 571 fires
+P1.4 True
+(1, 6, 2) per-colouring: colourings 27 mismatches 0 total 61
+(1, 6, 3) per-colouring: colourings 8 mismatches 0 total 61
+(2, 6, 2) per-colouring: colourings 243 mismatches 0 total 1001
+(2, 6, 3) per-colouring: colourings 32 mismatches 0 total 1001
+(1, 12, 2) per-colouring: colourings 27 mismatches 0 total 331
+(1, 12, 3) per-colouring: colourings 64 mismatches 0 total 331
+== P1.6 Example 9.14 ==
+p= 3 total 61 compatible 8
+   sizes(|C1|,|C-1|,pairs) (0, 4, ()) value 19 x 1
+   sizes(|C1|,|C-1|,pairs) (2, 2, ()) value 6 x 6
+   sizes(|C1|,|C-1|,pairs) (4, 0, ()) value 6 x 1
+p= 2 total 61 compatible 19
+   sizes(|C1|,|C-1|,pairs) (0, 0, (2,)) value 6 x 6
+   sizes(|C1|,|C-1|,pairs) (2, 0, (1,)) value 2 x 12
+   sizes(|C1|,|C-1|,pairs) (4, 0, (0,)) value 1 x 1
+N_3(2),N_3(4),Q_1(3),Q_0(3),Nbal(1,2),Nbal(2,2)= 3 19 6 2 2 6
+== P1.7 Hodge characters ==
+(1, 4) |B| 19 |D| 19 Q 19 |B|-Q 0 D==Q True
+(2, 4) |B| 141 |D| 141 Q 141 |B|-Q 0 D==Q True
+(3, 4) |B| 1107 |D| 1107 Q 1107 |B|-Q 0 D==Q True
+(4, 4) |B| 8953 |D| 8953 Q 8953 |B|-Q 0 D==Q True
+(1, 6) |B| 85 |D| 61 Q 61 |B|-Q 24 D==Q True
+(2, 6) |B| 1751 |D| 1001 Q 1001 |B|-Q 750 D==Q True
+(1, 8) |B| 175 |D| 127 Q 127 |B|-Q 48 D==Q True
+(2, 8) |B| 5881 |D| 3301 Q 3301 |B|-Q 2580 D==Q True
+VIGIA-FIN-OK exit=0 pico_kb=11472 t=1s

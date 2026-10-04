@@ -1,0 +1,22 @@
+columns: p, member of U_l(B_0), member after removing the generators of the first S (control)
+(r,l,t)=(3,0,1) n=3 : [(2, True, False), (3, True, False), (5, True, False), (7, True, False), (10007, True, False)] (0.0s)
+(r,l,t)=(3,1,1) n=4 : Pfaffian is zero (0.0s)
+(r,l,t)=(3,0,2) n=5 : Pfaffian is zero (0.0s)
+(r,l,t)=(5,0,1) n=3 : [(2, True, False), (3, True, False), (5, True, False), (7, True, False), (10007, True, False)] (0.0s)
+(r,l,t)=(5,1,1) n=4 : [(2, True, False), (3, True, False), (5, True, False), (7, True, False), (10007, True, False)] (0.0s)
+(r,l,t)=(5,2,1) n=5 : Pfaffian is zero (0.0s)
+(r,l,t)=(5,0,2) n=5 : [(2, True, False), (3, True, False), (5, True, False), (7, True, False), (10007, True, False)] (0.1s)
+(r,l,t)=(7,0,1) n=3 : [(2, True, False), (3, True, False), (5, True, False), (7, True, False), (10007, True, False)] (0.1s)
+(r,l,t)=(7,1,1) n=4 : [(2, True, False), (3, True, False), (5, True, False), (7, True, False), (10007, True, False)] (0.2s)
+(r,l,t)=(7,3,0) n=4 : [(2, True, False), (3, True, False), (5, True, False), (7, True, False), (10007, True, False)] (0.2s)
+(r,l,t)=(9,0,1) n=3 : [(2, True, False), (3, True, False), (5, True, False), (7, True, False), (10007, True, False)] (0.2s)
+(r,l,t)=(9,1,1) n=4 : [(2, True, False), (3, True, False), (5, True, False), (7, True, False), (10007, True, False)] (0.4s)
+== P6.3 wrong borders (measured, no prediction) ==
+(r,l,t)=(5,2,1) borders [1] : Pfaffian is zero
+(r,l,t)=(7,2,1) borders [3] : [(2, True, False), (3, True, False), (10007, True, False)]
+(r,l,t)=(5,0,1) borders [3] : [(2, True, False), (3, True, False), (10007, True, False)]
+(r,l,t)=(7,0,1) borders [5] : [(2, True, False), (3, True, False), (10007, True, False)]
+(r,l,t)=(5,0,1) borders [2] : [(2, False, False), (3, False, False), (10007, False, False)]
+(r,l,t)=(5,1,1) borders [0, 1] : Pfaffian is zero
+time 1.4s
+VIGIA-FIN-OK exit=0 pico_kb=167360 t=1s

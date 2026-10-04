@@ -1,0 +1,31 @@
+r=9 m=0 shapes=1 interlaced pairs=1 (D1)-not-(D2) pairs=0
+r=9 m=1 shapes=2 interlaced pairs=2 (D1)-not-(D2) pairs=1
+r=9 m=2 shapes=4 interlaced pairs=4 (D1)-not-(D2) pairs=3
+r=9 m=3 shapes=7 interlaced pairs=8 (D1)-not-(D2) pairs=11
+m=1 done (0.0s)
+m=2 done (0.0s)
+m=3 done (0.9s)
+TOTALS {'P1': 42, 'layer': 126, 'dim': 42, 'slice': 378, 'lowered': 273, 'D1notD2': 45}
+FAILURES/CONTROLS {'CONTROL lowered slice fails (expected)': 54, 'CONTROL D1-not-D2 dim != |Z| (expected)': 45}
+root r=9 m=1 p=2: dim V_root=9 dim (D_J)=9 same ideal=True |Z|=9 slices W_0..W_{r-1}=[1, 1, 1, 1, 1, 1, 1, 1, 1]
+root r=9 m=1 p=3: dim V_root=9 dim (D_J)=9 same ideal=True |Z|=9 slices W_0..W_{r-1}=[1, 1, 1, 1, 1, 1, 1, 1, 1]
+root r=9 m=1 p=10007: dim V_root=9 dim (D_J)=9 same ideal=True |Z|=9 slices W_0..W_{r-1}=[1, 1, 1, 1, 1, 1, 1, 1, 1]
+root r=9 m=3 p=2: dim V_root=217 dim (D_J)=217 same ideal=True |Z|=217 slices W_0..W_{r-1}=[9, 9, 9, 9, 9, 9, 9, 73, 81]
+root r=9 m=3 p=3: dim V_root=217 dim (D_J)=217 same ideal=True |Z|=217 slices W_0..W_{r-1}=[9, 9, 9, 9, 9, 9, 9, 73, 81]
+root r=9 m=3 p=10007: dim V_root=217 dim (D_J)=217 same ideal=True |Z|=217 slices W_0..W_{r-1}=[9, 9, 9, 9, 9, 9, 9, 73, 81]
+time 1.0s
+r=11 m=0 shapes=1 interlaced pairs=1 (D1)-not-(D2) pairs=0
+r=11 m=1 shapes=2 interlaced pairs=2 (D1)-not-(D2) pairs=1
+r=11 m=2 shapes=4 interlaced pairs=4 (D1)-not-(D2) pairs=3
+r=11 m=3 shapes=7 interlaced pairs=8 (D1)-not-(D2) pairs=11
+m=1 done (0.0s)
+m=2 done (0.0s)
+m=3 done (1.2s)
+TOTALS {'P1': 42, 'layer': 154, 'dim': 28, 'slice': 308, 'lowered': 226, 'D1notD2': 30}
+FAILURES/CONTROLS {'CONTROL lowered slice fails (expected)': 36, 'CONTROL D1-not-D2 dim != |Z| (expected)': 30}
+root r=11 m=1 p=2: dim V_root=11 dim (D_J)=11 same ideal=True |Z|=11 slices W_0..W_{r-1}=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+root r=11 m=1 p=11: dim V_root=11 dim (D_J)=11 same ideal=True |Z|=11 slices W_0..W_{r-1}=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+root r=11 m=3 p=2: dim V_root=331 dim (D_J)=331 same ideal=True |Z|=331 slices W_0..W_{r-1}=[11, 11, 11, 11, 11, 11, 11, 11, 11, 111, 121]
+root r=11 m=3 p=11: dim V_root=331 dim (D_J)=331 same ideal=True |Z|=331 slices W_0..W_{r-1}=[11, 11, 11, 11, 11, 11, 11, 11, 11, 111, 121]
+time 1.2s
+VIGIA-FIN-OK exit=0 pico_kb=62160 t=2s
