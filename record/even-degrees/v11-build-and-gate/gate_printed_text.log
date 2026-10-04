@@ -1,0 +1,45 @@
+T1  section 8.9: r = 3, k = 1, slices of (D(y2,y3), D(y1,y3), D(y1,y2))
+  ok   p=2 dim = 19 and slices (W_0,W_1,W_2) = (3,7,9) : (19, [3, 7, 9])
+  ok   p=3 dim = 19 and slices (W_0,W_1,W_2) = (3,7,9) : (19, [3, 7, 9])
+  ok   p=5 dim = 19 and slices (W_0,W_1,W_2) = (3,7,9) : (19, [3, 7, 9])
+T2  Lemma 8.12 and Corollary 8.13: the two forms, the map theta
+  ok   (k,r,p)=(1,3,2): dim M = dim (D_J) = N_r(N) = 19, theta injective, image = (D_J) : (19, 19, True, True)
+  ok   (k,r,p)=(1,3,3): dim M = dim (D_J) = N_r(N) = 19, theta injective, image = (D_J) : (19, 19, True, True)
+  ok   (k,r,p)=(1,3,5): dim M = dim (D_J) = N_r(N) = 19, theta injective, image = (D_J) : (19, 19, True, True)
+  ok   (k,r,p)=(2,3,2): dim M = dim (D_J) = N_r(N) = 141, theta injective, image = (D_J) : (141, 141, True, True)
+  ok   (k,r,p)=(2,3,3): dim M = dim (D_J) = N_r(N) = 141, theta injective, image = (D_J) : (141, 141, True, True)
+  ok   (k,r,p)=(2,3,5): dim M = dim (D_J) = N_r(N) = 141, theta injective, image = (D_J) : (141, 141, True, True)
+  ok   (k,r,p)=(1,5,2): dim M = dim (D_J) = N_r(N) = 61, theta injective, image = (D_J) : (61, 61, True, True)
+  ok   (k,r,p)=(1,5,3): dim M = dim (D_J) = N_r(N) = 61, theta injective, image = (D_J) : (61, 61, True, True)
+  ok   (k,r,p)=(1,5,5): dim M = dim (D_J) = N_r(N) = 61, theta injective, image = (D_J) : (61, 61, True, True)
+T3  Corollary 10.8: sum of the D_J C  =  ann(e_odd);  intersection of the I_J C  =  (e_odd) C
+  ok   (r,N,p)=(3,4,3): both equalities, colength 19 : (19, 19, 19, 19)
+  ok   (r,N,p)=(3,4,5): both equalities, colength 19 : (19, 19, 19, 19)
+  ok   (r,N,p)=(3,4,7): both equalities, colength 19 : (19, 19, 19, 19)
+  ok   (r,N,p)=(3,4,2): colengths 19 (intersection) and 21 (e_odd) : (19, 19, 21)
+  ok   (r,N,p)=(3,6,3): both equalities, colength 141 : (141, 141, 141, 141)
+  ok   (r,N,p)=(3,6,5): both equalities, colength 141 : (141, 141, 141, 141)
+  ok   (r,N,p)=(3,6,7): both equalities, colength 141 : (141, 141, 141, 141)
+  ok   (r,N,p)=(3,6,2): sum = colength of the intersection = N_r(N) (Theorem O in char 2) : (141, 141, 183)
+  ok   (r,N,p)=(5,4,3): both equalities, colength 61 : (61, 61, 61, 61)
+  ok   (r,N,p)=(5,4,5): both equalities, colength 61 : (61, 61, 61, 61)
+  ok   (r,N,p)=(5,4,7): both equalities, colength 61 : (61, 61, 61, 61)
+  ok   (r,N,p)=(5,4,2): sum = colength of the intersection = N_r(N) (Theorem O in char 2) : (61, 61, 65)
+T4  one matching removed, r = 3, k = 2 (five variables): dimension 140 for each of the 15
+  ok   p=2: full 141, each of the 15 removals 140 : (141, [140])
+  ok   p=3: full 141, each of the 15 removals 140 : (141, [140])
+T5  Proposition 9.2: m = q = 2^v over F_2
+  ok   (k,q)=(1,4): Step 1, in(psi_J) = L_J = Y*D_J, dim I = dim (L_J)B = dim Theorem-O ideal = 19, HF(in I) = HF((L_J)B) : (True, True, True, 19, 19, 19, [3, 6, 6, 3, 1])
+  ok   (k,q)=(2,4): Step 1, in(psi_J) = L_J = Y*D_J, dim I = dim (L_J)B = dim Theorem-O ideal = 141, HF(in I) = HF((L_J)B) : (True, True, True, 141, 141, 141, [15, 36, 40, 29, 15, 5, 1])
+  ok   (k,q)=(1,8): Step 1, in(psi_J) = L_J = Y*D_J, dim I = dim (L_J)B = dim Theorem-O ideal = 127, HF(in I) = HF((L_J)B) : (True, True, True, 127, 127, 127, [3, 6, 9, 12, 15, 18, 18, 15, 12, 9, 6, 3, 1])
+T6  the table of section 9.1 and Example 9.14
+  ok   table of Q_k(m), m = 4..16 even, k = 1..5
+  ok   Q_1(m) = 3m^2 - 9m + 7 for even m <= 40
+  ok   m = 4: central trinomial coefficients of 2k+2
+  ok   direct count at (k,m) = (1,6) is 61 : 61
+  ok   p = 3: (4,0): 1 x 6, (2,2): 6 x 6, (0,4): 1 x 19 : {(0, 4): (1, [19]), (2, 2): (6, [6]), (4, 0): (1, [6])}
+  ok   p = 2: (4,0,0): 1 x 1, (2,1,1): 12 x 2, (0,2,2): 6 x 6; 19 compatible colourings : {(0, 2, 2): (6, [6]), (2, 1, 1): (12, [2]), (4, 0, 0): (1, [1])}
+
+FAILURES: 0 []
+FIN-OK
+VIGIA-FIN-OK exit=0 pico_kb=161792 t=5s
