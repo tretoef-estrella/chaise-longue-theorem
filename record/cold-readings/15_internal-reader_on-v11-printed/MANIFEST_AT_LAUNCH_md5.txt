@@ -1,0 +1,11 @@
+4dc81cde4594860a3a632c99851754cc  ./CLAUDE.md
+8f95c9eef899c3cc534753e3b80db8f6  ./MISSION.md
+7b3db0d60481a949dd655626fc31bfa7  ./material/THE_CHAISE_LONGUE_THEOREM_v11.md
+1494a594b4430b50a0123cd27bd17cf1  ./material/THE_CHAISE_LONGUE_THEOREM_v11.pdf
+51081197f073eb7a99de2c8142711b31  ./material/sources/Aoki_1983_p23.png
+6227bbd8fe1b9945d2dd712fad0af52f  ./material/sources/Aoki_1983_p24_TheoremA.png
+9e075fd85846df9591d6e9d014927991  ./material/sources/Aoki_1983_pp23-54_OCR.txt
+45616d39aa857e683efbb598b3dc2cd6  ./material/sources/Aoki_1984_MathAnn267_erratum_BF01455974.pdf
+4090978b62d234271bc6eff8997ca5e5  ./material/sources/DS_1405.4683v3_texto.txt
+e5b4168be1114e2ab15081902146377b  ./material/sources/DS_arXiv_1405.4683v3.pdf
+e5f8cf13253222f0388fe7dab9edfe88  ./material/vigia.sh
