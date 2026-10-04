@@ -2,6 +2,8 @@
 
 Version 10 of the paper proved Conjecture 1.2 for every odd degree and listed the even degrees as its first open problem, and the count at an odd box as its seventh. Both were closed on **2 October 2026**; version 12 of the paper (4 October 2026) contains the proof as §8 (Theorem O) and §9 (Theorem 9.11). This folder is the record of how that happened, in the order it happened. §14.6 and §14.9 of the paper summarise it.
 
+The story of those days — the question, the image of the aeroplane, the measurements, the flight, the readings and the machine — is told in [How the Even Degrees Were Closed](HOW_THE_EVEN_DEGREES_WERE_CLOSED.md) ([pdf](HOW_THE_EVEN_DEGREES_WERE_CLOSED.pdf)).
+
 ## 1. The measurement and the mission
 
 Before any mission was written, the auditing instance measured two things on its own: that at the degrees $m = 2^v$ the forms of lowest degree of the generators, in the coordinates $s = t + 1$, span an ideal of the right dimension (seven cells of seven), and that the count at the odd box holds in eighteen cells. The engines are `engines-new-cells/azotea.py` and `engines-new-cells/caja_impar.py`, with their logs. The mission that followed is [`pilot-proof_grepy-is-in-the-sky/MISSION.md`](pilot-proof_grepy-is-in-the-sky/MISSION.md).
