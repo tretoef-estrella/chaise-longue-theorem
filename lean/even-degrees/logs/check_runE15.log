@@ -1,0 +1,142 @@
+OddEquality.Mideal : (F : Type u_1) → [inst : Field F] → (q n : ℕ) → Ideal (Peel.C F q n)
+OddEquality.IPC : (F : Type u_1) →
+  [inst : Field F] → (q : ℕ) → {n : ℕ} → ColComp.PerfMatch (Fin n) → Ideal (Peel.C F q n)
+OddEquality.Kint : (F : Type u_1) → [inst : Field F] → (q n : ℕ) → Ideal (Peel.C F q n)
+@OddEquality.A1 : ∀ {F : Type u_1} [inst : Field F] (h n : ℕ),
+  OddEquality.Mideal F (2 * h + 2) n = OddPatterns.VSAll F h n {(OddShapes.emptyPart, false)}
+@OddEquality.A2 : ∀ {F : Type u_1} [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      EvenCount.QkEven k (2 * h + 2) ≤
+        Module.finrank F ↥(Submodule.restrictScalars F (OddEquality.Mideal F (2 * h + 2) (2 * k + 2)))
+@OddEquality.theta : {F : Type u_1} →
+  [inst : Field F] → (h k : ℕ) → Peel.C F (2 * h + 2) (2 * k + 2) →ₗ[F] Peel.C F (2 * h + 2) (2 * k + 1)
+@OddEquality.A3 : ∀ {F : Type u_1} [inst : Field F] (h k : ℕ) (g : Peel.C F (2 * h + 2) (2 * k + 1))
+  (f : Peel.C F (2 * h + 2) (2 * k + 2)),
+  (OddEquality.theta h k) ((OddEquality.iota h k) g * f) = g * (OddEquality.theta h k) f
+@OddEquality.theta_D0 : ∀ {F : Type u_1} [inst : Field F] (h k : ℕ) (b : Fin (2 * k + 1)),
+  (OddEquality.theta h k) (Tight.D F (2 * h + 2) 0 b.succ) = 1
+@OddEquality.A4 : ∀ {F : Type u_1} [inst : Field F] (h : ℕ) {k : ℕ} (J : BallotBound.Matching k),
+  (OddEquality.theta h k) (ColOne.DPn F (2 * h + 2) (OddEquality.PJ J)) = TheoremB.DJ F (2 * h + 2) J
+@OddEquality.A5 : ∀ {F : Type u_1} [inst : Field F] (h k : ℕ),
+  Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F (2 * h + 2) k)) ≤
+    Module.finrank F ↥(Submodule.restrictScalars F (OddEquality.Mideal F (2 * h + 2) (2 * k + 2)))
+@OddEquality.pairing_injective : ∀ {F : Type u_1} [inst : Field F] {q n : ℕ} (hq : 2 ≤ q),
+  Function.Injective ⇑(OddEquality.pairing hq)
+@OddEquality.B1 : ∀ {F : Type u_1} [inst : Field F] {q n : ℕ} (hq : 2 ≤ q) (V : Submodule F (Peel.C F q n)),
+  Module.finrank F ↥V + Module.finrank F ↥(OddEquality.perp hq V) = Module.finrank F (Peel.C F q n) ∧
+    OddEquality.annF V ≤ OddEquality.perp hq V ∧
+      Module.finrank F ↥V + Module.finrank F ↥(OddEquality.annF V) ≤ Module.finrank F (Peel.C F q n)
+@OddEquality.B2 : ∀ {F : Type u_1} [inst : Field F] {n : ℕ} (h : ℕ),
+  Submodule.restrictScalars F (OddEquality.Kint F (2 * h + 2) n) ≤
+    OddEquality.annF (Submodule.restrictScalars F (OddEquality.Mideal F (2 * h + 2) n))
+@OddEquality.B3 : ∀ {F : Type u_1} [inst : Field F] {n : ℕ} (h : ℕ),
+  Module.finrank F ↥(Submodule.restrictScalars F (OddEquality.Mideal F (2 * h + 2) n)) ≤
+    Module.finrank F (Peel.C F (2 * h + 2) n ⧸ OddEquality.Kint F (2 * h + 2) n)
+@OddEquality.C1 : ∀ {F : Type u_1} [inst : Field F] {n : ℕ} (T : Finset F) (Γ : Finset (Fin n → ↥T)),
+  FiniteDimensional F (MvPolynomial (Fin n) F ⧸ OddEquality.IPts T Γ) ∧
+    Module.finrank F (MvPolynomial (Fin n) F ⧸ OddEquality.IPts T Γ) = Γ.card ∧
+      FiniteDimensional F (MvPolynomial (Fin n) F ⧸ Degeneration.gr (OddEquality.IPts T Γ)) ∧
+        Module.finrank F (MvPolynomial (Fin n) F ⧸ Degeneration.gr (OddEquality.IPts T Γ)) = Γ.card
+@OddEquality.C3_ideal : ∀ {F : Type u_1} [inst : Field F] {n : ℕ} {T : Finset F},
+  T.Nonempty →
+    (∀ u ∈ T, -u ∈ T) → ∀ (P : ColComp.PerfMatch (Fin n)), OddEquality.IVP T P = OddEquality.IPS P ⊔ OddEquality.GT T
+@OddEquality.C3_top : ∀ {F : Type u_1} [inst : Field F] {n : ℕ} (q : ℕ),
+  2 ≤ q →
+    ∀ {T : Finset F},
+      T.card = q - 1 →
+        (∀ u ∈ T, -u ∈ T) →
+          ∀ (P : ColComp.PerfMatch (Fin n)),
+            Degeneration.gr (OddEquality.IPS P ⊔ OddEquality.GT T) = OddEquality.IPS P ⊔ Peel.powIdeal F q n
+@OddEquality.C4 : ∀ {F : Type u_1} [inst : Field F] [inst_1 : DecidableEq F] (q : ℕ) (T : Finset F),
+  T.card = q - 1 →
+    ∀ {h : ℕ} (S : EvenCount.PointedSetting (↥T) h),
+      (∀ (u : ↥T), ↑(S.neg u) = -↑u) →
+        ∀ (k : ℕ),
+          Degeneration.gr (OddEquality.IPts T (EvenCount.closedPointed S (2 * k + 2))) ≤
+            ⨅ P, OddEquality.IPS P ⊔ Peel.powIdeal F q (2 * k + 2)
+@OddEquality.C5 : ∀ {F : Type u_1} [inst : Field F] {n : ℕ} (q : ℕ) (T : Finset F) (Γ : Finset (Fin n → ↥T)),
+  Degeneration.gr (OddEquality.IPts T Γ) ≤ ⨅ P, OddEquality.IPS P ⊔ Peel.powIdeal F q n →
+    FiniteDimensional F (Peel.C F q n ⧸ OddEquality.Kint F q n) ∧
+      Module.finrank F (Peel.C F q n ⧸ OddEquality.Kint F q n) ≤ Γ.card
+OddEquality.card_Gamma : ∀ (h k : ℕ),
+  (EvenCount.closedPointed (OddEquality.pointedTQ h) (2 * k + 2)).card = EvenCount.QkEven k (2 * h + 2)
+OddEquality.partC : ∀ (h k : ℕ),
+  Module.finrank ℚ (Peel.C ℚ (2 * h + 2) (2 * k + 2) ⧸ OddEquality.Kint ℚ (2 * h + 2) (2 * k + 2)) ≤
+    EvenCount.QkEven k (2 * h + 2)
+@OddEquality.D1_rat : ∀ {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.finrank ℚ ↥(Submodule.restrictScalars ℚ (TheoremB.DIdeal ℚ (2 * h + 2) k)) =
+          EvenCount.QkEven k (2 * h + 2) ∧
+        Module.finrank ℚ ↥(Submodule.restrictScalars ℚ (OddEquality.Mideal ℚ (2 * h + 2) (2 * k + 2))) =
+          EvenCount.QkEven k (2 * h + 2)
+OddEquality.D1 : ∀ (F : Type u_1) [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F (2 * h + 2) k)) =
+          EvenCount.QkEven k (2 * h + 2) ∧
+        Module.finrank F ↥(Submodule.restrictScalars F (OddEquality.Mideal F (2 * h + 2) (2 * k + 2))) =
+          EvenCount.QkEven k (2 * h + 2)
+@OddEquality.D2_DJ : ∀ {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.Free ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 1) ⧸ OddEquality.DIdealZ (2 * h + 2) k) ∧
+        Module.finrank ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 1) ⧸ OddEquality.DIdealZ (2 * h + 2) k) =
+          (2 * h + 1) ^ (2 * k + 1) - EvenCount.QkEven k (2 * h + 2)
+@OddEquality.D2_M : ∀ {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.Free ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 2) ⧸ OddEquality.MidealZ (2 * h + 2) (2 * k + 2)) ∧
+        Module.finrank ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 2) ⧸ OddEquality.MidealZ (2 * h + 2) (2 * k + 2)) =
+          (2 * h + 1) ^ (2 * k + 2) - EvenCount.QkEven k (2 * h + 2)
+@OddEquality.partB_attained : ∀ {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.finrank ℚ (Peel.C ℚ (2 * h + 2) (2 * k + 2) ⧸ OddEquality.Kint ℚ (2 * h + 2) (2 * k + 2)) =
+        EvenCount.QkEven k (2 * h + 2)
+def OddEquality.Mideal.{u_1} : (F : Type u_1) → [inst : Field F] → (q n : ℕ) → Ideal (Peel.C F q n) :=
+fun F [Field F] q n => Ideal.span (Set.range fun P => ColOne.DPn F q P)
+def OddEquality.IPC.{u_1} : (F : Type u_1) →
+  [inst : Field F] → (q : ℕ) → {n : ℕ} → ColComp.PerfMatch (Fin n) → Ideal (Peel.C F q n) :=
+fun F [Field F] q {n} P => Ideal.span (Set.range fun a => Tight.y F q a + Tight.y F q (↑P a))
+def OddEquality.Kint.{u_1} : (F : Type u_1) → [inst : Field F] → (q n : ℕ) → Ideal (Peel.C F q n) :=
+fun F [Field F] q n => ⨅ P, OddEquality.IPC F q P
+def OddEquality.theta.{u_1} : {F : Type u_1} →
+  [inst : Field F] → (h k : ℕ) → Peel.C F (2 * h + 2) (2 * k + 2) →ₗ[F] Peel.C F (2 * h + 2) (2 * k + 1) :=
+fun {F} [Field F] h k => Peel.coeffY1 ⋯ (2 * h)
+def OddEquality.DJZ : ℕ → {k : ℕ} → BallotBound.Matching k → MvPolynomial (Fin (2 * k + 1)) ℤ :=
+fun q {k} J => ∏ a with a ≠ 0 ∧ ↑J a ≠ 0 ∧ a < ↑J a, EveryField.DPR ℤ q (TheoremB.idx a) (TheoremB.idx (↑J a))
+def OddEquality.DIdealZ : (q k : ℕ) → Ideal (FreeZ.CZ q (2 * k + 1)) :=
+fun q k => Ideal.span (Set.range fun J => (Ideal.Quotient.mk (FreeZ.powIdealZ q (2 * k + 1))) (OddEquality.DJZ q J))
+def OddEquality.DPnZ : ℕ → {n : ℕ} → ColComp.PerfMatch (Fin n) → MvPolynomial (Fin n) ℤ :=
+fun q {n} P => ∏ a with a < ↑P a, EveryField.DPR ℤ q a (↑P a)
+def OddEquality.MidealZ : (q n : ℕ) → Ideal (FreeZ.CZ q n) :=
+fun q n => Ideal.span (Set.range fun P => (Ideal.Quotient.mk (FreeZ.powIdealZ q n)) (OddEquality.DPnZ q P))
+@[reducible] def FreeZ.CZ : ℕ → ℕ → Type :=
+fun q m => MvPolynomial (Fin m) ℤ ⧸ FreeZ.powIdealZ q m
+def EvenCount.QkEven : ℕ → ℕ → ℕ :=
+fun k m =>
+  ∑ c ∈ Finset.range (k + 2),
+    ∑ b ∈ Fintype.piFinset fun x => Finset.range (2 * k + 3) with 2 * c + 2 * ∑ u, b u = 2 * k + 2,
+      (2 * k + 2).factorial / ((2 * c).factorial * ∏ u, (b u).factorial ^ 2)
+'OddEquality.A1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.A2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.A3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.A4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.A5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.B3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.C1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.C3_ideal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.C3_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.C4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.C5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.partC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.D1_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.D1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.D2_DJ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.D2_M' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.partB_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2156896 t=144s

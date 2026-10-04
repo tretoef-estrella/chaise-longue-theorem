@@ -1,0 +1,142 @@
+def Membership.PolyIn.{u_1} : {A : Type u_1} →
+  [inst : CommRing A] → {n : ℕ} → (Fin n → A) → (Fin n → Polynomial A) → Prop :=
+fun {A} [CommRing A] {n} y c => ∃ P, ∀ (i : Fin n), c i = Polynomial.eval (Polynomial.C (y i)) P
+def Membership.pairDy.{u_1} : {A : Type u_1} → [CommRing A] → ℕ → {n : ℕ} → (Fin n → A) → Finset (Fin n) → A :=
+fun {A} [CommRing A] r {n} y e => if h : e.Nonempty then ColOne.Dab (r + 1) (y (e.min' h)) (y (e.max' h)) else 1
+def Membership.DPy.{u_1} : {A : Type u_1} → [CommRing A] → ℕ → {n : ℕ} → (Fin n → A) → Finset (Finset (Fin n)) → A :=
+fun {A} [CommRing A] r {n} y P => ∏ e ∈ P, Membership.pairDy r y e
+def Membership.UB.{u_1} : {A : Type u_1} →
+  [inst : CommRing A] → ℕ → ℕ → {n : ℕ} → (Fin n → A) → Finset (Fin n) → Ideal A :=
+fun {A} [CommRing A] r p {n} y B =>
+  Ideal.span
+    {g | ∃ S P, S ⊆ B ∧ S.card = p ∧ Odd3.IsPairs P ∧ Odd3.supp P = B \ S ∧ g = Tight.vand y S * Membership.DPy r y P}
+def Membership.U.{u_1} : {A : Type u_1} → [inst : CommRing A] → ℕ → ℕ → {n : ℕ} → (Fin n → A) → Ideal A :=
+fun {A} [CommRing A] r p {n} y => Membership.UB r p y Finset.univ
+def Membership.pairsOf : {k n : ℕ} → Fin k ↪o Fin n → (Fin k → Fin k) → Finset (Finset (Fin n)) :=
+fun {k n} ι π => Finset.image (fun x => {ι x, ι (π x)}) {x | x < π x}
+def Tight.vand.{u_2, u_3} : {ι : Type u_2} → {R : Type u_3} → [LinearOrder ι] → [CommRing R] → (ι → R) → Finset ι → R :=
+fun {ι} {R} [LinearOrder ι] [CommRing R] x B => ∏ c ∈ B, ∏ c' ∈ B with c < c', (x c' - x c)
+def Odd3.IsPairs : {m : ℕ} → Finset (Finset (Fin m)) → Prop :=
+fun {m} P => (∀ e ∈ P, e.card = 2) ∧ (↑P).PairwiseDisjoint id
+def Odd3.supp : {m : ℕ} → Finset (Finset (Fin m)) → Finset (Fin m) :=
+fun {m} P => P.sup id
+def Pfaffian.Pfe.{u_1} : {A : Type u_1} → [CommRing A] → ℕ → {n s : ℕ} → (Fin n → A) → (Fin s → ℕ) → A :=
+fun {A} [CommRing A] r {n s} y e => Pfaffian.Pf r y fun k i => y i ^ e k
+@Membership.V1 : ∀ {R : Type u_1} [inst : CommRing R] {m : ℕ} (x : Fin m → R) (p : Fin m → Polynomial R),
+  ∏ i, ∏ j ∈ Finset.Ioi i, (x j - x i) ∣ (Matrix.of fun i k => Polynomial.eval (x i) (p k)).det
+@Membership.vand_map : ∀ {α : Type u_1} {β : Type u_2} {R : Type u_3} [inst : LinearOrder α] [inst_1 : LinearOrder β]
+  [inst_2 : CommRing R] (y : α → R) (ι : β ↪o α) (T : Finset β),
+  Tight.vand y (Finset.map ι.toEmbedding T) = Tight.vand (y ∘ ⇑ι) T
+@Membership.V2 : ∀ {A : Type u_1} [inst : CommRing A] {n m : ℕ} (y : Fin n → A) (S : Finset (Fin n)) (hS : S.card = m),
+  Tight.vand y S = ∏ i, ∏ j ∈ Finset.Ioi i, (y ((S.orderEmbOfFin hS) j) - y ((S.orderEmbOfFin hS) i))
+@Membership.polyIn_pow : ∀ {A : Type u_1} [inst : CommRing A] {n : ℕ} (y : Fin n → A) (e : ℕ),
+  Membership.PolyIn y fun i => Polynomial.C (y i ^ e)
+@Membership.polyIn_Ev : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) {n : ℕ} (y : Fin n → A),
+  Membership.PolyIn y (RankTwo.Ev h y)
+@Membership.polyIn_Od : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) {n : ℕ} (y : Fin n → A),
+  Membership.PolyIn y (RankTwo.Od h y)
+@Membership.V3 : ∀ {A : Type u_1} [inst : CommRing A] {n m : ℕ} (y : Fin n → A) (S : Finset (Fin n)) (hS : S.card = m)
+  (c' : Fin m → Fin n → Polynomial A),
+  (∀ (k : Fin m), Membership.PolyIn y (c' k)) →
+    Polynomial.C (Tight.vand y S) ∣ (Matrix.of fun i k => c' k ((S.orderEmbOfFin hS) i)).det
+@Membership.H1 : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) {n : ℕ} (y : Fin n → A) (i j : Fin n),
+  y j ^ (2 * h + 1) = 0 → RankTwo.Hm h y i j = Polynomial.C (ColOne.Dab (2 * h + 2) (y i) (y j)) * RankTwo.Od h y j
+@Membership.H2 : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) {n m : ℕ} (y : Fin n → A) (f : Fin m → Fin n),
+  (RankTwo.Hm h y).submatrix f f = RankTwo.Hm h (y ∘ f)
+@Membership.H3 : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) {m : ℕ} (z : Fin m → A),
+  (∀ (i : Fin m), z i ^ (2 * h + 1) = 0) →
+    Pfaffian.pf m (RankTwo.Hm h z) =
+      ∑ π with Pfaffian.IsMatching π,
+        (-1) ^ Pfaffian.crossings π * Polynomial.C (∏ x with x < π x, ColOne.Dab (2 * h + 2) (z x) (z (π x))) *
+          ∏ x with x < π x, RankTwo.Od h z (π x)
+@Membership.pairDy_pair : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ) {n : ℕ} (y : Fin n → A) {a b : Fin n},
+  a < b → Membership.pairDy r y {a, b} = ColOne.Dab (r + 1) (y a) (y b)
+@Membership.isPairs_pairsOf : ∀ {k n : ℕ} (ι : Fin k ↪o Fin n) {π : Fin k → Fin k},
+  Pfaffian.IsMatching π → Odd3.IsPairs (Membership.pairsOf ι π)
+@Membership.supp_pairsOf : ∀ {k n : ℕ} (ι : Fin k ↪o Fin n) {π : Fin k → Fin k},
+  Pfaffian.IsMatching π → Odd3.supp (Membership.pairsOf ι π) = Finset.map ι.toEmbedding Finset.univ
+@Membership.DPy_pairsOf : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ) {k n : ℕ} (y : Fin n → A) (ι : Fin k ↪o Fin n)
+  (π : Fin k → Fin k),
+  Membership.DPy r y (Membership.pairsOf ι π) = ∏ x with x < π x, ColOne.Dab (r + 1) (y (ι x)) (y (ι (π x)))
+@Membership.pairDy_map : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ) {n m : ℕ} (y : Fin m → A) (ι : Fin n ↪o Fin m)
+  (e : Finset (Fin n)), Membership.pairDy r y (Finset.map ι.toEmbedding e) = Membership.pairDy r (y ∘ ⇑ι) e
+@Membership.U_le_UB : ∀ {A : Type u_1} [inst : CommRing A] (r p : ℕ) {n m : ℕ} (y : Fin m → A) (ι : Fin n ↪o Fin m),
+  Membership.U r p (y ∘ ⇑ι) ≤ Membership.UB r p y (Finset.map ι.toEmbedding Finset.univ)
+@Membership.M1 : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) {n s' : ℕ} (y : Fin n → A),
+  (∀ (i : Fin n), y i ^ (2 * h + 1) = 0) →
+    ∀ (c' : Fin s' → Fin n → Polynomial A),
+      (∀ (k : Fin s'), Membership.PolyIn y (c' k)) →
+        ∀ (d : ℕ), (Pfaffian.bpf (RankTwo.Hm h y) c').coeff d ∈ Membership.U (2 * h + 1) s' y
+@Membership.M2a : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {n s : ℕ} (t : ℕ),
+      n = s + 2 * (t + 1) →
+        ∀ (y : Fin n → A),
+          (∀ (i : Fin n), y i ^ (2 * h + 1) = 0) →
+            ∀ (e : Fin s → ℕ), Pfaffian.Pfe (2 * h + 1) y e ∈ Membership.U (2 * h + 1) (s + 2) y
+@Membership.M2b : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {n s : ℕ} (t : ℕ),
+      n = s + 1 + 2 * t →
+        ∀ (y : Fin n → A),
+          (∀ (i : Fin n), y i ^ (2 * h + 1) = 0) →
+            ∀ (e : Fin s → ℕ),
+              Pfaffian.Pf (2 * h + 1) y (Fin.snoc (fun k i => y i ^ e k) fun i => y i ^ (2 * h)) ∈
+                Membership.U (2 * h + 1) (s + 1) y
+@Membership.M3_pos : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {n l : ℕ} (t : ℕ),
+      n = l + 2 + 2 * t →
+        ∀ (y : Fin n → A),
+          (∀ (i : Fin n), y i ^ (2 * h + 1) = 0) →
+            (Pfaffian.Pfe (2 * h + 1) y fun k => ↑k) ∈ Membership.U (2 * h + 1) (l + 2) y
+@Membership.M3_zero : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {n : ℕ} (t : ℕ),
+      n = 1 + 2 * t →
+        ∀ (y : Fin n → A),
+          (∀ (i : Fin n), y i ^ (2 * h + 1) = 0) →
+            (Pfaffian.Pfe (2 * h + 1) y fun x => 2 * h) ∈ Membership.U (2 * h + 1) 1 y
+@Membership.M4a : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {m n s : ℕ} (t : ℕ) (y : Fin m → A),
+      (∀ (i : Fin m), y i ^ (2 * h + 1) = 0) →
+        ∀ (B : Finset (Fin m)) (hB : B.card = n),
+          n = s + 2 * (t + 1) →
+            ∀ (e : Fin s → ℕ),
+              Pfaffian.Pfe (2 * h + 1) (y ∘ ⇑(B.orderEmbOfFin hB)) e ∈ Membership.UB (2 * h + 1) (s + 2) y B
+@Membership.M4b : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {m n s : ℕ} (t : ℕ) (y : Fin m → A),
+      (∀ (i : Fin m), y i ^ (2 * h + 1) = 0) →
+        ∀ (B : Finset (Fin m)) (hB : B.card = n),
+          n = s + 1 + 2 * t →
+            ∀ (e : Fin s → ℕ),
+              Pfaffian.Pf (2 * h + 1) (y ∘ ⇑(B.orderEmbOfFin hB))
+                  (Fin.snoc (fun k i => y ((B.orderEmbOfFin hB) i) ^ e k) fun i =>
+                    y ((B.orderEmbOfFin hB) i) ^ (2 * h)) ∈
+                Membership.UB (2 * h + 1) (s + 1) y B
+'Membership.V1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.vand_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.V2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.polyIn_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.polyIn_Ev' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.polyIn_Od' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.V3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.H1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.H2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.H3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.pairDy_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.isPairs_pairsOf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.supp_pairsOf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.DPy_pairsOf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.pairDy_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.U_le_UB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.M1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.M2a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.M2b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.M3_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.M3_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.M4a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Membership.M4b' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2191984 t=127s

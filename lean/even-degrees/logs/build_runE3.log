@@ -1,0 +1,13 @@
+== Defs vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1673712 t=74s
+Build completed successfully (8052 jobs).
+== Pairs vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1780672 t=67s
+Build completed successfully (8055 jobs).
+== Slice vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1916816 t=64s
+Build completed successfully (8056 jobs).
+== Cases vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1909040 t=69s
+Build completed successfully (8057 jobs).
+== Count vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1811872 t=63s
+Build completed successfully (8058 jobs).
+== Main vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1880128 t=60s
+Build completed successfully (8063 jobs).
+BUILD-LOOP-END

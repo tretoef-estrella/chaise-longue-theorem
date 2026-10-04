@@ -1,0 +1,31 @@
+=== MODULE Theta 13:30:45
+vigia_rc=0
+✔ [8029/8029] Built RequestProject.EvenOne.Theta (93s)
+Build completed successfully (8029 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1616912 t=100s
+=== MODULE Phi 13:32:26
+vigia_rc=0
+✔ [8213/8213] Built RequestProject.EvenOne.Phi (71s)
+Build completed successfully (8213 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1697440 t=79s
+=== MODULE CaseIn 13:33:46
+vigia_rc=0
+✔ [8214/8214] Built RequestProject.EvenOne.CaseIn (56s)
+Build completed successfully (8214 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1915808 t=63s
+=== MODULE CaseOut 13:34:49
+vigia_rc=0
+✔ [8215/8215] Built RequestProject.EvenOne.CaseOut (66s)
+Build completed successfully (8215 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1800848 t=72s
+=== MODULE Checks 13:36:02
+vigia_rc=0
+✔ [8052/8052] Built RequestProject.EvenOne.Checks (88s)
+Build completed successfully (8052 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2245632 t=94s
+=== MODULE Main 13:37:37
+vigia_rc=0
+✔ [8217/8217] Built RequestProject.EvenOne.Main (34s)
+Build completed successfully (8217 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2358688 t=40s
+BUILD-LOOP-END

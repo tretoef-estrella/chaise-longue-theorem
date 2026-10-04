@@ -1,0 +1,12 @@
+== Binomial vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1754128 t=68s
+Build completed successfully (8026 jobs).
+== Peeling vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1731952 t=87s
+Build completed successfully (8036 jobs).
+== Layers vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1801008 t=75s
+Build completed successfully (8052 jobs).
+== Swap vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1764800 t=62s
+Build completed successfully (8042 jobs).
+== Lifts vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1893808 t=57s
+Build completed successfully (8061 jobs).
+== Main vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1960784 t=62s
+Build completed successfully (8066 jobs).

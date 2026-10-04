@@ -1,0 +1,31 @@
+Z : (m : ℕ) → ℕ → Finset (Fin m → Fin 3)
+I : (F : Type u_1) → [inst : Field F] → (m : ℕ) → ℕ → Ideal (Peel.C F 4 m)
+@card_Z_rec : ∀ {m : ℕ},
+  1 ≤ m → ∀ (J : ℕ), 1 ≤ J → (Z m J).card = (Z (m - 1) (J + 1)).card + (Z (m - 1) J).card + (Z (m - 1) (J - 1)).card
+@card_Z_rec_zero : ∀ {m : ℕ}, 1 ≤ m → (Z m 0).card = (Z (m - 1) 1).card
+@slices_pos : ∀ {F : Type u_1} [inst : Field F] {m : ℕ} (hm : 1 ≤ m) {J : ℕ},
+  1 ≤ J →
+    J ≤ m - 1 →
+      ↑(I F (m - 1) (J + 1)) ⊆ ↑(Peel.W hm (I F m J) 2) ∧
+        ↑(I F (m - 1) J) ⊆ ↑(Peel.W hm (I F m J) 1) ∧ ↑(I F (m - 1) (J - 1)) ⊆ ↑(Peel.W hm (I F m J) 0)
+@slice_zero : ∀ {F : Type u_1} [inst : Field F] {m : ℕ} (hm : 1 ≤ m), ↑(I F (m - 1) 1) ⊆ ↑(Peel.W hm (I F m 0) 2)
+@card_Z_le_finrank : ∀ {F : Type u_1} [inst : Field F] (m J : ℕ),
+  (Z m J).card ≤ Module.finrank F ↥(Submodule.restrictScalars F (I F m J))
+@I_odd_one_eq_DIdeal : ∀ {F : Type u_1} [inst : Field F] (k : ℕ), I F (2 * k + 1) 1 = TheoremB.DIdeal F 4 k
+card_Z_one_odd : ∀ (k : ℕ), (Z (2 * k + 1) 1).card = EvenCount.QkEven k 4
+O_ge_three : ∀ (F : Type u_1) [inst : Field F] (k : ℕ),
+  EvenCount.QkEven k 4 ≤ Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F 4 k))
+@identity_sq : ∀ {R : Type u_1} [inst : CommRing R] (y1 yc : R), yc ^ 2 = y1 * (yc - y1) + (y1 ^ 2 - y1 * yc + yc ^ 2)
+@identity_vand : ∀ {R : Type u_1} [inst : CommRing R] (y1 ya yb yc : R),
+  (yb - ya) * (yc - ya) * (yc - yb) =
+    (y1 ^ 2 - y1 * ya + ya ^ 2) * (yc - yb) - (y1 ^ 2 - y1 * yb + yb ^ 2) * (yc - ya) +
+      (y1 ^ 2 - y1 * yc + yc ^ 2) * (yb - ya)
+'Odd3.card_Z_rec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Odd3.card_Z_rec_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Odd3.slices_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Odd3.slice_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Odd3.card_Z_le_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Odd3.I_odd_one_eq_DIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Odd3.card_Z_one_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Odd3.O_ge_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1986800 t=143s

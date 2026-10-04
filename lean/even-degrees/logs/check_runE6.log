@@ -1,0 +1,142 @@
+structure OddShapes.OddSetting.{u_1} (T : Type u_1) [Fintype T] (h : ℕ) : Type u_1
+number of parameters: 3
+fields:
+  OddShapes.OddSetting.neg : T → T
+  OddShapes.OddSetting.zero : T
+  OddShapes.OddSetting.neg_neg : ∀ (u : T), self.neg (self.neg u) = u
+  OddShapes.OddSetting.neg_zero : self.neg self.zero = self.zero
+  OddShapes.OddSetting.neg_ne : ∀ (u : T), u ≠ self.zero → self.neg u ≠ u
+  OddShapes.OddSetting.one_le : 1 ≤ h
+  OddShapes.OddSetting.card_eq : Fintype.card T = 2 * h + 1
+constructor:
+  OddShapes.OddSetting.mk.{u_1} {T : Type u_1} [Fintype T] {h : ℕ} (neg : T → T) (zero : T)
+    (neg_neg : ∀ (u : T), neg (neg u) = u) (neg_zero : neg zero = zero) (neg_ne : ∀ (u : T), u ≠ zero → neg u ≠ u)
+    (one_le : 1 ≤ h) (card_eq : Fintype.card T = 2 * h + 1) : OddShapes.OddSetting T h
+def OddShapes.Sh : ℕ → ℕ → Set OddShapes.Shape :=
+fun h m =>
+  {s |
+    s.1.len ≤ h ∧ (s.1.size + if s.2 = true then 1 else 0) ≤ m ∧ (s.1.size + if s.2 = true then 1 else 0) % 2 = m % 2}
+def OddShapes.optS : ℕ → OddShapes.Shape → ℕ → OddShapes.Shape :=
+fun h s p =>
+  if p ≤ s.1.len then (s.1.subE p, s.2)
+  else
+    if p = s.1.len + 1 then (s.1, !s.2)
+    else if p ≤ 2 * h + 1 - s.1.len then (s.1.addOne, s.2) else (s.1.addE (2 * h + 2 - p), s.2)
+def OddShapes.FS : ℕ → Set OddShapes.Shape → OddShapes.Shape → ℕ :=
+fun h Λ s => Fibres.FLam h (OddShapes.comp Λ s.2) s.1 + if s.1 ∈ OddShapes.comp Λ !s.2 then 1 else 0
+def OddShapes.IsInterlaced : ℕ → ℕ → Set OddShapes.Shape → Prop :=
+fun h m Λ =>
+  Λ ⊆ OddShapes.Sh h m ∧
+    (Lifts.IsDownSetPar h m (OddShapes.comp Λ false) ∧ Lifts.IsDownSetPar h (m - 1) (OddShapes.comp Λ true)) ∧
+      ∀ (ν : ChainLemma.Partition) (δ : Bool), (ν, δ) ∈ Λ → ∀ (j : ℕ), 1 ≤ j → j ≤ ν.len → (ν.subE j, !δ) ∈ Λ
+@OddShapes.A0 : ∀ {A : Type u_1} [inst : CommRing A] (q : ℕ) (a b : A),
+  (a + b) * ColOne.Dab q a b = b ^ (q - 1) - (-a) ^ (q - 1)
+@OddShapes.A1 : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ),
+  1 ≤ r → ∀ (a b : A), ColOne.Dab (r + 1) a b = b ^ (r - 1) - a * ColOne.Dab r a b
+@OddShapes.A2_D : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ),
+  Odd r → ∀ (a b : A), ColOne.Dab (r + 1) b a = ColOne.Dab (r + 1) a b
+@OddShapes.A2_Dminus : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ),
+  Odd r → ∀ (a b : A), ColOne.Dab r b a = -ColOne.Dab r a b
+@OddShapes.A3_D : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ),
+  Odd r → ∀ (a b : A), (a + b) * ColOne.Dab (r + 1) a b = a ^ r + b ^ r
+@OddShapes.A3_Dminus : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ),
+  Odd r → ∀ (a b : A), (a + b) * ColOne.Dab r a b = b ^ (r - 1) - a ^ (r - 1)
+@OddShapes.A4_D : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ),
+  Odd r → ∀ (a b : A), ColOne.Dab (r + 1) a b = ∑ u ∈ Finset.range r, (-1) ^ u * b ^ u * a ^ (r - 1 - u)
+@OddShapes.A4_Dminus : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ),
+  Odd r → ∀ (a b : A), ColOne.Dab r a b = -∑ u ∈ Finset.range (r - 1), (-1) ^ u * b ^ u * a ^ (r - 2 - u)
+@OddShapes.A4_coeff_D : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ),
+  Odd r →
+    ∀ (b : A), ∀ u ≤ r - 1, (ColOne.Dab (r + 1) Polynomial.X (Polynomial.C b)).coeff (r - 1 - u) = (-1) ^ u * b ^ u
+@OddShapes.A4_coeff_Dminus : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ),
+  Odd r →
+    ∀ (b : A) (u : ℕ), u + 2 ≤ r → (ColOne.Dab r Polynomial.X (Polynomial.C b)).coeff (r - 2 - u) = -((-1) ^ u * b ^ u)
+OddShapes.Sh_eq : ∀ (h m : ℕ),
+  OddShapes.Sh h m =
+    (fun lam => (lam, false)) '' Lifts.Par h m ∪ (fun lam => (lam, true)) '' {lam | 1 ≤ m ∧ lam ∈ Lifts.Par h (m - 1)}
+@OddShapes.shape_mem_Sh : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) {m : ℕ} (M : Fin m → T), S.shape M ∈ OddShapes.Sh h m
+@OddShapes.shape_consTuple_zero : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) {m : ℕ},
+  1 ≤ m → ∀ (M' : Fin (m - 1) → T), S.shape (Peel.consTuple S.zero M') = ((S.shape M').1, !(S.shape M').2)
+@OddShapes.multiset_shape_consTuple_ne_zero : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) {m : ℕ},
+  1 ≤ m →
+    ∀ (M' : Fin (m - 1) → T),
+      Multiset.map (fun t => S.shape (Peel.consTuple t M')) {x | x ≠ S.zero}.val =
+        Multiset.map (fun p => ((S.shape M').1.opt (2 * h) p, (S.shape M').2)) (Finset.Icc 1 (2 * h)).val
+@OddShapes.multiset_shape_consTuple_eq_optS : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) {m : ℕ},
+  1 ≤ m →
+    ∀ (M' : Fin (m - 1) → T),
+      Multiset.map (fun t => S.shape (Peel.consTuple t M')) Finset.univ.val =
+        Multiset.map (OddShapes.optS h (S.shape M')) (Finset.Icc 1 (2 * h + 1)).val
+@OddShapes.optS_mem_Sh : ∀ {h m : ℕ},
+  1 ≤ m →
+    ∀ {μ : ChainLemma.Partition} {δ : Bool},
+      (μ, δ) ∈ OddShapes.Sh h (m - 1) → ∀ {p : ℕ}, 1 ≤ p → p ≤ 2 * h + 1 → OddShapes.optS h (μ, δ) p ∈ OddShapes.Sh h m
+OddShapes.FS_eq_card : ∀ (h : ℕ) (Λ : Set OddShapes.Shape) (μ : ChainLemma.Partition) (δ : Bool),
+  μ.len ≤ h → OddShapes.FS h Λ (μ, δ) = {p ∈ Finset.Icc 1 (2 * h + 1) | OddShapes.optS h (μ, δ) p ∈ Λ}.card
+@OddShapes.card_shape_consTuple_mem : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) {m : ℕ},
+  1 ≤ m →
+    ∀ (Λ : Set OddShapes.Shape) (M' : Fin (m - 1) → T),
+      {t | S.shape (Peel.consTuple t M') ∈ Λ}.card = OddShapes.FS h Λ (S.shape M')
+@OddShapes.card_fiber_ZS : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) {m : ℕ},
+  1 ≤ m →
+    ∀ (Λ : Set OddShapes.Shape) (M' : Fin (m - 1) → T),
+      (Peel.fiber (OddShapes.ZS S m Λ) M').card = OddShapes.FS h Λ (S.shape M')
+@OddShapes.Zgt_ZS : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ} (S : OddShapes.OddSetting T h)
+  {m : ℕ},
+  1 ≤ m →
+    ∀ (Λ : Set OddShapes.Shape) (i : ℕ), Peel.Zgt (OddShapes.ZS S m Λ) i = {M' | i < OddShapes.FS h Λ (S.shape M')}
+@OddShapes.subE_mem_Sh : ∀ {h m : ℕ} {ν : ChainLemma.Partition} {δ : Bool},
+  (ν, δ) ∈ OddShapes.Sh h m → ∀ {j : ℕ}, 1 ≤ j → j ≤ ν.len → (ν.subE j, !δ) ∈ OddShapes.Sh h m
+@OddShapes.optS_mem_of_succ : ∀ {h m : ℕ},
+  1 ≤ m →
+    ∀ {Λ : Set OddShapes.Shape},
+      OddShapes.IsInterlaced h m Λ →
+        ∀ {μ : ChainLemma.Partition} {δ : Bool},
+          (μ, δ) ∈ OddShapes.Sh h (m - 1) →
+            ∀ {p : ℕ}, 1 ≤ p → p ≤ 2 * h → OddShapes.optS h (μ, δ) (p + 1) ∈ Λ → OddShapes.optS h (μ, δ) p ∈ Λ
+@OddShapes.optS_filter_eq_Icc : ∀ {h m : ℕ},
+  1 ≤ m →
+    ∀ {Λ : Set OddShapes.Shape},
+      OddShapes.IsInterlaced h m Λ →
+        ∀ {μ : ChainLemma.Partition} {δ : Bool},
+          (μ, δ) ∈ OddShapes.Sh h (m - 1) →
+            {p ∈ Finset.Icc 1 (2 * h + 1) | OddShapes.optS h (μ, δ) p ∈ Λ} = Finset.Icc 1 (OddShapes.FS h Λ (μ, δ))
+OddShapes.isInterlaced_empty : ∀ (h m : ℕ), OddShapes.IsInterlaced h m ∅
+OddShapes.isInterlaced_Sh : ∀ (h m : ℕ), OddShapes.IsInterlaced h m (OddShapes.Sh h m)
+OddShapes.isInterlaced_root_even : ∀ (h m : ℕ), Even m → OddShapes.IsInterlaced h m {(OddShapes.emptyPart, false)}
+OddShapes.isInterlaced_root_odd : ∀ (h m : ℕ),
+  1 ≤ h → Odd m → OddShapes.IsInterlaced h m {(OddShapes.onePart, false), (OddShapes.emptyPart, true)}
+'OddShapes.A0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.A1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.A2_D' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.A2_Dminus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.A3_D' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.A3_Dminus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.A4_D' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.A4_Dminus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.A4_coeff_D' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.A4_coeff_Dminus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.Sh_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.shape_mem_Sh' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.shape_consTuple_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.multiset_shape_consTuple_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.multiset_shape_consTuple_eq_optS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.optS_mem_Sh' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.FS_eq_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.card_shape_consTuple_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.card_fiber_ZS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.Zgt_ZS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.subE_mem_Sh' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.optS_mem_of_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.optS_filter_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.isInterlaced_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.isInterlaced_Sh' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.isInterlaced_root_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddShapes.isInterlaced_root_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1757696 t=140s

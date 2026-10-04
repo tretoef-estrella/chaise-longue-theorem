@@ -1,0 +1,26 @@
+=== MODULE Vand 23:07:01
+vigia_rc=0
+✔ [8105/8105] Built RequestProject.Membership.Vand (76s)
+Build completed successfully (8105 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1810592 t=83s
+=== MODULE Box 23:08:25
+vigia_rc=0
+✔ [8105/8105] Built RequestProject.Membership.Box (64s)
+Build completed successfully (8105 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1834464 t=71s
+=== MODULE Defs 23:09:36
+vigia_rc=0
+✔ [8108/8108] Built RequestProject.Membership.Defs (65s)
+Build completed successfully (8108 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1770048 t=73s
+=== MODULE Theorem 23:10:50
+vigia_rc=0
+✔ [8117/8117] Built RequestProject.Membership.Theorem (54s)
+Build completed successfully (8117 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1933408 t=61s
+=== MODULE Main 23:11:51
+vigia_rc=0
+✔ [8118/8118] Built RequestProject.Membership.Main (49s)
+Build completed successfully (8118 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2020320 t=54s
+BUILD-LOOP-END

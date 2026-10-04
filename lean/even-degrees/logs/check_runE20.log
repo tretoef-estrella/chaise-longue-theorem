@@ -1,0 +1,92 @@
+@EvenAll.A1 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) (k : ℕ), idealI S k = IK F S.m k
+@EvenAll.A2 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) (k : ℕ),
+  Module.finrank F ↥(Submodule.restrictScalars F (idealI S k)) = (closedT (negT S) (2 * k + 2)).card
+@EvenAll.A2_even : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) (k : ℕ),
+  Even S.m → Module.finrank F ↥(Submodule.restrictScalars F (idealI S k)) = EvenCount.QkEven k S.m
+@EvenAll.A2_odd : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) (k : ℕ),
+  Odd S.m → Module.finrank F ↥(Submodule.restrictScalars F (idealI S k)) = TheoremB.Qk k S.m
+@EvenAll.A3 : ∀ {m : ℕ}, Even m → 2 ≤ m → ∀ (k : ℕ), EvenAssembly.HypH m k
+EvenAll.B1 : ∀ (F : Type u_1) [inst : Field F] {m : ℕ},
+  Even m →
+    2 ≤ m →
+      ∀ (k : ℕ),
+        EveryField.rankOver F (intMatU m k) = EvenCount.QkEven k m ∧
+          Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) = EvenCount.QkEven k m
+@EvenAll.B2 : ∀ {m : ℕ},
+  Even m →
+    2 ≤ m →
+      ∀ (k : ℕ),
+        (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+            Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - EvenCount.QkEven k m) ∧
+          ∀ (F : Type u_1) [inst : Field F],
+            Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - EvenCount.QkEven k m
+EvenAll.Qall : ℕ → ℕ → ℕ
+@EvenAll.mainTheorem' : ∀ {m : ℕ},
+  1 ≤ m →
+    ∀ (k : ℕ),
+      (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+          Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - EvenAll.Qall m k) ∧
+        ∀ (F : Type u_1) [inst : Field F],
+          Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - EvenAll.Qall m k ∧
+            Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) = EvenAll.Qall m k
+@EvenAll.D1_NS : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) (ζ : F) (j : ℕ), 1 ≤ NS S ζ (2 * j)
+EvenAll.D1_Nbal : ∀ (a : ℕ) {q : ℕ}, 1 ≤ q → 1 ≤ Bip.Nbal a q
+@EvenAll.D2 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {R : Finset F},
+  IsReps2 S R →
+    ∀ {k : ℕ} (c : Fin (2 * k + 1) → ↥S.μ),
+      (∃ J, Compatible (cExt c) J) →
+        (∀ ζ ∈ SInv S, Module.finrank F ↥(IcS S c ζ) = NS S ζ (cls (cExt c) ζ).card) ∧
+          ∀ ζ ∈ R, Module.finrank F ↥(Icz S c ζ) = Bip.Nbal (cls (cExt c) ζ).card S.q
+@EvenAll.bip_of_setting : ∀ {K : Type u_1} [inst : Field K] {S : ColSetting K} {ζ : K},
+  ζ ∈ S.μ →
+    ζ⁻¹ ≠ ζ →
+      ∀ (a : ℕ),
+        Module.finrank K ↥(Submodule.restrictScalars K (Bip.Ibal K S.q a)) = Bip.Nbal a S.q ∧
+          Module.finrank K ↥(Submodule.restrictScalars K (Bip.Iph K S.q a)) = Bip.Nph a S.q
+EvenAll.E_prime : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] {v : ℕ},
+  1 ≤ v →
+    ∀ (a : ℕ),
+      Module.finrank (AlgebraicClosure (ZMod p))
+            ↥(Submodule.restrictScalars (AlgebraicClosure (ZMod p)) (Bip.Ibal (AlgebraicClosure (ZMod p)) (p ^ v) a)) =
+          Bip.Nbal a (p ^ v) ∧
+        Module.finrank (AlgebraicClosure (ZMod p))
+            ↥(Submodule.restrictScalars (AlgebraicClosure (ZMod p)) (Bip.Iph (AlgebraicClosure (ZMod p)) (p ^ v) a)) =
+          Bip.Nph a (p ^ v)
+@EvenAll.E1 : ∀ {v : ℕ},
+  1 ≤ v →
+    ∀ (a : ℕ),
+      Module.finrank (AlgebraicClosure (ZMod 2))
+            ↥(Submodule.restrictScalars (AlgebraicClosure (ZMod 2)) (Bip.Ibal (AlgebraicClosure (ZMod 2)) (2 ^ v) a)) =
+          Bip.Nbal a (2 ^ v) ∧
+        Module.finrank (AlgebraicClosure (ZMod 2))
+            ↥(Submodule.restrictScalars (AlgebraicClosure (ZMod 2)) (Bip.Iph (AlgebraicClosure (ZMod 2)) (2 ^ v) a)) =
+          Bip.Nph a (2 ^ v)
+EvenAll.E2 : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+  p ≠ 2 →
+    ∀ {v : ℕ},
+      1 ≤ v →
+        ∀ (a : ℕ),
+          Module.finrank (AlgebraicClosure (ZMod p))
+                ↥(Submodule.restrictScalars (AlgebraicClosure (ZMod p))
+                    (Bip.Ibal (AlgebraicClosure (ZMod p)) (p ^ v) a)) =
+              Bip.Nbal a (p ^ v) ∧
+            Module.finrank (AlgebraicClosure (ZMod p))
+                ↥(Submodule.restrictScalars (AlgebraicClosure (ZMod p))
+                    (Bip.Iph (AlgebraicClosure (ZMod p)) (p ^ v) a)) =
+              Bip.Nph a (p ^ v)
+'EvenAll.A1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.A2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.A2_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.A2_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.A3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.mainTheorem'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.D1_NS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.D1_Nbal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.D2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.bip_of_setting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.E_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.E1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.E2' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2972080 t=95s

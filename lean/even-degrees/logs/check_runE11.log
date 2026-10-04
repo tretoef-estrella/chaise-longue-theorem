@@ -1,0 +1,213 @@
+def OddPatterns.mPf.{u_1} : {A : Type u_1} → [CommRing A] → ℕ → ℕ → {n : ℕ} → (Fin n → A) → A :=
+fun {A} [CommRing A] h l {n} z =>
+  if l = 0 then Pfaffian.Pfe (2 * h + 1) z fun x => 2 * h else Pfaffian.Pfe (2 * h + 1) z fun k => ↑k
+def OddPatterns.markedPf.{u_1} : (F : Type u_1) →
+  [inst : Field F] → (h : ℕ) → ℕ → {m : ℕ} → Finset (Fin m) → Peel.C F (2 * h + 2) m :=
+fun F [Field F] h l {m} B => OddPatterns.mPf h l fun i => Tight.y F (2 * h + 2) ((B.orderEmbOfFin ⋯) i)
+structure OddPatterns.MarkedPattern {m : ℕ} (lam : ChainLemma.Partition) (I : Finset (Fin m)) : Type
+number of parameters: 3
+fields:
+  OddPatterns.MarkedPattern.pairs : Finset (Finset (Fin m))
+  OddPatterns.MarkedPattern.blocks : ℕ → Finset (Fin m)
+  OddPatterns.MarkedPattern.marked : Finset (Fin m)
+  OddPatterns.MarkedPattern.card_pair : ∀ e ∈ self.pairs, e.card = 2
+  OddPatterns.MarkedPattern.pairs_disjoint : (↑self.pairs).PairwiseDisjoint id
+  OddPatterns.MarkedPattern.card_block : ∀ c ∈ Finset.Icc 2 (lam.row 1), (self.blocks c).card = Tight.colLen lam c
+  OddPatterns.MarkedPattern.blocks_disjoint : (↑(Finset.Icc 2 (lam.row 1))).PairwiseDisjoint self.blocks
+  OddPatterns.MarkedPattern.pairs_blocks_disjoint : ∀ e ∈ self.pairs,
+      ∀ c ∈ Finset.Icc 2 (lam.row 1), Disjoint e (self.blocks c)
+  OddPatterns.MarkedPattern.pairs_marked_disjoint : ∀ e ∈ self.pairs, Disjoint e self.marked
+  OddPatterns.MarkedPattern.blocks_marked_disjoint : ∀ c ∈ Finset.Icc 2 (lam.row 1),
+      Disjoint (self.blocks c) self.marked
+  OddPatterns.MarkedPattern.marked_card : ∃ t, self.marked.card = lam.len + 1 + 2 * t
+  OddPatterns.MarkedPattern.cover : self.pairs.sup id ∪ (Finset.Icc 2 (lam.row 1)).sup self.blocks ∪ self.marked = I
+constructor:
+  OddPatterns.MarkedPattern.mk {m : ℕ} {lam : ChainLemma.Partition} {I : Finset (Fin m)}
+    (pairs : Finset (Finset (Fin m))) (blocks : ℕ → Finset (Fin m)) (marked : Finset (Fin m))
+    (card_pair : ∀ e ∈ pairs, e.card = 2) (pairs_disjoint : (↑pairs).PairwiseDisjoint id)
+    (card_block : ∀ c ∈ Finset.Icc 2 (lam.row 1), (blocks c).card = Tight.colLen lam c)
+    (blocks_disjoint : (↑(Finset.Icc 2 (lam.row 1))).PairwiseDisjoint blocks)
+    (pairs_blocks_disjoint : ∀ e ∈ pairs, ∀ c ∈ Finset.Icc 2 (lam.row 1), Disjoint e (blocks c))
+    (pairs_marked_disjoint : ∀ e ∈ pairs, Disjoint e marked)
+    (blocks_marked_disjoint : ∀ c ∈ Finset.Icc 2 (lam.row 1), Disjoint (blocks c) marked)
+    (marked_card : ∃ t, marked.card = lam.len + 1 + 2 * t)
+    (cover : pairs.sup id ∪ (Finset.Icc 2 (lam.row 1)).sup blocks ∪ marked = I) : OddPatterns.MarkedPattern lam I
+def OddPatterns.MarkedPattern.prod.{u_1} : (F : Type u_1) →
+  [inst : Field F] →
+    (h : ℕ) →
+      {m : ℕ} →
+        {lam : ChainLemma.Partition} →
+          {I : Finset (Fin m)} → OddPatterns.MarkedPattern lam I → Peel.C F (2 * h + 2) m :=
+fun F [Field F] h {m} {lam} {I} T =>
+  (∏ e ∈ T.pairs, Tight.pairD F (2 * h + 2) e) * OddPatterns.markedPf F h lam.len T.marked *
+    ∏ c ∈ Finset.Icc 2 (lam.row 1), Tight.Delta F (2 * h + 2) (T.blocks c)
+def OddPatterns.VS.{u_1} : (F : Type u_1) →
+  [inst : Field F] → (h : ℕ) → {m : ℕ} → Set OddShapes.Shape → Finset (Fin m) → Ideal (Peel.C F (2 * h + 2) m) :=
+fun F [Field F] h {m} Lam I =>
+  Tight.VLam F (2 * h + 2) (OddShapes.comp Lam false) I ⊔
+    Ideal.span {g | ∃ lam ∈ OddShapes.comp Lam true, ∃ T, OddPatterns.MarkedPattern.prod F h T = g}
+def OddPatterns.VSAll.{u_1} : (F : Type u_1) →
+  [inst : Field F] → (h m : ℕ) → Set OddShapes.Shape → Ideal (Peel.C F (2 * h + 2) m) :=
+fun F [Field F] h m Lam => OddPatterns.VS F h Lam Finset.univ
+def OddPatterns.MarkedPattern.relabel : {m : ℕ} →
+  (σ : Equiv.Perm (Fin m)) →
+    {lam : ChainLemma.Partition} →
+      {I : Finset (Fin m)} →
+        OddPatterns.MarkedPattern lam I → OddPatterns.MarkedPattern lam (Finset.map (Equiv.toEmbedding σ) I) :=
+fun {m} σ {lam} {I} T =>
+  { pairs := Finset.map { toFun := Finset.map (Equiv.toEmbedding σ), inj' := ⋯ } T.pairs,
+    blocks := fun c => Finset.map (Equiv.toEmbedding σ) (T.blocks c),
+    marked := Finset.map (Equiv.toEmbedding σ) T.marked, card_pair := ⋯, pairs_disjoint := ⋯, card_block := ⋯,
+    blocks_disjoint := ⋯, pairs_blocks_disjoint := ⋯, pairs_marked_disjoint := ⋯, blocks_marked_disjoint := ⋯,
+    marked_card := ⋯, cover := ⋯ }
+def Tight.VLam.{u_1} : (F : Type u_1) →
+  [inst : Field F] → (q : ℕ) → {m : ℕ} → Set ChainLemma.Partition → Finset (Fin m) → Ideal (Peel.C F q m) :=
+fun F [Field F] q {m} Λ I => Ideal.span {g | ∃ lam ∈ Λ, ∃ T, Tight.TightPattern.prod F q T = g}
+def Tight.PM.{u_2} : {R : Type u_2} → [CommRing R] → R → R → Prop :=
+fun {R} [CommRing R] x y => x = y ∨ x = -y
+def OddShapes.comp : Set OddShapes.Shape → Bool → Set ChainLemma.Partition :=
+fun Λ δ => {lam | (lam, δ) ∈ Λ}
+def Membership.UB.{u_1} : {A : Type u_1} →
+  [inst : CommRing A] → ℕ → ℕ → {n : ℕ} → (Fin n → A) → Finset (Fin n) → Ideal A :=
+fun {A} [CommRing A] r p {n} y B =>
+  Ideal.span
+    {g | ∃ S P, S ⊆ B ∧ S.card = p ∧ Odd3.IsPairs P ∧ Odd3.supp P = B \ S ∧ g = Tight.vand y S * Membership.DPy r y P}
+OddPatterns.odd_two_mul_add_one : ∀ (h : ℕ), Odd (2 * h + 1)
+@OddPatterns.A1 : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) (z : Fin 1 → A), OddPatterns.mPf h 0 z = z 0 ^ (2 * h)
+@OddPatterns.A2 : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) (z : Fin 2 → A),
+  OddPatterns.mPf h 1 z = ColOne.Dab (2 * h + 1) (z 0) (z 1)
+@OddPatterns.A3 : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) (z : Fin 3 → A),
+  OddPatterns.mPf h 0 z =
+    z 2 ^ (2 * h) * ColOne.Dab (2 * h + 1) (z 0) (z 1) - z 1 ^ (2 * h) * ColOne.Dab (2 * h + 1) (z 0) (z 2) +
+      z 0 ^ (2 * h) * ColOne.Dab (2 * h + 1) (z 1) (z 2)
+@OddPatterns.A4 : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) (z : Fin 3 → A),
+  OddPatterns.mPf h 2 z =
+    ColOne.Dab (2 * h + 1) (z 0) (z 1) - ColOne.Dab (2 * h + 1) (z 0) (z 2) + ColOne.Dab (2 * h + 1) (z 1) (z 2)
+@OddPatterns.A5 : ∀ {A : Type u_1} [inst : CommRing A] (h l : ℕ) {n : ℕ} (z : Fin n → A),
+  Even (n + l) → OddPatterns.mPf h l z = 0
+@OddPatterns.A6 : ∀ {A : Type u_1} [inst : CommRing A] (h l : ℕ) {n : ℕ} (z : Fin n → A),
+  1 ≤ l → n + 1 < l → OddPatterns.mPf h l z = 0
+@OddPatterns.A7 : ∀ {A : Type u_1} [inst : CommRing A] (h l : ℕ) {n : ℕ} (z : Fin n → A) (σ : Equiv.Perm (Fin n)),
+  (OddPatterns.mPf h l fun i => z (σ i)) = ↑↑(Equiv.Perm.sign σ) * OddPatterns.mPf h l z
+@OddPatterns.map_pf : ∀ {A : Type u_1} [inst : CommRing A] {A' : Type u_2} [inst_1 : CommRing A'] (f : A →+* A') (m : ℕ)
+  (M : Matrix (Fin m) (Fin m) A), f (Pfaffian.pf m M) = Pfaffian.pf m fun i j => f (M i j)
+@OddPatterns.map_mPf : ∀ {A : Type u_1} [inst : CommRing A] {A' : Type u_2} [inst_1 : CommRing A'] (f : A →+* A')
+  (h l : ℕ) {n : ℕ} (z : Fin n → A), f (OddPatterns.mPf h l z) = OddPatterns.mPf h l fun i => f (z i)
+@OddPatterns.mPf_cast : ∀ {A : Type u_1} [inst : CommRing A] (h l : ℕ) {n n' : ℕ} (hn : n = n') (z : Fin n' → A),
+  (OddPatterns.mPf h l fun i => z (Fin.cast hn i)) = OddPatterns.mPf h l z
+@OddPatterns.card_sup_of_disjoint : ∀ {ι : Type u_1} {α : Type u_2} [inst : DecidableEq α] (s : Finset ι)
+  (g : ι → Finset α), (↑s).PairwiseDisjoint g → (s.sup g).card = ∑ i ∈ s, (g i).card
+OddPatterns.colLen_one : ∀ (lam : ChainLemma.Partition), Tight.colLen lam 1 = lam.len
+OddPatterns.sum_colLen_two : ∀ (lam : ChainLemma.Partition),
+  ∑ c ∈ Finset.Icc 2 (lam.row 1), Tight.colLen lam c + lam.len = lam.size
+@OddPatterns.B3 : ∀ {m : ℕ} {lam : ChainLemma.Partition} {I : Finset (Fin m)} (T : OddPatterns.MarkedPattern lam I)
+  (t : ℕ), T.marked.card = lam.len + 1 + 2 * t → I.card = 2 * T.pairs.card + 2 * t + lam.size + 1
+@OddPatterns.B4_tight : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} {Lam : Set OddShapes.Shape}
+  {lam : ChainLemma.Partition},
+  (lam, false) ∈ Lam →
+    ∀ {I : Finset (Fin m)} (T : Tight.TightPattern lam I),
+      Tight.TightPattern.prod F (2 * h + 2) T ∈ OddPatterns.VS F h Lam I
+@OddPatterns.B4_marked : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} {Lam : Set OddShapes.Shape}
+  {lam : ChainLemma.Partition},
+  (lam, true) ∈ Lam →
+    ∀ {I : Finset (Fin m)} (T : OddPatterns.MarkedPattern lam I),
+      OddPatterns.MarkedPattern.prod F h T ∈ OddPatterns.VS F h Lam I
+@OddPatterns.B5_mono : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} {Lam Lam' : Set OddShapes.Shape},
+  Lam ⊆ Lam' → ∀ (I : Finset (Fin m)), OddPatterns.VS F h Lam I ≤ OddPatterns.VS F h Lam' I
+@OddPatterns.B5_empty : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} (I : Finset (Fin m)), OddPatterns.VS F h ∅ I = ⊥
+@OddPatterns.B5_no_marked : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} {Lam : Set OddShapes.Shape},
+  OddShapes.comp Lam true = ∅ →
+    ∀ (I : Finset (Fin m)), OddPatterns.VS F h Lam I = Tight.VLam F (2 * h + 2) (OddShapes.comp Lam false) I
+@OddPatterns.VLam_comp_false_singleton_true : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} (lam0 : ChainLemma.Partition)
+  (I : Finset (Fin m)), Tight.VLam F (2 * h + 2) (OddShapes.comp {(lam0, true)} false) I = ⊥
+OddPatterns.comp_singleton_true : ∀ (lam0 : ChainLemma.Partition), OddShapes.comp {(lam0, true)} true = {lam0}
+@OddPatterns.B6_empty_prod : ∀ {F : Type u_1} [inst : Field F] {h : ℕ}
+  (T : OddPatterns.MarkedPattern OddShapes.emptyPart Finset.univ),
+  OddPatterns.MarkedPattern.prod F h T = Tight.y F (2 * h + 2) 0 ^ (2 * h)
+@OddPatterns.B6_empty : ∀ {F : Type u_1} [inst : Field F] {h : ℕ},
+  OddPatterns.VSAll F h 1 {(OddShapes.emptyPart, true)} = Ideal.span {Tight.y F (2 * h + 2) 0 ^ (2 * h)}
+@OddPatterns.B6_one_prod : ∀ {F : Type u_1} [inst : Field F] {h : ℕ}
+  (T : OddPatterns.MarkedPattern OddShapes.onePart Finset.univ),
+  OddPatterns.MarkedPattern.prod F h T = ColOne.Dab (2 * h + 1) (Tight.y F (2 * h + 2) 0) (Tight.y F (2 * h + 2) 1)
+@OddPatterns.B6_one : ∀ {F : Type u_1} [inst : Field F] {h : ℕ},
+  OddPatterns.VSAll F h 2 {(OddShapes.onePart, true)} =
+    Ideal.span {ColOne.Dab (2 * h + 1) (Tight.y F (2 * h + 2) 0) (Tight.y F (2 * h + 2) 1)}
+@OddPatterns.PM_sign_mul : ∀ {R : Type u_1} [inst : CommRing R] {n : ℕ} (τ : Equiv.Perm (Fin n)) (x : R),
+  Tight.PM (↑↑(Equiv.Perm.sign τ) * x) x
+@OddPatterns.C1 : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} (σ : Equiv.Perm (Fin m)) (l : ℕ) (B : Finset (Fin m)),
+  Tight.PM ((Tight.relabel F (2 * h + 2) σ) (OddPatterns.markedPf F h l B))
+    (OddPatterns.markedPf F h l (Finset.map (Equiv.toEmbedding σ) B))
+@OddPatterns.relabel_markedProd_PM : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} (σ : Equiv.Perm (Fin m))
+  {lam : ChainLemma.Partition} {I : Finset (Fin m)} (T : OddPatterns.MarkedPattern lam I),
+  Tight.PM ((Tight.relabel F (2 * h + 2) σ) (OddPatterns.MarkedPattern.prod F h T))
+    (OddPatterns.MarkedPattern.prod F h (OddPatterns.MarkedPattern.relabel σ T))
+@OddPatterns.C2 : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} (σ : Equiv.Perm (Fin m)) {lam : ChainLemma.Partition}
+  {I : Finset (Fin m)} (T : OddPatterns.MarkedPattern lam I),
+  ∃ T',
+    (Tight.relabel F (2 * h + 2) σ) (OddPatterns.MarkedPattern.prod F h T) = OddPatterns.MarkedPattern.prod F h T' ∨
+      (Tight.relabel F (2 * h + 2) σ) (OddPatterns.MarkedPattern.prod F h T) = -OddPatterns.MarkedPattern.prod F h T'
+@OddPatterns.exists_marked_of_eq : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} {lam : ChainLemma.Partition}
+  {I J : Finset (Fin m)},
+  J = I →
+    ∀ (T : OddPatterns.MarkedPattern lam J),
+      ∃ T0, OddPatterns.MarkedPattern.prod F h T0 = OddPatterns.MarkedPattern.prod F h T
+@OddPatterns.map_relabel_marked : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} (σ : Equiv.Perm (Fin m))
+  (Lam' : Set ChainLemma.Partition) (I : Finset (Fin m)),
+  Ideal.map (Tight.relabel F (2 * h + 2) σ)
+      (Ideal.span {g | ∃ lam ∈ Lam', ∃ T, OddPatterns.MarkedPattern.prod F h T = g}) =
+    Ideal.span {g | ∃ lam ∈ Lam', ∃ T, OddPatterns.MarkedPattern.prod F h T = g}
+@OddPatterns.C3 : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} (σ : Equiv.Perm (Fin m)) (Lam : Set OddShapes.Shape)
+  (I : Finset (Fin m)),
+  Ideal.map (Tight.relabel F (2 * h + 2) σ) (OddPatterns.VS F h Lam I) =
+    OddPatterns.VS F h Lam (Finset.map (Equiv.toEmbedding σ) I)
+@OddPatterns.C3_all : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} (σ : Equiv.Perm (Fin m)) (Lam : Set OddShapes.Shape),
+  Ideal.map (Tight.relabel F (2 * h + 2) σ) (OddPatterns.VSAll F h m Lam) = OddPatterns.VSAll F h m Lam
+@OddPatterns.D1 : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} (i : Fin m), Tight.y F (2 * h + 2) i ^ (2 * h + 1) = 0
+@OddPatterns.D2_DPy : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} (P : Finset (Finset (Fin m))),
+  Membership.DPy (2 * h + 1) (Tight.y F (2 * h + 2)) P = ∏ e ∈ P, Tight.pairD F (2 * h + 2) e
+@OddPatterns.D2_vand : ∀ {F : Type u_1} [inst : Field F] {h m : ℕ} (S : Finset (Fin m)),
+  Tight.vand (Tight.y F (2 * h + 2)) S = Tight.Delta F (2 * h + 2) S
+@OddPatterns.D3 : ∀ {F : Type u_1} [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ {m : ℕ} (l : ℕ) (B : Finset (Fin m)) (t : ℕ),
+      B.card = l + 1 + 2 * t →
+        OddPatterns.markedPf F h l B ∈ Membership.UB (2 * h + 1) (l + 1) (Tight.y F (2 * h + 2)) B
+'OddPatterns.odd_two_mul_add_one' depends on axioms: [propext]
+'OddPatterns.A1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.A2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.A3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.A4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.A5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.A6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.A7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.map_pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.map_mPf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.mPf_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.card_sup_of_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.colLen_one' depends on axioms: [propext, Quot.sound]
+'OddPatterns.sum_colLen_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.B3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.B4_tight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.B4_marked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.B5_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.B5_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.B5_no_marked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.VLam_comp_false_singleton_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.comp_singleton_true' depends on axioms: [propext, Quot.sound]
+'OddPatterns.B6_empty_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.B6_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.B6_one_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.B6_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.PM_sign_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.C1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.relabel_markedProd_PM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.C2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.exists_marked_of_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.map_relabel_marked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.C3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.C3_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.D1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.D2_DPy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.D2_vand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddPatterns.D3' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2407824 t=116s

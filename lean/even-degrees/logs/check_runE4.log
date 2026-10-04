@@ -1,0 +1,62 @@
+@Pow2.phi_two_pow : ∀ {A : Type u_1} [inst : CommRing A] [CharP A 2] (u : A) (v : ℕ),
+  ColSurv.phi (2 ^ v) u = (u + 1) ^ (2 ^ v - 1)
+Pow2.Theta : (F : Type u_1) →
+  [inst : Field F] → [CharP F 2] → (d v : ℕ) → ColSplit.GA F d (2 ^ v) ≃ₐ[F] Peel.C F (2 ^ v + 1) d
+@Pow2.Theta_X : ∀ {F : Type u_1} [inst : Field F] [inst_1 : CharP F 2] (d v : ℕ) (i : Fin d),
+  (Pow2.Theta F d v) ((Ideal.Quotient.mk (ColSplit.gaIdeal F d (2 ^ v))) (MvPolynomial.X i)) =
+    1 + Tight.y F (2 ^ v + 1) i
+@Pow2.exists_Theta : ∀ {F : Type u_1} [inst : Field F] [CharP F 2] (d v : ℕ),
+  ∃ Θ,
+    ∀ (i : Fin d),
+      Θ ((Ideal.Quotient.mk (ColSplit.gaIdeal F d (2 ^ v))) (MvPolynomial.X i)) = 1 + Tight.y F (2 ^ v + 1) i
+Pow2.PJ : (F : Type u_1) → [inst : Field F] → ℕ → {k : ℕ} → BallotBound.Matching k → MvPolynomial (Fin (2 * k + 1)) F
+Pow2.LJ : (F : Type u_1) → [inst : Field F] → ℕ → {k : ℕ} → BallotBound.Matching k → MvPolynomial (Fin (2 * k + 1)) F
+Pow2.EJ : (F : Type u_1) → [inst : Field F] → ℕ → {k : ℕ} → BallotBound.Matching k → MvPolynomial (Fin (2 * k + 1)) F
+Pow2.mk_EJ : ∀ (F : Type u_1) [inst : Field F] (q : ℕ) {k : ℕ} (J : BallotBound.Matching k),
+  (Ideal.Quotient.mk (Peel.powIdeal F q (2 * k + 1))) (Pow2.EJ F q J) = TheoremB.DJ F q J
+@Pow2.Theta_psiG : ∀ {F : Type u_1} [inst : Field F] [inst_1 : CharP F 2] (v : ℕ) {k : ℕ} (J : BallotBound.Matching k),
+  (Pow2.Theta F (2 * k + 1) v) (ColUpper.psiG F (2 ^ v) J) =
+    (Ideal.Quotient.mk (Peel.powIdeal F (2 ^ v + 1) (2 * k + 1))) (Pow2.PJ F (2 ^ v) J)
+@Pow2.lowest_forms : ∀ {F : Type u_1} [inst : Field F] {d : ℕ} {ι : Type u_2} (e : ℕ) (I : Ideal (Peel.C F (e + 1) d))
+  (f g : ι → MvPolynomial (Fin d) F) (δ : ι → ℕ),
+  (∀ (α : ι), (Ideal.Quotient.mk (Peel.powIdeal F (e + 1) d)) (f α) ∈ I) →
+    (∀ (α : ι), (g α).IsHomogeneous (δ α)) →
+      (∀ (α : ι), ∀ s ∈ (f α - g α).support, δ α < Finsupp.degree s) →
+        Module.finrank F
+            ↥(Submodule.restrictScalars F
+                (Ideal.span (Set.range fun α => (Ideal.Quotient.mk (Peel.powIdeal F (e + 1) d)) (g α)))) ≤
+          Module.finrank F ↥(Submodule.restrictScalars F I)
+@Pow2.mul_add_pow : ∀ {A : Type u_1} [inst : CommRing A] [CharP A 2] {v : ℕ},
+  1 ≤ v → ∀ (a b : A), b ^ 2 ^ v = 0 → b * (a + b) ^ (2 ^ v - 1) = a * b * ColOne.Dab (2 ^ v) a b
+@Pow2.mk_LJ : ∀ {F : Type u_1} [inst : Field F] [CharP F 2] {v : ℕ},
+  1 ≤ v →
+    ∀ {k : ℕ} (J : BallotBound.Matching k),
+      (Ideal.Quotient.mk (Peel.powIdeal F (2 ^ v + 1) (2 * k + 1))) (Pow2.LJ F (2 ^ v) J) =
+        ColOne.Ym F (2 ^ v) (2 * k + 1) *
+          (Ideal.Quotient.mk (Peel.powIdeal F (2 ^ v + 1) (2 * k + 1))) (Pow2.EJ F (2 ^ v) J)
+Pow2.prop92_ge : ∀ (F : Type u_1) [inst : Field F] [CharP F 2] {v : ℕ},
+  1 ≤ v →
+    ∀ (k : ℕ),
+      Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F (2 ^ v) k)) ≤
+        Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F (2 ^ v) k))
+Pow2.pow2_of_oddbox : ∀ (F : Type u_1) [inst : Field F] [CharP F 2] {v : ℕ},
+  1 ≤ v →
+    ∀ (k : ℕ),
+      EvenCount.QkEven k (2 ^ v) ≤ Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F (2 ^ v) k)) →
+        Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F (2 ^ v) k)) = EvenCount.QkEven k (2 ^ v)
+Pow2.quartic_char_two : ∀ (F : Type u_1) [inst : Field F] [CharP F 2] (k : ℕ),
+  Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F 4 k)) = EvenCount.QkEven k 4
+Pow2.q_two : ∀ (F : Type u_1) [inst : Field F] [CharP F 2] (k : ℕ),
+  Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F 2 k)) = 1 ∧
+    EvenCount.QkEven k 2 = 1 ∧ Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F 2 k)) = 1
+'Pow2.phi_two_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pow2.exists_Theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pow2.Theta_psiG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pow2.lowest_forms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pow2.mul_add_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pow2.mk_LJ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pow2.prop92_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pow2.pow2_of_oddbox' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pow2.quartic_char_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pow2.q_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1869232 t=163s

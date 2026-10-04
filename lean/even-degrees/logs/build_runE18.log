@@ -1,0 +1,36 @@
+=== MODULE PairRing 12:23:37
+vigia_rc=0
+✔ [8119/8119] Built RequestProject.EvenMinus.PairRing (65s)
+Build completed successfully (8119 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1818288 t=73s
+=== MODULE PairIdeal 12:24:50
+vigia_rc=0
+✔ [8126/8126] Built RequestProject.EvenMinus.PairIdeal (62s)
+Build completed successfully (8126 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1990976 t=69s
+=== MODULE OneBlock 12:25:59
+vigia_rc=0
+✔ [8128/8128] Built RequestProject.EvenMinus.OneBlock (57s)
+Build completed successfully (8128 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1989744 t=64s
+=== MODULE MinusCoord 12:27:03
+vigia_rc=0
+✔ [8125/8125] Built RequestProject.EvenMinus.MinusCoord (61s)
+Build completed successfully (8125 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2009952 t=67s
+=== MODULE MinusGen 12:28:11
+vigia_rc=0
+✔ [8135/8135] Built RequestProject.EvenMinus.MinusGen (52s)
+Build completed successfully (8135 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2037520 t=59s
+=== MODULE MinusMain 12:29:10
+vigia_rc=0
+✔ [8198/8198] Built RequestProject.EvenMinus.MinusMain (46s)
+Build completed successfully (8198 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2087648 t=52s
+=== MODULE Main 12:30:03
+vigia_rc=0
+✔ [8199/8199] Built RequestProject.EvenMinus.Main (49s)
+Build completed successfully (8199 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1953168 t=56s
+BUILD-LOOP-END

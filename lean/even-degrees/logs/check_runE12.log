@@ -1,0 +1,243 @@
+def OddLifts.cleanMBlocks : {k : ℕ} →
+  {μ : ChainLemma.Partition} → {I : Finset (Fin k)} → OddPatterns.MarkedPattern μ I → ℕ → Finset (Fin k) :=
+fun {k} {μ} {I} T c => if c ∈ Finset.Icc 2 (μ.row 1) then T.blocks c else ∅
+def OddLifts.mkMPattern : {k : ℕ} →
+  (lam : ChainLemma.Partition) →
+    (I : Finset (Fin k)) →
+      (P : Finset (Finset (Fin k))) →
+        (B : ℕ → Finset (Fin k)) →
+          (M : Finset (Fin k)) →
+            (N : ℕ) →
+              lam.row 1 ≤ N →
+                (∀ e ∈ P, e.card = 2) →
+                  (↑P).PairwiseDisjoint id →
+                    (∀ (c : ℕ), 2 ≤ c → (B c).card = Tight.colLen lam c) →
+                      (∀ (c : ℕ), 2 ≤ c → ∀ (c' : ℕ), 2 ≤ c' → c ≠ c' → Disjoint (B c) (B c')) →
+                        (∀ e ∈ P, ∀ (c : ℕ), 2 ≤ c → Disjoint e (B c)) →
+                          (∀ e ∈ P, Disjoint e M) →
+                            (∀ (c : ℕ), 2 ≤ c → Disjoint (B c) M) →
+                              (∃ t, M.card = lam.len + 1 + 2 * t) →
+                                P.sup id ∪ (Finset.Icc 2 N).sup B ∪ M = I → OddPatterns.MarkedPattern lam I :=
+fun {k} lam I P B M N hN hP2 hPd hB hBd hPB hPM hBM hMc hcov =>
+  { pairs := P, blocks := B, marked := M, card_pair := hP2, pairs_disjoint := hPd, card_block := ⋯,
+    blocks_disjoint := ⋯, pairs_blocks_disjoint := ⋯, pairs_marked_disjoint := hPM, blocks_marked_disjoint := ⋯,
+    marked_card := hMc, cover := ⋯ }
+@OddLifts.map_Pfe : ∀ {A : Type u_1} [inst : CommRing A] {A' : Type u_2} [inst_1 : CommRing A'] (f : A →+* A') (r : ℕ)
+  {n s : ℕ} (z : Fin n → A) (e : Fin s → ℕ), f (Pfaffian.Pfe r z e) = Pfaffian.Pfe r (fun i => f (z i)) e
+@OddLifts.mPf_expand : ∀ {A : Type u_1} [inst : CommRing A] (h s : ℕ) (z : Fin (s + 3) → A),
+  OddPatterns.mPf h (s + 2) z =
+    -∑ u ∈ Finset.range (2 * h),
+          (-1) ^ u * z 0 ^ (2 * h - 1 - u) * Pfaffian.Pfe (2 * h + 1) (fun i => z i.succ) (Fin.snoc (fun k => ↑k) u) +
+      ∑ k, (-1) ^ (s + 3 + ↑k + 1) * z 0 ^ ↑k * Pfaffian.Pfe (2 * h + 1) (fun i => z i.succ) fun j => ↑(k.succAbove j)
+@OddLifts.coeff_sign_X_pow_C : ∀ {A : Type u_1} [inst : CommRing A] (u j m : ℕ) (a : A),
+  ((-1) ^ u * X ^ j * C a).coeff m = if m = j then (-1) ^ u * a else 0
+@OddLifts.Pfe_snoc_eq_zero : ∀ {A : Type u_1} [inst : CommRing A] (h s : ℕ) {n : ℕ} (w : Fin n → A) {u : ℕ},
+  u ≤ s → Pfaffian.Pfe (2 * h + 1) w (Fin.snoc (fun k => ↑k) u) = 0
+@OddLifts.Pfe_snoc_top : ∀ {A : Type u_1} [inst : CommRing A] (h s : ℕ) (w : Fin (s + 2) → A),
+  Pfaffian.Pfe (2 * h + 1) w (Fin.snoc (fun k => ↑k) (s + 1)) =
+    (-1) ^ ((s + 2) * (s + 2 - 1) / 2) * ∏ i, ∏ j ∈ Finset.Ioi i, (w j - w i)
+@OddLifts.coeff_mPf_cons : ∀ {A : Type u_1} [inst : CommRing A] (h s : ℕ) (w : Fin (s + 2) → A) (m : ℕ),
+  (OddPatterns.mPf h (s + 2) (Fin.cons X fun i => C (w i))).coeff m =
+    (-∑ u ∈ Finset.range (2 * h),
+          if m = 2 * h - 1 - u then (-1) ^ u * Pfaffian.Pfe (2 * h + 1) w (Fin.snoc (fun k => ↑k) u) else 0) +
+      ∑ k, if m = ↑k then (-1) ^ (s + 3 + ↑k + 1) * Pfaffian.Pfe (2 * h + 1) w fun j => ↑(k.succAbove j) else 0
+@OddLifts.P1 : ∀ {R : Type u_1} [inst : CommRing R] (h l : ℕ),
+  1 ≤ l →
+    ∀ (w : Fin l → R) (k : ℕ),
+      2 * h < k + l → l < k + 2 → (OddPatterns.mPf h l (Fin.cons X fun i => C (w i))).coeff k = 0
+@OddLifts.P2 : ∀ {R : Type u_1} [inst : CommRing R] (h l : ℕ),
+  1 ≤ l →
+    ∀ (w : Fin l → R),
+      l ≤ h →
+        (OddPatterns.mPf h l (Fin.cons X fun i => C (w i))).coeff (2 * h - l) =
+          (-1) ^ (l * (l + 1) / 2) * ∏ i, ∏ j ∈ Finset.Ioi i, (w j - w i)
+@OddLifts.P3 : ∀ {R : Type u_1} [inst : CommRing R] (h l : ℕ),
+  1 ≤ l →
+    ∀ (w : Fin l → R),
+      l ≤ h → ∀ (k : ℕ), 2 * h - l < k → (OddPatterns.mPf h l (Fin.cons X fun i => C (w i))).coeff k = 0
+@OddLifts.L0a : ∀ {F : Type u_1} [inst : Field F] {q m : ℕ} (hm : 1 ≤ m) {V V' : Ideal (Peel.C F q m)},
+  V ≤ V' → ∀ (d : ℕ), Peel.W hm V d ≤ Peel.W hm V' d
+@OddLifts.L0b : ∀ {F : Type u_1} [inst : Field F] (h m : ℕ) (Lam : Set OddShapes.Shape),
+  Tight.VLamAll F (2 * h + 2) m (OddShapes.comp Lam false) ≤ OddPatterns.VSAll F h m Lam
+@OddLifts.orderEmbOfFin_cast : ∀ {α : Type u_1} [inst : LinearOrder α] (s : Finset α) {k : ℕ} (hk : s.card = k)
+  (i : Fin k), (s.orderEmbOfFin hk) i = (s.orderEmbOfFin ⋯) (Fin.cast ⋯ i)
+@OddLifts.orderEmbOfFin_liftSet : ∀ {n k : ℕ} (B : Finset (Fin n)) (hB : B.card = k) (hB' : (Lifts.liftSet B).card = k)
+  (i : Fin k), ((Lifts.liftSet B).orderEmbOfFin hB') i = ((B.orderEmbOfFin hB) i).succ
+@OddLifts.orderEmbOfFin_insert_zero : ∀ {n k : ℕ} (B : Finset (Fin n)) (hB : B.card = k)
+  (hB' : (insert 0 (Lifts.liftSet B)).card = k + 1) (i : Fin (k + 1)),
+  ((insert 0 (Lifts.liftSet B)).orderEmbOfFin hB') i = Fin.cons 0 (fun j => ((B.orderEmbOfFin hB) j).succ) i
+OddLifts.L1 : ∀ (F : Type u_1) [inst : Field F] (h : ℕ) {n : ℕ} (l : ℕ) (B : Finset (Fin n)),
+  (Peel.incl F (2 * h + 2) n) (OddPatterns.markedPf F h l B) = OddPatterns.markedPf F h l (Lifts.liftSet B)
+OddLifts.markedPf_insert_zero : ∀ (F : Type u_1) [inst : Field F] (h : ℕ) {n k : ℕ} (l : ℕ) (B : Finset (Fin n))
+  (hB : B.card = k),
+  OddPatterns.markedPf F h l (insert 0 (Lifts.liftSet B)) =
+    OddPatterns.mPf h l
+      (Fin.cons (Tight.y F (2 * h + 2) 0) fun j => Tight.y F (2 * h + 2) ((B.orderEmbOfFin hB) j).succ)
+OddLifts.phi_markedPf_insert_zero : ∀ (F : Type u_1) [inst : Field F] (h : ℕ) {n k : ℕ} (l : ℕ) (B : Finset (Fin n))
+  (hB : B.card = k),
+  (Peel.peelEquiv' F (2 * h + 2) n) (OddPatterns.markedPf F h l (insert 0 (Lifts.liftSet B))) =
+    (AdjoinRoot.mk (X ^ (2 * h + 2 - 1)))
+      (OddPatterns.mPf h l (Fin.cons X fun j => C (Tight.y F (2 * h + 2) ((B.orderEmbOfFin hB) j))))
+@OddLifts.card_liftPairs' : ∀ {n : ℕ} {P : Finset (Finset (Fin n))},
+  (∀ e ∈ P, e.card = 2) → ∀ e ∈ Lifts.liftPairs P, e.card = 2
+@OddLifts.disjoint_liftPairs' : ∀ {n : ℕ} {P : Finset (Finset (Fin n))},
+  (↑P).PairwiseDisjoint id → (↑(Lifts.liftPairs P)).PairwiseDisjoint id
+@OddLifts.prod_liftPairs' : ∀ {F : Type u_1} [inst : Field F] {q n : ℕ} {P : Finset (Finset (Fin n))},
+  (∀ e ∈ P, e.card = 2) → ∏ e ∈ Lifts.liftPairs P, Tight.pairD F q e = (Peel.incl F q n) (∏ e ∈ P, Tight.pairD F q e)
+@OddLifts.card_cleanMBlocks : ∀ {k : ℕ} {μ : ChainLemma.Partition} {I : Finset (Fin k)}
+  (T : OddPatterns.MarkedPattern μ I) {c : ℕ}, 2 ≤ c → (OddLifts.cleanMBlocks T c).card = Tight.colLen μ c
+@OddLifts.disjoint_cleanMBlocks : ∀ {k : ℕ} {μ : ChainLemma.Partition} {I : Finset (Fin k)}
+  (T : OddPatterns.MarkedPattern μ I) {c c' : ℕ},
+  c ≠ c' → Disjoint (OddLifts.cleanMBlocks T c) (OddLifts.cleanMBlocks T c')
+@OddLifts.disjoint_pairs_cleanMBlocks : ∀ {k : ℕ} {μ : ChainLemma.Partition} {I : Finset (Fin k)}
+  (T : OddPatterns.MarkedPattern μ I) {e : Finset (Fin k)},
+  e ∈ T.pairs → ∀ (c : ℕ), Disjoint e (OddLifts.cleanMBlocks T c)
+@OddLifts.disjoint_cleanMBlocks_marked : ∀ {k : ℕ} {μ : ChainLemma.Partition} {I : Finset (Fin k)}
+  (T : OddPatterns.MarkedPattern μ I) (c : ℕ), Disjoint (OddLifts.cleanMBlocks T c) T.marked
+@OddLifts.sup_mblocks_eq : ∀ {k : ℕ} {lam : ChainLemma.Partition} {B : ℕ → Finset (Fin k)},
+  (∀ (c : ℕ), 2 ≤ c → (B c).card = Tight.colLen lam c) →
+    ∀ {N : ℕ}, lam.row 1 ≤ N → (Finset.Icc 2 N).sup B = (Finset.Icc 2 (lam.row 1)).sup B
+@OddLifts.cover_cleanMBlocks : ∀ {k : ℕ} {μ : ChainLemma.Partition} {I : Finset (Fin k)}
+  (T : OddPatterns.MarkedPattern μ I) {N : ℕ},
+  μ.row 1 ≤ N → T.pairs.sup id ∪ (Finset.Icc 2 N).sup (OddLifts.cleanMBlocks T) ∪ T.marked = I
+@OddLifts.prod_cleanMBlocks : ∀ {F : Type u_1} [inst : Field F] {h k : ℕ} {μ : ChainLemma.Partition}
+  {I : Finset (Fin k)} (T : OddPatterns.MarkedPattern μ I) {N : ℕ},
+  μ.row 1 ≤ N →
+    OddPatterns.MarkedPattern.prod F h T =
+      (∏ e ∈ T.pairs, Tight.pairD F (2 * h + 2) e) * OddPatterns.markedPf F h μ.len T.marked *
+        ∏ c ∈ Finset.Icc 2 N, Tight.Delta F (2 * h + 2) (OddLifts.cleanMBlocks T c)
+@OddLifts.prod_mkMPattern : ∀ {F : Type u_1} [inst : Field F] {h k : ℕ} (lam : ChainLemma.Partition)
+  (I : Finset (Fin k)) (P : Finset (Finset (Fin k))) (B : ℕ → Finset (Fin k)) (M : Finset (Fin k)) (N : ℕ)
+  (hN : lam.row 1 ≤ N) (hP2 : ∀ e ∈ P, e.card = 2) (hPd : (↑P).PairwiseDisjoint id)
+  (hB : ∀ (c : ℕ), 2 ≤ c → (B c).card = Tight.colLen lam c)
+  (hBd : ∀ (c : ℕ), 2 ≤ c → ∀ (c' : ℕ), 2 ≤ c' → c ≠ c' → Disjoint (B c) (B c'))
+  (hPB : ∀ e ∈ P, ∀ (c : ℕ), 2 ≤ c → Disjoint e (B c)) (hPM : ∀ e ∈ P, Disjoint e M)
+  (hBM : ∀ (c : ℕ), 2 ≤ c → Disjoint (B c) M) (hMc : ∃ t, M.card = lam.len + 1 + 2 * t)
+  (hcov : P.sup id ∪ (Finset.Icc 2 N).sup B ∪ M = I),
+  OddPatterns.MarkedPattern.prod F h (OddLifts.mkMPattern lam I P B M N hN hP2 hPd hB hBd hPB hPM hBM hMc hcov) =
+    (∏ e ∈ P, Tight.pairD F (2 * h + 2) e) * OddPatterns.markedPf F h lam.len M *
+      ∏ c ∈ Finset.Icc 2 N, Tight.Delta F (2 * h + 2) (B c)
+@OddLifts.len_eq_of_colLen_one : ∀ {lam μ : ChainLemma.Partition},
+  Tight.colLen lam 1 = Tight.colLen μ 1 → lam.len = μ.len
+@OddLifts.succ_mem_mcover : ∀ {n : ℕ} {μ : ChainLemma.Partition} (T : OddPatterns.MarkedPattern μ Finset.univ) {N : ℕ},
+  μ.row 1 ≤ N →
+    ∀ (i : Fin n), (∃ e ∈ T.pairs, i ∈ e) ∨ (∃ c ∈ Finset.Icc 2 N, i ∈ OddLifts.cleanMBlocks T c) ∨ i ∈ T.marked
+@OddLifts.exists_mpattern_insert : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {μ lam : ChainLemma.Partition}
+  (T : OddPatterns.MarkedPattern μ Finset.univ) {cs : ℕ},
+  2 ≤ cs →
+    (∀ (c : ℕ), 1 ≤ c → Tight.colLen lam c = Tight.colLen μ c + if c = cs then 1 else 0) →
+      ∃ T',
+        OddPatterns.MarkedPattern.prod F h T' =
+          (∏ x ∈ OddLifts.cleanMBlocks T cs, (Tight.y F (2 * h + 2) x.succ - Tight.y F (2 * h + 2) 0)) *
+            (Peel.incl F (2 * h + 2) n) (OddPatterns.MarkedPattern.prod F h T)
+@OddLifts.exists_mpattern_pair : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {μ lam : ChainLemma.Partition}
+  (T : OddPatterns.MarkedPattern μ Finset.univ) {c0 : ℕ},
+  2 ≤ c0 →
+    (∀ (c : ℕ), 1 ≤ c → (Tight.colLen lam c + if c = c0 then 1 else 0) = Tight.colLen μ c) →
+      ∀ {N : ℕ},
+        lam.row 1 ≤ N →
+          μ.row 1 ≤ N →
+            c0 ≤ N →
+              ∀ {b : Fin n},
+                b ∈ OddLifts.cleanMBlocks T c0 →
+                  ∃ T',
+                    OddPatterns.MarkedPattern.prod F h T' =
+                      Tight.D F (2 * h + 2) 0 b.succ *
+                        (Peel.incl F (2 * h + 2) n)
+                          (Tight.Delta F (2 * h + 2) ((OddLifts.cleanMBlocks T c0).erase b) *
+                            ((∏ e ∈ T.pairs, Tight.pairD F (2 * h + 2) e) * OddPatterns.markedPf F h μ.len T.marked *
+                              ∏ c ∈ (Finset.Icc 2 N).erase c0, Tight.Delta F (2 * h + 2) (OddLifts.cleanMBlocks T c)))
+@OddLifts.T1 : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {Lam : Set OddShapes.Shape} {mu lam : ChainLemma.Partition},
+  (lam, false) ∈ Lam →
+    ∀ (T : Tight.TightPattern mu Finset.univ) {cs : ℕ},
+      1 ≤ cs →
+        (∀ (c : ℕ), 1 ≤ c → Tight.colLen lam c = Tight.colLen mu c + if c = cs then 1 else 0) →
+          Tight.colLen mu cs ≤ 2 * h →
+            Tight.TightPattern.prod F (2 * h + 2) T ∈ Peel.W ⋯ (OddPatterns.VSAll F h (n + 1) Lam) (Tight.colLen mu cs)
+@OddLifts.T2 : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {Lam : Set OddShapes.Shape} {mu lam : ChainLemma.Partition},
+  (lam, false) ∈ Lam →
+    ∀ (T : Tight.TightPattern mu Finset.univ) {c0 : ℕ},
+      1 ≤ c0 →
+        (∀ (c : ℕ), 1 ≤ c → (Tight.colLen lam c + if c = c0 then 1 else 0) = Tight.colLen mu c) →
+          1 ≤ Tight.colLen mu c0 →
+            Tight.colLen mu c0 ≤ 2 * h + 1 →
+              Tight.TightPattern.prod F (2 * h + 2) T ∈
+                Peel.W ⋯ (OddPatterns.VSAll F h (n + 1) Lam) (2 * h + 1 - Tight.colLen mu c0)
+@OddLifts.T3 : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {Lam : Set OddShapes.Shape} {mu lam : ChainLemma.Partition},
+  (lam, true) ∈ Lam →
+    ∀ (T : OddPatterns.MarkedPattern mu Finset.univ) {cs : ℕ},
+      2 ≤ cs →
+        (∀ (c : ℕ), 1 ≤ c → Tight.colLen lam c = Tight.colLen mu c + if c = cs then 1 else 0) →
+          Tight.colLen mu cs ≤ 2 * h →
+            OddPatterns.MarkedPattern.prod F h T ∈ Peel.W ⋯ (OddPatterns.VSAll F h (n + 1) Lam) (Tight.colLen mu cs)
+@OddLifts.T4 : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {Lam : Set OddShapes.Shape} {mu lam : ChainLemma.Partition},
+  (lam, true) ∈ Lam →
+    ∀ (T : OddPatterns.MarkedPattern mu Finset.univ) {c0 : ℕ},
+      2 ≤ c0 →
+        (∀ (c : ℕ), 1 ≤ c → (Tight.colLen lam c + if c = c0 then 1 else 0) = Tight.colLen mu c) →
+          1 ≤ Tight.colLen mu c0 →
+            Tight.colLen mu c0 ≤ 2 * h + 1 →
+              OddPatterns.MarkedPattern.prod F h T ∈
+                Peel.W ⋯ (OddPatterns.VSAll F h (n + 1) Lam) (2 * h + 1 - Tight.colLen mu c0)
+@OddLifts.exists_mpattern_zero : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {mu : ChainLemma.Partition}
+  (T : Tight.TightPattern mu Finset.univ),
+  ∃ T',
+    OddPatterns.MarkedPattern.prod F h T' =
+      OddPatterns.markedPf F h mu.len (insert 0 (Lifts.liftSet (Lifts.cleanBlocks T 1))) *
+        (Peel.incl F (2 * h + 2) n)
+          ((∏ e ∈ T.pairs, Tight.pairD F (2 * h + 2) e) *
+            ∏ c ∈ Finset.Icc 2 (mu.row 1 + 1), Tight.Delta F (2 * h + 2) (Lifts.cleanBlocks T c))
+@OddLifts.prod_eq_Delta_one_mul : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {mu : ChainLemma.Partition}
+  (T : Tight.TightPattern mu Finset.univ),
+  Tight.TightPattern.prod F (2 * h + 2) T =
+    Tight.Delta F (2 * h + 2) (Lifts.cleanBlocks T 1) *
+      ((∏ e ∈ T.pairs, Tight.pairD F (2 * h + 2) e) *
+        ∏ c ∈ Finset.Icc 2 (mu.row 1 + 1), Tight.Delta F (2 * h + 2) (Lifts.cleanBlocks T c))
+@OddLifts.mPf_cons_of_eq_zero : ∀ {R : Type u_1} [inst : CommRing R] (h l : ℕ),
+  l = 0 → ∀ (w : Fin l → R), OddPatterns.mPf h l (Fin.cons X fun j => C (w j)) = X ^ (2 * h)
+@OddLifts.T5 : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {Lam : Set OddShapes.Shape} {mu : ChainLemma.Partition},
+  (mu, true) ∈ Lam →
+    ∀ (T : Tight.TightPattern mu Finset.univ),
+      mu.len ≤ h →
+        Tight.TightPattern.prod F (2 * h + 2) T ∈ Peel.W ⋯ (OddPatterns.VSAll F h (n + 1) Lam) (2 * h - mu.len)
+'OddLifts.map_Pfe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.mPf_expand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.coeff_sign_X_pow_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.Pfe_snoc_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.Pfe_snoc_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.coeff_mPf_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.P1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.P2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.P3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.L0a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.L0b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.orderEmbOfFin_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.orderEmbOfFin_liftSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.orderEmbOfFin_insert_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.L1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.markedPf_insert_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.phi_markedPf_insert_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.card_liftPairs'' depends on axioms: [propext, Quot.sound]
+'OddLifts.disjoint_liftPairs'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.prod_liftPairs'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.card_cleanMBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.disjoint_cleanMBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.disjoint_pairs_cleanMBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.disjoint_cleanMBlocks_marked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.sup_mblocks_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.cover_cleanMBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.prod_cleanMBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.prod_mkMPattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.len_eq_of_colLen_one' depends on axioms: [propext, Quot.sound]
+'OddLifts.succ_mem_mcover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.exists_mpattern_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.exists_mpattern_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.T1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.T2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.T3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.T4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.exists_mpattern_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.prod_eq_Delta_one_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.mPf_cons_of_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts.T5' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1641408 t=157s

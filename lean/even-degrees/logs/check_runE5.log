@@ -1,0 +1,49 @@
+EvenAssembly.HypH : ℕ → ℕ → Prop
+def EvenAssembly.HypH : ℕ → ℕ → Prop :=
+fun m k =>
+  ∀ (p : ℕ) (hp : Nat.Prime p), p ∣ m → EveryField.rankOver (ZMod p) (ColUpper.intMatU m k) = EvenCount.QkEven k m
+EvenAssembly.theorem_i : ∀ (F : Type u_1) [inst : Field F] {m : ℕ},
+  Even m →
+    2 ≤ m →
+      ↑m ≠ 0 →
+        ∀ (k : ℕ),
+          EveryField.rankOver F (ColUpper.intMatU m k) = EvenCount.QkEven k m ∧
+            Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F m k)) = EvenCount.QkEven k m
+EvenAssembly.theorem_ii : ∀ (F : Type u_1) [inst : Field F] {m k : ℕ},
+  Even m →
+    2 ≤ m →
+      EvenAssembly.HypH m k →
+        EveryField.rankOver F (ColUpper.intMatU m k) = EvenCount.QkEven k m ∧
+          Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F m k)) = EvenCount.QkEven k m
+@EvenAssembly.theorem_iii : ∀ {m k : ℕ},
+  Even m →
+    2 ≤ m →
+      EvenAssembly.HypH m k →
+        (Module.Free ℤ (ColAssembly.RZ (2 * k + 1) m ⧸ ColAssembly.IZ m k) ∧
+            Module.finrank ℤ (ColAssembly.RZ (2 * k + 1) m ⧸ ColAssembly.IZ m k) =
+              m ^ (2 * k + 1) - EvenCount.QkEven k m) ∧
+          ∀ (F : Type u_1) [inst : Field F],
+            Module.finrank F (ColSplit.GA F (2 * k + 1) m ⧸ ColUpper.IK F m k) = m ^ (2 * k + 1) - EvenCount.QkEven k m
+EvenAssembly.hypH_four : ∀ (k : ℕ), EvenAssembly.HypH 4 k
+EvenAssembly.every_field_four : ∀ (F : Type u_1) [inst : Field F] (k : ℕ),
+  EveryField.rankOver F (ColUpper.intMatU 4 k) = EvenCount.QkEven k 4 ∧
+    Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F 4 k)) = EvenCount.QkEven k 4
+EvenAssembly.mainTheorem'_four : ∀ (k : ℕ),
+  (Module.Free ℤ (ColAssembly.RZ (2 * k + 1) 4 ⧸ ColAssembly.IZ 4 k) ∧
+      Module.finrank ℤ (ColAssembly.RZ (2 * k + 1) 4 ⧸ ColAssembly.IZ 4 k) = 4 ^ (2 * k + 1) - EvenCount.QkEven k 4) ∧
+    ∀ (F : Type) [inst : Field F],
+      Module.finrank F (ColSplit.GA F (2 * k + 1) 4 ⧸ ColUpper.IK F 4 k) = 4 ^ (2 * k + 1) - EvenCount.QkEven k 4
+@ColAssembly.mainTheorem' : ∀ {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ),
+      (Module.Free ℤ (ColAssembly.RZ (2 * k + 1) m ⧸ ColAssembly.IZ m k) ∧
+          Module.finrank ℤ (ColAssembly.RZ (2 * k + 1) m ⧸ ColAssembly.IZ m k) = m ^ (2 * k + 1) - TheoremB.Qk k m) ∧
+        ∀ (F : Type) [inst : Field F],
+          Module.finrank F (ColSplit.GA F (2 * k + 1) m ⧸ ColUpper.IK F m k) = m ^ (2 * k + 1) - TheoremB.Qk k m
+'EvenAssembly.theorem_i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAssembly.theorem_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAssembly.theorem_iii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAssembly.hypH_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAssembly.every_field_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAssembly.mainTheorem'_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2178960 t=127s

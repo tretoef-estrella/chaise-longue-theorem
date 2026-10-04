@@ -1,0 +1,81 @@
+def TheoremB.DIdeal.{u_1} : (F : Type u_1) → [inst : Field F] → (q k : ℕ) → Ideal (Peel.C F q (2 * k + 1)) :=
+fun F [Field F] q k => Ideal.span (Set.range (TheoremB.DJ F q))
+def TheoremB.DJ.{u_1} : (F : Type u_1) →
+  [inst : Field F] → (q : ℕ) → {k : ℕ} → BallotBound.Matching k → Peel.C F q (2 * k + 1) :=
+fun F [Field F] q {k} J => ∏ a with a ≠ 0 ∧ ↑J a ≠ 0 ∧ a < ↑J a, Tight.D F q (TheoremB.idx a) (TheoremB.idx (↑J a))
+def TheoremB.idx : {k : ℕ} → Fin (2 * k + 2) → Fin (2 * k + 1) :=
+fun {k} a => ⟨↑a - 1, ⋯⟩
+def Tight.D.{u_1} : (F : Type u_1) → [inst : Field F] → (q : ℕ) → {m : ℕ} → Fin m → Fin m → Peel.C F q m :=
+fun F [Field F] q {m} a b => ∑ i ∈ Finset.range (q - 1), (-1) ^ i * Tight.y F q a ^ i * Tight.y F q b ^ (q - 2 - i)
+def Tight.y.{u_1} : (F : Type u_1) → [inst : Field F] → (q : ℕ) → {m : ℕ} → Fin m → Peel.C F q m :=
+fun F [Field F] q {m} a => (Ideal.Quotient.mk (Peel.powIdeal F q m)) (MvPolynomial.X a)
+@[reducible] def Peel.C.{u_1} : (F : Type u_1) → [Field F] → ℕ → ℕ → Type u_1 :=
+fun F [Field F] q m => MvPolynomial (Fin m) F ⧸ Peel.powIdeal F q m
+def Peel.powIdeal.{u_1} : (F : Type u_1) → [inst : Field F] → ℕ → (m : ℕ) → Ideal (MvPolynomial (Fin m) F) :=
+fun F [Field F] q m => Ideal.span (Set.range fun i => MvPolynomial.X i ^ (q - 1))
+def OddEquality.Mideal.{u_1} : (F : Type u_1) → [inst : Field F] → (q n : ℕ) → Ideal (Peel.C F q n) :=
+fun F [Field F] q n => Ideal.span (Set.range fun P => ColOne.DPn F q P)
+def ColOne.DPn.{u_1} : (F : Type u_1) →
+  [inst : Field F] → (q : ℕ) → {n : ℕ} → ColComp.PerfMatch (Fin n) → Peel.C F q n :=
+fun F [Field F] q {n} P => ∏ a with a < ↑P a, Tight.D F q a (↑P a)
+def ColComp.PerfMatch.{u_1} : Type u_1 → Type u_1 :=
+fun T => { P // ∀ (x : T), P x ≠ x ∧ P (P x) = x }
+def OddEquality.DIdealZ : (q k : ℕ) → Ideal (FreeZ.CZ q (2 * k + 1)) :=
+fun q k => Ideal.span (Set.range fun J => (Ideal.Quotient.mk (FreeZ.powIdealZ q (2 * k + 1))) (OddEquality.DJZ q J))
+def OddEquality.DJZ : ℕ → {k : ℕ} → BallotBound.Matching k → MvPolynomial (Fin (2 * k + 1)) ℤ :=
+fun q {k} J => ∏ a with a ≠ 0 ∧ ↑J a ≠ 0 ∧ a < ↑J a, EveryField.DPR ℤ q (TheoremB.idx a) (TheoremB.idx (↑J a))
+def OddEquality.MidealZ : (q n : ℕ) → Ideal (FreeZ.CZ q n) :=
+fun q n => Ideal.span (Set.range fun P => (Ideal.Quotient.mk (FreeZ.powIdealZ q n)) (OddEquality.DPnZ q P))
+def OddEquality.DPnZ : ℕ → {n : ℕ} → ColComp.PerfMatch (Fin n) → MvPolynomial (Fin n) ℤ :=
+fun q {n} P => ∏ a with a < ↑P a, EveryField.DPR ℤ q a (↑P a)
+def EveryField.DPR.{u_1} : (R : Type u_1) →
+  [inst : CommRing R] → ℕ → {m : ℕ} → Fin m → Fin m → MvPolynomial (Fin m) R :=
+fun R [CommRing R] q {m} a b =>
+  ∑ i ∈ Finset.range (q - 1), (-1) ^ i * MvPolynomial.X a ^ i * MvPolynomial.X b ^ (q - 2 - i)
+@[reducible] def FreeZ.CZ : ℕ → ℕ → Type :=
+fun q m => MvPolynomial (Fin m) ℤ ⧸ FreeZ.powIdealZ q m
+def FreeZ.powIdealZ : ℕ → (m : ℕ) → Ideal (MvPolynomial (Fin m) ℤ) :=
+fun q m => Ideal.span (Set.range fun i => MvPolynomial.X i ^ (q - 1))
+OddEquality.D1 : ∀ (F : Type u_1) [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F (2 * h + 2) k)) =
+          EvenCount.QkEven k (2 * h + 2) ∧
+        Module.finrank F ↥(Submodule.restrictScalars F (OddEquality.Mideal F (2 * h + 2) (2 * k + 2))) =
+          EvenCount.QkEven k (2 * h + 2)
+@OddEquality.D2_DJ : ∀ {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.Free ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 1) ⧸ OddEquality.DIdealZ (2 * h + 2) k) ∧
+        Module.finrank ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 1) ⧸ OddEquality.DIdealZ (2 * h + 2) k) =
+          (2 * h + 1) ^ (2 * k + 1) - EvenCount.QkEven k (2 * h + 2)
+@OddEquality.D2_M : ∀ {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.Free ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 2) ⧸ OddEquality.MidealZ (2 * h + 2) (2 * k + 2)) ∧
+        Module.finrank ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 2) ⧸ OddEquality.MidealZ (2 * h + 2) (2 * k + 2)) =
+          (2 * h + 1) ^ (2 * k + 2) - EvenCount.QkEven k (2 * h + 2)
+@RankTwo.R4' : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin s → Fin n → R) (E O : Fin n → R),
+      Pfaffian.bpf (a + Matrix.of fun i j => E i * O j - E j * O i) c =
+        Pfaffian.bpf a c - Pfaffian.bpf a (Fin.snoc (Fin.snoc c E) O)
+'RankTwo.R4'' depends on axioms: [propext, Classical.choice, Quot.sound]
+../../checks/CheckTheoremO.lean:71:25: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+../../checks/CheckTheoremO.lean:73:105: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+../../checks/CheckTheoremO.lean:74:105: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+../../checks/CheckTheoremO.lean:75:105: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+../../checks/CheckTheoremO.lean:76:98: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'cto_Qall_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'cto_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1626048 t=169s

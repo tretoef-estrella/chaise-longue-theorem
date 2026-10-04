@@ -1,0 +1,155 @@
+def EvenBlocks.SInv.{u_1} : {F : Type u_1} → [inst : Field F] → ColSetting F → Finset F :=
+fun {F} [Field F] S => {ζ ∈ S.μ | ζ⁻¹ = ζ}
+def EvenBlocks.IsReps2.{u_1} : {F : Type u_1} → [inst : Field F] → ColSetting F → Finset F → Prop :=
+fun {F} [Field F] S R => R ⊆ S.μ \ SInv S ∧ ∀ ζ ∈ S.μ \ SInv S, Xor' (ζ ∈ R) (ζ⁻¹ ∈ R)
+def EvenBlocks.Tuples2.{u_1} : {F : Type u_1} →
+  [inst : Field F] → ColSetting F → {k : ℕ} → (Fin (2 * k + 2) → F) → Finset F → Type u_1 :=
+fun {F} [Field F] S {k} c R => ((ζ : ↥(SInv S)) → PerfMatch ↥(cls c ↑ζ)) × ((ζ : ↥R) → ↥(cls c ↑ζ) ≃ ↥(cls c (↑ζ)⁻¹))
+def EvenBlocks.gPS.{u_1} : {F : Type u_1} →
+  [inst : Field F] →
+    (S : ColSetting F) →
+      {k : ℕ} → (c : Fin (2 * k + 1) → ↥S.μ) → (ζ : F) → PerfMatch ↥(cls (cExt c) ζ) → (boxS S c).Box (WS S c ζ) :=
+fun {F} [Field F] S {k} c ζ P => ∏ x with ↑x < ↑(↑P x), pairF S.q (tB S c (WS S c ζ)) ↑x ↑(↑P x)
+@r_ne_zero : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F), ↑S.r ≠ 0
+@not_p_dvd_r : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F), ¬S.p ∣ S.r
+@lemma94 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F),
+  (∀ (d : ℕ) (I' : Ideal (GA F d S.m)),
+      Module.finrank F ↥(Submodule.restrictScalars F I') =
+        ∑ c, Module.finrank F ↥(Submodule.restrictScalars F (Ideal.map (S.piC c) I'))) ∧
+    (∀ (k : ℕ) (c : Fin (2 * k + 1) → ↥S.μ) (J : BallotBound.Matching k),
+        ((∃ a, 0 < a ∧ a < ↑J a ∧ cExt c a * cExt c (↑J a) ≠ 1) → (S.piC c) (psi S k J) = 0) ∧
+          ((∀ (a : Fin (2 * k + 2)), 0 < a → a < ↑J a → cExt c a * cExt c (↑J a) = 1) →
+            cExt c 0 * cExt c (↑J 0) = 1 ∧
+              ∃ w,
+                (S.piC c) (psi S k J) =
+                  (↑w * ∏ a with a < ↑J a, (tR c (↑J a) - 1)) *
+                    ∏ a with 0 < a ∧ a < ↑J a, (tR c a * tR c (↑J a) - 1) ^ (S.q - 1))) ∧
+      ∀ (k : ℕ) (c : Fin (2 * k + 1) → ↥S.μ) (J : BallotBound.Matching k),
+        Compatible (cExt c) J ↔ ∀ (a : Fin (2 * k + 2)), a ≠ 0 → ↑J a ≠ 0 → cExt c a * cExt c (↑J a) = 1
+algClosureSetting : (p : ℕ) →
+  [hp : Fact (Nat.Prime p)] → (v : ℕ) → 1 ≤ v → (r : ℕ) → 1 ≤ r → ¬p ∣ r → ColSetting (AlgebraicClosure (ZMod p))
+exists_setting : ∀ (p : ℕ) [hp : Fact (Nat.Prime p)] (v : ℕ),
+  1 ≤ v →
+    ∀ (r : ℕ), 1 ≤ r → ¬p ∣ r → ∃ S, S.p = p ∧ S.v = v ∧ S.r = r ∧ S.μ = Polynomial.nthRootsFinset r 1 ∧ S.m = p ^ v * r
+@one_mem_SInv : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F}, 1 ∈ SInv S
+@mem_SInv_iff : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F} {ζ : F}, ζ ∈ SInv S ↔ ζ ∈ S.μ ∧ ζ ^ 2 = 1
+@SInv_subset : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F}, SInv S ⊆ {1, -1}
+@SInv_eq_singleton : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F}, Odd S.r ∨ S.p = 2 → SInv S = {1}
+@even_r_facts : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F},
+  Even S.r → S.p ≠ 2 ∧ -1 ≠ 1 ∧ -1 ∈ S.μ ∧ SInv S = {1, -1}
+@exists_isReps2 : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F}, ∃ R, IsReps2 S R
+@isReps2_iff_isReps : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F},
+  SInv S = {1} → ∀ (R : Finset F), IsReps2 S R ↔ IsReps S R
+@partitionA5 : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F} {k : ℕ} {R : Finset F},
+  IsReps2 S R →
+    ∀ {c : Fin (2 * k + 2) → F},
+      (∀ (v : Fin (2 * k + 2)), c v ∈ S.μ) →
+        (∀ ζ ∈ SInv S, ∀ η ∈ SInv S, ζ ≠ η → Disjoint (cls c ζ) (cls c η)) ∧
+          (∀ ζ ∈ SInv S, ∀ η ∈ R, Disjoint (cls c ζ) (cls c η ∪ cls c η⁻¹)) ∧
+            (∀ ζ ∈ R, Disjoint (cls c ζ) (cls c ζ⁻¹)) ∧
+              (∀ ζ ∈ R, ∀ η ∈ R, ζ ≠ η → Disjoint (cls c ζ ∪ cls c ζ⁻¹) (cls c η ∪ cls c η⁻¹)) ∧
+                ((SInv S).biUnion (cls c) ∪ R.biUnion fun ζ => cls c ζ ∪ cls c ζ⁻¹) = Finset.univ
+@pair_iff : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F} {k : ℕ} {R : Finset F},
+  IsReps2 S R →
+    ∀ {c : Fin (2 * k + 2) → F},
+      (∀ (v : Fin (2 * k + 2)), c v ∈ S.μ) →
+        ∀ (a b : Fin (2 * k + 2)),
+          c a * c b = 1 ↔
+            (∃ ζ ∈ SInv S, a ∈ cls c ζ ∧ b ∈ cls c ζ) ∨
+              ∃ ζ ∈ R, a ∈ cls c ζ ∧ b ∈ cls c ζ⁻¹ ∨ b ∈ cls c ζ ∧ a ∈ cls c ζ⁻¹
+@compatible_iff : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F} {k : ℕ} {R : Finset F},
+  IsReps2 S R →
+    ∀ {c : Fin (2 * k + 2) → F},
+      (∀ (v : Fin (2 * k + 2)), c v ∈ S.μ) →
+        ∀ (J : BallotBound.Matching k),
+          Compatible c J ↔
+            (∀ ζ ∈ SInv S, Finset.image (↑J) (cls c ζ) = cls c ζ) ∧ ∀ ζ ∈ R, Finset.image (↑J) (cls c ζ) = cls c ζ⁻¹
+@compEquiv2 : {F : Type u_1} →
+  [inst : Field F] →
+    {S : ColSetting F} →
+      {k : ℕ} →
+        {R : Finset F} →
+          {c : Fin (2 * k + 2) → F} →
+            IsReps2 S R → (∀ (v : Fin (2 * k + 2)), c v ∈ S.μ) → CompMatching c ≃ Tuples2 S c R
+@existsA9 : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F} {k : ℕ} {R : Finset F} {c : Fin (2 * k + 2) → F},
+  IsReps2 S R →
+    (∀ (v : Fin (2 * k + 2)), c v ∈ S.μ) →
+      ((∃ J, Compatible c J) ↔ (∀ ζ ∈ SInv S, Even (cls c ζ).card) ∧ ∀ ζ ∈ R, (cls c ζ).card = (cls c ζ⁻¹).card)
+@cardA9 : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F} {k : ℕ} {R : Finset F} {c : Fin (2 * k + 2) → F},
+  IsReps2 S R →
+    (∀ (v : Fin (2 * k + 2)), c v ∈ S.μ) →
+      (∀ ζ ∈ SInv S, Even (cls c ζ).card) →
+        (∀ ζ ∈ R, (cls c ζ).card = (cls c ζ⁻¹).card) →
+          Nat.card { J // Compatible c J } =
+            (∏ ζ ∈ SInv S, ((cls c ζ).card - 1).doubleFactorial) * ∏ ζ ∈ R, (cls c ζ).card.factorial
+@W1_eq_WS : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} (c : Fin (2 * k + 1) → ↥S.μ), W1 S c = WS S c 1
+@gP_eq_gPS : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} (c : Fin (2 * k + 1) → ↥S.μ),
+  gP S c = gPS S c 1
+@Ic1_eq_IcS : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} (c : Fin (2 * k + 1) → ↥S.μ),
+  Ic1 S c = IcS S c 1
+@piC_psi_eq_unit_mul2 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} (c : Fin (2 * k + 1) → ↥S.μ)
+  {R : Finset F},
+  IsReps2 S R →
+    ∀ (J : CompMatching (cExt c)),
+      ∃ w,
+        (rcEquiv (boxS S c)) ((S.piC c) (psi S k ↑J)) =
+          ↑w *
+            ((∏ ζ, ((boxS S c).iota (WS S c ↑ζ) Finset.univ ⋯) (gPS S c (↑ζ) ((restrict2 S (cExt c) R J).1 ζ))) *
+              ∏ ζ, ((boxS S c).iota (Wz S c ↑ζ) Finset.univ ⋯) (gσ S c (↑ζ) ((restrict2 S (cExt c) R J).2 ζ)))
+@map_idealI_eq_span2 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} (c : Fin (2 * k + 1) → ↥S.μ)
+  {R : Finset F},
+  IsReps2 S R →
+    Ideal.map (rcEquiv (boxS S c)) (Ideal.map (S.piC c) (idealI S k)) =
+      Ideal.span
+        {x |
+          ∃ P σ,
+            x =
+              (∏ ζ, ((boxS S c).iota (WS S c ↑ζ) Finset.univ ⋯) (gPS S c (↑ζ) (P ζ))) *
+                ∏ ζ, ((boxS S c).iota (Wz S c ↑ζ) Finset.univ ⋯) (gσ S c (↑ζ) (σ ζ))}
+@map_idealI_eq_bot : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} (c : Fin (2 * k + 1) → ↥S.μ),
+  (¬∃ J, Compatible (cExt c) J) → Ideal.map (rcEquiv (boxS S c)) (Ideal.map (S.piC c) (idealI S k)) = ⊥
+@lemma95 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} (c : Fin (2 * k + 1) → ↥S.μ) {R : Finset F},
+  IsReps2 S R →
+    ((∃ J, Compatible (cExt c) J) →
+        Module.finrank F ↥(Ideal.map (S.piC c) (idealI S k)) =
+          (∏ ζ ∈ SInv S, Module.finrank F ↥(IcS S c ζ)) * ∏ ζ ∈ R, Module.finrank F ↥(Icz S c ζ)) ∧
+      ((¬∃ J, Compatible (cExt c) J) → Module.finrank F ↥(Ideal.map (S.piC c) (idealI S k)) = 0)
+@prod_finrank_IcS_of_SInv_eq : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ},
+  SInv S = {1} →
+    ∀ (c : Fin (2 * k + 1) → ↥S.μ), ∏ ζ ∈ SInv S, Module.finrank F ↥(IcS S c ζ) = Module.finrank F ↥(Ic1 S c)
+@prop65_iii_of_SInv_eq : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ},
+  SInv S = {1} →
+    ∀ (c : Fin (2 * k + 1) → ↥S.μ) {R : Finset F},
+      IsReps S R →
+        ((∃ J, Compatible (cExt c) J) →
+            Module.finrank F ↥(Ideal.map (S.piC c) (idealI S k)) =
+              Module.finrank F ↥(Ic1 S c) * ∏ ζ ∈ R, Module.finrank F ↥(Icz S c ζ)) ∧
+          ((¬∃ J, Compatible (cExt c) J) → Module.finrank F ↥(Ideal.map (S.piC c) (idealI S k)) = 0)
+'EvenBlocks.r_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.not_p_dvd_r' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.lemma94' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.algClosureSetting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.exists_setting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.one_mem_SInv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.mem_SInv_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.SInv_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.SInv_eq_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.even_r_facts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.exists_isReps2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.isReps2_iff_isReps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.partitionA5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.pair_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.compatible_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.compEquiv2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.existsA9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.cardA9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.W1_eq_WS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.gP_eq_gPS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.Ic1_eq_IcS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.piC_psi_eq_unit_mul2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.map_idealI_eq_span2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.map_idealI_eq_bot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.lemma95' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.prod_finrank_IcS_of_SInv_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenBlocks.prop65_iii_of_SInv_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1603040 t=150s

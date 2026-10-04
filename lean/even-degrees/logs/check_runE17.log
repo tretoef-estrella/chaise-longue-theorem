@@ -1,0 +1,76 @@
+@[reducible] def EvenColours.T2.{u_1} : {F : Type u_1} → [inst : Field F] → ColSetting F → Type u_1 :=
+fun {F} [Field F] S => { x // x ≠ (0, ColCount.oneμ S) }
+def EvenColours.negT.{u_1} : {F : Type u_1} → [inst : Field F] → (S : ColSetting F) → T2 S → T2 S :=
+fun {F} [Field F] S x => ⟨(-(↑x).1, ColCount.invμ S (↑x).2), ⋯⟩
+def EvenColours.closedT.{u_2} : {X : Type u_2} →
+  [Fintype X] → [DecidableEq X] → (X → X) → (n : ℕ) → Finset (Fin n → X) :=
+fun {X} [Fintype X] [DecidableEq X] neg n =>
+  {g | (∀ (u : X), Fibres.cnt g u = Fibres.cnt g (neg u)) ∧ ∀ (u : X), neg u = u → Even (Fibres.cnt g u)}
+def EvenColours.NS.{u_1} : {F : Type u_1} → [inst : Field F] → ColSetting F → F → ℕ → ℕ :=
+fun {F} [Field F] S ζ a => if ζ = 1 then (closedT (negW S) a).card else (closedT (fun w => -w) a).card
+@card_T2 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F), Fintype.card (T2 S) = S.m - 1
+@C0_iii_even : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F), Even S.m → ∃! x, negT S x = x
+@C0_iii_odd : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F), Odd S.m → ∀ (x : T2 S), negT S x ≠ x
+@C0_iv : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F),
+  Even S.m → (∃ P, P.neg = negT S) ∧ ∀ (k : ℕ), (closedT (negT S) (2 * k + 2)).card = EvenCount.QkEven k S.m
+@C0_v : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F),
+  Odd S.m → (∃ Q, Q.neg = negT S) ∧ ∀ (k : ℕ), (closedT (negT S) (2 * k + 2)).card = Qk k S.m
+@C1 : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F} {k : ℕ} {g : Fin (2 * k + 2) → T2 S},
+  g ∈ closedT (negT S) (2 * k + 2) → ↑(↑(g 0)).2 = cExt (fun j => (↑(g j.succ)).2) 0
+@C3_a : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) (hp : S.p ≠ 2) (a : ℕ),
+  NS S 1 a = (closedTuples (stdSetting ((S.q - 1) / 2) ⋯) a).card
+@C3_b : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F),
+  S.p = 2 → NS S 1 0 = 1 ∧ ∀ (k' : ℕ), NS S 1 (2 * k' + 2) = EvenCount.QkEven k' S.q
+@C3_c : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F),
+  -1 ≠ 1 → NS S (-1) 0 = 1 ∧ ∀ (k' : ℕ), NS S (-1) (2 * k' + 2) = EvenCount.QkEven k' (S.q + 1)
+@C3_d : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) (ζ : F) {a : ℕ}, Odd a → NS S ζ a = 0
+@C2 : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F} {R : Finset F},
+  IsReps2 S R →
+    ∀ (k : ℕ) (c : Fin (2 * k + 1) → ↥S.μ),
+      {g ∈ closedT (negT S) (2 * k + 2) | ∀ (i : Fin (2 * k + 2)), ↑(↑(g i)).2 = cExt c i}.card =
+        if ∃ J, Compatible (cExt c) J then
+          (∏ ζ ∈ SInv S, NS S ζ (cls (cExt c) ζ).card) * ∏ ζ ∈ R, Bip.Nbal (cls (cExt c) ζ).card S.q
+        else 0
+@C4 : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F} {R : Finset F},
+  IsReps2 S R →
+    ∀ (k : ℕ),
+      (∑ c,
+          if ∃ J, Compatible (cExt c) J then
+            (∏ ζ ∈ SInv S, NS S ζ (cls (cExt c) ζ).card) * ∏ ζ ∈ R, Bip.Nbal (cls (cExt c) ζ).card S.q
+          else 0) =
+        (closedT (negT S) (2 * k + 2)).card
+@C4_even : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F} {R : Finset F},
+  IsReps2 S R →
+    ∀ (k : ℕ),
+      Even S.m →
+        (∑ c,
+            if ∃ J, Compatible (cExt c) J then
+              (∏ ζ ∈ SInv S, NS S ζ (cls (cExt c) ζ).card) * ∏ ζ ∈ R, Bip.Nbal (cls (cExt c) ζ).card S.q
+            else 0) =
+          EvenCount.QkEven k S.m
+@C4_odd : ∀ {F : Type u_1} [inst : Field F] {S : ColSetting F} {R : Finset F},
+  IsReps2 S R →
+    ∀ (k : ℕ),
+      Odd S.m →
+        (∑ c,
+            if ∃ J, Compatible (cExt c) J then
+              (∏ ζ ∈ SInv S, NS S ζ (cls (cExt c) ζ).card) * ∏ ζ ∈ R, Bip.Nbal (cls (cExt c) ζ).card S.q
+            else 0) =
+          Qk k S.m
+@even_m_iff : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F), Even S.m ↔ S.p = 2 ∨ Even S.r
+'EvenColours.card_T2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C0_iii_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C0_iii_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C0_iv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C0_v' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C3_a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C3_b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C3_c' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C3_d' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C4_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.C4_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenColours.even_m_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1631984 t=146s

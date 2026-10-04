@@ -1,0 +1,46 @@
+=== MODULE Basic 21:00:25
+vigia_rc=0
+✔ [8026/8026] Built RequestProject.Pfaffian.Basic (64s)
+Build completed successfully (8026 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1723712 t=72s
+=== MODULE Perm 21:01:38
+vigia_rc=0
+✔ [8027/8027] Built RequestProject.Pfaffian.Perm (63s)
+Build completed successfully (8027 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1693296 t=69s
+=== MODULE Expand 21:02:47
+vigia_rc=0
+✔ [8028/8028] Built RequestProject.Pfaffian.Expand (62s)
+Build completed successfully (8028 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1804624 t=69s
+=== MODULE Matching 21:03:57
+vigia_rc=0
+✔ [8027/8027] Built RequestProject.Pfaffian.Matching (57s)
+Build completed successfully (8027 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1857472 t=64s
+=== MODULE Bordered 21:05:01
+vigia_rc=0
+✔ [8029/8029] Built RequestProject.Pfaffian.Bordered (57s)
+Build completed successfully (8029 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1771936 t=64s
+=== MODULE ExpandVar 21:06:06
+vigia_rc=0
+✔ [8030/8030] Built RequestProject.Pfaffian.ExpandVar (60s)
+Build completed successfully (8030 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1755008 t=66s
+=== MODULE Laplace 21:07:12
+vigia_rc=0
+✔ [8031/8031] Built RequestProject.Pfaffian.Laplace (61s)
+Build completed successfully (8031 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1762128 t=66s
+=== MODULE OddBox 21:08:19
+vigia_rc=0
+✔ [8101/8101] Built RequestProject.Pfaffian.OddBox (53s)
+Build completed successfully (8101 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1808624 t=59s
+=== MODULE Main 21:09:18
+vigia_rc=0
+✔ [8103/8103] Built RequestProject.Pfaffian.Main (54s)
+Build completed successfully (8103 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1849344 t=60s
+BUILD-LOOP-END

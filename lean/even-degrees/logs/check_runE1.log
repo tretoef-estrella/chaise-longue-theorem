@@ -1,0 +1,92 @@
+BipAny.thm76_any : ∀ (F : Type u_1) [inst : Field F] {q : ℕ},
+  2 ≤ q →
+    (∀ t ≤ q - 1, ↑((q - 1).choose t) ≠ 0) →
+      ∀ {Ω : Type u_2} [inst_1 : Fintype Ω] [inst_2 : DecidableEq Ω],
+        Fintype.card Ω = q →
+          ∀ (α β : ℕ) (Λ : Set (ChainLemma.Partition × ChainLemma.Partition)),
+            Bip.IsDownSetB q α β Λ →
+              (Bip.ZLam Ω α β Λ).card ≤ Module.finrank F ↥(Submodule.restrictScalars F (Bip.VLamB F q α β Λ))
+BipAny.theoremC_any : ∀ (F : Type u_1) [inst : Field F] {q : ℕ},
+  2 ≤ q →
+    (∀ t ≤ q - 1, ↑((q - 1).choose t) ≠ 0) →
+      ∀ (a : ℕ),
+        Bip.Nbal a q ≤ Module.finrank F ↥(Submodule.restrictScalars F (Bip.Ibal F q a)) ∧
+          Bip.Nph a q ≤ Module.finrank F ↥(Submodule.restrictScalars F (Bip.Iph F q a)) ∧
+            Bip.Nph a q = Bip.Nbal (a + 1) q
+BipAny.choose_pred_prime_pow : ∀ (F : Type u_1) [inst : Field F] {p v q : ℕ},
+  Nat.Prime p → 1 ≤ v → q = p ^ v → ∀ [CharP F p], ∀ t ≤ q - 1, ↑((q - 1).choose t) = (-1) ^ t
+BipAny.choose_pred_prime_pow_ne_zero : ∀ (F : Type u_1) [inst : Field F] {p v q : ℕ},
+  Nat.Prime p → 1 ≤ v → q = p ^ v → ∀ [CharP F p], ∀ t ≤ q - 1, ↑((q - 1).choose t) ≠ 0
+BipAny.thm76_prime_pow : ∀ (F : Type u_1) [inst : Field F] {q p v : ℕ},
+  Nat.Prime p →
+    1 ≤ v →
+      q = p ^ v →
+        ∀ [CharP F p] {Ω : Type u_2} [inst_2 : Fintype Ω] [inst_3 : DecidableEq Ω],
+          Fintype.card Ω = q →
+            ∀ (α β : ℕ) (Λ : Set (ChainLemma.Partition × ChainLemma.Partition)),
+              Bip.IsDownSetB q α β Λ →
+                (Bip.ZLam Ω α β Λ).card ≤ Module.finrank F ↥(Submodule.restrictScalars F (Bip.VLamB F q α β Λ))
+BipAny.theoremC_prime_pow : ∀ (F : Type u_1) [inst : Field F] {q p v : ℕ},
+  Nat.Prime p →
+    1 ≤ v →
+      q = p ^ v →
+        ∀ [CharP F p] (a : ℕ),
+          Bip.Nbal a q ≤ Module.finrank F ↥(Submodule.restrictScalars F (Bip.Ibal F q a)) ∧
+            Bip.Nph a q ≤ Module.finrank F ↥(Submodule.restrictScalars F (Bip.Iph F q a)) ∧
+              Bip.Nph a q = Bip.Nbal (a + 1) q
+BipAny.lemmaS_iii : ∀ (F : Type u_1) [inst : Field F] (q α β : ℕ)
+  (Λ : Set (ChainLemma.Partition × ChainLemma.Partition)),
+  Ideal.map (Bip.swapR F q α β) (Bip.VLamB F q α β Λ) = Bip.VLamB F q β α (Bip.swapSet Λ) ∧
+    Module.finrank F ↥(Submodule.restrictScalars F (Bip.VLamB F q β α (Bip.swapSet Λ))) =
+      Module.finrank F ↥(Submodule.restrictScalars F (Bip.VLamB F q α β Λ))
+BipAny.swapR_prod_sign : ∀ (F : Type u_1) [inst : Field F] (q : ℕ) {lam : ChainLemma.Partition × ChainLemma.Partition}
+  {α β : ℕ} (T : Bip.BTightPattern lam α β),
+  (Bip.swapR F q α β) (Bip.BTightPattern.prod F q T) =
+    (-1) ^ ((q - 1) * T.pairs.card) * Bip.BTightPattern.prod F q T.transpose
+@BipAny.prop75 : ∀ {F : Type u_1} [inst : Field F] {q : ℕ},
+  2 ≤ q →
+    (∀ t ≤ q - 1, ↑((q - 1).choose t) ≠ 0) →
+      ∀ {α β : ℕ} (hα : 1 ≤ α) (Λ : Set (ChainLemma.Partition × ChainLemma.Partition)),
+        Bip.IsDownSetB q α β Λ →
+          ∀ i ≤ q - 1,
+            ↑(Bip.VLamB F q (α - 1) β (Bip.LamLayer q α β Λ i)) ⊆ ↑(Bip.Wslice F q hα (Bip.VLamB F q α β Λ) (q - 1 - i))
+BipAny.card_ZLam_le_of_peel : ∀ (F : Type u_1) [inst : Field F] {q : ℕ},
+  2 ≤ q →
+    (∀ t ≤ q - 1, ↑((q - 1).choose t) ≠ 0) →
+      ∀ {Ω : Type u_2} [inst_1 : Fintype Ω] [inst_2 : DecidableEq Ω],
+        Fintype.card Ω = q →
+          ∀ {α β : ℕ},
+            1 ≤ α →
+              ∀ {Λ : Set (ChainLemma.Partition × ChainLemma.Partition)},
+                Bip.IsDownSetB q α β Λ →
+                  (∀ (Λ' : Set (ChainLemma.Partition × ChainLemma.Partition)),
+                      Bip.IsDownSetB q (α - 1) β Λ' →
+                        (Bip.ZLam Ω (α - 1) β Λ').card ≤
+                          Module.finrank F ↥(Submodule.restrictScalars F (Bip.VLamB F q (α - 1) β Λ'))) →
+                    (Bip.ZLam Ω α β Λ).card ≤ Module.finrank F ↥(Submodule.restrictScalars F (Bip.VLamB F q α β Λ))
+Bip.thm76 : ∀ (F : Type u_1) [inst : Field F] {q : ℕ},
+  3 ≤ q →
+    Odd q →
+      (∀ t ≤ q - 1, ↑((q - 1).choose t) ≠ 0) →
+        ∀ {Ω : Type u_2} [inst_1 : Fintype Ω] [inst_2 : DecidableEq Ω],
+          Fintype.card Ω = q →
+            ∀ (α β : ℕ) (Λ : Set (ChainLemma.Partition × ChainLemma.Partition)),
+              Bip.IsDownSetB q α β Λ →
+                (Bip.ZLam Ω α β Λ).card ≤ Module.finrank F ↥(Submodule.restrictScalars F (Bip.VLamB F q α β Λ))
+Bip.theoremC : ∀ (F : Type u_1) [inst : Field F] {q : ℕ},
+  3 ≤ q →
+    Odd q →
+      (∀ t ≤ q - 1, ↑((q - 1).choose t) ≠ 0) →
+        ∀ (a : ℕ),
+          Bip.Nbal a q ≤ Module.finrank F ↥(Submodule.restrictScalars F (Bip.Ibal F q a)) ∧
+            Bip.Nph a q ≤ Module.finrank F ↥(Submodule.restrictScalars F (Bip.Iph F q a)) ∧
+              Bip.Nph a q = Bip.Nbal (a + 1) q
+'BipAny.thm76_any' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BipAny.theoremC_any' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BipAny.choose_pred_prime_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BipAny.choose_pred_prime_pow_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BipAny.thm76_prime_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BipAny.theoremC_prime_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BipAny.lemmaS_iii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BipAny.prop75' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1793536 t=146s

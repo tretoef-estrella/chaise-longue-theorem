@@ -1,0 +1,13 @@
+== Defs vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1710736 t=78s
+Build completed successfully (8039 jobs).
+== Identities vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1769712 t=78s
+Build completed successfully (8094 jobs).
+== Lemmas vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1812224 t=59s
+Build completed successfully (8041 jobs).
+== Shapes vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1832448 t=60s
+Build completed successfully (8042 jobs).
+== Interlaced vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1858912 t=59s
+Build completed successfully (8043 jobs).
+== Main vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1885568 t=63s
+Build completed successfully (8099 jobs).
+BUILD-LOOP-END

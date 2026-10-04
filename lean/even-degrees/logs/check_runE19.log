@@ -1,0 +1,92 @@
+@EvenOne.A1 : ∀ {A : Type u_1} [inst : CommRing A] [CharP A 2] (v : ℕ) (u : A),
+  (u - 1) ^ (2 ^ v - 1) = phi (2 ^ v) u ∧ (u - 1) ^ 2 ^ v = u ^ 2 ^ v - 1
+@EvenOne.A1_of_two_eq_zero : ∀ {A : Type u_1} [inst : CommRing A],
+  2 = 0 → ∀ (v : ℕ) (u : A), (u - 1) ^ (2 ^ v - 1) = phi (2 ^ v) u ∧ (u - 1) ^ 2 ^ v = u ^ 2 ^ v - 1
+@EvenOne.A2 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ},
+  S.p = 2 →
+    ∀ (c : Fin (2 * k + 1) → ↥S.μ) {n : ℕ} (e : Fin n ≃ ↥(WS S c 1)),
+      ∃ Φ, ∀ (i : Fin n), Φ ((Ideal.Quotient.mk (gaIdeal F n S.q)) (MvPolynomial.X i)) = (boxS S c).t (WS S c 1) (e i)
+@EvenOne.PhiE_psiG : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} (hp : S.p = 2)
+  (c : Fin (2 * k + 1) → ↥S.μ) {j : ℕ} (h0 : 0 ∈ cls (cExt c) 1) (hs : (cls (cExt c) 1).card = 2 * j + 2)
+  (J : BallotBound.Matching j),
+  (EvenOne.PhiE S hp c (EvenOne.eIn S c h0 hs).toEquiv) (ColUpper.psiG F S.q J) =
+    gPS S c 1 (EvenMinus.conjPMT (EvenOne.ebarIn S c h0 hs).toEquiv J)
+@EvenOne.B1 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ},
+  S.p = 2 →
+    ∀ (c : Fin (2 * k + 1) → ↥S.μ) {j : ℕ},
+      0 ∈ cls (cExt c) 1 →
+        (cls (cExt c) 1).card = 2 * j + 2 →
+          Module.finrank F ↥(IcS S c 1) = Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F S.q j))
+@EvenOne.B2 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F),
+  S.p = 2 → ∀ (j : ℕ), EvenCount.QkEven j S.q ≤ Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F S.q j))
+@EvenOne.B3 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ},
+  S.p = 2 →
+    ∀ (c : Fin (2 * k + 1) → ↥S.μ) {j : ℕ},
+      0 ∈ cls (cExt c) 1 → (cls (cExt c) 1).card = 2 * j + 2 → EvenCount.QkEven j S.q ≤ Module.finrank F ↥(IcS S c 1)
+@EvenOne.theta : {F : Type u_1} → [inst : Field F] → (q n : ℕ) → GA F (n + 1) q →ₗ[F] GA F n q
+@EvenOne.theta_iota_mul : ∀ {F : Type u_1} [inst : Field F] (q n : ℕ) (h : GA F n q) (f : GA F (n + 1) q),
+  (EvenOne.theta q n) ((EvenOne.iotaGA q n) h * f) = h * (EvenOne.theta q n) f
+@EvenOne.theta_pair_X : ∀ {F : Type u_1} [inst : Field F] (q n : ℕ),
+  1 ≤ q →
+    ∀ (b : Fin n) (h : GA F n q),
+      (EvenOne.theta q n)
+          (((EvenOne.iotaGA q n) ((Ideal.Quotient.mk (gaIdeal F n q)) (MvPolynomial.X b)) - 1) *
+              phi q
+                ((Ideal.Quotient.mk (gaIdeal F (n + 1) q)) (MvPolynomial.X 0) *
+                  (EvenOne.iotaGA q n) ((Ideal.Quotient.mk (gaIdeal F n q)) (MvPolynomial.X b))) *
+            (EvenOne.iotaGA q n) h) =
+        ((Ideal.Quotient.mk (gaIdeal F n q)) (MvPolynomial.X b) - 1) * h
+@EvenOne.C4 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} (hp : S.p = 2) (c : Fin (2 * k + 1) → ↥S.μ)
+  {j : ℕ} (h0 : 0 ∉ cls (cExt c) 1) (hs : (cls (cExt c) 1).card = 2 * j + 2) (J : BallotBound.Matching j),
+  (EvenOne.theta S.q (2 * j + 1))
+      ((EvenOne.PhiE S hp c (EvenOne.eOut S c h0 hs).toEquiv).symm
+        (gPS S c 1 (EvenMinus.conjPMT (EvenOne.ebarOut S c h0 hs).toEquiv J))) =
+    ColUpper.psiG F S.q J
+@EvenOne.C5 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ},
+  S.p = 2 →
+    ∀ (c : Fin (2 * k + 1) → ↥S.μ) {j : ℕ},
+      0 ∉ cls (cExt c) 1 →
+        (cls (cExt c) 1).card = 2 * j + 2 →
+          Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F S.q j)) ≤ Module.finrank F ↥(IcS S c 1) ∧
+            EvenCount.QkEven j S.q ≤ Module.finrank F ↥(IcS S c 1)
+@EvenOne.finrank_IcS_one_of_card_eq_zero : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ}
+  (c : Fin (2 * k + 1) → ↥S.μ), (cls (cExt c) 1).card = 0 → Module.finrank F ↥(IcS S c 1) = 1
+@EvenOne.lemma910 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ},
+  S.p = 2 → ∀ (c : Fin (2 * k + 1) → ↥S.μ), NS S 1 (cls (cExt c) 1).card ≤ Module.finrank F ↥(IcS S c 1)
+@EvenOne.NS_le_finrank_IcS : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} (c : Fin (2 * k + 1) → ↥S.μ)
+  {ζ : F}, ζ ∈ SInv S → NS S ζ (cls (cExt c) ζ).card ≤ Module.finrank F ↥(IcS S c ζ)
+@EvenOne.E1 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} {R : Finset F},
+  IsReps2 S R →
+    ∀ (c : Fin (2 * k + 1) → ↥S.μ),
+      (∃ J, Compatible (cExt c) J) →
+        (∏ ζ ∈ SInv S, NS S ζ (cls (cExt c) ζ).card) * ∏ ζ ∈ R, Bip.Nbal (cls (cExt c) ζ).card S.q ≤
+          (∏ ζ ∈ SInv S, Module.finrank F ↥(IcS S c ζ)) * ∏ ζ ∈ R, Module.finrank F ↥(Icz S c ζ)
+@EvenOne.E2 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) {k : ℕ} {R : Finset F},
+  IsReps2 S R →
+    ∀ (c : Fin (2 * k + 1) → ↥S.μ),
+      (if ∃ J, Compatible (cExt c) J then
+          (∏ ζ ∈ SInv S, NS S ζ (cls (cExt c) ζ).card) * ∏ ζ ∈ R, Bip.Nbal (cls (cExt c) ζ).card S.q
+        else 0) ≤
+        Module.finrank F ↥(Ideal.map (S.piC c) (idealI S k))
+@EvenOne.E3 : ∀ {F : Type u_1} [inst : Field F] (S : ColSetting F) (k : ℕ),
+  (closedT (negT S) (2 * k + 2)).card ≤ Module.finrank F ↥(Submodule.restrictScalars F (idealI S k)) ∧
+    (Even S.m → EvenCount.QkEven k S.m ≤ Module.finrank F ↥(Submodule.restrictScalars F (idealI S k))) ∧
+      (Odd S.m → TheoremB.Qk k S.m ≤ Module.finrank F ↥(Submodule.restrictScalars F (idealI S k)))
+'EvenOne.A1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.A1_of_two_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.A2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.PhiE_psiG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.B3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.theta_iota_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.theta_pair_X' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.C4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.C5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.finrank_IcS_one_of_card_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.lemma910' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.NS_le_finrank_IcS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.E1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.E2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenOne.E3' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1770944 t=181s

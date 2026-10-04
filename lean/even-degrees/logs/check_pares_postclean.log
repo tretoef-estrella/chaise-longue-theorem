@@ -1,0 +1,105 @@
+@EvenAll.mainTheorem' : ∀ {m : ℕ},
+  1 ≤ m →
+    ∀ (k : ℕ),
+      (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+          Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - EvenAll.Qall m k) ∧
+        ∀ (F : Type u_1) [inst : Field F],
+          Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - EvenAll.Qall m k ∧
+            Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) = EvenAll.Qall m k
+@mainTheorem' : ∀ {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ),
+      (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+          Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - TheoremB.Qk k m) ∧
+        ∀ (F : Type) [inst : Field F],
+          Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - TheoremB.Qk k m
+EvenAll.B1 : ∀ (F : Type u_1) [inst : Field F] {m : ℕ},
+  Even m →
+    2 ≤ m →
+      ∀ (k : ℕ),
+        EveryField.rankOver F (intMatU m k) = EvenCount.QkEven k m ∧
+          Module.finrank F ↥(Submodule.restrictScalars F (IK F m k)) = EvenCount.QkEven k m
+@EvenAll.B2 : ∀ {m : ℕ},
+  Even m →
+    2 ≤ m →
+      ∀ (k : ℕ),
+        (Module.Free ℤ (RZ (2 * k + 1) m ⧸ IZ m k) ∧
+            Module.finrank ℤ (RZ (2 * k + 1) m ⧸ IZ m k) = m ^ (2 * k + 1) - EvenCount.QkEven k m) ∧
+          ∀ (F : Type u_1) [inst : Field F],
+            Module.finrank F (GA F (2 * k + 1) m ⧸ IK F m k) = m ^ (2 * k + 1) - EvenCount.QkEven k m
+@EvenAll.A3 : ∀ {m : ℕ}, Even m → 2 ≤ m → ∀ (k : ℕ), EvenAssembly.HypH m k
+OddEquality.D1 : ∀ (F : Type u_1) [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F (2 * h + 2) k)) =
+          EvenCount.QkEven k (2 * h + 2) ∧
+        Module.finrank F ↥(Submodule.restrictScalars F (OddEquality.Mideal F (2 * h + 2) (2 * k + 2))) =
+          EvenCount.QkEven k (2 * h + 2)
+@OddEquality.D2_DJ : ∀ {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.Free ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 1) ⧸ OddEquality.DIdealZ (2 * h + 2) k) ∧
+        Module.finrank ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 1) ⧸ OddEquality.DIdealZ (2 * h + 2) k) =
+          (2 * h + 1) ^ (2 * k + 1) - EvenCount.QkEven k (2 * h + 2)
+@OddEquality.D2_M : ∀ {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      Module.Free ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 2) ⧸ OddEquality.MidealZ (2 * h + 2) (2 * k + 2)) ∧
+        Module.finrank ℤ (FreeZ.CZ (2 * h + 2) (2 * k + 2) ⧸ OddEquality.MidealZ (2 * h + 2) (2 * k + 2)) =
+          (2 * h + 1) ^ (2 * k + 2) - EvenCount.QkEven k (2 * h + 2)
+OddTheorem.theoremO : ∀ (F : Type u_1) [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      EvenCount.QkEven k (2 * h + 2) ≤ Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F (2 * h + 2) k))
+def EvenAll.Qall : ℕ → ℕ → ℕ :=
+fun m k => if Even m then EvenCount.QkEven k m else TheoremB.Qk k m
+def EvenCount.QkEven : ℕ → ℕ → ℕ :=
+fun k m =>
+  ∑ c ∈ Finset.range (k + 2),
+    ∑ b ∈ Fintype.piFinset fun x => Finset.range (2 * k + 3) with 2 * c + 2 * ∑ u, b u = 2 * k + 2,
+      (2 * k + 2).factorial / ((2 * c).factorial * ∏ u, (b u).factorial ^ 2)
+def TheoremB.Qk : ℕ → ℕ → ℕ :=
+fun k q =>
+  ∑ b ∈ Fintype.piFinset fun x => Finset.range (2 * k + 3) with 2 * ∑ u, b u = 2 * k + 2,
+    (2 * k + 2).factorial / ∏ u, (b u).factorial ^ 2
+def ColAssembly.idealZ : (d : ℕ) → ℕ → Ideal (MvPolynomial (Fin d) ℤ) :=
+fun d m => Ideal.span (Set.range fun i => MvPolynomial.X i ^ m - 1)
+@[reducible] def ColAssembly.RZ : ℕ → ℕ → Type :=
+fun d m => MvPolynomial (Fin d) ℤ ⧸ idealZ d m
+def ColAssembly.IZ : (m k : ℕ) → Ideal (RZ (2 * k + 1) m) :=
+fun m k => Ideal.span (Set.range fun J => (Ideal.Quotient.mk (idealZ (2 * k + 1) m)) (psiP ℤ m J))
+def ColUpper.psiP.{u_1} : (R : Type u_1) →
+  [inst : CommRing R] → ℕ → {k : ℕ} → BallotBound.Matching k → MvPolynomial (Fin (2 * k + 1)) R :=
+fun R [CommRing R] m {k} J =>
+  (∏ a with a < ↑J a, (tP R k (↑J a) - 1)) * ∏ a with 0 < a ∧ a < ↑J a, ColSurv.phi m (tP R k a * tP R k (↑J a))
+def ColUpper.tP.{u_1} : (R : Type u_1) →
+  [inst : CommRing R] → (k : ℕ) → Fin (2 * k + 2) → MvPolynomial (Fin (2 * k + 1)) R :=
+fun R [CommRing R] k i => Fin.cases 0 MvPolynomial.X i
+def ColSurv.phi.{u_2} : {A : Type u_2} → [Semiring A] → ℕ → A → A :=
+fun {A} [Semiring A] m u => ∑ s ∈ Finset.range m, u ^ s
+def BallotBound.Matching : ℕ → Type :=
+fun k => { J // ∀ (x : Fin (2 * k + 2)), J x ≠ x ∧ J (J x) = x }
+def ColSplit.gaIdeal.{u_1} : (F : Type u_1) → [inst : Field F] → (d : ℕ) → ℕ → Ideal (MvPolynomial (Fin d) F) :=
+fun F [Field F] d m => Ideal.span (Set.range fun i => MvPolynomial.X i ^ m - 1)
+@[reducible] def ColSplit.GA.{u_1} : (F : Type u_1) → [Field F] → ℕ → ℕ → Type u_1 :=
+fun F [Field F] d m => MvPolynomial (Fin d) F ⧸ gaIdeal F d m
+def ColUpper.IK.{u_1} : (K : Type u_1) → [inst : Field K] → (m k : ℕ) → Ideal (GA K (2 * k + 1) m) :=
+fun K [Field K] m k => Ideal.span (Set.range (psiG K m))
+def ColUpper.psiG.{u_1} : (K : Type u_1) →
+  [inst : Field K] → (m : ℕ) → {k : ℕ} → BallotBound.Matching k → GA K (2 * k + 1) m :=
+fun K [Field K] m {k} J =>
+  (∏ a with a < ↑J a, (tU K m k (↑J a) - 1)) * ∏ a with 0 < a ∧ a < ↑J a, ColSurv.phi m (tU K m k a * tU K m k (↑J a))
+def ColUpper.tU.{u_1} : (K : Type u_1) → [inst : Field K] → (m k : ℕ) → Fin (2 * k + 2) → GA K (2 * k + 1) m :=
+fun K [Field K] m k i => Fin.cases 0 (fun j => (Ideal.Quotient.mk (gaIdeal K (2 * k + 1) m)) (MvPolynomial.X j)) i
+'EvenAll.mainTheorem'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.B1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenAll.A3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ColAssembly.mainTheorem'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.D1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.D2_DJ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddEquality.D2_M' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.theoremO' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.card_closedPointed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.card_Gamma_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1414064 t=210s

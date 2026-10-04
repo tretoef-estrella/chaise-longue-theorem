@@ -1,0 +1,32 @@
+../../checks/sample_LEAN_2/L6_inductives_finite.lean:23:25: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+project constants of the cone that L5 skipped: 19: [(ColSplit.ColSetting.mk, constructor),
+ (ColTensor.BoxSetting.mk, constructor),
+ (OddShapes.OddSetting, inductive),
+ (Bip.BTightPattern.mk, constructor),
+ (Fibres.FibreSetting, inductive),
+ (EvenCount.PointedSetting.mk, constructor),
+ (OddPatterns.MarkedPattern.mk, constructor),
+ (Tight.TightPattern, inductive),
+ (ChainLemma.Partition, inductive),
+ (OddPatterns.MarkedPattern, inductive),
+ (ChainLemma.Partition.rec, recursor),
+ (ChainLemma.Partition.mk, constructor),
+ (Bip.BTightPattern, inductive),
+ (Tight.TightPattern.mk, constructor),
+ (Fibres.FibreSetting.mk, constructor),
+ (EvenCount.PointedSetting, inductive),
+ (OddShapes.OddSetting.mk, constructor),
+ (ColTensor.BoxSetting, inductive),
+ (ColSplit.ColSetting, inductive)]
+OddShapes.OddSetting: re-submitted and accepted; generated recursor equals the compiled one: type true, rules true, counters true
+Fibres.FibreSetting: re-submitted and accepted; generated recursor equals the compiled one: type true, rules true, counters true
+Tight.TightPattern: re-submitted and accepted; generated recursor equals the compiled one: type true, rules true, counters true
+ChainLemma.Partition: re-submitted and accepted; generated recursor equals the compiled one: type true, rules true, counters true
+OddPatterns.MarkedPattern: re-submitted and accepted; generated recursor equals the compiled one: type true, rules true, counters true
+Bip.BTightPattern: re-submitted and accepted; generated recursor equals the compiled one: type true, rules true, counters true
+EvenCount.PointedSetting: re-submitted and accepted; generated recursor equals the compiled one: type true, rules true, counters true
+ColTensor.BoxSetting: re-submitted and accepted; generated recursor equals the compiled one: type true, rules true, counters true
+ColSplit.ColSetting: re-submitted and accepted; generated recursor equals the compiled one: type true, rules true, counters true
+VIGIA-FIN-OK exit=0 pico_kb=2573600 t=110s

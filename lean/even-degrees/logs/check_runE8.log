@@ -1,0 +1,219 @@
+def Pfaffian.IsAlt.{u_1} : {R : Type u_1} → [CommRing R] → {m : ℕ} → Matrix (Fin m) (Fin m) R → Prop :=
+fun {R} [CommRing R] {m} A => (∀ (i : Fin m), A i i = 0) ∧ ∀ (i j : Fin m), A j i = -A i j
+def Pfaffian.pf.{u_1} : {R : Type u_1} → [CommRing R] → (m : ℕ) → Matrix (Fin m) (Fin m) R → R :=
+fun {R} [CommRing R] x x_1 =>
+  Nat.brecOn (motive := fun x => Matrix (Fin x) (Fin x) R → R) x
+    (fun x f x_2 =>
+      (match (motive :=
+          (x : ℕ) → Matrix (Fin x) (Fin x) R → Nat.below (motive := fun x => Matrix (Fin x) (Fin x) R → R) x → R) x,
+          x_2 with
+        | 0, x => fun x => 1
+        | 1, x => fun x => 0
+        | m.succ.succ, A => fun x =>
+          ∑ j,
+            (-1) ^ ↑j * A 0 j.succ * x.2.1 (A.submatrix (fun i => (j.succAbove i).succ) fun i => (j.succAbove i).succ))
+        f)
+    x_1
+def Pfaffian.eps.{u_1} : {R : Type u_1} → [CommRing R] → ℕ → ℕ → R :=
+fun {R} [CommRing R] x z => if x < z then (-1) ^ (x + z + 1) else (-1) ^ (x + z)
+def Pfaffian.IsMatching : {m : ℕ} → (Fin m → Fin m) → Prop :=
+fun {m} π => (∀ (x : Fin m), π (π x) = x) ∧ ∀ (x : Fin m), π x ≠ x
+def Pfaffian.crossings : {m : ℕ} → (Fin m → Fin m) → ℕ :=
+fun {m} π => {xy | xy.1 < xy.2 ∧ xy.2 < π xy.1 ∧ π xy.1 < π xy.2}.card
+def Pfaffian.bmat.{u_1} : {R : Type u_1} →
+  [CommRing R] → {n s : ℕ} → Matrix (Fin n) (Fin n) R → (Fin s → Fin n → R) → Matrix (Fin (n + s)) (Fin (n + s)) R :=
+fun {R} [CommRing R] {n s} a c p q =>
+  Fin.addCases (fun i => Fin.addCases (fun j => a i j) (fun k => c k i) q)
+    (fun k => Fin.addCases (fun j => -c k j) (fun x => 0) q) p
+def Pfaffian.bpf.{u_1} : {R : Type u_1} →
+  [CommRing R] → {n s : ℕ} → Matrix (Fin n) (Fin n) R → (Fin s → Fin n → R) → R :=
+fun {R} [CommRing R] {n s} a c => Pfaffian.pf (n + s) (Pfaffian.bmat a c)
+def Pfaffian.ay.{u_1} : {A : Type u_1} → [CommRing A] → ℕ → {n : ℕ} → (Fin n → A) → Matrix (Fin n) (Fin n) A :=
+fun {A} [CommRing A] r {n} y i j => ColOne.Dab r (y i) (y j)
+def Pfaffian.Pf.{u_1} : {A : Type u_1} → [CommRing A] → ℕ → {n s : ℕ} → (Fin n → A) → (Fin s → Fin n → A) → A :=
+fun {A} [CommRing A] r {n s} y c => Pfaffian.bpf (Pfaffian.ay r y) c
+def Pfaffian.Pfe.{u_1} : {A : Type u_1} → [CommRing A] → ℕ → {n s : ℕ} → (Fin n → A) → (Fin s → ℕ) → A :=
+fun {A} [CommRing A] r {n s} y e => Pfaffian.Pf r y fun k i => y i ^ e k
+def ColOne.Dab.{u_2} : {A : Type u_2} → [CommRing A] → ℕ → A → A → A :=
+fun {A} [CommRing A] q a b => ∑ u ∈ Finset.range (q - 1), (-1) ^ u * a ^ u * b ^ (q - 2 - u)
+@Pfaffian.pf_odd : ∀ {R : Type u_1} [inst : CommRing R] (m : ℕ) (A : Matrix (Fin m) (Fin m) R),
+  Odd m → Pfaffian.pf m A = 0
+@Pfaffian.pf_two : ∀ {R : Type u_1} [inst : CommRing R] (A : Matrix (Fin 2) (Fin 2) R), Pfaffian.pf 2 A = A 0 1
+@Pfaffian.pf_four : ∀ {R : Type u_1} [inst : CommRing R] (A : Matrix (Fin 4) (Fin 4) R),
+  Pfaffian.pf 4 A = A 0 1 * A 2 3 - A 0 2 * A 1 3 + A 0 3 * A 1 2
+@Pfaffian.pf_eq_sum_matchings : ∀ {R : Type u_1} [inst : CommRing R] (m : ℕ) (A : Matrix (Fin m) (Fin m) R),
+  Pfaffian.pf m A = ∑ π with Pfaffian.IsMatching π, (-1) ^ Pfaffian.crossings π * ∏ x with x < π x, A x (π x)
+@Pfaffian.pf_perm : ∀ {R : Type u_1} [inst : CommRing R] {m : ℕ} (A : Matrix (Fin m) (Fin m) R),
+  Pfaffian.IsAlt A →
+    ∀ (σ : Equiv.Perm (Fin m)),
+      Pfaffian.IsAlt (A.submatrix ⇑σ ⇑σ) ∧ Pfaffian.pf m (A.submatrix ⇑σ ⇑σ) = ↑↑(Equiv.Perm.sign σ) * Pfaffian.pf m A
+@Pfaffian.pf_eq_zero_of_rows : ∀ {R : Type u_1} [inst : CommRing R] {m : ℕ} (A : Matrix (Fin m) (Fin m) R),
+  Pfaffian.IsAlt A → ∀ {x z : Fin m}, x ≠ z → (∀ (k : Fin m), A x k = A z k) → Pfaffian.pf m A = 0
+@Pfaffian.pf_expand : ∀ {R : Type u_1} [inst : CommRing R] {m : ℕ} (A : Matrix (Fin (m + 2)) (Fin (m + 2)) R),
+  Pfaffian.IsAlt A →
+    ∀ (x : Fin (m + 2)),
+      Pfaffian.pf (m + 2) A =
+        ∑ z,
+          Pfaffian.eps ↑x ↑(x.succAbove z) * A x (x.succAbove z) *
+            Pfaffian.pf m (A.submatrix (fun i => x.succAbove (z.succAbove i)) fun i => x.succAbove (z.succAbove i))
+@Pfaffian.pf_expand_gen : ∀ {R : Type u_1} [inst : CommRing R] {N k : ℕ},
+  N = k + 2 →
+    ∀ (A : Matrix (Fin N) (Fin N) R),
+      Pfaffian.IsAlt A →
+        ∀ (x : Fin N) (g : Fin N → Fin k → Fin N),
+          (∀ (z : Fin N), z ≠ x → StrictMono (g z) ∧ ∀ (y : Fin N), (∃ p, g z p = y) ↔ y ≠ x ∧ y ≠ z) →
+            Pfaffian.pf N A =
+              ∑ z ∈ Finset.univ.erase x, Pfaffian.eps ↑x ↑z * A x z * Pfaffian.pf k (A.submatrix (g z) (g z))
+@Pfaffian.pf_expand_fam : ∀ {R : Type u_1} [inst : CommRing R] {N k : ℕ},
+  N = k + 2 →
+    ∀ (A : Matrix (Fin N) (Fin N) R),
+      Pfaffian.IsAlt A →
+        ∀ (x : Fin N) {ι : Type u_2} [inst_1 : Fintype ι] (φ : ι → Fin N),
+          Function.Injective φ →
+            (∀ (i : ι), φ i ≠ x) →
+              (∀ (z : Fin N), z ≠ x → (∀ (i : ι), φ i ≠ z) → A x z = 0) →
+                ∀ (g : ι → Fin k → Fin N),
+                  (∀ (i : ι), StrictMono (g i) ∧ ∀ (y : Fin N), (∃ p, g i p = y) ↔ y ≠ x ∧ y ≠ φ i) →
+                    Pfaffian.pf N A = ∑ i, Pfaffian.eps ↑x ↑(φ i) * A x (φ i) * Pfaffian.pf k (A.submatrix (g i) (g i))
+@Pfaffian.pf_add_row : ∀ {R : Type u_1} [inst : CommRing R] {m : ℕ} (A A' A'' : Matrix (Fin m) (Fin m) R),
+  Pfaffian.IsAlt A →
+    Pfaffian.IsAlt A' →
+      Pfaffian.IsAlt A'' →
+        ∀ (x : Fin m) (c : R),
+          (∀ (i j : Fin m), i ≠ x → j ≠ x → A' i j = A i j ∧ A'' i j = A i j) →
+            (∀ (k : Fin m), A x k = A' x k + c * A'' x k) → Pfaffian.pf m A = Pfaffian.pf m A' + c * Pfaffian.pf m A''
+@Pfaffian.IsAlt.bmat : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} {a : Matrix (Fin n) (Fin n) R},
+  Pfaffian.IsAlt a → ∀ (c : Fin s → Fin n → R), Pfaffian.IsAlt (Pfaffian.bmat a c)
+@Pfaffian.bpf_odd : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R)
+  (c : Fin s → Fin n → R), Odd (n + s) → Pfaffian.bpf a c = 0
+@Pfaffian.bpf_eq_zero_of_lt : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R),
+  Pfaffian.IsAlt a → ∀ (c : Fin s → Fin n → R), n < s → Pfaffian.bpf a c = 0
+@Pfaffian.bpf_perm_vars : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin s → Fin n → R) (σ : Equiv.Perm (Fin n)),
+      (Pfaffian.bpf (a.submatrix ⇑σ ⇑σ) fun k i => c k (σ i)) = ↑↑(Equiv.Perm.sign σ) * Pfaffian.bpf a c
+@Pfaffian.bpf_perm_borders : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin s → Fin n → R) (τ : Equiv.Perm (Fin s)),
+      (Pfaffian.bpf a fun k => c (τ k)) = ↑↑(Equiv.Perm.sign τ) * Pfaffian.bpf a c
+@Pfaffian.bpf_add_border : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin s → Fin n → R) (k : Fin s) (x y : Fin n → R) (t : R),
+      Pfaffian.bpf a (Function.update c k fun i => x i + t * y i) =
+        Pfaffian.bpf a (Function.update c k x) + t * Pfaffian.bpf a (Function.update c k y)
+@Pfaffian.bpf_eq_zero_of_border_eq : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R),
+  Pfaffian.IsAlt a → ∀ (c : Fin s → Fin n → R) {k k' : Fin s}, k ≠ k' → c k = c k' → Pfaffian.bpf a c = 0
+@Pfaffian.bpf_expand_last : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin (n + 1)) (Fin (n + 1)) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin (s + 1) → Fin (n + 1) → R),
+      Pfaffian.bpf a c =
+        ∑ b,
+          (-1) ^ (n + 1 + (s + 1) + ↑b) * c (Fin.last s) b *
+            Pfaffian.bpf (a.submatrix b.succAbove b.succAbove) fun k i => c k.castSucc (b.succAbove i)
+@Pfaffian.bpf_square : ∀ {R : Type u_1} [inst : CommRing R] {s : ℕ} (a : Matrix (Fin s) (Fin s) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin s → Fin s → R), Pfaffian.bpf a c = (-1) ^ (s * (s - 1) / 2) * (Matrix.of fun i k => c k i).det
+@Pfaffian.bpf_expand_var : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin (n + 1)) (Fin (n + 1)) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin (s + 1) → Fin (n + 1) → R) (x : Fin (n + 1)),
+      Pfaffian.bpf a c =
+        (-1) ^ (↑x + (n + 1) + (s + 1)) *
+            Pfaffian.bpf (a.submatrix x.succAbove x.succAbove)
+              (Fin.snoc (fun k i => c k (x.succAbove i)) fun i => a x (x.succAbove i)) +
+          ∑ k,
+            (-1) ^ (↑x + (n + 1) + ↑k + 1) * c k x *
+              Pfaffian.bpf (a.submatrix x.succAbove x.succAbove) fun j i => c (k.succAbove j) (x.succAbove i)
+@Pfaffian.bpf_expand_var_zero : ∀ {R : Type u_1} [inst : CommRing R] {n : ℕ} (a : Matrix (Fin (n + 1)) (Fin (n + 1)) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin 0 → Fin (n + 1) → R) (x : Fin (n + 1)),
+      Pfaffian.bpf a c =
+        (-1) ^ (↑x + (n + 1) + 0) *
+          Pfaffian.bpf (a.submatrix x.succAbove x.succAbove)
+            (Fin.snoc (fun k i => c k (x.succAbove i)) fun i => a x (x.succAbove i))
+@Pfaffian.bpf_laplace : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin s → Fin n → R),
+      Pfaffian.bpf a c =
+        (-1) ^ (s * (s - 1) / 2) *
+          ∑ S,
+            (-1) ^ (∑ i ∈ ↑S, ↑i - s * (s - 1) / 2) * (Matrix.of fun i k => c k (((↑S).orderEmbOfFin ⋯) i)).det *
+              Pfaffian.pf (n - s) (a.submatrix ⇑((↑S)ᶜ.orderEmbOfFin ⋯) ⇑((↑S)ᶜ.orderEmbOfFin ⋯))
+@Pfaffian.Dab_self : ∀ {A : Type u_1} [inst : CommRing A] {r : ℕ}, Odd r → ∀ (x : A), ColOne.Dab r x x = 0
+@Pfaffian.ay_isAlt : ∀ {A : Type u_1} [inst : CommRing A] {r : ℕ},
+  Odd r → ∀ {n : ℕ} (y : Fin n → A), Pfaffian.IsAlt (Pfaffian.ay r y)
+@Pfaffian.C1 : ∀ {A : Type u_1} [inst : CommRing A] {r : ℕ},
+  Odd r →
+    ∀ {n s : ℕ} (y : Fin n → A) (c : Fin s → Fin n → A) (x : A),
+      Pfaffian.Pf r y (Fin.snoc c fun b => ColOne.Dab r x (y b)) =
+        -∑ u ∈ Finset.range (r - 1), (-1) ^ u * x ^ (r - 2 - u) * Pfaffian.Pf r y (Fin.snoc c fun b => y b ^ u)
+@Pfaffian.C2 : ∀ {A : Type u_1} [inst : CommRing A] {r : ℕ},
+  Odd r →
+    ∀ {n s : ℕ} (y : Fin n → A) (c : Fin s → Fin n → A) (x : A),
+      Pfaffian.Pf r y (Fin.snoc c fun b => ColOne.Dab (r + 1) x (y b)) =
+        ∑ u ∈ Finset.range r, (-1) ^ u * x ^ (r - 1 - u) * Pfaffian.Pf r y (Fin.snoc c fun b => y b ^ u)
+@Pfaffian.C3 : ∀ {A : Type u_1} [inst : CommRing A] {r : ℕ},
+  Odd r →
+    ∀ {n s : ℕ} (y : Fin n → A) (c : Fin s → Fin n → A) (x : A),
+      Pfaffian.Pf r y (Fin.snoc c fun b => ColOne.Dab (r + 1) x (y b)) =
+        Pfaffian.Pf r y (Fin.snoc c fun b => y b ^ (r - 1)) -
+          x * Pfaffian.Pf r y (Fin.snoc c fun b => ColOne.Dab r x (y b))
+@Pfaffian.C4_eq_zero : ∀ {A : Type u_1} [inst : CommRing A] {r : ℕ},
+  Odd r →
+    ∀ {n s : ℕ} (y : Fin n → A) (e : Fin s → ℕ) (u : ℕ) (k : Fin s),
+      e k = u → Pfaffian.Pf r y (Fin.snoc (fun k i => y i ^ e k) fun i => y i ^ u) = 0
+@Pfaffian.C4 : ∀ {A : Type u_1} [inst : CommRing A] {r : ℕ},
+  Odd r →
+    ∀ {n s : ℕ} (y : Fin n → A) (e : Fin s → ℕ),
+      StrictMono e →
+        ∀ (u : ℕ),
+          (∀ (k : Fin s), e k ≠ u) →
+            ∀ (e' : Fin (s + 1) → ℕ),
+              StrictMono e' →
+                (∀ (m : ℕ), (∃ j, e' j = m) ↔ (∃ k, e k = m) ∨ m = u) →
+                  Pfaffian.Pf r y (Fin.snoc (fun k i => y i ^ e k) fun i => y i ^ u) =
+                    (-1) ^ {k | u < e k}.card * Pfaffian.Pfe r y e'
+@Pfaffian.C5 : ∀ {A : Type u_1} [inst : CommRing A] {r : ℕ},
+  Odd r →
+    ∀ {s : ℕ} (y : Fin s → A),
+      (Pfaffian.Pfe r y fun k => ↑k) = (-1) ^ (s * (s - 1) / 2) * ∏ i, ∏ j ∈ Finset.Ioi i, (y j - y i)
+@Pfaffian.C6 : ∀ {A : Type u_1} [inst : CommRing A] {r : ℕ},
+  Odd r →
+    ∀ {n s : ℕ} (y : Fin n → A) (c : Fin s → Fin n → A) (σ : Equiv.Perm (Fin n)),
+      (Pfaffian.Pf r (fun i => y (σ i)) fun k i => c k (σ i)) = ↑↑(Equiv.Perm.sign σ) * Pfaffian.Pf r y c
+@Pfaffian.C6_e : ∀ {A : Type u_1} [inst : CommRing A] {r : ℕ},
+  Odd r →
+    ∀ {n s : ℕ} (y : Fin n → A) (e : Fin s → ℕ) (σ : Equiv.Perm (Fin n)),
+      Pfaffian.Pfe r (fun i => y (σ i)) e = ↑↑(Equiv.Perm.sign σ) * Pfaffian.Pfe r y e
+'Pfaffian.pf_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.pf_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.pf_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.pf_eq_sum_matchings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.pf_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.pf_eq_zero_of_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.pf_expand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.pf_expand_gen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.pf_expand_fam' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.pf_add_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.IsAlt.bmat' depends on axioms: [propext, Quot.sound]
+'Pfaffian.bpf_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.bpf_eq_zero_of_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.bpf_perm_vars' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.bpf_perm_borders' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.bpf_add_border' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.bpf_eq_zero_of_border_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.bpf_expand_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.bpf_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.bpf_expand_var' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.bpf_expand_var_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.bpf_laplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.Dab_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.ay_isAlt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.C1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.C2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.C3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.C4_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.C4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.C5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.C6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Pfaffian.C6_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1682064 t=146s

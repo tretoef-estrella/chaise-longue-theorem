@@ -1,0 +1,93 @@
+def OddLayers.layerS : ℕ → ℕ → Set OddShapes.Shape → ℕ → Set OddShapes.Shape :=
+fun h m Λ i => {σ | σ ∈ OddShapes.Sh h (m - 1) ∧ i < OddShapes.FS h Λ σ}
+def OddLayers.toPointed.{u_1} : {T : Type u_1} →
+  [inst : Fintype T] → [DecidableEq T] → {h : ℕ} → OddShapes.OddSetting T h → EvenCount.PointedSetting T h :=
+fun {T} [Fintype T] [DecidableEq T] {h} S =>
+  { neg := S.neg, neg_neg := ⋯, o := S.zero, neg_o := ⋯, eq_o_of_neg_eq := ⋯, card_eq := ⋯ }
+@OddLayers.exchange : ∀ {h m : ℕ} {Λ : Set OddShapes.Shape},
+  OddShapes.IsInterlaced h m Λ →
+    ∀ {ν : ChainLemma.Partition} {δ : Bool},
+      (ν, δ) ∈ OddShapes.Sh h (m - 1) →
+        ∀ {j : ℕ},
+          1 ≤ j →
+            j ≤ ν.len →
+              ∀ {p : ℕ},
+                1 ≤ p →
+                  p ≤ 2 * h + 1 →
+                    OddShapes.optS h (ν, δ) p ∈ Λ →
+                      ∃ p', p ≤ p' ∧ p' ≤ 2 * h + 1 ∧ OddShapes.optS h (ν.subE j, !δ) p' ∈ Λ
+@OddLayers.FS_le_FS_subE : ∀ {h m : ℕ},
+  1 ≤ m →
+    ∀ {Λ : Set OddShapes.Shape},
+      OddShapes.IsInterlaced h m Λ →
+        ∀ {ν : ChainLemma.Partition} {δ : Bool},
+          (ν, δ) ∈ OddShapes.Sh h (m - 1) →
+            ∀ {j : ℕ}, 1 ≤ j → j ≤ ν.len → OddShapes.FS h Λ (ν, δ) ≤ OddShapes.FS h Λ (ν.subE j, !δ)
+@OddLayers.shape_eq_root_iff : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) {n : ℕ} (M : Fin n → T),
+  S.shape M = (OddShapes.emptyPart, false) ↔
+    (∀ (u : T), Fibres.cnt M u = Fibres.cnt M (S.neg u)) ∧ Even (Fibres.cnt M S.zero)
+@OddLayers.ZS_root_even_eq_closedPointed : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) (n : ℕ),
+  OddShapes.ZS S n {(OddShapes.emptyPart, false)} = EvenCount.closedPointed (OddLayers.toPointed S) n
+@OddLayers.card_ZS_root_even : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) (k : ℕ),
+  (OddShapes.ZS S (2 * k + 2) {(OddShapes.emptyPart, false)}).card = EvenCount.QkEven k (2 * h + 2)
+@OddLayers.FS_root_even : ∀ {h : ℕ} (s : OddShapes.Shape),
+  s.1.len ≤ h →
+    OddShapes.FS h {(OddShapes.emptyPart, false)} s =
+      if s = (OddShapes.onePart, false) ∨ s = (OddShapes.emptyPart, true) then 1 else 0
+@OddLayers.layerS_root_even_zero : ∀ {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      OddLayers.layerS h (2 * k + 2) {(OddShapes.emptyPart, false)} 0 =
+        {(OddShapes.onePart, false), (OddShapes.emptyPart, true)}
+@OddLayers.layerS_root_even_pos : ∀ {h : ℕ} (k : ℕ) {i : ℕ},
+  1 ≤ i → OddLayers.layerS h (2 * k + 2) {(OddShapes.emptyPart, false)} i = ∅
+@OddLayers.card_ZS_root_odd : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) (k : ℕ),
+  (OddShapes.ZS S (2 * k + 1) {(OddShapes.onePart, false), (OddShapes.emptyPart, true)}).card =
+    EvenCount.QkEven k (2 * h + 2)
+@OddLayers.FS_antitone : ∀ {h m : ℕ},
+  1 ≤ h →
+    1 ≤ m →
+      ∀ {Λ : Set OddShapes.Shape},
+        OddShapes.IsInterlaced h m Λ →
+          ∀ {μ μ' : ChainLemma.Partition} {δ : Bool},
+            (μ, δ) ∈ OddShapes.Sh h (m - 1) →
+              (μ', δ) ∈ OddShapes.Sh h (m - 1) → μ ≼ μ' → OddShapes.FS h Λ (μ', δ) ≤ OddShapes.FS h Λ (μ, δ)
+@OddLayers.isInterlaced_layerS : ∀ {h m : ℕ},
+  1 ≤ h →
+    1 ≤ m →
+      ∀ {Λ : Set OddShapes.Shape},
+        OddShapes.IsInterlaced h m Λ → ∀ (i : ℕ), OddShapes.IsInterlaced h (m - 1) (OddLayers.layerS h m Λ i)
+OddLayers.layerS_succ_subset : ∀ (h m : ℕ) (Λ : Set OddShapes.Shape) (i : ℕ),
+  OddLayers.layerS h m Λ (i + 1) ⊆ OddLayers.layerS h m Λ i
+OddLayers.layerS_eq_empty : ∀ (h m : ℕ) (Λ : Set OddShapes.Shape) {i : ℕ}, 2 * h + 1 ≤ i → OddLayers.layerS h m Λ i = ∅
+@OddLayers.Zgt_ZS_eq_ZS_layerS : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) {m : ℕ},
+  1 ≤ m →
+    ∀ (Λ : Set OddShapes.Shape) (i : ℕ),
+      Peel.Zgt (OddShapes.ZS S m Λ) i = OddShapes.ZS S (m - 1) (OddLayers.layerS h m Λ i)
+@OddLayers.card_ZS_eq_sum : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : OddShapes.OddSetting T h) {m : ℕ},
+  1 ≤ m →
+    ∀ (Λ : Set OddShapes.Shape),
+      (OddShapes.ZS S m Λ).card =
+        ∑ i ∈ Finset.range (2 * h + 1), (OddShapes.ZS S (m - 1) (OddLayers.layerS h m Λ i)).card
+'OddLayers.exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.FS_le_FS_subE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.shape_eq_root_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.ZS_root_even_eq_closedPointed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.card_ZS_root_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.FS_root_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.layerS_root_even_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.layerS_root_even_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.card_ZS_root_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.FS_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.isInterlaced_layerS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.layerS_succ_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.layerS_eq_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.Zgt_ZS_eq_ZS_layerS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLayers.card_ZS_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1792624 t=164s

@@ -1,0 +1,99 @@
+def OddTheorem.stdOddSetting : (h : ℕ) → 1 ≤ h → OddSetting (Option (Fin h × Bool)) h :=
+fun h hh =>
+  { neg := Option.map fun p => (p.1, !p.2), zero := none, neg_neg := ⋯, neg_zero := ⋯, neg_ne := ⋯, one_le := hh,
+    card_eq := ⋯ }
+@OddTheorem.optS_mem_iff : ∀ {h n : ℕ} {Lam : Set Shape},
+  IsInterlaced h (n + 1) Lam →
+    ∀ {mu : ChainLemma.Partition} {d : Bool},
+      (mu, d) ∈ Sh h n → ∀ {p : ℕ}, 1 ≤ p → p ≤ 2 * h + 1 → (optS h (mu, d) p ∈ Lam ↔ p ≤ FS h Lam (mu, d))
+@OddTheorem.FS_le : ∀ {h : ℕ} (Lam : Set Shape) {mu : ChainLemma.Partition} (d : Bool),
+  mu.len ≤ h → FS h Lam (mu, d) ≤ 2 * h + 1
+@OddTheorem.lemmaK : ∀ {h n : ℕ} {Lam : Set Shape},
+  IsInterlaced h (n + 1) Lam →
+    ∀ {mu : ChainLemma.Partition} {d : Bool},
+      (mu, d) ∈ Sh h n →
+        1 ≤ FS h Lam (mu, d) →
+          (∃ lam,
+              (lam, d) ∈ Lam ∧
+                ∃ cs,
+                  (if d = true then 2 else 1) ≤ cs ∧
+                    (∀ (c : ℕ), 1 ≤ c → colLen lam c = colLen mu c + if c = cs then 1 else 0) ∧
+                      colLen mu cs + FS h Lam (mu, d) = 2 * h + 1) ∨
+            d = true ∧
+                (mu.addOne, true) ∈ Lam ∧ (mu, false) ∈ Lam ∧ mu.len < h ∧ FS h Lam (mu, d) = 2 * h + 1 - mu.len ∨
+              (mu, !d) ∈ Lam ∧ FS h Lam (mu, d) = mu.len + 1 ∨
+                (∃ lam,
+                    (lam, d) ∈ Lam ∧
+                      ∃ c0,
+                        (if d = true then 2 else 1) ≤ c0 ∧
+                          (∀ (c : ℕ), 1 ≤ c → (colLen lam c + if c = c0 then 1 else 0) = colLen mu c) ∧
+                            colLen mu c0 = FS h Lam (mu, d)) ∨
+                  d = true ∧ 1 ≤ mu.len ∧ mu.row mu.len = 1 ∧ (mu.subE mu.len, true) ∈ Lam ∧ FS h Lam (mu, d) = mu.len
+@OddTheorem.P0 : ∀ {F : Type u_1} [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ {n : ℕ} {Lam : Set Shape},
+      IsInterlaced h (n + 1) Lam →
+        ∀ {mu : ChainLemma.Partition},
+          (mu, false) ∈ Sh h n →
+            ∀ {i : ℕ},
+              i < FS h Lam (mu, false) →
+                ∀ (T : TightPattern mu Finset.univ),
+                  TightPattern.prod F (2 * h + 2) T ∈ Peel.W ⋯ (VSAll F h (n + 1) Lam) (2 * h - i)
+@OddTheorem.P1 : ∀ {F : Type u_1} [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ {n : ℕ} {Lam : Set Shape},
+      IsInterlaced h (n + 1) Lam →
+        ∀ {mu : ChainLemma.Partition},
+          (mu, true) ∈ Sh h n →
+            ∀ {i : ℕ},
+              i < FS h Lam (mu, true) →
+                ∀ (T : MarkedPattern mu Finset.univ),
+                  MarkedPattern.prod F h T ∈ Peel.W ⋯ (VSAll F h (n + 1) Lam) (2 * h - i)
+@OddTheorem.prop810 : ∀ {F : Type u_1} [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ {m : ℕ} (hm : 1 ≤ m) {Lam : Set Shape},
+      IsInterlaced h m Lam →
+        ∀ {i : ℕ},
+          i ≤ 2 * h → ↑(VSAll F h (m - 1) (OddLayers.layerS h m Lam i)) ⊆ ↑(Peel.W hm (VSAll F h m Lam) (2 * h - i))
+@OddTheorem.parts_eq_nil_of_mem_Sh_zero : ∀ {h : ℕ} {s : Shape}, s ∈ Sh h 0 → s.1.parts = [] ∧ s.2 = false
+OddTheorem.card_ZS_zero_le : ∀ (F : Type u_1) [inst : Field F] {T : Type u_2} [inst_1 : Fintype T]
+  [inst_2 : DecidableEq T] {h : ℕ} (S : OddSetting T h) (Lam : Set Shape),
+  IsInterlaced h 0 Lam → (ZS S 0 Lam).card ≤ Module.finrank F ↥(Submodule.restrictScalars F (VSAll F h 0 Lam))
+OddTheorem.card_ZS_le_step : ∀ (F : Type u_1) [inst : Field F] {T : Type u_2} [inst_1 : Fintype T]
+  [inst_2 : DecidableEq T] {h : ℕ} (S : OddSetting T h) {m : ℕ},
+  1 ≤ m →
+    (∀ (Lam' : Set Shape),
+        IsInterlaced h (m - 1) Lam' →
+          (ZS S (m - 1) Lam').card ≤ Module.finrank F ↥(Submodule.restrictScalars F (VSAll F h (m - 1) Lam'))) →
+      ∀ (Lam : Set Shape),
+        IsInterlaced h m Lam → (ZS S m Lam).card ≤ Module.finrank F ↥(Submodule.restrictScalars F (VSAll F h m Lam))
+OddTheorem.theorem811 : ∀ (F : Type u_1) [inst : Field F] {T : Type u_2} [inst_1 : Fintype T] [inst_2 : DecidableEq T]
+  {h : ℕ} (S : OddSetting T h) (m : ℕ) (Lam : Set Shape),
+  IsInterlaced h m Lam → (ZS S m Lam).card ≤ Module.finrank F ↥(Submodule.restrictScalars F (VSAll F h m Lam))
+OddTheorem.stdOddSetting : (h : ℕ) → 1 ≤ h → OddSetting (Option (Fin h × Bool)) h
+OddTheorem.emptyPart_addOne : emptyPart.addOne = TheoremB.one
+OddTheorem.marked_emptyPart_mem_DIdeal : ∀ (F : Type u_1) [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ) (T : MarkedPattern emptyPart Finset.univ), MarkedPattern.prod F h T ∈ TheoremB.DIdeal F (2 * h + 2) k
+OddTheorem.VSAll_root_le_DIdeal : ∀ (F : Type u_1) [inst : Field F] {h : ℕ},
+  1 ≤ h → ∀ (k : ℕ), VSAll F h (2 * k + 1) {(onePart, false), (emptyPart, true)} ≤ TheoremB.DIdeal F (2 * h + 2) k
+OddTheorem.theoremO : ∀ (F : Type u_1) [inst : Field F] {h : ℕ},
+  1 ≤ h →
+    ∀ (k : ℕ),
+      EvenCount.QkEven k (2 * h + 2) ≤ Module.finrank F ↥(Submodule.restrictScalars F (TheoremB.DIdeal F (2 * h + 2) k))
+'OddTheorem.optS_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.FS_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.lemmaK' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.P0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.P1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.prop810' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.parts_eq_nil_of_mem_Sh_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.card_ZS_zero_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.card_ZS_le_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.theorem811' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.stdOddSetting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.emptyPart_addOne' depends on axioms: [propext, Quot.sound]
+'OddTheorem.marked_emptyPart_mem_DIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.VSAll_root_le_DIdeal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddTheorem.theoremO' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2017232 t=134s

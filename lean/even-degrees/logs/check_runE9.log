@@ -1,0 +1,192 @@
+def RankTwo.elemOp.{u_1} : {R : Type u_1} →
+  [CommRing R] → {m : ℕ} → Matrix (Fin m) (Fin m) R → Fin m → Fin m → R → Matrix (Fin m) (Fin m) R :=
+fun {R} [CommRing R] {m} A x w lam i j => A i j + lam * ((if i = w then A x j else 0) + if j = w then A i x else 0)
+def RankTwo.ext2.{u_1} : {R : Type u_1} →
+  [CommRing R] →
+    {K : ℕ} → Matrix (Fin K) (Fin K) R → (Fin K → R) → (Fin K → R) → R → Matrix (Fin (K + 2)) (Fin (K + 2)) R :=
+fun {R} [CommRing R] {K} B u v θ => Pfaffian.bmat (Pfaffian.bmat B fun x => u) fun x => Fin.snoc v θ
+def RankTwo.omega.{u_1} : {A : Type u_1} → [CommRing A] → ℕ → ℕ → A → A → A :=
+fun {A} [CommRing A] r s a b => ∑ u ∈ Finset.range r, if u ≤ s ∧ s - u < r then (-1) ^ u * a ^ u * b ^ (s - u) else 0
+def RankTwo.Wm.{u_1} : {A : Type u_1} → [CommRing A] → ℕ → ℕ → {n : ℕ} → (Fin n → A) → Matrix (Fin n) (Fin n) A :=
+fun {A} [CommRing A] h σ {n} y i j => RankTwo.omega (2 * h + 1) (2 * σ + 1) (y i) (y j)
+def RankTwo.Lm.{u_1} : {A : Type u_1} →
+  [inst : CommRing A] → ℕ → {n : ℕ} → (Fin n → A) → Matrix (Fin n) (Fin n) (Polynomial A) :=
+fun {A} [CommRing A] h {n} y i j =>
+  ∑ σ ∈ Finset.range h, Polynomial.X ^ σ * Polynomial.C (RankTwo.omega (2 * h + 1) (2 * σ + 1) (y i) (y j))
+def RankTwo.Hm.{u_1} : {A : Type u_1} →
+  [inst : CommRing A] → ℕ → {n : ℕ} → (Fin n → A) → Matrix (Fin n) (Fin n) (Polynomial A) :=
+fun {A} [CommRing A] h {n} y i j =>
+  ∑ τ ∈ Finset.range h, Polynomial.X ^ τ * Polynomial.C (RankTwo.omega (2 * h + 1) (2 * (h + τ) + 1) (y i) (y j))
+def RankTwo.Ev.{u_1} : {A : Type u_1} → [inst : CommRing A] → ℕ → {n : ℕ} → (Fin n → A) → Fin n → Polynomial A :=
+fun {A} [CommRing A] h {n} y i => ∑ α ∈ Finset.range (h + 1), Polynomial.X ^ α * Polynomial.C (y i ^ (2 * α))
+def RankTwo.Od.{u_1} : {A : Type u_1} → [inst : CommRing A] → ℕ → {n : ℕ} → (Fin n → A) → Fin n → Polynomial A :=
+fun {A} [CommRing A] h {n} y i => ∑ β ∈ Finset.range h, Polynomial.X ^ β * Polynomial.C (y i ^ (2 * β + 1))
+def Pfaffian.Pf.{u_1} : {A : Type u_1} → [CommRing A] → ℕ → {n s : ℕ} → (Fin n → A) → (Fin s → Fin n → A) → A :=
+fun {A} [CommRing A] r {n s} y c => Pfaffian.bpf (Pfaffian.ay r y) c
+def Pfaffian.ay.{u_1} : {A : Type u_1} → [CommRing A] → ℕ → {n : ℕ} → (Fin n → A) → Matrix (Fin n) (Fin n) A :=
+fun {A} [CommRing A] r {n} y i j => ColOne.Dab r (y i) (y j)
+def ColOne.Dab.{u_2} : {A : Type u_2} → [CommRing A] → ℕ → A → A → A :=
+fun {A} [CommRing A] q a b => ∑ u ∈ Finset.range (q - 1), (-1) ^ u * a ^ u * b ^ (q - 2 - u)
+@RankTwo.elemOp_isAlt : ∀ {R : Type u_1} [inst : CommRing R] {m : ℕ} {A : Matrix (Fin m) (Fin m) R},
+  Pfaffian.IsAlt A → ∀ (x w : Fin m) (lam : R), Pfaffian.IsAlt (RankTwo.elemOp A x w lam)
+@RankTwo.R1 : ∀ {R : Type u_1} [inst : CommRing R] {m : ℕ} (A : Matrix (Fin m) (Fin m) R),
+  Pfaffian.IsAlt A →
+    ∀ {x w : Fin m},
+      x ≠ w →
+        ∀ (lam : R),
+          (Pfaffian.IsAlt fun i j => A i j + lam * ((if i = w then A x j else 0) + if j = w then A i x else 0)) ∧
+            (Pfaffian.pf m fun i j => A i j + lam * ((if i = w then A x j else 0) + if j = w then A i x else 0)) =
+              Pfaffian.pf m A
+@RankTwo.R2 : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin s → Fin n → R) (k : Fin s) (lam : Fin n → R),
+      (Pfaffian.IsAlt fun i j => a i j + lam i * c k j - lam j * c k i) ∧
+        Pfaffian.bpf (fun i j => a i j + lam i * c k j - lam j * c k i) c = Pfaffian.bpf a c
+@RankTwo.R3_pf : ∀ {R : Type u_1} [inst : CommRing R] (κ : ℕ) (t : R) (A : Matrix (Fin (2 * κ)) (Fin (2 * κ)) R),
+  Pfaffian.pf (2 * κ) (t • A) = t ^ κ * Pfaffian.pf (2 * κ) A
+@RankTwo.R3_bpf : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (κ : ℕ),
+  n = s + 2 * κ →
+    ∀ (t : R) (a : Matrix (Fin n) (Fin n) R),
+      Pfaffian.IsAlt a → ∀ (c : Fin s → Fin n → R), Pfaffian.bpf (t • a) c = t ^ κ * Pfaffian.bpf a c
+@RankTwo.R4 : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin s → Fin n → R) (E O : Fin n → R),
+      Pfaffian.bpf (a - Matrix.of fun i j => E i * O j - E j * O i) c =
+        Pfaffian.bpf a c + Pfaffian.bpf a (Fin.snoc (Fin.snoc c E) O)
+@RankTwo.R4' : ∀ {R : Type u_1} [inst : CommRing R] {n s : ℕ} (a : Matrix (Fin n) (Fin n) R),
+  Pfaffian.IsAlt a →
+    ∀ (c : Fin s → Fin n → R) (E O : Fin n → R),
+      Pfaffian.bpf (a + Matrix.of fun i j => E i * O j - E j * O i) c =
+        Pfaffian.bpf a c - Pfaffian.bpf a (Fin.snoc (Fin.snoc c E) O)
+@RankTwo.R5_pf : ∀ {R : Type u_1} [inst : CommRing R] (κ d : ℕ) (A : Matrix (Fin (2 * κ)) (Fin (2 * κ)) (Polynomial R)),
+  (∀ (i j : Fin (2 * κ)), (A i j).natDegree ≤ d) →
+    (Pfaffian.pf (2 * κ) A).natDegree ≤ κ * d ∧
+      (Pfaffian.pf (2 * κ) A).coeff (κ * d) = Pfaffian.pf (2 * κ) fun i j => (A i j).coeff d
+@RankTwo.R5_bpf : ∀ {R : Type u_1} [inst : CommRing R] (κ d : ℕ) {n s : ℕ},
+  n = s + 2 * κ →
+    ∀ (a : Matrix (Fin n) (Fin n) (Polynomial R)),
+      Pfaffian.IsAlt a →
+        ∀ (c : Fin s → Fin n → Polynomial R) (dk : Fin s → ℕ),
+          (∀ (i j : Fin n), (a i j).natDegree ≤ d) →
+            (∀ (k : Fin s) (i : Fin n), (c k i).natDegree ≤ dk k) →
+              (Pfaffian.bpf a c).natDegree ≤ κ * d + ∑ k, dk k ∧
+                (Pfaffian.bpf a c).coeff (κ * d + ∑ k, dk k) =
+                  Pfaffian.bpf (fun i j => (a i j).coeff d) fun k i => (c k i).coeff (dk k)
+@RankTwo.omega_swap : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ) {s : ℕ},
+  Odd s → ∀ (a b : A), RankTwo.omega r s b a = -RankTwo.omega r s a b
+@RankTwo.omega_self : ∀ {A : Type u_1} [inst : CommRing A] (r : ℕ) {s : ℕ}, Odd s → ∀ (a : A), RankTwo.omega r s a a = 0
+@RankTwo.Wm_isAlt : ∀ {A : Type u_1} [inst : CommRing A] (h σ : ℕ) {n : ℕ} (y : Fin n → A),
+  Pfaffian.IsAlt (RankTwo.Wm h σ y)
+@RankTwo.Lm_isAlt : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) {n : ℕ} (y : Fin n → A),
+  Pfaffian.IsAlt (RankTwo.Lm h y)
+@RankTwo.Hm_isAlt : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) {n : ℕ} (y : Fin n → A),
+  Pfaffian.IsAlt (RankTwo.Hm h y)
+@RankTwo.S1 : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h → ∀ (a b : A), RankTwo.omega (2 * h + 1) (2 * h - 1) a b = ColOne.Dab (2 * h + 1) a b
+@RankTwo.S1_Wm : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h → ∀ {n : ℕ} (y : Fin n → A), RankTwo.Wm h (h - 1) y = Pfaffian.ay (2 * h + 1) y
+@RankTwo.S1_top : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h → ∀ {n : ℕ} (y : Fin n → A), (fun i j => (RankTwo.Lm h y i j).coeff (h - 1)) = Pfaffian.ay (2 * h + 1) y
+@RankTwo.S3 : ∀ {A : Type u_1} [inst : CommRing A] (h i : ℕ) (a b : A),
+  b ^ (2 * h + 1) = 0 → RankTwo.omega (2 * h + 1) (2 * h + i) a b = b ^ i * ColOne.Dab (2 * h + 2) a b
+@RankTwo.S2_scalar : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) (a b : A),
+  ∑ σ ∈ Finset.range (2 * h), Polynomial.X ^ σ * Polynomial.C (RankTwo.omega (2 * h + 1) (2 * σ + 1) a b) =
+    (∑ α ∈ Finset.range (h + 1), Polynomial.X ^ α * Polynomial.C (a ^ (2 * α))) *
+        ∑ β ∈ Finset.range h, Polynomial.X ^ β * Polynomial.C (b ^ (2 * β + 1)) -
+      (∑ α ∈ Finset.range (h + 1), Polynomial.X ^ α * Polynomial.C (b ^ (2 * α))) *
+        ∑ β ∈ Finset.range h, Polynomial.X ^ β * Polynomial.C (a ^ (2 * β + 1))
+@RankTwo.S2 : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) {n : ℕ} (y : Fin n → A) (i j : Fin n),
+  RankTwo.Lm h y i j + Polynomial.X ^ h * RankTwo.Hm h y i j =
+    RankTwo.Ev h y i * RankTwo.Od h y j - RankTwo.Ev h y j * RankTwo.Od h y i
+@RankTwo.S4_i : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) {n s : ℕ} (y : Fin n → A)
+  (c : Fin s → Fin n → Polynomial A),
+  Pfaffian.bpf (RankTwo.Lm h y) c =
+    Pfaffian.bpf (-Polynomial.X ^ h • RankTwo.Hm h y) c -
+      Pfaffian.bpf (-Polynomial.X ^ h • RankTwo.Hm h y) (Fin.snoc (Fin.snoc c (RankTwo.Ev h y)) (RankTwo.Od h y))
+@RankTwo.S4_ii : ∀ {A : Type u_1} [inst : CommRing A] (h : ℕ) {n s : ℕ} (y : Fin n → A)
+  (c : Fin s → Fin n → Polynomial A),
+  Pfaffian.bpf (RankTwo.Lm h y) (Fin.snoc c (RankTwo.Ev h y)) =
+    Pfaffian.bpf (-Polynomial.X ^ h • RankTwo.Hm h y) (Fin.snoc c (RankTwo.Ev h y))
+@RankTwo.S5a : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {n s : ℕ} (t : ℕ),
+      n = s + 2 * (t + 1) →
+        ∀ (y : Fin n → A) (c : Fin s → Fin n → A),
+          Pfaffian.Pf (2 * h + 1) y c =
+            if t + 1 ≤ h then
+              (-1) ^ (t + 1) *
+                (Pfaffian.bpf (RankTwo.Hm h y)
+                      (Fin.snoc (Fin.snoc (fun k i => Polynomial.C (c k i)) (RankTwo.Ev h y)) (RankTwo.Od h y))).coeff
+                  (h - 1 - t)
+            else 0
+@RankTwo.S5a_of_le : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {n s : ℕ} (t : ℕ),
+      n = s + 2 * (t + 1) →
+        t + 1 ≤ h →
+          ∀ (y : Fin n → A) (c : Fin s → Fin n → A),
+            Pfaffian.Pf (2 * h + 1) y c =
+              (-1) ^ (t + 1) *
+                (Pfaffian.bpf (RankTwo.Hm h y)
+                      (Fin.snoc (Fin.snoc (fun k i => Polynomial.C (c k i)) (RankTwo.Ev h y)) (RankTwo.Od h y))).coeff
+                  (h - 1 - t)
+@RankTwo.S5a_of_ge : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {n s : ℕ} (t : ℕ),
+      n = s + 2 * (t + 1) → h ≤ t → ∀ (y : Fin n → A) (c : Fin s → Fin n → A), Pfaffian.Pf (2 * h + 1) y c = 0
+@RankTwo.S5b : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {n s : ℕ} (t : ℕ),
+      n = s + 1 + 2 * t →
+        ∀ (y : Fin n → A) (c : Fin s → Fin n → A),
+          Pfaffian.Pf (2 * h + 1) y (Fin.snoc c fun i => y i ^ (2 * h)) =
+            if t ≤ h then
+              (-1) ^ t *
+                (Pfaffian.bpf (RankTwo.Hm h y) (Fin.snoc (fun k i => Polynomial.C (c k i)) (RankTwo.Ev h y))).coeff
+                  (h - t)
+            else 0
+@RankTwo.S5b_of_le : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {n s : ℕ} (t : ℕ),
+      n = s + 1 + 2 * t →
+        t ≤ h →
+          ∀ (y : Fin n → A) (c : Fin s → Fin n → A),
+            Pfaffian.Pf (2 * h + 1) y (Fin.snoc c fun i => y i ^ (2 * h)) =
+              (-1) ^ t *
+                (Pfaffian.bpf (RankTwo.Hm h y) (Fin.snoc (fun k i => Polynomial.C (c k i)) (RankTwo.Ev h y))).coeff
+                  (h - t)
+@RankTwo.S5b_of_gt : ∀ {A : Type u_1} [inst : CommRing A] {h : ℕ},
+  1 ≤ h →
+    ∀ {n s : ℕ} (t : ℕ),
+      n = s + 1 + 2 * t →
+        h < t →
+          ∀ (y : Fin n → A) (c : Fin s → Fin n → A), Pfaffian.Pf (2 * h + 1) y (Fin.snoc c fun i => y i ^ (2 * h)) = 0
+'RankTwo.elemOp_isAlt' depends on axioms: [propext, Quot.sound]
+'RankTwo.R1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.R2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.R3_pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.R3_bpf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.R4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.R4'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.R5_pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.R5_bpf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.omega_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.omega_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.Wm_isAlt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.Lm_isAlt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.Hm_isAlt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S1_Wm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S1_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S2_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S4_i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S4_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S5a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S5a_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S5a_of_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S5b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S5b_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankTwo.S5b_of_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=2262512 t=185s

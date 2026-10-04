@@ -1,0 +1,9 @@
+== Basic vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=1767040 t=76s
+Build completed successfully (8094 jobs).
+== Lowest vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=2052000 t=64s
+Build completed successfully (8094 jobs).
+== Theta vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=2180208 t=57s
+Build completed successfully (8096 jobs).
+== Main vigia_rc=0 VIGIA-FIN-OK exit=0 pico_kb=2263024 t=58s
+Build completed successfully (8119 jobs).
+BUILD-LOOP-END

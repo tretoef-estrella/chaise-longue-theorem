@@ -1,0 +1,85 @@
+EvenCount.QkEven_eq : ∀ (k m : ℕ),
+  EvenCount.QkEven k m = 1 + ∑ c ∈ Finset.range (k + 1), (2 * k + 2).choose (2 * c) * TheoremB.Qk (k - c) (m - 1)
+EvenCount.QkEven_values : EvenCount.QkEven 1 4 = 19 ∧ EvenCount.QkEven 2 4 = 141 ∧ EvenCount.QkEven 1 6 = 61
+@EvenCount.mem_closedPointed_iff : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : EvenCount.PointedSetting T h) {k : ℕ} (g : Fin (2 * k + 2) → T),
+  g ∈ EvenCount.closedPointed S (2 * k + 2) ↔ ∃ J, ∀ (x : Fin (2 * k + 2)), g (↑J x) = S.neg (g x)
+@EvenCount.card_closedPointed : ∀ {T : Type u_1} [inst : Fintype T] [inst_1 : DecidableEq T] {h : ℕ}
+  (S : EvenCount.PointedSetting T h) (k : ℕ),
+  (EvenCount.closedPointed S (2 * k + 2)).card = EvenCount.QkEven k (2 * h + 2)
+@EvenCount.card_Gamma_eq_card_pairs : ∀ {K : Type u_1} [inst : Field K] {m : ℕ} {μm : Finset K}
+  (hprod : Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ)),
+  ↑m ≠ 0 → ∀ (k : ℕ), (ColUpper.Gamma hprod k).card = {g | ∃ J, ∀ (x : Fin (2 * k + 2)), ↑(g (↑J x)) = (↑(g x))⁻¹}.card
+@EvenCount.pointedSetting : {K : Type u_1} →
+  [inst : Field K] →
+    {m : ℕ} →
+      {μm : Finset K} →
+        Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ) →
+          ↑m ≠ 0 → Even m → EvenCount.PointedSetting (ColUpper.Tpts μm) ((m - 2) / 2)
+@EvenCount.card_Gamma_even : ∀ {K : Type u_1} [inst : Field K] {m : ℕ} {μm : Finset K}
+  (hprod : Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ)),
+  ↑m ≠ 0 → Even m → ∀ (k : ℕ), (ColUpper.Gamma hprod k).card = EvenCount.QkEven k m
+@EvenCount.rankOver_rat_intMatU_even : ∀ {m : ℕ},
+  Even m → 2 ≤ m → ∀ (k : ℕ), EveryField.rankOver ℚ (ColUpper.intMatU m k) = EvenCount.QkEven k m
+EvenCount.finrank_IK_le_even : ∀ (F : Type u_1) [inst : Field F] {m : ℕ},
+  Even m → 2 ≤ m → ∀ (k : ℕ), Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F m k)) ≤ EvenCount.QkEven k m
+EvenCount.finrank_IK_eq_of_charZero_even : ∀ (F : Type u_1) [inst : Field F] [CharZero F] {m : ℕ},
+  Even m →
+    2 ≤ m →
+      ∀ (k : ℕ) {μm : Finset F},
+        Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ) →
+          Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F m k)) = EvenCount.QkEven k m
+@EvenCount.theorem_iv_even : ∀ {m : ℕ},
+  Even m →
+    2 ≤ m →
+      ∀ (k : ℕ),
+        (∀ (F : Type) [inst : Field F],
+            Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F m k)) ≤ EvenCount.QkEven k m) ∧
+          (∀ (F : Type) [inst : Field F] [CharZero F] (μm : Finset F),
+              μm.card = m →
+                Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ) →
+                  Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F m k)) = EvenCount.QkEven k m) ∧
+            EveryField.rankOver ℚ (ColUpper.intMatU m k) = EvenCount.QkEven k m
+@ColUpper.theorem_iv : ∀ {m : ℕ},
+  Odd m →
+    ∀ (k : ℕ),
+      (∀ (F : Type) [inst : Field F],
+          Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F m k)) ≤ TheoremB.Qk k m) ∧
+        (∀ (F : Type) [inst : Field F] [CharZero F] (μm : Finset F),
+            μm.card = m →
+              Polynomial.X ^ m - 1 = ∏ ξ ∈ μm, (Polynomial.X - Polynomial.C ξ) →
+                Module.finrank F ↥(Submodule.restrictScalars F (ColUpper.IK F m k)) = TheoremB.Qk k m) ∧
+          EveryField.rankOver ℚ (ColUpper.intMatU m k) = TheoremB.Qk k m
+def EvenCount.QkEven : ℕ → ℕ → ℕ :=
+fun k m =>
+  ∑ c ∈ Finset.range (k + 2),
+    ∑ b ∈ Fintype.piFinset fun x => Finset.range (2 * k + 3) with 2 * c + 2 * ∑ u, b u = 2 * k + 2,
+      (2 * k + 2).factorial / ((2 * c).factorial * ∏ u, (b u).factorial ^ 2)
+structure EvenCount.PointedSetting.{u_1} (T : Type u_1) [Fintype T] (h : ℕ) : Type u_1
+number of parameters: 3
+fields:
+  EvenCount.PointedSetting.neg : T → T
+  EvenCount.PointedSetting.neg_neg : ∀ (u : T), self.neg (self.neg u) = u
+  EvenCount.PointedSetting.o : T
+  EvenCount.PointedSetting.neg_o : self.neg self.o = self.o
+  EvenCount.PointedSetting.eq_o_of_neg_eq : ∀ (u : T), self.neg u = u → u = self.o
+  EvenCount.PointedSetting.card_eq : Fintype.card T = 2 * h + 1
+constructor:
+  EvenCount.PointedSetting.mk.{u_1} {T : Type u_1} [Fintype T] {h : ℕ} (neg : T → T)
+    (neg_neg : ∀ (u : T), neg (neg u) = u) (o : T) (neg_o : neg o = o) (eq_o_of_neg_eq : ∀ (u : T), neg u = u → u = o)
+    (card_eq : Fintype.card T = 2 * h + 1) : EvenCount.PointedSetting T h
+def EvenCount.closedPointed.{u_1} : {T : Type u_1} →
+  [inst : Fintype T] → [DecidableEq T] → {h : ℕ} → EvenCount.PointedSetting T h → (n : ℕ) → Finset (Fin n → T) :=
+fun {T} [Fintype T] [DecidableEq T] {h} S n =>
+  {M | (∀ (u : T), Fibres.cnt M u = Fibres.cnt M (S.neg u)) ∧ Even (Fibres.cnt M S.o)}
+'EvenCount.QkEven_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.QkEven_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.mem_closedPointed_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.card_closedPointed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.card_Gamma_eq_card_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.card_Gamma_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.rankOver_rat_intMatU_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.finrank_IK_le_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.finrank_IK_eq_of_charZero_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvenCount.theorem_iv_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1696304 t=145s

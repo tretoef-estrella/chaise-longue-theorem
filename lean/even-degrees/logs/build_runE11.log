@@ -1,0 +1,36 @@
+=== MODULE MarkedPf 23:56:23
+vigia_rc=0
+✔ [8104/8104] Built RequestProject.OddPatterns.MarkedPf (74s)
+Build completed successfully (8104 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1846832 t=82s
+=== MODULE Defs 23:57:45
+vigia_rc=0
+✔ [8125/8125] Built RequestProject.OddPatterns.Defs (83s)
+Build completed successfully (8125 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1657120 t=91s
+=== MODULE LemmaB 23:59:16
+vigia_rc=0
+✔ [8126/8126] Built RequestProject.OddPatterns.LemmaB (92s)
+Build completed successfully (8126 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1621504 t=100s
+=== MODULE Examples 00:00:56
+vigia_rc=0
+✔ [8127/8127] Built RequestProject.OddPatterns.Examples (88s)
+Build completed successfully (8127 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2081728 t=96s
+=== MODULE Relabel 00:02:33
+vigia_rc=0
+✔ [8126/8126] Built RequestProject.OddPatterns.Relabel (37s)
+Build completed successfully (8126 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2142464 t=43s
+=== MODULE LemmaD 00:03:16
+vigia_rc=0
+✔ [8126/8126] Built RequestProject.OddPatterns.LemmaD (34s)
+Build completed successfully (8126 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2237088 t=40s
+=== MODULE Main 00:03:57
+vigia_rc=0
+✔ [8130/8130] Built RequestProject.OddPatterns.Main (36s)
+Build completed successfully (8130 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2186544 t=43s
+BUILD-LOOP-END

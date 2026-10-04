@@ -1,0 +1,240 @@
+def OddLifts2.Phi.{u_1} : {R : Type u_1} → [inst : CommRing R] → ℕ → ℕ → {n : ℕ} → (Fin n → R) → R[X] :=
+fun {R} [CommRing R] h ell {n} w =>
+  X * OddPatterns.mPf h (ell + 1) (Fin.cons X fun i => C (w i)) +
+    Pfaffian.Pf (2 * h + 1) (fun i => C (w i))
+      (Fin.snoc (fun k i => C (w i) ^ ↑k) fun b => ColOne.Dab (2 * h + 2) X (C (w b)))
+def OddLifts2.Psi.{u_1} : (F : Type u_1) →
+  [inst : Field F] → (h : ℕ) → ℕ → {n k : ℕ} → (B : Finset (Fin n)) → B.card = k → Peel.C F (2 * h + 2) (n + 1) :=
+fun F [Field F] h l {n k} B hB =>
+  Pfaffian.Pf (2 * h + 1) (fun j => Tight.y F (2 * h + 2) ((B.orderEmbOfFin hB) j).succ)
+    (Fin.snoc (fun i j => Tight.y F (2 * h + 2) ((B.orderEmbOfFin hB) j).succ ^ ↑i) fun j =>
+      ColOne.Dab (2 * h + 2) (Tight.y F (2 * h + 2) 0) (Tight.y F (2 * h + 2) ((B.orderEmbOfFin hB) j).succ))
+@OddLifts2.Pfe_cons_expand : ∀ {R : Type u_1} [inst : CommRing R] (h : ℕ) {n s : ℕ} (w : Fin n → R)
+  (e : Fin (s + 1) → ℕ),
+  Pfaffian.Pfe (2 * h + 1) (Fin.cons X fun i => C (w i)) e =
+    (-1) ^ (n + s) *
+        Pfaffian.Pf (2 * h + 1) (fun i => C (w i))
+          (Fin.snoc (fun k i => C (w i) ^ e k) fun i => ColOne.Dab (2 * h + 1) X (C (w i))) +
+      ∑ j, (-1) ^ (n + ↑j) * X ^ e j * C (Pfaffian.Pfe (2 * h + 1) w fun i => e (j.succAbove i))
+@OddLifts2.Pfe_cons_expand_zero : ∀ {R : Type u_1} [inst : CommRing R] (h : ℕ) {n : ℕ} (w : Fin n → R) (e : Fin 0 → ℕ),
+  Pfaffian.Pfe (2 * h + 1) (Fin.cons X fun i => C (w i)) e =
+    (-1) ^ (n + 1) *
+      Pfaffian.Pf (2 * h + 1) (fun i => C (w i))
+        (Fin.snoc (fun k i => C (w i) ^ e k) fun i => ColOne.Dab (2 * h + 1) X (C (w i)))
+@OddLifts2.Pf_C_snoc_pow : ∀ {R : Type u_1} [inst : CommRing R] (h : ℕ) {n s : ℕ} (w : Fin n → R) (e : Fin s → ℕ)
+  (u : ℕ),
+  Pfaffian.Pf (2 * h + 1) (fun i => C (w i)) (Fin.snoc (fun k i => C (w i) ^ e k) fun b => C (w b) ^ u) =
+    C (Pfaffian.Pfe (2 * h + 1) w (Fin.snoc e u))
+@OddLifts2.coeff_Pf_Dminus : ∀ {R : Type u_1} [inst : CommRing R] (h : ℕ) {n s : ℕ} (w : Fin n → R) (e : Fin s → ℕ)
+  (k : ℕ),
+  (Pfaffian.Pf (2 * h + 1) (fun i => C (w i))
+          (Fin.snoc (fun k i => C (w i) ^ e k) fun i => ColOne.Dab (2 * h + 1) X (C (w i)))).coeff
+      k =
+    -∑ u ∈ Finset.range (2 * h), if k = 2 * h - 1 - u then (-1) ^ u * Pfaffian.Pfe (2 * h + 1) w (Fin.snoc e u) else 0
+OddLifts2.mPf_succ_eq : ∀ (h s : ℕ) {n : ℕ} {A : Type u_1} [inst : CommRing A] (z : Fin n → A),
+  OddPatterns.mPf h (s + 1) z = Pfaffian.Pfe (2 * h + 1) z fun k => ↑k
+OddLifts2.mPf_zero_eq : ∀ (h : ℕ) {n : ℕ} {A : Type u_1} [inst : CommRing A] (z : Fin n → A),
+  OddPatterns.mPf h 0 z = Pfaffian.Pfe (2 * h + 1) z fun x => 2 * h
+@OddLifts2.coeff_Pfe_cons : ∀ {R : Type u_1} [inst : CommRing R] (h : ℕ) {n s : ℕ} (w : Fin n → R) (e : Fin (s + 1) → ℕ)
+  (k : ℕ),
+  (Pfaffian.Pfe (2 * h + 1) (Fin.cons X fun i => C (w i)) e).coeff k =
+    ((-1) ^ (n + s) *
+        -∑ u ∈ Finset.range (2 * h),
+            if k = 2 * h - 1 - u then (-1) ^ u * Pfaffian.Pfe (2 * h + 1) w (Fin.snoc e u) else 0) +
+      ∑ j, if k = e j then (-1) ^ (n + ↑j) * Pfaffian.Pfe (2 * h + 1) w fun i => e (j.succAbove i) else 0
+@OddLifts2.coeff_Pfe_cons_zero : ∀ {R : Type u_1} [inst : CommRing R] (h : ℕ) {n : ℕ} (w : Fin n → R) (e : Fin 0 → ℕ)
+  (k : ℕ),
+  (Pfaffian.Pfe (2 * h + 1) (Fin.cons X fun i => C (w i)) e).coeff k =
+    (-1) ^ (n + 1) *
+      -∑ u ∈ Finset.range (2 * h), if k = 2 * h - 1 - u then (-1) ^ u * Pfaffian.Pfe (2 * h + 1) w (Fin.snoc e u) else 0
+OddLifts2.snoc_range_eq : ∀ (s : ℕ), Fin.snoc (fun k => ↑k) s = fun k => ↑k
+@OddLifts2.Q1 : ∀ {R : Type u_1} [inst : CommRing R] (h l n t : ℕ),
+  n = l + 2 + 2 * t →
+    l + 1 ≤ h →
+      ∀ (w : Fin n → R) (k : ℕ), 2 * h - l < k → (OddPatterns.mPf h l (Fin.cons X fun i => C (w i))).coeff k = 0
+@OddLifts2.Q2 : ∀ {R : Type u_1} [inst : CommRing R] (h l n t : ℕ),
+  n = l + 2 + 2 * t →
+    l + 1 ≤ h →
+      ∀ (w : Fin n → R),
+        (OddPatterns.mPf h l (Fin.cons X fun i => C (w i))).coeff (2 * h - l) = (-1) ^ l * OddPatterns.mPf h (l + 1) w
+@OddLifts2.Phi : {R : Type u_1} → [inst : CommRing R] → ℕ → ℕ → {n : ℕ} → (Fin n → R) → R[X]
+@OddLifts2.Pf_D_eq : ∀ {R : Type u_1} [inst : CommRing R] (h : ℕ) {n ell : ℕ} (w : Fin n → R),
+  Pfaffian.Pf (2 * h + 1) (fun i => C (w i))
+      (Fin.snoc (fun k i => C (w i) ^ ↑k) fun b => ColOne.Dab (2 * h + 2) X (C (w b))) =
+    C (Pfaffian.Pfe (2 * h + 1) w (Fin.snoc (fun k => ↑k) (2 * h))) -
+      X *
+        Pfaffian.Pf (2 * h + 1) (fun i => C (w i))
+          (Fin.snoc (fun k i => C (w i) ^ ↑k) fun i => ColOne.Dab (2 * h + 1) X (C (w i)))
+@OddLifts2.Phi_zero : ∀ {R : Type u_1} [inst : CommRing R] (h t : ℕ) {n : ℕ},
+  n = 0 + 1 + 2 * t → ∀ (w : Fin n → R), OddLifts2.Phi h 0 w = C (OddPatterns.mPf h 0 w)
+@OddLifts2.Phi_succ : ∀ {R : Type u_1} [inst : CommRing R] (h s t : ℕ) {n : ℕ},
+  n = s + 1 + 1 + 2 * t →
+    ∀ (w : Fin n → R),
+      OddLifts2.Phi h (s + 1) w =
+        ∑ j, (-1) ^ (n + ↑j) * X ^ (↑j + 1) * C (Pfaffian.Pfe (2 * h + 1) w fun i => ↑(j.succAbove i)) +
+          C (Pfaffian.Pfe (2 * h + 1) w (Fin.snoc (fun k => ↑k) (2 * h)))
+@OddLifts2.Q'1 : ∀ {R : Type u_1} [inst : CommRing R] (h ell n t : ℕ),
+  n = ell + 1 + 2 * t → ∀ (w : Fin n → R) (k : ℕ), ell < k → (OddLifts2.Phi h ell w).coeff k = 0
+@OddLifts2.Q'2 : ∀ {R : Type u_1} [inst : CommRing R] (h ell n t : ℕ),
+  n = ell + 1 + 2 * t → ∀ (w : Fin n → R), (OddLifts2.Phi h ell w).coeff ell = OddPatterns.mPf h ell w
+OddLifts2.colLen_addOne' : ∀ (mu : ChainLemma.Partition) {c : ℕ},
+  1 ≤ c → (Tight.colLen mu c + if c = 1 then 1 else 0) = Tight.colLen mu.addOne c
+@OddLifts2.subset_sup_of_mem : ∀ {k : ℕ} {Q : Finset (Finset (Fin k))} {e : Finset (Fin k)}, e ∈ Q → e ⊆ Q.sup id
+@OddLifts2.exists_tpattern_addOne : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {mu : ChainLemma.Partition}
+  (T : OddPatterns.MarkedPattern mu Finset.univ) (S : Finset (Fin n)) (Q : Finset (Finset (Fin n))),
+  S ⊆ T.marked →
+    S.card = mu.len + 1 →
+      Odd3.IsPairs Q →
+        Odd3.supp Q = T.marked \ S →
+          ∀ {N : ℕ},
+            mu.row 1 ≤ N →
+              mu.addOne.row 1 ≤ N →
+                1 ≤ N →
+                  ∃ T',
+                    Tight.TightPattern.prod F (2 * h + 2) T' =
+                      (Tight.Delta F (2 * h + 2) S * ∏ e ∈ Q, Tight.pairD F (2 * h + 2) e) *
+                        ((∏ e ∈ T.pairs, Tight.pairD F (2 * h + 2) e) *
+                          ∏ c ∈ Finset.Icc 2 N, Tight.Delta F (2 * h + 2) (OddLifts.cleanMBlocks T c))
+@OddLifts2.disjoint_liftSet_pair_Z : ∀ {n : ℕ} {mu : ChainLemma.Partition}
+  (T : OddPatterns.MarkedPattern mu Finset.univ) {e : Finset (Fin n)},
+  e ∈ T.pairs → Disjoint (Lifts.liftSet e) (insert 0 (Lifts.liftSet T.marked))
+@OddLifts2.disjoint_liftSet_block_Z : ∀ {n : ℕ} {mu : ChainLemma.Partition}
+  (T : OddPatterns.MarkedPattern mu Finset.univ) (c : ℕ),
+  Disjoint (Lifts.liftSet (OddLifts.cleanMBlocks T c)) (insert 0 (Lifts.liftSet T.marked))
+@OddLifts2.mem_cover_lift : ∀ {n : ℕ} {mu : ChainLemma.Partition} (T : OddPatterns.MarkedPattern mu Finset.univ)
+  {N : ℕ},
+  mu.row 1 ≤ N →
+    ∀ (x : Fin (n + 1)),
+      (∃ e ∈ T.pairs, x ∈ Lifts.liftSet e) ∨
+        (∃ c ∈ Finset.Icc 2 N, x ∈ Lifts.liftSet (OddLifts.cleanMBlocks T c)) ∨ x ∈ insert 0 (Lifts.liftSet T.marked)
+@OddLifts2.exists_mpattern_lift : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {mu lam : ChainLemma.Partition}
+  (T : OddPatterns.MarkedPattern mu Finset.univ),
+  (∀ (c : ℕ), 2 ≤ c → Tight.colLen lam c = Tight.colLen mu c) →
+    ∀ {N : ℕ},
+      mu.row 1 ≤ N →
+        lam.row 1 ≤ N →
+          ∀ (X : Finset (Finset (Fin (n + 1)))) (M : Finset (Fin (n + 1))),
+            (∀ e ∈ X, e.card = 2) →
+              (↑X).PairwiseDisjoint id →
+                (∀ e ∈ X, Disjoint e M) →
+                  X.sup id ∪ M = insert 0 (Lifts.liftSet T.marked) →
+                    (∃ t, M.card = lam.len + 1 + 2 * t) →
+                      ∃ T',
+                        OddPatterns.MarkedPattern.prod F h T' =
+                          (∏ e ∈ X, Tight.pairD F (2 * h + 2) e) * OddPatterns.markedPf F h lam.len M *
+                            (Peel.incl F (2 * h + 2) n)
+                              ((∏ e ∈ T.pairs, Tight.pairD F (2 * h + 2) e) *
+                                ∏ c ∈ Finset.Icc 2 N, Tight.Delta F (2 * h + 2) (OddLifts.cleanMBlocks T c))
+@OddLifts2.exists_tpattern_lift : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {mu : ChainLemma.Partition}
+  (T : OddPatterns.MarkedPattern mu Finset.univ) {N : ℕ},
+  mu.row 1 ≤ N →
+    1 ≤ N →
+      ∀ (X : Finset (Finset (Fin (n + 1)))) (S : Finset (Fin (n + 1))),
+        (∀ e ∈ X, e.card = 2) →
+          (↑X).PairwiseDisjoint id →
+            (∀ e ∈ X, Disjoint e S) →
+              X.sup id ∪ S = insert 0 (Lifts.liftSet T.marked) →
+                S.card = mu.len →
+                  ∃ T',
+                    Tight.TightPattern.prod F (2 * h + 2) T' =
+                      (∏ e ∈ X, Tight.pairD F (2 * h + 2) e) * Tight.Delta F (2 * h + 2) S *
+                        (Peel.incl F (2 * h + 2) n)
+                          ((∏ e ∈ T.pairs, Tight.pairD F (2 * h + 2) e) *
+                            ∏ c ∈ Finset.Icc 2 N, Tight.Delta F (2 * h + 2) (OddLifts.cleanMBlocks T c))
+@OddLifts2.map_Pf : ∀ {A : Type u_1} {A' : Type u_2} [inst : CommRing A] [inst_1 : CommRing A'] (f : A →+* A') (r : ℕ)
+  {n s : ℕ} (v : Fin n → A) (c : Fin s → Fin n → A),
+  f (Pfaffian.Pf r v c) = Pfaffian.Pf r (fun i => f (v i)) fun k i => f (c k i)
+@OddLifts2.orderEmbOfFin_erase : ∀ {n k : ℕ} (B : Finset (Fin n)) (hB : B.card = k + 1) (b : Fin (k + 1))
+  (h' : (B.erase ((B.orderEmbOfFin hB) b)).card = k) (j : Fin k),
+  ((B.erase ((B.orderEmbOfFin hB) b)).orderEmbOfFin h') j = (B.orderEmbOfFin hB) (b.succAbove j)
+OddLifts2.markedPf_erase : ∀ (F : Type u_1) [inst : Field F] (h L : ℕ) {n k : ℕ} (B : Finset (Fin n))
+  (hB : B.card = k + 1) (b : Fin (k + 1)),
+  OddPatterns.markedPf F h L (B.erase ((B.orderEmbOfFin hB) b)) =
+    OddPatterns.mPf h L fun j => Tight.y F (2 * h + 2) ((B.orderEmbOfFin hB) (b.succAbove j))
+OddLifts2.markedPf_eq_Delta : ∀ (F : Type u_1) [inst : Field F] (h : ℕ) {m : ℕ} (l : ℕ) (S : Finset (Fin m)),
+  S.card = l → OddPatterns.markedPf F h (l + 1) S = (-1) ^ (l * (l - 1) / 2) * Tight.Delta F (2 * h + 2) S
+OddLifts2.Psi : (F : Type u_1) →
+  [inst : Field F] → (h : ℕ) → ℕ → {n k : ℕ} → (B : Finset (Fin n)) → B.card = k → Peel.C F (2 * h + 2) (n + 1)
+OddLifts2.phi_Psi : ∀ (F : Type u_1) [inst : Field F] (h l : ℕ) {n k : ℕ} (B : Finset (Fin n)) (hB : B.card = k),
+  (Peel.peelEquiv' F (2 * h + 2) n) (OddLifts2.Psi F h l B hB) =
+    (AdjoinRoot.mk (X ^ (2 * h + 2 - 1)))
+      (Pfaffian.Pf (2 * h + 1) (fun j => C (Tight.y F (2 * h + 2) ((B.orderEmbOfFin hB) j)))
+        (Fin.snoc (fun i j => C (Tight.y F (2 * h + 2) ((B.orderEmbOfFin hB) j)) ^ ↑i) fun j =>
+          ColOne.Dab (2 * h + 2) X (C (Tight.y F (2 * h + 2) ((B.orderEmbOfFin hB) j)))))
+OddLifts2.Psi_mem : ∀ (F : Type u_1) [inst : Field F] (h l : ℕ) {n k : ℕ} (B : Finset (Fin n)) (hB : B.card = k),
+  1 ≤ k →
+    ∀ (V : Ideal (Peel.C F (2 * h + 2) (n + 1))) (G : Peel.C F (2 * h + 2) n),
+      (∀ x ∈ B,
+          Tight.D F (2 * h + 2) 0 x.succ *
+              (Peel.incl F (2 * h + 2) n) (OddPatterns.markedPf F h (l + 1) (B.erase x) * G) ∈
+            V) →
+        OddLifts2.Psi F h l B hB * (Peel.incl F (2 * h + 2) n) G ∈ V
+@OddLifts2.prod_eq_markedPf_mul : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {mu : ChainLemma.Partition}
+  (T : OddPatterns.MarkedPattern mu Finset.univ) {N : ℕ},
+  mu.row 1 ≤ N →
+    OddPatterns.MarkedPattern.prod F h T =
+      OddPatterns.markedPf F h mu.len T.marked *
+        ((∏ e ∈ T.pairs, Tight.pairD F (2 * h + 2) e) *
+          ∏ c ∈ Finset.Icc 2 N, Tight.Delta F (2 * h + 2) (OddLifts.cleanMBlocks T c))
+@OddLifts2.T6 : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {Lam : Set OddShapes.Shape} {mu : ChainLemma.Partition},
+  (mu, false) ∈ Lam →
+    1 ≤ h →
+      mu.len ≤ h →
+        ∀ (T : OddPatterns.MarkedPattern mu Finset.univ),
+          OddPatterns.MarkedPattern.prod F h T ∈ Peel.W ⋯ (OddPatterns.VSAll F h (n + 1) Lam) (2 * h - mu.len)
+OddLifts2.colLen_subE_len_of_two_le : ∀ (mu : ChainLemma.Partition),
+  1 ≤ mu.len → mu.row mu.len = 1 → ∀ {c : ℕ}, 2 ≤ c → Tight.colLen (mu.subE mu.len) c = Tight.colLen mu c
+OddLifts2.len_subE_len : ∀ (mu : ChainLemma.Partition),
+  1 ≤ mu.len → mu.row mu.len = 1 → (mu.subE mu.len).len + 1 = mu.len
+@OddLifts2.T8 : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {Lam : Set OddShapes.Shape} {mu : ChainLemma.Partition},
+  (mu.subE mu.len, true) ∈ Lam →
+    1 ≤ mu.len →
+      mu.len ≤ h →
+        mu.row mu.len = 1 →
+          ∀ (T : OddPatterns.MarkedPattern mu Finset.univ),
+            OddPatterns.MarkedPattern.prod F h T ∈ Peel.W ⋯ (OddPatterns.VSAll F h (n + 1) Lam) (2 * h + 1 - mu.len)
+@OddLifts2.T7 : ∀ {F : Type u_1} [inst : Field F] {h n : ℕ} {Lam : Set OddShapes.Shape} {mu : ChainLemma.Partition},
+  (mu.addOne, true) ∈ Lam →
+    (mu, false) ∈ Lam →
+      mu.len < h →
+        ∀ (T : OddPatterns.MarkedPattern mu Finset.univ),
+          OddPatterns.MarkedPattern.prod F h T ∈ Peel.W ⋯ (OddPatterns.VSAll F h (n + 1) Lam) mu.len
+'OddLifts2.Pfe_cons_expand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.Pfe_cons_expand_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.Pf_C_snoc_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.coeff_Pf_Dminus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.mPf_succ_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.mPf_zero_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.coeff_Pfe_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.coeff_Pfe_cons_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.snoc_range_eq' depends on axioms: [propext, Quot.sound]
+'OddLifts2.Q1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.Q2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.Phi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.Pf_D_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.Phi_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.Phi_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.Q'1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.Q'2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.colLen_addOne'' depends on axioms: [propext, Quot.sound]
+'OddLifts2.subset_sup_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.exists_tpattern_addOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.disjoint_liftSet_pair_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.disjoint_liftSet_block_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.mem_cover_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.exists_mpattern_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.exists_tpattern_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.map_Pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.orderEmbOfFin_erase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.markedPf_erase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.markedPf_eq_Delta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.Psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.phi_Psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.Psi_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.prod_eq_markedPf_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.T6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.colLen_subE_len_of_two_le' depends on axioms: [propext, Quot.sound]
+'OddLifts2.len_subE_len' depends on axioms: [propext, Quot.sound]
+'OddLifts2.T8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddLifts2.T7' depends on axioms: [propext, Classical.choice, Quot.sound]
+VIGIA-FIN-OK exit=0 pico_kb=1779984 t=147s

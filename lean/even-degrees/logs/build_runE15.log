@@ -1,0 +1,41 @@
+=== MODULE Defs 16:51:53
+vigia_rc=0
+✔ [8097/8097] Built RequestProject.OddEquality.Defs (121s)
+Build completed successfully (8097 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1677936 t=129s
+=== MODULE IntegralGen 16:54:02
+vigia_rc=0
+✔ [8111/8111] Built RequestProject.OddEquality.IntegralGen (83s)
+Build completed successfully (8111 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1712048 t=91s
+=== MODULE PartC 16:55:34
+vigia_rc=0
+✔ [8114/8114] Built RequestProject.OddEquality.PartC (80s)
+Build completed successfully (8114 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1826960 t=87s
+=== MODULE PartC3 16:57:02
+vigia_rc=0
+✔ [8115/8115] Built RequestProject.OddEquality.PartC3 (66s)
+Build completed successfully (8115 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1783600 t=73s
+=== MODULE PartB 16:58:15
+vigia_rc=0
+✔ [8118/8118] Built RequestProject.OddEquality.PartB (75s)
+Build completed successfully (8118 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1787520 t=82s
+=== MODULE PartA 16:59:37
+vigia_rc=0
+✔ [8208/8208] Built RequestProject.OddEquality.PartA (83s)
+Build completed successfully (8208 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1717744 t=90s
+=== MODULE PartD 17:01:08
+vigia_rc=0
+✔ [8218/8218] Built RequestProject.OddEquality.PartD (71s)
+Build completed successfully (8218 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1801984 t=77s
+=== MODULE Checks 17:02:26
+vigia_rc=2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+VIGIA-MATADO-MEMORIA mem_kb=4728832 t=133s
+BUILD-LOOP-STOPPED at Checks

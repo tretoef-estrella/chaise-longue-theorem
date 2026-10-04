@@ -1,0 +1,31 @@
+=== MODULE Part0 10:21:33
+vigia_rc=0
+✔ [8042/8042] Built RequestProject.EvenBlocks.Part0 (76s)
+Build completed successfully (8042 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1715648 t=83s
+=== MODULE SelfInv 10:22:57
+vigia_rc=0
+✔ [8043/8043] Built RequestProject.EvenBlocks.SelfInv (69s)
+Build completed successfully (8043 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1805488 t=76s
+=== MODULE Product 10:24:13
+vigia_rc=0
+✔ [8044/8044] Built RequestProject.EvenBlocks.Product (61s)
+Build completed successfully (8044 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1891856 t=68s
+=== MODULE Blocks 10:25:21
+vigia_rc=0
+✔ [8045/8045] Built RequestProject.EvenBlocks.Blocks (57s)
+Build completed successfully (8045 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2007856 t=64s
+=== MODULE Setting 10:26:25
+vigia_rc=0
+✔ [8114/8114] Built RequestProject.EvenBlocks.Setting (60s)
+Build completed successfully (8114 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=1851856 t=66s
+=== MODULE Main 10:27:32
+vigia_rc=0
+✔ [8118/8118] Built RequestProject.EvenBlocks.Main (47s)
+Build completed successfully (8118 jobs).
+VIGIA-FIN-OK exit=0 pico_kb=2078336 t=53s
+BUILD-LOOP-END
