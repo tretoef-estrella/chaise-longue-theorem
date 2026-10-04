@@ -1,8 +1,10 @@
 # Index of the standalone documents
 
+> **Scope, 4 October 2026.** Version 12 of the paper proves Conjecture 1.2 for **every** degree $m \ge 3$. Files written before it speak of the odd degrees, or call the even degrees open, because that was the state when they were written; they are kept as written.
+
 **222 documents**, one per family, each in the highest version found on the author's machine. Every file begins with a header: author, campaign, date, how to cite it, its status *as the document itself states it*, and whether the campaign's later records flag it.
 
-These are working documents. Some were later refuted, retracted or absorbed, and the header says so when the campaign's own records say so. The proof of the conjecture is in [the paper](../paper/THE_CHAISE_LONGUE_THEOREM_v7.pdf); the curated guide is [THEOREMS.md](../THEOREMS.md); the earlier campaign on Fermat lattices has its own folder, [hodge-fermat-campaign](../hodge-fermat-campaign/README.md).
+These are working documents. Some were later refuted, retracted or absorbed, and the header says so when the campaign's own records say so. The proof of the conjecture is in [the paper](../paper/THE_CHAISE_LONGUE_THEOREM_v12.pdf); the curated guide is [THEOREMS.md](../THEOREMS.md); the earlier campaign on Fermat lattices has its own folder, [hodge-fermat-campaign](../hodge-fermat-campaign/README.md).
 
 ⚑ = later audit flag in the campaign's records (read the header of the file).
 
