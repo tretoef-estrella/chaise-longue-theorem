@@ -2,7 +2,7 @@
 
 This folder holds a complete Lean 4 proof of **Main Theorem′** of the paper **for every degree**: for every `m ≥ 1` and every `k ≥ 0`, the group `Z[(Z/m)^{2k+1}]/(ψ_J : J)` of Degtyarev–Shimada is free abelian of rank `m^{2k+1} − Q_k(m)`, and the dimension over every field is the same. It also proves **Theorem O** (the count at the odd box) with equality over every field and a free quotient over `Z`.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23045370.svg)](https://doi.org/10.5281/zenodo.23045370) This folder is archived on Zenodo as its own record (software), a supplement to the paper ([doi.org/10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150)). Version 2 of the record (every degree) is [doi.org/10.5281/zenodo.23129677](https://doi.org/10.5281/zenodo.23129677); version 1 (the odd degrees) is [doi.org/10.5281/zenodo.23045371](https://doi.org/10.5281/zenodo.23045371).
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23045370-blue.svg)](https://doi.org/10.5281/zenodo.23045370) This folder is archived on Zenodo as its own record (software), a supplement to the paper ([doi.org/10.5281/zenodo.22961150](https://doi.org/10.5281/zenodo.22961150)). Version 2 of the record (every degree) is [doi.org/10.5281/zenodo.23129677](https://doi.org/10.5281/zenodo.23129677); version 1 (the odd degrees) is [doi.org/10.5281/zenodo.23045371](https://doi.org/10.5281/zenodo.23045371).
 
 **Read first:** [LEAN_CERTIFICATE_CHAISE_LONGUE_v2.pdf](LEAN_CERTIFICATE_CHAISE_LONGUE_v2.pdf) ([Markdown](LEAN_CERTIFICATE_CHAISE_LONGUE_v2.md)). It gives:
 - the final theorem and its fifteen definitions exactly as Lean prints them, and a line-by-line comparison with the paper and with [DS];
