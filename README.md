@@ -2,7 +2,7 @@
 
 ### Conjecture 1.2 of Degtyarev–Shimada for the Fermat varieties of every degree in every even dimension, and the integral Hodge conjecture for those whose degree is prime, equal to $4$, or prime to $(n+1)!$
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22961150.svg)](https://doi.org/10.5281/zenodo.22961150)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22961150-blue.svg)](https://doi.org/10.5281/zenodo.22961150) [![Lean certificate DOI](https://img.shields.io/badge/Lean_certificate_DOI-10.5281%2Fzenodo.23129677-blue.svg)](https://doi.org/10.5281/zenodo.23129677)
 
 **Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint v12, 4 October 2026
 
