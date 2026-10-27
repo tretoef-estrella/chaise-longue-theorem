@@ -2,7 +2,7 @@
 
 ### Conjecture 1.2 of Degtyarev–Shimada for the Fermat varieties of every degree in every even dimension, and the integral Hodge conjecture for those whose degree is prime, equal to $4$, or prime to $(n+1)!$
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22961150-blue.svg)](https://doi.org/10.5281/zenodo.22961150) [![Lean certificate DOI](https://img.shields.io/badge/Lean_certificate_DOI-10.5281%2Fzenodo.23129677-blue.svg)](https://doi.org/10.5281/zenodo.23129677) [![Lean build](https://github.com/tretoef-estrella/chaise-longue-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/chaise-longue-theorem/actions/workflows/lean-build.yml) [![Hexagon](https://img.shields.io/badge/Hexagon-2610.00212-6f42c1.svg)](https://hexagonmath.org/2610.00212)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22961150-blue.svg)](https://doi.org/10.5281/zenodo.22961150) [![Lean certificate DOI](https://img.shields.io/badge/Lean_certificate_DOI-10.5281%2Fzenodo.23129677-blue.svg)](https://doi.org/10.5281/zenodo.23129677) [![Lean build](https://github.com/tretoef-estrella/chaise-longue-theorem/actions/workflows/lean-build.yml/badge.svg)](https://github.com/tretoef-estrella/chaise-longue-theorem/actions/workflows/lean-build.yml) [![Hexagon](https://img.shields.io/badge/Hexagon-2610.00212-6f42c1.svg)](https://hexagonmath.org/2610.00212) [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--6252--675X-a6ce39.svg)](https://orcid.org/0009-0008-6252-675X)
 
 **Rafael Amichis Luengo** · Madrid · tretoef@gmail.com · preprint v12, 4 October 2026
 
